@@ -1,0 +1,62 @@
+---
+title: "Projects"
+toc: true
+---
+
+## Eco-evolutionary dynamics of urban biodiversity
+
+*Understanding human impacts to improve human–wildlife coexistence.*
+
+In March 2022 we received a grant (**Proc 407318/2021-6 — CNPq Universal**)
+from the Brazilian National Council for Scientific and Technological Research
+(CNPq) to investigate how frogs are responding to urban ecosystems in terms
+of their phenotype. One Master's, one PhD, and one undergraduate student
+conducting independent research collected data along urbanisation gradients
+in three Brazilian cities — both at the **population** and **metacommunity**
+scales. All of them have already presented their work at national and
+international conferences. Stay tuned for more cool science about urban
+frogs!
+
+### Team
+
+::: {.people-grid}
+
+::: {.person-card}
+<img src="assets/images/people/fernando.jpg" alt="Fernando R. da Silva"
+     onerror="this.style.display='none'">
+<p class="name">Fernando R. da Silva</p>
+<p class="role">Co-PI · UFSCar</p>
+:::
+
+::: {.person-card}
+<img src="assets/images/people/franco.jpg" alt="Franco Souza"
+     onerror="this.style.display='none'">
+<p class="name">Franco Souza</p>
+<p class="role">Co-PI · UFMS</p>
+:::
+
+::: {.person-card}
+<img src="assets/images/people/garey.jpg" alt="Michel V. Garey"
+     onerror="this.style.display='none'">
+<p class="name">Michel V. Garey</p>
+<p class="role">Co-PI · UNILA</p>
+:::
+
+::: {.person-card}
+<p class="name">Andros T. Gianuca</p>
+<p class="role">Co-PI · UFRN</p>
+:::
+
+::: {.person-card}
+<p class="name">Fabio Angeoletto</p>
+<p class="role">Co-PI · UFR</p>
+:::
+
+:::
+
+## Funding history
+
+- **2024 — FUNDECT research productivity grant.** Continued support for
+  field work conducted by lab students.
+- **2022–present — CNPq Universal** (Proc 407318/2021-6). Eco-evolutionary
+  dynamics of urban biodiversity.

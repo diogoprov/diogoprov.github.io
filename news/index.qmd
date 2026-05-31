@@ -1,0 +1,14 @@
+---
+title: "Lab news"
+listing:
+  contents: .
+  sort: "date desc"
+  type: default
+  date-format: "MMMM YYYY"
+  fields: [date, title, description, categories]
+  categories: true
+  feed: true
+  sort-ui: false
+  filter-ui: false
+page-layout: article
+---

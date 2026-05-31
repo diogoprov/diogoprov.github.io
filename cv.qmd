@@ -1,0 +1,31 @@
+---
+title: "CV"
+subtitle: "Static and dynamic version"
+toc: false
+listing:
+  id: dynamic-cv
+  contents: posts
+  include:
+    categories: "experience"
+  type: default
+  sort: "date desc"
+  date-format: "MMM YYYY"
+  categories: true
+  fields: [date, title, description, categories]
+  feed: true
+---
+
+## Static CV
+
+- [Full CV in English (PDF)](https://app.box.com/s/t9qn64ui07ctdsj5j1fnlmp4rpvjshz1)
+- [Lattes CV (Portuguese)](http://lattes.cnpq.br/9194853434437963)
+- [Academic Tree](https://academictree.org/evolution/tree.php?pid=688023)
+
+## Dynamic CV
+
+Posts tagged with `experience` are automatically aggregated here. Each entry
+lives in `posts/YYYY-MM-DD-slug/index.qmd` with `categories: [experience]` in
+the YAML front-matter.
+
+::: {#dynamic-cv}
+:::

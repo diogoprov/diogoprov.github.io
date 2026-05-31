@@ -1,0 +1,57 @@
+---
+title: "Teaching"
+toc: true
+---
+
+## Phenotypic evolution & comparative phylogenetic methods
+
+Graduate course given annually at the [Ecology and Conservation
+PPG](https://ppgec.ufms.br) (UFMS), Campo Grande. The course is hosted on
+Moodle — feel free to get in touch if you'd like access to materials.
+
+[Mind map summarising the main methods](https://coggle.it/diagram/WhbkkxE2BAAB0R0m)
+
+## Past courses & short-courses
+
+### 2012 — Mendeley demo, Universidade Federal de Goiás
+
+[Slides with screenshots and tutorials](http://www.slideshare.net/provete/mendeley-presentation)
+
+### 2011 — Ecological statistics with R
+
+*Tópicos em Biologia Animal — Estatística aplicada à ecologia usando o R.*
+A two-week graduate course in Animal Biology at
+[UNESP](http://www.ibilce.unesp.br/) (São Paulo State University), in
+collaboration with [Thiago
+Gonçalves-Souza](http://thiagocalvesouza.wixsite.com/ecoffun) and
+[Fernando R. Silva](http://fernandoecologia.wixsite.com/fernandorodrigues).
+We covered Generalized Linear Models, the main multivariate methods, and
+other ecological tools, using R as the analysis platform.
+
+- [Class slides](https://www.sugarsync.com/pf/D9712667_69058108_487278)
+- [Course book (CRAN-hosted)](http://cran.r-project.org/doc/contrib/Provete-Estatistica_aplicada.pdf)
+- [Datasets for exercises](https://diogoprovete.weebly.com/uploads/1/7/3/6/17367099/data.zip)
+- [R scripts](https://diogoprovete.weebly.com/uploads/1/7/3/6/17367099/script_completo_apostila_estatistica_aplicada_a_ecologia_usando_o_r.r)
+
+### 2009 — Sampling techniques for vertebrates (PT)
+
+Short course (4 h) for undergraduates at UNESP, given as a pre-meeting
+course at the *4º Simpósio de Biologia Animal*. Ricardo Brassaloti and I
+covered field sampling techniques for the four classes of vertebrates.
+
+[Class slides](http://slidesha.re/eiu9Fx)
+
+**Recommended bibliography**
+
+- Colwell, R.K. & Coddington, J.A. 1994. Estimating terrestrial biodiversity
+  through extrapolation. *Phil. Trans. R. Soc. B* 345:101–118.
+  [PDF](http://viceroy.eeb.uconn.edu/RKCPublications/ColwellAndCoddington1994_hr.pdf)
+- Dias, S.C. 2004. Planejando estudos de diversidade e riqueza: uma abordagem
+  para estudantes de graduação. *Acta Scientiarum* 26:373–9.
+  [PDF](http://periodicos.uem.br/ojs/index.php/ActaSciBiolSci/article/view/1511/945)
+- Gotelli, N. & Colwell, R.K. 2001. Quantifying biodiversity: procedures and
+  pitfalls in the measurement and comparison of species richness. *Ecology
+  Letters* 4:379–391.
+  [PDF](http://viceroy.eeb.uconn.edu/RKCPublications/GotelliAndColwell2001.pdf)
+- Sutherland, W.J. (Ed.) 2006. *Ecological census techniques: a handbook.*
+  2nd ed. Cambridge University Press.

@@ -1,0 +1,42 @@
+project:
+  type: website
+  output-dir: docs # docs is the folder name Github Pages uses
+
+resources:
+  - CNAME # The CNAME file is needed if you use your own domain name.
+
+website:
+  title: "Biodiversity synthesis Lab"
+  description: "This is the website of our lab. We work at the intersection between community ecology and micro- and macroevolution"
+  navbar:
+    background: primary # Primary, secondary and tertiary are colour name shortcuts
+    search: true
+    left:
+      - href: index.qmd
+        text: Home
+      - href: cv.qmd
+      - href: people.qmd # If `text` is not provided, the `title` of the page will be shown
+        text: People
+      - href: opportunities.qmd
+        text: Opportunities
+      - href: research.qmd
+        text: Research
+      - href: publications.qmd
+        text: Publications
+    tools:
+      - icon: github
+        menu:
+          - text: Website Code
+            href: https://github.com/AlbanSagouis/albansagouis.github.io
+          - text: My repositories
+            href: https://github.com/AlbanSagouis/
+
+format:
+  html:
+    theme: lux
+      # light: lux
+      # dark: cyborg
+    css: styles.css
+    toc: true
+
+editor: source # with quarto and Rstudio, you can also use a `visual` editor WYSIWYG

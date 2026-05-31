@@ -1,0 +1,13 @@
+.sass-cache
+.jekyll-metadata
+Gemfile.lock
+*.DS_Store
+docs/CNAME
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+/.quarto/
+_freeze/
+_site/

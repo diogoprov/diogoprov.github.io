@@ -1,0 +1,10 @@
+---
+title: "Welcome to Ana Paula Andreazzi"
+description: "Ana Paula joins the lab to study how stingless bees respond to heat waves in urban ecosystems."
+date: "2024-07-15"
+categories: [news, people]
+---
+
+We gave a warm welcome to **Ana Paula Andreazzi**, who joins the lab as a
+PhD student. Ana Paula will be testing how **stingless bees respond to heat
+waves in urban ecosystems** in the Tropics.

@@ -1,0 +1,63 @@
+---
+title: "Research"
+subtitle: "Causes and consequences of species diversity in freshwater ecosystems"
+toc: true
+---
+
+We're interested in understanding what regulates species distribution,
+composition, and diversity of freshwater metacommunities at multiple spatial
+scales. Diogo has worked in a variety of environments using **tadpoles and
+aquatic invertebrates** as model organisms.
+
+Broad subjects include how biodiversity affects the functioning of
+multi-trophic freshwater ecosystems, how spatial distribution of organisms is
+affected by environmental gradients, and macroecological patterns of species
+richness. We often study not only taxonomic, but also **functional and
+phylogenetic** aspects of communities.
+
+Representative work:
+
+- Provete et al. 2014. *Hydrobiologia.*
+- Livingston et al. 2017. *Journal of Animal Ecology.*
+- Villalobos et al. 2013. *PLoS One.*
+
+## Eco-evolutionary dynamics in metacommunity ecology
+
+Ecological communities are shaped by a variety of processes that operate at
+distinct temporal scales. There is now compelling evidence that evolution by
+natural selection can happen in a relatively short time. These
+**eco-evolutionary feedbacks** could potentially change species interaction
+and further influence evolutionary trajectories.
+
+- Provete 2013. *Natureza & Conservação.*
+
+## Phenotypic evolution and diversification of Neotropical species
+
+Biological diversity is expressed in various ways. One of these is how species
+differ from each other. Species' traits may have themselves complex
+evolutionary histories, and in turn can influence species distribution,
+interspecific interactions, speciation rates, and coexistence.
+
+We're interested in unveiling the patterns of phenotypic evolution in
+Neotropical organisms using the toolbox of **modern comparative methods**.
+Since species traits can influence diversification patterns, we often
+integrate analytical tools and macroevolutionary theory to understand species
+distribution at broad spatial scales.
+
+- Faria et al. 2017. *PLoS One.*
+- Franco-Belussi et al. 2017. *Ecology & Evolution.*
+- Leite et al. 2015. *Zoologischer Anzeiger.*
+- Provete et al. 2012. *Zoologica Scripta.*
+
+## Evolutionary morphology of Neotropical anuran larvae
+
+The morphological diversity of tadpoles is astonishing. The role of tadpoles
+in freshwater ecosystems has been challenged by recent studies using stable
+isotopes (Schiesari et al. 2009 *Freshwater Biology*; Altig et al. 2007
+*Freshwater Biology*). Both the **internal and external morphology** of
+tadpoles influence habitat use, food acquisition, diet composition, and
+several other ecological aspects — including their role in ecosystem
+functioning.
+
+Studying the morphology of tadpoles in an evolutionary context can therefore
+help us understand community patterns and freshwater ecosystem functioning.

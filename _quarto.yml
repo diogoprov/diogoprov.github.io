@@ -1,0 +1,71 @@
+project:
+  type: website
+  output-dir: docs   # GitHub Pages serves from /docs
+  render:
+    - "*.qmd"
+    - "!_archive_alban_template/"
+    - "!README.md"
+
+website:
+  title: "Biodiversity Synthesis Lab"
+  description: "Lab of Diogo B. Provete at UFMS — community ecology, eco-evolutionary dynamics, freshwater metacommunities."
+  site-url: "https://diogoprov.github.io/"
+  favicon: assets/favicon.png
+  open-graph: true
+  twitter-card: true
+
+  navbar:
+    background: light
+    pinned: true
+    collapse-below: lg
+    logo: assets/favicon.png
+    left:
+      - href: index.qmd
+        text: Home
+      - href: research.qmd
+        text: Research
+      - href: publications.qmd
+        text: Publications
+      - href: people.qmd
+        text: People
+      - href: teaching.qmd
+        text: Teaching
+      - href: opportunities.qmd
+        text: Opportunities
+      - href: projects.qmd
+        text: Projects
+      - href: cv.qmd
+        text: CV
+      - text: Brazilian Tadpoles
+        href: "https://diogoprov.github.io/Brazilian-Tadpoles-5.0/"
+        target: _blank
+    right:
+      - icon: github
+        href: "https://github.com/diogoprov"
+        aria-label: GitHub
+      - icon: envelope
+        href: "mailto:diogo.provete@ufms.br"
+        aria-label: Email
+
+  page-footer:
+    background: light
+    left: |
+      © Diogo B. Provete · Biodiversity Synthesis Lab · Instituto de Biociências, UFMS
+    right: |
+      Built with [Quarto](https://quarto.org).
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    css: styles.css
+    toc: true
+    toc-location: right
+    toc-depth: 3
+    code-link: true
+    anchor-sections: true
+    smooth-scroll: true
+    link-external-newwindow: true
+
+editor: source

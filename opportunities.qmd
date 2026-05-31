@@ -1,0 +1,94 @@
+---
+title: "Join us"
+subtitle: "Current opportunities for prospective students"
+toc: true
+---
+
+## Funded project — urban eco-evolutionary dynamics
+
+We received three years of funding (**BRL 99,000**) from the Brazilian
+National Council for Scientific and Technological Development (CNPq) to work
+on **eco-evolutionary dynamics in urban ecosystems in Brazil**. One PhD and
+one Master's student are already testing the effects of landscape context
+and local variables on phenotypic traits (morphometric and bioacoustic) of
+frogs along an urbanisation gradient.
+
+The project has four co-PIs from different institutions: **Andros T.
+Gianuca** (UFRN), **Fernando R. da Silva** (UFSCar), **Michel V. Garey**
+(UNILA), **Franco L. Souza** (UFMS), and **Fabio Angeoletto** (UFR).
+
+We need more people to reach our goals — if you'd like to join the team as
+a Master's or PhD student, please get in touch with Diogo or any other
+member of the team.
+
+## Message for prospective students
+
+I'm currently **recruiting graduate students**. If you've browsed the lab
+page, liked what you found, and would like to join the lab as an undergrad,
+Master's, or PhD student, please send me an email
+(`diogo.provete[at]ufms.br`) telling me about yourself, your research
+interests, your experience, and your goals.
+
+I can supervise graduate students in the [Ecology and Conservation graduate
+program](https://ppgec.ufms.br) and in Animal Biology at UFMS — check their
+website for deadlines and admission details.
+
+I'm always interested in meeting and talking to people about ecology,
+evolution, and science in general.
+
+### Recommended reading
+
+- [Marco Mello — convencendo o orientador](https://marcoarmello.wordpress.com/2015/08/12/convencendoorientador/)
+  (highly recommended, especially for undergraduates thinking about
+  approaching a potential advisor — in Portuguese)
+- [Fifteen questions to ask before attending grad school](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/bes2.70047)
+- [What to bring to a meeting with your advisor](http://www.avasthilab.org/2017/03/14/what-to-bring-to-a-meeting-with-your-advisor/)
+- [Dicas para quem deseja ingressar na carreira acadêmica ainda na graduação](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/bes2.1745)
+
+## Available resources
+
+Our lab has access to several facilities at INBIO (UFMS):
+
+- **Field station in the Pantanal** — [Base de Estudos do Pantanal](https://propp.ufms.br/coordenadorias/base-de-estudos-do-pantanal/)
+- **Multi-user molecular biology and image labs** —
+  [stereomicroscope, light microscope, and SEM](https://ppgec.ufms.br/facilidadeslaboratorios/)
+- **Natural history collections** — [Zoology](https://ccbs.ufms.br/colecao-zoologica/)
+  and [Herbarium](https://ccbs.ufms.br/herbariocgms/), with several hundred
+  catalogued specimens
+- **LTER study site** at the Bodoquena Plateau —
+  [PELD Bodoquena](http://peldbodoquena.wixsite.com/home)
+- **High-performance computing cluster** at the
+  [School of Computer Science](https://lscad.facom.ufms.br/~wiki/index.php/Home)
+
+## Our core values
+
+A research program in community ecology
+([Werner 1998](https://academic.oup.com/book/51110/chapter-abstract/421887314))
+should rest on three pillars:
+
+1. **Quantitative natural history** ([Futuyma 1998](https://www.journals.uchicago.edu/doi/abs/10.1086/286097);
+   [Underwood et al. 2000](https://www.sciencedirect.com/science/article/pii/S0022098100001817))
+2. **Field and/or laboratory experimentation** (Underwood 1990;
+   [1991](https://www.cambridge.org/core/journals/journal-of-the-marine-biological-association-of-the-united-kingdom/article/abs/logic-of-ecological-experiments-a-case-history-from-studies-of-the-distribution-of-macroalgae-on-rocky-intertidal-shores/35E1B7A604216BCC17DD9A249ED352A9))
+3. **Modelling** ([Levins 1966](https://www.jstor.org/stable/27836590))
+
+Field observations reveal patterns (Levin 1978;
+[1992](https://esajournals.onlinelibrary.wiley.com/doi/abs/10.2307/1941447)),
+but only experiments uncover the [mechanisms](http://plato.stanford.edu/entries/science-mechanisms/)
+producing them ([Werner 1998](https://academic.oup.com/book/51110/chapter-abstract/421887314)).
+Model-building is essential because it lets us expand our view of the study
+system and turn ecology into a predictive science.
+
+Other influential papers that shaped our thinking (chronological):
+[Brown 1995](http://ifile.it/dpxqf3v/brown__-_macroecology.pdf),
+[Lawton 1999](https://www.jstor.org/stable/3546712),
+[Hubbell 2001](http://ecologia.ib.usp.br/bie5778/lib/exe/fetch.php?media=hubbell2001.pdf),
+[Simberloff 2004](https://www.journals.uchicago.edu/doi/full/10.1086/420777),
+[Roughgarden 2009](https://link.springer.com/article/10.1007/s10539-009-9164-z),
+[Scheiner & Willig 2008](https://link.springer.com/article/10.1007/s12080-007-0002-0),
+and [Vellend 2010](https://sites.google.com/site/diogoprovetepage/pdf-s/Vellend2010.QRBiol.thetheoryofcommunityecology.PDF).
+
+We strive to make our science as **open as possible**. We always post
+preprints to public repositories — there are many advantages, [especially
+for early-career researchers](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000151),
+including [increased citations](https://elifesciences.org/articles/52646).

@@ -1,0 +1,88 @@
+---
+title: "About me"
+title-block-banner: "assets/images/landscape_cundinamarca.jpg"
+output-file: "index.html"
+lang: "en-gb"
+image: "assets/images/portrait_with_scarf.jpeg"
+toc: false
+about:
+  id: personal-section
+  template: trestles
+  links:
+  - icon: envelope
+    text: Email
+    href: mailto:sagouis@pm.me
+  - icon: github
+    text: Github
+    href: https://github.com/albansagouis
+  - icon: box-seam
+    text: Zenodo
+    href: https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Sagouis%2C%20Alban%22&l=list&p=1&s=10&sort=bestmatch
+  - icon: boxes
+    text: "ORCID 0000-0002-3827-1063"
+    href: https://orcid.org/0000-0002-3827-1063
+  - icon: bank
+    text: ResearchGate
+    href: https://www.researchgate.net/profile/Alban-Sagouis
+  - icon: building
+    text: iDiv
+    href: https://www.idiv.de/en/profile/1244.html
+  - icon: linkedin
+    text: Linkedin
+    href: https://www.linkedin.com/in/alban-sagouis-567886283/
+      
+---
+
+[//]: # (This style section configures the size of the image banner)
+<style>
+#title-block-header {
+  margin-block-end: 1rem;
+  position: relative;
+  margin-top: 3px;
+  height: 280px;
+}
+
+.quarto-title-banner {
+  margin-block-end: 1rem;
+  position: relative;
+  margin-top: -30px;
+  height: 150%;
+}
+</style>
+
+[//]: # (https://quarto.org/docs/websites/website-about.html#partial-page-content)
+:::{#personal-section}
+
+My name is Alban Sagouis and this is my personal professional website.
+
+There is a [dynamic CV](cv.qmd) that aggregates my blog posts described as professional *experiences* and also blog posts about photography and other topics.
+
+### Current job
+
+I currently work at iDiv, the German Biodiversity Synthesis Center in [Jonathan Chase's group: Biodiversity Synthesis](https://www.idiv.de/en/groups-and-people/core-groups/synthesis.html).
+
+As a Scientific programmer:
+
+1.  I extract, aggregate, restructure, check and standardise data from the literature.
+2.  I assist colleagues with R problems.
+3.  I implement and encourage scientific software reproducibility practices, notably containerisation and automatic testing.
+4.  I frequently talk about how great is the [`renv`](https://rstudio.github.io/renv/index.html) package.
+5.  I use all of the above to build and grow research compendia extracting, restructuring, standardising and checking data in a documented and reproducible environment, publishing and archiving code and data.
+6.  I write monthly newsletters to my colleagues which you can find [here](posts/tech-news/2023-07-21-tech-news-1/index.qmd).
+7.  I occasionally build a package of functions used for a specific project such as the [`sRealmTools`](https://github.com/sRealmWG/sRealmTools) package or [`BioTIMEr`](https://github.com/bioTIMEHub/BioTIMEr).
+8.  I co-maintain [`mobsim`](https://github.com/MoBiodiv/mobsim), a community simulation R package that we use for work, for [teaching](https://github.com/chase-lab/biodiv-patterns-course-2024/tree/main/week%202/3%20-%20Wednesday) and published on [CRAN](https://cran.r-project.org/package=mobsim).
+
+:::
+
+### Other activities
+
+With [rOpenSci](https://ropensci.org), I maintain or co-maintain [`parzer`](https://docs.ropensci.org/parzer/) and [`rgnparser`](https://docs.ropensci.org/rgnparser/).
+
+### Building this website
+
+I initially used Jekyll and the template Minimal Mistake by Michael Rose and
+developed and built locally in Visual Studio Code. I wrote about this process in
+[a blog post](posts/2024-01-10-website-building-1/index.qmd). 
+
+This version of the website was built using Quarto which seems easier to me and 
+better integrated in my workflow.

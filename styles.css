@@ -1,0 +1,246 @@
+/* =========================================================
+   Biodiversity Synthesis Lab — minimal academic styling
+   Inspired by EvolEcolGroup (Cambridge) and Masiello Group:
+   - top-bar minimal navigation
+   - group banner instead of personal portrait
+   - clean welcome block
+   - people as compact cards with link to individual page
+   ========================================================= */
+
+:root {
+  --bsl-accent: #1c6e8c;          /* deep teal — water/biodiversity */
+  --bsl-accent-dark: #144f64;
+  --bsl-muted: #6c757d;
+  --bsl-bg-soft: #f7f9fb;
+  --bsl-border: #e6ebef;
+}
+
+/* --- Navbar: thin, light, academic --- */
+.navbar {
+  border-bottom: 1px solid var(--bsl-border);
+  padding-top: .4rem;
+  padding-bottom: .4rem;
+  font-size: .95rem;
+  background-color: #fff !important;
+}
+.navbar-brand {
+  font-weight: 600;
+  letter-spacing: .2px;
+  font-size: 1.05rem;
+}
+.navbar .nav-link { font-weight: 500; color: #2d3748; }
+.navbar .nav-link:hover,
+.navbar .nav-link:focus { color: var(--bsl-accent); }
+.navbar .navbar-toggler { border: none; }
+
+/* --- Links --- */
+a { color: var(--bsl-accent); text-decoration: none; }
+a:hover { color: var(--bsl-accent-dark); text-decoration: underline; }
+
+/* --- Body --- */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+               Helvetica, Arial, "Liberation Sans", sans-serif;
+  line-height: 1.65;
+  color: #2d3748;
+}
+
+h1, h2, h3, h4 { font-weight: 600; letter-spacing: -.01em; }
+h2 {
+  margin-top: 2.2rem;
+  padding-bottom: .35rem;
+  border-bottom: 1px solid var(--bsl-border);
+}
+
+/* --- Home: lab banner (full-width image at the top) --- */
+.lab-banner {
+  margin: 0 auto 1.5rem;
+  max-width: 1200px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+.banner-img {
+  width: 100%;
+  height: auto;
+  max-height: 380px;
+  object-fit: cover;
+  display: block;
+}
+
+/* --- Home: welcome block (centered, readable width) --- */
+.lab-welcome {
+  max-width: 760px;
+  margin: 0 auto 2.5rem;
+  padding: 0 1rem;
+  text-align: left;
+}
+.lab-welcome h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  border: none;
+  margin-bottom: 1rem;
+}
+.lab-welcome .btn {
+  margin-right: .4rem;
+  margin-top: .8rem;
+  border-radius: 4px;
+  font-weight: 500;
+}
+.lab-welcome .btn-outline-primary {
+  color: var(--bsl-accent);
+  border-color: var(--bsl-accent);
+}
+.lab-welcome .btn-outline-primary:hover {
+  background: var(--bsl-accent);
+  color: #fff;
+  border-color: var(--bsl-accent);
+  text-decoration: none;
+}
+
+/* --- People: compact cards (EvolEcolGroup-style) --- */
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0 2rem;
+}
+.person-card {
+  border: 1px solid var(--bsl-border);
+  border-radius: 8px;
+  padding: 1.1rem;
+  background: #fff;
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.person-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,.05);
+  border-color: var(--bsl-accent);
+}
+.person-card img {
+  width: 96px; height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto .8rem;
+  background: var(--bsl-bg-soft);
+  border: 2px solid var(--bsl-border);
+}
+.person-card .name {
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0 0 .15rem;
+  color: #2d3748;
+}
+.person-card .role {
+  color: var(--bsl-muted);
+  font-size: .85rem;
+  margin: 0 0 .6rem;
+  line-height: 1.35;
+}
+.person-card .topic {
+  font-size: .88rem;
+  margin: 0;
+  color: #4a5568;
+}
+.person-card a.profile-link {
+  display: inline-block;
+  margin-top: .6rem;
+  font-size: .85rem;
+  font-weight: 500;
+}
+
+/* --- PI block (more prominent than other members) --- */
+.pi-block {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 1.8rem;
+  align-items: start;
+  padding: 1.5rem 0;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--bsl-border);
+}
+.pi-block img {
+  width: 100%;
+  border-radius: 8px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+.pi-block .pi-name { font-size: 1.5rem; font-weight: 600; margin: 0; }
+.pi-block .pi-role { color: var(--bsl-muted); margin: .15rem 0 .8rem; font-size: 1rem; }
+.pi-block .social-links { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .8rem; }
+.pi-block .social-links a {
+  display: inline-flex; align-items: center; gap: .35rem;
+  padding: .3rem .7rem;
+  border: 1px solid #d0d7de;
+  border-radius: 999px;
+  color: #24292f;
+  background: #fff;
+  font-size: .85rem;
+}
+.pi-block .social-links a:hover {
+  background: var(--bsl-accent);
+  color: #fff;
+  border-color: var(--bsl-accent);
+  text-decoration: none;
+}
+@media (max-width: 720px) {
+  .pi-block { grid-template-columns: 1fr; text-align: center; }
+  .pi-block img { max-width: 200px; margin: 0 auto; }
+  .pi-block .social-links { justify-content: center; }
+}
+
+/* --- Alumni table --- */
+.alumni-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .92rem;
+}
+.alumni-table th, .alumni-table td {
+  padding: .55rem .8rem;
+  border-bottom: 1px solid var(--bsl-border);
+  text-align: left;
+  vertical-align: top;
+}
+.alumni-table th {
+  background: var(--bsl-bg-soft);
+  font-weight: 600;
+}
+
+/* --- Publications: tighter spacing, year headers --- */
+.pub-list h3 {
+  margin-top: 1.8rem;
+  padding-bottom: .3rem;
+  font-weight: 700;
+  color: var(--bsl-accent);
+  border-bottom: 1px solid var(--bsl-border);
+  font-size: 1.15rem;
+}
+.pub-list p {
+  margin: 0 0 .9rem;
+  padding-left: 1.2rem;
+  text-indent: -1.2rem;
+}
+
+/* --- Quote / callout --- */
+blockquote {
+  border-left: 4px solid var(--bsl-accent);
+  padding: .6rem 1rem;
+  color: #495057;
+  background: var(--bsl-bg-soft);
+  font-style: italic;
+  margin: 1.2rem 0;
+}
+
+/* --- News listing tweaks --- */
+.quarto-listing .listing-title { font-size: 1.05rem; }
+.quarto-listing .listing-date { color: var(--bsl-muted); font-size: .85rem; }
+
+/* --- TOC: discrete --- */
+#TOC, .toc-active a { font-size: .9rem; }
+
+/* --- Footer --- */
+.nav-footer { border-top: 1px solid var(--bsl-border); font-size: .88rem; color: var(--bsl-muted); }

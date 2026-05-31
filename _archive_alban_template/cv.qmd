@@ -1,0 +1,38 @@
+---
+title: "My CV"
+title-block-banner: "assets/images/landscape_cundinamarca.jpg"
+toc: false
+listing:
+  id: "dynamic-cv"
+  include: 
+    categories: experience
+  type: grid # https://quarto.org/docs/websites/website-listings.html#listing-types
+  sort: "date desc"
+  categories: true
+---
+
+[//]: # (This style section configures the size of the image banner)
+<style>
+#title-block-header {
+  margin-block-end: 1rem;
+  position: relative;
+  margin-top: 3px;
+  height: 280px;
+}
+
+.quarto-title-banner {
+  margin-block-end: 1rem;
+  position: relative;
+  margin-top: -30px;
+  height: 150%;
+}
+</style>
+
+### Here is [my static CV.](/assets/files/CV_2024.pdf)
+
+### And this is my *dynamic* CV!
+
+My blog posts tagged with `experience` are automatically collected here.
+
+:::{@dynamic-cv}
+:::

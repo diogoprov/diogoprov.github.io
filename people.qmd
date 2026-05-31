@@ -1,0 +1,169 @@
+---
+title: "People"
+toc: true
+---
+
+## Principal Investigator
+
+::: {.pi-block}
+<img src="assets/images/people/diogo.jpg" alt="Diogo B. Provete"
+     onerror="this.style.display='none'">
+
+::: {}
+<p class="pi-name">Prof. Dr. Diogo B. Provete</p>
+<p class="pi-role">Associate Professor · Head of Lab</p>
+
+Diogo obtained his Bachelor's in Biological Sciences at the [Federal
+University of Alfenas (UNIFAL)](http://www.unifal-mg.edu.br/) in 2006, his
+Master's in Animal Biology at the [São Paulo State University
+(UNESP)](http://www.unesp.br/eng) in 2010, and his PhD in Ecology and
+Evolution from the [Federal University of Goiás
+(UFG)](http://www.ufg.br/page.php) in 2015. He then spent six months as a
+guest post-doctoral fellow at the [Antonelli lab](http://antonelli-lab.net)
+(University of Gothenburg, Sweden) and eight months as a FAPESP post-doctoral
+fellow at the Federal University of São Carlos at Sorocaba in the lab of
+Fernando R. Silva. He joined the Institute of Biosciences of UFMS in
+September 2017.
+
+::: {.social-links}
+[{{< fa solid envelope >}} Email](mailto:diogo.provete@ufms.br)
+[{{< fa solid file-pdf >}} CV (EN)](https://app.box.com/s/t9qn64ui07ctdsj5j1fnlmp4rpvjshz1)
+[{{< fa solid file-pdf >}} Lattes](http://lattes.cnpq.br/9194853434437963)
+[{{< fa solid sitemap >}} Academic Tree](https://academictree.org/evolution/tree.php?pid=688023)
+[{{< fa brands google-scholar >}} Scholar](https://scholar.google.com.br/citations?user=qDwcLvIAAAAJ)
+[{{< fa brands orcid >}} ORCID](https://orcid.org/0000-0002-0097-0651)
+[{{< fa brands researchgate >}} ResearchGate](https://www.researchgate.net/profile/Diogo-Provete)
+[{{< fa brands github >}} GitHub](https://github.com/diogoprov)
+:::
+:::
+:::
+
+## Current members
+
+::: {.people-grid}
+
+::: {.person-card}
+<img src="assets/images/people/severgnini.jpg" alt="Marcos Severgnini"
+     onerror="this.style.display='none'">
+<p class="name">Marcos Rafael Severgnini</p>
+<p class="role">PhD candidate · Ecologia e Conservação</p>
+<p class="topic">Eco-evolutionary dynamics shaping frog phenotypic and
+life-history traits along urban gradients.</p>
+:::
+
+::: {.person-card}
+<img src="assets/images/people/andreazzi.jpg" alt="Ana Paula Andreazzi"
+     onerror="this.style.display='none'">
+<p class="name">Ana Paula Andreazzi</p>
+<p class="role">PhD student · Biologia Animal</p>
+<p class="topic">How the Urban Heat Island is changing phenotypic traits and
+honey biochemistry of stingless bees.</p>
+:::
+
+::: {.person-card}
+<img src="assets/images/people/hokama.jpg" alt="Daiene Hokama"
+     onerror="this.style.display='none'">
+<p class="name">Daiene L. Hokama Souza</p>
+<p class="role">PhD student · Ecologia e Conservação</p>
+<p class="topic">Ecoacoustics and CNN-based species recognition for Pantanal
+frog metacommunities.</p>
+:::
+
+::: {.person-card}
+<img src="assets/images/people/menezes.jpg" alt="Leandro Menezes"
+     onerror="this.style.display='none'">
+<p class="name">Leandro B. Menezes</p>
+<p class="role">Master's student · Ecologia e Conservação</p>
+<p class="topic">Intra- vs. interspecific phenotypic variation of frogs
+along urban gradients.</p>
+:::
+
+::: {.person-card}
+<img src="assets/images/people/bruna.jpg" alt="Bruna Maria"
+     onerror="this.style.display='none'">
+<p class="name">Bruna Maria</p>
+<p class="role">Master's student</p>
+<p class="topic">Macroecological responses of multiple biodiversity facets
+of frogs to urbanisation in the Atlantic Forest.</p>
+:::
+
+::: {.person-card}
+<img src="assets/images/people/iara.jpg" alt="Iara Coimbra"
+     onerror="this.style.display='none'">
+<p class="name">Iara Coimbra</p>
+<p class="role">Undergraduate researcher</p>
+<p class="topic">Independent research project (funded fellowship, 2025).</p>
+:::
+
+::: {.person-card}
+<img src="assets/images/people/beatriz.jpg" alt="Beatriz Oliveira"
+     onerror="this.style.display='none'">
+<p class="name">Beatriz Oliveira</p>
+<p class="role">Undergraduate researcher</p>
+<p class="topic">Independent research project (funded fellowship, 2025).</p>
+:::
+
+:::
+
+::: {.callout-note}
+**Interested in joining the lab?** Read about
+[opportunities to do research with us](opportunities.qmd).
+:::
+
+## Past members and co-advised students
+
+::: {.people-grid}
+
+::: {.person-card}
+<img src="assets/images/people/moroti.jpg" alt="Matheus Moroti"
+     onerror="this.style.display='none'">
+<p class="name">Dr. Matheus T. Moroti</p>
+<p class="role">Former PhD · Ecologia e Conservação</p>
+<p class="topic">Evolutionary and ecological drivers of vertebrate diversity
+in the Brazilian Atlantic Forest.</p>
+:::
+
+::: {.person-card}
+<img src="assets/images/people/acero.jpg" alt="Adriana Acero-Murcia"
+     onerror="this.style.display='none'">
+<p class="name">Dr. Adriana C. Acero-Murcia</p>
+<p class="role">Former PhD · Ecologia e Conservação</p>
+<p class="topic">Ecomorphology of bat communities in the Bodoquena Plateau
+using geometric morphometrics.</p>
+:::
+
+::: {.person-card}
+<p class="name">Dr. Philip T. Soares</p>
+<p class="role">Former PhD · Ecologia e Conservação</p>
+<p class="topic">How multiple threats (Bd, invasive species) influence
+distribution patterns of Neotropical frogs.</p>
+:::
+
+::: {.person-card}
+<p class="name">Gabriel Tirintan</p>
+<p class="role">Former undergraduate</p>
+<p class="topic">Macroecology of urban bird diversity in Brazil using
+citizen-science data (iNaturalist, eBird).</p>
+:::
+
+::: {.person-card}
+<p class="name">Daniel Din Negre</p>
+<p class="role">Former undergraduate</p>
+<p class="topic">Tadpole community structure at Parque Natural Municipal
+Nascentes de Paranapiacaba (SP).</p>
+:::
+
+::: {.person-card}
+<p class="name">Gabriela B. Leite</p>
+<p class="role">Former undergraduate</p>
+<p class="topic">Comparative testis morphology in Neotropical anurans.</p>
+:::
+
+::: {.person-card}
+<p class="name">Laura Bonin</p>
+<p class="role">Former undergraduate</p>
+<p class="topic">Evolution of echolocation in bats worldwide using
+phylogenetic comparative methods.</p>
+:::
+
+:::
