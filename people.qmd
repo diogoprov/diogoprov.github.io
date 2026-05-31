@@ -27,7 +27,7 @@ September 2017.
 
 ::: {.social-links}
 [{{< fa solid envelope >}} Email](mailto:diogo.provete@ufms.br)
-[{{< fa solid file-pdf >}} CV (EN)](https://app.box.com/s/t9qn64ui07ctdsj5j1fnlmp4rpvjshz1)
+[{{< fa solid file-pdf >}} CV (EN)](assets/cv.pdf)
 [{{< fa solid file-pdf >}} Lattes](http://lattes.cnpq.br/9194853434437963)
 [{{< fa solid sitemap >}} Academic Tree](https://academictree.org/evolution/tree.php?pid=688023)
 [{{< fa brands google-scholar >}} Scholar](https://scholar.google.com.br/citations?user=qDwcLvIAAAAJ)

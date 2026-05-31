@@ -31,9 +31,9 @@ body:has(.cv-page) header#title-block-header { display: none !important; }
 
 .cv-page {
   display: grid;
-  grid-template-columns: 320px minmax(0, 1fr);
+  grid-template-columns: 300px minmax(0, 1fr);
   gap: 0;
-  max-width: 1200px;
+  max-width: 1240px;
   margin: 0 auto;
   background: #fff;
   border: 1px solid var(--cv-content-rule);
@@ -136,29 +136,39 @@ body:has(.cv-page) header#title-block-header { display: none !important; }
   color: var(--cv-sidebar-muted);
 }
 
+/* Research-interest chips: long phrases get their own line, short ones
+   may share a line. inline-block + max-width:100% guarantees they never
+   overflow the sidebar (which would be clipped by .cv-page's overflow). */
 .cv-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .35rem;
+  display: block;
   margin-bottom: .4rem;
+  line-height: 1.7;
 }
 .cv-tags span {
+  display: inline-block;
+  max-width: 100%;
   background: rgba(255,255,255,.08);
   border: 1px solid var(--cv-sidebar-border);
   color: var(--cv-sidebar-text);
-  padding: .22rem .55rem;
+  padding: .22rem .6rem;
+  margin: 0 .25rem .3rem 0;
   border-radius: 999px;
-  font-size: .76rem;
-  line-height: 1.3;
+  font-size: .78rem;
+  line-height: 1.35;
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  box-sizing: border-box;
 }
 
 /* ---------- CONTENT ---------- */
 
 .cv-content {
-  padding: 2.4rem 2.4rem 3rem;
+  padding: 2.4rem 2.6rem 3rem 3.2rem;   /* extra left padding away from sidebar */
   color: #2d3748;
   background: #fff;
   min-width: 0;
+  border-left: 1px solid var(--cv-content-rule); /* subtle visual gutter */
 }
 
 .cv-headline {
@@ -238,13 +248,19 @@ body:has(.cv-page) header#title-block-header { display: none !important; }
 .cv-timeline th:nth-child(2),
 .cv-timeline td:nth-child(2) { color: #2d3748; width: auto; }
 
-/* Publication blocks */
+/* Publication blocks — hanging indent kept INSIDE the paragraph box
+   (use margin-left for the box, text-indent negative for first line).
+   We also clamp text-indent to .9rem so the badge/strong author doesn't
+   bleed visually toward the dark sidebar. */
+.cv-pubs {
+  padding-left: 1.4rem;            /* push the whole block right */
+}
 .cv-pubs p {
   font-size: .92rem;
-  line-height: 1.55;
+  line-height: 1.6;
   margin: 0 0 .85rem;
-  padding-left: 1.2rem;
-  text-indent: -1.2rem;
+  padding-left: 1.4rem;
+  text-indent: -1.4rem;
 }
 .cv-pubs p strong { color: var(--cv-content-strong); }
 
@@ -298,6 +314,7 @@ body:has(.cv-page) header#title-block-header { display: none !important; }
 
 /* ---------- Print ---------- */
 @media print {
+  @page { size: A4; margin: 12mm 9mm; }
   .navbar, .nav-footer, footer, #quarto-header { display: none !important; }
   body { background: #fff !important; }
   .cv-page {
@@ -305,12 +322,61 @@ body:has(.cv-page) header#title-block-header { display: none !important; }
     border: none;
     margin: 0;
     border-radius: 0;
-    grid-template-columns: 280px 1fr;
+    grid-template-columns: 250px 1fr;
   }
-  .cv-sidebar { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  .cv-content { padding: 1.6rem 1.8rem; }
-  h2, h3 { break-after: avoid; }
-  .cv-pubs p, .cv-timeline tr { break-inside: avoid; }
+  .cv-sidebar {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    padding: 1.4rem 1rem 1.6rem;
+    font-size: .82rem;
+  }
+  .cv-photo { width: 130px; height: 130px; margin-bottom: .7rem; }
+  .cv-name { font-size: 1.25rem; }
+  .cv-role { font-size: .8rem; margin-bottom: 1rem; }
+  .cv-sb-title { font-size: .7rem; margin: 1rem 0 .35rem; padding-bottom: .25rem; }
+  .cv-sidebar ul.cv-contact li,
+  .cv-sidebar ul.cv-meta li { margin-bottom: .25rem; font-size: .8rem; }
+  .cv-tags { line-height: 1.5; }
+  .cv-tags span { font-size: .72rem; padding: .15rem .45rem; margin: 0 .2rem .22rem 0; }
+
+  .cv-content {
+    padding: 1.4rem 1.5rem 1.5rem 1.7rem;
+    border-left: 1px solid #e3dccd;
+  }
+  .cv-headline { font-size: 1.55rem; margin-bottom: .15rem; }
+  .cv-tagline { font-size: .85rem; padding-bottom: .6rem; margin-bottom: 1rem; }
+  .cv-content h2 {
+    font-size: 1rem;
+    margin: 1rem 0 .5rem;
+    padding-bottom: .3rem;
+  }
+  .cv-content h3 { font-size: .9rem; margin: .9rem 0 .4rem; }
+
+  .cv-timeline th, .cv-timeline td {
+    padding: .35rem .6rem .35rem 0;
+    font-size: .82rem;
+    line-height: 1.4;
+  }
+  .cv-timeline th:first-child, .cv-timeline td:first-child {
+    width: 110px;
+    padding-right: .9rem;
+    font-size: .78rem;
+  }
+  .cv-pubs { padding-left: 1rem; }
+  .cv-pubs p {
+    font-size: .8rem;
+    line-height: 1.42;
+    margin-bottom: .42rem;
+    padding-left: 1.2rem;
+    text-indent: -1.2rem;
+  }
+  .cv-pub-key { font-size: .72rem; padding: 0 .3rem; }
+  .cv-pubs-legend { font-size: .72rem; padding: .35rem .6rem; margin-bottom: .6rem; }
+  .cv-callout { font-size: .78rem; padding: .55rem .7rem; line-height: 1.42; }
+  .cv-content ul li { font-size: .82rem; line-height: 1.42; margin-bottom: .35rem; }
+
+  h2, h3 { break-after: avoid; page-break-after: avoid; }
+  .cv-pubs p, .cv-timeline tr { break-inside: avoid; page-break-inside: avoid; }
 }
 
 /* ---------- Mobile ---------- */
@@ -321,8 +387,15 @@ body:has(.cv-page) header#title-block-header { display: none !important; }
   }
   .cv-sidebar { padding: 1.6rem 1.2rem 1.8rem; }
   .cv-photo { width: 140px; height: 140px; }
-  .cv-content { padding: 1.5rem 1.2rem 2rem; }
+  .cv-content {
+    padding: 1.5rem 1.2rem 2rem;
+    border-left: none;
+    border-top: 1px solid var(--cv-content-rule);
+  }
   .cv-headline { font-size: 1.7rem; }
+  .cv-timeline th:first-child,
   .cv-timeline td:first-child { width: 110px; padding-right: .7rem; font-size: .85rem; }
-  .cv-timeline td { font-size: .88rem; padding: .55rem .4rem .55rem 0; }
+  .cv-timeline th, .cv-timeline td { font-size: .88rem; padding: .55rem .4rem .55rem 0; }
+  .cv-pubs { padding-left: .6rem; }
+  .cv-pubs p { padding-left: 1.1rem; text-indent: -1.1rem; }
 }

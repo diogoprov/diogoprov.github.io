@@ -29,7 +29,7 @@ include-in-header:
 <li>{{< fa brands orcid >}} [0000-0002-0097-0651](https://orcid.org/0000-0002-0097-0651)</li>
 <li>{{< fa brands google-scholar >}} [Google Scholar](https://scholar.google.com.br/citations?user=qDwcLvIAAAAJ)</li>
 <li>{{< fa brands github >}} [diogoprov](https://github.com/diogoprov)</li>
-<li>{{< fa solid at >}} [provete.bsky.social](https://bsky.app/profile/provete.bsky.social)</li>
+<li>{{< fa brands bluesky >}} [provete.bsky.social](https://bsky.app/profile/provete.bsky.social)</li>
 <li>{{< fa solid location-dot >}} Campo Grande, MS · Brazil — 79002-970</li>
 </ul>
 
