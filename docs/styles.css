@@ -168,6 +168,25 @@ h2 {
   font-size: .85rem;
   font-weight: 500;
 }
+/* Icon row at the bottom of a person-card (Lattes, ORCID, etc.) */
+.person-card .card-links {
+  margin: .7rem 0 0;
+  display: flex;
+  justify-content: center;
+  gap: .8rem;
+  font-size: 1.2rem;
+  margin-top: auto;          /* push to the bottom even when topic is short */
+  padding-top: .6rem;
+}
+.person-card .card-links a {
+  color: var(--bsl-muted);
+  transition: color .15s ease, transform .15s ease;
+}
+.person-card .card-links a:hover {
+  color: var(--bsl-accent);
+  transform: translateY(-1px);
+  text-decoration: none;
+}
 
 /* --- Co-PI cards (collaborators) — no box, round floating portrait --- */
 .copi-grid {

@@ -35,9 +35,10 @@ last_checked <- if (!is.null(m$last_checked)) m$last_checked else "—"
 <h3 class="cv-sb-title">Contact</h3>
 <ul class="cv-contact">
 <li>{{< fa solid envelope >}} [diogo.provete@ufms.br](mailto:diogo.provete@ufms.br)</li>
-<li>{{< fa solid globe >}} [diogoprov.github.io](https://diogoprov.github.io)</li>
-<li>{{< fa brands orcid >}} [0000-0002-0097-0651](https://orcid.org/0000-0002-0097-0651)</li>
-<li>{{< fa brands google-scholar >}} [Google Scholar](https://scholar.google.com.br/citations?user=qDwcLvIAAAAJ)</li>
+<li>{{< fa solid globe >}} [provetelab.org](https://provetelab.org)</li>
+<li><i class="ai ai-orcid"></i> [0000-0002-0097-0651](https://orcid.org/0000-0002-0097-0651)</li>
+<li><i class="ai ai-google-scholar"></i> [Google Scholar](https://scholar.google.com.br/citations?user=qDwcLvIAAAAJ)</li>
+<li><i class="ai ai-lattes"></i> [Lattes](http://lattes.cnpq.br/9194853434437963)</li>
 <li>{{< fa brands github >}} [diogoprov](https://github.com/diogoprov)</li>
 <li>{{< fa brands bluesky >}} [provete.bsky.social](https://bsky.app/profile/provete.bsky.social)</li>
 <li>{{< fa solid location-dot >}} Campo Grande, MS · Brazil — 79002-970</li>

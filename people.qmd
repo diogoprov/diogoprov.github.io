@@ -28,11 +28,11 @@ September 2017.
 ::: {.social-links}
 [{{< fa solid envelope >}} Email](mailto:diogo.provete@ufms.br)
 [{{< fa solid file-pdf >}} CV (EN)](assets/cv.pdf)
-[{{< fa solid file-pdf >}} Lattes](http://lattes.cnpq.br/9194853434437963)
-[{{< fa solid sitemap >}} Academic Tree](https://academictree.org/evolution/tree.php?pid=688023)
-[{{< fa brands google-scholar >}} Scholar](https://scholar.google.com.br/citations?user=qDwcLvIAAAAJ)
-[{{< fa brands orcid >}} ORCID](https://orcid.org/0000-0002-0097-0651)
-[{{< fa brands researchgate >}} ResearchGate](https://www.researchgate.net/profile/Diogo-Provete)
+[<i class="ai ai-lattes"></i> Lattes](http://lattes.cnpq.br/9194853434437963)
+[<i class="ai ai-academia"></i> Academic Tree](https://academictree.org/evolution/tree.php?pid=688023)
+[<i class="ai ai-google-scholar"></i> Scholar](https://scholar.google.com.br/citations?user=qDwcLvIAAAAJ)
+[<i class="ai ai-orcid"></i> ORCID](https://orcid.org/0000-0002-0097-0651)
+[<i class="ai ai-researchgate"></i> ResearchGate](https://www.researchgate.net/profile/Diogo-Provete)
 [{{< fa brands github >}} GitHub](https://github.com/diogoprov)
 :::
 :::
@@ -49,6 +49,9 @@ September 2017.
 <p class="role">PhD student · Biologia Animal</p>
 <p class="topic">How the Urban Heat Island is changing phenotypic traits and
 honey biochemistry of stingless bees.</p>
+<p class="card-links">
+<a href="http://lattes.cnpq.br/7233480915811512" title="Lattes CV"><i class="ai ai-lattes"></i></a>
+</p>
 :::
 
 ::: {.person-card}
@@ -58,6 +61,9 @@ honey biochemistry of stingless bees.</p>
 <p class="role">PhD student · Ecologia e Conservação</p>
 <p class="topic">Ecoacoustics and CNN-based species recognition for Pantanal
 frog metacommunities.</p>
+<p class="card-links">
+<a href="http://lattes.cnpq.br/0761592864682149" title="Lattes CV"><i class="ai ai-lattes"></i></a>
+</p>
 :::
 
 ::: {.person-card}
@@ -67,6 +73,9 @@ frog metacommunities.</p>
 <p class="role">Master's student</p>
 <p class="topic">Macroecological responses of multiple biodiversity facets
 of frogs to urbanisation in the Atlantic Forest.</p>
+<p class="card-links">
+<a href="http://lattes.cnpq.br/5222169874530411" title="Lattes CV"><i class="ai ai-lattes"></i></a>
+</p>
 :::
 
 ::: {.person-card}
@@ -75,6 +84,9 @@ of frogs to urbanisation in the Atlantic Forest.</p>
 <p class="name">Iara Coimbra</p>
 <p class="role">Undergraduate researcher</p>
 <p class="topic">Independent research project (funded fellowship, 2025).</p>
+<p class="card-links">
+<a href="http://lattes.cnpq.br/5952895063234870" title="Lattes CV"><i class="ai ai-lattes"></i></a>
+</p>
 :::
 
 ::: {.person-card}
@@ -83,6 +95,9 @@ of frogs to urbanisation in the Atlantic Forest.</p>
 <p class="name">Beatriz Oliveira</p>
 <p class="role">Undergraduate researcher</p>
 <p class="topic">Independent research project (funded fellowship, 2025).</p>
+<p class="card-links">
+<a href="http://lattes.cnpq.br/3716194579932697" title="Lattes CV"><i class="ai ai-lattes"></i></a>
+</p>
 :::
 
 :::
@@ -103,6 +118,9 @@ of frogs to urbanisation in the Atlantic Forest.</p>
 <p class="role">PhD candidate · Ecologia e Conservação</p>
 <p class="topic">Eco-evolutionary dynamics shaping frog phenotypic and
 life-history traits along urban gradients.</p>
+<p class="card-links">
+<a href="http://lattes.cnpq.br/6261003504491115" title="Lattes CV"><i class="ai ai-lattes"></i></a>
+</p>
 :::
 
 ::: {.person-card}
@@ -112,6 +130,9 @@ life-history traits along urban gradients.</p>
 <p class="role">Master's student · Ecologia e Conservação</p>
 <p class="topic">Intra- vs. interspecific phenotypic variation of frogs
 along urban gradients.</p>
+<p class="card-links">
+<a href="http://lattes.cnpq.br/1991879172038018" title="Lattes CV"><i class="ai ai-lattes"></i></a>
+</p>
 :::
 
 ::: {.person-card}
@@ -121,6 +142,9 @@ along urban gradients.</p>
 <p class="role">Former PhD · Ecologia e Conservação</p>
 <p class="topic">Evolutionary and ecological drivers of vertebrate diversity
 in the Brazilian Atlantic Forest.</p>
+<p class="card-links">
+<a href="http://lattes.cnpq.br/3037868379750378" title="Lattes CV"><i class="ai ai-lattes"></i></a>
+</p>
 :::
 
 ::: {.person-card}
@@ -130,6 +154,9 @@ in the Brazilian Atlantic Forest.</p>
 <p class="role">Former PhD · Ecologia e Conservação</p>
 <p class="topic">Ecomorphology of bat communities in the Bodoquena Plateau
 using geometric morphometrics.</p>
+<p class="card-links">
+<a href="http://lattes.cnpq.br/2151570245603214" title="Lattes CV"><i class="ai ai-lattes"></i></a>
+</p>
 :::
 
 ::: {.person-card}
@@ -139,6 +166,9 @@ using geometric morphometrics.</p>
 <p class="role">Former PhD · Ecologia e Conservação</p>
 <p class="topic">How multiple threats (Bd, invasive species) influence
 distribution patterns of Neotropical frogs.</p>
+<p class="card-links">
+<a href="http://lattes.cnpq.br/9275923791121356" title="Lattes CV"><i class="ai ai-lattes"></i></a>
+</p>
 :::
 
 ::: {.person-card}
