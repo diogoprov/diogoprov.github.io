@@ -13,3 +13,5 @@ _freeze/
 _site/
 
 **/*.quarto_ipynb
+.Renviron
+.Rhistory
