@@ -50,6 +50,10 @@ if (!is.null(res)) {
 }
 
 # --- Scopus -------------------------------------------------------------
+# Key is read from the SCOPUS_API_KEY environment variable.
+# Local Mac:     add  SCOPUS_API_KEY=xxxxxxxx  to ~/.Renviron and restart R.
+# GitHub CI:     Settings → Secrets → Actions → new secret named SCOPUS_API_KEY.
+# NEVER hardcode the key in this file — it goes public on push.
 SCOPUS_KEY <- Sys.getenv("SCOPUS_API_KEY")
 if (nzchar(SCOPUS_KEY)) {
   res <- tryCatch({
@@ -75,30 +79,13 @@ if (nzchar(SCOPUS_KEY)) {
 }
 
 # --- Web of Science ------------------------------------------------------
-WOS_KEY <- Sys.getenv("WOS_API_KEY")
-if (nzchar(WOS_KEY)) {
-  res <- tryCatch({
-    # Researcher API: /v1/researchers/{rid}
-    url <- sprintf("https://api.clarivate.com/apis/wos-researcher/v1/researchers/%s", WOS_ID)
-    h   <- httr::add_headers("X-ApiKey" = WOS_KEY, "Accept" = "application/json")
-    r   <- httr::GET(url, h)
-    httr::stop_for_status(r)
-    d   <- httr::content(r)
-    list(
-      h_index   = as.integer(d$metrics$hIndex),
-      citations = as.integer(d$metrics$sumOfTimesCited),
-      papers    = as.integer(d$metrics$documentsCount)
-    )
-  }, error = function(e) { say("WoS failed:", conditionMessage(e)); NULL })
-  if (!is.null(res)) {
-    m$wos$h_index   <- res$h_index
-    m$wos$citations <- res$citations
-    m$wos$papers    <- res$papers
-    say("WoS OK — h =", res$h_index)
-  }
-} else {
-  say("WoS: WOS_API_KEY not set — skipping.")
-}
+# Disabled: the WoS Researcher API requires a Clarivate subscription that
+# isn't available without institutional access. Update wos: values in
+# assets/metrics.yml by hand if/when you have the numbers.
+# (Block kept commented for future use if a key becomes available.)
+# WOS_KEY <- Sys.getenv("WOS_API_KEY")
+# if (nzchar(WOS_KEY)) { ... }
+say("WoS: API requires subscription — edit metrics.yml manually if needed.")
 
 m$last_checked <- format(Sys.Date(), "%B %Y")
 yaml::write_yaml(m, path)

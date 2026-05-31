@@ -35,14 +35,18 @@ jobs:
       - name: Install Chrome (used by pagedown for HTML → PDF)
         uses: browser-actions/setup-chrome@v1
 
-      - name: Install R packages
+      - name: Restore R packages from renv.lock
+        uses: r-lib/actions/setup-renv@v2
+        # Falls back gracefully if renv/ isn't initialised yet on the repo.
+        continue-on-error: true
+
+      - name: Fallback install if renv not set up
         run: |
-          Rscript -e 'install.packages(c("yaml","pagedown","chromote","scholar","httr"), repos="https://cloud.r-project.org")'
+          Rscript -e 'if (!requireNamespace("yaml", quietly=TRUE)) install.packages(c("yaml","pagedown","chromote","scholar","httr"), repos="https://cloud.r-project.org")'
 
       - name: Refresh citation metrics (best-effort, never fails the build)
         env:
           SCOPUS_API_KEY: ${{ secrets.SCOPUS_API_KEY }}
-          WOS_API_KEY:    ${{ secrets.WOS_API_KEY }}
         run: Rscript scripts/fetch_metrics.R || true
 
       - name: Render site

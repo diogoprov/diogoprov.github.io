@@ -1,0 +1,21 @@
+[
+  {
+    "listing": "/index.html",
+    "items": [
+      "/news/index.html",
+      "/news/2025-09-15-iara-beatriz/index.html",
+      "/news/2025-02-15-bruna-master/index.html",
+      "/news/2024-10-01-fundect-grant/index.html",
+      "/news/2024-07-15-ana-paula-joins/index.html"
+    ]
+  },
+  {
+    "listing": "/news/index.html",
+    "items": [
+      "/news/2025-09-15-iara-beatriz/index.html",
+      "/news/2025-02-15-bruna-master/index.html",
+      "/news/2024-10-01-fundect-grant/index.html",
+      "/news/2024-07-15-ana-paula-joins/index.html"
+    ]
+  }
+]

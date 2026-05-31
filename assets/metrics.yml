@@ -1,21 +1,14 @@
-# Citation metrics rendered in the header of cv.qmd.
-# Populated by scripts/fetch_metrics.R (run locally) or edited by hand.
-# Use 0 (or omit) to render an em-dash placeholder instead of a number.
-
 scholar:
-  h_index: 0
-  i10_index: 0
-  citations_total: 0
+  h_index: 26
+  i10_index: 44
+  citations_total: 1847
   citations_5y: 0
-
 wos:
-  h_index: 0
-  citations: 0
-  papers: 0
-
+  h_index: 18
+  citations: 964
+  papers: 70
 scopus:
-  h_index: 0
-  citations: 0
-  papers: 0
-
-last_checked: "—"
+  h_index: 19
+  citations: 1,126
+  papers: 64
+last_checked: May 2026
