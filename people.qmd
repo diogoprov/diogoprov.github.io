@@ -43,15 +43,6 @@ September 2017.
 ::: {.people-grid}
 
 ::: {.person-card}
-<img src="assets/images/people/severgnini.jpg" alt="Marcos Severgnini"
-     onerror="this.style.display='none'">
-<p class="name">Marcos Rafael Severgnini</p>
-<p class="role">PhD candidate · Ecologia e Conservação</p>
-<p class="topic">Eco-evolutionary dynamics shaping frog phenotypic and
-life-history traits along urban gradients.</p>
-:::
-
-::: {.person-card}
 <img src="assets/images/people/andreazzi.jpg" alt="Ana Paula Andreazzi"
      onerror="this.style.display='none'">
 <p class="name">Ana Paula Andreazzi</p>
@@ -67,15 +58,6 @@ honey biochemistry of stingless bees.</p>
 <p class="role">PhD student · Ecologia e Conservação</p>
 <p class="topic">Ecoacoustics and CNN-based species recognition for Pantanal
 frog metacommunities.</p>
-:::
-
-::: {.person-card}
-<img src="assets/images/people/menezes.jpg" alt="Leandro Menezes"
-     onerror="this.style.display='none'">
-<p class="name">Leandro B. Menezes</p>
-<p class="role">Master's student · Ecologia e Conservação</p>
-<p class="topic">Intra- vs. interspecific phenotypic variation of frogs
-along urban gradients.</p>
 :::
 
 ::: {.person-card}
@@ -115,6 +97,24 @@ of frogs to urbanisation in the Atlantic Forest.</p>
 ::: {.people-grid}
 
 ::: {.person-card}
+<img src="assets/images/people/severgnini.jpg" alt="Marcos Severgnini"
+     onerror="this.style.display='none'">
+<p class="name">Marcos Rafael Severgnini</p>
+<p class="role">PhD candidate · Ecologia e Conservação</p>
+<p class="topic">Eco-evolutionary dynamics shaping frog phenotypic and
+life-history traits along urban gradients.</p>
+:::
+
+::: {.person-card}
+<img src="assets/images/people/menezes.jpg" alt="Leandro Menezes"
+     onerror="this.style.display='none'">
+<p class="name">Leandro B. Menezes</p>
+<p class="role">Master's student · Ecologia e Conservação</p>
+<p class="topic">Intra- vs. interspecific phenotypic variation of frogs
+along urban gradients.</p>
+:::
+
+::: {.person-card}
 <img src="assets/images/people/moroti.jpg" alt="Matheus Moroti"
      onerror="this.style.display='none'">
 <p class="name">Dr. Matheus T. Moroti</p>
@@ -133,6 +133,8 @@ using geometric morphometrics.</p>
 :::
 
 ::: {.person-card}
+<img src="assets/images/people/soares.jpg" alt="Philip T. Soares"
+     onerror="this.style.display='none'">
 <p class="name">Dr. Philip T. Soares</p>
 <p class="role">Former PhD · Ecologia e Conservação</p>
 <p class="topic">How multiple threats (Bd, invasive species) influence
@@ -140,6 +142,8 @@ distribution patterns of Neotropical frogs.</p>
 :::
 
 ::: {.person-card}
+<img src="assets/images/people/tirintan.jpg" alt="Gabriel Tirintan"
+     onerror="this.style.display='none'">
 <p class="name">Gabriel Tirintan</p>
 <p class="role">Former undergraduate</p>
 <p class="topic">Macroecology of urban bird diversity in Brazil using
@@ -147,6 +151,8 @@ citizen-science data (iNaturalist, eBird).</p>
 :::
 
 ::: {.person-card}
+<img src="assets/images/people/negre.jpg" alt="Daniel Din Negre"
+     onerror="this.style.display='none'">
 <p class="name">Daniel Din Negre</p>
 <p class="role">Former undergraduate</p>
 <p class="topic">Tadpole community structure at Parque Natural Municipal
@@ -154,12 +160,16 @@ Nascentes de Paranapiacaba (SP).</p>
 :::
 
 ::: {.person-card}
+<img src="assets/images/people/leite.jpg" alt="Gabriela B. Leite"
+     onerror="this.style.display='none'">
 <p class="name">Gabriela B. Leite</p>
 <p class="role">Former undergraduate</p>
 <p class="topic">Comparative testis morphology in Neotropical anurans.</p>
 :::
 
 ::: {.person-card}
+<img src="assets/images/people/bonin.jpg" alt="Laura Bonin"
+     onerror="this.style.display='none'">
 <p class="name">Laura Bonin</p>
 <p class="role">Former undergraduate</p>
 <p class="topic">Evolution of echolocation in bats worldwide using

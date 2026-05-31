@@ -19,35 +19,37 @@ frogs!
 
 ### Team
 
-::: {.people-grid}
+::: {.copi-grid}
 
-::: {.person-card}
-<img src="assets/images/people/fernando.jpg" alt="Fernando R. da Silva"
+::: {.copi-card}
+<img src="assets/images/people/fernando.png" alt="Fernando R. da Silva"
      onerror="this.style.display='none'">
 <p class="name">Fernando R. da Silva</p>
 <p class="role">Co-PI · UFSCar</p>
 :::
 
-::: {.person-card}
-<img src="assets/images/people/franco.jpg" alt="Franco Souza"
+::: {.copi-card}
+<img src="assets/images/people/franco.png" alt="Franco Souza"
      onerror="this.style.display='none'">
 <p class="name">Franco Souza</p>
 <p class="role">Co-PI · UFMS</p>
 :::
 
-::: {.person-card}
-<img src="assets/images/people/garey.jpg" alt="Michel V. Garey"
+::: {.copi-card}
+<img src="assets/images/people/garey.png" alt="Michel V. Garey"
      onerror="this.style.display='none'">
 <p class="name">Michel V. Garey</p>
 <p class="role">Co-PI · UNILA</p>
 :::
 
-::: {.person-card}
+::: {.copi-card}
+<img src="assets/images/people/andros.png" alt="Andros T. Gianuca"
+     onerror="this.style.display='none'">
 <p class="name">Andros T. Gianuca</p>
 <p class="role">Co-PI · UFRN</p>
 :::
 
-::: {.person-card}
+::: {.copi-card}
 <p class="name">Fabio Angeoletto</p>
 <p class="role">Co-PI · UFR</p>
 :::

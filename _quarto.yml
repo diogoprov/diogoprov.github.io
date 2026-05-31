@@ -18,7 +18,8 @@ website:
     background: light
     pinned: true
     collapse-below: lg
-    logo: assets/favicon.png
+    logo: assets/navbar-logo.png
+    logo-alt: "Biodiversity Synthesis Lab logo"
     left:
       - href: index.qmd
         text: Home

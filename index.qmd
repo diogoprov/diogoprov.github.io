@@ -15,10 +15,8 @@ listing:
     feed: true
 ---
 
-::: {.lab-banner}
-<!-- Drop a wide group/landscape photo at assets/images/banner.jpg.
-     Suggestions: a Pantanal/Cerrado landscape, a pond, or fieldwork shot. -->
-![](assets/images/banner.jpg){.banner-img fig-alt="Biodiversity Synthesis Lab banner" onerror="this.style.display='none'"}
+::: {.lab-hero-logo}
+![Biodiversity Synthesis Lab](assets/logo-horizontal.png){.hero-logo fig-alt="Biodiversity Synthesis Lab logo"}
 :::
 
 ::: {.lab-welcome}
