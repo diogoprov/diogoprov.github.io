@@ -70,7 +70,7 @@ frog metacommunities.</p>
 <img src="assets/images/people/bruna.jpg" alt="Bruna Maria"
      onerror="this.style.display='none'">
 <p class="name">Bruna Maria</p>
-<p class="role">Master's student</p>
+<p class="role">Master's student · Ecologia e Conservação</p>
 <p class="topic">Macroecological responses of multiple biodiversity facets
 of frogs to urbanisation in the Atlantic Forest.</p>
 <p class="card-links">
@@ -82,8 +82,8 @@ of frogs to urbanisation in the Atlantic Forest.</p>
 <img src="assets/images/people/iara.jpg" alt="Iara Coimbra"
      onerror="this.style.display='none'">
 <p class="name">Iara Coimbra</p>
-<p class="role">Undergraduate researcher</p>
-<p class="topic">Independent research project (funded fellowship, 2025).</p>
+<p class="role">Undergrad researcher</p>
+<p class="topic">Independent research project (CNPq fellowship, 2025).</p>
 <p class="card-links">
 <a href="http://lattes.cnpq.br/5952895063234870" title="Lattes CV"><i class="ai ai-lattes"></i></a>
 </p>
@@ -93,8 +93,8 @@ of frogs to urbanisation in the Atlantic Forest.</p>
 <img src="assets/images/people/beatriz.jpg" alt="Beatriz Oliveira"
      onerror="this.style.display='none'">
 <p class="name">Beatriz Oliveira</p>
-<p class="role">Undergraduate researcher</p>
-<p class="topic">Independent research project (funded fellowship, 2025).</p>
+<p class="role">Undergrad researcher</p>
+<p class="topic">Independent research project (FUNDECT fellowship, 2025).</p>
 <p class="card-links">
 <a href="http://lattes.cnpq.br/3716194579932697" title="Lattes CV"><i class="ai ai-lattes"></i></a>
 </p>
@@ -115,7 +115,7 @@ of frogs to urbanisation in the Atlantic Forest.</p>
 <img src="assets/images/people/severgnini.jpg" alt="Marcos Severgnini"
      onerror="this.style.display='none'">
 <p class="name">Marcos Rafael Severgnini</p>
-<p class="role">PhD candidate · Ecologia e Conservação</p>
+<p class="role">former PhD student · Ecologia e Conservação</p>
 <p class="topic">Eco-evolutionary dynamics shaping frog phenotypic and
 life-history traits along urban gradients.</p>
 <p class="card-links">
@@ -175,9 +175,10 @@ distribution patterns of Neotropical frogs.</p>
 <img src="assets/images/people/tirintan.jpg" alt="Gabriel Tirintan"
      onerror="this.style.display='none'">
 <p class="name">Gabriel Tirintan</p>
-<p class="role">Former undergraduate</p>
+<p class="role">Former Master's student · Ecologia e Conservação</p>
 <p class="topic">Macroecology of urban bird diversity in Brazil using
 citizen-science data (iNaturalist, eBird).</p>
+<p><a class="profile-link" href="http://lattes.cnpq.br/8861238387153166">{{< fa solid file-pdf >}} Lattes CV</a></p>
 :::
 
 ::: {.person-card}
@@ -201,7 +202,7 @@ Nascentes de Paranapiacaba (SP).</p>
 <img src="assets/images/people/bonin.jpg" alt="Laura Bonin"
      onerror="this.style.display='none'">
 <p class="name">Laura Bonin</p>
-<p class="role">Former undergraduate</p>
+<p class="role">Former undergrad</p>
 <p class="topic">Evolution of echolocation in bats worldwide using
 phylogenetic comparative methods.</p>
 :::
