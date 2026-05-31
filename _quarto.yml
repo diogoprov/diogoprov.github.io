@@ -9,7 +9,7 @@ project:
 website:
   title: "Biodiversity Synthesis Lab"
   description: "Lab of Diogo B. Provete at UFMS — community ecology, eco-evolutionary dynamics, freshwater metacommunities."
-  site-url: "https://diogoprov.github.io/"
+  site-url: "https://provetelab.org/"
   favicon: assets/favicon.png
   open-graph: true
   twitter-card: true

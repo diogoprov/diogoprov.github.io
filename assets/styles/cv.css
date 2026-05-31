@@ -32,16 +32,15 @@ body:has(.cv-page) header#title-block-header { display: none !important; }
 .cv-page {
   display: grid;
   grid-template-columns: 300px minmax(0, 1fr);
+  align-items: start;                 /* so sidebar can be sticky */
   gap: 0;
   max-width: 1240px;
-  margin: 0 auto;
+  margin: 1.2rem auto 2.5rem;
   background: #fff;
   border: 1px solid var(--cv-content-rule);
   border-radius: 10px;
-  overflow: hidden;
+  overflow: visible;                  /* sticky needs overflow != hidden */
   box-shadow: 0 12px 36px rgba(0,0,0,.06);
-  margin-top: 1.2rem;
-  margin-bottom: 2.5rem;
 }
 
 /* ---------- SIDEBAR ---------- */
@@ -52,7 +51,15 @@ body:has(.cv-page) header#title-block-header { display: none !important; }
   padding: 2.2rem 1.6rem 2.4rem;
   font-size: .9rem;
   line-height: 1.5;
+  position: sticky;                /* follows scroll on desktop */
+  top: 0;
+  max-height: 100vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  border-radius: 10px 0 0 10px;    /* round the corners now that overflow:visible reveals them */
 }
+.cv-sidebar::-webkit-scrollbar { width: 6px; }
+.cv-sidebar::-webkit-scrollbar-thumb { background: rgba(255,255,255,.15); border-radius: 3px; }
 
 .cv-sidebar a {
   color: var(--cv-sidebar-accent);
@@ -183,10 +190,102 @@ body:has(.cv-page) header#title-block-header { display: none !important; }
 .cv-tagline {
   color: #5c6772;
   font-size: 1rem;
-  margin: 0 0 2rem;
-  border-bottom: 2px solid var(--cv-content-rule);
-  padding-bottom: 1.1rem;
+  margin: 0 0 1rem;
+  padding-bottom: 0;
 }
+
+/* Action row (Download PDF + last-updated stamp) */
+.cv-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .9rem;
+  margin: 0 0 1.4rem;
+  padding-bottom: 1.1rem;
+  border-bottom: 2px solid var(--cv-content-rule);
+}
+.cv-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  padding: .5rem .95rem;
+  border-radius: 6px;
+  font-size: .9rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: background .15s ease, color .15s ease, border-color .15s ease, transform .15s ease;
+}
+.cv-btn-primary {
+  background: var(--cv-content-accent);
+  color: #fff;
+  border-color: var(--cv-content-accent);
+}
+.cv-btn-primary:hover {
+  background: var(--cv-content-strong);
+  border-color: var(--cv-content-strong);
+  color: #fff;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+.cv-last-updated {
+  font-size: .82rem;
+  color: var(--cv-sidebar-muted, #6c757d);
+  background: #f7f3ea;
+  padding: .3rem .6rem;
+  border-radius: 999px;
+  border: 1px solid var(--cv-content-rule);
+}
+
+/* Citation metrics row */
+.cv-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: .8rem;
+  margin: 0 0 1.8rem;
+  padding: 1rem 1.1rem 1.1rem;
+  background: linear-gradient(180deg, #f7f3ea, #faf7f0);
+  border: 1px solid var(--cv-content-rule);
+  border-radius: 8px;
+  position: relative;
+}
+.cv-metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: .15rem .4rem;
+}
+.cv-metric-value {
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: var(--cv-content-accent);
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+.cv-metric-label {
+  font-size: .78rem;
+  color: #5c6772;
+  margin-top: .2rem;
+  line-height: 1.3;
+}
+.cv-metric-label small {
+  display: block;
+  color: var(--cv-sidebar-muted, #888);
+  font-size: .68rem;
+  margin-top: .15rem;
+  letter-spacing: .02em;
+}
+.cv-metrics-foot {
+  grid-column: 1 / -1;
+  margin: .35rem 0 0;
+  font-size: .76rem;
+  color: var(--cv-sidebar-muted, #888);
+  border-top: 1px dashed var(--cv-content-rule);
+  padding-top: .55rem;
+  text-align: center;
+}
+.cv-metrics-foot a { color: var(--cv-content-accent); }
 
 .cv-content h2 {
   font-size: 1.35rem;
@@ -330,6 +429,78 @@ body:has(.cv-page) header#title-block-header { display: none !important; }
 }
 .cv-content ul li { margin-bottom: .55rem; line-height: 1.55; font-size: .94rem; }
 .cv-content ul li strong { color: var(--cv-content-strong); }
+
+/* ---------- Dark mode ----------
+   Quarto's theme switcher (cosmo↔darkly) toggles [data-bs-theme] on
+   <html>. We re-paint the CV palette to match. The sidebar was already
+   dark, so we keep it almost as-is and dim the page chrome around it. */
+[data-bs-theme="dark"] {
+  --cv-sidebar-bg: #14232a;
+  --cv-sidebar-bg-soft: #1a2c34;
+  --cv-sidebar-text: #e3ebe8;
+  --cv-sidebar-muted: #93a1a0;
+  --cv-sidebar-accent: #7fc5d6;
+  --cv-sidebar-border: rgba(255,255,255,.08);
+  --cv-content-rule: #2d3a42;
+  --cv-content-strong: #e3ebe8;
+  --cv-content-accent: #7fc5d6;
+  --cv-pub-key: #d97584;
+}
+[data-bs-theme="dark"] .cv-page {
+  background: #1c272d;
+  border-color: var(--cv-content-rule);
+  box-shadow: 0 12px 36px rgba(0,0,0,.4);
+}
+[data-bs-theme="dark"] .cv-content {
+  background: #1c272d;
+  color: #d6dee0;
+  border-left-color: var(--cv-content-rule);
+}
+[data-bs-theme="dark"] .cv-content h2,
+[data-bs-theme="dark"] .cv-headline {
+  color: var(--cv-content-strong);
+  border-bottom-color: var(--cv-content-accent);
+}
+[data-bs-theme="dark"] .cv-content h3 {
+  color: var(--cv-content-accent);
+  border-bottom-color: var(--cv-content-rule);
+}
+[data-bs-theme="dark"] .cv-tagline,
+[data-bs-theme="dark"] .cv-content ul li,
+[data-bs-theme="dark"] .cv-pubs p,
+[data-bs-theme="dark"] .cv-timeline td,
+[data-bs-theme="dark"] .cv-timeline th { color: #cfd6d8; }
+[data-bs-theme="dark"] .cv-timeline tr { border-bottom-color: var(--cv-content-rule); }
+[data-bs-theme="dark"] .cv-timeline td:first-child,
+[data-bs-theme="dark"] .cv-timeline th:first-child { color: var(--cv-content-accent); }
+[data-bs-theme="dark"] .cv-content a { color: var(--cv-content-accent); }
+[data-bs-theme="dark"] .cv-content a:hover { color: #b4dde7; }
+[data-bs-theme="dark"] .cv-content strong,
+[data-bs-theme="dark"] .cv-pubs p strong { color: #f0f6f6; }
+[data-bs-theme="dark"] .cv-callout,
+[data-bs-theme="dark"] .cv-pubs-legend,
+[data-bs-theme="dark"] .cv-last-updated,
+[data-bs-theme="dark"] .cv-metrics {
+  background: #142128;
+  border-color: var(--cv-content-rule);
+  color: #b9c4c6;
+}
+[data-bs-theme="dark"] .cv-metric-value { color: var(--cv-content-accent); }
+[data-bs-theme="dark"] .cv-metric-label,
+[data-bs-theme="dark"] .cv-metrics-foot { color: #93a1a0; }
+[data-bs-theme="dark"] .cv-pub-featured {
+  background: linear-gradient(to right, rgba(217,117,132,.10), rgba(217,117,132,0));
+}
+[data-bs-theme="dark"] .cv-btn-primary {
+  background: var(--cv-content-accent);
+  color: #14232a;
+  border-color: var(--cv-content-accent);
+}
+[data-bs-theme="dark"] .cv-btn-primary:hover {
+  background: #b4dde7;
+  border-color: #b4dde7;
+  color: #14232a;
+}
 
 /* ---------- Print ---------- */
 @media print {

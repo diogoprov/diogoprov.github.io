@@ -1,0 +1,64 @@
+name: Render site & CV PDF
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "cv.qmd"
+      - "people.qmd"
+      - "assets/styles/cv.css"
+      - "assets/metrics.yml"
+      - "scripts/build_cv_pdf.R"
+      - "scripts/fetch_metrics.R"
+      - ".github/workflows/render-cv.yml"
+  workflow_dispatch:        # allows manual "Run workflow" from the GitHub UI
+  schedule:
+    - cron: "0 6 1 * *"     # 1st of every month, 06:00 UTC — refresh metrics
+
+permissions:
+  contents: write           # bot needs to push back the regenerated PDF + docs/
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Install R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      - name: Install Chrome (used by pagedown for HTML → PDF)
+        uses: browser-actions/setup-chrome@v1
+
+      - name: Install R packages
+        run: |
+          Rscript -e 'install.packages(c("yaml","pagedown","chromote","scholar","httr"), repos="https://cloud.r-project.org")'
+
+      - name: Refresh citation metrics (best-effort, never fails the build)
+        env:
+          SCOPUS_API_KEY: ${{ secrets.SCOPUS_API_KEY }}
+          WOS_API_KEY:    ${{ secrets.WOS_API_KEY }}
+        run: Rscript scripts/fetch_metrics.R || true
+
+      - name: Render site
+        run: quarto render
+
+      - name: Rebuild CV PDF from rendered HTML
+        run: Rscript scripts/build_cv_pdf.R
+
+      - name: Commit regenerated artefacts
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/ assets/cv.pdf assets/metrics.yml
+          if git diff --cached --quiet; then
+            echo "Nothing changed — skipping commit."
+          else
+            git commit -m "ci: regenerate site, CV PDF and metrics"
+            git push
+          fi
