@@ -2,15 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://diogoprov.github.io/teaching.html</loc>
-    <lastmod>2026-05-30T04:03:59.263Z</lastmod>
+    <lastmod>2026-05-31T15:26:27.519Z</lastmod>
   </url>
   <url>
-    <loc>https://diogoprov.github.io/publications.html</loc>
-    <lastmod>2026-05-30T03:58:11.131Z</lastmod>
+    <loc>https://diogoprov.github.io/research.html</loc>
+    <lastmod>2026-05-30T03:54:43.813Z</lastmod>
   </url>
   <url>
-    <loc>https://diogoprov.github.io/posts/2017-09-01-ufms-position/index.html</loc>
-    <lastmod>2026-05-30T04:05:15.573Z</lastmod>
+    <loc>https://diogoprov.github.io/projects.html</loc>
+    <lastmod>2026-05-30T04:04:45.724Z</lastmod>
   </url>
   <url>
     <loc>https://diogoprov.github.io/opportunities.html</loc>
@@ -29,10 +29,6 @@
     <lastmod>2026-05-30T04:02:24.864Z</lastmod>
   </url>
   <url>
-    <loc>https://diogoprov.github.io/cv.html</loc>
-    <lastmod>2026-05-30T04:05:02.647Z</lastmod>
-  </url>
-  <url>
     <loc>https://diogoprov.github.io/news/2024-07-15-ana-paula-joins/index.html</loc>
     <lastmod>2026-05-30T04:05:55.250Z</lastmod>
   </url>
@@ -49,11 +45,11 @@
     <lastmod>2026-05-30T04:03:34.459Z</lastmod>
   </url>
   <url>
-    <loc>https://diogoprov.github.io/projects.html</loc>
-    <lastmod>2026-05-30T04:04:45.724Z</lastmod>
+    <loc>https://diogoprov.github.io/publications.html</loc>
+    <lastmod>2026-05-30T03:58:11.131Z</lastmod>
   </url>
   <url>
-    <loc>https://diogoprov.github.io/research.html</loc>
-    <lastmod>2026-05-30T03:54:43.813Z</lastmod>
+    <loc>https://diogoprov.github.io/software.html</loc>
+    <lastmod>2026-05-31T15:14:15.348Z</lastmod>
   </url>
 </urlset>

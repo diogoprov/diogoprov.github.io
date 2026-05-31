@@ -3,6 +3,26 @@ title: "Teaching"
 toc: true
 ---
 
+## Estatística Descomplicada — YouTube channel
+
+::: {.callout-tip icon=false appearance="minimal"}
+[{{< fa brands youtube >}} **youtube.com/@DiogoBProvete**](https://www.youtube.com/@DiogoBProvete) ·
+*Statistics for the life sciences, in plain Portuguese.*
+:::
+
+I run a YouTube channel — **Estatística Descomplicada** — with lessons on
+statistics aimed at biologists and other life-scientists. The content
+mirrors what I teach in graduate and undergraduate courses at UFMS:
+**Generalized Linear (Mixed) Models**, **multivariate methods**, study
+design, and the reproducible-analysis workflow in R.
+
+Topics covered include hypothesis testing, GLM/GLMM with appropriate error
+families, ordinations (PCA, NMDS, RDA, CCA), classification, and how to
+read statistical results in the ecological literature without getting lost
+in the jargon. New videos are released as the academic semester progresses.
+
+[Subscribe to the channel →](https://www.youtube.com/@DiogoBProvete?sub_confirmation=1){.btn .btn-outline-primary}
+
 ## Phenotypic evolution & comparative phylogenetic methods
 
 Graduate course given annually at the [Ecology and Conservation

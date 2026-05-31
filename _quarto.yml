@@ -34,8 +34,8 @@ website:
         text: Opportunities
       - href: projects.qmd
         text: Projects
-      - href: cv.qmd
-        text: CV
+      - href: software.qmd
+        text: Software
       - text: Brazilian Tadpoles
         href: "https://diogoprov.github.io/Brazilian-Tadpoles-5.0/"
         target: _blank

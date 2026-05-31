@@ -11,17 +11,23 @@
   --bsl-accent: #1c6e8c;          /* deep teal — water/biodiversity */
   --bsl-accent-dark: #144f64;
   --bsl-muted: #6c757d;
-  --bsl-bg-soft: #f7f9fb;
-  --bsl-border: #e6ebef;
+  --bsl-bg-page: #faf7f0;         /* warm off-white / paper cream */
+  --bsl-bg-soft: #f3eee3;         /* slightly deeper cream for callouts */
+  --bsl-bg-card: #ffffff;         /* white kept for cards to stand out */
+  --bsl-border: #e3dccd;          /* warm border that pairs with cream */
 }
 
-/* --- Navbar: thin, light, academic --- */
+html, body {
+  background-color: var(--bsl-bg-page);
+}
+
+/* --- Navbar: thin, light, academic — slightly lighter than page bg --- */
 .navbar {
   border-bottom: 1px solid var(--bsl-border);
   padding-top: .4rem;
   padding-bottom: .4rem;
   font-size: .95rem;
-  background-color: #fff !important;
+  background-color: #fdfaf3 !important;   /* a hair lighter than page */
 }
 .navbar-brand {
   font-weight: 600;

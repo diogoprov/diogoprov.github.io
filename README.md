@@ -31,8 +31,7 @@ changes (including `docs/`).
 ├── teaching.qmd        # courses and short-courses
 ├── opportunities.qmd   # message for prospective students + resources
 ├── projects.qmd        # funded projects
-├── cv.qmd              # dynamic CV (listing of posts tagged "experience")
-├── posts/              # blog/CV entries (each post is a folder with index.qmd)
+├── software.qmd        # CoDaStereo and other tools the lab maintains
 ├── news/               # lab news (listing on the home page)
 ├── assets/             # images, files (PDFs, CV)
 └── _archive_alban_template/   # old scaffold kept for reference
@@ -42,7 +41,8 @@ changes (including `docs/`).
 
 - **News post:** create `news/YYYY-MM-DD-slug/index.qmd` with `date:` in the
   YAML front-matter. The home page listing picks it up automatically.
-- **CV experience entry:** create `posts/YYYY-MM-DD-slug/index.qmd` with
-  `categories: [experience]` in the YAML — it will appear on `cv.qmd`.
 - **New publication:** edit `publications.qmd` directly (it's hand-curated to
   preserve formatting, links, and awards).
+- **New software:** add a new `##` section to `software.qmd` following the
+  CoDa Stereo template (callout-tip with links, description, features
+  table, install snippet, citation).

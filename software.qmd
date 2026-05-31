@@ -1,0 +1,76 @@
+---
+title: "Software"
+subtitle: "Tools we build and maintain for the community"
+toc: true
+---
+
+## CoDa Stereo
+
+::: {.callout-tip icon=false appearance="minimal"}
+**Compositional Data Analysis for Stereological and Histomorphometric Data**
+
+[{{< fa brands github >}} GitHub repository](https://github.com/diogoprov/CoDaStereo) ·
+[{{< fa solid tag >}} v2.0.0 (Apr 2026)](https://github.com/diogoprov/CoDaStereo/releases) ·
+[{{< fa solid scale-balanced >}} MIT License](https://github.com/diogoprov/CoDaStereo/blob/main/LICENSE)
+:::
+
+**CoDa Stereo** is an open-source [Shiny](https://shiny.posit.co/)
+application that brings the **Aitchison geometry** to the daily workflow
+of stereological and histomorphometric studies — fields where measurements
+are naturally **compositional** (proportions of tissue types, cell-line
+fractions, organelle volume densities) and therefore must be analysed with
+the appropriate log-ratio methods rather than off-the-shelf parametric tools.
+
+The app implements the full **PPDAC cycle** (Problem → Plan → Data →
+Analysis → Conclusion) so that students and collaborators without a strong
+statistical background can move from a raw spreadsheet to a defensible
+permutational MANOVA with diagnostics, pairwise post-hoc tests, and
+publication-ready plots — all in the browser.
+
+### Features
+
+| Module | Capabilities |
+|--------|--------------|
+| **Data upload** | CSV and Excel (`.xlsx`/`.xls`) with sheet selector; smart parts selector that auto-excludes ID columns |
+| **Data inspection** | Zero/NA heatmap (observed zero vs. structural zero vs. missing); `naniar::vis_miss` plot; counts per part |
+| **Zero handling** | Three methods via `zCompositions` (CZM, multRepl, lrEM); NA handling via listwise deletion or geometric-mean imputation |
+| **Compositional analysis** | Manual ternary plot (pure `ggplot2`, no `ggtern` dependency); amalgamation of *D* > 3 parts into 3 groups; **clr-PCA biplot** via `FactoMineR` + `factoextra` |
+| **Statistical modelling** | Factorial permutational MANOVA via `RRPP::lm.rrpp`; pairwise post-hoc via `RRPP::pairwise`; residual diagnostics; formula preview before fitting |
+| **Downloads** | Ternary and biplot as PDF; imputed data as CSV; ANOVA and pairwise tables as CSV |
+
+### Why CoDa Stereo
+
+Stereological datasets are routinely analysed as if cell-fraction or
+tissue-fraction percentages were independent variables — they're not. The
+**unit-sum constraint** induces spurious correlations and false significance
+in standard MANOVA. CoDa Stereo handles the geometry correctly throughout,
+without requiring users to write log-ratio transforms by hand.
+
+### Install and run
+
+```r
+# Run locally
+# install.packages("devtools")
+devtools::install_github("diogoprov/CoDaStereo")
+CoDaStereo::run_app()
+```
+
+A deployment on [Posit Connect Cloud](https://connect.posit.cloud/) (free
+tier) is also supported — see the [README](https://github.com/diogoprov/CoDaStereo)
+for step-by-step instructions.
+
+### Citation
+
+CoDa Stereo was developed as supplementary material for **Provete, D.B.
+(2026).** *Title to be confirmed*. *Journal of Microscopy*. The companion
+paper covers the methodological rationale, simulations comparing CoDa with
+naïve approaches, and worked examples.
+
+A `CITATION.cff` and BibTeX snippets are available on the
+[repository](https://github.com/diogoprov/CoDaStereo#how-to-cite).
+
+### Issues, feedback, and contributions
+
+Bug reports, feature requests, and pull requests are very welcome on
+[GitHub Issues](https://github.com/diogoprov/CoDaStereo/issues). PRs should
+target the `dev` branch.
