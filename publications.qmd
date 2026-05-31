@@ -459,9 +459,9 @@ pp. 1237–1239. New Jersey: Salem Press.
 
 ## In review
 
-Martins, P.M.; Galvão, G.A.; **PROVETE, D.B.**; de Miranda, G.S.;
-Gonçalves-Souza, T. The evolution of body size and shape in whip-spiders.
-*Received major revisions in Evolution.*
+Martins, P.M.; Galvão, G.A.; Gonçalves-Souza, T.; **PROVETE, D.B.**;
+de Miranda, G.S. 2026. The evolution of body size and shape in whip-spiders.
+*In the 2nd round of revision in Evolution.*
 [[Preprint]](https://www.biorxiv.org/content/10.1101/2025.10.06.680801v1)
 
 Pacheco, G.; Torquato, F.; Caron, F.S.; (...) **PROVETE, D.B.** (...)
@@ -474,30 +474,54 @@ revisions in Evolution.*
 and blood cell profile. *In review at Histochemistry and Cell Biology.*
 [[Preprint]](https://www.researchsquare.com/article/rs-9590298/v1)
 
+**PROVETE, D.B.**; Citadini, J.M.; Gomes, F.R. 2026. Microhabitat
+structural complexity and predator stimulus drive predator escape decision
+by frogs. *Submitted to Behavioral Ecology.*
+[[Preprint]](https://www.biorxiv.org/content/10.64898/2026.05.26.728007v1)
+
+Piatti, L.; de Sousa, D.L.H.; Oliveira, B.S.; de Melo, A.V.;
+Sugai, L.S.M.; **PROVETE, D.B.** 2026. Methodological choices influence
+ecological inference in passive acoustic monitoring of a Neotropical
+nightjar. *Submitted to Journal of Avian Biology.*
+[[Preprint]](https://ecoevorxiv.org/repository/view/13229/)
+
 ## In preparation
 
-Moroti, M.T.; Moura, M.; Pires, M.M.; **PROVETE, D.B.** Divergent pathways
-shape climatic niches and body size evolution across terrestrial vertebrates.
-*To be submitted to Proceedings of the Royal Society B.*
+**PROVETE, D.B.**; Garey, M.V.; da Silva, F.R. 2026. Knowledge gap on the
+larval morphology of free-swimming anuran tadpoles from Brazil: a 14-year
+update. *To be submitted to Phyllomedusa.*
+
+**PROVETE, D.B.**; Gonçalves, V.; Santana, D.J.; Costa-Pereira, R.;
+Ceron, K. 2026. The macroecological correlates of individual diet
+specialization. *To be submitted to Global Ecology and Biogeography.*
+
+Ganci, C.C.; Ortega, Z.; **PROVETE, D.B.** 2026. Behavioural
+thermoregulation in a Neotropical frog is detectable only when physiological
+integrity allows movement. *To be submitted to Behavioral Ecology and
+Sociobiology.*
+[[Preprint]](https://www.biorxiv.org/content/10.1101/2020.06.11.146613v1)
+
+Franco-Belussi, L.; Trevisan, L.; De Oliveira, C.; Fernandes, C.E.;
+**PROVETE, D.B.** 2026. Seasonal hepatic plasticity follows a descending
+cascade in a Neotropical frog. *To be submitted to Integrative Zoology.*
 
 Severgnini, M.R.; **PROVETE, D.B.** 2026. The effect of urbanization and
 local environmental heterogeneity on phenotypic variability in a tropical
 frog. *In the 2nd round of revision in Ecology.*
 [[Preprint]](http://www.biorxiv.org/content/10.1101/2024.11.28.625871v1)
 
-Franco-Belussi, L.; Trevisan, L.; De Oliveira, C.; Fernandes, C.E.;
-**PROVETE, D.B.** Temporal plasticity in liver features of a tropical frog.
-*To be submitted to Integrative Zoology.*
+**PROVETE, D.B.**; Garey, M.V.; Rossa-Feres, D.C. 2026. Phenotype–environment
+interaction in a tropical tadpole metacommunity shows pervasive effect of
+habitat structural complexity. *To be submitted to Ecology Letters.*
 
-Sousa, D.L.H.; Garey, M.V.; Rossa-Feres, D.C.; **PROVETE, D.B.** 2026.
-Phenotype–environment interaction in a tropical tadpole metacommunity shows
-pervasive effect of habitat structural complexity. *To be submitted to
-Freshwater Biology.*
+Moroti, M.T.; Moura, M.; Pires, M.M.; **PROVETE, D.B.** Divergent pathways
+shape climatic niches and body size evolution across terrestrial vertebrates.
+*To be submitted to Proceedings of the Royal Society B.*
+[[Preprint]](https://doi.org/10.22541/au.176400956.64170283/v)
 
-Citadini, J.M.; Gomes, F.R.; **PROVETE, D.B.** Microhabitat structural
-complexity and predator stimulus drive predator escape decision by frogs.
-*To be submitted to Journal of Experimental Zoology A or Integrative
-Zoology.*
+**PROVETE, D.B.**; Downing, A.L.; Leibold, M.A. 2026. Phylogenetic diversity
+affects the functioning of multitrophic freshwater ecosystems non-linearly.
+*To be submitted to Ecology.*
 
 Meynard, C.N.; da Silva, F.R.; Carnaval, A.C.; Leibold, M.A.;
 Gonçalves-Souza, T.; Ceron, K.; Cavender-Bares, J.; Fahrig, L.; Albert, C.H.;
@@ -511,20 +535,9 @@ Taxonomic, functional, and phylogenetic beta diversity of Brazilian Cerrado
 frogs respond differently to climatic and spatial factors. *To be submitted
 to Journal of Biogeography.* ^\*joint senior authors^
 
-Ganci, C.C.; Ortega, Z.; **PROVETE, D.B.** 2022. Harlequin frogs prefer
-mild places to park. *To be submitted to PeerJ.*
-
-Ceron, K.; Gonçalves, V.; Costa-Pereira, R.; Santana, D.J.;
-**PROVETE, D.B.** The macroecological correlates of individual diet
-specialization. *To be submitted to Global Ecology and Biogeography.*
-
 Garey, M.V.; **PROVETE, D.B.**; Rossa-Feres, D.C.; Haddad, C.F.B. Patch
 heterogeneity and spatial dynamics in a Neotropical amphibian metacommunity.
 *To be submitted to Oecologia.*
-
-**PROVETE, D.B.**; Downing, A.L.; Gonçalves-Souza, T.; Leibold, M.A.
-Phylogenetic diversity affects the functioning of multitrophic freshwater
-ecosystems in a non-linear fashion. *To be submitted to Ecology.*
 
 Leite, G.B.; Franco-Belussi, L.; **PROVETE, D.B.**; Oliveira, C. The
 influence of reproductive modes on testicular morphology in six families of
