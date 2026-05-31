@@ -220,7 +220,9 @@ Authorship key: <span class="cv-pub-flag">red number</span> = three most importa
 
 [43] Halpern, B.; Boettiger, K.; Dietze, M.; (…) **PROVETE, D. B.**; (…); Wymore, A. 2022. Priorities for synthesis in ecology and environmental science. *Ecosphere* 14(1): e4342. [doi:10.1002/ecs2.4342](https://doi.org/10.1002/ecs2.4342)
 
+::: {.cv-pub-featured}
 <span class="cv-pub-key">[42]</span> Sanchez-Domene, D.\*; Silva, F. R.\*; **Provete, D. B.**\*; Navarro-Lozano, A.; Acayaba, R. D.; Montagner, C. C.; Rossa-Feres, D. C.; Lopez-Iborra, G. M.; Almeida, E. A. 2022. Combined effects of landscape composition and agrochemicals on frog communities amid sugarcane-dominated agroecosystems. *Ecological Applications*. [doi:10.1002/eap.2781](https://doi.org/10.1002/eap.2781) — *\*authors contributed equally*
+:::
 
 [41] Ceron, K.; **Provete, D. B.**; Pires, M. M.; Araujo, A. C.; Blüthgen, N.; Santana, D. J. 2022. Prey availability and interaction rewiring drive the spatial and seasonal structure of a predator-prey metaweb. *Ecology*. [doi:10.1002/ecy.3716](https://doi.org/10.1002/ecy.3716)
 
@@ -266,7 +268,9 @@ Authorship key: <span class="cv-pub-flag">red number</span> = three most importa
 
 [20] da Silva, F. R.; **Provete, D. B.**; Gerassi, L. K.; Bovo, R. P. 2017. What do data from fieldwork and scientific collections tell us about species richness and composition of amphibians and reptiles? *South American Journal of Herpetology* 12(9): 99–106.
 
+::: {.cv-pub-featured}
 <span class="cv-pub-key">[19]</span> Livingston, G.\*; Fukumori, K.\*; **PROVETE, D. B.**\*; Kawachi, M.; Takamura, N.; Leibold, M. A. 2017. Predators regulate prey species sorting and spatial distribution in microbial landscapes. *Journal of Animal Ecology* 89(2): 501–510. — *\*authors contributed equally · Featured in F1000 Prime*
+:::
 
 [18] Faria, S. C.; **PROVETE, D. B.**; Thurman, C. L.; McNamara, J. C. 2017. Phylogenetic patterns and the adaptive evolution of osmoregulation in fiddler crabs (Brachyura, *Uca*). *PLoS One* 12: e0171870. — *Winner of the 2017 "Prof. Sergio de Almeida Rodrigues" Award (Cebimar/USP)*
 
@@ -280,7 +284,9 @@ Authorship key: <span class="cv-pub-flag">red number</span> = three most importa
 
 [13] Garey, M. V.; **PROVETE, D. B.**; Martins, I. A.; Rossa-Feres, D. C.; Haddad, C. F. B. 2014. Anurans from the Serra da Bocaina National Park and surrounding buffer area, southeastern Brazil. *Check List* 10(2): 308–316.
 
+::: {.cv-pub-featured}
 <span class="cv-pub-key">[12]</span> **Provete, D. B.**; Gonçalves-Souza, T.; Garey, M. V.; Martins, I. A.; Rossa-Feres, D. C. 2014. Broad-scale spatial patterns of canopy cover and pond morphology affect the structure of a Neotropical amphibian metacommunity. *Hydrobiologia* 734: 69–79.
+:::
 
 [11] Loyola, R. D.; Lemes, P.; Brum, F. T.; **Provete, D. B.**; Duarte, L. S. 2014. Clade-specific consequences of climate change to amphibians in Atlantic Forest protected areas. *Ecography* 37(1): 65–72.
 

@@ -272,7 +272,26 @@ body:has(.cv-page) header#title-block-header { display: none !important; }
   border-radius: 4px;
   font-weight: 700;
   font-size: .82rem;
-  margin-right: .15rem;
+  margin-right: .35rem;
+  vertical-align: baseline;
+}
+
+/* Featured top-3 papers — break out of the surrounding hanging-indent so the
+   red badge can't be displaced left into the sidebar. Adds a subtle tint
+   and accent rule that visually emphasises the entry. */
+.cv-pub-featured {
+  background: linear-gradient(to right, rgba(181,57,76,.07), rgba(181,57,76,0));
+  border-left: 3px solid var(--cv-pub-key);
+  border-radius: 0 4px 4px 0;
+  padding: .5rem .8rem .5rem .7rem;
+  margin: .35rem 0 .85rem -.4rem;   /* nudge in so it visually aligns */
+}
+.cv-pub-featured p {
+  padding-left: 0;
+  text-indent: 0;
+  margin: 0;
+  font-size: .92rem;
+  line-height: 1.55;
 }
 
 .cv-pubs-legend {
@@ -371,6 +390,8 @@ body:has(.cv-page) header#title-block-header { display: none !important; }
     text-indent: -1.2rem;
   }
   .cv-pub-key { font-size: .72rem; padding: 0 .3rem; }
+  .cv-pub-featured { padding: .35rem .55rem; margin: .2rem 0 .55rem -.25rem; }
+  .cv-pub-featured p { font-size: .8rem; line-height: 1.42; padding-left: 0; text-indent: 0; }
   .cv-pubs-legend { font-size: .72rem; padding: .35rem .6rem; margin-bottom: .6rem; }
   .cv-callout { font-size: .78rem; padding: .55rem .7rem; line-height: 1.42; }
   .cv-content ul li { font-size: .82rem; line-height: 1.42; margin-bottom: .35rem; }
