@@ -10,7 +10,7 @@
 <atom:link href="https://provetelab.org/index.xml" rel="self" type="application/rss+xml"/>
 <description>Lab of Diogo B. Provete at UFMS — community ecology, eco-evolutionary dynamics, freshwater metacommunities.</description>
 <generator>quarto-1.9.38</generator>
-<lastBuildDate>Mon, 15 Sep 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 15 Sep 2025 04:00:00 GMT</lastBuildDate>
 <item>
   <title>Iara Coimbra and Beatriz Oliveira start independent undergraduate projects</title>
   <link>https://provetelab.org/news/2025-09-15-iara-beatriz/</link>
@@ -28,7 +28,7 @@
   <category>news</category>
   <category>people</category>
   <guid>https://provetelab.org/news/2025-09-15-iara-beatriz/</guid>
-  <pubDate>Mon, 15 Sep 2025 00:00:00 GMT</pubDate>
+  <pubDate>Mon, 15 Sep 2025 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Bruna Maria joins the lab as a Master’s student</title>
@@ -47,7 +47,7 @@
   <category>news</category>
   <category>people</category>
   <guid>https://provetelab.org/news/2025-02-15-bruna-master/</guid>
-  <pubDate>Sat, 15 Feb 2025 00:00:00 GMT</pubDate>
+  <pubDate>Sat, 15 Feb 2025 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Diogo awarded a FUNDECT research productivity grant</title>
@@ -66,7 +66,7 @@
   <category>news</category>
   <category>funding</category>
   <guid>https://provetelab.org/news/2024-10-01-fundect-grant/</guid>
-  <pubDate>Tue, 01 Oct 2024 00:00:00 GMT</pubDate>
+  <pubDate>Tue, 01 Oct 2024 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Welcome to Ana Paula Andreazzi</title>
@@ -85,124 +85,7 @@
   <category>news</category>
   <category>people</category>
   <guid>https://provetelab.org/news/2024-07-15-ana-paula-joins/</guid>
-  <pubDate>Mon, 15 Jul 2024 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Lab news</title>
-  <link>https://provetelab.org/news/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="bmV3cyUyQ3Blb3BsZQ==" data-listing-date-sort="1757894400000" data-listing-file-modified-sort="1780265032920" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="17">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../news/2025-09-15-iara-beatriz/index.html" class="no-external">Iara Coimbra and Beatriz Oliveira start independent undergraduate projects</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">news</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('cGVvcGxl'); return false;">people</div>
-
-</div>
-<div class="delink listing-description"><a href="../news/2025-09-15-iara-beatriz/index.html" class="no-external">
-<p>Both received funded fellowships to conduct independent research in the lab.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../news/2025-09-15-iara-beatriz/index.html" class="no-external">
-<div class="listing-date">
-September 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="bmV3cyUyQ3Blb3BsZQ==" data-listing-date-sort="1739577600000" data-listing-file-modified-sort="1780265032920" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="29">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../news/2025-02-15-bruna-master/index.html" class="no-external">Bruna Maria joins the lab as a Master’s student</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">news</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('cGVvcGxl'); return false;">people</div>
-
-</div>
-<div class="delink listing-description"><a href="../news/2025-02-15-bruna-master/index.html" class="no-external">
-<p>Macroecology of frog biodiversity facets responding to urbanisation in the Atlantic Forest.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../news/2025-02-15-bruna-master/index.html" class="no-external">
-<div class="listing-date">
-February 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="bmV3cyUyQ2Z1bmRpbmc=" data-listing-date-sort="1727740800000" data-listing-file-modified-sort="1780265032920" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="23">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../news/2024-10-01-fundect-grant/index.html" class="no-external">Diogo awarded a FUNDECT research productivity grant</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">news</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZnVuZGluZw=='); return false;">funding</div>
-
-</div>
-<div class="delink listing-description"><a href="../news/2024-10-01-fundect-grant/index.html" class="no-external">
-<p>A small grant that will help fund field work conducted by students.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../news/2024-10-01-fundect-grant/index.html" class="no-external">
-<div class="listing-date">
-October 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="bmV3cyUyQ3Blb3BsZQ==" data-listing-date-sort="1721001600000" data-listing-file-modified-sort="1780265032920" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="33">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../news/2024-07-15-ana-paula-joins/index.html" class="no-external">Welcome to Ana Paula Andreazzi</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">news</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('cGVvcGxl'); return false;">people</div>
-
-</div>
-<div class="delink listing-description"><a href="../news/2024-07-15-ana-paula-joins/index.html" class="no-external">
-<p>Ana Paula joins the lab to study how stingless bees respond to heat waves in urban ecosystems.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../news/2024-07-15-ana-paula-joins/index.html" class="no-external">
-<div class="listing-date">
-July 2024
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div> ]]></description>
-  <guid>https://provetelab.org/news/</guid>
-  <pubDate>Sun, 31 May 2026 22:05:19 GMT</pubDate>
+  <pubDate>Mon, 15 Jul 2024 04:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
