@@ -61,10 +61,16 @@ for step-by-step instructions.
 
 ### Citation
 
-CoDa Stereo was developed as supplementary material for **Provete, D.B.
-(2026).** *Title to be confirmed*. *Journal of Microscopy*. The companion
-paper covers the methodological rationale, simulations comparing CoDa with
-naïve approaches, and worked examples.
+CoDa Stereo was developed as supplementary material for:
+
+> **Provete, D.B.**, Severgnini, M.R., Fernandes, C.E., Franco-Belussi, L.
+> (2026). A practical guide to compositional data analysis in tissue
+> stereology and blood cell profile. *Histochemistry and Cell Biology*
+> (*in review*).
+> [Preprint on Research Square](https://www.researchsquare.com/article/rs-9590298/v1).
+
+The companion paper covers the methodological rationale, simulations
+comparing CoDa with naïve approaches, and worked examples.
 
 A `CITATION.cff` and BibTeX snippets are available on the
 [repository](https://github.com/diogoprov/CoDaStereo#how-to-cite).
