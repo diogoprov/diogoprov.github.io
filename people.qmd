@@ -213,6 +213,8 @@ phylogenetic comparative methods.</p>
      onerror="this.style.display='none'">
 <p class="name">Pedro Abi-Rezik Barros Vianna</p>
 <p class="role">Former undergrad</p>
+<p class="topic">Geographic variation in morphological traits and fitness
+surface of the snake *Dipsas turgida*.</p>
 <p><a class="profile-link" href="http://lattes.cnpq.br/4802782044597460">{{< fa solid file-pdf >}} Lattes CV</a></p>
 :::
 
