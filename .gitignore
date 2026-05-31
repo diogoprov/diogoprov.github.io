@@ -11,3 +11,5 @@ docs/CNAME
 /.quarto/
 _freeze/
 _site/
+
+**/*.quarto_ipynb
