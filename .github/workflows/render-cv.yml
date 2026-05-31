@@ -1,25 +1,20 @@
-name: Render site & CV PDF
+name: Validate site build
+
+# Validation only — runs on every push and on demand.
+# Renders the site and rebuilds the CV PDF in a clean environment so we
+# catch broken markdown / missing assets BEFORE GitHub Pages serves a
+# broken page. NOTHING is committed back to the repo — you stay in
+# charge of docs/, assets/cv.pdf and assets/metrics.yml locally.
 
 on:
   push:
     branches: [main]
-    paths:
-      - "cv.qmd"
-      - "people.qmd"
-      - "assets/styles/cv.css"
-      - "assets/metrics.yml"
-      - "scripts/build_cv_pdf.R"
-      - "scripts/fetch_metrics.R"
-      - ".github/workflows/render-cv.yml"
-  workflow_dispatch:        # allows manual "Run workflow" from the GitHub UI
-  schedule:
-    - cron: "0 6 1 * *"     # 1st of every month, 06:00 UTC — refresh metrics
-
-permissions:
-  contents: write           # bot needs to push back the regenerated PDF + docs/
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
 
 jobs:
-  build:
+  validate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -37,36 +32,19 @@ jobs:
 
       - name: Restore R packages from renv.lock
         uses: r-lib/actions/setup-renv@v2
-        # Falls back gracefully if renv/ isn't initialised yet on the repo.
         continue-on-error: true
 
       - name: Fallback install if renv not set up
         run: |
           Rscript -e 'if (!requireNamespace("yaml", quietly=TRUE)) install.packages(c("yaml","pagedown","chromote","scholar","httr"), repos="https://cloud.r-project.org")'
 
-      - name: Refresh citation metrics (best-effort, never fails the build)
-        env:
-          SCOPUS_API_KEY: ${{ secrets.SCOPUS_API_KEY }}
-        run: Rscript scripts/fetch_metrics.R || true
-
-      - name: Render site
+      - name: Render site (validation)
         run: quarto render
 
-      - name: Rebuild CV PDF from rendered HTML
+      - name: Build CV PDF (validation)
         run: Rscript scripts/build_cv_pdf.R
 
-      - name: Commit regenerated artefacts
-        # Skip when the trigger itself was a bot push (prevents infinite loop)
-        if: github.actor != 'github-actions[bot]'
-        run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/ assets/cv.pdf assets/metrics.yml
-          if git diff --cached --quiet; then
-            echo "Nothing changed — skipping commit."
-          else
-            # [skip ci] in the message tells GitHub Actions not to trigger
-            # another workflow run on this bot commit.
-            git commit -m "ci: regenerate site, CV PDF and metrics [skip ci]"
-            git push
-          fi
+      # No commit step — this workflow exists purely to catch render errors.
+      # When you change content: edit .qmd → `quarto render` → optionally
+      # `Rscript scripts/build_cv_pdf.R` → commit → push. One push, one
+      # remote update, no bot in the loop.
