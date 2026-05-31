@@ -33,6 +33,14 @@ html, body {
   font-weight: 600;
   letter-spacing: .2px;
   font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  gap: .55rem;
+}
+.navbar-brand img {
+  height: 34px;
+  width: auto;
+  display: block;
 }
 .navbar .nav-link { font-weight: 500; color: #2d3748; }
 .navbar .nav-link:hover,
@@ -58,19 +66,21 @@ h2 {
   border-bottom: 1px solid var(--bsl-border);
 }
 
-/* --- Home: lab banner (full-width image at the top) --- */
-.lab-banner {
-  margin: 0 auto 1.5rem;
-  max-width: 1200px;
-  overflow: hidden;
-  border-radius: 6px;
+/* --- Home: lab logo hero (horizontal logo as the primary brand block) --- */
+.lab-hero-logo {
+  margin: 1rem auto 1.8rem;
+  max-width: 760px;
+  text-align: center;
+  padding: 0 1rem;
 }
-.banner-img {
+.hero-logo {
   width: 100%;
+  max-width: 620px;
   height: auto;
-  max-height: 380px;
-  object-fit: cover;
-  display: block;
+  display: inline-block;
+}
+@media (max-width: 560px) {
+  .hero-logo { max-width: 92%; }
 }
 
 /* --- Home: welcome block (centered, readable width) --- */
@@ -157,6 +167,53 @@ h2 {
   margin-top: .6rem;
   font-size: .85rem;
   font-weight: 500;
+}
+
+/* --- Co-PI cards (collaborators) — no box, round floating portrait --- */
+.copi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.25rem 1.6rem;
+  margin: 1.5rem 0 2rem;
+  justify-items: center;
+}
+.copi-card {
+  background: transparent;
+  border: none;
+  padding: .5rem .25rem 1rem;
+  text-align: center;
+  max-width: 200px;
+}
+.copi-card img {
+  width: 130px; height: 130px;
+  border-radius: 50%;            /* circular even if the PNG were square */
+  object-fit: cover;
+  display: block;
+  margin: 0 auto .65rem;
+  background: transparent;
+  /* subtle ring rather than a hard border, matching cream bg */
+  box-shadow: 0 0 0 3px var(--bsl-bg-page),
+              0 0 0 4px var(--bsl-border),
+              0 4px 14px rgba(0,0,0,.06);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.copi-card:hover img {
+  transform: translateY(-2px);
+  box-shadow: 0 0 0 3px var(--bsl-bg-page),
+              0 0 0 4px var(--bsl-accent),
+              0 6px 18px rgba(0,0,0,.1);
+}
+.copi-card .name {
+  font-weight: 600;
+  font-size: .98rem;
+  margin: 0 0 .15rem;
+  color: #2d3748;
+}
+.copi-card .role {
+  color: var(--bsl-muted);
+  font-size: .82rem;
+  margin: 0;
+  line-height: 1.35;
 }
 
 /* --- PI block (more prominent than other members) --- */
