@@ -29,6 +29,8 @@ website:
         text: Publications
       - href: people.qmd
         text: People
+      - href: cv.qmd
+        text: CV
       - href: teaching.qmd
         text: Teaching
       - href: opportunities.qmd

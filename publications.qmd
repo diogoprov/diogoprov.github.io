@@ -474,16 +474,16 @@ revisions in Evolution.*
 and blood cell profile. *In review at Histochemistry and Cell Biology.*
 [[Preprint]](https://www.researchsquare.com/article/rs-9590298/v1)
 
-Severgnini, M.R.; **PROVETE, D.B.** 2026. The effect of urbanization and
-local environmental heterogeneity on phenotypic variability in a tropical
-frog. *In the second round of revision in Ecology.*
-[[Preprint]](http://www.biorxiv.org/content/10.1101/2024.11.28.625871v1)
-
 ## In preparation
 
 Moroti, M.T.; Moura, M.; Pires, M.M.; **PROVETE, D.B.** Divergent pathways
 shape climatic niches and body size evolution across terrestrial vertebrates.
 *To be submitted to Proceedings of the Royal Society B.*
+
+Severgnini, M.R.; **PROVETE, D.B.** 2026. The effect of urbanization and
+local environmental heterogeneity on phenotypic variability in a tropical
+frog. *In the 2nd round of revision in Ecology.*
+[[Preprint]](http://www.biorxiv.org/content/10.1101/2024.11.28.625871v1)
 
 Franco-Belussi, L.; Trevisan, L.; De Oliveira, C.; Fernandes, C.E.;
 **PROVETE, D.B.** Temporal plasticity in liver features of a tropical frog.
