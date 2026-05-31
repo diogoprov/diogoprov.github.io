@@ -5,6 +5,8 @@ project:
     - "*.qmd"
     - "!_archive_alban_template/"
     - "!README.md"
+  resources:
+    - CNAME          # ensure GitHub Pages keeps the custom domain after every render
 
 website:
   title: "Biodiversity Synthesis Lab"
