@@ -178,7 +178,7 @@ distribution patterns of Neotropical frogs.</p>
 <p class="role">Former Master's student · Ecologia e Conservação</p>
 <p class="topic">Macroecology of urban bird diversity in Brazil using
 citizen-science data (iNaturalist, eBird).</p>
-<p><a class="profile-link" href="http://lattes.cnpq.br/8861238387153166">{{< fa solid file-pdf >}} Lattes CV</a></p>
+<a href="http://lattes.cnpq.br/8861238387153166" title="Lattes CV"><i class="ai ai-lattes"></i></a>
 :::
 
 ::: {.person-card}
@@ -205,7 +205,7 @@ Nascentes de Paranapiacaba (SP).</p>
 <p class="role">Former undergrad</p>
 <p class="topic">Evolution of echolocation in bats worldwide using
 phylogenetic comparative methods.</p>
-<p><a class="profile-link" href="http://lattes.cnpq.br/0590588262836363">{{< fa solid file-pdf >}} Lattes CV</a></p>
+<a href="http://lattes.cnpq.br/0590588262836363" title="Lattes CV"><i class="ai ai-lattes"></i></a>
 :::
 
 ::: {.person-card}
@@ -215,7 +215,7 @@ phylogenetic comparative methods.</p>
 <p class="role">Former undergrad</p>
 <p class="topic">Geographic variation in morphological traits and fitness
 surface of the snake *Dipsas turgida*.</p>
-<p><a class="profile-link" href="http://lattes.cnpq.br/4802782044597460">{{< fa solid file-pdf >}} Lattes CV</a></p>
+<a href="http://lattes.cnpq.br/4802782044597460" title="Lattes CV"><i class="ai ai-lattes"></i></a>
 :::
 
 :::
