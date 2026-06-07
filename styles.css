@@ -307,14 +307,22 @@ h2 {
   text-indent: -1.2rem;
 }
 
-/* Inline icons inside publication links: small horizontal margin avoids
-   visual collision with adjacent italic text (e.g. journal names). */
-.pub-list a > i,
-.pub-list a > .fa,
-.pub-list a > [class*="fa-"],
-.pub-list a > [class*="ai-"] {
-  margin: 0 .15em;
-  vertical-align: -.05em;
+/* Inline icon-only links inside publication entries (FA/AI icons).
+   - Wrap each link as an inline-block so the icon's font-glyph bounding box
+     cannot bleed into the preceding text (the original cause of icons
+     visually colliding with journal names / page numbers).
+   - Add explicit left/right padding for breathing room. */
+.pub-list a[aria-label] {
+  display: inline-block;
+  padding: 0 .25em;
+  text-indent: 0;          /* override the hanging-indent on .pub-list p */
+  white-space: nowrap;
+}
+.pub-list a[aria-label] > i,
+.pub-list a[aria-label] > [class*="fa-"],
+.pub-list a[aria-label] > [class*="ai-"] {
+  vertical-align: -.08em;
+  font-size: 1.05em;       /* slightly bigger so icons are easier to read */
 }
 .pub-list a:hover { text-decoration: none; }
 .pub-list a:hover > [class*="fa-"],
