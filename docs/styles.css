@@ -307,6 +307,59 @@ h2 {
   text-indent: -1.2rem;
 }
 
+/* Inline icons inside publication links: small horizontal margin avoids
+   visual collision with adjacent italic text (e.g. journal names). */
+.pub-list a > i,
+.pub-list a > .fa,
+.pub-list a > [class*="fa-"],
+.pub-list a > [class*="ai-"] {
+  margin: 0 .15em;
+  vertical-align: -.05em;
+}
+.pub-list a:hover { text-decoration: none; }
+.pub-list a:hover > [class*="fa-"],
+.pub-list a:hover > [class*="ai-"] {
+  color: var(--bsl-accent-dark);
+}
+
+/* Top-of-page lab metrics block */
+.metrics-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  justify-content: center;
+  margin: 1.5rem auto 0.5rem;
+  padding: 1.2rem 1rem;
+  background: var(--bsl-bg-soft);
+  border: 1px solid var(--bsl-border);
+  border-radius: 8px;
+  max-width: 760px;
+}
+.metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 80px;
+}
+.metric .num {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--bsl-accent);
+  line-height: 1.1;
+}
+.metric .label {
+  font-size: .82rem;
+  color: var(--bsl-muted);
+  text-transform: uppercase;
+  letter-spacing: .03em;
+}
+.metrics-foot {
+  text-align: center;
+  color: var(--bsl-muted);
+  font-size: .85rem;
+  margin: 0 0 1.5rem;
+}
+
 /* --- Quote / callout --- */
 blockquote {
   border-left: 4px solid var(--bsl-accent);
