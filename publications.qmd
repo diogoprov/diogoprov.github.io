@@ -78,7 +78,7 @@ Microhylidae). *PeerJ.* <a href="https://peerj.com/articles/19220/" title="PDF" 
 
 Fiorillo, B.F.; Faggioni, G.; **PROVETE, D.B.** 2025. The utility of an index
 of biotic integrity for predicting terrestrial frog species diversity in a
-tropical forest. *Studies on Neotropical Fauna and Environment.* &nbsp;
+tropical forest. *Studies on Neotropical Fauna and Environment* 61(1):36–45. &nbsp;
 <a href="https://doi.org/10.1080/01650521.2025.2543354" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 Soares, H.K.L.; Barboza, R.R.D.; Feijó, A.; **PROVETE, D.B.**; Alves, R.R.N.
@@ -90,35 +90,35 @@ and evolutionary relationships. *Ethnobiology and Conservation.* &nbsp;
 
 Severgnini, M.R.; Oliveira, M.M.; Valério, L.M.; **PROVETE, D.B.** 2024.
 Temporal dynamics of frog species richness and composition in a peri-urban
-environment. *Ecology and Evolution.* &nbsp;
+environment. *Ecology and Evolution* 14(11):e70628. &nbsp;
 <a href="https://doi.org/10.1002/ece3.70628" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 Moroti, M.T.; Skeels, A.; da Silva, F.R.; **PROVETE, D.B.** 2024. Climate
 interacts with diversification rate in determining species richness and
 functional diversity of tetrapods in a global hotspot. *Journal of
-Biogeography.* &nbsp;
+Biogeography* 51(12):2484–2497. &nbsp;
 <a href="https://doi.org/10.1111/jbi.15001" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 da Silva, F.R.; Oliveira-Silva, A.E.; Antonelli, A.; Carnaval, A.C.;
 **PROVETE, D.B.** 2024. Zoogeographical regions in the Atlantic Forest:
-patterns and potential drivers. *Journal of Biogeography.* &nbsp;
+patterns and potential drivers. *Journal of Biogeography* 51(10):1852–1863. &nbsp;
 <a href="https://doi.org/10.1111/jbi.14859" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 Franco-Belussi, L.; Oliveira Júnior, J.G.; Goldberg, J.; Fernandes, C.E.;
 de Oliveira, C.; **PROVETE, D.B.** 2024. Multiple morphophysiological
 responses of a tropical frog to urbanization conform to the pace-of-life
-syndrome. *Conservation Physiology* 12:coad106. &nbsp;
+syndrome. *Conservation Physiology* 12(1):coad106. &nbsp;
 <a href="https://doi.org/10.1093/conphys/coad106" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 ### 2023
 
 [Editorial] Jenkins, G.; Bekerman, A.P. (...) **PROVETE, D.B.** (...) Oboyle, B.
 2023. Reproducibility in ecology & evolution: minimum standards for data and
-code. *Ecology and Evolution* 13:e9961. &nbsp;
+code. *Ecology and Evolution* 13(5):e9961. &nbsp;
 <a href="https://doi.org/10.1002/ece3.9961" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 [Editorial] Zenni, R. (...) **PROVETE, D.B.** (...) Moulton, T. 2023. Ecology
-in South America: present state and future prospects. *Austral Ecology* 49. &nbsp;
+in South America: present state and future prospects. *Austral Ecology* 49(1):e13457. &nbsp;
 <a href="https://doi.org/10.1111/aec.13457" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 Acero-Murcia, A.C.; Severgnini, M.R.; Fischer, E.A.; **PROVETE, D.B.** 2023.
@@ -159,7 +159,7 @@ agroecosystems. *Ecological Applications.* ^\*equal contributions^ &nbsp;
 
 Ceron, K.; **PROVETE, D.B.**; Pires, M.M.; Araújo, A.C.; Blüthgen, N.;
 Santana, D.J. 2022. Prey availability and interaction rewiring drive the
-spatial and seasonal structure of a predator-prey metaweb. *Ecology.* &nbsp;
+spatial and seasonal structure of a predator-prey metaweb. *Ecology* 103(8):e3716. &nbsp;
 <a href="https://doi.org/10.1002/ecy.3716" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 ### 2021
@@ -171,7 +171,7 @@ along an urban-rural gradient. *Urban Ecosystems.* &nbsp;
 
 Gomes-Mello, F.; **PROVETE, D.B.**; Heino, J.; da Silva, F.R. 2021.
 Community composition–environment relationships vary over time: are snapshot
-studies of metacommunity dynamics useful? *Basic and Applied Ecology.* &nbsp;
+studies of metacommunity dynamics useful? *Basic and Applied Ecology* 56:85–96. &nbsp;
 <a href="https://doi.org/10.1016/j.baae.2021.07.006" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 Franco-Belussi, L.\*; **PROVETE, D.B.\***; Leão, T.R.F.; Siqueira, M.S.;
@@ -214,7 +214,7 @@ the Ecological Society of America.* &nbsp;
 Benicio, R.; **PROVETE, D.B.**; Lyra, M.L.; Heino, J.; Haddad, C.F.B.;
 Rossa-Feres, D.C.; da Silva, F.R. 2021. Differential speciation rates and
 niche conservatism affect community assembly across adjacent biogeographical
-regions. *Journal of Biogeography.* &nbsp;
+regions. *Journal of Biogeography* 48(9):2211–2225. &nbsp;
 <a href="https://doi.org/10.1111/jbi.14145" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 Valente-Neto, F.; Roque, F.O.; Pauliquevis, C.F.; de Oliveira, A.K.M.;
@@ -248,7 +248,7 @@ species to contrasting land use patterns in the Brazilian Cerrado. *PeerJ*
 
 Garey, M.V.; **PROVETE, D.B.**; Ouchi-Melo, L.S.; Haddad, C.F.B.;
 Rossa-Feres, D.C. 2020. The larva and advertisement call of *Bokermannohyla
-ahenea* (Anura: Hylidae). *South American Journal of Herpetology* 17. &nbsp;
+ahenea* (Anura: Hylidae). *South American Journal of Herpetology* 17(1):1–16. &nbsp;
 <a href="https://doi.org/10.2994/SAJH-D-18-00006.1" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 Almeida-Gomes, M.; Valente-Neto, F.; Pacheco, E.; Ganci, C.; Leibold, M.A.;
