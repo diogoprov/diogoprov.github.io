@@ -62,14 +62,14 @@ Icons: <i class="fa-solid fa-file-pdf"></i> PDF · <i class="ai ai-biorxiv"></i>
 
 Rebouças, R.; Moroti, M.T.; Carvalho, T.; Martins, M.R.; Toledo, L.F.;
 **PROVETE, D.B.** 2026. Environmental and geomorphological drivers of frog
-diversity on islands worldwide. *Ecography.*
+diversity on islands worldwide. *Ecography.* &nbsp;
 <a href="https://nsojournals.onlinelibrary.wiley.com/doi/epdf/10.1002/ecog.07818" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 ### 2025
 
 Ramalho, Q.; de Souza, J.C.; **PROVETE, D.B.** 2025. Irregular funding cycles
 in Brazilian science pose a barrier to biodiversity conservation and global
-leadership. *Perspectives in Ecology and Conservation.*
+leadership. *Perspectives in Ecology and Conservation.* &nbsp;
 <a href="https://www.sciencedirect.com/science/article/pii/S2530064425000422" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 Menezes, L.B.C.; Severgnini, M.R.; Pezzuti, T.L.; Garey, M.V.;
@@ -78,67 +78,74 @@ Microhylidae). *PeerJ.* <a href="https://peerj.com/articles/19220/" title="PDF" 
 
 Fiorillo, B.F.; Faggioni, G.; **PROVETE, D.B.** 2025. The utility of an index
 of biotic integrity for predicting terrestrial frog species diversity in a
-tropical forest. *Studies on Neotropical Fauna and Environment.*
+tropical forest. *Studies on Neotropical Fauna and Environment.* &nbsp;
+<a href="https://doi.org/10.1080/01650521.2025.2543354" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 Soares, H.K.L.; Barboza, R.R.D.; Feijó, A.; **PROVETE, D.B.**; Alves, R.R.N.
 2025. Worldwide patterns of wild mammal trade are driven by ecological traits
-and evolutionary relationships. *Ethnobiology and Conservation.*
+and evolutionary relationships. *Ethnobiology and Conservation.* &nbsp;
 <a href="https://ethnobioconservation.com/ebc/article/view/1067" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 ### 2024
 
 Severgnini, M.R.; Oliveira, M.M.; Valério, L.M.; **PROVETE, D.B.** 2024.
 Temporal dynamics of frog species richness and composition in a peri-urban
-environment. *Ecology and Evolution.*
+environment. *Ecology and Evolution.* &nbsp;
+<a href="https://doi.org/10.1002/ece3.70628" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 Moroti, M.T.; Skeels, A.; da Silva, F.R.; **PROVETE, D.B.** 2024. Climate
 interacts with diversification rate in determining species richness and
 functional diversity of tetrapods in a global hotspot. *Journal of
-Biogeography.*
+Biogeography.* &nbsp;
+<a href="https://doi.org/10.1111/jbi.15001" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 da Silva, F.R.; Oliveira-Silva, A.E.; Antonelli, A.; Carnaval, A.C.;
 **PROVETE, D.B.** 2024. Zoogeographical regions in the Atlantic Forest:
-patterns and potential drivers. *Journal of Biogeography.*
+patterns and potential drivers. *Journal of Biogeography.* &nbsp;
+<a href="https://doi.org/10.1111/jbi.14859" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 Franco-Belussi, L.; Oliveira Júnior, J.G.; Goldberg, J.; Fernandes, C.E.;
 de Oliveira, C.; **PROVETE, D.B.** 2024. Multiple morphophysiological
 responses of a tropical frog to urbanization conform to the pace-of-life
-syndrome. *Conservation Physiology* 12:cad106.
+syndrome. *Conservation Physiology* 12:coad106. &nbsp;
+<a href="https://doi.org/10.1093/conphys/coad106" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 ### 2023
 
 [Editorial] Jenkins, G.; Bekerman, A.P. (...) **PROVETE, D.B.** (...) Oboyle, B.
 2023. Reproducibility in ecology & evolution: minimum standards for data and
-code. *Ecology and Evolution* 13:e9961.
+code. *Ecology and Evolution* 13:e9961. &nbsp;
+<a href="https://doi.org/10.1002/ece3.9961" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 [Editorial] Zenni, R. (...) **PROVETE, D.B.** (...) Moulton, T. 2023. Ecology
-in South America: present state and future prospects. *Austral Ecology* 49.
+in South America: present state and future prospects. *Austral Ecology* 49. &nbsp;
+<a href="https://doi.org/10.1111/aec.13457" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 Acero-Murcia, A.C.; Severgnini, M.R.; Fischer, E.A.; **PROVETE, D.B.** 2023.
 An evolutionary ecomorphological perspective on the assembly of a Neotropical
-bat metacommunity. *Journal of Mammalian Evolution.*
-<a href="https://app.box.com/s/p467q13kxfhbsq2cxu09of7o5cc1vrue" title="Final published PDF" aria-label="Final published PDF"><i class="fa-solid fa-file-pdf"></i> Final</a> ·
+bat metacommunity. *Journal of Mammalian Evolution.* &nbsp;
+<a href="https://app.box.com/s/p467q13kxfhbsq2cxu09of7o5cc1vrue" title="Final published PDF" aria-label="Final published PDF"><i class="fa-solid fa-file-pdf"></i> Final</a> · &nbsp;
 <a href="https://www.researchsquare.com/article/rs-2302646/v1" title="Open-access preprint" aria-label="Open-access preprint"><i class="ai ai-open-access"></i></a>
 
 Freire-Jr, G.; Salcido, D.; Oliveira, H.F.M.; Ribeiro, D.B.;
 **PROVETE, D.B.**; Silva, T.; Dias, J.P.; Rodrigues, H.P.; Santos, J.P.;
 Diniz, I.R. 2023. Body size and its correlates in fruit-feeding butterflies
-in a seasonal environment. *Journal of Insect Conservation.*
+in a seasonal environment. *Journal of Insect Conservation.* &nbsp;
 <a href="https://app.box.com/s/t6smcxz3t0monswhml1ne2pyu4r1keh3" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 Kloh, J.S.; Figueredo, C.C.; **PROVETE, D.B.**; Eterovick, P.C. 2023. Taste
 for pollen comes in different shapes: consumption by tadpoles from three
-ecomorphotypes. *Journal of Zoology.*
+ecomorphotypes. *Journal of Zoology.* &nbsp;
 <a href="https://zslpublications.onlinelibrary.wiley.com/doi/10.1111/jzo.13051" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 Helpern, B. (...) **PROVETE, D.B.** (...) Yongflesh, C. 2023. Priorities for
-synthesis in ecology and environmental science. *Ecosphere* 14(1):e4342.
+synthesis in ecology and environmental science. *Ecosphere* 14(1):e4342. &nbsp;
 <a href="https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecs2.4342" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 Bovo, R.; Simon, M.; **PROVETE, D.B.**; Lyra, M.L.; Navas, C.; Andrade, D.
 2023. Altitudinal gradients drive intraspecific physiological variation in
 tropical amphibians and alter species vulnerability to climate change.
-*Integrative Organismal Biology.*
+*Integrative Organismal Biology.* &nbsp;
 <a href="https://academic.oup.com/iob/advance-article/doi/10.1093/iob/obad009/7084019" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 ### 2022
@@ -147,112 +154,117 @@ Sánchez-Domene, D.\*; da Silva, F.R.\*; **PROVETE, D.B.\***;
 Navarro-Lozano, A.; Acayabas, R.D.; Montagner, C.C.; Rossa-Feres, D.C.;
 López-Iborra, G.; Almeida, E.A. 2022. Combined effects of landscape
 composition and agrochemicals on frog communities amid sugarcane-dominated
-agroecosystems. *Ecological Applications.* ^\*equal contributions^
+agroecosystems. *Ecological Applications.* ^\*equal contributions^ &nbsp;
 <a href="https://esajournals.onlinelibrary.wiley.com/doi/10.1002/eap.2781" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 Ceron, K.; **PROVETE, D.B.**; Pires, M.M.; Araújo, A.C.; Blüthgen, N.;
 Santana, D.J. 2022. Prey availability and interaction rewiring drive the
-spatial and seasonal structure of a predator-prey metaweb. *Ecology.*
+spatial and seasonal structure of a predator-prey metaweb. *Ecology.* &nbsp;
+<a href="https://doi.org/10.1002/ecy.3716" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 ### 2021
 
 Ganci, C.C.; **PROVETE, D.B.**; Püttker, T.; Lindermayer, D.; Almeida-Gomes, M.
 2021. High species turnover shapes anuran community composition in ponds
-along an urban-rural gradient. *Urban Ecosystems.*
+along an urban-rural gradient. *Urban Ecosystems.* &nbsp;
 <a href="https://link.springer.com/article/10.1007/s11252-021-01174-8" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 Gomes-Mello, F.; **PROVETE, D.B.**; Heino, J.; da Silva, F.R. 2021.
 Community composition–environment relationships vary over time: are snapshot
-studies of metacommunity dynamics useful? *Basic and Applied Ecology.*
+studies of metacommunity dynamics useful? *Basic and Applied Ecology.* &nbsp;
+<a href="https://doi.org/10.1016/j.baae.2021.07.006" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 Franco-Belussi, L.\*; **PROVETE, D.B.\***; Leão, T.R.F.; Siqueira, M.S.;
 Valverde, B.S.L.; Martins, B.O.; de Oliveira, C.; Fernandes, C.E.S. 2021.
 Hematological correlates of body condition in a wild frog population, with a
 phylogenetic perspective on blood cell composition in Anura. *Current
-Zoology.* ^\*equal contributions^
+Zoology.* ^\*equal contributions^ &nbsp;
 <a href="https://academic.oup.com/cz/advance-article/doi/10.1093/cz/zoab059/6326800" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 **PROVETE, D.B.**; Garey, M.V.; Picheli, K.O.; Mello, C.M.; Gonçalves, D.S.;
 Conte, C.E.; Rossa-Feres, D.C. 2021. The tadpole and advertisement call of
 *Trachycephalus imitatrix* and *T. dibernardoi* (Anura: Hylidae). *Journal of
-Herpetology.*
+Herpetology.* &nbsp;
 <a href="https://morphobank.org/index.php/Projects/ProjectOverview/project_id/2445" title="MorphoBank images" aria-label="MorphoBank images"><i class="fa-solid fa-database"></i></a>
 
 Oliveira, C.; Campos, I.; **PROVETE, D.B.**; Garnieri, M.; Cardozo, S. 2021.
 Defensive behavior and caudal autotomy rate in *Coleodactylus meridionalis*
-(Squamata: Sphaerodactylidae). *Journal of Natural History* 52.
+(Squamata: Sphaerodactylidae). *Journal of Natural History* 52. &nbsp;
 <a href="https://figshare.com/articles/dataset/Data_and_description_of_analysis_of_the_paper_Defensive_behavior_and_caudal_autotomy_rate_in_Coleodactylus_meridionalis_Squamata_Sphaerodactylidae_/5592412" title="Data" aria-label="Data"><i class="ai ai-open-data"></i></a>
 
 Moroti, M.T.; Soares, P.T.; Pedrozo, M.; **PROVETE, D.B.**; Santana, D.J.
 2021. The effect of prey availability, phylogeny, and morphology on trophic
 resource partitioning in an anuran community. *Basic and Applied Ecology*
-50:181–191.
-<a href="https://doi.org/10.6084/m9.figshare.12331073.v2" title="Data" aria-label="Data"><i class="ai ai-open-data"></i></a> ·
+50:181–191. &nbsp;
+<a href="https://doi.org/10.6084/m9.figshare.12331073.v2" title="Data" aria-label="Data"><i class="ai ai-open-data"></i></a> · &nbsp;
 <a href="https://www.sciencedirect.com/science/article/pii/S1439179120301213" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 Martins, B.O.; Franco-Belussi, F.; Siqueira, M.S.; Fernandes, C.E;
 **PROVETE, D.B.** 2021. The evolution of red blood cell shape in fishes.
-*Journal of Evolutionary Biology.*
-<a href="https://doi.org/10.6084/m9.figshare.12044325.v1" title="Data" aria-label="Data"><i class="ai ai-open-data"></i></a> ·
+*Journal of Evolutionary Biology.* &nbsp;
+<a href="https://doi.org/10.6084/m9.figshare.12044325.v1" title="Data" aria-label="Data"><i class="ai ai-open-data"></i></a> · &nbsp;
 <a href="https://protocols.io/view/staining-of-fish-red-blood-cells-bd9yi97w.html" title="Protocol" aria-label="Protocol"><i class="fa-solid fa-flask"></i></a>
 
 Mello, F.N.A.; Bender, A.; Martínez-Blancas, A.; Vaz, M.C.;
 **PROVETE, D.B.** 2021. Human dimensions: the Latin America and the Caribbean
 chapter of ESA — embracing our diversity during adverse times. *Bulletin of
-the Ecological Society of America.*
+the Ecological Society of America.* &nbsp;
 <a href="https://esajournals.onlinelibrary.wiley.com/doi/10.1002/bes2.1883" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 Benicio, R.; **PROVETE, D.B.**; Lyra, M.L.; Heino, J.; Haddad, C.F.B.;
 Rossa-Feres, D.C.; da Silva, F.R. 2021. Differential speciation rates and
 niche conservatism affect community assembly across adjacent biogeographical
-regions. *Journal of Biogeography.*
+regions. *Journal of Biogeography.* &nbsp;
+<a href="https://doi.org/10.1111/jbi.14145" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 Valente-Neto, F.; Roque, F.O.; Pauliquevis, C.F.; de Oliveira, A.K.M.;
 **PROVETE, D.B.**; Szabo, J.K.; Souza, F.L. 2021. Loss of cultural and
 functional diversity associated with birds across the urbanization gradient
-in a tropical city. *Frontiers in Ecology and Evolution.*
+in a tropical city. *Frontiers in Ecology and Evolution.* &nbsp;
 <a href="https://www.frontiersin.org/articles/10.3389/fevo.2021.615797/abstract" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 **PROVETE, D.B.** 2021. Challenges and strategies to teach history and
-philosophy of science to graduate biologists.
+philosophy of science to graduate biologists. &nbsp;
 <a href="http://philsci-archive.pitt.edu/18769/" title="Preprint on PhilSci Archive" aria-label="Preprint on PhilSci Archive"><i class="ai ai-philpapers"></i></a>
 
 ### 2020
 
 Ceron, K.; Severgnini, M.R.; **PROVETE, D.B.** 2020. Boas práticas em análise
-de séries temporais em herpetologia. *Herpetologia Brasileira* 9(3):70–83.
+de séries temporais em herpetologia. *Herpetologia Brasileira* 9(3):70–83. &nbsp;
+<a href="https://storage.builderall.com/franquias/2/6437879/editor-html/10007874.pdf" title="Issue PDF (Herpetologia Brasileira)" aria-label="Issue PDF (Herpetologia Brasileira)"><i class="fa-solid fa-file-pdf"></i></a>
 
 Alves, R.R.N.; Borges, A.K.M.; Barboza, R.R.D.; Souto, W.M.S.;
 Gonçalves-Souza, T.; **PROVETE, D.B.**; Albuquerque, U.P. 2020. A global
 analysis of the evolutionary drivers of wild mammals use in traditional
-medicine. *Mammal Review.*
+medicine. *Mammal Review.* &nbsp;
 <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/mam.12233" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 Franco-Belussi, L.; **PROVETE, D.B.**; Borges, R.E.; Oliveira, C.;
 Santos, L.R.S. 2020. Idiosyncratic liver pigment alterations of five frog
 species to contrasting land use patterns in the Brazilian Cerrado. *PeerJ*
-8:e9751.
-<a href="http://dx.doi.org/10.17632/bcsm7v629y.3" title="Data" aria-label="Data"><i class="ai ai-open-data"></i></a> ·
+8:e9751. &nbsp;
+<a href="http://dx.doi.org/10.17632/bcsm7v629y.3" title="Data" aria-label="Data"><i class="ai ai-open-data"></i></a> · &nbsp;
 <a href="https://peerj.com/articles/9751/" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 Garey, M.V.; **PROVETE, D.B.**; Ouchi-Melo, L.S.; Haddad, C.F.B.;
 Rossa-Feres, D.C. 2020. The larva and advertisement call of *Bokermannohyla
-ahenea* (Anura: Hylidae). *South American Journal of Herpetology* 15.
+ahenea* (Anura: Hylidae). *South American Journal of Herpetology* 17. &nbsp;
+<a href="https://doi.org/10.2994/SAJH-D-18-00006.1" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 Almeida-Gomes, M.; Valente-Neto, F.; Pacheco, E.; Ganci, C.; Leibold, M.A.;
 Melo, A.S.; **PROVETE, D.B.** 2020. How does the landscape affect
 metacommunity structure? A quantitative review in lentic environments.
-*Current Landscape Ecology Reports.*
+*Current Landscape Ecology Reports.* &nbsp;
 <a href="https://diogoprovete.weebly.com/uploads/1/7/3/6/17367099/almeida-gomer_et_al._2020.pdf" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 Tonini, J.\*; **PROVETE, D.B.\***; Maciel, N.; Morais, A.R.; Goute, S.;
 Toledo, F.; Pyron, R.A. 2020. Ecomorphological escape from constrained
-acoustic allometry in frogs. *Ecology and Evolution* 10. ^\*equal contributions^
+acoustic allometry in frogs. *Ecology and Evolution* 10. ^\*equal contributions^ &nbsp;
 <a href="https://onlinelibrary.wiley.com/doi/10.1002/ece3.6155" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 Ceron, K.; Santana, D.J.; Lucas, E.M.; Zocche, J.J.; **PROVETE, D.B.** 2020.
 Microclimatic variables influence the temporal dynamics of an anuran
-metacommunity in a non-stationary way. *Ecology and Evolution* 10.
+metacommunity in a non-stationary way. *Ecology and Evolution* 10. &nbsp;
 <a href="https://onlinelibrary.wiley.com/doi/10.1002/ece3.6217" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 ### 2019
@@ -261,12 +273,12 @@ Toscano, N.P.; de Freitas, N.H.A.; Rezende, M.R.C.; **PROVETE, D.B.**;
 Lyra, M.; Haddad, C.F.B.; Rossa-Feres, D.C.; da Silva, F.R. 2019. The
 external morphology and internal oral features of the tadpole of
 *Crossodactylus caramaschii* (Anura: Hylodidae). *Journal of Herpetology*
-53(4):263–271.
+53(4):263–271. &nbsp;
 <a href="https://journalofherpetology.com/doi/abs/10.1670/18-155" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 Tomas, W.M.; **PROVETE, D.B.** et al. 2019. Sustainability agenda for the
 Pantanal wetland: perspectives on a collaborative interface for science,
-policy, and decision-making. *Tropical Conservation Science.*
+policy, and decision-making. *Tropical Conservation Science.* &nbsp;
 <a href="https://doi.org/10.1177/1940082919872634" title="DOI: 10.1177/1940082919872634" aria-label="DOI"><i class="ai ai-doi"></i> 10.1177/1940082919872634</a>
 
 ### 2018
@@ -275,46 +287,47 @@ Garey, M.V.\*; **PROVETE, D.B.\***; Ouchi-Melo, L.S.; Gonçalves-Souza, T.;
 Rossa-Feres, D.C.; Haddad, C.F.B. 2018. Phylogenetic and adaptive components
 of the anuran advertisement call correlate with temporal species
 co-occurrence. *Biological Journal of the Linnean Society* 125(2):292–301.
-^\*equal contributions^
+^\*equal contributions^ &nbsp;
 <a href="https://academic.oup.com/biolinnean/article-abstract/125/2/292/5090348" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 ### 2017
 
 Franco-Belussi, L.\*; **PROVETE, D.B.\***; Oliveira, C. 2017. Environmental
 correlates of visceral coloration in anurans vary throughout space and
-lineages. *Ecology and Evolution* 7(22):9222–9233. ^\*equal contributions^
-<a href="http://onlinelibrary.wiley.com/doi/10.1002/ece3.3438/full" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a> ·
+lineages. *Ecology and Evolution* 7(22):9222–9233. ^\*equal contributions^ &nbsp;
+<a href="http://onlinelibrary.wiley.com/doi/10.1002/ece3.3438/full" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a> · &nbsp;
 <a href="https://doi.org/10.6084/m9.figshare.4707187.v1" title="Data" aria-label="Data"><i class="ai ai-open-data"></i></a>
 
 Silva, F.R.; **PROVETE, D.B.**; Gerassi, L.; Bovo, R.P. 2017. What do data
 from fieldwork and scientific collections tell us about species richness and
 composition of amphibians and reptiles? *South American Journal of
-Herpetology* 12(2):99–106.
+Herpetology* 12(2):99–106. &nbsp;
+<a href="https://doi.org/10.2994/SAJH-D-16-00051.1" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 Fanali, L.Z.; Valverde, B.S.L.; Franco-Belussi, L.; **PROVETE, D.B.**;
 de Oliveira, C. 2017. Response of digestive organs of *Hypsiboas
 albopunctatus* (Anura: Hylidae) to benzo[α]pyrene. *Amphibia-Reptilia*
-38:175–185.
-<a href="http://booksandjournals.brillonline.com/content/journals/10.1163/15685381-00003101" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a> ·
+38:175–185. &nbsp;
+<a href="http://booksandjournals.brillonline.com/content/journals/10.1163/15685381-00003101" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a> · &nbsp;
 <a href="https://figshare.com/articles/Response_of_digestive_organs_of_Hypsiboas_albopunctatus_Anura_Hylidae_to_benzo_pyrene/4620736" title="Data" aria-label="Data"><i class="ai ai-open-data"></i></a>
 
 Livingston, G.\*; Fukumori, K.\*; **PROVETE, D.B.\***; Leibold, M.A.;
 Kawachi, M.; Takamura, N. 2017. Predators regulate prey species sorting and
 spatial distribution in microbial landscapes. *Journal of Animal Ecology*
-86(2):501–510. ^\*equal contributions^
-<a href="https://app.box.com/s/sgs5vd6j9512l7mk7f7utp0zemz8q2ky" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a> ·
+86(2):501–510. ^\*equal contributions^ &nbsp;
+<a href="https://app.box.com/s/sgs5vd6j9512l7mk7f7utp0zemz8q2ky" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a> · &nbsp;
 <a href="http://datadryad.org/resource/doi:10.5061/dryad.79hb8" title="Data" aria-label="Data"><i class="ai ai-open-data"></i></a> ·
 [F1000 Prime Recommended](https://f1000.com/prime/727255550)
 
 **PROVETE, D.B.**; Guimarães, C.S.; Melo, L.S.O.; Rossa-Feres, D.C. 2017.
 Tadpole of *Proceratophrys mantiqueira* (Anura: Odontophrynidae), with
-description of its internal oral features. *Copeia* 105(1):46–52.
-<a href="https://app.box.com/s/sgs5vd6j9512l7mk7f7utp0zemz8q2ky" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a> ·
+description of its internal oral features. *Copeia* 105(1):46–52. &nbsp;
+<a href="https://app.box.com/s/sgs5vd6j9512l7mk7f7utp0zemz8q2ky" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a> · &nbsp;
 <a href="http://morphobank.org/permalink/?P1176" title="MorphoBank repository" aria-label="MorphoBank repository"><i class="fa-solid fa-database"></i></a>
 
 Faria, S.C.; **PROVETE, D.B.**; Thurman, C.L.; McNamara, J.C. 2017.
 Phylogenetic pattern and adaptive evolution of osmoregulation in fiddler
-crabs (Brachyura, *Uca*). *PLoS One* 12(2):e0171870.
+crabs (Brachyura, *Uca*). *PLoS One* 12(2):e0171870. &nbsp;
 <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0171870" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a> ·
 *Winner of the 2017 "Prêmio Prof. Sérgio de Almeida Rodrigues" sponsored by CEBIMar/USP.*
 
@@ -322,67 +335,68 @@ crabs (Brachyura, *Uca*). *PLoS One* 12(2):e0171870.
 
 Garey, M.V.; **PROVETE, D.B.** 2016. Conservation status, threat sources,
 and endemism of anurans in highland grasslands in Southern and Southeastern
-Brazil. *Oecologia Australis* 20(2):94–108.
+Brazil. *Oecologia Australis* 20(2):94–108. &nbsp;
 <a href="http://www.oecologiaaustralis.org/ojs/index.php/oa/article/view/1025" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 Silva, F.R.; **PROVETE, D.B.**; Hawkins, B. 2016. Comparison between species
 richness and phylogenetic diversity values calculated using anuran range maps
 and checklists from the Brazilian Atlantic Forest. *Natureza & Conservação*
-14(2):99–105.
+14(2):99–105. &nbsp;
 <a href="http://www.sciencedirect.com/science/article/pii/S1679007316300548" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 ### 2015
 
 Leite, G.B.; Franco-Belussi, L.; **PROVETE, D.B.**; Oliveira, C. 2015.
 Comparative testis morphology in Neotropical anuran species. *Zoologischer
-Anzeiger* 257:29–38.
+Anzeiger* 257:29–38. &nbsp;
 <a href="https://app.box.com/s/77hb45887qq4sogbzw8tmn60thtr4kn9" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 **PROVETE, D.B.** 2015. Editorial: Wherefore and whither a *Check List*?
-The journal at age 10. *Check List* 11(4):1680.
+The journal at age 10. *Check List* 11(4):1680. &nbsp;
 <a href="http://biotaxa.org/cl/article/view/11.4.1680" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 ### 2014
 
 Loyola, R.D.; Lemes, P.; Brum, F.T.; **PROVETE, D.B.**; Duarte, L.D.S. 2014.
 Clade-specific consequences of climate change to amphibians in Atlantic
-Forest protected areas. *Ecography* 37(1):65–72.
-<a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1600-0587.2013.00396.x/full" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a> ·
+Forest protected areas. *Ecography* 37(1):65–72. &nbsp;
+<a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1600-0587.2013.00396.x/full" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a> · &nbsp;
 <a href="http://agencia.fapesp.br/18627" title="Media coverage (in Portuguese)" aria-label="Media coverage (in Portuguese)"><i class="fa-solid fa-newspaper"></i> PT</a>
 
 Garey, M.V.; **PROVETE, D.B.**; Martins, I.A.; Rossa-Feres, D.C.;
 Haddad, C.F.B. 2014. Anurans from the Serra da Bocaina National Park and
-surrounding buffer area, Southeastern Brazil. *Check List* 10(2):308–316.
+surrounding buffer area, Southeastern Brazil. *Check List* 10(2):308–316. &nbsp;
 <a href="http://checklist.org.br/getpdf?SL065-13" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 **PROVETE, D.B.**; Gonçalves-Souza, T.; Garey, M.V.; Martins, I.A.;
 Rossa-Feres, D.C. 2014. Broad-scale spatial patterns of pond morphology and
 canopy cover affect the structure of Neotropical tadpole metacommunity.
-*Hydrobiologia* 734(1):69–79.
-<a href="https://diogoprovete.weebly.com/uploads/1/7/3/6/17367099/provete_et_al._.pdf" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a> ·
+*Hydrobiologia* 734(1):69–79. &nbsp;
+<a href="https://diogoprovete.weebly.com/uploads/1/7/3/6/17367099/provete_et_al._.pdf" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a> · &nbsp;
 <a href="http://biorxiv.org/content/early/2013/12/05/001255" title="Preprint on bioRxiv" aria-label="Preprint on bioRxiv"><i class="ai ai-biorxiv"></i></a>
 
 Costa, H.C.; **PROVETE, D.B.**; Feio, R.N. 2014. A new prey record for the
 banded calico snake *Oxyrhopus petolarius* (Serpentes: Diapsidae).
-*Herpetology Notes* 7:115–118.
+*Herpetology Notes* 7:115–118. &nbsp;
 <a href="http://www.herpetologynotes.seh-herpetology.org/Volume7_PDFs/Costa_HerpetologyNotes_volume7_pages115-118.pdf" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 ### 2013
 
 **PROVETE, D.B.** 2013. What is on the horizon for ecophylogenetics?
-*Natureza & Conservação* 11(1):7–14.
+*Natureza & Conservação* 11(1):7–14. &nbsp;
+<a href="https://doi.org/10.4322/natcon.2013.001" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 **PROVETE, D.B.**; Melo, L.S.O.; Garey, M.V.; Gomes, F.B.R.; Martins, I.A.;
 Rossa-Feres, D.C. 2013. The larvae of *Proceratophrys melanopogon* (Amphibia:
 Anura), with emphasis on internal oral morphology and comparisons with
-*P. moratoi* and *P. cururu*. *Herpetologica* 69(2):163–174.
-<a href="https://diogoprovete.weebly.com/uploads/1/7/3/6/17367099/provete_et_al._2013.pdf" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a> ·
+*P. moratoi* and *P. cururu*. *Herpetologica* 69(2):163–174. &nbsp;
+<a href="https://diogoprovete.weebly.com/uploads/1/7/3/6/17367099/provete_et_al._2013.pdf" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a> · &nbsp;
 <a href="http://morphobank.org/permalink/?P778" title="MorphoBank repository" aria-label="MorphoBank repository"><i class="fa-solid fa-database"></i></a>
 
 Villalobos, F.; Dobrovolski, R.; **PROVETE, D.B.**; Gouvea, S.F. 2013. Is
 rich and rare the common share? Describing biodiversity and informing
 conservation practices for South American amphibians. *PLoS One*
-8(2):e56073.
+8(2):e56073. &nbsp;
 <a href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0056073" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 ### 2012
@@ -390,56 +404,56 @@ conservation practices for South American amphibians. *PLoS One*
 **PROVETE, D.B.**; Franco-Belussi, L.; Santos, L.R.S.; Zieri, R.;
 Moresco, R.M.; Almeida, S.C.; Martins, I.A.; Oliveira, C. 2012. Phylogenetic
 signal and diversity of visceral pigmentation in eight anuran families.
-*Zoologica Scripta* 41:547–556.
-<a href="https://diogoprovete.weebly.com/uploads/1/7/3/6/17367099/provete_et_al._phylogenetic_signal.pdf" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a> ·
+*Zoologica Scripta* 41:547–556. &nbsp;
+<a href="https://diogoprovete.weebly.com/uploads/1/7/3/6/17367099/provete_et_al._phylogenetic_signal.pdf" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a> · &nbsp;
 <a href="http://morphobank.org/permalink/?F701" title="MorphoBank repository" aria-label="MorphoBank repository"><i class="fa-solid fa-database"></i></a>
 
 Gomes, F.B.R.; **PROVETE, D.B.**; Martins, I.A. 2012. The tadpole of
 *Hylodes magalhaesi* (Bokermann, 1964) from southeastern Brazil (Anura:
-Hylodidae). *Journal of Herpetology* 46(4):614–619.
+Hylodidae). *Journal of Herpetology* 46(4):614–619. &nbsp;
 <a href="https://app.box.com/s/c0glw4r6l73gyjh7huxr" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 **PROVETE, D.B.**; Villalobos, F.; Cianciaruso, M.V. 2012. Shadows of the
 past: paleo-reconstructions, phylogenies, and macroecological hypotheses.
-*Frontiers of Biogeography* 4(2):54–55.
+*Frontiers of Biogeography* 4(2):54–55. &nbsp;
 <a href="http://escholarship.org/uc/item/1fq1k9t6" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 **PROVETE, D.B.**; Garey, M.V.; Toledo, L.F.; Nascimento, J.; Lourenço, L.B.;
 Rossa-Feres, D.C.; Haddad, C.F.B. 2012. Redescription of *Physalaemus
 barrioi* Bokermann, 1966 (Anura: Leiuperidae). *Copeia* 2012(3):507–518.
-*Best Student Paper in Herpetology 2012, Copeia.*
-<a href="https://app.box.com/s/m69cxanxxangbyiwgof5" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a> ·
+*Best Student Paper in Herpetology 2012, Copeia.* &nbsp;
+<a href="https://app.box.com/s/m69cxanxxangbyiwgof5" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a> · &nbsp;
 <a href="http://morphobank.org/permalink/?F544" title="MorphoBank repository" aria-label="MorphoBank repository"><i class="fa-solid fa-database"></i></a>
 
 **PROVETE, D.B.**; Garey, M.V.; Silva, F.R.; Jordani, M.X. 2012. Knowledge
 gaps and bibliographical revision about free-swimming anuran larvae from
-Brazil. *NorthWestern Journal of Zoology* 8(2):823–826.
+Brazil. *NorthWestern Journal of Zoology* 8(2):823–826. &nbsp;
 <a href="http://biozoojournals.3x.ro/nwjz/content/v8n2/nwjz.121124.Provete.pdf" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a> ·
 [Searchable database](https://diogoprov.github.io/Brazilian-Tadpoles-5.0/)
 
 **PROVETE, D.B.**; Melo, A.S. 2012. O software R e suas aplicações em
-Herpetologia. *Herpetologia Brasileira* 1(1):15–17.
+Herpetologia. *Herpetologia Brasileira* 1(1):15–17. &nbsp;
 <a href="https://app.box.com/s/y8rhlxhem4zbtl3oai42" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 ### 2011
 
 **PROVETE, D.B.**; Garey, M.V.; Dias, N.Y.N.; Rossa-Feres, D.C. 2011. The
 tadpole of *Physalaemus moreirae* Miranda-Ribeiro, 1937 (Anura: Leiuperidae).
-*Herpetologica* 67(3):258–270.
-<a href="https://app.box.com/s/xjndy2a0pbyt71iefbgo" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a> ·
+*Herpetologica* 67(3):258–270. &nbsp;
+<a href="https://app.box.com/s/xjndy2a0pbyt71iefbgo" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a> · &nbsp;
 <a href="http://morphobank.org/permalink/?F725" title="MorphoBank repository" aria-label="MorphoBank repository"><i class="fa-solid fa-database"></i></a>
 
 **PROVETE, D.B.**; Garey, M.V.; Silva, F.R.; Rossa-Feres, D.C. 2011.
 Anurofauna do noroeste paulista: lista de espécies e chave de identificação
-para adultos. *Biota Neotropica* 11(2):377–391.
+para adultos. *Biota Neotropica* 11(2):377–391. &nbsp;
 <a href="http://www.scielo.br/scielo.php?script=sci_arttext&pid=S1676-06032011000200036" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 ### 2010
 
 Gomes, F.B.R.; **PROVETE, D.B.**; Martins, I.A. 2010. The tadpole of
 *Physalaemus jordanensis* Bokermann, 1967 (Anura, Leiuperidae) from Campos
-do Jordão, Serra da Mantiqueira, Southeastern Brazil. *Zootaxa* 2327:65–68.
-<a href="https://app.box.com/s/g7y9xcjz29s8hyd3e6l4" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a> ·
+do Jordão, Serra da Mantiqueira, Southeastern Brazil. *Zootaxa* 2327:65–68. &nbsp;
+<a href="https://app.box.com/s/g7y9xcjz29s8hyd3e6l4" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a> · &nbsp;
 <a href="http://morphobank.org/permalink/?F726" title="MorphoBank repository" aria-label="MorphoBank repository"><i class="fa-solid fa-database"></i></a>
 
 :::
@@ -465,7 +479,7 @@ Springer, Berlin.
 Severgnini, M.R.; Ganci, C.; Souza, F.L.; Almeida-Gomes, M.; Angeoleto, F.;
 **PROVETE, D.B.** 2025. Ecological dynamics of frogs in tropical cities:
 uncovering bias using a systematic literature review. In: Angeoleto, F. (Ed.)
-*Ecology of Tropical Cities.* Springer.
+*Ecology of Tropical Cities.* Springer. &nbsp;
 <a href="https://doi.org/10.1007/978-3-031-70867-1" title="DOI: 10.1007/978-3-031-70867-1" aria-label="DOI"><i class="ai ai-doi"></i> 10.1007/978-3-031-70867-1</a>
 
 ### 2020
@@ -473,7 +487,7 @@ uncovering bias using a systematic literature review. In: Angeoleto, F. (Ed.)
 Guedes, T.; Anderson, J.; Bacon, C.; **PROVETE, D.B.**; Antonelli, A. 2020.
 Diversity, endemism, and evolutionary history of mountain biotas outside the
 Andean region. In: Rull, V. & Carnaval, C. (Eds.) *Neotropical
-Diversification.* Springer, Berlin.
+Diversification.* Springer, Berlin. &nbsp;
 <a href="https://link.springer.com/chapter/10.1007/978-3-030-31167-4_13" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 ### 2019
@@ -481,27 +495,27 @@ Diversification.* Springer, Berlin.
 Gonçalves-Souza, T.; Garey, M.V.; da Silva, F.R.; Albuquerque, U.P.;
 **PROVETE, D.B.** 2019. Multidimensional analyses for testing ecological,
 ethnobiological, and conservation hypotheses. pp. 87–110. In: *Methods and
-techniques in ethnobiology and ethnoecology.* Springer, Berlin.
+techniques in ethnobiology and ethnoecology.* Springer, Berlin. &nbsp;
 <a href="https://link.springer.com/protocol/10.1007/978-1-4939-8919-5_8" title="External link" aria-label="External link"><i class="fa-solid fa-up-right-from-square"></i></a>
 
 Gonçalves-Souza, T.; **PROVETE, D.B.**; Garey, M.V.; da Silva, F.R.;
 Albuquerque, U.P. 2019. Going back to basics: how to master the art of
 making scientifically sound questions. pp. 71–86. In: *Methods and techniques
-in ethnobiology and ethnoecology.* Springer, Berlin.
+in ethnobiology and ethnoecology.* Springer, Berlin. &nbsp;
 <a href="https://link.springer.com/protocol/10.1007/978-1-4939-8919-5_7" title="External link" aria-label="External link"><i class="fa-solid fa-up-right-from-square"></i></a>
 
 ### 2013
 
 **PROVETE, D.B.** 2013. Tocantins River. In: Howarth, R.W. (Ed.)
 *[Biomes & Ecosystems.](http://salempress.com/Store/samples/Biomes_Ecosystems/Biomes_Ecosystems.htm)*
-pp. 1237–1239. New Jersey: Salem Press.
+pp. 1237–1239. New Jersey: Salem Press. &nbsp;
 <a href="https://diogoprovete.weebly.com/uploads/1/7/3/6/17367099/tocantins_river.pdf" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 ## In review
 
 Martins, P.M.; Galvão, G.A.; Gonçalves-Souza, T.; **PROVETE, D.B.**;
 de Miranda, G.S. 2026. The evolution of body size and shape in whip-spiders.
-*In the 2nd round of revision in Evolution.*
+*In the 2nd round of revision in Evolution.* &nbsp;
 <a href="https://www.biorxiv.org/content/10.1101/2025.10.06.680801v1" title="Preprint on bioRxiv" aria-label="Preprint on bioRxiv"><i class="ai ai-biorxiv"></i></a>
 
 Pacheco, G.; Torquato, F.; Caron, F.S.; (...) **PROVETE, D.B.** (...)
@@ -511,18 +525,18 @@ revisions in Evolution.*
 
 **PROVETE, D.B.**; Severgnini, M.R.; Fernandes, C.E.; Franco-Belussi, L.
 2026. A practical guide to compositional data analysis in tissue stereology
-and blood cell profile. *In review at Histochemistry and Cell Biology.*
+and blood cell profile. *In review at Histochemistry and Cell Biology.* &nbsp;
 <a href="https://www.researchsquare.com/article/rs-9590298/v1" title="Open-access preprint" aria-label="Open-access preprint"><i class="ai ai-open-access"></i></a>
 
 **PROVETE, D.B.**; Citadini, J.M.; Gomes, F.R. 2026. Microhabitat
 structural complexity and predator stimulus drive predator escape decision
-by frogs. *Submitted to Behavioral Ecology.*
+by frogs. *Submitted to Behavioral Ecology.* &nbsp;
 <a href="https://www.biorxiv.org/content/10.64898/2026.05.26.728007v1" title="Preprint on bioRxiv" aria-label="Preprint on bioRxiv"><i class="ai ai-biorxiv"></i></a>
 
 Piatti, L.; de Sousa, D.L.H.; Oliveira, B.S.; de Melo, A.V.;
 Sugai, L.S.M.; **PROVETE, D.B.** 2026. Methodological choices influence
 ecological inference in passive acoustic monitoring of a Neotropical
-nightjar. *Submitted to Journal of Avian Biology.*
+nightjar. *Submitted to Journal of Avian Biology.* &nbsp;
 <a href="https://ecoevorxiv.org/repository/view/13229/" title="Open-access preprint" aria-label="Open-access preprint"><i class="ai ai-open-access"></i></a>
 
 ## In preparation
@@ -538,7 +552,7 @@ specialization. *To be submitted to Global Ecology and Biogeography.*
 Ganci, C.C.; Ortega, Z.; **PROVETE, D.B.** 2026. Behavioural
 thermoregulation in a Neotropical frog is detectable only when physiological
 integrity allows movement. *To be submitted to Behavioral Ecology and
-Sociobiology.*
+Sociobiology.* &nbsp;
 <a href="https://www.biorxiv.org/content/10.1101/2020.06.11.146613v1" title="Preprint on bioRxiv" aria-label="Preprint on bioRxiv"><i class="ai ai-biorxiv"></i></a>
 
 Franco-Belussi, L.; Trevisan, L.; De Oliveira, C.; Fernandes, C.E.;
@@ -547,7 +561,7 @@ cascade in a Neotropical frog. *To be submitted to Integrative Zoology.*
 
 Severgnini, M.R.; **PROVETE, D.B.** 2026. The effect of urbanization and
 local environmental heterogeneity on phenotypic variability in a tropical
-frog. *In the 2nd round of revision in Ecology.*
+frog. *In the 2nd round of revision in Ecology.* &nbsp;
 <a href="http://www.biorxiv.org/content/10.1101/2024.11.28.625871v1" title="Preprint on bioRxiv" aria-label="Preprint on bioRxiv"><i class="ai ai-biorxiv"></i></a>
 
 **PROVETE, D.B.**; Garey, M.V.; Rossa-Feres, D.C. 2026. Phenotype–environment
@@ -556,7 +570,7 @@ habitat structural complexity. *To be submitted to Ecology Letters.*
 
 Moroti, M.T.; Moura, M.; Pires, M.M.; **PROVETE, D.B.** Divergent pathways
 shape climatic niches and body size evolution across terrestrial vertebrates.
-*To be submitted to Proceedings of the Royal Society B.*
+*To be submitted to Proceedings of the Royal Society B.* &nbsp;
 <a href="https://doi.org/10.22541/au.176400956.64170283/v" title="Open-access preprint" aria-label="Open-access preprint"><i class="ai ai-open-access"></i></a>
 
 **PROVETE, D.B.**; Downing, A.L.; Leibold, M.A. 2026. Phylogenetic diversity
@@ -587,13 +601,13 @@ Martins, C.A.; Pays, O.; Souza, F.L.; Renaud, P.-C.; Valente-Neto, F.;
 Silveira, M.; Ochoa-Quintero, J.; **PROVETE, D.B.**; Santos, C.C.; Melo, I.;
 Rodrigues, M.E.; Duleba, S.; Roque, F.O. 2026. Biodiversity responses to
 native vegetation loss in the Cerrado hotspot: taxonomic groups and metrics
-matter. *In prep.*
+matter. *In prep.* &nbsp;
 <a href="https://www.biorxiv.org/content/10.1101/2023.05.21.541657v1" title="Preprint on bioRxiv" aria-label="Preprint on bioRxiv"><i class="ai ai-biorxiv"></i></a>
 
 **PROVETE, D.B.**; Pezzuti, T.L.; Rossa-Feres, D.C.; Garcia, P.C.A.
 Description of the larval internal oral features of four *Boana* species
-(Anura: Hylidae). *To be submitted to Zootaxa.*
-<a href="https://www.authorea.com/users/176533/articles/348652-description-of-larval-internal-oral-features-of-four-boana-species-anura-hylidae" title="Open-access preprint" aria-label="Open-access preprint"><i class="ai ai-open-access"></i></a> ·
+(Anura: Hylidae). *To be submitted to Zootaxa.* &nbsp;
+<a href="https://www.authorea.com/users/176533/articles/348652-description-of-larval-internal-oral-features-of-four-boana-species-anura-hylidae" title="Open-access preprint" aria-label="Open-access preprint"><i class="ai ai-open-access"></i></a> · &nbsp;
 <a href="http://morphobank.org/permalink/?P3365" title="Images" aria-label="Images"><i class="fa-solid fa-images"></i></a>
 
 ## Conference abstracts
@@ -602,7 +616,7 @@ Description of the larval internal oral features of four *Boana* species
 
 Severgnini, M.R.; **PROVETE, D.B.** 2023. It's about time: the effects of
 urbanization on phenotypic traits in a tropical city.
-[Poster, 109th Annual Meeting of the ESA, Portland, OR, USA].
+[Poster, 109th Annual Meeting of the ESA, Portland, OR, USA]. &nbsp;
 <a href="https://esa2023.eventscribe.net/fsPopup.asp?PosterID=588896" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a>
 
 ### 2022
@@ -624,60 +638,60 @@ Acero-Murcia, A.C.; Severgnini, M.R.; Lacerda, H.D.; Fischer, E.A.;
 skull morphology in a bat community.
 [Oral, I Simpósio Brasileiro de Morfologia Comparada de Vertebrados,
 Brasília].
-*Honorable mention — Best oral presentation.*
+*Honorable mention — Best oral presentation.* &nbsp;
 <a href="https://proceedings.science/simorf-2021/papers/the-influence-of-diet-and-foraging-strategy-in-the-skull-morphology-in-a-bat-community" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a>
 
 Severgnini, M.R.; Baldo, D.; Vera Candioti, M.F.; **PROVETE, D.B.** 2021.
 Influência do ambiente sobre a forma de corpo em girinos do gênero
 *Melanophryniscus* (Anura: Bufonidae).
 [Poster, I Simpósio Brasileiro de Morfologia Comparada de Vertebrados,
-Brasília]. *Honorable mention — Best poster.*
+Brasília]. *Honorable mention — Best poster.* &nbsp;
 <a href="https://proceedings.science/simorf-2021/papers/influencia-do-ambiente-sobre-a-forma-de-corpo-em-girinos-do-genero-melanophryniscus--anura--bufonidae-" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a>
 
 Martins, B.O.; Franco-Belussi, L.; Fernandes, C.E.; **PROVETE, D.B.** 2021.
 Evolução do formato de células vermelhas sanguíneas numa radiação
 continental de peixes.
 [Oral, I Simpósio Brasileiro de Morfologia Comparada de Vertebrados,
-Brasília]. *Honorable mention — Best oral presentation.*
-<a href="https://proceedings.science/simorf-2021/papers/evolucao-do-formato-de-celulas-vermelhas-sanguineas-numa-radiacao-continental-de-peixes" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a> ·
+Brasília]. *Honorable mention — Best oral presentation.* &nbsp;
+<a href="https://proceedings.science/simorf-2021/papers/evolucao-do-formato-de-celulas-vermelhas-sanguineas-numa-radiacao-continental-de-peixes" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a> · &nbsp;
 <a href="https://f1000research.com/posters/8-1700" title="Poster" aria-label="Poster"><i class="fa-solid fa-image"></i></a>
 
 ### 2019
 
 Bonin, L.; Soares, P.; Eriksson, A.; **PROVETE, D.B.** 2019. Evolution of
 echolocation in bats (Chiroptera). *F1000Research* 8:1201.
-[Poster, Integra UFMS 2019]. *Best poster presentation.*
+[Poster, Integra UFMS 2019]. *Best poster presentation.* &nbsp;
 <a href="https://doi.org/10.7490/f1000research.1117133.1" title="DOI: 10.7490/f1000research.1117133.1" aria-label="DOI"><i class="ai ai-doi"></i> 10.7490/f1000research.1117133.1</a>
 
 Martins, B.O.; **PROVETE, D.B.**; Franco-Belussi, L.; Fernandes, C.E.S.
 2019. Evolution of red cell shape in a continental radiation of fishes.
 *F1000Research* 8:1700.
 [Poster, IX Jornada da Biologia, in Portuguese].
-*Best poster presentation.*
+*Best poster presentation.* &nbsp;
 <a href="https://doi.org/10.7490/f1000research.1117527.1" title="DOI: 10.7490/f1000research.1117527.1" aria-label="DOI"><i class="ai ai-doi"></i> 10.7490/f1000research.1117527.1</a>
 
 Severgnini, M.R.; Souza, V. dos S.; Santana, D.; **PROVETE, D.B.** 2019.
 The tempo and mode of Neotropical tadpoles body shape evolution.
 *F1000Research* 8:1181.
-[Poster, IX Congresso Brasileiro de Herpetologia].
+[Poster, IX Congresso Brasileiro de Herpetologia]. &nbsp;
 <a href="https://doi.org/10.7490/f1000research.1117116.1" title="DOI: 10.7490/f1000research.1117116.1" aria-label="DOI"><i class="ai ai-doi"></i> 10.7490/f1000research.1117116.1</a>
 
 Duarte, R.G.; Almeida, W.; **PROVETE, D.B.**; Avila, R.; Teles, D.A.;
 Ribeiro, S. 2019. Da lama ao caos: qual a influência dos lixões na relação
 entre endoparasitas e o "sapo cururu", *Rhinella jimi* (Stevaux, 2002)?
-[Anais do IX Congresso Brasileiro de Herpetologia].
+[Anais do IX Congresso Brasileiro de Herpetologia]. &nbsp;
 <a href="https://proceedings.science/cbh-2019/papers/da-lama-ao-caos--qual-a-influencia-dos-lixoes-na-relacao-entre-endoparasitas-e-o----sapo-cururu-----rhinella-jimi--steva" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a>
 
 Ganci, C.; Dudczak, A.; **PROVETE, D.B.** 2019. Influência da temperatura
 no tempo de resposta e distância de salto em *Lysapsus limellum*
-(Anura: Hylidae). [Anais do IX Congresso Brasileiro de Herpetologia].
+(Anura: Hylidae). [Anais do IX Congresso Brasileiro de Herpetologia]. &nbsp;
 <a href="https://proceedings.science/cbh-2019/papers/influencia-da-temperatura-no-tempo-de-resposta-e-distancia-de-salto-em-lysapsus-limellum--anura--hylidae--" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a>
 
 ### 2017
 
 **PROVETE, D.B.** 2017. La evolución de la pigmentación interna en anfibios
 anuros neotropicales.
-[Oral, invited symposium, Congreso Argentino de Herpetología, Salta, Argentina].
+[Oral, invited symposium, Congreso Argentino de Herpetología, Salta, Argentina]. &nbsp;
 <a href="https://f1000research.com/slides/6-1952" title="Slides" aria-label="Slides"><i class="fa-solid fa-file-powerpoint"></i></a>
 
 Silva, F.R.; **PROVETE, D.B.**; Gerassi, L.; Bovo, R.P. 2017. What do data
@@ -694,14 +708,14 @@ da Chapada do Araripe, nordeste do Brasil.
 
 Leite, G.B.; Franco-Belussi, L.; **PROVETE, D.B.**; Oliveira, C. 2015.
 Evolution of a reproductive character in 26 Neotropical anuran species.
-[Oral, VII Encontro de Biologia Comparada, Ribeirão Preto, Brazil].
+[Oral, VII Encontro de Biologia Comparada, Ribeirão Preto, Brazil]. &nbsp;
 <a href="http://f1000research.com/slides/4-458" title="Slides" aria-label="Slides"><i class="fa-solid fa-file-powerpoint"></i></a>
 
 ### 2014
 
 Leite, G.B.; Franco-Belussi, L.; **PROVETE, D.B.**; Oliveira, C. 2014.
 Comparative analysis of testicular histology in eight species of frogs.
-[Poster, XV Congreso Argentino de Herpetología, Mendoza, Argentina].
+[Poster, XV Congreso Argentino de Herpetología, Mendoza, Argentina]. &nbsp;
 <a href="https://app.box.com/s/18ixj03zt7x4j88z36en" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a>
 
 ### 2013
@@ -709,30 +723,30 @@ Comparative analysis of testicular histology in eight species of frogs.
 Garey, M.V.; **PROVETE, D.B.**; Haddad, C.F.B.; Rossa-Feres, D.C. 2013.
 The role of environmental and spatial gradients on a pond-dwelling anuran
 metacommunity dynamics.
-[Poster, XIV Congresso Argentino de Herpetología, Puerto Madryn, Argentina].
-<a href="http://f1000.com/posters/browse/summary/1094401" title="Poster" aria-label="Poster"><i class="fa-solid fa-image"></i></a> ·
+[Poster, XIV Congresso Argentino de Herpetología, Puerto Madryn, Argentina]. &nbsp;
+<a href="http://f1000.com/posters/browse/summary/1094401" title="Poster" aria-label="Poster"><i class="fa-solid fa-image"></i></a> · &nbsp;
 <a href="https://app.box.com/s/mvglub1j39r10kg2vaho" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a>
 
 Rossa-Feres, D.C.; Jordani, M.X.; **PROVETE, D.B.** 2013. Niche divergence
 and environmental filtering regulate the assembly of a Neotropical larval
 anuran metacommunity.
-[Poster, 98th Annual Meeting of the ESA, Minneapolis, MN, USA].
-<a href="http://f1000.com/posters/browse/summary/1094038" title="Poster" aria-label="Poster"><i class="fa-solid fa-image"></i></a> ·
+[Poster, 98th Annual Meeting of the ESA, Minneapolis, MN, USA]. &nbsp;
+<a href="http://f1000.com/posters/browse/summary/1094038" title="Poster" aria-label="Poster"><i class="fa-solid fa-image"></i></a> · &nbsp;
 <a href="http://eco.confex.com/eco/2013/webprogram/Paper44837.html" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a>
 
 Loyola, R.D.; Lemes, P.; Brum, F.T.; **PROVETE, D.B.**; Duarte, L.D.S. 2013.
 Clade-specific consequences of climate change to amphibians in Atlantic
 Forest protected areas.
-[Poster, 98th Annual Meeting of the ESA, Minneapolis, MN, USA].
-<a href="http://f1000.com/posters/browse/summary/1093889" title="Poster" aria-label="Poster"><i class="fa-solid fa-image"></i></a> ·
+[Poster, 98th Annual Meeting of the ESA, Minneapolis, MN, USA]. &nbsp;
+<a href="http://f1000.com/posters/browse/summary/1093889" title="Poster" aria-label="Poster"><i class="fa-solid fa-image"></i></a> · &nbsp;
 <a href="http://eco.confex.com/eco/2013/webprogram/Paper44628.html" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a>
 
 **PROVETE, D.B.**; Franco-Belussi, L.; Santos, L.R.S.; Zieri, R.;
 Moresco, R.M.; Almeida, S.C.; Martins, I.A.; Oliveira, C. 2013. Phylogenetic
 signal and diversity of visceral pigmentation in eight anuran families.
 [Oral, 2013 Joint Meeting of Ichthyologists and Herpetologists, Albuquerque,
-NM, USA].
-<a href="http://www.slideshare.net/provete/phylogenetic-signal-and-diversity-of-visceral-pigmentation-in-eight-anuran-families-24316658" title="Slides" aria-label="Slides"><i class="fa-solid fa-file-powerpoint"></i></a> ·
+NM, USA]. &nbsp;
+<a href="http://www.slideshare.net/provete/phylogenetic-signal-and-diversity-of-visceral-pigmentation-in-eight-anuran-families-24316658" title="Slides" aria-label="Slides"><i class="fa-solid fa-file-powerpoint"></i></a> · &nbsp;
 <a href="https://app.box.com/s/8qkasty91ul1m2e9btdm" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a>
 
 ### 2012
@@ -741,29 +755,29 @@ NM, USA].
 Rossa-Feres, D.C. 2012. Fine-scale spatial patterns and pond morphology
 jointly affect metacommunity structure of Neotropical tadpoles.
 [Oral, 49th Meeting of the Association for Tropical Biology and
-Conservation, Bonito, Brazil].
-<a href="http://www.slideshare.net/provete/finescale-spatial-patterns-and-pond-morphology-jointly-affect-metacommunity-structure-of-neotropical-tadpoles" title="Slides" aria-label="Slides"><i class="fa-solid fa-file-powerpoint"></i></a> ·
+Conservation, Bonito, Brazil]. &nbsp;
+<a href="http://www.slideshare.net/provete/finescale-spatial-patterns-and-pond-morphology-jointly-affect-metacommunity-structure-of-neotropical-tadpoles" title="Slides" aria-label="Slides"><i class="fa-solid fa-file-powerpoint"></i></a> · &nbsp;
 <a href="https://app.box.com/s/uwl45r8gyekm669r3emy" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a>
 
 **PROVETE, D.B.** 2012. Phylogenies help to uncover diversity patterns in
 Neotropical amphibians.
 [Oral, 49th Meeting of the Association for Tropical Biology and
-Conservation, Bonito, Brazil].
-<a href="http://www.slideshare.net/provete/phylogenies-help-to-uncover-diversity-patterns-in-neotropical-amphibians" title="Slides" aria-label="Slides"><i class="fa-solid fa-file-powerpoint"></i></a> ·
+Conservation, Bonito, Brazil]. &nbsp;
+<a href="http://www.slideshare.net/provete/phylogenies-help-to-uncover-diversity-patterns-in-neotropical-amphibians" title="Slides" aria-label="Slides"><i class="fa-solid fa-file-powerpoint"></i></a> · &nbsp;
 <a href="https://app.box.com/s/s7h2jf2goujws4bscspb" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a>
 
 Villalobos, F.; **PROVETE, D.B.**; Gouvea, S.F.; Dobrovolski, R. 2012. Rich
 and rare ain't the common share: describing biodiversity and informing
 conservation practices for South American amphibians.
 [Poster, 49th Meeting of the Association for Tropical Biology and
-Conservation, Bonito, Brazil].
+Conservation, Bonito, Brazil]. &nbsp;
 <a href="https://app.box.com/s/1tmy1dgfhk6zgcgl4nfs" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a>
 
 Oliveira, C.; Franco-Belussi, L.; **PROVETE, D.B.**; Santos, L.R.S.;
 Zieri, R.; Moresco, R.M. 2012. Visceral pigmentation in anurans: an
 important morphological character for phylogenetic analyses.
 [Poster, XXII International Symposium on Morphological Sciences,
-São Paulo, Brazil].
+São Paulo, Brazil]. &nbsp;
 <a href="https://diogoprovete.weebly.com/uploads/1/7/3/6/17367099/resumo_simpsio_morfologia.pdf" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a>
 
 ### 2011
@@ -771,43 +785,43 @@ São Paulo, Brazil].
 **PROVETE, D.B.**; Garey, M.V.; Rossa-Feres, D.C.; Martins, I.A. 2011.
 Padrões de abundância e distribuição espacial numa metacomunidade de
 girinos ao longo de um gradiente de cobertura de dossel.
-[Oral, IX Congresso Latino-Americano de Herpetologia, Curitiba, Brazil].
-<a href="http://slidesha.re/oQnawd" title="Slides" aria-label="Slides"><i class="fa-solid fa-file-powerpoint"></i></a> ·
+[Oral, IX Congresso Latino-Americano de Herpetologia, Curitiba, Brazil]. &nbsp;
+<a href="http://slidesha.re/oQnawd" title="Slides" aria-label="Slides"><i class="fa-solid fa-file-powerpoint"></i></a> · &nbsp;
 <a href="https://app.box.com/s/elytvqz850v01kgv2pua" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a>
 
 Silva, V.X.; Sacramento, M.A.; **PROVETE, D.B.** 2011. Análise preliminar
 da biodiversidade herpetofaunística sul mineira no contexto do Programa
 Biota Minas.
-[Poster, IX Congresso Latino-Americano de Herpetologia, Curitiba, Brazil].
+[Poster, IX Congresso Latino-Americano de Herpetologia, Curitiba, Brazil]. &nbsp;
 <a href="https://app.box.com/s/6cnhkblhh4okekh1cd6d" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a>
 
 Negri, D.; **PROVETE, D.B.**; Laporta, J. 2011. Estrutura de comunidade de
 anfíbios anuros na fase larval em ambientes lóticos e lênticos em
 Paranapiacaba, Santo André, São Paulo.
-[Poster, IX Congresso Latino-Americano de Herpetologia, Curitiba, Brazil].
-<a href="http://f1000.com/posters/browse/summary/1094207" title="Poster" aria-label="Poster"><i class="fa-solid fa-image"></i></a> ·
+[Poster, IX Congresso Latino-Americano de Herpetologia, Curitiba, Brazil]. &nbsp;
+<a href="http://f1000.com/posters/browse/summary/1094207" title="Poster" aria-label="Poster"><i class="fa-solid fa-image"></i></a> · &nbsp;
 <a href="https://app.box.com/s/t1yai82qa1nrw98l6lks" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a>
 
 **PROVETE, D.B.**; Gonçalves-Souza, T.; Rossa-Feres, D.C.; Martins, I.A.
 2011. Predaceous insects do not influence space use by anuran larvae: the
 role of environment and scale.
-[Oral, 96th Annual Meeting of the ESA].
-<a href="http://slidesha.re/oo0rkW" title="Slides" aria-label="Slides"><i class="fa-solid fa-file-powerpoint"></i></a> ·
+[Oral, 96th Annual Meeting of the ESA]. &nbsp;
+<a href="http://slidesha.re/oo0rkW" title="Slides" aria-label="Slides"><i class="fa-solid fa-file-powerpoint"></i></a> · &nbsp;
 <a href="http://eco.confex.com/eco/2011/webprogram/Paper30898.html" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a>
 
 **PROVETE, D.B.**; Rossa-Feres, D.C.; Martins, I.A. 2011. Partilha de nicho
 em comunidades de girinos de ambientes lênticos.
 [Poster, 63rd Annual Meeting of the Brazilian Society for the Advancement
-of Science, Goiânia, Brazil].
-<a href="http://f1000.com/posters/browse/summary/2085" title="Poster" aria-label="Poster"><i class="fa-solid fa-image"></i></a> ·
+of Science, Goiânia, Brazil]. &nbsp;
+<a href="http://f1000.com/posters/browse/summary/2085" title="Poster" aria-label="Poster"><i class="fa-solid fa-image"></i></a> · &nbsp;
 <a href="https://app.box.com/s/plkgtkw4e0m62aik8e9u" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a>
 
 ### 2010
 
 **PROVETE, D.B.** 2010. Chondrocrania of frog larvae of the genus
 *Physalaemus* and their relatives.
-[Oral, 9th ICVM, Punta del Este, Uruguay].
-<a href="http://slidesha.re/fTwYIe" title="Slides" aria-label="Slides"><i class="fa-solid fa-file-powerpoint"></i></a> ·
+[Oral, 9th ICVM, Punta del Este, Uruguay]. &nbsp;
+<a href="http://slidesha.re/fTwYIe" title="Slides" aria-label="Slides"><i class="fa-solid fa-file-powerpoint"></i></a> · &nbsp;
 <a href="https://app.box.com/s/kjhzir8bysw02xt92zy9" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a>
 
 ### 2009
@@ -815,7 +829,7 @@ of Science, Goiânia, Brazil].
 **PROVETE, D.B.**; Garey, M.V.; Rossa-Feres, D.C. 2009. Descrição do girino
 e do canto de anúncio de *Physalaemus barrioi* Bokermann, 1967
 (Anura: Leiuperidae).
-[Poster, IV Congresso Brasileiro de Herpetologia, Pirenópolis, Brazil].
+[Poster, IV Congresso Brasileiro de Herpetologia, Pirenópolis, Brazil]. &nbsp;
 <a href="http://posters.f1000.com/posters/browse/summary/853" title="Poster" aria-label="Poster"><i class="fa-solid fa-image"></i></a>
 
 ### 2007
@@ -823,14 +837,14 @@ e do canto de anúncio de *Physalaemus barrioi* Bokermann, 1967
 **PROVETE, D.B.**; Sacramento, M.A.; Silva, V.X. 2007. Intra- and
 interspecific relationships between tadpoles and insects in a temporary
 pond, southeastern Brazil.
-[Poster, III Congresso Brasileiro de Herpetologia, Belém, Brazil].
-<a href="http://posters.f1000.com/posters/browse/summary/832" title="Poster" aria-label="Poster"><i class="fa-solid fa-image"></i></a> ·
+[Poster, III Congresso Brasileiro de Herpetologia, Belém, Brazil]. &nbsp;
+<a href="http://posters.f1000.com/posters/browse/summary/832" title="Poster" aria-label="Poster"><i class="fa-solid fa-image"></i></a> · &nbsp;
 <a href="https://app.box.com/s/fsvfjzhgi86owft0ku57" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a>
 
 Sacramento, M.A.; **PROVETE, D.B.**; Silva, V. 2007. Descrição da biologia
 reprodutiva de *Phasmahyla cochranae*.
-[Poster, III Congresso Brasileiro de Herpetologia, Belém, Brazil].
-<a href="http://f1000.com/posters/browse/summary/1094221" title="Poster" aria-label="Poster"><i class="fa-solid fa-image"></i></a> ·
+[Poster, III Congresso Brasileiro de Herpetologia, Belém, Brazil]. &nbsp;
+<a href="http://f1000.com/posters/browse/summary/1094221" title="Poster" aria-label="Poster"><i class="fa-solid fa-image"></i></a> · &nbsp;
 <a href="https://app.box.com/s/ww9x2mb3mt3hta9yzysq" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a>
 
 ### 2006
@@ -839,29 +853,29 @@ reprodutiva de *Phasmahyla cochranae*.
 entre taxocenoses de girinos (Amphibia: Anura) e insetos em poças
 temporárias na Fazenda Experimental de Lambari-MG.
 [Poster, 14º Simpósio Internacional de Iniciação Científica da USP,
-Ribeirão Preto].
-<a href="http://f1000.com/posters/browse/summary/1094199" title="Poster" aria-label="Poster"><i class="fa-solid fa-image"></i></a> ·
+Ribeirão Preto]. &nbsp;
+<a href="http://f1000.com/posters/browse/summary/1094199" title="Poster" aria-label="Poster"><i class="fa-solid fa-image"></i></a> · &nbsp;
 <a href="https://sistemas.usp.br/siicusp/cdOnlineTrabalhoVisualizarResumo?numeroInscricaoTrabalho=323&numeroEdicao=14" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a>
 
 Sacramento, M.A.; **PROVETE, D.B.**; Silva, V.X. 2006. Uso da vegetação por
 *Phasmahyla cochranae* (Amphibia, Anura) para confecção de ninhos no Parque
 Estadual de Nova Baden, Lambari-MG.
 [Poster, 14º Simpósio Internacional de Iniciação Científica da USP,
-Ribeirão Preto].
-<a href="http://f1000.com/posters/browse/summary/1094222" title="Poster" aria-label="Poster"><i class="fa-solid fa-image"></i></a> ·
+Ribeirão Preto]. &nbsp;
+<a href="http://f1000.com/posters/browse/summary/1094222" title="Poster" aria-label="Poster"><i class="fa-solid fa-image"></i></a> · &nbsp;
 <a href="https://sistemas.usp.br/siicusp/cdOnlineTrabalhoVisualizarResumo?numeroInscricaoTrabalho=2411&numeroEdicao=14" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a>
 
 **PROVETE, D.B.**; Sturaro, M.J.; Sacramento, M.A.; Oliveira, P.B.B.;
 Dias, P.H.F.; Rodrigues, R.C.; Gaiga, R.J.; Silva, V.X. 2006. Dados
 preliminares sobre diversidade e uso de microhabitat por uma taxocenose de
 anfíbios num brejo na área urbana de Alfenas-MG.
-[Poster, II Jornada de Iniciação Científica de Alfenas, Alfenas, Brazil].
-<a href="http://f1000.com/posters/browse/summary/1094198" title="Poster" aria-label="Poster"><i class="fa-solid fa-image"></i></a> ·
+[Poster, II Jornada de Iniciação Científica de Alfenas, Alfenas, Brazil]. &nbsp;
+<a href="http://f1000.com/posters/browse/summary/1094198" title="Poster" aria-label="Poster"><i class="fa-solid fa-image"></i></a> · &nbsp;
 <a href="https://app.box.com/s/6610bch44jl8qwsdqpuz" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a>
 
 ## Master's thesis
 
 **PROVETE, D.B.** 2010. *Uso de recursos e padrão de co-ocorrência com
 insetos predadores em comunidades sub-tropicais de girinos* [main text in
-English, introduction in Portuguese]. Master's thesis.
+English, introduction in Portuguese]. Master's thesis. &nbsp;
 <a href="https://www.lap-publishing.com/catalog/details/store/gb/book/978-3-8465-1727-7/diversity-and-resource-use-in-a-neotropical-tadpole-metacommunity" title="Available as a book" aria-label="Available as a book"><i class="fa-solid fa-book"></i> Available as a book</a>.

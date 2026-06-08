@@ -314,8 +314,9 @@ h2 {
    - Add explicit left/right padding for breathing room. */
 .pub-list a[aria-label] {
   display: inline-block;
-  padding: 0 .25em;
-  text-indent: 0;          /* override the hanging-indent on .pub-list p */
+  margin-left: .35em;      /* hard separator from preceding text */
+  padding: 0 .15em;
+  text-indent: 0;          /* override hanging-indent on .pub-list p */
   white-space: nowrap;
 }
 .pub-list a[aria-label] > i,
