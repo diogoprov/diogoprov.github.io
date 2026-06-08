@@ -1,5 +1,21 @@
 [
   {
+    "listing": "/teaching/bioestatistica/index.html",
+    "items": [
+      "/teaching/bioestatistica/aula-01-introducao/index.html",
+      "/teaching/bioestatistica/aula-02-organizacao-dados/index.html",
+      "/teaching/bioestatistica/aula-03-tendencia-dispersao/index.html",
+      "/teaching/bioestatistica/aula-04-amostragem/index.html",
+      "/teaching/bioestatistica/aula-05-probabilidade/index.html",
+      "/teaching/bioestatistica/aula-06-estimativas/index.html",
+      "/teaching/bioestatistica/aula-07-teste-hipoteses/index.html",
+      "/teaching/bioestatistica/aula-08-modelos-lineares-teste-t/index.html",
+      "/teaching/bioestatistica/aula-09-regressao-correlacao/index.html",
+      "/teaching/bioestatistica/aula-10-qui-quadrado/index.html",
+      "/teaching/bioestatistica/aula-11-anova/index.html"
+    ]
+  },
+  {
     "listing": "/index.html",
     "items": [
       "/news/2025-09-15-iara-beatriz/index.html",

@@ -3,6 +3,17 @@ title: "Teaching"
 toc: true
 ---
 
+## Undergraduate courses (UFMS)
+
+### Bioestatística — Ciências Biológicas
+
+Disciplina obrigatória de 68 h ministrada anualmente no INBio/UFMS,
+cobrindo estatística descritiva, delineamento amostral, distribuições
+de probabilidade, inferência via teste de hipóteses e modelos lineares
+(t, ANOVA, regressão, qui-quadrado).
+
+[Course site & materials →](teaching/bioestatistica/){.btn .btn-outline-primary}
+
 ## Estatística Descomplicada — YouTube channel
 
 ::: {.callout-tip icon=false appearance="minimal"}

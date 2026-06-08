@@ -14,3 +14,6 @@ _site/
 **/*.quarto_ipynb
 .Renviron
 .Rhistory
+
+# Moodle backup files used to seed teaching/ — too large for git
+*.mbz

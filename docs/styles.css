@@ -379,6 +379,17 @@ blockquote {
   margin: 1.2rem 0;
 }
 
+/* --- Teaching course pages --- */
+.aula-meta {
+  background: var(--bsl-bg-soft);
+  border-left: 3px solid var(--bsl-accent);
+  padding: .5rem .9rem;
+  margin: .8rem 0 1.5rem;
+  font-size: .92rem;
+  color: var(--bsl-muted);
+}
+.aula-meta strong { color: #2d3748; }
+
 /* --- News listing tweaks --- */
 .quarto-listing .listing-title { font-size: 1.05rem; }
 .quarto-listing .listing-date { color: var(--bsl-muted); font-size: .85rem; }

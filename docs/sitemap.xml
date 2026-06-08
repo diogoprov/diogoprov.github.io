@@ -1,8 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://provetelab.org/teaching/bioestatistica/index.html</loc>
+    <lastmod>2026-06-08T22:39:00.442Z</lastmod>
+  </url>
+  <url>
+    <loc>https://provetelab.org/teaching/bioestatistica/aula-10-qui-quadrado/index.html</loc>
+    <lastmod>2026-06-08T22:22:49.648Z</lastmod>
+  </url>
+  <url>
+    <loc>https://provetelab.org/teaching/bioestatistica/aula-08-modelos-lineares-teste-t/index.html</loc>
+    <lastmod>2026-06-08T22:22:49.650Z</lastmod>
+  </url>
+  <url>
+    <loc>https://provetelab.org/teaching/bioestatistica/aula-06-estimativas/index.html</loc>
+    <lastmod>2026-06-08T22:39:17.986Z</lastmod>
+  </url>
+  <url>
+    <loc>https://provetelab.org/teaching/bioestatistica/aula-04-amostragem/index.html</loc>
+    <lastmod>2026-06-08T22:22:49.649Z</lastmod>
+  </url>
+  <url>
+    <loc>https://provetelab.org/teaching/bioestatistica/aula-02-organizacao-dados/index.html</loc>
+    <lastmod>2026-06-08T22:39:17.982Z</lastmod>
+  </url>
+  <url>
     <loc>https://provetelab.org/teaching.html</loc>
-    <lastmod>2026-05-31T15:26:27.519Z</lastmod>
+    <lastmod>2026-06-08T22:22:04.898Z</lastmod>
   </url>
   <url>
     <loc>https://provetelab.org/research.html</loc>
@@ -55,5 +79,29 @@
   <url>
     <loc>https://provetelab.org/software.html</loc>
     <lastmod>2026-05-31T17:07:47.018Z</lastmod>
+  </url>
+  <url>
+    <loc>https://provetelab.org/teaching/bioestatistica/aula-01-introducao/index.html</loc>
+    <lastmod>2026-06-08T22:39:17.989Z</lastmod>
+  </url>
+  <url>
+    <loc>https://provetelab.org/teaching/bioestatistica/aula-03-tendencia-dispersao/index.html</loc>
+    <lastmod>2026-06-08T22:22:49.646Z</lastmod>
+  </url>
+  <url>
+    <loc>https://provetelab.org/teaching/bioestatistica/aula-05-probabilidade/index.html</loc>
+    <lastmod>2026-06-08T22:39:18.003Z</lastmod>
+  </url>
+  <url>
+    <loc>https://provetelab.org/teaching/bioestatistica/aula-07-teste-hipoteses/index.html</loc>
+    <lastmod>2026-06-08T22:39:17.997Z</lastmod>
+  </url>
+  <url>
+    <loc>https://provetelab.org/teaching/bioestatistica/aula-09-regressao-correlacao/index.html</loc>
+    <lastmod>2026-06-08T22:39:17.993Z</lastmod>
+  </url>
+  <url>
+    <loc>https://provetelab.org/teaching/bioestatistica/aula-11-anova/index.html</loc>
+    <lastmod>2026-06-08T22:22:49.651Z</lastmod>
   </url>
 </urlset>

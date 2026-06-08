@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Teaching – Biodiversity Synthesis Lab</title>
+<title>Bioestatística – Biodiversity Synthesis Lab</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,29 +26,29 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./assets/favicon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6b38416d90cdbb41281c8a2a0df0236b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-1732e9b120b8faec2f4b22e599a6250f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-6b38416d90cdbb41281c8a2a0df0236b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../assets/favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-listing/list.min.js"></script>
+<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-6b38416d90cdbb41281c8a2a0df0236b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-1732e9b120b8faec2f4b22e599a6250f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-6b38416d90cdbb41281c8a2a0df0236b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,6 +76,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-cronograma .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-order','listing-title','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-cronograma'] = new List('listing-cronograma', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -84,13 +113,42 @@ ul.task-list li input[type="checkbox"] {
   .ai { vertical-align: -.05em; }
 </style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="Teaching – Biodiversity Synthesis Lab">
-<meta property="og:description" content="Lab of Diogo B. Provete at UFMS — community ecology, eco-evolutionary dynamics, freshwater metacommunities.">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="Bioestatística – Biodiversity Synthesis Lab">
+<meta property="og:description" content="Disciplina obrigatória — Ciências Biológicas, UFMS">
 <meta property="og:site_name" content="Biodiversity Synthesis Lab">
-<meta name="twitter:title" content="Teaching – Biodiversity Synthesis Lab">
-<meta name="twitter:description" content="Lab of Diogo B. Provete at UFMS — community ecology, eco-evolutionary dynamics, freshwater metacommunities.">
+<meta name="twitter:title" content="Bioestatística – Biodiversity Synthesis Lab">
+<meta name="twitter:description" content="Disciplina obrigatória — Ciências Biológicas, UFMS">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -263,11 +321,11 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo light-content">
-    <img src="./assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo dark-content">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo light-content">
+    <img src="../../assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Biodiversity Synthesis Lab</span>
     </a>
   </div>
@@ -278,39 +336,39 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html"> 
+    <a class="nav-link" href="../../research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publications.html"> 
+    <a class="nav-link" href="../../publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./people.html"> 
+    <a class="nav-link" href="../../people.html"> 
 <span class="menu-text">People</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cv.html"> 
+    <a class="nav-link" href="../../cv.html"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./teaching.html" aria-current="page"> 
+    <a class="nav-link" href="../../teaching.html"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./opportunities.html"> 
+    <a class="nav-link" href="../../opportunities.html"> 
 <span class="menu-text">Opportunities</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
+    <a class="nav-link" href="../../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./software.html"> 
+    <a class="nav-link" href="../../software.html"> 
 <span class="menu-text">Software</span></a>
   </li>  
   <li class="nav-item">
@@ -346,18 +404,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#undergraduate-courses-ufms" id="toc-undergraduate-courses-ufms" class="nav-link active" data-scroll-target="#undergraduate-courses-ufms">Undergraduate courses (UFMS)</a>
+  <li><a href="#sobre" id="toc-sobre" class="nav-link active" data-scroll-target="#sobre">Sobre</a></li>
+  <li><a href="#ementa" id="toc-ementa" class="nav-link" data-scroll-target="#ementa">Ementa</a></li>
+  <li><a href="#objetivos-de-aprendizagem" id="toc-objetivos-de-aprendizagem" class="nav-link" data-scroll-target="#objetivos-de-aprendizagem">Objetivos de aprendizagem</a></li>
+  <li><a href="#cronograma" id="toc-cronograma" class="nav-link" data-scroll-target="#cronograma">Cronograma</a></li>
+  <li><a href="#bibliografia-básica" id="toc-bibliografia-básica" class="nav-link" data-scroll-target="#bibliografia-básica">Bibliografia básica</a></li>
+  <li><a href="#bibliografia-complementar" id="toc-bibliografia-complementar" class="nav-link" data-scroll-target="#bibliografia-complementar">Bibliografia complementar</a>
   <ul class="collapse">
-  <li><a href="#bioestatística-ciências-biológicas" id="toc-bioestatística-ciências-biológicas" class="nav-link" data-scroll-target="#bioestatística-ciências-biológicas">Bioestatística — Ciências Biológicas</a></li>
+  <li><a href="#recursos-online" id="toc-recursos-online" class="nav-link" data-scroll-target="#recursos-online">Recursos online</a></li>
   </ul></li>
-  <li><a href="#estatística-descomplicada-youtube-channel" id="toc-estatística-descomplicada-youtube-channel" class="nav-link" data-scroll-target="#estatística-descomplicada-youtube-channel">Estatística Descomplicada — YouTube channel</a></li>
-  <li><a href="#phenotypic-evolution-comparative-phylogenetic-methods" id="toc-phenotypic-evolution-comparative-phylogenetic-methods" class="nav-link" data-scroll-target="#phenotypic-evolution-comparative-phylogenetic-methods">Phenotypic evolution &amp; comparative phylogenetic methods</a></li>
-  <li><a href="#past-courses-short-courses" id="toc-past-courses-short-courses" class="nav-link" data-scroll-target="#past-courses-short-courses">Past courses &amp; short-courses</a>
-  <ul class="collapse">
-  <li><a href="#mendeley-demo-universidade-federal-de-goiás" id="toc-mendeley-demo-universidade-federal-de-goiás" class="nav-link" data-scroll-target="#mendeley-demo-universidade-federal-de-goiás">2012 — Mendeley demo, Universidade Federal de Goiás</a></li>
-  <li><a href="#ecological-statistics-with-r" id="toc-ecological-statistics-with-r" class="nav-link" data-scroll-target="#ecological-statistics-with-r">2011 — Ecological statistics with R</a></li>
-  <li><a href="#sampling-techniques-for-vertebrates-pt" id="toc-sampling-techniques-for-vertebrates-pt" class="nav-link" data-scroll-target="#sampling-techniques-for-vertebrates-pt">2009 — Sampling techniques for vertebrates (PT)</a></li>
-  </ul></li>
+  <li><a href="#avaliação" id="toc-avaliação" class="nav-link" data-scroll-target="#avaliação">Avaliação</a></li>
   </ul>
 </nav>
     </div>
@@ -367,7 +423,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Teaching</h1>
+<h1 class="title">Bioestatística</h1>
+<p class="subtitle lead">Disciplina obrigatória — Ciências Biológicas, UFMS</p>
 </div>
 
 
@@ -384,65 +441,245 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="undergraduate-courses-ufms" class="level2">
-<h2 class="anchored" data-anchor-id="undergraduate-courses-ufms">Undergraduate courses (UFMS)</h2>
-<section id="bioestatística-ciências-biológicas" class="level3">
-<h3 class="anchored" data-anchor-id="bioestatística-ciências-biológicas">Bioestatística — Ciências Biológicas</h3>
-<p>Disciplina obrigatória de 68 h ministrada anualmente no INBio/UFMS, cobrindo estatística descritiva, delineamento amostral, distribuições de probabilidade, inferência via teste de hipóteses e modelos lineares (t, ANOVA, regressão, qui-quadrado).</p>
-<p><a href="teaching/bioestatistica/" class="btn btn-outline-primary">Course site &amp; materials →</a></p>
-</section>
-</section>
-<section id="estatística-descomplicada-youtube-channel" class="level2">
-<h2 class="anchored" data-anchor-id="estatística-descomplicada-youtube-channel">Estatística Descomplicada — YouTube channel</h2>
 <div class="callout callout-style-simple callout-tip no-icon">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<p><a href="https://www.youtube.com/@DiogoBProvete"><i class="fa-brands fa-youtube" aria-label="youtube"></i> <strong>youtube.com/<span class="citation" data-cites="DiogoBProvete">@DiogoBProvete</span></strong></a> · <em>Statistics for the life sciences, in plain Portuguese.</em></p>
+<p><strong>Para alunos matriculados:</strong> quizzes, prazos e avaliações ficam no <a href="https://ava.ufms.br">Moodle UFMS</a>. Esta página reúne os <strong>materiais públicos</strong> do curso (slides, leituras, vídeos), abertos a qualquer pessoa interessada.</p>
 </div>
 </div>
 </div>
-<p>I run a YouTube channel — <strong>Estatística Descomplicada</strong> — with lessons on statistics aimed at biologists and other life-scientists. The content mirrors what I teach in graduate and undergraduate courses at UFMS: <strong>Generalized Linear (Mixed) Models</strong>, <strong>multivariate methods</strong>, study design, and the reproducible-analysis workflow in R.</p>
-<p>Topics covered include hypothesis testing, GLM/GLMM with appropriate error families, ordinations (PCA, NMDS, RDA, CCA), classification, and how to read statistical results in the ecological literature without getting lost in the jargon. New videos are released as the academic semester progresses.</p>
-<p><a href="https://www.youtube.com/@DiogoBProvete?sub_confirmation=1" class="btn btn-outline-primary">Subscribe to the channel →</a></p>
+<section id="sobre" class="level2">
+<h2 class="anchored" data-anchor-id="sobre">Sobre</h2>
+<p>Bioestatística é uma disciplina obrigatória do bacharelado e da licenciatura em Ciências Biológicas da UFMS, com 68 horas-aula. O foco é construir intuição sobre o <strong>raciocínio estatístico aplicado à biologia</strong> — entender o que cada teste pergunta, em que situações se aplica, e como interpretar resultados em linguagem biológica — sem exigir formação matemática avançada.</p>
 </section>
-<section id="phenotypic-evolution-comparative-phylogenetic-methods" class="level2">
-<h2 class="anchored" data-anchor-id="phenotypic-evolution-comparative-phylogenetic-methods">Phenotypic evolution &amp; comparative phylogenetic methods</h2>
-<p>Graduate course given annually at the <a href="https://ppgec.ufms.br">Ecology and Conservation PPG</a> (UFMS), Campo Grande. The course is hosted on Moodle — feel free to get in touch if you’d like access to materials.</p>
-<p><a href="https://coggle.it/diagram/WhbkkxE2BAAB0R0m">Mind map summarising the main methods</a></p>
+<section id="ementa" class="level2">
+<h2 class="anchored" data-anchor-id="ementa">Ementa</h2>
+<p>Introdução à estatística. Probabilidade. Representação da variação: parâmetros estatísticos e principais distribuições de probabilidade. Estimativas, testes de hipóteses e significância. Modelos lineares: teste t, ANOVA, regressão linear, correlação, e modelos lineares generalizados (qui-quadrado).</p>
 </section>
-<section id="past-courses-short-courses" class="level2">
-<h2 class="anchored" data-anchor-id="past-courses-short-courses">Past courses &amp; short-courses</h2>
-<section id="mendeley-demo-universidade-federal-de-goiás" class="level3">
-<h3 class="anchored" data-anchor-id="mendeley-demo-universidade-federal-de-goiás">2012 — Mendeley demo, Universidade Federal de Goiás</h3>
-<p><a href="http://www.slideshare.net/provete/mendeley-presentation">Slides with screenshots and tutorials</a></p>
-</section>
-<section id="ecological-statistics-with-r" class="level3">
-<h3 class="anchored" data-anchor-id="ecological-statistics-with-r">2011 — Ecological statistics with R</h3>
-<p><em>Tópicos em Biologia Animal — Estatística aplicada à ecologia usando o R.</em> A two-week graduate course in Animal Biology at <a href="http://www.ibilce.unesp.br/">UNESP</a> (São Paulo State University), in collaboration with <a href="http://thiagocalvesouza.wixsite.com/ecoffun">Thiago Gonçalves-Souza</a> and <a href="http://fernandoecologia.wixsite.com/fernandorodrigues">Fernando R. Silva</a>. We covered Generalized Linear Models, the main multivariate methods, and other ecological tools, using R as the analysis platform.</p>
+<section id="objetivos-de-aprendizagem" class="level2">
+<h2 class="anchored" data-anchor-id="objetivos-de-aprendizagem">Objetivos de aprendizagem</h2>
+<p>Ao final da disciplina, o(a) aluno(a) deve ser capaz de:</p>
 <ul>
-<li><a href="https://www.sugarsync.com/pf/D9712667_69058108_487278">Class slides</a></li>
-<li><a href="http://cran.r-project.org/doc/contrib/Provete-Estatistica_aplicada.pdf">Course book (CRAN-hosted)</a></li>
-<li><a href="https://diogoprovete.weebly.com/uploads/1/7/3/6/17367099/data.zip">Datasets for exercises</a></li>
-<li><a href="https://diogoprovete.weebly.com/uploads/1/7/3/6/17367099/script_completo_apostila_estatistica_aplicada_a_ecologia_usando_o_r.r">R scripts</a></li>
+<li>Identificar o tipo de dado e a distribuição apropriada para descrevê-lo;</li>
+<li>Planejar uma coleta com delineamento amostral adequado à pergunta;</li>
+<li>Escolher, executar e interpretar um teste de hipóteses dentro do arcabouço dos modelos lineares;</li>
+<li>Comunicar resultados estatísticos em linguagem biológica clara.</li>
 </ul>
 </section>
-<section id="sampling-techniques-for-vertebrates-pt" class="level3">
-<h3 class="anchored" data-anchor-id="sampling-techniques-for-vertebrates-pt">2009 — Sampling techniques for vertebrates (PT)</h3>
-<p>Short course (4 h) for undergraduates at UNESP, given as a pre-meeting course at the <em>4º Simpósio de Biologia Animal</em>. Ricardo Brassaloti and I covered field sampling techniques for the four classes of vertebrates.</p>
-<p><a href="http://slidesha.re/eiu9Fx">Class slides</a></p>
-<p><strong>Recommended bibliography</strong></p>
+<section id="cronograma" class="level2">
+<h2 class="anchored" data-anchor-id="cronograma">Cronograma</h2>
+<div id="listing-cronograma" class="quarto-listing quarto-listing-container-table">
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+
+<th>
+Aula
+</th>
+
+<th>
+Tópico
+</th>
+
+<th>
+Data
+</th>
+
+</tr>
+</thead>
+<tbody class="list">
+
+<tr data-index="0" data-listing-date-sort="1754539200000" data-listing-file-modified-sort="1780958357989" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="72" data-listing-title-sort="Aula 01 — Introdução à estatística biológica" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-order">1</span>
+</td>
+<td>
+<a href="../../teaching/bioestatistica/aula-01-introducao/index.html" class="title listing-title">Aula 01 — Introdução à estatística biológica</a>
+</td>
+<td>
+<span class="listing-date">07/08/2025</span>
+</td>
+
+</tr>
+
+<tr data-index="1" data-listing-date-sort="1755144000000" data-listing-file-modified-sort="1780958357982" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="95" data-listing-title-sort="Aula 02 — Organização e apresentação de dados" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-order">2</span>
+</td>
+<td>
+<a href="../../teaching/bioestatistica/aula-02-organizacao-dados/index.html" class="title listing-title">Aula 02 — Organização e apresentação de dados</a>
+</td>
+<td>
+<span class="listing-date">14/08/2025</span>
+</td>
+
+</tr>
+
+<tr data-index="2" data-listing-date-sort="1755748800000" data-listing-file-modified-sort="1780957369646" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="71" data-listing-title-sort="Aula 03 — Medidas de tendência central e dispersão" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-order">3</span>
+</td>
+<td>
+<a href="../../teaching/bioestatistica/aula-03-tendencia-dispersao/index.html" class="title listing-title">Aula 03 — Medidas de tendência central e dispersão</a>
+</td>
+<td>
+<span class="listing-date">21/08/2025</span>
+</td>
+
+</tr>
+
+<tr data-index="3" data-listing-date-sort="1756353600000" data-listing-file-modified-sort="1780957369649" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="71" data-listing-title-sort="Aula 04 — Princípios de amostragem e delineamento experimental" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-order">4</span>
+</td>
+<td>
+<a href="../../teaching/bioestatistica/aula-04-amostragem/index.html" class="title listing-title">Aula 04 — Princípios de amostragem e delineamento experimental</a>
+</td>
+<td>
+<span class="listing-date">28/08/2025</span>
+</td>
+
+</tr>
+
+<tr data-index="4" data-listing-date-sort="1757563200000" data-listing-file-modified-sort="1780958358003" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="112" data-listing-title-sort="Aula 05 — Princípios de probabilidade e distribuições" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-order">5</span>
+</td>
+<td>
+<a href="../../teaching/bioestatistica/aula-05-probabilidade/index.html" class="title listing-title">Aula 05 — Princípios de probabilidade e distribuições</a>
+</td>
+<td>
+<span class="listing-date">11/09/2025</span>
+</td>
+
+</tr>
+
+<tr data-index="5" data-listing-date-sort="1759377600000" data-listing-file-modified-sort="1780958357986" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="104" data-listing-title-sort="Aula 06 — Estimativa pontual e intervalar" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-order">6</span>
+</td>
+<td>
+<a href="../../teaching/bioestatistica/aula-06-estimativas/index.html" class="title listing-title">Aula 06 — Estimativa pontual e intervalar</a>
+</td>
+<td>
+<span class="listing-date">02/10/2025</span>
+</td>
+
+</tr>
+
+<tr data-index="6" data-listing-date-sort="1760587200000" data-listing-file-modified-sort="1780958357997" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="106" data-listing-title-sort="Aula 07 — Teste de hipóteses" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-order">7</span>
+</td>
+<td>
+<a href="../../teaching/bioestatistica/aula-07-teste-hipoteses/index.html" class="title listing-title">Aula 07 — Teste de hipóteses</a>
+</td>
+<td>
+<span class="listing-date">16/10/2025</span>
+</td>
+
+</tr>
+
+<tr data-index="7" data-listing-date-sort="1761192000000" data-listing-file-modified-sort="1780957369650" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="93" data-listing-title-sort="Aula 08 — Modelos lineares: teste t" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-order">8</span>
+</td>
+<td>
+<a href="../../teaching/bioestatistica/aula-08-modelos-lineares-teste-t/index.html" class="title listing-title">Aula 08 — Modelos lineares: teste t</a>
+</td>
+<td>
+<span class="listing-date">23/10/2025</span>
+</td>
+
+</tr>
+
+<tr data-index="8" data-listing-date-sort="1762401600000" data-listing-file-modified-sort="1780958357993" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="107" data-listing-title-sort="Aula 09 — Modelos lineares: regressão e correlação" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-order">9</span>
+</td>
+<td>
+<a href="../../teaching/bioestatistica/aula-09-regressao-correlacao/index.html" class="title listing-title">Aula 09 — Modelos lineares: regressão e correlação</a>
+</td>
+<td>
+<span class="listing-date">06/11/2025</span>
+</td>
+
+</tr>
+
+<tr data-index="9" data-listing-date-sort="1763006400000" data-listing-file-modified-sort="1780957369648" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="70" data-listing-title-sort="Aula 10 — Modelos lineares generalizados: qui-quadrado" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-order">10</span>
+</td>
+<td>
+<a href="../../teaching/bioestatistica/aula-10-qui-quadrado/index.html" class="title listing-title">Aula 10 — Modelos lineares generalizados: qui-quadrado</a>
+</td>
+<td>
+<span class="listing-date">13/11/2025</span>
+</td>
+
+</tr>
+
+<tr data-index="10" data-listing-date-sort="1763611200000" data-listing-file-modified-sort="1780957369651" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="87" data-listing-title-sort="Aula 11 — Modelos lineares: análise de variância (ANOVA)" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-order">11</span>
+</td>
+<td>
+<a href="../../teaching/bioestatistica/aula-11-anova/index.html" class="title listing-title">Aula 11 — Modelos lineares: análise de variância (ANOVA)</a>
+</td>
+<td>
+<span class="listing-date">20/11/2025</span>
+</td>
+
+</tr>
+
+</tbody>
+</table>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+<section id="bibliografia-básica" class="level2">
+<h2 class="anchored" data-anchor-id="bibliografia-básica">Bibliografia básica</h2>
 <ul>
-<li>Colwell, R.K. &amp; Coddington, J.A. 1994. Estimating terrestrial biodiversity through extrapolation. <em>Phil. Trans. R. Soc. B</em> 345:101–118. <a href="http://viceroy.eeb.uconn.edu/RKCPublications/ColwellAndCoddington1994_hr.pdf">PDF</a></li>
-<li>Dias, S.C. 2004. Planejando estudos de diversidade e riqueza: uma abordagem para estudantes de graduação. <em>Acta Scientiarum</em> 26:373–9. <a href="http://periodicos.uem.br/ojs/index.php/ActaSciBiolSci/article/view/1511/945">PDF</a></li>
-<li>Gotelli, N. &amp; Colwell, R.K. 2001. Quantifying biodiversity: procedures and pitfalls in the measurement and comparison of species richness. <em>Ecology Letters</em> 4:379–391. <a href="http://viceroy.eeb.uconn.edu/RKCPublications/GotelliAndColwell2001.pdf">PDF</a></li>
-<li>Sutherland, W.J. (Ed.) 2006. <em>Ecological census techniques: a handbook.</em> 2nd ed.&nbsp;Cambridge University Press.</li>
+<li>Callegari-Jacques, S.M. 2003. <em>Bioestatística: princípios e aplicações.</em> Porto Alegre: ArtMed.</li>
+<li>Gotelli, N.J. &amp; Ellison, A.M. 2010. <em>Princípios de estatística em ecologia.</em> Porto Alegre: Artmed.</li>
+<li>Magnusson, W. &amp; Mourão, G. 2005. <em>Estatística sem matemática: a ligação entre as questões e a análise.</em> 2ª ed.&nbsp;Londrina: Editora Planta.</li>
+</ul>
+</section>
+<section id="bibliografia-complementar" class="level2">
+<h2 class="anchored" data-anchor-id="bibliografia-complementar">Bibliografia complementar</h2>
+<ul>
+<li>Bussab, W.O. &amp; Morettin, P.A. 2017. <em>Estatística básica.</em> 9ª ed.&nbsp;São Paulo: Saraiva.</li>
+<li>Quinn, G.P. &amp; Keough, M.J. 2023. <em>Experimental Design and Data Analysis for Biologists.</em> 2ª ed.&nbsp;Cambridge University Press.</li>
+<li>Sokal, R. &amp; Rohlf, J. 1994. <em>Biometry.</em> 3ª ed.&nbsp;New York: WH Freeman.</li>
+<li>Triola, M.F. <em>Introdução à estatística.</em></li>
+<li>Vieira, S. 2018. <em>Estatística básica.</em> 2ª ed.&nbsp;São Paulo: Cengage Learning.</li>
+<li>Vieira, S. 2010. <em>Bioestatística: tópicos avançados.</em> 3ª ed.&nbsp;Rio de Janeiro: Elsevier.</li>
+<li>Zar, J.H. 2009. <em>Biostatistical analysis.</em> 5ª ed.&nbsp;New York: Pearson.</li>
+</ul>
+<section id="recursos-online" class="level3">
+<h3 class="anchored" data-anchor-id="recursos-online">Recursos online</h3>
+<ul>
+<li><a href="https://pt.r4ds.hadley.nz/">Wickham, H.; Çetinkaya-Rundel, M. &amp; Grolemund, G. <em>R para Ciência de Dados</em> (2ª ed.)</a></li>
+<li><a href="https://pedro-faria.netlify.app/pt/publication/book/introducao_linguagem_r/">Faria, P.D. <em>Introdução à Linguagem R: seus fundamentos e sua prática.</em></a></li>
+<li><a href="https://analises-ecologicas.com">da Silva, F.R.; Gonçalves-Souza, T.; Paterno, G.; Provete, D.B.; Vancine, M.A.&nbsp;<em>Análises ecológicas no R.</em></a></li>
+<li><a href="https://www.locus.ufv.br/handle/123456789/13598">Mello &amp; Peternelli. <em>Conhecendo o R: uma visão mais que estatística.</em></a></li>
+</ul>
+</section>
+</section>
+<section id="avaliação" class="level2">
+<h2 class="anchored" data-anchor-id="avaliação">Avaliação</h2>
+<p>A nota final segue a fórmula (P1 + P2) / 2, onde:</p>
+<ul>
+<li><strong>P1</strong> — Prova escrita</li>
+<li><strong>P2</strong> — Questionários ao longo do semestre</li>
+<li><strong>PO</strong> — Prova substitutiva optativa (substitui a menor das anteriores)</li>
 </ul>
 
 
-</section>
+
 </section>
 
 </main> <!-- /main -->
@@ -882,5 +1119,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

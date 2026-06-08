@@ -1,17 +1,220 @@
 [
   {
+    "objectID": "teaching/bioestatistica/index.html",
+    "href": "teaching/bioestatistica/index.html",
+    "title": "Bioestatística",
+    "section": "",
+    "text": "Para alunos matriculados: quizzes, prazos e avaliações ficam no Moodle UFMS. Esta página reúne os materiais públicos do curso (slides, leituras, vídeos), abertos a qualquer pessoa interessada."
+  },
+  {
+    "objectID": "teaching/bioestatistica/index.html#sobre",
+    "href": "teaching/bioestatistica/index.html#sobre",
+    "title": "Bioestatística",
+    "section": "Sobre",
+    "text": "Sobre\nBioestatística é uma disciplina obrigatória do bacharelado e da licenciatura em Ciências Biológicas da UFMS, com 68 horas-aula. O foco é construir intuição sobre o raciocínio estatístico aplicado à biologia — entender o que cada teste pergunta, em que situações se aplica, e como interpretar resultados em linguagem biológica — sem exigir formação matemática avançada."
+  },
+  {
+    "objectID": "teaching/bioestatistica/index.html#ementa",
+    "href": "teaching/bioestatistica/index.html#ementa",
+    "title": "Bioestatística",
+    "section": "Ementa",
+    "text": "Ementa\nIntrodução à estatística. Probabilidade. Representação da variação: parâmetros estatísticos e principais distribuições de probabilidade. Estimativas, testes de hipóteses e significância. Modelos lineares: teste t, ANOVA, regressão linear, correlação, e modelos lineares generalizados (qui-quadrado)."
+  },
+  {
+    "objectID": "teaching/bioestatistica/index.html#objetivos-de-aprendizagem",
+    "href": "teaching/bioestatistica/index.html#objetivos-de-aprendizagem",
+    "title": "Bioestatística",
+    "section": "Objetivos de aprendizagem",
+    "text": "Objetivos de aprendizagem\nAo final da disciplina, o(a) aluno(a) deve ser capaz de:\n\nIdentificar o tipo de dado e a distribuição apropriada para descrevê-lo;\nPlanejar uma coleta com delineamento amostral adequado à pergunta;\nEscolher, executar e interpretar um teste de hipóteses dentro do arcabouço dos modelos lineares;\nComunicar resultados estatísticos em linguagem biológica clara."
+  },
+  {
+    "objectID": "teaching/bioestatistica/index.html#cronograma",
+    "href": "teaching/bioestatistica/index.html#cronograma",
+    "title": "Bioestatística",
+    "section": "Cronograma",
+    "text": "Cronograma\n\n\n\n\n\n\nAula\n\n\n\nTópico\n\n\n\nData\n\n\n\n\n\n\n\n\n1\n\n\nAula 01 — Introdução à estatística biológica\n\n\n07/08/2025\n\n\n\n\n\n\n2\n\n\nAula 02 — Organização e apresentação de dados\n\n\n14/08/2025\n\n\n\n\n\n\n3\n\n\nAula 03 — Medidas de tendência central e dispersão\n\n\n21/08/2025\n\n\n\n\n\n\n4\n\n\nAula 04 — Princípios de amostragem e delineamento experimental\n\n\n28/08/2025\n\n\n\n\n\n\n5\n\n\nAula 05 — Princípios de probabilidade e distribuições\n\n\n11/09/2025\n\n\n\n\n\n\n6\n\n\nAula 06 — Estimativa pontual e intervalar\n\n\n02/10/2025\n\n\n\n\n\n\n7\n\n\nAula 07 — Teste de hipóteses\n\n\n16/10/2025\n\n\n\n\n\n\n8\n\n\nAula 08 — Modelos lineares: teste t\n\n\n23/10/2025\n\n\n\n\n\n\n9\n\n\nAula 09 — Modelos lineares: regressão e correlação\n\n\n06/11/2025\n\n\n\n\n\n\n10\n\n\nAula 10 — Modelos lineares generalizados: qui-quadrado\n\n\n13/11/2025\n\n\n\n\n\n\n11\n\n\nAula 11 — Modelos lineares: análise de variância (ANOVA)\n\n\n20/11/2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "teaching/bioestatistica/index.html#bibliografia-básica",
+    "href": "teaching/bioestatistica/index.html#bibliografia-básica",
+    "title": "Bioestatística",
+    "section": "Bibliografia básica",
+    "text": "Bibliografia básica\n\nCallegari-Jacques, S.M. 2003. Bioestatística: princípios e aplicações. Porto Alegre: ArtMed.\nGotelli, N.J. & Ellison, A.M. 2010. Princípios de estatística em ecologia. Porto Alegre: Artmed.\nMagnusson, W. & Mourão, G. 2005. Estatística sem matemática: a ligação entre as questões e a análise. 2ª ed. Londrina: Editora Planta."
+  },
+  {
+    "objectID": "teaching/bioestatistica/index.html#bibliografia-complementar",
+    "href": "teaching/bioestatistica/index.html#bibliografia-complementar",
+    "title": "Bioestatística",
+    "section": "Bibliografia complementar",
+    "text": "Bibliografia complementar\n\nBussab, W.O. & Morettin, P.A. 2017. Estatística básica. 9ª ed. São Paulo: Saraiva.\nQuinn, G.P. & Keough, M.J. 2023. Experimental Design and Data Analysis for Biologists. 2ª ed. Cambridge University Press.\nSokal, R. & Rohlf, J. 1994. Biometry. 3ª ed. New York: WH Freeman.\nTriola, M.F. Introdução à estatística.\nVieira, S. 2018. Estatística básica. 2ª ed. São Paulo: Cengage Learning.\nVieira, S. 2010. Bioestatística: tópicos avançados. 3ª ed. Rio de Janeiro: Elsevier.\nZar, J.H. 2009. Biostatistical analysis. 5ª ed. New York: Pearson.\n\n\nRecursos online\n\nWickham, H.; Çetinkaya-Rundel, M. & Grolemund, G. R para Ciência de Dados (2ª ed.)\nFaria, P.D. Introdução à Linguagem R: seus fundamentos e sua prática.\nda Silva, F.R.; Gonçalves-Souza, T.; Paterno, G.; Provete, D.B.; Vancine, M.A. Análises ecológicas no R.\nMello & Peternelli. Conhecendo o R: uma visão mais que estatística."
+  },
+  {
+    "objectID": "teaching/bioestatistica/index.html#avaliação",
+    "href": "teaching/bioestatistica/index.html#avaliação",
+    "title": "Bioestatística",
+    "section": "Avaliação",
+    "text": "Avaliação\nA nota final segue a fórmula (P1 + P2) / 2, onde:\n\nP1 — Prova escrita\nP2 — Questionários ao longo do semestre\nPO — Prova substitutiva optativa (substitui a menor das anteriores)"
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-10-qui-quadrado/index.html",
+    "href": "teaching/bioestatistica/aula-10-qui-quadrado/index.html",
+    "title": "Aula 10 — Modelos lineares generalizados: qui-quadrado",
+    "section": "",
+    "text": "Data: 13 de novembro de 2025 · Disciplina: Bioestatística (UFMS)"
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-10-qui-quadrado/index.html#slides",
+    "href": "teaching/bioestatistica/aula-10-qui-quadrado/index.html#slides",
+    "title": "Aula 10 — Modelos lineares generalizados: qui-quadrado",
+    "section": "Slides",
+    "text": "Slides\n Baixar slides em PDF"
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-10-qui-quadrado/index.html#leituras-recomendadas",
+    "href": "teaching/bioestatistica/aula-10-qui-quadrado/index.html#leituras-recomendadas",
+    "title": "Aula 10 — Modelos lineares generalizados: qui-quadrado",
+    "section": "Leituras recomendadas",
+    "text": "Leituras recomendadas\n\nVieira, S. Estatística básica, cap. 12 (qui-quadrado).\nGotelli, N.J. & Ellison, A.M. Princípios de estatística em ecologia, cap. 11 (qui-quadrado)."
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-10-qui-quadrado/index.html#recursos-externos",
+    "href": "teaching/bioestatistica/aula-10-qui-quadrado/index.html#recursos-externos",
+    "title": "Aula 10 — Modelos lineares generalizados: qui-quadrado",
+    "section": "Recursos externos",
+    "text": "Recursos externos\n\nVídeo da aula\nComo realizar um teste de qui-quadrado\n\n\nVolta para o índice do curso · Acesso a quizzes e avaliações pelo Moodle UFMS (turma atual)."
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-08-modelos-lineares-teste-t/index.html",
+    "href": "teaching/bioestatistica/aula-08-modelos-lineares-teste-t/index.html",
+    "title": "Aula 08 — Modelos lineares: teste t",
+    "section": "",
+    "text": "Data: 23 de outubro de 2025 · Disciplina: Bioestatística (UFMS)"
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-08-modelos-lineares-teste-t/index.html#slides",
+    "href": "teaching/bioestatistica/aula-08-modelos-lineares-teste-t/index.html#slides",
+    "title": "Aula 08 — Modelos lineares: teste t",
+    "section": "Slides",
+    "text": "Slides\n Baixar slides em PDF"
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-08-modelos-lineares-teste-t/index.html#leituras-recomendadas",
+    "href": "teaching/bioestatistica/aula-08-modelos-lineares-teste-t/index.html#leituras-recomendadas",
+    "title": "Aula 08 — Modelos lineares: teste t",
+    "section": "Leituras recomendadas",
+    "text": "Leituras recomendadas\n\nVieira, S. Estatística básica, caps. 10 e 11 (teste t).\nTriola, M.F. Introdução à estatística, cap. 9."
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-08-modelos-lineares-teste-t/index.html#recursos-externos",
+    "href": "teaching/bioestatistica/aula-08-modelos-lineares-teste-t/index.html#recursos-externos",
+    "title": "Aula 08 — Modelos lineares: teste t",
+    "section": "Recursos externos",
+    "text": "Recursos externos\n\nVídeo da aula — Parte I\nAula prática (R)\nVídeo da aula — Parte II\nDemonstração com conjunto de dados\nLindeløv — Common statistical tests as linear models\nStatisty — análise estatística online (sem instalar)\n\n\nVolta para o índice do curso · Acesso a quizzes e avaliações pelo Moodle UFMS (turma atual)."
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-06-estimativas/index.html",
+    "href": "teaching/bioestatistica/aula-06-estimativas/index.html",
+    "title": "Aula 06 — Estimativa pontual e intervalar",
+    "section": "",
+    "text": "Data: 02 de outubro de 2025 · Disciplina: Bioestatística (UFMS)"
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-06-estimativas/index.html#slides",
+    "href": "teaching/bioestatistica/aula-06-estimativas/index.html#slides",
+    "title": "Aula 06 — Estimativa pontual e intervalar",
+    "section": "Slides",
+    "text": "Slides\n Baixar slides em PDF"
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-06-estimativas/index.html#leituras-recomendadas",
+    "href": "teaching/bioestatistica/aula-06-estimativas/index.html#leituras-recomendadas",
+    "title": "Aula 06 — Estimativa pontual e intervalar",
+    "section": "Leituras recomendadas",
+    "text": "Leituras recomendadas\n\nVieira, S. Estatística básica, cap. 9 (estimativa pontual).\nBussab, W.O. & Morettin, P.A. Estatística básica, cap. 10 (inferência) e itens 11.6–11.7 do cap. 11.\nGonick, L. & Smith, W. The Cartoon Guide to Statistics, caps. 7, 9 e 10."
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-06-estimativas/index.html#recursos-externos",
+    "href": "teaching/bioestatistica/aula-06-estimativas/index.html#recursos-externos",
+    "title": "Aula 06 — Estimativa pontual e intervalar",
+    "section": "Recursos externos",
+    "text": "Recursos externos\n\nSeeing Theory — amostragem, parâmetro e variância (interativo)\nVídeo introdutório sobre Teorema do Limite Central\nSimulação interativa do Teorema do Limite Central (Mike Freeman)\n\n\nVolta para o índice do curso · Acesso a quizzes e avaliações pelo Moodle UFMS (turma atual)."
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-04-amostragem/index.html",
+    "href": "teaching/bioestatistica/aula-04-amostragem/index.html",
+    "title": "Aula 04 — Princípios de amostragem e delineamento experimental",
+    "section": "",
+    "text": "Data: 28/08 e 04/09 de 2025 · Disciplina: Bioestatística (UFMS)"
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-04-amostragem/index.html#slides",
+    "href": "teaching/bioestatistica/aula-04-amostragem/index.html#slides",
+    "title": "Aula 04 — Princípios de amostragem e delineamento experimental",
+    "section": "Slides",
+    "text": "Slides\n Baixar slides em PDF"
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-04-amostragem/index.html#leituras-recomendadas",
+    "href": "teaching/bioestatistica/aula-04-amostragem/index.html#leituras-recomendadas",
+    "title": "Aula 04 — Princípios de amostragem e delineamento experimental",
+    "section": "Leituras recomendadas",
+    "text": "Leituras recomendadas\n\nVieira, S. Estatística básica, cap. 7 (amostragem).\nGotelli, N.J. & Ellison, A.M. Princípios de estatística em ecologia, caps. 6 e 7 (desenhos amostrais e experimentais)."
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-04-amostragem/index.html#recursos-externos",
+    "href": "teaching/bioestatistica/aula-04-amostragem/index.html#recursos-externos",
+    "title": "Aula 04 — Princípios de amostragem e delineamento experimental",
+    "section": "Recursos externos",
+    "text": "Recursos externos\nSem recursos externos para esta aula.\n\nVolta para o índice do curso · Acesso a quizzes e avaliações pelo Moodle UFMS (turma atual)."
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-02-organizacao-dados/index.html",
+    "href": "teaching/bioestatistica/aula-02-organizacao-dados/index.html",
+    "title": "Aula 02 — Organização e apresentação de dados",
+    "section": "",
+    "text": "Data: 14 de agosto de 2025 · Disciplina: Bioestatística (UFMS)"
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-02-organizacao-dados/index.html#slides",
+    "href": "teaching/bioestatistica/aula-02-organizacao-dados/index.html#slides",
+    "title": "Aula 02 — Organização e apresentação de dados",
+    "section": "Slides",
+    "text": "Slides\n Baixar slides em PDF"
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-02-organizacao-dados/index.html#leituras-recomendadas",
+    "href": "teaching/bioestatistica/aula-02-organizacao-dados/index.html#leituras-recomendadas",
+    "title": "Aula 02 — Organização e apresentação de dados",
+    "section": "Leituras recomendadas",
+    "text": "Leituras recomendadas\n\nVieira, S. Estatística básica, cap. 2 (gráficos).\nBussab, W.O. & Morettin, P.A. Estatística básica, cap. 1 (parte 2).\nGonick, L. & Smith, W. The Cartoon Guide to Statistics, cap. 2."
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-02-organizacao-dados/index.html#recursos-externos",
+    "href": "teaching/bioestatistica/aula-02-organizacao-dados/index.html#recursos-externos",
+    "title": "Aula 02 — Organização e apresentação de dados",
+    "section": "Recursos externos",
+    "text": "Recursos externos\n\nVídeo da aula no YouTube\nBlog Dynamic Ecology — mandamentos para bom gerenciamento de dados\nMarco Mello — como organizar uma planilha de dados\n\n\nVolta para o índice do curso · Acesso a quizzes e avaliações pelo Moodle UFMS (turma atual)."
+  },
+  {
     "objectID": "teaching.html",
     "href": "teaching.html",
     "title": "Teaching",
     "section": "",
-    "text": "youtube.com/@DiogoBProvete · Statistics for the life sciences, in plain Portuguese.\n\n\n\nI run a YouTube channel — Estatística Descomplicada — with lessons on statistics aimed at biologists and other life-scientists. The content mirrors what I teach in graduate and undergraduate courses at UFMS: Generalized Linear (Mixed) Models, multivariate methods, study design, and the reproducible-analysis workflow in R.\nTopics covered include hypothesis testing, GLM/GLMM with appropriate error families, ordinations (PCA, NMDS, RDA, CCA), classification, and how to read statistical results in the ecological literature without getting lost in the jargon. New videos are released as the academic semester progresses.\nSubscribe to the channel →"
+    "text": "Disciplina obrigatória de 68 h ministrada anualmente no INBio/UFMS, cobrindo estatística descritiva, delineamento amostral, distribuições de probabilidade, inferência via teste de hipóteses e modelos lineares (t, ANOVA, regressão, qui-quadrado).\nCourse site & materials →"
+  },
+  {
+    "objectID": "teaching.html#undergraduate-courses-ufms",
+    "href": "teaching.html#undergraduate-courses-ufms",
+    "title": "Teaching",
+    "section": "",
+    "text": "Disciplina obrigatória de 68 h ministrada anualmente no INBio/UFMS, cobrindo estatística descritiva, delineamento amostral, distribuições de probabilidade, inferência via teste de hipóteses e modelos lineares (t, ANOVA, regressão, qui-quadrado).\nCourse site & materials →"
   },
   {
     "objectID": "teaching.html#estatística-descomplicada-youtube-channel",
     "href": "teaching.html#estatística-descomplicada-youtube-channel",
     "title": "Teaching",
-    "section": "",
-    "text": "youtube.com/@DiogoBProvete · Statistics for the life sciences, in plain Portuguese.\n\n\n\nI run a YouTube channel — Estatística Descomplicada — with lessons on statistics aimed at biologists and other life-scientists. The content mirrors what I teach in graduate and undergraduate courses at UFMS: Generalized Linear (Mixed) Models, multivariate methods, study design, and the reproducible-analysis workflow in R.\nTopics covered include hypothesis testing, GLM/GLMM with appropriate error families, ordinations (PCA, NMDS, RDA, CCA), classification, and how to read statistical results in the ecological literature without getting lost in the jargon. New videos are released as the academic semester progresses.\nSubscribe to the channel →"
+    "section": "Estatística Descomplicada — YouTube channel",
+    "text": "Estatística Descomplicada — YouTube channel\n\n\n\n\n\n\n youtube.com/@DiogoBProvete · Statistics for the life sciences, in plain Portuguese.\n\n\n\nI run a YouTube channel — Estatística Descomplicada — with lessons on statistics aimed at biologists and other life-scientists. The content mirrors what I teach in graduate and undergraduate courses at UFMS: Generalized Linear (Mixed) Models, multivariate methods, study design, and the reproducible-analysis workflow in R.\nTopics covered include hypothesis testing, GLM/GLMM with appropriate error families, ordinations (PCA, NMDS, RDA, CCA), classification, and how to read statistical results in the ecological literature without getting lost in the jargon. New videos are released as the academic semester progresses.\nSubscribe to the channel →"
   },
   {
     "objectID": "teaching.html#phenotypic-evolution-comparative-phylogenetic-methods",
@@ -334,5 +537,173 @@
     "title": "Software",
     "section": "",
     "text": "Compositional Data Analysis for Stereological and Histomorphometric Data\n GitHub repository ·  v2.0.0 (Apr 2026) ·  MIT License\n\n\n\nCoDa Stereo is an open-source Shiny application that brings the Aitchison geometry to the daily workflow of stereological and histomorphometric studies — fields where measurements are naturally compositional (proportions of tissue types, cell-line fractions, organelle volume densities) and therefore must be analysed with the appropriate log-ratio methods rather than off-the-shelf parametric tools.\nThe app implements the full PPDAC cycle (Problem → Plan → Data → Analysis → Conclusion) so that students and collaborators without a strong statistical background can move from a raw spreadsheet to a defensible permutational MANOVA with diagnostics, pairwise post-hoc tests, and publication-ready plots — all in the browser.\n\n\n\n\n\n\n\n\n\nModule\nCapabilities\n\n\n\n\nData upload\nCSV and Excel (.xlsx/.xls) with sheet selector; smart parts selector that auto-excludes ID columns\n\n\nData inspection\nZero/NA heatmap (observed zero vs. structural zero vs. missing); naniar::vis_miss plot; counts per part\n\n\nZero handling\nThree methods via zCompositions (CZM, multRepl, lrEM); NA handling via listwise deletion or geometric-mean imputation\n\n\nCompositional analysis\nManual ternary plot (pure ggplot2, no ggtern dependency); amalgamation of D &gt; 3 parts into 3 groups; clr-PCA biplot via FactoMineR + factoextra\n\n\nStatistical modelling\nFactorial permutational MANOVA via RRPP::lm.rrpp; pairwise post-hoc via RRPP::pairwise; residual diagnostics; formula preview before fitting\n\n\nDownloads\nTernary and biplot as PDF; imputed data as CSV; ANOVA and pairwise tables as CSV\n\n\n\n\n\n\nStereological datasets are routinely analysed as if cell-fraction or tissue-fraction percentages were independent variables — they’re not. The unit-sum constraint induces spurious correlations and false significance in standard MANOVA. CoDa Stereo handles the geometry correctly throughout, without requiring users to write log-ratio transforms by hand.\n\n\n\n# Run locally\n# install.packages(\"devtools\")\ndevtools::install_github(\"diogoprov/CoDaStereo\")\nCoDaStereo::run_app()\nA deployment on Posit Connect Cloud (free tier) is also supported — see the README for step-by-step instructions.\n\n\n\nCoDa Stereo was developed as supplementary material for:\n\nProvete, D.B., Severgnini, M.R., Fernandes, C.E., Franco-Belussi, L. (2026). A practical guide to compositional data analysis in tissue stereology and blood cell profile. Histochemistry and Cell Biology (in review). Preprint on Research Square.\n\nThe companion paper covers the methodological rationale, simulations comparing CoDa with naïve approaches, and worked examples.\nA CITATION.cff and BibTeX snippets are available on the repository.\n\n\n\nBug reports, feature requests, and pull requests are very welcome on GitHub Issues. PRs should target the dev branch."
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-01-introducao/index.html",
+    "href": "teaching/bioestatistica/aula-01-introducao/index.html",
+    "title": "Aula 01 — Introdução à estatística biológica",
+    "section": "",
+    "text": "Data: 07 de agosto de 2025 · Disciplina: Bioestatística (UFMS)"
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-01-introducao/index.html#slides",
+    "href": "teaching/bioestatistica/aula-01-introducao/index.html#slides",
+    "title": "Aula 01 — Introdução à estatística biológica",
+    "section": "Slides",
+    "text": "Slides\n Baixar slides em PDF"
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-01-introducao/index.html#leituras-recomendadas",
+    "href": "teaching/bioestatistica/aula-01-introducao/index.html#leituras-recomendadas",
+    "title": "Aula 01 — Introdução à estatística biológica",
+    "section": "Leituras recomendadas",
+    "text": "Leituras recomendadas\n\nBussab, W.O. & Morettin, P.A. Estatística básica, cap. 2.\nGonick, L. & Smith, W. The Cartoon Guide to Statistics, cap. 1."
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-01-introducao/index.html#recursos-externos",
+    "href": "teaching/bioestatistica/aula-01-introducao/index.html#recursos-externos",
+    "title": "Aula 01 — Introdução à estatística biológica",
+    "section": "Recursos externos",
+    "text": "Recursos externos\n\nVídeo da aula no YouTube\nInstruções para o estudo dirigido\n\n\nVolta para o índice do curso · Acesso a quizzes e avaliações pelo Moodle UFMS (turma atual)."
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-03-tendencia-dispersao/index.html",
+    "href": "teaching/bioestatistica/aula-03-tendencia-dispersao/index.html",
+    "title": "Aula 03 — Medidas de tendência central e dispersão",
+    "section": "",
+    "text": "Data: 21 de agosto de 2025 · Disciplina: Bioestatística (UFMS)"
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-03-tendencia-dispersao/index.html#slides",
+    "href": "teaching/bioestatistica/aula-03-tendencia-dispersao/index.html#slides",
+    "title": "Aula 03 — Medidas de tendência central e dispersão",
+    "section": "Slides",
+    "text": "Slides\n Baixar slides em PDF"
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-03-tendencia-dispersao/index.html#leituras-recomendadas",
+    "href": "teaching/bioestatistica/aula-03-tendencia-dispersao/index.html#leituras-recomendadas",
+    "title": "Aula 03 — Medidas de tendência central e dispersão",
+    "section": "Leituras recomendadas",
+    "text": "Leituras recomendadas\n\nBussab, W.O. & Morettin, P.A. Estatística básica, cap. 3.\nVieira, S. Estatística básica, cap. 4 (medidas de tendência central) e cap. 5 (medidas de dispersão)."
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-03-tendencia-dispersao/index.html#recursos-externos",
+    "href": "teaching/bioestatistica/aula-03-tendencia-dispersao/index.html#recursos-externos",
+    "title": "Aula 03 — Medidas de tendência central e dispersão",
+    "section": "Recursos externos",
+    "text": "Recursos externos\nSem recursos externos para esta aula.\n\nVolta para o índice do curso · Acesso a quizzes e avaliações pelo Moodle UFMS (turma atual)."
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-05-probabilidade/index.html",
+    "href": "teaching/bioestatistica/aula-05-probabilidade/index.html",
+    "title": "Aula 05 — Princípios de probabilidade e distribuições",
+    "section": "",
+    "text": "Data: 11 e 18/09 de 2025 · Disciplina: Bioestatística (UFMS)"
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-05-probabilidade/index.html#slides",
+    "href": "teaching/bioestatistica/aula-05-probabilidade/index.html#slides",
+    "title": "Aula 05 — Princípios de probabilidade e distribuições",
+    "section": "Slides",
+    "text": "Slides\n Baixar slides em PDF"
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-05-probabilidade/index.html#leituras-recomendadas",
+    "href": "teaching/bioestatistica/aula-05-probabilidade/index.html#leituras-recomendadas",
+    "title": "Aula 05 — Princípios de probabilidade e distribuições",
+    "section": "Leituras recomendadas",
+    "text": "Leituras recomendadas\n\nVieira, S. Estatística básica, caps. 8 (probabilidade, distribuição normal) e 9 (distribuição binomial).\nGotelli, N.J. & Ellison, A.M. Princípios de estatística em ecologia, cap. 1 (probabilidade) e cap. sobre variáveis aleatórias.\nBussab, W.O. & Morettin, P.A. Estatística básica, cap. 5 (probabilidade).\nGonick, L. & Smith, W. The Cartoon Guide to Statistics, cap. 4."
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-05-probabilidade/index.html#recursos-externos",
+    "href": "teaching/bioestatistica/aula-05-probabilidade/index.html#recursos-externos",
+    "title": "Aula 05 — Princípios de probabilidade e distribuições",
+    "section": "Recursos externos",
+    "text": "Recursos externos\n\nZuur et al. Mixed Effects Models and Extensions in Ecology with R, cap. 8 (distribuições da família exponencial)\n\n\nVolta para o índice do curso · Acesso a quizzes e avaliações pelo Moodle UFMS (turma atual)."
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-07-teste-hipoteses/index.html",
+    "href": "teaching/bioestatistica/aula-07-teste-hipoteses/index.html",
+    "title": "Aula 07 — Teste de hipóteses",
+    "section": "",
+    "text": "Data: 16 de outubro de 2025 · Disciplina: Bioestatística (UFMS)"
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-07-teste-hipoteses/index.html#slides",
+    "href": "teaching/bioestatistica/aula-07-teste-hipoteses/index.html#slides",
+    "title": "Aula 07 — Teste de hipóteses",
+    "section": "Slides",
+    "text": "Slides\n Baixar slides em PDF"
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-07-teste-hipoteses/index.html#leituras-recomendadas",
+    "href": "teaching/bioestatistica/aula-07-teste-hipoteses/index.html#leituras-recomendadas",
+    "title": "Aula 07 — Teste de hipóteses",
+    "section": "Leituras recomendadas",
+    "text": "Leituras recomendadas\n\nGotelli, N.J. & Ellison, A.M. Princípios de estatística em ecologia, cap. sobre teste de hipóteses.\nBussab, W.O. & Morettin, P.A. Estatística básica, cap. 12.\nTriola, M.F. Introdução à estatística, cap. 8.\nGonick, L. & Smith, W. The Cartoon Guide to Statistics, cap. 8."
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-07-teste-hipoteses/index.html#recursos-externos",
+    "href": "teaching/bioestatistica/aula-07-teste-hipoteses/index.html#recursos-externos",
+    "title": "Aula 07 — Teste de hipóteses",
+    "section": "Recursos externos",
+    "text": "Recursos externos\n\nApostila de Marco & Paglia — tipos de teste\nDe Assis et al. 2020 — Teste de hipótese estatística (livro completo, OA)\n\n\nVolta para o índice do curso · Acesso a quizzes e avaliações pelo Moodle UFMS (turma atual)."
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-09-regressao-correlacao/index.html",
+    "href": "teaching/bioestatistica/aula-09-regressao-correlacao/index.html",
+    "title": "Aula 09 — Modelos lineares: regressão e correlação",
+    "section": "",
+    "text": "Data: 06 de novembro de 2025 · Disciplina: Bioestatística (UFMS)"
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-09-regressao-correlacao/index.html#slides",
+    "href": "teaching/bioestatistica/aula-09-regressao-correlacao/index.html#slides",
+    "title": "Aula 09 — Modelos lineares: regressão e correlação",
+    "section": "Slides",
+    "text": "Slides\n Baixar slides em PDF"
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-09-regressao-correlacao/index.html#leituras-recomendadas",
+    "href": "teaching/bioestatistica/aula-09-regressao-correlacao/index.html#leituras-recomendadas",
+    "title": "Aula 09 — Modelos lineares: regressão e correlação",
+    "section": "Leituras recomendadas",
+    "text": "Leituras recomendadas\n\nGotelli, N.J. & Ellison, A.M. Princípios de estatística em ecologia, cap. 9 (regressão).\nVieira, S. Estatística básica, caps. 5 (correlação) e 6 (regressão).\nBussab, W.O. & Morettin, P.A. Estatística básica, caps. 14 e 16.\nGonick, L. & Smith, W. The Cartoon Guide to Statistics, cap. 11."
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-09-regressao-correlacao/index.html#recursos-externos",
+    "href": "teaching/bioestatistica/aula-09-regressao-correlacao/index.html#recursos-externos",
+    "title": "Aula 09 — Modelos lineares: regressão e correlação",
+    "section": "Recursos externos",
+    "text": "Recursos externos\n\nVídeo da aula\nComo fazer correlação e regressão\nAnálises ecológicas em R, cap. 7 (correlação) — Provete, Vancine et al.\n\n\nVolta para o índice do curso · Acesso a quizzes e avaliações pelo Moodle UFMS (turma atual)."
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-11-anova/index.html",
+    "href": "teaching/bioestatistica/aula-11-anova/index.html",
+    "title": "Aula 11 — Modelos lineares: análise de variância (ANOVA)",
+    "section": "",
+    "text": "Data: 20 de novembro de 2025 · Disciplina: Bioestatística (UFMS)"
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-11-anova/index.html#slides",
+    "href": "teaching/bioestatistica/aula-11-anova/index.html#slides",
+    "title": "Aula 11 — Modelos lineares: análise de variância (ANOVA)",
+    "section": "Slides",
+    "text": "Slides\n Baixar slides em PDF"
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-11-anova/index.html#leituras-recomendadas",
+    "href": "teaching/bioestatistica/aula-11-anova/index.html#leituras-recomendadas",
+    "title": "Aula 11 — Modelos lineares: análise de variância (ANOVA)",
+    "section": "Leituras recomendadas",
+    "text": "Leituras recomendadas\n\nGotelli, N.J. & Ellison, A.M. Princípios de estatística em ecologia, cap. 10 (ANOVA).\nQuinn, G.P. & Keough, M.J. Experimental Design and Data Analysis for Biologists, cap. 8.\nTriola, M.F. Introdução à estatística, cap. 12.\nVieira, S. Estatística básica, cap. 13."
+  },
+  {
+    "objectID": "teaching/bioestatistica/aula-11-anova/index.html#recursos-externos",
+    "href": "teaching/bioestatistica/aula-11-anova/index.html#recursos-externos",
+    "title": "Aula 11 — Modelos lineares: análise de variância (ANOVA)",
+    "section": "Recursos externos",
+    "text": "Recursos externos\n\nComo realizar ANOVA com um fator\n\n\nVolta para o índice do curso · Acesso a quizzes e avaliações pelo Moodle UFMS (turma atual)."
   }
 ]
