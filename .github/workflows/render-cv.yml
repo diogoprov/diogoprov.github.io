@@ -16,6 +16,12 @@ on:
 jobs:
   validate:
     runs-on: ubuntu-latest
+    env:
+      # .Rprofile sources renv/activate.R which forces every R session in
+      # this repo to use renv's local library. In CI we want plain R so
+      # install.packages can install into the system library — this flag
+      # tells the renv bootstrap to skip auto-activation.
+      RENV_CONFIG_AUTOLOADER_ENABLED: "FALSE"
     steps:
       - uses: actions/checkout@v4
 
@@ -30,13 +36,14 @@ jobs:
       - name: Install Chrome (used by pagedown for HTML → PDF)
         uses: browser-actions/setup-chrome@v1
 
-      - name: Restore R packages from renv.lock
-        uses: r-lib/actions/setup-renv@v2
-        continue-on-error: true
-
-      - name: Fallback install if renv not set up
+      # Install only the R packages actually used by .qmd / .R chunks in
+      # this repo. We deliberately skip `renv::restore()` because renv.lock
+      # carries legacy packages (e.g. igraph) that need extra system
+      # libraries on the Ubuntu runner and aren't actually used during
+      # render — keeping them was making CI fail.
+      - name: Install R packages used by the site
         run: |
-          Rscript -e 'if (!requireNamespace("yaml", quietly=TRUE)) install.packages(c("yaml","pagedown","chromote","scholar","httr"), repos="https://cloud.r-project.org")'
+          Rscript -e 'install.packages(c("yaml","scholar","pagedown","chromote","httr"), repos="https://cloud.r-project.org")'
 
       - name: Render site (validation)
         run: quarto render
