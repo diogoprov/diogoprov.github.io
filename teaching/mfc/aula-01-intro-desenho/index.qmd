@@ -1,0 +1,49 @@
+---
+title: "Aula 01 — Introdução e desenho de estudos comparativos"
+order: 1
+description: "Por que precisamos de métodos comparativos? Como o sinal de descendência comum confunde regressões em dados de espécies. Introdução ao R aplicado à filogenia (objetos `phylo`, leitura de árvores em Newick e Nexus)."
+---
+
+::: {.aula-meta}
+**Segunda-feira**  ·  **Curso:** Evolução fenotípica e métodos filogenéticos comparativos (PPGEC/UFMS)
+:::
+
+Por que precisamos de métodos comparativos? Como o sinal de descendência comum confunde regressões em dados de espécies. Introdução ao R aplicado à filogenia (objetos `phylo`, leitura de árvores em Newick e Nexus).
+
+## Slides
+
+[{{< fa solid file-pdf >}} Baixar slides em PDF](../slides/aula-01.pdf){.btn .btn-outline-primary}
+
+## Código R (aula prática)
+
+- {{< fa solid eye >}} **[Ver walkthrough HTML](walkthrough-aula-1-segunda.html)**  
+  *Walkthrough completo da aula prática — R básico, importação de filogenias, manipulação*  
+  [{{< fa solid file-code >}} baixar `aula-1-segunda.R`](aula-1-segunda.R)
+
+## Dados utilizados
+
+- [`BarbetTree.nex`](BarbetTree.nex)
+- [`Barbetdata.csv`](Barbetdata.csv)
+- [`Centrarchidae.csv`](Centrarchidae.csv)
+- [`Centrarchidae.tre`](Centrarchidae.tre)
+- [`Example_phylotargeting.nex`](Example_phylotargeting.nex)
+- [`Gomes_phylo.txt`](Gomes_phylo.txt)
+- [`Gomes_tree_datada.txt`](Gomes_tree_datada.txt)
+- [`anole.data.csv`](anole.data.csv)
+
+## Leituras recomendadas
+
+- Pennell, M.W. & Harmon, L.J. 2013. *An integrative view of phylogenetic comparative methods: connections to population genetics, community ecology, and paleobiology.* Annals NY Acad Sci.
+- Rezende, E.L. & Diniz-Filho, J.A.F. 2012. *Phylogenetic analyses: comparing species to infer adaptations and physiological mechanisms.* Comp Physiol.
+- Garland, T. et al. *Phylogenetic approaches in comparative physiology.*
+
+## Recursos externos
+
+- [AnthroTree (Charles Nunn)](http://www.anthrotree.info/)
+- [Companion site — *Modern Phylogenetic Comparative Methods*](http://www.mpcm-evolution.com/)
+- [Workshop Ilhabela 2015 — material online](https://www.uic.edu/classes/bios/bios414/phylo_workshop/)
+- [Treethinkers](http://treethinkers.org/)
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*

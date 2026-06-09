@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Teaching – Biodiversity Synthesis Lab</title>
+<title>Métodos filogenéticos comparativos – Biodiversity Synthesis Lab</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,29 +26,29 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./assets/favicon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6b38416d90cdbb41281c8a2a0df0236b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-1732e9b120b8faec2f4b22e599a6250f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-6b38416d90cdbb41281c8a2a0df0236b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../assets/favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-listing/list.min.js"></script>
+<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-6b38416d90cdbb41281c8a2a0df0236b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-1732e9b120b8faec2f4b22e599a6250f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-6b38416d90cdbb41281c8a2a0df0236b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,6 +76,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-cronograma .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-order','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-cronograma'] = new List('listing-cronograma', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -84,13 +113,42 @@ ul.task-list li input[type="checkbox"] {
   .ai { vertical-align: -.05em; }
 </style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="Teaching – Biodiversity Synthesis Lab">
-<meta property="og:description" content="Lab of Diogo B. Provete at UFMS — community ecology, eco-evolutionary dynamics, freshwater metacommunities.">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="Métodos filogenéticos comparativos – Biodiversity Synthesis Lab">
+<meta property="og:description" content="Disciplina de pós-graduação — Mestrado em Biologia Animal, UFMS (45 h)">
 <meta property="og:site_name" content="Biodiversity Synthesis Lab">
-<meta name="twitter:title" content="Teaching – Biodiversity Synthesis Lab">
-<meta name="twitter:description" content="Lab of Diogo B. Provete at UFMS — community ecology, eco-evolutionary dynamics, freshwater metacommunities.">
+<meta name="twitter:title" content="Métodos filogenéticos comparativos – Biodiversity Synthesis Lab">
+<meta name="twitter:description" content="Disciplina de pós-graduação — Mestrado em Biologia Animal, UFMS (45 h)">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -263,11 +321,11 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo light-content">
-    <img src="./assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo dark-content">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo light-content">
+    <img src="../../assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Biodiversity Synthesis Lab</span>
     </a>
   </div>
@@ -278,39 +336,39 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html"> 
+    <a class="nav-link" href="../../research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publications.html"> 
+    <a class="nav-link" href="../../publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./people.html"> 
+    <a class="nav-link" href="../../people.html"> 
 <span class="menu-text">People</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cv.html"> 
+    <a class="nav-link" href="../../cv.html"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./teaching.html" aria-current="page"> 
+    <a class="nav-link" href="../../teaching.html"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./opportunities.html"> 
+    <a class="nav-link" href="../../opportunities.html"> 
 <span class="menu-text">Opportunities</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
+    <a class="nav-link" href="../../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./software.html"> 
+    <a class="nav-link" href="../../software.html"> 
 <span class="menu-text">Software</span></a>
   </li>  
   <li class="nav-item">
@@ -346,21 +404,20 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#undergraduate-courses-ufms" id="toc-undergraduate-courses-ufms" class="nav-link active" data-scroll-target="#undergraduate-courses-ufms">Undergraduate courses (UFMS)</a>
+  <li><a href="#ementa" id="toc-ementa" class="nav-link active" data-scroll-target="#ementa">Ementa</a></li>
+  <li><a href="#objetivos" id="toc-objetivos" class="nav-link" data-scroll-target="#objetivos">Objetivos</a></li>
+  <li><a href="#conteúdo-programático" id="toc-conteúdo-programático" class="nav-link" data-scroll-target="#conteúdo-programático">Conteúdo programático</a></li>
+  <li><a href="#cronograma-edição-2020-intensiva-40-h" id="toc-cronograma-edição-2020-intensiva-40-h" class="nav-link" data-scroll-target="#cronograma-edição-2020-intensiva-40-h">Cronograma — edição 2020 (intensiva, 40 h)</a></li>
+  <li><a href="#pré-requisitos" id="toc-pré-requisitos" class="nav-link" data-scroll-target="#pré-requisitos">Pré-requisitos</a></li>
+  <li><a href="#avaliação" id="toc-avaliação" class="nav-link" data-scroll-target="#avaliação">Avaliação</a></li>
+  <li><a href="#bibliografia" id="toc-bibliografia" class="nav-link" data-scroll-target="#bibliografia">Bibliografia</a>
   <ul class="collapse">
-  <li><a href="#bioestatística-ciências-biológicas" id="toc-bioestatística-ciências-biológicas" class="nav-link" data-scroll-target="#bioestatística-ciências-biológicas">Bioestatística — Ciências Biológicas</a></li>
+  <li><a href="#livros" id="toc-livros" class="nav-link" data-scroll-target="#livros">Livros</a></li>
+  <li><a href="#artigos-chave" id="toc-artigos-chave" class="nav-link" data-scroll-target="#artigos-chave">Artigos-chave</a></li>
+  <li><a href="#introdução-ao-r" id="toc-introdução-ao-r" class="nav-link" data-scroll-target="#introdução-ao-r">Introdução ao R</a></li>
+  <li><a href="#recursos-online" id="toc-recursos-online" class="nav-link" data-scroll-target="#recursos-online">Recursos online</a></li>
   </ul></li>
-  <li><a href="#estatística-descomplicada-youtube-channel" id="toc-estatística-descomplicada-youtube-channel" class="nav-link" data-scroll-target="#estatística-descomplicada-youtube-channel">Estatística Descomplicada — YouTube channel</a></li>
-  <li><a href="#graduate-courses-ufms" id="toc-graduate-courses-ufms" class="nav-link" data-scroll-target="#graduate-courses-ufms">Graduate courses (UFMS)</a>
-  <ul class="collapse">
-  <li><a href="#phylogenetic-comparative-methods" id="toc-phylogenetic-comparative-methods" class="nav-link" data-scroll-target="#phylogenetic-comparative-methods">Phylogenetic comparative methods</a></li>
-  </ul></li>
-  <li><a href="#past-courses-short-courses" id="toc-past-courses-short-courses" class="nav-link" data-scroll-target="#past-courses-short-courses">Past courses &amp; short-courses</a>
-  <ul class="collapse">
-  <li><a href="#mendeley-demo-universidade-federal-de-goiás" id="toc-mendeley-demo-universidade-federal-de-goiás" class="nav-link" data-scroll-target="#mendeley-demo-universidade-federal-de-goiás">2012 — Mendeley demo, Universidade Federal de Goiás</a></li>
-  <li><a href="#ecological-statistics-with-r" id="toc-ecological-statistics-with-r" class="nav-link" data-scroll-target="#ecological-statistics-with-r">2011 — Ecological statistics with R</a></li>
-  <li><a href="#sampling-techniques-for-vertebrates-pt" id="toc-sampling-techniques-for-vertebrates-pt" class="nav-link" data-scroll-target="#sampling-techniques-for-vertebrates-pt">2009 — Sampling techniques for vertebrates (PT)</a></li>
-  </ul></li>
+  <li><a href="#edições-anteriores" id="toc-edições-anteriores" class="nav-link" data-scroll-target="#edições-anteriores">Edições anteriores</a></li>
   </ul>
 </nav>
     </div>
@@ -370,7 +427,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Teaching</h1>
+<h1 class="title">Métodos filogenéticos comparativos</h1>
+<p class="subtitle lead">Disciplina de pós-graduação — Mestrado em Biologia Animal, UFMS (45 h)</p>
 </div>
 
 
@@ -387,68 +445,216 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="undergraduate-courses-ufms" class="level2">
-<h2 class="anchored" data-anchor-id="undergraduate-courses-ufms">Undergraduate courses (UFMS)</h2>
-<section id="bioestatística-ciências-biológicas" class="level3">
-<h3 class="anchored" data-anchor-id="bioestatística-ciências-biológicas">Bioestatística — Ciências Biológicas</h3>
-<p>Disciplina obrigatória de 68 h ministrada anualmente no INBio/UFMS, cobrindo estatística descritiva, delineamento amostral, distribuições de probabilidade, inferência via teste de hipóteses e modelos lineares (t, ANOVA, regressão, qui-quadrado).</p>
-<p><a href="teaching/bioestatistica/" class="btn btn-outline-primary">Course site &amp; materials →</a></p>
-</section>
-</section>
-<section id="estatística-descomplicada-youtube-channel" class="level2">
-<h2 class="anchored" data-anchor-id="estatística-descomplicada-youtube-channel">Estatística Descomplicada — YouTube channel</h2>
 <div class="callout callout-style-simple callout-tip no-icon">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<p><a href="https://www.youtube.com/@DiogoBProvete"><i class="fa-brands fa-youtube" aria-label="youtube"></i> <strong>youtube.com/<span class="citation" data-cites="DiogoBProvete">@DiogoBProvete</span></strong></a> · <em>Statistics for the life sciences, in plain Portuguese.</em></p>
+<p>Disciplina <strong>MÉTODOS FILOGENÉTICOS COMPARATIVOS</strong> (201521439, 45 h) do <a href="https://ppgba.ufms.br/">Mestrado em Biologia Animal</a> da UFMS. Esta página reúne os <strong>materiais públicos</strong> das edições anteriores — slides, scripts R com walkthroughs HTML, datasets e bibliografia. Para informações sobre a próxima oferta, <a href="mailto:diogo.provete@ufms.br">entre em contato</a>.</p>
 </div>
 </div>
 </div>
-<p>I run a YouTube channel — <strong>Estatística Descomplicada</strong> — with lessons on statistics aimed at biologists and other life-scientists. The content mirrors what I teach in graduate and undergraduate courses at UFMS: <strong>Generalized Linear (Mixed) Models</strong>, <strong>multivariate methods</strong>, study design, and the reproducible-analysis workflow in R.</p>
-<p>Topics covered include hypothesis testing, GLM/GLMM with appropriate error families, ordinations (PCA, NMDS, RDA, CCA), classification, and how to read statistical results in the ecological literature without getting lost in the jargon. New videos are released as the academic semester progresses.</p>
-<p><a href="https://www.youtube.com/@DiogoBProvete?sub_confirmation=1" class="btn btn-outline-primary">Subscribe to the channel →</a></p>
+<section id="ementa" class="level2">
+<h2 class="anchored" data-anchor-id="ementa">Ementa</h2>
+<p>Delineamento de estudos comparativos. Modelos de evolução de atributos quantitativos e discretos. Evolução correlacionada e estimativa de estados ancestrais. PGLS e métodos para estimar taxa de evolução de atributos. Métodos para detectar convergência fenotípica. Mensuração e teste de sinal filogenético.</p>
 </section>
-<section id="graduate-courses-ufms" class="level2">
-<h2 class="anchored" data-anchor-id="graduate-courses-ufms">Graduate courses (UFMS)</h2>
-<section id="phylogenetic-comparative-methods" class="level3">
-<h3 class="anchored" data-anchor-id="phylogenetic-comparative-methods">Phylogenetic comparative methods</h3>
-<p>Graduate course (45 h) for the <a href="https://ppgba.ufms.br">Mestrado em Biologia Animal</a> at UFMS, Campo Grande. Covers Brownian motion, PGLS, ancestral state reconstruction, phylogenetic signal, multi-regime OU models, and multivariate extensions — all hands-on in R. Open to graduate students from any line of research with basic familiarity with phylogenetic inference.</p>
-<p><a href="teaching/mfc/" class="btn btn-outline-primary">Course site &amp; materials →</a> <a href="https://coggle.it/diagram/WhbkkxE2BAAB0R0m" class="btn btn-outline-primary">Mind map summarising the methods →</a></p>
+<section id="objetivos" class="level2">
+<h2 class="anchored" data-anchor-id="objetivos">Objetivos</h2>
+<p>Estudos comparativos têm se tornado cada vez mais factíveis dada a facilidade de obtenção de dados comparativos e de plataformas para o seu gerenciamento, aliada à crescente disponibilidade de hipóteses filogenéticas para diversos grupos. Nesta disciplina teórico-prática apresento teorias e métodos para estudar evolução fenotípica ao longo de filogenias, e discutimos as principais questões investigadas em estudos comparativos e como métodos analíticos podem ser utilizados para respondê-las.</p>
 </section>
+<section id="conteúdo-programático" class="level2">
+<h2 class="anchored" data-anchor-id="conteúdo-programático">Conteúdo programático</h2>
+<ol type="1">
+<li><strong>Histórico e desenho de estudos comparativos.</strong> Tree thinking; métodos para reconstruir hipóteses filogenéticas (incluindo supertree, supermatrix, e iniciativas recentes — SUPERSMART, PASTIS, Open Tree of Life, treePL, congruification); perguntas comuns em estudos de adaptação; desenho de estudo comparativo (Arnold &amp; Nunn 2010; Pennell et al.&nbsp;2015); limitações da abordagem (Darwinian e Eltonian shortfall); bases de dados online de atributos e filogenias; distância filogenética e matriz de variância-covariância.</li>
+<li><strong>Modelos de evolução de atributos.</strong> Ornstein-Uhlenbeck, Movimento Browniano, ACDC, mudança direcionada, Early Burst. Evolução correlacionada. PGLS e contrastes independentes filogenéticos (PIC). Estimativa de estado ancestral para atributos contínuos e categóricos (Bayesiano, ML, threshold). ANOVA filogenética.</li>
+<li><strong>Taxa de evolução de atributos</strong> (auteur, Brownie) e suas relações com taxas de especiação. OU multi-regime (ouch). Métodos para detectar convergência, picos adaptativos e mudança de regimes (SURFACE).</li>
+<li><strong>Simulações</strong> de evolução de atributos e filogenias sob modelos alternativos. Medidas de simetria de árvore. Imputação de dados faltantes. Visualização de dados filogenéticos.</li>
+<li><strong>Sinal filogenético</strong> para atributos contínuos e categóricos: K de Blomberg, λ de Pagel, R², Mantel, I de Moran, distograma filogenético, partição da entropia quadrática.</li>
+<li><strong>Não-estacionaridade</strong>: PVR e ajuste de múltiplas matrizes VCV. Partição dos componentes específico e herdado da variação fenotípica. Incerteza filogenética.</li>
+<li><strong>Documento dinâmico em R Markdown</strong> — preparação e publicação online da análise final.</li>
+</ol>
 </section>
-<section id="past-courses-short-courses" class="level2">
-<h2 class="anchored" data-anchor-id="past-courses-short-courses">Past courses &amp; short-courses</h2>
-<section id="mendeley-demo-universidade-federal-de-goiás" class="level3">
-<h3 class="anchored" data-anchor-id="mendeley-demo-universidade-federal-de-goiás">2012 — Mendeley demo, Universidade Federal de Goiás</h3>
-<p><a href="http://www.slideshare.net/provete/mendeley-presentation">Slides with screenshots and tutorials</a></p>
+<section id="cronograma-edição-2020-intensiva-40-h" class="level2">
+<h2 class="anchored" data-anchor-id="cronograma-edição-2020-intensiva-40-h">Cronograma — edição 2020 (intensiva, 40 h)</h2>
+<p>A edição de referência abaixo foi a oferta em formato intensivo (uma semana, 40 h). O cronograma comprime os blocos do programa em 6 aulas práticas. As edições semestrais regulares (45 h) seguem o programa completo.</p>
+<div id="listing-cronograma" class="quarto-listing quarto-listing-container-table">
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+
+<th>
+Aula
+</th>
+
+<th>
+Tópico
+</th>
+
+<th>
+Conteúdo
+</th>
+
+</tr>
+</thead>
+<tbody class="list">
+
+<tr data-index="0" data-listing-file-modified-sort="1780959476769" data-listing-reading-time-sort="1" data-listing-word-count-sort="179" data-listing-title-sort="Aula 01 — Introdução e desenho de estudos comparativos" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-order">1</span>
+</td>
+<td>
+<a href="../../teaching/mfc/aula-01-intro-desenho/index.html" class="title listing-title">Aula 01 — Introdução e desenho de estudos comparativos</a>
+</td>
+<td>
+<span class="listing-description">Por que precisamos de métodos comparativos? Como o sinal de descendência comum confunde regressões em dados de espécies. Introdução ao R aplicado à filogenia (objetos <code>phylo</code>, leitura de árvores em Newick e Nexus).</span>
+</td>
+
+</tr>
+
+<tr data-index="1" data-listing-file-modified-sort="1780959476771" data-listing-reading-time-sort="1" data-listing-word-count-sort="153" data-listing-title-sort="Aula 02 — Modelos de evolução de atributos contínuos e PGLS" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-order">2</span>
+</td>
+<td>
+<a href="../../teaching/mfc/aula-02-modelos-evolucao-pgls/index.html" class="title listing-title">Aula 02 — Modelos de evolução de atributos contínuos e PGLS</a>
+</td>
+<td>
+<span class="listing-description">Movimento Browniano como modelo nulo de evolução de atributos contínuos. Regressão filogenética generalizada (PGLS) e estimativa de λ de Pagel para regressões entre atributos.</span>
+</td>
+
+</tr>
+
+<tr data-index="2" data-listing-file-modified-sort="1780959530726" data-listing-reading-time-sort="2" data-listing-word-count-sort="229" data-listing-title-sort="Aula 03 — Estimativa de estado ancestral e sinal filogenético" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-order">3</span>
+</td>
+<td>
+<a href="../../teaching/mfc/aula-03-estado-ancestral/index.html" class="title listing-title">Aula 03 — Estimativa de estado ancestral e sinal filogenético</a>
+</td>
+<td>
+<span class="listing-description">Reconstrução de estados ancestrais para atributos discretos (modelos ER, SYM, ARD) e contínuos (Brownian, OU). Medidas de sinal filogenético: λ de Pagel e K de Blomberg.</span>
+</td>
+
+</tr>
+
+<tr data-index="3" data-listing-file-modified-sort="1780959476775" data-listing-reading-time-sort="1" data-listing-word-count-sort="188" data-listing-title-sort="Aula 04 — Correlação de atributos e modelo Ornstein-Uhlenbeck multi-regime" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-order">4</span>
+</td>
+<td>
+<a href="../../teaching/mfc/aula-04-ou-multi-regime/index.html" class="title listing-title">Aula 04 — Correlação de atributos e modelo Ornstein-Uhlenbeck multi-regime</a>
+</td>
+<td>
+<span class="listing-description">Correlação evolutiva entre atributos contínuos. Modelos OU com múltiplos regimes seletivos (OUwie). Teste de Pagel (fitPagel) para correlação entre caracteres binários.</span>
+</td>
+
+</tr>
+
+<tr data-index="4" data-listing-file-modified-sort="1780959476776" data-listing-reading-time-sort="1" data-listing-word-count-sort="90" data-listing-title-sort="Aula 05 — Métodos baseados em autovetores e visualização" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-order">5</span>
+</td>
+<td>
+<a href="../../teaching/mfc/aula-05-autovetores-visualizacao/index.html" class="title listing-title">Aula 05 — Métodos baseados em autovetores e visualização</a>
+</td>
+<td>
+<span class="listing-description">PVR (phylogenetic eigenvector regression) e ordenação filogenética. Visualização avançada de dados em árvores (phylomorfospaces, contMap, ggtree).</span>
+</td>
+
+</tr>
+
+<tr data-index="5" data-listing-file-modified-sort="1780959476777" data-listing-reading-time-sort="1" data-listing-word-count-sort="67" data-listing-title-sort="Aula 06 — Métodos para atributos multivariados" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-order">6</span>
+</td>
+<td>
+<a href="../../teaching/mfc/aula-06-atributos-multivariados/index.html" class="title listing-title">Aula 06 — Métodos para atributos multivariados</a>
+</td>
+<td>
+<span class="listing-description">Extensão dos modelos comparativos para múltiplos atributos simultaneamente — mvMORPH, PhyloPars, phyl.pca. Quando usar cada um.</span>
+</td>
+
+</tr>
+
+</tbody>
+</table>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
 </section>
-<section id="ecological-statistics-with-r" class="level3">
-<h3 class="anchored" data-anchor-id="ecological-statistics-with-r">2011 — Ecological statistics with R</h3>
-<p><em>Tópicos em Biologia Animal — Estatística aplicada à ecologia usando o R.</em> A two-week graduate course in Animal Biology at <a href="http://www.ibilce.unesp.br/">UNESP</a> (São Paulo State University), in collaboration with <a href="http://thiagocalvesouza.wixsite.com/ecoffun">Thiago Gonçalves-Souza</a> and <a href="http://fernandoecologia.wixsite.com/fernandorodrigues">Fernando R. Silva</a>. We covered Generalized Linear Models, the main multivariate methods, and other ecological tools, using R as the analysis platform.</p>
+<section id="pré-requisitos" class="level2">
+<h2 class="anchored" data-anchor-id="pré-requisitos">Pré-requisitos</h2>
 <ul>
-<li><a href="https://www.sugarsync.com/pf/D9712667_69058108_487278">Class slides</a></li>
-<li><a href="http://cran.r-project.org/doc/contrib/Provete-Estatistica_aplicada.pdf">Course book (CRAN-hosted)</a></li>
-<li><a href="https://diogoprovete.weebly.com/uploads/1/7/3/6/17367099/data.zip">Datasets for exercises</a></li>
-<li><a href="https://diogoprovete.weebly.com/uploads/1/7/3/6/17367099/script_completo_apostila_estatistica_aplicada_a_ecologia_usando_o_r.r">R scripts</a></li>
+<li>Familiaridade básica com R (leitura de dados, funções, objetos). Caso esteja inseguro, comece por <a href="https://pt.r4ds.hadley.nz/">Wickham et al.&nbsp;<em>R para Ciência de Dados</em></a>;</li>
+<li>Conhecimento básico em inferência filogenética (a árvore vem de algum lugar — entender de onde, ajuda);</li>
+<li>Computador portátil para acompanhar a parte prática.</li>
+</ul>
+<p>A disciplina é aberta a alunos de <strong>qualquer linha de pesquisa do programa</strong>.</p>
+</section>
+<section id="avaliação" class="level2">
+<h2 class="anchored" data-anchor-id="avaliação">Avaliação</h2>
+<p>Apresentação de um <strong>documento dinâmico em R Markdown</strong> com uma análise de dados à escolha do(a) aluno(a), contendo: (1) pergunta de pesquisa, (2) análise, (3) resultados, e (4) breve discussão baseada em teoria.</p>
+</section>
+<section id="bibliografia" class="level2">
+<h2 class="anchored" data-anchor-id="bibliografia">Bibliografia</h2>
+<section id="livros" class="level3">
+<h3 class="anchored" data-anchor-id="livros">Livros</h3>
+<ul>
+<li>Diniz-Filho, J.A.F. 2000. <em>Métodos filogenéticos comparativos.</em> São Carlos: Holos.</li>
+<li>Felsenstein, J. 2004. <em>Inferring phylogenies.</em> Sunderland: Sinauer.</li>
+<li>Garamszegi, L.Z. (Ed.) 2014. <em>Modern phylogenetic comparative methods and their application in evolutionary biology.</em> Berlin: Springer.</li>
+<li>Harvey, P.H. &amp; Pagel, M.D.&nbsp;1991. <em>The comparative method in evolutionary biology.</em> Oxford University Press.</li>
+<li>Nunn, C.L. 2011. <em>The comparative approach in evolutionary anthropology and biology.</em> Chicago: University of Chicago Press.</li>
+<li>Paradis, E. 2012. <em>Analysis of phylogenetics and evolution with R.</em> 2ª ed.&nbsp;Berlin: Springer.</li>
 </ul>
 </section>
-<section id="sampling-techniques-for-vertebrates-pt" class="level3">
-<h3 class="anchored" data-anchor-id="sampling-techniques-for-vertebrates-pt">2009 — Sampling techniques for vertebrates (PT)</h3>
-<p>Short course (4 h) for undergraduates at UNESP, given as a pre-meeting course at the <em>4º Simpósio de Biologia Animal</em>. Ricardo Brassaloti and I covered field sampling techniques for the four classes of vertebrates.</p>
-<p><a href="http://slidesha.re/eiu9Fx">Class slides</a></p>
-<p><strong>Recommended bibliography</strong></p>
+<section id="artigos-chave" class="level3">
+<h3 class="anchored" data-anchor-id="artigos-chave">Artigos-chave</h3>
 <ul>
-<li>Colwell, R.K. &amp; Coddington, J.A. 1994. Estimating terrestrial biodiversity through extrapolation. <em>Phil. Trans. R. Soc. B</em> 345:101–118. <a href="http://viceroy.eeb.uconn.edu/RKCPublications/ColwellAndCoddington1994_hr.pdf">PDF</a></li>
-<li>Dias, S.C. 2004. Planejando estudos de diversidade e riqueza: uma abordagem para estudantes de graduação. <em>Acta Scientiarum</em> 26:373–9. <a href="http://periodicos.uem.br/ojs/index.php/ActaSciBiolSci/article/view/1511/945">PDF</a></li>
-<li>Gotelli, N. &amp; Colwell, R.K. 2001. Quantifying biodiversity: procedures and pitfalls in the measurement and comparison of species richness. <em>Ecology Letters</em> 4:379–391. <a href="http://viceroy.eeb.uconn.edu/RKCPublications/GotelliAndColwell2001.pdf">PDF</a></li>
-<li>Sutherland, W.J. (Ed.) 2006. <em>Ecological census techniques: a handbook.</em> 2nd ed.&nbsp;Cambridge University Press.</li>
+<li>Arnold, S.J. 2014. Phenotypic evolution: the ongoing synthesis. <em>American Naturalist</em> 183:729–746.</li>
+<li>Baldauf, S.L. 2003. Phylogeny for the faint of heart: a tutorial. <em>Trends in Genetics</em> 19:345–351.</li>
+<li>Freckleton, R.P. 2009. The seven deadly sins of comparative analysis. <em>Journal of Evolutionary Biology</em> 22:1367–1375.</li>
+<li>Freckleton, R.P. &amp; Pagel, M. 2010. Recent advances in comparative methods. In: Székely, T., Moore, A.J. &amp; Komdeur, J. (Eds.) <em>Social behaviour: genes, ecology and evolution.</em> Cambridge University Press, pp.&nbsp;110–126.</li>
+<li>Garland, T., Bennett, A.F. &amp; Rezende, E.L. 2005. Phylogenetic approaches in comparative physiology. <em>Journal of Experimental Biology</em> 208:3015–3035.</li>
+<li>Harvey, P.H. &amp; Purvis, A. 1991. Comparative methods for explaining adaptations. <em>Nature</em> 351:619–624.</li>
+<li>Hunt, G. &amp; Rabosky, D.L. 2014. Phenotypic evolution in fossil species: pattern and process. <em>Annual Review of Earth and Planetary Sciences</em> 42:421–441.</li>
+<li>Martins, E.P. 2000. Adaptation and the comparative method. <em>Trends in Ecology &amp; Evolution</em> 15:296–299.</li>
+<li>Martins, E.P. &amp; Hansen, T.F. 1996. The statistical analysis of interspecific data: a review and evaluation of phylogenetic comparative methods. In: Martins, E. (Ed.) <em>Phylogenies and the comparative method in animal behavior.</em> Oxford University Press, pp.&nbsp;22–75.</li>
+<li>O’Meara, B.C. 2012. Evolutionary inferences from phylogenies: a review of methods. <em>Annual Review of Ecology, Evolution, and Systematics</em> 43:267–285.</li>
+<li>Pagel, M. 1999. Inferring the historical patterns of biological evolution. <em>Nature</em> 401:877–884.</li>
+<li>Pennell, M.W. &amp; Harmon, L.J. 2013. An integrative view of phylogenetic comparative methods: connections to population genetics, community ecology, and paleobiology. <em>Annals of the New York Academy of Sciences</em> 1289:90–105.</li>
+<li>Rezende, E.L. &amp; Diniz-Filho, J.A.F. 2012. Phylogenetic analyses: comparing species to infer adaptations and physiological mechanisms. <em>Comparative Physiology</em> 2:639–674.</li>
+</ul>
+</section>
+<section id="introdução-ao-r" class="level3">
+<h3 class="anchored" data-anchor-id="introdução-ao-r">Introdução ao R</h3>
+<ul>
+<li>Adler, J. 2010. <em>R in a nutshell: a desktop quick reference.</em> O’Reilly Media.</li>
+<li>Beckerman, A.P. &amp; Petchey, O.L. 2012. <em>Getting started with R: an introduction for biologists.</em> Oxford University Press.</li>
+<li>Zuur, A.F., Ieno, E.N. &amp; Meesters, E. 2009. <em>A beginner’s guide to R.</em> Springer.</li>
+</ul>
+</section>
+<section id="recursos-online" class="level3">
+<h3 class="anchored" data-anchor-id="recursos-online">Recursos online</h3>
+<ul>
+<li><a href="https://lukejharmon.github.io/pcm/">Harmon, L.J. 2019. <em>Phylogenetic Comparative Methods</em> (acesso aberto)</a></li>
+<li><a href="http://www.mpcm-evolution.com/">Companion site do livro <em>Modern PCM</em> (Garamszegi 2014)</a></li>
+<li><a href="http://blog.phytools.org/">Blog do Liam Revell (phytools)</a></li>
+<li><a href="http://treethinkers.org/">Treethinkers — workshop materials</a></li>
+<li><a href="http://www.anthrotree.info/">AnthroTree — site de Charles Nunn</a></li>
+<li><a href="https://coggle.it/diagram/WhbkkxE2BAAB0R0m">Mapa mental do curso (Coggle)</a></li>
+</ul>
+</section>
+</section>
+<section id="edições-anteriores" class="level2">
+<h2 class="anchored" data-anchor-id="edições-anteriores">Edições anteriores</h2>
+<ul>
+<li><strong>2021/2</strong> — UFMS, modalidade semestral regular (45 h).</li>
+<li><strong>2020</strong> — UFMS, modalidade intensiva (uma semana, 40 h). Materiais desta edição estão disponíveis abaixo.</li>
 </ul>
 
 
-</section>
+
 </section>
 
 </main> <!-- /main -->
@@ -888,5 +1094,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

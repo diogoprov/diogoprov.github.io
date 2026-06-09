@@ -1,5 +1,16 @@
 [
   {
+    "listing": "/teaching/mfc/index.html",
+    "items": [
+      "/teaching/mfc/aula-01-intro-desenho/index.html",
+      "/teaching/mfc/aula-02-modelos-evolucao-pgls/index.html",
+      "/teaching/mfc/aula-03-estado-ancestral/index.html",
+      "/teaching/mfc/aula-04-ou-multi-regime/index.html",
+      "/teaching/mfc/aula-05-autovetores-visualizacao/index.html",
+      "/teaching/mfc/aula-06-atributos-multivariados/index.html"
+    ]
+  },
+  {
     "listing": "/teaching/bioestatistica/index.html",
     "items": [
       "/teaching/bioestatistica/aula-01-introducao/index.html",

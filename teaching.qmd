@@ -34,13 +34,19 @@ in the jargon. New videos are released as the academic semester progresses.
 
 [Subscribe to the channel →](https://www.youtube.com/@DiogoBProvete?sub_confirmation=1){.btn .btn-outline-primary}
 
-## Phenotypic evolution & comparative phylogenetic methods
+## Graduate courses (UFMS)
 
-Graduate course given annually at the [Ecology and Conservation
-PPG](https://ppgec.ufms.br) (UFMS), Campo Grande. The course is hosted on
-Moodle — feel free to get in touch if you'd like access to materials.
+### Phylogenetic comparative methods
 
-[Mind map summarising the main methods](https://coggle.it/diagram/WhbkkxE2BAAB0R0m)
+Graduate course (45 h) for the [Mestrado em Biologia
+Animal](https://ppgba.ufms.br) at UFMS, Campo Grande. Covers Brownian
+motion, PGLS, ancestral state reconstruction, phylogenetic signal,
+multi-regime OU models, and multivariate extensions — all hands-on in
+R. Open to graduate students from any line of research with basic
+familiarity with phylogenetic inference.
+
+[Course site & materials →](teaching/mfc/){.btn .btn-outline-primary}
+[Mind map summarising the methods →](https://coggle.it/diagram/WhbkkxE2BAAB0R0m){.btn .btn-outline-primary}
 
 ## Past courses & short-courses
 

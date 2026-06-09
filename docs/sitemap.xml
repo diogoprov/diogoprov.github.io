@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://provetelab.org/teaching/mfc/index.html</loc>
+    <lastmod>2026-06-09T11:48:53.597Z</lastmod>
+  </url>
+  <url>
+    <loc>https://provetelab.org/teaching/mfc/aula-05-autovetores-visualizacao/walkthrough-aula-5-sexta.html</loc>
+    <lastmod>2026-06-08T22:56:37.749Z</lastmod>
+  </url>
+  <url>
+    <loc>https://provetelab.org/teaching/mfc/aula-04-ou-multi-regime/walkthrough-aula-quinta.html</loc>
+    <lastmod>2026-06-08T22:56:37.748Z</lastmod>
+  </url>
+  <url>
+    <loc>https://provetelab.org/teaching/mfc/aula-03-estado-ancestral/walkthrough-supfileac.html</loc>
+    <lastmod>2026-06-08T22:56:37.747Z</lastmod>
+  </url>
+  <url>
+    <loc>https://provetelab.org/teaching/mfc/aula-03-estado-ancestral/walkthrough-aula-3-quarta-modificada.html</loc>
+    <lastmod>2026-06-08T22:56:37.745Z</lastmod>
+  </url>
+  <url>
+    <loc>https://provetelab.org/teaching/mfc/aula-02-modelos-evolucao-pgls/walkthrough-aula-2-terca.html</loc>
+    <lastmod>2026-06-08T22:56:37.743Z</lastmod>
+  </url>
+  <url>
+    <loc>https://provetelab.org/teaching/mfc/aula-01-intro-desenho/walkthrough-aula-1-segunda.html</loc>
+    <lastmod>2026-06-08T22:56:37.742Z</lastmod>
+  </url>
+  <url>
     <loc>https://provetelab.org/teaching/bioestatistica/index.html</loc>
     <lastmod>2026-06-08T22:39:00.442Z</lastmod>
   </url>
@@ -26,7 +54,7 @@
   </url>
   <url>
     <loc>https://provetelab.org/teaching.html</loc>
-    <lastmod>2026-06-08T22:22:04.898Z</lastmod>
+    <lastmod>2026-06-09T11:49:06.428Z</lastmod>
   </url>
   <url>
     <loc>https://provetelab.org/research.html</loc>
@@ -103,5 +131,33 @@
   <url>
     <loc>https://provetelab.org/teaching/bioestatistica/aula-11-anova/index.html</loc>
     <lastmod>2026-06-08T22:22:49.651Z</lastmod>
+  </url>
+  <url>
+    <loc>https://provetelab.org/teaching/mfc/aula-01-intro-desenho/index.html</loc>
+    <lastmod>2026-06-08T22:57:56.769Z</lastmod>
+  </url>
+  <url>
+    <loc>https://provetelab.org/teaching/mfc/aula-02-modelos-evolucao-pgls/index.html</loc>
+    <lastmod>2026-06-08T22:57:56.771Z</lastmod>
+  </url>
+  <url>
+    <loc>https://provetelab.org/teaching/mfc/aula-03-estado-ancestral/index.html</loc>
+    <lastmod>2026-06-08T22:58:50.726Z</lastmod>
+  </url>
+  <url>
+    <loc>https://provetelab.org/teaching/mfc/aula-03-estado-ancestral/walkthrough-phylogenetic-distogram.html</loc>
+    <lastmod>2026-06-08T22:56:37.746Z</lastmod>
+  </url>
+  <url>
+    <loc>https://provetelab.org/teaching/mfc/aula-04-ou-multi-regime/index.html</loc>
+    <lastmod>2026-06-08T22:57:56.775Z</lastmod>
+  </url>
+  <url>
+    <loc>https://provetelab.org/teaching/mfc/aula-05-autovetores-visualizacao/index.html</loc>
+    <lastmod>2026-06-08T22:57:56.776Z</lastmod>
+  </url>
+  <url>
+    <loc>https://provetelab.org/teaching/mfc/aula-06-atributos-multivariados/index.html</loc>
+    <lastmod>2026-06-08T22:57:56.777Z</lastmod>
   </url>
 </urlset>
