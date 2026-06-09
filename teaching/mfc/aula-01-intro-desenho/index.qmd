@@ -41,7 +41,7 @@ Por que precisamos de métodos comparativos? Como o sinal de descendência comum
 
 - [AnthroTree (Charles Nunn)](http://www.anthrotree.info/)
 - [Companion site — *Modern Phylogenetic Comparative Methods*](http://www.mpcm-evolution.com/)
-- [Workshop Ilhabela 2015 — material online](https://www.uic.edu/classes/bios/bios414/phylo_workshop/)
+- [Workshop Ilhabela 2015 — material online](https://lukejharmon.github.io/ilhabela/)
 - [Treethinkers](http://treethinkers.org/)
 
 ---

@@ -13,6 +13,7 @@ _site/
 
 **/*.quarto_ipynb
 .Renviron
+!/.Renviron       # but DO track our project-level one — it only sets RENV_CONFIG_AUTOLOADER_ENABLED
 .Rhistory
 
 # Moodle backup files used to seed teaching/ — too large for git

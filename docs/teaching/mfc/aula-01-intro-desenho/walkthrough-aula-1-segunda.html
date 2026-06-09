@@ -430,11 +430,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span></span>
 <span><span class="co">##Arquivo em formato nexus</span></span>
 <span></span>
-<span><span class="va">barb</span><span class="op">&lt;-</span><span class="fu">read.nexus</span><span class="op">(</span><span class="st">"BarbetTree.nex"</span><span class="op">)</span></span>
+<span><span class="va">barb</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/read.nexus.html">read.nexus</a></span><span class="op">(</span><span class="st">"BarbetTree.nex"</span><span class="op">)</span></span>
 <span></span>
 <span><span class="co">##Arquivo em formato newick</span></span>
 <span></span>
-<span><span class="va">cent</span><span class="op">&lt;-</span><span class="fu">read.tree</span><span class="op">(</span><span class="st">"Centrarchidae.tre"</span><span class="op">)</span></span>
+<span><span class="va">cent</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/read.tree.html">read.tree</a></span><span class="op">(</span><span class="st">"Centrarchidae.tre"</span><span class="op">)</span></span>
 <span></span>
 <span><span class="co">#Essa extensão .tre é a extensão que muitos programas trabalham, p.ex., o BEAST. </span></span>
 <span><span class="co">#É o formato nativo do FigTree, um programa de visualização de filogenias</span></span>
@@ -447,30 +447,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span></span>
 <span><span class="va">barb</span><span class="op">$</span><span class="va">edge</span></span>
 <span></span>
-<span><span class="fu">plot.phylo</span><span class="op">(</span><span class="va">barb</span><span class="op">)</span></span>
-<span><span class="fu">nodelabels</span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/plot.phylo.html">plot.phylo</a></span><span class="op">(</span><span class="va">barb</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/nodelabels.html">nodelabels</a></span><span class="op">(</span><span class="op">)</span></span>
 <span></span>
 <span><span class="co">#newick simples em txt</span></span>
-<span><span class="va">gomes</span><span class="op">&lt;-</span><span class="fu">read.tree</span><span class="op">(</span><span class="st">"Gomes_phylo.txt"</span><span class="op">)</span></span>
-<span><span class="va">gomes_dat</span><span class="op">&lt;-</span><span class="fu">read.tree</span><span class="op">(</span><span class="st">"Gomes_tree_datada.txt"</span><span class="op">)</span></span>
+<span><span class="va">gomes</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/read.tree.html">read.tree</a></span><span class="op">(</span><span class="st">"Gomes_phylo.txt"</span><span class="op">)</span></span>
+<span><span class="va">gomes_dat</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/read.tree.html">read.tree</a></span><span class="op">(</span><span class="st">"Gomes_tree_datada.txt"</span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">gomes_dat</span></span>
 <span><span class="va">gomes</span></span>
 <span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">gomes_dat</span><span class="op">)</span>;<span class="fu">axisPhylo</span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">gomes</span><span class="op">)</span>;<span class="fu">axisPhylo</span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">gomes_dat</span><span class="op">)</span>;<span class="fu"><a href="https://rdrr.io/pkg/ape/man/axisPhylo.html">axisPhylo</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">gomes</span><span class="op">)</span>;<span class="fu"><a href="https://rdrr.io/pkg/ape/man/axisPhylo.html">axisPhylo</a></span><span class="op">(</span><span class="op">)</span></span>
 <span></span>
-<span><span class="fu">is.ultrametric</span><span class="op">(</span><span class="va">gomes</span><span class="op">)</span></span>
-<span><span class="fu">is.ultrametric</span><span class="op">(</span><span class="va">gomes_dat</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/is.ultrametric.html">is.ultrametric</a></span><span class="op">(</span><span class="va">gomes</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/is.ultrametric.html">is.ultrametric</a></span><span class="op">(</span><span class="va">gomes_dat</span><span class="op">)</span></span>
 <span></span>
-<span><span class="va">branch</span><span class="op">&lt;-</span><span class="fu">compute.brlen</span><span class="op">(</span><span class="va">gomes</span>, <span class="fl">1</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">branch</span><span class="op">)</span>;<span class="fu">axisPhylo</span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="fu">is.ultrametric</span><span class="op">(</span><span class="va">branch</span><span class="op">)</span></span>
-<span><span class="va">branch1</span><span class="op">&lt;-</span><span class="fu">compute.brlen</span><span class="op">(</span><span class="va">gomes</span>, method <span class="op">=</span> <span class="st">"Grafen"</span>, <span class="fl">0.8</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">branch1</span><span class="op">)</span>;<span class="fu">axisPhylo</span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="va">branch</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/compute.brlen.html">compute.brlen</a></span><span class="op">(</span><span class="va">gomes</span>, <span class="fl">1</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">branch</span><span class="op">)</span>;<span class="fu"><a href="https://rdrr.io/pkg/ape/man/axisPhylo.html">axisPhylo</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/is.ultrametric.html">is.ultrametric</a></span><span class="op">(</span><span class="va">branch</span><span class="op">)</span></span>
+<span><span class="va">branch1</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/compute.brlen.html">compute.brlen</a></span><span class="op">(</span><span class="va">gomes</span>, method <span class="op">=</span> <span class="st">"Grafen"</span>, <span class="fl">0.8</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">branch1</span><span class="op">)</span>;<span class="fu"><a href="https://rdrr.io/pkg/ape/man/axisPhylo.html">axisPhylo</a></span><span class="op">(</span><span class="op">)</span></span>
 <span></span>
-<span><span class="va">branch4</span><span class="op">&lt;-</span><span class="fu">compute.brlen</span><span class="op">(</span><span class="va">gomes</span>, method <span class="op">=</span> <span class="st">"Grafen"</span>, <span class="fl">2</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">branch4</span><span class="op">)</span>;<span class="fu">axisPhylo</span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="va">branch4</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/compute.brlen.html">compute.brlen</a></span><span class="op">(</span><span class="va">gomes</span>, method <span class="op">=</span> <span class="st">"Grafen"</span>, <span class="fl">2</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">branch4</span><span class="op">)</span>;<span class="fu"><a href="https://rdrr.io/pkg/ape/man/axisPhylo.html">axisPhylo</a></span><span class="op">(</span><span class="op">)</span></span>
 <span></span>
 <span><span class="co">#É muito commum que nossos dados de atributos estejam em uma planilha. Quando </span></span>
 <span><span class="co">#importada no R essa planilha de dados torna-se um data frame</span></span>
@@ -500,21 +500,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span><span class="co">#---Demonstrando efeito de correlação filogenética nos resultados</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/Random.html">set.seed</a></span><span class="op">(</span><span class="fl">21</span><span class="op">)</span> <span class="co">## 10 ok, 2 ok, 3 ok, 6 ok, 7 ok, </span></span>
 <span><span class="co">## simulate a coalescent shaped tree</span></span>
-<span><span class="va">tree</span><span class="op">&lt;-</span><span class="fu">rcoal</span><span class="op">(</span>n<span class="op">=</span><span class="fl">100</span><span class="op">)</span></span>
-<span><span class="fu">plotTree</span><span class="op">(</span><span class="va">tree</span>,ftype<span class="op">=</span><span class="st">"off"</span><span class="op">)</span></span>
+<span><span class="va">tree</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/rtree.html">rcoal</a></span><span class="op">(</span>n<span class="op">=</span><span class="fl">100</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/plotTree.html">plotTree</a></span><span class="op">(</span><span class="va">tree</span>,ftype<span class="op">=</span><span class="st">"off"</span><span class="op">)</span></span>
 <span><span class="co">## simulate uncorrelated Brownian evolution</span></span>
-<span><span class="va">x</span><span class="op">&lt;-</span><span class="fu">fastBM</span><span class="op">(</span><span class="va">tree</span><span class="op">)</span></span>
-<span><span class="va">y</span><span class="op">&lt;-</span><span class="fu">fastBM</span><span class="op">(</span><span class="va">tree</span><span class="op">)</span></span>
+<span><span class="va">x</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/fastBM.html">fastBM</a></span><span class="op">(</span><span class="va">tree</span><span class="op">)</span></span>
+<span><span class="va">y</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/fastBM.html">fastBM</a></span><span class="op">(</span><span class="va">tree</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/graphics/par.html">par</a></span><span class="op">(</span>mar<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">5.1</span>,<span class="fl">4.1</span>,<span class="fl">2.1</span>,<span class="fl">2.1</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">x</span>,<span class="va">y</span><span class="op">)</span></span>
 <span><span class="co">#test relationship without taking into account phylogeny </span></span>
 <span><span class="va">fit</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/stats/lm.html">lm</a></span><span class="op">(</span><span class="va">y</span><span class="op">~</span><span class="va">x</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/graphics/abline.html">abline</a></span><span class="op">(</span><span class="va">fit</span>,lwd<span class="op">=</span><span class="fl">2</span>,lty<span class="op">=</span><span class="st">"dashed"</span>,col<span class="op">=</span><span class="st">"red"</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/stats/anova.html">anova</a></span><span class="op">(</span><span class="va">fit</span><span class="op">)</span><span class="co">#very significant relationship</span></span>
-<span><span class="fu">phylomorphospace</span><span class="op">(</span><span class="va">tree</span>,<span class="fu"><a href="https://rdrr.io/r/base/cbind.html">cbind</a></span><span class="op">(</span><span class="va">x</span>,<span class="va">y</span><span class="op">)</span>,label<span class="op">=</span><span class="st">"off"</span>,node.size<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">0.5</span>,<span class="fl">0.7</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/phylomorphospace.html">phylomorphospace</a></span><span class="op">(</span><span class="va">tree</span>,<span class="fu"><a href="https://rdrr.io/r/base/cbind.html">cbind</a></span><span class="op">(</span><span class="va">x</span>,<span class="va">y</span><span class="op">)</span>,label<span class="op">=</span><span class="st">"off"</span>,node.size<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">0.5</span>,<span class="fl">0.7</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/graphics/abline.html">abline</a></span><span class="op">(</span><span class="va">fit</span>,lwd<span class="op">=</span><span class="fl">2</span>,lty<span class="op">=</span><span class="st">"dashed"</span>,col<span class="op">=</span><span class="st">"red"</span><span class="op">)</span></span>
-<span><span class="va">ix</span><span class="op">&lt;-</span><span class="fu">pic</span><span class="op">(</span><span class="va">x</span>,<span class="va">tree</span><span class="op">)</span></span>
-<span><span class="va">iy</span><span class="op">&lt;-</span><span class="fu">pic</span><span class="op">(</span><span class="va">y</span>,<span class="va">tree</span><span class="op">)</span></span>
+<span><span class="va">ix</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/pic.html">pic</a></span><span class="op">(</span><span class="va">x</span>,<span class="va">tree</span><span class="op">)</span></span>
+<span><span class="va">iy</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/pic.html">pic</a></span><span class="op">(</span><span class="va">y</span>,<span class="va">tree</span><span class="op">)</span></span>
 <span><span class="va">fit1</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/stats/lm.html">lm</a></span><span class="op">(</span><span class="va">iy</span><span class="op">~</span><span class="va">ix</span><span class="op">-</span><span class="fl">1</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/stats/anova.html">anova</a></span><span class="op">(</span><span class="va">fit1</span><span class="op">)</span><span class="co">#no significance</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="va">fit1</span><span class="op">)</span></span>
@@ -529,7 +529,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">taxonlookup</span><span class="op">)</span></span>
 <span><span class="co">#https://github.com/traitecoevo/phyndr-ms/blob/master/vignette/vignette.md</span></span>
 <span><span class="co">#Filogenia de angiospermas datada com 798 taxa</span></span>
-<span><span class="va">angio_phy</span> <span class="op">&lt;-</span> <span class="fu">read.nexus</span><span class="op">(</span><span class="st">"https://datadryad.org/bitstream/handle/10255/dryad.76144/Magallon_etal_PL_ML.nex?sequence=1"</span><span class="op">)</span></span>
+<span><span class="va">angio_phy</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/ape/man/read.nexus.html">read.nexus</a></span><span class="op">(</span><span class="st">"https://datadryad.org/bitstream/handle/10255/dryad.76144/Magallon_etal_PL_ML.nex?sequence=1"</span><span class="op">)</span></span>
 <span></span>
 <span><span class="co">#dados para plant growth form (i.e., woody v. herbaceous) para 238 spp</span></span>
 <span><span class="va">wood_dat</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/utils/read.table.html">read.csv</a></span><span class="op">(</span><span class="st">"https://datadryad.org/bitstream/handle/10255/dryad.59002/GlobalWoodinessDatabase.csv?sequence=1"</span>, row.names <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span>
@@ -554,25 +554,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span><span class="co">#com dados de história de vida</span></span>
 <span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/class.html">class</a></span><span class="op">(</span><span class="va">angio_phyndr</span><span class="op">)</span></span>
-<span><span class="fu">plot.phylo</span><span class="op">(</span><span class="va">angio_phy</span>, type <span class="op">=</span> <span class="st">"fan"</span>, cex<span class="op">=</span><span class="fl">0.3</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/plot.phylo.html">plot.phylo</a></span><span class="op">(</span><span class="va">angio_phy</span>, type <span class="op">=</span> <span class="st">"fan"</span>, cex<span class="op">=</span><span class="fl">0.3</span><span class="op">)</span></span>
 <span></span>
 <span><span class="co">#Demonstrando Rphylopars</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/ericgoolsby/Rphylopars/wiki">Rphylopars</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/liamrevell/phytools">phytools</a></span><span class="op">)</span> <span class="co"># for simulating pure-birth phylogenies</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/Random.html">set.seed</a></span><span class="op">(</span><span class="fl">21</span><span class="op">)</span> <span class="co"># Set the seed for reproducible results</span></span>
 <span><span class="va">trait_cov</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/matrix.html">matrix</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">4</span>,<span class="fl">2</span>,<span class="fl">2.2</span>,<span class="fl">2</span>,<span class="fl">3</span>,<span class="fl">1.5</span>,<span class="fl">2.2</span>,<span class="fl">1.5</span>,<span class="fl">2.5</span><span class="op">)</span>,nrow <span class="op">=</span> <span class="fl">3</span>,ncol <span class="op">=</span> <span class="fl">3</span><span class="op">)</span></span>
-<span><span class="va">tree</span> <span class="op">&lt;-</span> <span class="fu">pbtree</span><span class="op">(</span>n <span class="op">=</span> <span class="fl">20</span><span class="op">)</span></span>
+<span><span class="va">tree</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/phytools/man/pbtree.html">pbtree</a></span><span class="op">(</span>n <span class="op">=</span> <span class="fl">20</span><span class="op">)</span></span>
 <span><span class="va">sim_data</span> <span class="op">&lt;-</span> <span class="fu">simtraits</span><span class="op">(</span>v <span class="op">=</span> <span class="va">trait_cov</span>,tree <span class="op">=</span> <span class="va">tree</span>,nmissing <span class="op">=</span> <span class="fl">10</span><span class="op">)</span></span>
 <span><span class="va">original</span><span class="op">&lt;-</span><span class="va">sim_data</span><span class="op">$</span><span class="va">trait_data</span><span class="op">[</span>,<span class="fl">2</span><span class="op">:</span><span class="fl">4</span><span class="op">]</span> <span class="co"># Original data with missing values</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/which.html">which</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/NA.html">is.na</a></span><span class="op">(</span><span class="va">original</span><span class="op">)</span><span class="op">)</span><span class="co">#quais espécies tem dados faltantes</span></span>
 <span><span class="va">original</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/colSums.html">rowSums</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/NA.html">is.na</a></span><span class="op">(</span><span class="va">original</span><span class="op">)</span><span class="op">)</span> <span class="op">&gt;</span> <span class="fl">0</span>,<span class="op">]</span><span class="co">#mostra só as linhas com NA</span></span>
-<span><span class="fu">phylo.heatmap</span><span class="op">(</span><span class="va">tree</span>,<span class="fu"><a href="https://rdrr.io/r/base/matrix.html">as.matrix</a></span><span class="op">(</span><span class="va">original</span><span class="op">)</span>,standardize<span class="op">=</span><span class="cn">TRUE</span>,lwd<span class="op">=</span><span class="fl">3</span>,</span>
+<span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/phylo.heatmap.html">phylo.heatmap</a></span><span class="op">(</span><span class="va">tree</span>,<span class="fu"><a href="https://rdrr.io/r/base/matrix.html">as.matrix</a></span><span class="op">(</span><span class="va">original</span><span class="op">)</span>,standardize<span class="op">=</span><span class="cn">TRUE</span>,lwd<span class="op">=</span><span class="fl">3</span>,</span>
 <span>              pts<span class="op">=</span><span class="cn">FALSE</span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">p_BM</span> <span class="op">&lt;-</span> <span class="fu">phylopars</span><span class="op">(</span>trait_data <span class="op">=</span> <span class="va">sim_data</span><span class="op">$</span><span class="va">trait_data</span>,tree <span class="op">=</span> <span class="va">sim_data</span><span class="op">$</span><span class="va">tree</span>, model <span class="op">=</span> <span class="st">"BM"</span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">imput</span><span class="op">&lt;-</span><span class="va">p_BM</span><span class="op">$</span><span class="va">anc_recon</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">20</span>,<span class="op">]</span> <span class="co"># Data with imputed species means</span></span>
-<span><span class="fu">phylo.heatmap</span><span class="op">(</span><span class="va">tree</span>,<span class="fu"><a href="https://rdrr.io/r/base/matrix.html">as.matrix</a></span><span class="op">(</span><span class="va">imput</span><span class="op">)</span>,standardize<span class="op">=</span><span class="cn">TRUE</span>,lwd<span class="op">=</span><span class="fl">3</span>,</span>
+<span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/phylo.heatmap.html">phylo.heatmap</a></span><span class="op">(</span><span class="va">tree</span>,<span class="fu"><a href="https://rdrr.io/r/base/matrix.html">as.matrix</a></span><span class="op">(</span><span class="va">imput</span><span class="op">)</span>,standardize<span class="op">=</span><span class="cn">TRUE</span>,lwd<span class="op">=</span><span class="fl">3</span>,</span>
 <span>              pts<span class="op">=</span><span class="cn">FALSE</span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">p_BM</span><span class="op">$</span><span class="va">anc_var</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">20</span>,<span class="op">]</span> <span class="co"># Variances for each estimate</span></span>
@@ -592,7 +592,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span><span class="va">resolved_names</span> <span class="op">&lt;-</span> <span class="fu">tnrs_match_names</span><span class="op">(</span><span class="va">treefrogs</span><span class="op">)</span></span>
 <span><span class="va">resolved_names</span></span>
 <span><span class="va">tr</span> <span class="op">&lt;-</span> <span class="fu">tol_induced_subtree</span><span class="op">(</span>ott_ids<span class="op">=</span><span class="fu">ott_id</span><span class="op">(</span><span class="va">resolved_names</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">tr</span><span class="op">)</span>;<span class="fu">axisPhylo</span><span class="op">(</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">tr</span><span class="op">)</span>;<span class="fu"><a href="https://rdrr.io/pkg/ape/man/axisPhylo.html">axisPhylo</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 
 
