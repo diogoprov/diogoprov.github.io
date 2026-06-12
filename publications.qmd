@@ -539,6 +539,10 @@ ecological inference in passive acoustic monitoring of a Neotropical
 nightjar. *Submitted to Journal of Avian Biology.* &nbsp;
 <a href="https://ecoevorxiv.org/repository/view/13229/" title="Open-access preprint" aria-label="Open-access preprint"><i class="ai ai-open-access"></i></a>
 
+Franco-Belussi, L.; Trevisan, L.; De Oliveira, C.; Fernandes, C.E.;
+**PROVETE, D.B.** 2026. Seasonal hepatic plasticity follows a descending
+cascade in a Neotropical frog. *Submitted to Integrative Zoology.*
+
 ## In preparation
 
 **PROVETE, D.B.**; Garey, M.V.; da Silva, F.R. 2026. Knowledge gap on the
@@ -554,10 +558,6 @@ thermoregulation in a Neotropical frog is detectable only when physiological
 integrity allows movement. *To be submitted to Behavioral Ecology and
 Sociobiology.* &nbsp;
 <a href="https://www.biorxiv.org/content/10.1101/2020.06.11.146613v1" title="Preprint on bioRxiv" aria-label="Preprint on bioRxiv"><i class="ai ai-biorxiv"></i></a>
-
-Franco-Belussi, L.; Trevisan, L.; De Oliveira, C.; Fernandes, C.E.;
-**PROVETE, D.B.** 2026. Seasonal hepatic plasticity follows a descending
-cascade in a Neotropical frog. *To be submitted to Integrative Zoology.*
 
 Severgnini, M.R.; **PROVETE, D.B.** 2026. The effect of urbanization and
 local environmental heterogeneity on phenotypic variability in a tropical
