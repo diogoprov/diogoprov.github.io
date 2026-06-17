@@ -450,8 +450,10 @@ Acta Herpetologica · American Journal of Botany · American Naturalist · Amphi
 ### Editorial board membership
 
 ::: {.cv-timeline}
-| **2023 – 2026** | Associate Editor — *Evolution* |
+| **2026 – present** | Deputy Editor — *Global Ecology and Biogeography* |
 |---|---|
+| **2026 – present** | Assistant Editor — *Global Change Biology* |
+| **2023 – 2026** | Associate Editor — *Evolution* |
 | **2023 – present** | Senior Editor — *Journal of Biogeography* |
 | **2022 – 2026** | Subject Matter Editor — *Frontiers in Ecology and the Environment* |
 | **2022 – 2026** | Section then Senior Editor — *Ecology and Evolution* |
