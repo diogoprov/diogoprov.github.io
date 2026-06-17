@@ -1,0 +1,30 @@
+---
+title: "Aula 05 — Macroecologia urbana e relações escalonares"
+order: 5
+description: "Padrões em larga escala em cidades. Relações alométricas e escalonares na ecologia urbana."
+---
+
+::: {.aula-meta}
+**Semana 5**  ·  **Curso:** Ecologia Urbana (UFMS, graduação)
+:::
+
+Padrões em larga escala em cidades. Relações alométricas e escalonares na ecologia urbana.
+
+## Slides
+
+[{{< fa solid file-pdf >}} Baixar slides em PDF](../slides/aula-05.pdf){.btn .btn-outline-primary}
+
+## Leitura para discussão
+
+*A leitura semanal era distribuída em aula a partir de artigos e capítulos de
+livros (não redistribuídos publicamente por direitos autorais). Consulte o
+[professor](mailto:diogo.provete@ufms.br) para a lista completa.*
+
+## Recursos externos
+
+- [Palestra TED Geoffrey West [curta]](https://www.youtube.com/watch?v=XyCY6mjWOPc)
+- [Palestra Geoffrey West [longa]](https://www.youtube.com/watch?v=ncDE_V5RAQc&t=157s)
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*

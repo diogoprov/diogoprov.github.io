@@ -1,0 +1,33 @@
+---
+title: "Aula 13 — Soluções para conservação da biodiversidade nas cidades"
+order: 13
+description: "Estratégias e iniciativas para conservar e restaurar biodiversidade em contextos urbanos."
+---
+
+::: {.aula-meta}
+**Semana 13**  ·  **Curso:** Ecologia Urbana (UFMS, graduação)
+:::
+
+Estratégias e iniciativas para conservar e restaurar biodiversidade em contextos urbanos.
+
+::: {.callout-note appearance='minimal'}
+Esta aula foi conduzida como discussão em sala e não tem materiais públicos arquivados no backup.
+:::
+
+## Slides
+
+*Esta aula não tem slides nos arquivos públicos do curso.*
+
+## Leitura para discussão
+
+*A leitura semanal era distribuída em aula a partir de artigos e capítulos de
+livros (não redistribuídos publicamente por direitos autorais). Consulte o
+[professor](mailto:diogo.provete@ufms.br) para a lista completa.*
+
+## Recursos externos
+
+*Sem recursos externos para esta aula.*
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*

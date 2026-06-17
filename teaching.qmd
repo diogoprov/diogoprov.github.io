@@ -14,6 +14,17 @@ de probabilidade, inferência via teste de hipóteses e modelos lineares
 
 [Course site & materials →](teaching/bioestatistica/){.btn .btn-outline-primary}
 
+### Urban Ecology — Ciências Biológicas
+
+Disciplina optativa de 51 h para alunos de graduação em Ciências
+Biológicas. Cobre biodiversidade urbana, fragmentação de hábitats,
+ilha de calor, respostas ecossistêmicas, invasões biológicas,
+desigualdade social e "luxury effect", ambientes aquáticos urbanos,
+evolução contemporânea, e ciência cidadã (iNaturalist + R).
+Ofertada em 2019/2 e 2022/2.
+
+[Course site & materials →](teaching/ecologia-urbana/){.btn .btn-outline-primary}
+
 ## Estatística Descomplicada — YouTube channel
 
 ::: {.callout-tip icon=false appearance="minimal"}

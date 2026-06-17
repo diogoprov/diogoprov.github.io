@@ -1,0 +1,33 @@
+---
+title: "Aula 08 — Ambientes aquáticos em cidades"
+order: 8
+description: "Caracterização de corpos d'água urbanos. Homogeneização biótica em rios e lagos urbanizados."
+---
+
+::: {.aula-meta}
+**Semana 8**  ·  **Curso:** Ecologia Urbana (UFMS, graduação)
+:::
+
+Caracterização de corpos d'água urbanos. Homogeneização biótica em rios e lagos urbanizados.
+
+::: {.callout-note appearance='minimal'}
+Esta aula foi conduzida como discussão em sala e não tem materiais públicos arquivados no backup.
+:::
+
+## Slides
+
+*Esta aula não tem slides nos arquivos públicos do curso.*
+
+## Leitura para discussão
+
+*A leitura semanal era distribuída em aula a partir de artigos e capítulos de
+livros (não redistribuídos publicamente por direitos autorais). Consulte o
+[professor](mailto:diogo.provete@ufms.br) para a lista completa.*
+
+## Recursos externos
+
+*Sem recursos externos para esta aula.*
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*

@@ -1,0 +1,111 @@
+---
+title: "Ecologia Urbana"
+subtitle: "Disciplina optativa — Ciências Biológicas (graduação), UFMS"
+toc: true
+listing:
+  - id: cronograma
+    contents: "aula-*/index.qmd"
+    type: table
+    sort: "order asc"
+    fields: [order, title, description]
+    field-display-names:
+      order: "Semana"
+      title: "Tópico"
+      description: "Conteúdo"
+    sort-ui: false
+    filter-ui: false
+    page-size: 20
+---
+
+::: {.callout-tip appearance="minimal"}
+Disciplina **ECOLOGIA URBANA** (27010001087, 51 h) do bacharelado em
+[Ciências Biológicas](https://inbio.ufms.br/) da UFMS. Esta página
+reúne os **materiais públicos** das edições anteriores — slides do
+professor e recursos externos. Para informações sobre próximas
+ofertas, [entre em contato](mailto:diogo.provete@ufms.br).
+:::
+
+## Ementa
+
+Relação entre a sociedade humana e a natureza: histórico e situação
+atual. Conservação e importância da biodiversidade. A cidade como
+local de biodiversidade.
+
+## Objetivos
+
+Apresentar um panorama de como a biodiversidade é distribuída e
+mantida em ambientes urbanos e quais as principais estratégias para
+sua conservação. Espera-se que ao fim da disciplina o(a) aluno(a)
+seja capaz de:
+
+- distinguir as principais limitações que são impostas à
+  biodiversidade em ambientes urbanos;
+- reconhecer os processos evolutivos envolvidos na geração e
+  manutenção da biodiversidade urbana;
+- discutir como o ambiente urbano modifica a ecologia e a evolução
+  dos organismos;
+- analisar iniciativas internacionais para mitigação de impactos
+  urbanos sobre a biodiversidade;
+- avaliar como processos ecossistêmicos (ciclagem de nutrientes,
+  fluxo de energia, poluição) são afetados pela urbanização.
+
+## Cronograma
+
+::: {#cronograma}
+:::
+
+## Metodologia e avaliação
+
+A disciplina combina aulas expositivas com **questionários semanais**
+preenchidos pelos alunos a partir dos textos disponibilizados pelo
+professor. Inclui também um **trabalho prático de ciência cidadã**
+usando o aplicativo [iNaturalist](https://www.inaturalist.org/) ao
+longo do semestre. A nota final tem três componentes iguais:
+
+- **P1** — Média dos 10 questionários semanais (avaliação contínua);
+- **P2** — Apresentação de artigo em grupo sobre tópicos do curso;
+- **P3** — Trabalho final: projeto de ciência cidadã na cidade,
+  utilizando iNaturalist + pacotes R (`rinat`, `spocc`) para acessar
+  e analisar dados de ocorrência.
+
+**Fórmula da média final:** MA = (P1 + P2 + P3) / 3.
+
+Avaliação de recuperação na forma escrita substitui P1 ou P3 conforme
+Resolução COGRAD nº 430/2021.
+
+## Bibliografia
+
+### Bibliografia básica
+
+- Begon, M. & Townsend, C.R. 2005. *Fundamentos em ecologia.* Porto
+  Alegre: Artmed.
+- Primack, R.B. & Rodrigues, E. 2007. *Biologia da Conservação.*
+  Londrina: Planta.
+- Ricklefs, R.E. 2003. *A economia da natureza.* 5ª ed. Rio de Janeiro:
+  Guanabara.
+- Adler, F.R. & Tanner, C.J. 2015. *Ecossistemas urbanos.* São Paulo:
+  Oficina de Textos.
+
+### Bibliografia complementar
+
+- Costa, L.M.S.A. 2006. *Rios e paisagens urbanas em cidades
+  brasileiras.* Rio de Janeiro: Viana & Mosley / PROURB.
+- Forman, R.T.T. 2014. *Urban ecology: science of cities.* Cambridge
+  University Press.
+- Gaston, K. (Ed.) 2010. *Urban ecology.* New York: Wiley.
+- Guerra, A.T. & Cunha, S.B. 2001. *Impactos ambientais urbanos no
+  Brasil.* Rio de Janeiro: Bertrand Brasil.
+- McDonnell, M.J.; Hahs, A.K. & Breuste, J.H. (Eds.) 2009. *Ecology
+  of cities and towns: a comparative approach.* Cambridge University
+  Press.
+- Mota, S. 2003. *Urbanização e meio ambiente.* Rio de Janeiro: ABES.
+- Niemelä, J. (Ed.) 2011. *Urban ecology: patterns, processes, and
+  applications.* Oxford University Press.
+- Parris, K. 2013. *Ecology of urban environments.* New York: Wiley.
+
+## Edições anteriores
+
+- **2022/2** — UFMS, Ciências Biológicas. Plano de ensino oficial:
+  27010001087 (51 h).
+- **2019/2** — UFMS, Ciências Biológicas. Materiais arquivados a
+  partir do backup desta edição.

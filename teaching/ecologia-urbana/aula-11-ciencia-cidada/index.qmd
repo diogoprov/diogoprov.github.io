@@ -1,0 +1,31 @@
+---
+title: "Aula 11 — Projeto de ciência cidadã"
+order: 11
+description: "Desenvolvimento de um projeto de ciência cidadã na cidade. Uso de plataformas como iNaturalist e pacotes R para acessar dados de ocorrência (rinat, spocc)."
+---
+
+::: {.aula-meta}
+**Semana 11**  ·  **Curso:** Ecologia Urbana (UFMS, graduação)
+:::
+
+Desenvolvimento de um projeto de ciência cidadã na cidade. Uso de plataformas como iNaturalist e pacotes R para acessar dados de ocorrência (rinat, spocc).
+
+## Slides
+
+*Esta aula não tem slides nos arquivos públicos do curso.*
+
+## Leitura para discussão
+
+*A leitura semanal era distribuída em aula a partir de artigos e capítulos de
+livros (não redistribuídos publicamente por direitos autorais). Consulte o
+[professor](mailto:diogo.provete@ufms.br) para a lista completa.*
+
+## Recursos externos
+
+- [Página Campo Grande no iNaturalist](https://www.inaturalist.org/places/campo-grande-ms-br)
+- [Tutorial do pacote rinat](https://cran.r-project.org/web/packages/rinat/vignettes/rinatVignette.html)
+- [Tutorial do pacote spooc](https://ropensci.github.io/spocc/)
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*

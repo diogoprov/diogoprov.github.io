@@ -1,0 +1,33 @@
+---
+title: "Aula 12 — Evolução contemporânea em ambientes urbanos"
+order: 12
+description: "Adaptação dos organismos à vida na cidade em escalas de tempo ecológicas. Casos clássicos e recentes."
+---
+
+::: {.aula-meta}
+**Semana 12**  ·  **Curso:** Ecologia Urbana (UFMS, graduação)
+:::
+
+Adaptação dos organismos à vida na cidade em escalas de tempo ecológicas. Casos clássicos e recentes.
+
+::: {.callout-note appearance='minimal'}
+Esta aula foi conduzida como discussão em sala e não tem materiais públicos arquivados no backup.
+:::
+
+## Slides
+
+*Esta aula não tem slides nos arquivos públicos do curso.*
+
+## Leitura para discussão
+
+*A leitura semanal era distribuída em aula a partir de artigos e capítulos de
+livros (não redistribuídos publicamente por direitos autorais). Consulte o
+[professor](mailto:diogo.provete@ufms.br) para a lista completa.*
+
+## Recursos externos
+
+*Sem recursos externos para esta aula.*
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*

@@ -1,0 +1,39 @@
+---
+title: "Aula 07 — Desigualdade social, luxury effect e ciência cidadã"
+order: 7
+description: "Como a desigualdade social e de renda afeta a biodiversidade urbana ('luxury effect'). Engajamento para soluções e o papel da ciência cidadã."
+---
+
+::: {.aula-meta}
+**Semana 7**  ·  **Curso:** Ecologia Urbana (UFMS, graduação)
+:::
+
+Como a distribuição desigual de renda e de espaços verdes afeta a
+biodiversidade urbana ("luxury effect"). Vias de engajamento para
+soluções comunitárias. Introdução à ciência cidadã como ferramenta
+de pesquisa e mobilização.
+
+## Slides
+
+[{{< fa solid file-pdf >}} Baixar slides em PDF](../slides/aula-07.pdf){.btn .btn-outline-primary}
+
+::: {.callout-note appearance="minimal"}
+Os slides originais estavam em PowerPoint; convertidos para PDF para
+visualização no navegador. Diferenças mínimas de formatação são esperadas.
+:::
+
+## Leitura para discussão
+
+*Artigo distribuído em aula:*
+
+- Lynch, M.J. et al. 2019. *Measuring the ecological impact of the wealthy:
+  excessive consumption, ecological disorganization, green crime, and justice.*
+
+## Recursos externos
+
+- [Marx's ecology and land use](https://monthlyreview.org/2016/07/01/marxs-ecology-and-the-left/)
+- [The Guardian — Is inequality bad for the environment?](https://www.theguardian.com/inequality/2017/jul/04/is-inequality-bad-for-the-environment)
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*

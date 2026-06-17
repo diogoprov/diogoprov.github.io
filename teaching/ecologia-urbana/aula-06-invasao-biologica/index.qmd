@@ -1,0 +1,30 @@
+---
+title: "Aula 06 — Invasão biológica no contexto da urbanização"
+order: 6
+description: "Espécies invasoras em ambientes urbanos. Animais ferais. Conflitos entre vida selvagem e habitantes da cidade."
+---
+
+::: {.aula-meta}
+**Semana 6**  ·  **Curso:** Ecologia Urbana (UFMS, graduação)
+:::
+
+Espécies invasoras em ambientes urbanos. Animais ferais. Conflitos entre vida selvagem e habitantes da cidade.
+
+## Slides
+
+[{{< fa solid file-pdf >}} Baixar slides em PDF](../slides/aula-06.pdf){.btn .btn-outline-primary}
+
+## Leitura para discussão
+
+*A leitura semanal era distribuída em aula a partir de artigos e capítulos de
+livros (não redistribuídos publicamente por direitos autorais). Consulte o
+[professor](mailto:diogo.provete@ufms.br) para a lista completa.*
+
+## Recursos externos
+
+- [Mapa mental invasão](https://coggle.it/diagram/VqAcr5Nz_WIccHtX/t/invasões-em-ambientes-terrestres)
+- [Mapa mental Invasões em ambientes terrestres](https://coggle.it/diagram/VrzxpthYFwFHLuoE/t/invasões-em-ambientes-terrestres)
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*

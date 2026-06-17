@@ -1,0 +1,30 @@
+---
+title: "Aula 01 — O que é uma cidade: a cidade como parte da paisagem"
+order: 1
+description: "Conceito de cidade, urbanização como gradiente. Manejo e conservação da biodiversidade em ambientes urbanos. Pegada ecológica."
+---
+
+::: {.aula-meta}
+**Semana 1**  ·  **Curso:** Ecologia Urbana (UFMS, graduação)
+:::
+
+Conceito de cidade, urbanização como gradiente. Manejo e conservação da biodiversidade em ambientes urbanos. Pegada ecológica.
+
+## Slides
+
+[{{< fa solid file-pdf >}} Baixar slides em PDF](../slides/aula-01.pdf){.btn .btn-outline-primary}
+
+## Leitura para discussão
+
+*A leitura semanal era distribuída em aula a partir de artigos e capítulos de
+livros (não redistribuídos publicamente por direitos autorais). Consulte o
+[professor](mailto:diogo.provete@ufms.br) para a lista completa.*
+
+## Recursos externos
+
+- [Pegada Ecológica INPE](http://www.suapegadaecologica.com.br)
+- [Pegada Ecológica WWF](http://www.pegadaecologica.org.br/)
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*

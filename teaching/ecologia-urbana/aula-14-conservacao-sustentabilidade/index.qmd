@@ -1,0 +1,30 @@
+---
+title: "Aula 14 — Conservação de populações urbanas e sustentabilidade"
+order: 14
+description: "Design urbano voltado para sustentabilidade. Princípios para construir cidades melhores."
+---
+
+::: {.aula-meta}
+**Semana 14**  ·  **Curso:** Ecologia Urbana (UFMS, graduação)
+:::
+
+Design urbano voltado para sustentabilidade. Princípios para construir cidades melhores.
+
+## Slides
+
+*Esta aula não tem slides nos arquivos públicos do curso.*
+
+## Leitura para discussão
+
+*A leitura semanal era distribuída em aula a partir de artigos e capítulos de
+livros (não redistribuídos publicamente por direitos autorais). Consulte o
+[professor](mailto:diogo.provete@ufms.br) para a lista completa.*
+
+## Recursos externos
+
+- [How do you design a city that works with nature? [legendado]](https://www.youtube.com/watch?v=33buUFBHlPU)
+- [Sete princípios para se construir uma cidade melhor](https://www.youtube.com/watch?v=IFjD3NMv6Kw)
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*

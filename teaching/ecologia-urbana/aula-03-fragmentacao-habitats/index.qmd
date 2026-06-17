@@ -1,0 +1,30 @@
+---
+title: "Aula 03 — Fragmentação de hábitats urbanos"
+order: 3
+description: "Fragmentação do hábitat na escala da cidade. Adaptação local, vantagens e desvantagens evolutivas."
+---
+
+::: {.aula-meta}
+**Semana 3**  ·  **Curso:** Ecologia Urbana (UFMS, graduação)
+:::
+
+Fragmentação do hábitat na escala da cidade. Adaptação local, vantagens e desvantagens evolutivas.
+
+## Slides
+
+[{{< fa solid file-pdf >}} Baixar slides em PDF](../slides/aula-03.pdf){.btn .btn-outline-primary}
+
+## Leitura para discussão
+
+*A leitura semanal era distribuída em aula a partir de artigos e capítulos de
+livros (não redistribuídos publicamente por direitos autorais). Consulte o
+[professor](mailto:diogo.provete@ufms.br) para a lista completa.*
+
+## Recursos externos
+
+- [Pequena entrevista Jason Munshi-South métodos de coleta e trabalho com ratos NYC](https://www.youtube.com/watch?v=MsZ32PF_Ce0)
+- [Palestra TED Jason Munshi-South estrutura genética ratos em NYC](https://www.youtube.com/watch?v=ckGB5lHyzME)
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*

@@ -1,0 +1,29 @@
+---
+title: "Aula 02 — Clima de cidades e ilha de calor"
+order: 2
+description: "Impacto da urbanização sobre o clima local e a fisiologia dos organismos. Ilha de calor urbana como processo seletivo que determina composição de espécies."
+---
+
+::: {.aula-meta}
+**Semana 2**  ·  **Curso:** Ecologia Urbana (UFMS, graduação)
+:::
+
+Impacto da urbanização sobre o clima local e a fisiologia dos organismos. Ilha de calor urbana como processo seletivo que determina composição de espécies.
+
+## Slides
+
+[{{< fa solid file-pdf >}} Baixar slides em PDF](../slides/aula-02.pdf){.btn .btn-outline-primary}
+
+## Leitura para discussão
+
+*A leitura semanal era distribuída em aula a partir de artigos e capítulos de
+livros (não redistribuídos publicamente por direitos autorais). Consulte o
+[professor](mailto:diogo.provete@ufms.br) para a lista completa.*
+
+## Recursos externos
+
+*Sem recursos externos para esta aula.*
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*
