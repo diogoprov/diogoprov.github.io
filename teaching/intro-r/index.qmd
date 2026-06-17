@@ -1,0 +1,127 @@
+---
+title: "Introdução à Linguagem R"
+subtitle: "Disciplina de pós-graduação — PPG em Ecologia e Conservação, UFMS (30 h, intensiva)"
+toc: true
+listing:
+  - id: cronograma
+    contents: "aula-*/index.qmd"
+    type: table
+    sort: "order asc"
+    fields: [order, title, description]
+    field-display-names:
+      order: "Aula"
+      title: "Tópico"
+      description: "Conteúdo"
+    sort-ui: false
+    filter-ui: false
+    page-size: 20
+---
+
+::: {.callout-tip appearance="minimal"}
+Disciplina **INTRODUÇÃO À LINGUAGEM R** (300451417, 30 h) do
+[Programa de Pós-Graduação em Ecologia e
+Conservação](https://ppgec.ufms.br/) da UFMS, oferecida no formato
+**intensivo** (uma semana). Esta página reúne os **materiais públicos**
+do curso — slides, scripts R, datasets e recursos online. Para
+informações sobre a próxima oferta,
+[entre em contato](mailto:diogo.provete@ufms.br).
+:::
+
+## Ementa
+
+Introdução à linguagem de programação R: sintaxe e lógica. Técnicas de
+visualização e manuseio de dados com o pacote `tidyverse`. Introdução a
+algoritmos. Rudimentos de programação: controle de fluxo. Como melhorar
+o próprio código utilizando grandes modelos de linguagem (LLMs, como
+ChatGPT). Ferramentas de reprodutibilidade. Boas práticas em
+documentação, compartilhamento e apresentação de análises. Rudimentos
+de modelos lineares generalizados. Introdução às ferramentas de
+reprodutibilidade em pesquisa (Markdown e Quarto). Introdução ao
+controle de versão (git e GitHub).
+
+## Objetivos
+
+Apresentar a linguagem R como uma plataforma para realização e
+documentação de análises estatísticas, incluindo manuseio e exploração
+de dados comumente utilizados em ecologia. Ao fim da disciplina o(a)
+aluno(a) terá familiaridade e independência com a linguagem R e estará
+preparado(a) para cursar disciplinas específicas em estatística — por
+exemplo, modelos lineares e [métodos
+multivariados](../multidimensionais/) — bem como para implementar
+análises reproduzíveis em seu próprio trabalho.
+
+## Cronograma
+
+::: {#cronograma}
+:::
+
+## Pré-requisitos
+
+Nenhum. A disciplina é projetada para quem está chegando ao R, e cobre
+do conceito mais básico (o que é um objeto, o que é um pacote) até
+ferramentas de fluxo de trabalho profissional (git, Quarto).
+
+## Metodologia e avaliação
+
+A disciplina combina **aulas expositivas** e **exercícios práticos**
+feitos em sala. A avaliação é um **trabalho final** apresentando uma
+análise de dados à escolha do(a) aluno(a), em formato Markdown ou
+Quarto, contendo:
+
+1. pergunta de pesquisa;
+2. estratégia de análise;
+3. manipulação de dados;
+4. visualização gráfica;
+5. breve descrição e interpretação dos resultados.
+
+O trabalho é o exercício prático completo do fluxo aprendido na
+disciplina — da curadoria do dataset à entrega de um documento
+dinâmico reproduzível.
+
+## Bibliografia
+
+### Livros principais (acesso aberto)
+
+- [Wickham, H.; Çetinkaya-Rundel, M. & Grolemund, G. *R para Ciência de
+  Dados* (2ª ed.)](https://pt.r4ds.hadley.nz/) — **livro-texto principal**.
+- [Mello, M.P. & Peternelli, L.A. 2013. *Conhecendo o R: uma visão mais
+  que estatística.* Editora UFV](https://www.locus.ufv.br/handle/123456789/13598).
+- [Faria, P.D. *Introdução à Linguagem R: seus fundamentos e sua prática.*](https://pedro-faria.netlify.app/pt/publication/book/introducao_linguagem_r/)
+- [da Silva, F.R.; Gonçalves-Souza, T.; Paterno, G.; **PROVETE, D.B.**
+  & Vancine, M.A. 2022. *Análises ecológicas no R.*
+  NUPEEA](https://analises-ecologicas.com).
+- [Landeiro, V.L. 2011. *Introdução ao uso do programa R.*
+  (CRAN)](https://cran.r-project.org/doc/contrib/Landeiro-Introducao.pdf).
+
+### Livros complementares
+
+- Adler, J. 2010. *R in a nutshell: a desktop quick reference.*
+  O'Reilly.
+- Beckerman, A.P. & Petchey, O.L. 2012. *Getting started with R: an
+  introduction for biologists.* Oxford University Press.
+- Crawley, M.J. 2012. *The R-Book.* 2ª ed. Wiley.
+- Gandrud, C. 2013. *Reproducible Research with R and RStudio.*
+  CRC Press.
+- Gotelli, N.J. & Ellison, A.M. 2015. *Princípios de estatística em
+  ecologia.* Porto Alegre: Artmed.
+- Loeliger, J. & McCullough, M. 2012. *Version Control with Git:
+  Powerful tools and techniques for collaborative software
+  development.* O'Reilly.
+- Zuur, A.; Ieno, E.N. & Meesters, E. 2009. *A Beginner's Guide to R.*
+  Springer.
+
+### Recursos online complementares
+
+- [Quarto — site oficial e tutoriais](https://quarto.org/)
+- [Happy Git with R (Jenny Bryan)](https://happygitwithr.com/) — git
+  + R + GitHub para pesquisadores.
+- [The Carpentries — R for Reproducible Scientific
+  Analysis](https://swcarpentry.github.io/r-novice-gapminder/)
+- [Advanced R (Hadley Wickham)](https://adv-r.hadley.nz/) — para depois
+  do curso.
+
+## Edições anteriores
+
+- **2026/1** — UFMS, PPG em Ecologia e Conservação. Edição intensiva
+  (9–13 de março de 2026). Materiais desta edição estão arquivados
+  abaixo.

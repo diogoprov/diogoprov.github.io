@@ -1,0 +1,43 @@
+---
+title: "Aula 06 — Análises com modelos lineares simples"
+order: 6
+description: "Teste de hipótese e regressão linear no R. Sintaxe `formula`. Diagnóstico de resíduos: detecção de outliers, normalidade, heterocedasticidade. Quando linear é apropriado."
+---
+
+::: {.aula-meta}
+**12 de março de 2026**  ·  **Curso:** Introdução à Linguagem R (PPGEC, UFMS)
+:::
+
+Teste de hipótese e regressão linear no R. Sintaxe `formula`. Diagnóstico de resíduos: detecção de outliers, normalidade, heterocedasticidade. Quando linear é apropriado.
+
+## Slides
+
+[{{< fa solid file-pdf >}} Baixar slides em PDF](../slides/aula-06.pdf){.btn .btn-outline-primary}
+
+## Código R (aula prática)
+
+- {{< fa solid eye >}} **[Ver walkthrough HTML](walkthrough-respostas-modelos-lineares.html)**  
+  *Resoluções dos desafios — diagnóstico de modelos lineares com dados problemáticos.*  
+  [{{< fa solid file-code >}} baixar `respostas-modelos-lineares.R`](respostas-modelos-lineares.R)
+
+## Dados utilizados
+
+- [`dados_com_outliers_e_faltantes.csv`](dados_com_outliers_e_faltantes.csv)
+- [`dados_heterocedasticidade.csv`](dados_heterocedasticidade.csv)
+- [`dados_nao_normais.csv`](dados_nao_normais.csv)
+
+## Materiais complementares
+
+- [{{< fa solid file-pdf >}} `extra-regressao-linear.pdf`](extra-regressao-linear.pdf)
+- [{{< fa solid file-pdf >}} `extra-teste-hipotese.pdf`](extra-teste-hipotese.pdf)
+
+## Recursos externos
+
+- [*Análises Ecológicas no R* — capítulo 7 (exercícios)](https://analises-ecologicas.com/cap7)
+- [Sintaxe `formula` no R](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/formula.html)
+- [Pacote `swirl` para aprendizado interativo](https://swirlstats.com/)
+- [OpenIntro Statistics — inferência para data science](https://openintro.org/book/os/)
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*

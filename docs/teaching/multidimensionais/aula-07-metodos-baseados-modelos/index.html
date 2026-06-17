@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Aula extra (avançada). Alternativa paramétrica aos métodos baseados em distância: por que modelar explicitamente a relação média-variância da abundância. Agrupamento (SAMs/ecoMix), ordenação (gllvm, boral, CQO, ecoCopula), inferência (mvabund) e modelos conjuntos de distribuição de espécies (JSDM/HMSC).">
 
-<title>Análises Multidimensionais – Biodiversity Synthesis Lab</title>
+<title>Aula 07 — Métodos multidimensionais baseados em modelos – Biodiversity Synthesis Lab</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,29 +27,29 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<link href="../../assets/favicon.png" rel="icon" type="image/png">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-6b38416d90cdbb41281c8a2a0df0236b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-1732e9b120b8faec2f4b22e599a6250f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-6b38416d90cdbb41281c8a2a0df0236b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../assets/favicon.png" rel="icon" type="image/png">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-6b38416d90cdbb41281c8a2a0df0236b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-1732e9b120b8faec2f4b22e599a6250f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../site_libs/bootstrap/bootstrap-6b38416d90cdbb41281c8a2a0df0236b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,35 +77,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-cronograma .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-order','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-cronograma'] = new List('listing-cronograma', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -113,42 +85,13 @@ ul.task-list li input[type="checkbox"] {
   .ai { vertical-align: -.05em; }
 </style>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Análises Multidimensionais – Biodiversity Synthesis Lab">
-<meta property="og:description" content="Disciplina de pós-graduação — Mestrado em Biologia Animal, UFMS (45 h)">
+<link rel="stylesheet" href="../../../styles.css">
+<meta property="og:title" content="Aula 07 — Métodos multidimensionais baseados em modelos – Biodiversity Synthesis Lab">
+<meta property="og:description" content="Aula extra (avançada). Alternativa paramétrica aos métodos baseados em distância: por que modelar explicitamente a relação média-variância da abundância. Agrupamento (SAMs/ecoMix), ordenação (gllvm, boral, CQO, ecoCopula), inferência (mvabund) e modelos conjuntos de distribuição de espécies (JSDM/HMSC).">
 <meta property="og:site_name" content="Biodiversity Synthesis Lab">
-<meta name="twitter:title" content="Análises Multidimensionais – Biodiversity Synthesis Lab">
-<meta name="twitter:description" content="Disciplina de pós-graduação — Mestrado em Biologia Animal, UFMS (45 h)">
+<meta name="twitter:title" content="Aula 07 — Métodos multidimensionais baseados em modelos – Biodiversity Synthesis Lab">
+<meta name="twitter:description" content="Aula extra (avançada). Alternativa paramétrica aos métodos baseados em distância: por que modelar explicitamente a relação média-variância da abundância. Agrupamento (SAMs/ecoMix), ordenação (gllvm, boral, CQO, ecoCopula), inferência (mvabund) e modelos conjuntos de distribuição de espécies (JSDM/HMSC).">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -321,11 +264,11 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo light-content">
-    <img src="../../assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo dark-content">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo light-content">
+    <img src="../../../assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Biodiversity Synthesis Lab</span>
     </a>
   </div>
@@ -336,39 +279,39 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
+    <a class="nav-link" href="../../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../research.html"> 
+    <a class="nav-link" href="../../../research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../publications.html"> 
+    <a class="nav-link" href="../../../publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../people.html"> 
+    <a class="nav-link" href="../../../people.html"> 
 <span class="menu-text">People</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../cv.html"> 
+    <a class="nav-link" href="../../../cv.html"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../teaching.html"> 
+    <a class="nav-link" href="../../../teaching.html"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../opportunities.html"> 
+    <a class="nav-link" href="../../../opportunities.html"> 
 <span class="menu-text">Opportunities</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../projects.html"> 
+    <a class="nav-link" href="../../../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../software.html"> 
+    <a class="nav-link" href="../../../software.html"> 
 <span class="menu-text">Software</span></a>
   </li>  
   <li class="nav-item">
@@ -404,19 +347,11 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#ementa" id="toc-ementa" class="nav-link active" data-scroll-target="#ementa">Ementa</a></li>
-  <li><a href="#conteúdo-programático" id="toc-conteúdo-programático" class="nav-link" data-scroll-target="#conteúdo-programático">Conteúdo programático</a></li>
-  <li><a href="#objetivos" id="toc-objetivos" class="nav-link" data-scroll-target="#objetivos">Objetivos</a></li>
-  <li><a href="#cronograma" id="toc-cronograma" class="nav-link" data-scroll-target="#cronograma">Cronograma</a></li>
-  <li><a href="#pré-requisitos" id="toc-pré-requisitos" class="nav-link" data-scroll-target="#pré-requisitos">Pré-requisitos</a></li>
-  <li><a href="#avaliação" id="toc-avaliação" class="nav-link" data-scroll-target="#avaliação">Avaliação</a></li>
-  <li><a href="#bibliografia" id="toc-bibliografia" class="nav-link" data-scroll-target="#bibliografia">Bibliografia</a>
-  <ul class="collapse">
-  <li><a href="#livros-principais" id="toc-livros-principais" class="nav-link" data-scroll-target="#livros-principais">Livros principais</a></li>
-  <li><a href="#complementares" id="toc-complementares" class="nav-link" data-scroll-target="#complementares">Complementares</a></li>
-  <li><a href="#recursos-online" id="toc-recursos-online" class="nav-link" data-scroll-target="#recursos-online">Recursos online</a></li>
-  </ul></li>
-  <li><a href="#edições-anteriores" id="toc-edições-anteriores" class="nav-link" data-scroll-target="#edições-anteriores">Edições anteriores</a></li>
+  <li><a href="#slides" id="toc-slides" class="nav-link active" data-scroll-target="#slides">Slides</a></li>
+  <li><a href="#tópicos-abordados" id="toc-tópicos-abordados" class="nav-link" data-scroll-target="#tópicos-abordados">Tópicos abordados</a></li>
+  <li><a href="#pacotes-em-r" id="toc-pacotes-em-r" class="nav-link" data-scroll-target="#pacotes-em-r">Pacotes em R</a></li>
+  <li><a href="#leituras-recomendadas" id="toc-leituras-recomendadas" class="nav-link" data-scroll-target="#leituras-recomendadas">Leituras recomendadas</a></li>
+  <li><a href="#recursos-externos" id="toc-recursos-externos" class="nav-link" data-scroll-target="#recursos-externos">Recursos externos</a></li>
   </ul>
 </nav>
     </div>
@@ -426,10 +361,14 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Análises Multidimensionais</h1>
-<p class="subtitle lead">Disciplina de pós-graduação — Mestrado em Biologia Animal, UFMS (45 h)</p>
+<h1 class="title">Aula 07 — Métodos multidimensionais baseados em modelos</h1>
 </div>
 
+<div>
+  <div class="description">
+    Aula extra (avançada). Alternativa paramétrica aos métodos baseados em distância: por que modelar explicitamente a relação média-variância da abundância. Agrupamento (SAMs/ecoMix), ordenação (gllvm, boral, CQO, ecoCopula), inferência (mvabund) e modelos conjuntos de distribuição de espécies (JSDM/HMSC).
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -444,208 +383,48 @@ window.Quarto = {
 </header>
 
 
-<div class="callout callout-style-simple callout-tip no-icon">
+<div class="aula-meta">
+<p><strong>Aula extra (avançada)</strong> · <strong>Curso:</strong> Análises Multidimensionais (PPG em Biologia Animal, UFMS)</p>
+</div>
+<p>Alternativa paramétrica aos métodos baseados em distância: por que modelar explicitamente a relação média-variância da abundância. Agrupamento (SAMs/ecoMix), ordenação (gllvm, boral, CQO, ecoCopula), inferência (mvabund) e modelos conjuntos de distribuição de espécies (JSDM/HMSC).</p>
+<div class="callout callout-style-simple callout-note no-icon">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>Disciplina <strong>ANÁLISES MULTIDIMENSIONAIS</strong> (201521415, 45 h) do <a href="https://ppgba.ufms.br/">Mestrado em Biologia Animal</a> da UFMS. Esta página reúne os <strong>materiais públicos</strong> das edições anteriores — slides, scripts R com walkthroughs HTML, datasets e bibliografia. Para informações sobre a próxima oferta, <a href="mailto:diogo.provete@ufms.br">entre em contato</a>.</p>
+<p>Aula extra de caráter teórico, voltada a métodos mais avançados. Não possui roteiro prático em R associado — os pacotes citados nos slides servem como ponto de partida para estudo individual.</p>
 </div>
 </div>
 </div>
-<section id="ementa" class="level2">
-<h2 class="anchored" data-anchor-id="ementa">Ementa</h2>
-<p>Análises multidimensionais: técnicas de agrupamento, ordenação restrita e irrestrita, e análise de relações entre dois conjuntos de dados multidimensionais.</p>
+<section id="slides" class="level2">
+<h2 class="anchored" data-anchor-id="slides">Slides</h2>
+<p><a href="../slides/aula-07.pdf" class="btn btn-outline-primary"><i class="fa-solid fa-file-pdf" aria-label="file-pdf"></i> Baixar slides em PDF</a></p>
 </section>
-<section id="conteúdo-programático" class="level2">
-<h2 class="anchored" data-anchor-id="conteúdo-programático">Conteúdo programático</h2>
-<ol type="1">
-<li><strong>Técnicas de classificação:</strong> parecença; análises hierárquicas e não-hierárquicas.</li>
-<li><strong>Técnicas de ordenação irrestrita:</strong> análise de componentes principais (PCA), análise de coordenadas principais (PCoA), escalonamento multidimensional não-métrico (nMDS), análise de correspondência (CA) e variações.</li>
-<li><strong>Análise de relações entre dois conjuntos de dados multidimensionais:</strong> análise de correspondência canônica (CCA), análise de redundância (RDA) e suas parciais, db-RDA, RDA de consenso, análise discriminante (LDA).</li>
-<li><strong>Análises canônicas simétricas:</strong> análise de co-inércia, teste de Mantel, Mantel parcial, Procrustes, PROTEST.</li>
-<li><strong>Análises de variância multidimensionais:</strong> PERMANOVA.</li>
-<li><strong>Outras:</strong> análise de espécies indicadoras (IndVal), análise de dispersão multidimensional entre grupos.</li>
-</ol>
-</section>
-<section id="objetivos" class="level2">
-<h2 class="anchored" data-anchor-id="objetivos">Objetivos</h2>
-<p>Ao final do curso, espera-se que o(a) aluno(a) seja capaz de <strong>identificar e aplicar métodos multidimensionais adequados</strong> para analisar dados multivariados comumente encontrados em estudos avançados de ecologia e evolução, bem como interpretar criticamente os resultados em linguagem ecológica.</p>
-</section>
-<section id="cronograma" class="level2">
-<h2 class="anchored" data-anchor-id="cronograma">Cronograma</h2>
-<div id="listing-cronograma" class="quarto-listing quarto-listing-container-table">
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-
-<th>
-Aula
-</th>
-
-<th>
-Tópico
-</th>
-
-<th>
-Conteúdo
-</th>
-
-</tr>
-</thead>
-<tbody class="list">
-
-<tr data-index="0" data-listing-file-modified-sort="1781727645147" data-listing-reading-time-sort="1" data-listing-word-count-sort="122" data-listing-title-sort="Aula 01 — Introdução à estatística multivariada" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-order">1</span>
-</td>
-<td>
-<a href="../../teaching/multidimensionais/aula-01-intro-multivariada/index.html" class="title listing-title">Aula 01 — Introdução à estatística multivariada</a>
-</td>
-<td>
-<span class="listing-description">Por que dados multivariados exigem ferramentas diferentes. Álgebra de matrizes essencial para o resto do curso: combinações lineares, autovalores e autovetores.</span>
-</td>
-
-</tr>
-
-<tr data-index="1" data-listing-file-modified-sort="1781727645148" data-listing-reading-time-sort="1" data-listing-word-count-sort="188" data-listing-title-sort="Aula 02 — Coeficientes de associação" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-order">2</span>
-</td>
-<td>
-<a href="../../teaching/multidimensionais/aula-02-coeficientes-associacao/index.html" class="title listing-title">Aula 02 — Coeficientes de associação</a>
-</td>
-<td>
-<span class="listing-description">Distância e similaridade entre objetos. Quando usar distância euclideana, Bray-Curtis, Jaccard, Mahalanobis. Propriedades métricas das matrizes de dissimilaridade.</span>
-</td>
-
-</tr>
-
-<tr data-index="2" data-listing-file-modified-sort="1781727645150" data-listing-reading-time-sort="1" data-listing-word-count-sort="165" data-listing-title-sort="Aula 03 — Agrupamento: cluster hierárquico, k-means e IndVal" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-order">3</span>
-</td>
-<td>
-<a href="../../teaching/multidimensionais/aula-03-agrupamento/index.html" class="title listing-title">Aula 03 — Agrupamento: cluster hierárquico, k-means e IndVal</a>
-</td>
-<td>
-<span class="listing-description">Métodos hierárquicos (UPGMA, single-linkage, complete-linkage, Ward) versus não-hierárquicos (k-means). Análise de espécies indicadoras (IndVal). Estabilidade de cluster via bootstrap (pvclust).</span>
-</td>
-
-</tr>
-
-<tr data-index="3" data-listing-file-modified-sort="1781727645151" data-listing-reading-time-sort="1" data-listing-word-count-sort="136" data-listing-title-sort="Aula 04 — Ordenações irrestritas: PCA, PCoA, nMDS e CA" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-order">4</span>
-</td>
-<td>
-<a href="../../teaching/multidimensionais/aula-04-ordenacoes-irrestritas/index.html" class="title listing-title">Aula 04 — Ordenações irrestritas: PCA, PCoA, nMDS e CA</a>
-</td>
-<td>
-<span class="listing-description">Reduzir a dimensionalidade preservando estrutura. PCA (variáveis contínuas), PCoA (qualquer distância), nMDS (não-paramétrica, robusta), CA (dados de frequência).</span>
-</td>
-
-</tr>
-
-<tr data-index="4" data-listing-file-modified-sort="1781727645152" data-listing-reading-time-sort="1" data-listing-word-count-sort="114" data-listing-title-sort="Aula 05 — Ordenações restritas: CCA, RDA, pRDA, db-RDA, LDA" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-order">5</span>
-</td>
-<td>
-<a href="../../teaching/multidimensionais/aula-05-ordenacoes-restritas/index.html" class="title listing-title">Aula 05 — Ordenações restritas: CCA, RDA, pRDA, db-RDA, LDA</a>
-</td>
-<td>
-<span class="listing-description">Ordenação canônica: explica composição em função de variáveis ambientais. CCA, RDA, RDA parcial, db-RDA (RDA baseada em distância), e Análise Discriminante Linear (LDA).</span>
-</td>
-
-</tr>
-
-<tr data-index="5" data-listing-file-modified-sort="1781727645153" data-listing-reading-time-sort="1" data-listing-word-count-sort="101" data-listing-title-sort="Aula 06 — Regressão de matrizes, Mantel, PROCRUSTES e (PER)MANOVA" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-order">6</span>
-</td>
-<td>
-<a href="../../teaching/multidimensionais/aula-06-matrizes-mantel-manova/index.html" class="title listing-title">Aula 06 — Regressão de matrizes, Mantel, PROCRUSTES e (PER)MANOVA</a>
-</td>
-<td>
-<span class="listing-description">Comparação entre matrizes de distância: teste de Mantel e Mantel parcial. Comparação de configurações multivariadas: Procrustes/PROTEST. Inferência multivariada robusta: PERMANOVA.</span>
-</td>
-
-</tr>
-
-<tr data-index="6" data-listing-file-modified-sort="1781729609762" data-listing-reading-time-sort="2" data-listing-word-count-sort="227" data-listing-title-sort="Aula 07 — Métodos multidimensionais baseados em modelos" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-order">7</span>
-</td>
-<td>
-<a href="../../teaching/multidimensionais/aula-07-metodos-baseados-modelos/index.html" class="title listing-title">Aula 07 — Métodos multidimensionais baseados em modelos</a>
-</td>
-<td>
-<span class="listing-description">Aula extra (avançada). Alternativa paramétrica aos métodos baseados em distância: por que modelar explicitamente a relação média-variância da abundância. Agrupamento (SAMs/ecoMix), ordenação (gllvm, boral, CQO, ecoCopula), inferência (mvabund) e modelos conjuntos de distribuição de espécies (JSDM/HMSC).</span>
-</td>
-
-</tr>
-
-</tbody>
-</table>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-</section>
-<section id="pré-requisitos" class="level2">
-<h2 class="anchored" data-anchor-id="pré-requisitos">Pré-requisitos</h2>
+<section id="tópicos-abordados" class="level2">
+<h2 class="anchored" data-anchor-id="tópicos-abordados">Tópicos abordados</h2>
 <ul>
-<li>Familiaridade básica com R (leitura de dados, funções, objetos). Recomendo <a href="https://pt.r4ds.hadley.nz/">Wickham et al.&nbsp;<em>R para Ciência de Dados</em></a> como ponto de partida;</li>
-<li>Bioestatística aplicada à ecologia (modelos lineares, teste de hipóteses).</li>
+<li><strong>Motivação:</strong> limitações dos métodos baseados em distância (algoritmos) — relação média-variância da abundância, confusão entre posição e dispersão multivariada.</li>
+<li><strong>O que são métodos baseados em modelos:</strong> métodos paramétricos (GLMs e variáveis latentes) que capturam propriedades-chave de dados multivariados, com diagnose, seleção de modelos e inferência (AIC/BIC).</li>
+<li><strong>Agrupamento:</strong> <em>Species Archetype Models</em> (SAMs), pacote <code>ecoMix</code>.</li>
+<li><strong>Ordenação:</strong> <code>gllvm</code> (modelos lineares generalizados de variável latente), <code>boral</code> (ordenação Bayesiana via MCMC), <em>Constrained Quadratic Ordination</em> (CQO, pacote <code>reo</code>) e <code>ecoCopula</code>.</li>
+<li><strong>Inferência:</strong> <code>mvabund</code> (<code>manyglm</code>/<code>manyany</code>) com reamostragem de resíduos (PIT residuals).</li>
+<li><strong>Modelos conjuntos de distribuição de espécies (JSDM):</strong> <code>HMSC</code>, <code>s-jSDM</code> — partição da variância e co-distribuição derivada da covariância dos resíduos.</li>
 </ul>
 </section>
-<section id="avaliação" class="level2">
-<h2 class="anchored" data-anchor-id="avaliação">Avaliação</h2>
-<ul>
-<li><strong>Prova teórica</strong> ao final da disciplina;</li>
-<li><strong>Trabalho de análise</strong> — relatório com análise de um conjunto de dados multivariado escolhido pelo(a) aluno(a), incluindo interpretação ecológica dos resultados (entrega posterior à prova).</li>
-</ul>
+<section id="pacotes-em-r" class="level2">
+<h2 class="anchored" data-anchor-id="pacotes-em-r">Pacotes em R</h2>
+<p><code>ecoMix</code> · <code>gllvm</code> · <code>boral</code> · <code>reo</code> · <code>ecoCopula</code> · <code>mvabund</code> · <code>Hmsc</code> · <code>sjSDM</code></p>
 </section>
-<section id="bibliografia" class="level2">
-<h2 class="anchored" data-anchor-id="bibliografia">Bibliografia</h2>
-<section id="livros-principais" class="level3">
-<h3 class="anchored" data-anchor-id="livros-principais">Livros principais</h3>
-<ul>
-<li>Borcard, D.; Gillet, F. &amp; Legendre, P. 2018. <em>Numerical Ecology with R.</em> 2ª ed.&nbsp;Cham: Springer. — <strong>livro-texto principal</strong>.</li>
-<li>Legendre, P. &amp; Legendre, L.F.J. 2012. <em>Numerical Ecology.</em> 3ª ed. Amsterdam: Elsevier. — referência teórica de fundo.</li>
-<li>McCune, B. &amp; Grace, J.B. 2002. <em>Analysis of Ecological Communities.</em> Gleneden Beach: MjM Software Design.</li>
-</ul>
+<section id="leituras-recomendadas" class="level2">
+<h2 class="anchored" data-anchor-id="leituras-recomendadas">Leituras recomendadas</h2>
+<p><em>Bibliografia listada nos slides.</em></p>
 </section>
-<section id="complementares" class="level3">
-<h3 class="anchored" data-anchor-id="complementares">Complementares</h3>
-<ul>
-<li>Gotelli, N.J. &amp; Ellison, A.M. 2011. <em>Princípios de estatística em ecologia.</em> Porto Alegre: Artmed.</li>
-<li>Jongman, R.H.G.; ter Braak, C.J.F. &amp; van Tongeren, O.F.R. 1995. <em>Data analysis in community and landscape ecology.</em> Cambridge University Press.</li>
-<li>Manly, B.J.F. 2008. <em>Métodos estatísticos multivariados.</em> 3ª ed. Porto Alegre: Artmed.</li>
-<li>Šmilauer, P. &amp; Lepš, J. 2014. <em>Multivariate Analysis of Ecological Data using CANOCO 5.</em> 2ª ed.&nbsp;Cambridge University Press. <a href="https://doi.org/10.1017/CBO9781139627061">doi:10.1017/CBO9781139627061</a></li>
-<li>Thioulouse, J.; Dray, S.; Dufour, A.B.; Siberchicot, A.; Jombart, T. &amp; Pavoine, S. 2018. <em>Multivariate Analysis of Ecological Data with ade4.</em> New York: Springer.</li>
-</ul>
-</section>
-<section id="recursos-online" class="level3">
-<h3 class="anchored" data-anchor-id="recursos-online">Recursos online</h3>
-<ul>
-<li><a href="https://analises-ecologicas.com">Análises ecológicas no R — da Silva, Gonçalves-Souza, Paterno, Provete, Vancine</a></li>
-<li><a href="http://ecology.msu.montana.edu/labdsv/R/">Página do pacote <code>labdsv</code> (Dave Roberts) com várias aulas</a></li>
-<li><a href="https://github.com/JoeyBernhardt/NumericalEcology">Numerical Ecology with R — código do livro</a></li>
-</ul>
-</section>
-</section>
-<section id="edições-anteriores" class="level2">
-<h2 class="anchored" data-anchor-id="edições-anteriores">Edições anteriores</h2>
-<p>Esta mesma disciplina foi oferecida em cinco edições nos dois programas de pós-graduação da UFMS — sempre com o mesmo conteúdo, mas com nomes e códigos administrativos distintos:</p>
-<ul>
-<li><strong>2025/2</strong> — Mestrado em Biologia Animal. <em>Análises Multidimensionais</em> (201521415, 45 h).</li>
-<li><strong>2023/1</strong> — <em>Ecologia Quantitativa</em> (código antigo 20011043). <strong>Materiais desta edição estão arquivados abaixo.</strong></li>
-<li><strong>2021/1</strong> — modalidade remota durante a pandemia.</li>
-<li><strong>2020/1</strong> — UFMS.</li>
-<li><strong>2019/1</strong> — primeira oferta.</li>
-</ul>
-
+<section id="recursos-externos" class="level2">
+<h2 class="anchored" data-anchor-id="recursos-externos">Recursos externos</h2>
+<p><em>Sem recursos externos para esta aula.</em></p>
+<hr>
+<p><em>Volta para o <a href="../../../teaching/multidimensionais/index.html">índice do curso</a>.</em></p>
 
 
 </section>
@@ -1087,5 +866,5 @@ Conteúdo
 
 
 
-<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

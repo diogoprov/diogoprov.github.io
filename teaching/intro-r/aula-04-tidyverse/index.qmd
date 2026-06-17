@@ -1,0 +1,41 @@
+---
+title: "Aula 04 — Manuseio de dados com o tidyverse"
+order: 4
+description: "Filosofia tidy. Os pacotes principais (`dplyr`, `tidyr`, `purrr`, `broom`, `forcats`, `stringr`). Pipe nativa (`|>`) vs `magrittr` (`%>%`). Verbs principais de manipulação de dados."
+---
+
+::: {.aula-meta}
+**10 de março de 2026**  ·  **Curso:** Introdução à Linguagem R (PPGEC, UFMS)
+:::
+
+Filosofia tidy. Os pacotes principais (`dplyr`, `tidyr`, `purrr`, `broom`, `forcats`, `stringr`). Pipe nativa (`|>`) vs `magrittr` (`%>%`). Verbs principais de manipulação de dados.
+
+## Slides
+
+[{{< fa solid file-pdf >}} Baixar slides em PDF](../slides/aula-04.pdf){.btn .btn-outline-primary}
+
+## Código R (aula prática)
+
+- {{< fa solid eye >}} **[Ver walkthrough HTML](walkthrough-aula-3-desafio-broom-dplyr.html)**  
+  *Desafio prático — manipulação de dados com `dplyr` e modelos com `broom`.*  
+  [{{< fa solid file-code >}} baixar `aula-3-desafio-broom-dplyr.R`](aula-3-desafio-broom-dplyr.R)
+
+## Dados utilizados
+
+- [`Rafael_bovo_dados2.txt`](Rafael_bovo_dados2.txt)
+- [`diogo_week.csv`](diogo_week.csv)
+
+## Recursos externos
+
+- [*Análises Ecológicas no R* — capítulo de tidyverse](https://analises-ecologicas.com/cap5)
+- [Exercícios do capítulo (Análises Ecológicas)](https://analises-ecologicas.com/cap5#exercicios)
+- [Vignette do pacote `broom`](https://broom.tidymodels.org/articles/broom.html)
+- [Quadro resumo `tidyr` (cheatsheet)](https://raw.githubusercontent.com/rstudio/cheatsheets/main/tidyr.pdf)
+- [Quadro resumo `dplyr` (cheatsheet)](https://raw.githubusercontent.com/rstudio/cheatsheets/main/data-transformation.pdf)
+- [O que é o tidyverse (em português)](https://livro.curso-r.com/7-1-o-tidyverse.html)
+- [Wickham et al. — *R for Data Science* (cap. tidyverse)](https://r4ds.hadley.nz/data-transform.html)
+- [Tidyverse Style Guide](https://style.tidyverse.org/)
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*

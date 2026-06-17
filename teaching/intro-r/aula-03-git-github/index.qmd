@@ -1,0 +1,39 @@
+---
+title: "Aula 03 — Controle de versão com git e GitHub"
+order: 3
+description: "Por que controle de versão é fundamental para pesquisa reprodutível. Conceitos básicos de git (commit, branch, push, pull). Integração git/GitHub com RStudio."
+---
+
+::: {.aula-meta}
+**10 de março de 2026**  ·  **Curso:** Introdução à Linguagem R (PPGEC, UFMS)
+:::
+
+Por que controle de versão é fundamental para pesquisa reprodutível. Conceitos básicos de git (commit, branch, push, pull). Integração git/GitHub com RStudio.
+
+## Slides
+
+[{{< fa solid file-pdf >}} Baixar slides em PDF](../slides/aula-03.pdf){.btn .btn-outline-primary}
+
+## Código R (aula prática)
+
+*Aula sem código R associado (parte teórica/expositiva).*
+
+## Dados utilizados
+
+*Sem datasets associados.*
+
+## Recursos externos
+
+- [GitHub em 15 minutos (tutorial)](https://docs.github.com/en/get-started/quickstart/hello-world)
+- [Ten Simple Rules for Taking Advantage of Git and GitHub](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004947)
+- [Quadro resumo git (cheatsheet)](https://education.github.com/git-cheat-sheet-education.pdf)
+- [Braga, P.H.P. et al. 2023. *Not just for programmers: how GitHub can accelerate collaborative and reproducible research in ecology and evolution.* MEE](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14108)
+- [Mini-curso de git para iniciantes](https://swcarpentry.github.io/git-novice/)
+- [Git para iniciantes (série de vídeos em PT)](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
+- [O que é Git (em português)](https://www.devmedia.com.br/git-tutorial/29893)
+- [Git em português (livro online)](https://git-scm.com/book/pt-br/v2)
+- [Happy Git with R (Jenny Bryan)](https://happygitwithr.com/)
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*

@@ -1,0 +1,34 @@
+---
+title: "Aula 07 — Rudimentos de programação"
+order: 7
+description: "Como escrever funções no R. Controle de fluxo (`if`, `for`, `while`). Programação funcional com `purrr::map` e `purrr::pmap`. Estratégias para evitar copiar-e-colar."
+---
+
+::: {.aula-meta}
+**12 de março de 2026**  ·  **Curso:** Introdução à Linguagem R (PPGEC, UFMS)
+:::
+
+Como escrever funções no R. Controle de fluxo (`if`, `for`, `while`). Programação funcional com `purrr::map` e `purrr::pmap`. Estratégias para evitar copiar-e-colar.
+
+## Slides
+
+[{{< fa solid file-pdf >}} Baixar slides em PDF](../slides/aula-07.pdf){.btn .btn-outline-primary}
+
+## Código R (aula prática)
+
+*Aula sem código R associado (parte teórica/expositiva).*
+
+## Dados utilizados
+
+*Sem datasets associados.*
+
+## Recursos externos
+
+- [Apostila de Victor Landeiro — Introdução ao R](https://cran.r-project.org/doc/contrib/Landeiro-Introducao.pdf)
+- [Programação Funcional com `purrr`](https://purrr.tidyverse.org/)
+- [Wickham — *Advanced R* (cap. functional programming)](https://adv-r.hadley.nz/fp.html)
+- [Ten Simple Rules for Biologists Learning to Program](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005871)
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*

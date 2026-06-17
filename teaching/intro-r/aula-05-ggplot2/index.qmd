@@ -1,0 +1,39 @@
+---
+title: "Aula 05 — Visualização de dados com ggplot2"
+order: 5
+description: "A gramática de gráficos de Wilkinson e a implementação no `ggplot2`. Camadas, geoms, aesthetics, scales, themes, facets. Princípios de visualização honesta."
+---
+
+::: {.aula-meta}
+**11 de março de 2026**  ·  **Curso:** Introdução à Linguagem R (PPGEC, UFMS)
+:::
+
+A gramática de gráficos de Wilkinson e a implementação no `ggplot2`. Camadas, geoms, aesthetics, scales, themes, facets. Princípios de visualização honesta.
+
+## Slides
+
+[{{< fa solid file-pdf >}} Baixar slides em PDF](../slides/aula-05.pdf){.btn .btn-outline-primary}
+
+## Código R (aula prática)
+
+*Aula sem código R associado (parte teórica/expositiva).*
+
+## Dados utilizados
+
+*Sem datasets associados.*
+
+## Recursos externos
+
+- [*Análises Ecológicas no R* — capítulo 6 (ggplot2)](https://analises-ecologicas.com/cap6)
+- [Exercícios do capítulo 6](https://analises-ecologicas.com/cap6#exercicios)
+- [Apostila Provete et al. 2011 (CRAN)](http://cran.r-project.org/doc/contrib/Provete-Estatistica_aplicada.pdf)
+- [Ten Simple Rules for Better Figures](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003833)
+- [Compêndio de dicas sobre visualização de dados](https://www.data-to-viz.com/)
+- [Quadro resumo ggplot2 (cheatsheet)](https://raw.githubusercontent.com/rstudio/cheatsheets/main/data-visualization.pdf)
+- [R Graph Gallery](https://r-graph-gallery.com/)
+- [Plotly R gallery](https://plotly.com/r/)
+- [Cedric Scherer — código para gráficos limpos](https://www.cedricscherer.com/)
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*

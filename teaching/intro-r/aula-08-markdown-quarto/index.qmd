@@ -1,0 +1,38 @@
+---
+title: "Aula 08 — Reprodutibilidade com Markdown e Quarto"
+order: 8
+description: "Documentos dinâmicos como prática-padrão em pesquisa: análise + texto + gráficos em um único arquivo. `R Markdown`, `knitr` e `Quarto`. Saídas em HTML, PDF, Word, slides."
+---
+
+::: {.aula-meta}
+**13 de março de 2026**  ·  **Curso:** Introdução à Linguagem R (PPGEC, UFMS)
+:::
+
+Documentos dinâmicos como prática-padrão em pesquisa: análise + texto + gráficos em um único arquivo. `R Markdown`, `knitr` e `Quarto`. Saídas em HTML, PDF, Word, slides.
+
+## Slides
+
+[{{< fa solid file-pdf >}} Baixar slides em PDF](../slides/aula-08.pdf){.btn .btn-outline-primary}
+
+## Código R (aula prática)
+
+*Aula sem código R associado (parte teórica/expositiva).*
+
+## Dados utilizados
+
+*Sem datasets associados.*
+
+## Recursos externos
+
+- [Vídeo-aula — como criar um arquivo R Markdown](https://www.youtube.com/results?search_query=r+markdown+tutorial+provete)
+- [Quadro resumo Markdown (cheatsheet)](https://www.markdownguide.org/cheat-sheet/)
+- [Quadro resumo R Markdown (cheatsheet)](https://raw.githubusercontent.com/rstudio/cheatsheets/main/rmarkdown.pdf)
+- [British Ecological Society — *Guide to Reproducible Code*](https://www.britishecologicalsociety.org/wp-content/uploads/2017/12/guide-to-reproducible-code.pdf)
+- [Reproducible analysis in R — curso completo](https://nceas.github.io/sasap-training/materials/reproducible_research_in_r_fairbanks/)
+- [Coursera — Reproducible Research](https://www.coursera.org/learn/reproducible-research)
+- [Xie, Allaire & Grolemund — *R Markdown: The Definitive Guide*](https://bookdown.org/yihui/rmarkdown/)
+- [Tutorial — criando documento com Quarto](https://quarto.org/docs/get-started/hello/rstudio.html)
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*

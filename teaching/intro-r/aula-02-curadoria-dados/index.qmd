@@ -1,0 +1,42 @@
+---
+title: "Aula 02 — Curadoria de dados e boas práticas"
+order: 2
+description: "Como organizar planilhas e diretórios de projeto, nomenclatura de arquivos, plano de gerenciamento de dados. Princípios FAIR e por que importam para reprodutibilidade."
+---
+
+::: {.aula-meta}
+**09 de março de 2026**  ·  **Curso:** Introdução à Linguagem R (PPGEC, UFMS)
+:::
+
+Como organizar planilhas e diretórios de projeto, nomenclatura de arquivos, plano de gerenciamento de dados. Princípios FAIR e por que importam para reprodutibilidade.
+
+## Slides
+
+[{{< fa solid file-pdf >}} Baixar slides em PDF](../slides/aula-02.pdf){.btn .btn-outline-primary}
+
+## Código R (aula prática)
+
+*Aula sem código R associado (parte teórica/expositiva).*
+
+## Dados utilizados
+
+*Sem datasets associados.*
+
+## Recursos externos
+
+- [Vídeo-aula de curadoria de dados](https://www.youtube.com/results?search_query=curadoria+de+dados+provete)
+- [Google R Style Guide](https://google.github.io/styleguide/Rguide.html)
+- [British Ecological Society — *Guide to Data Management*](https://www.britishecologicalsociety.org/wp-content/uploads/2019/06/BES-Guide-Data-Management-2019.pdf)
+- [Ten Simple Rules for Digital Data Storage](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005097)
+- [Ten Simple Rules for the Care and Feeding of Scientific Data](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003542)
+- [Ten Simple Rules for Creating a Good Data Management Plan](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004525)
+- [Marco Mello — Dicas sobre como organizar um script](https://marcoarmello.wordpress.com/2018/02/04/scripts/)
+- [Como organizar o diretório de trabalho](https://marcoarmello.wordpress.com/2018/02/04/scripts/)
+- [Como organizar uma planilha de dados (Marco Mello)](https://marcoarmello.wordpress.com/2018/02/01/dados/)
+- [10 mandamentos de uma boa planilha (Dynamic Ecology)](https://dynamicecology.wordpress.com/2016/08/22/ten-commandments-for-good-data-management/)
+- [Framework for living data (paper)](https://onlinelibrary.wiley.com/doi/full/10.1002/eap.1980)
+- [Como nomear um arquivo (Jenny Bryan — vídeo)](https://www.youtube.com/watch?v=ES1LTlnpLMk)
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*

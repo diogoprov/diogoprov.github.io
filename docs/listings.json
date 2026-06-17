@@ -7,60 +7,19 @@
       "/teaching/multidimensionais/aula-03-agrupamento/index.html",
       "/teaching/multidimensionais/aula-04-ordenacoes-irrestritas/index.html",
       "/teaching/multidimensionais/aula-05-ordenacoes-restritas/index.html",
-      "/teaching/multidimensionais/aula-06-matrizes-mantel-manova/index.html"
+      "/teaching/multidimensionais/aula-06-matrizes-mantel-manova/index.html",
+      "/teaching/multidimensionais/aula-07-metodos-baseados-modelos/index.html"
     ]
   },
   {
-    "listing": "/teaching/bioestatistica/index.html",
+    "listing": "/teaching/mfc/index.html",
     "items": [
-      "/teaching/bioestatistica/aula-01-introducao/index.html",
-      "/teaching/bioestatistica/aula-02-organizacao-dados/index.html",
-      "/teaching/bioestatistica/aula-03-tendencia-dispersao/index.html",
-      "/teaching/bioestatistica/aula-04-amostragem/index.html",
-      "/teaching/bioestatistica/aula-05-probabilidade/index.html",
-      "/teaching/bioestatistica/aula-06-estimativas/index.html",
-      "/teaching/bioestatistica/aula-07-teste-hipoteses/index.html",
-      "/teaching/bioestatistica/aula-08-modelos-lineares-teste-t/index.html",
-      "/teaching/bioestatistica/aula-09-regressao-correlacao/index.html",
-      "/teaching/bioestatistica/aula-10-qui-quadrado/index.html",
-      "/teaching/bioestatistica/aula-11-anova/index.html"
-    ]
-  },
-  {
-    "listing": "/index.html",
-    "items": [
-      "/news/2025-09-15-iara-beatriz/index.html",
-      "/news/2025-02-15-bruna-master/index.html",
-      "/news/2024-10-01-fundect-grant/index.html",
-      "/news/2024-07-15-ana-paula-joins/index.html"
-    ]
-  },
-  {
-    "listing": "/news/index.html",
-    "items": [
-      "/news/2025-09-15-iara-beatriz/index.html",
-      "/news/2025-02-15-bruna-master/index.html",
-      "/news/2024-10-01-fundect-grant/index.html",
-      "/news/2024-07-15-ana-paula-joins/index.html"
-    ]
-  },
-  {
-    "listing": "/teaching/ecologia-urbana/index.html",
-    "items": [
-      "/teaching/ecologia-urbana/aula-01-cidades-paisagem/index.html",
-      "/teaching/ecologia-urbana/aula-02-clima-ilha-calor/index.html",
-      "/teaching/ecologia-urbana/aula-03-fragmentacao-habitats/index.html",
-      "/teaching/ecologia-urbana/aula-04-ecossistemas-ciclagem/index.html",
-      "/teaching/ecologia-urbana/aula-05-macroecologia/index.html",
-      "/teaching/ecologia-urbana/aula-06-invasao-biologica/index.html",
-      "/teaching/ecologia-urbana/aula-07-desigualdade-biodiversidade/index.html",
-      "/teaching/ecologia-urbana/aula-08-ambientes-aquaticos/index.html",
-      "/teaching/ecologia-urbana/aula-09-socio-ecologico/index.html",
-      "/teaching/ecologia-urbana/aula-10-apresentacao-artigo/index.html",
-      "/teaching/ecologia-urbana/aula-11-ciencia-cidada/index.html",
-      "/teaching/ecologia-urbana/aula-12-evolucao-contemporanea/index.html",
-      "/teaching/ecologia-urbana/aula-13-solucoes-conservacao/index.html",
-      "/teaching/ecologia-urbana/aula-14-conservacao-sustentabilidade/index.html"
+      "/teaching/mfc/aula-01-intro-desenho/index.html",
+      "/teaching/mfc/aula-02-modelos-evolucao-pgls/index.html",
+      "/teaching/mfc/aula-03-estado-ancestral/index.html",
+      "/teaching/mfc/aula-04-ou-multi-regime/index.html",
+      "/teaching/mfc/aula-05-autovetores-visualizacao/index.html",
+      "/teaching/mfc/aula-06-atributos-multivariados/index.html"
     ]
   },
   {
@@ -84,14 +43,56 @@
     ]
   },
   {
-    "listing": "/teaching/mfc/index.html",
+    "listing": "/teaching/ecologia-urbana/index.html",
     "items": [
-      "/teaching/mfc/aula-01-intro-desenho/index.html",
-      "/teaching/mfc/aula-02-modelos-evolucao-pgls/index.html",
-      "/teaching/mfc/aula-03-estado-ancestral/index.html",
-      "/teaching/mfc/aula-04-ou-multi-regime/index.html",
-      "/teaching/mfc/aula-05-autovetores-visualizacao/index.html",
-      "/teaching/mfc/aula-06-atributos-multivariados/index.html"
+      "/teaching/ecologia-urbana/aula-01-cidades-paisagem/index.html",
+      "/teaching/ecologia-urbana/aula-02-clima-ilha-calor/index.html",
+      "/teaching/ecologia-urbana/aula-03-fragmentacao-habitats/index.html",
+      "/teaching/ecologia-urbana/aula-04-ecossistemas-ciclagem/index.html",
+      "/teaching/ecologia-urbana/aula-05-macroecologia/index.html",
+      "/teaching/ecologia-urbana/aula-06-invasao-biologica/index.html",
+      "/teaching/ecologia-urbana/aula-07-desigualdade-biodiversidade/index.html",
+      "/teaching/ecologia-urbana/aula-08-ambientes-aquaticos/index.html",
+      "/teaching/ecologia-urbana/aula-09-socio-ecologico/index.html",
+      "/teaching/ecologia-urbana/aula-10-apresentacao-artigo/index.html",
+      "/teaching/ecologia-urbana/aula-11-ciencia-cidada/index.html",
+      "/teaching/ecologia-urbana/aula-12-evolucao-contemporanea/index.html",
+      "/teaching/ecologia-urbana/aula-13-solucoes-conservacao/index.html",
+      "/teaching/ecologia-urbana/aula-14-conservacao-sustentabilidade/index.html"
+    ]
+  },
+  {
+    "listing": "/news/index.html",
+    "items": [
+      "/news/2025-09-15-iara-beatriz/index.html",
+      "/news/2025-02-15-bruna-master/index.html",
+      "/news/2024-10-01-fundect-grant/index.html",
+      "/news/2024-07-15-ana-paula-joins/index.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/news/2025-09-15-iara-beatriz/index.html",
+      "/news/2025-02-15-bruna-master/index.html",
+      "/news/2024-10-01-fundect-grant/index.html",
+      "/news/2024-07-15-ana-paula-joins/index.html"
+    ]
+  },
+  {
+    "listing": "/teaching/bioestatistica/index.html",
+    "items": [
+      "/teaching/bioestatistica/aula-01-introducao/index.html",
+      "/teaching/bioestatistica/aula-02-organizacao-dados/index.html",
+      "/teaching/bioestatistica/aula-03-tendencia-dispersao/index.html",
+      "/teaching/bioestatistica/aula-04-amostragem/index.html",
+      "/teaching/bioestatistica/aula-05-probabilidade/index.html",
+      "/teaching/bioestatistica/aula-06-estimativas/index.html",
+      "/teaching/bioestatistica/aula-07-teste-hipoteses/index.html",
+      "/teaching/bioestatistica/aula-08-modelos-lineares-teste-t/index.html",
+      "/teaching/bioestatistica/aula-09-regressao-correlacao/index.html",
+      "/teaching/bioestatistica/aula-10-qui-quadrado/index.html",
+      "/teaching/bioestatistica/aula-11-anova/index.html"
     ]
   }
 ]

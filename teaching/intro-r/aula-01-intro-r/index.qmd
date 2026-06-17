@@ -1,0 +1,40 @@
+---
+title: "Aula 01 — Apresentação e introdução ao R"
+order: 1
+description: "Histórico da linguagem R, instalação, RStudio, importação de dados, tipos de objetos, pacotes. Fundamentos sobre os quais o resto do curso é construído."
+---
+
+::: {.aula-meta}
+**09 de março de 2026**  ·  **Curso:** Introdução à Linguagem R (PPGEC, UFMS)
+:::
+
+Histórico da linguagem R, instalação, RStudio, importação de dados, tipos de objetos, pacotes. Fundamentos sobre os quais o resto do curso é construído.
+
+## Slides
+
+[{{< fa solid file-pdf >}} Baixar slides em PDF](../slides/aula-01.pdf){.btn .btn-outline-primary}
+
+## Código R (aula prática)
+
+*Aula sem código R associado (parte teórica/expositiva).*
+
+## Dados utilizados
+
+*Sem datasets associados.*
+
+## Recursos externos
+
+- [Playlist de vídeo-aulas da disciplina (YouTube)](https://www.youtube.com/playlist?list=PLy2rjqiD2VP6p7RNCZ7lGU4j3CqjJD)
+- [*Análises Ecológicas no R* — capítulo 4 (introdução)](https://analises-ecologicas.com/cap4)
+- [Quadro resumo RStudio (em português)](https://www.rstudio.com/wp-content/uploads/2016/03/rstudio-IDE-cheatsheet-portuguese.pdf)
+- [R reference card](https://cran.r-project.org/doc/contrib/Short-refcard.pdf)
+- [R for beginners (Paradis)](https://cran.r-project.org/doc/contrib/Paradis-rdebuts_en.pdf)
+- [R for biologists](https://www.rforbiologists.org/)
+- [Mello & Peternelli — *Conhecendo o R*](https://www.locus.ufv.br/handle/123456789/13598)
+- [Curso completo de introdução ao R (em português)](https://livro.curso-r.com/)
+- [Faria — *Introdução à Linguagem R*](https://pedro-faria.netlify.app/pt/publication/book/introducao_linguagem_r/)
+- [Wickham et al. — *R para Ciência de Dados* (em português)](https://pt.r4ds.hadley.nz/)
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*

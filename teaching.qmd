@@ -47,6 +47,18 @@ in the jargon. New videos are released as the academic semester progresses.
 
 ## Graduate courses (UFMS)
 
+### Introduction to R
+
+Intensive graduate course (30 h, one-week format) for the [PPG in
+Ecology & Conservation](https://ppgec.ufms.br/) at UFMS. Covers R from
+scratch: syntax, RStudio, data import, `tidyverse` (`dplyr`, `tidyr`,
+`purrr`, `broom`), data visualization with `ggplot2`, simple linear
+models, basic programming, version control with `git`/GitHub, and
+reproducible reports with R Markdown / Quarto. Designed for students
+arriving at R for the first time.
+
+[Course site & materials →](teaching/intro-r/){.btn .btn-outline-primary}
+
 ### History and Philosophy of Science
 
 Seminar-style graduate course (45 h) for the [PPG in Ecology &
