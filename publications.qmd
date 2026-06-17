@@ -50,7 +50,7 @@ if (!is.na(updated)) {
 ```
 
 ::: {.callout-note appearance="minimal"}
-<u>Underline</u> = supervised student. **PROVETE, D.B.** in bold.
+<u>Underline</u> = supervised student.
 Icons: <i class="fa-solid fa-file-pdf"></i> PDF · <i class="ai ai-biorxiv"></i> bioRxiv preprint · <i class="ai ai-open-access"></i> other open-access preprint · <i class="ai ai-open-data"></i> open data · <i class="ai ai-doi"></i> DOI · <i class="fa-solid fa-database"></i> data repository · <i class="fa-solid fa-file-powerpoint"></i> slides · <i class="fa-solid fa-image"></i> poster · <i class="fa-solid fa-file-lines"></i> abstract · <i class="fa-solid fa-flask"></i> protocol.
 :::
 
@@ -547,17 +547,17 @@ cascade in a Neotropical frog. *Submitted to Integrative Zoology.*
 morphology of free-swimming anuran tadpoles from Brazil: a 14-year
 update. *Submitted to Biota Neotropica.*
 
+**PROVETE, D.B.**; Ganci, C.C.; Ortega, Z. 2026. Behavioural
+thermoregulation in a Neotropical frog is detectable only when physiological
+integrity allows movement. *In review in Behavioral Ecology and
+Sociobiology.* &nbsp;
+<a href="https://www.biorxiv.org/content/10.1101/2020.06.11.146613v1" title="Preprint on bioRxiv" aria-label="Preprint on bioRxiv"><i class="ai ai-biorxiv"></i></a>
+
 ## In preparation
 
 **PROVETE, D.B.**; Gonçalves, V.; Santana, D.J.; Costa-Pereira, R.;
 Ceron, K. 2026. The macroecological correlates of individual diet
 specialization. *To be submitted to Global Ecology and Biogeography.*
-
-Ganci, C.C.; Ortega, Z.; **PROVETE, D.B.** 2026. Behavioural
-thermoregulation in a Neotropical frog is detectable only when physiological
-integrity allows movement. *To be submitted to Behavioral Ecology and
-Sociobiology.* &nbsp;
-<a href="https://www.biorxiv.org/content/10.1101/2020.06.11.146613v1" title="Preprint on bioRxiv" aria-label="Preprint on bioRxiv"><i class="ai ai-biorxiv"></i></a>
 
 Severgnini, M.R.; **PROVETE, D.B.** 2026. The effect of urbanization and
 local environmental heterogeneity on phenotypic variability in a tropical
