@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Teaching – Biodiversity Synthesis Lab</title>
+<title>Análises Multidimensionais – Biodiversity Synthesis Lab</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,29 +26,29 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./assets/favicon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6b38416d90cdbb41281c8a2a0df0236b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-1732e9b120b8faec2f4b22e599a6250f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-6b38416d90cdbb41281c8a2a0df0236b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../assets/favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-listing/list.min.js"></script>
+<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-6b38416d90cdbb41281c8a2a0df0236b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-1732e9b120b8faec2f4b22e599a6250f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-6b38416d90cdbb41281c8a2a0df0236b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,6 +76,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-cronograma .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-order','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-cronograma'] = new List('listing-cronograma', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -84,13 +113,42 @@ ul.task-list li input[type="checkbox"] {
   .ai { vertical-align: -.05em; }
 </style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="Teaching – Biodiversity Synthesis Lab">
-<meta property="og:description" content="Lab of Diogo B. Provete at UFMS — community ecology, eco-evolutionary dynamics, freshwater metacommunities.">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="Análises Multidimensionais – Biodiversity Synthesis Lab">
+<meta property="og:description" content="Disciplina de pós-graduação — Mestrado em Biologia Animal, UFMS (45 h)">
 <meta property="og:site_name" content="Biodiversity Synthesis Lab">
-<meta name="twitter:title" content="Teaching – Biodiversity Synthesis Lab">
-<meta name="twitter:description" content="Lab of Diogo B. Provete at UFMS — community ecology, eco-evolutionary dynamics, freshwater metacommunities.">
+<meta name="twitter:title" content="Análises Multidimensionais – Biodiversity Synthesis Lab">
+<meta name="twitter:description" content="Disciplina de pós-graduação — Mestrado em Biologia Animal, UFMS (45 h)">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -263,11 +321,11 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo light-content">
-    <img src="./assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo dark-content">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo light-content">
+    <img src="../../assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Biodiversity Synthesis Lab</span>
     </a>
   </div>
@@ -278,39 +336,39 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html"> 
+    <a class="nav-link" href="../../research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publications.html"> 
+    <a class="nav-link" href="../../publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./people.html"> 
+    <a class="nav-link" href="../../people.html"> 
 <span class="menu-text">People</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cv.html"> 
+    <a class="nav-link" href="../../cv.html"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./teaching.html" aria-current="page"> 
+    <a class="nav-link" href="../../teaching.html"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./opportunities.html"> 
+    <a class="nav-link" href="../../opportunities.html"> 
 <span class="menu-text">Opportunities</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
+    <a class="nav-link" href="../../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./software.html"> 
+    <a class="nav-link" href="../../software.html"> 
 <span class="menu-text">Software</span></a>
   </li>  
   <li class="nav-item">
@@ -346,23 +404,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#undergraduate-courses-ufms" id="toc-undergraduate-courses-ufms" class="nav-link active" data-scroll-target="#undergraduate-courses-ufms">Undergraduate courses (UFMS)</a>
+  <li><a href="#ementa" id="toc-ementa" class="nav-link active" data-scroll-target="#ementa">Ementa</a></li>
+  <li><a href="#conteúdo-programático" id="toc-conteúdo-programático" class="nav-link" data-scroll-target="#conteúdo-programático">Conteúdo programático</a></li>
+  <li><a href="#objetivos" id="toc-objetivos" class="nav-link" data-scroll-target="#objetivos">Objetivos</a></li>
+  <li><a href="#cronograma" id="toc-cronograma" class="nav-link" data-scroll-target="#cronograma">Cronograma</a></li>
+  <li><a href="#pré-requisitos" id="toc-pré-requisitos" class="nav-link" data-scroll-target="#pré-requisitos">Pré-requisitos</a></li>
+  <li><a href="#avaliação" id="toc-avaliação" class="nav-link" data-scroll-target="#avaliação">Avaliação</a></li>
+  <li><a href="#bibliografia" id="toc-bibliografia" class="nav-link" data-scroll-target="#bibliografia">Bibliografia</a>
   <ul class="collapse">
-  <li><a href="#bioestatística-ciências-biológicas" id="toc-bioestatística-ciências-biológicas" class="nav-link" data-scroll-target="#bioestatística-ciências-biológicas">Bioestatística — Ciências Biológicas</a></li>
-  <li><a href="#urban-ecology-ciências-biológicas" id="toc-urban-ecology-ciências-biológicas" class="nav-link" data-scroll-target="#urban-ecology-ciências-biológicas">Urban Ecology — Ciências Biológicas</a></li>
+  <li><a href="#livros-principais" id="toc-livros-principais" class="nav-link" data-scroll-target="#livros-principais">Livros principais</a></li>
+  <li><a href="#complementares" id="toc-complementares" class="nav-link" data-scroll-target="#complementares">Complementares</a></li>
+  <li><a href="#recursos-online" id="toc-recursos-online" class="nav-link" data-scroll-target="#recursos-online">Recursos online</a></li>
   </ul></li>
-  <li><a href="#estatística-descomplicada-youtube-channel" id="toc-estatística-descomplicada-youtube-channel" class="nav-link" data-scroll-target="#estatística-descomplicada-youtube-channel">Estatística Descomplicada — YouTube channel</a></li>
-  <li><a href="#graduate-courses-ufms" id="toc-graduate-courses-ufms" class="nav-link" data-scroll-target="#graduate-courses-ufms">Graduate courses (UFMS)</a>
-  <ul class="collapse">
-  <li><a href="#multidimensional-analyses" id="toc-multidimensional-analyses" class="nav-link" data-scroll-target="#multidimensional-analyses">Multidimensional analyses</a></li>
-  <li><a href="#phylogenetic-comparative-methods" id="toc-phylogenetic-comparative-methods" class="nav-link" data-scroll-target="#phylogenetic-comparative-methods">Phylogenetic comparative methods</a></li>
-  </ul></li>
-  <li><a href="#past-courses-short-courses" id="toc-past-courses-short-courses" class="nav-link" data-scroll-target="#past-courses-short-courses">Past courses &amp; short-courses</a>
-  <ul class="collapse">
-  <li><a href="#mendeley-demo-universidade-federal-de-goiás" id="toc-mendeley-demo-universidade-federal-de-goiás" class="nav-link" data-scroll-target="#mendeley-demo-universidade-federal-de-goiás">2012 — Mendeley demo, Universidade Federal de Goiás</a></li>
-  <li><a href="#ecological-statistics-with-r" id="toc-ecological-statistics-with-r" class="nav-link" data-scroll-target="#ecological-statistics-with-r">2011 — Ecological statistics with R</a></li>
-  <li><a href="#sampling-techniques-for-vertebrates-pt" id="toc-sampling-techniques-for-vertebrates-pt" class="nav-link" data-scroll-target="#sampling-techniques-for-vertebrates-pt">2009 — Sampling techniques for vertebrates (PT)</a></li>
-  </ul></li>
+  <li><a href="#edições-anteriores" id="toc-edições-anteriores" class="nav-link" data-scroll-target="#edições-anteriores">Edições anteriores</a></li>
   </ul>
 </nav>
     </div>
@@ -372,7 +426,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Teaching</h1>
+<h1 class="title">Análises Multidimensionais</h1>
+<p class="subtitle lead">Disciplina de pós-graduação — Mestrado em Biologia Animal, UFMS (45 h)</p>
 </div>
 
 
@@ -389,78 +444,193 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="undergraduate-courses-ufms" class="level2">
-<h2 class="anchored" data-anchor-id="undergraduate-courses-ufms">Undergraduate courses (UFMS)</h2>
-<section id="bioestatística-ciências-biológicas" class="level3">
-<h3 class="anchored" data-anchor-id="bioestatística-ciências-biológicas">Bioestatística — Ciências Biológicas</h3>
-<p>Disciplina obrigatória de 68 h ministrada anualmente no INBio/UFMS, cobrindo estatística descritiva, delineamento amostral, distribuições de probabilidade, inferência via teste de hipóteses e modelos lineares (t, ANOVA, regressão, qui-quadrado).</p>
-<p><a href="teaching/bioestatistica/" class="btn btn-outline-primary">Course site &amp; materials →</a></p>
-</section>
-<section id="urban-ecology-ciências-biológicas" class="level3">
-<h3 class="anchored" data-anchor-id="urban-ecology-ciências-biológicas">Urban Ecology — Ciências Biológicas</h3>
-<p>Disciplina optativa de 51 h para alunos de graduação em Ciências Biológicas. Cobre biodiversidade urbana, fragmentação de hábitats, ilha de calor, respostas ecossistêmicas, invasões biológicas, desigualdade social e “luxury effect”, ambientes aquáticos urbanos, evolução contemporânea, e ciência cidadã (iNaturalist + R). Ofertada em 2019/2 e 2022/2.</p>
-<p><a href="teaching/ecologia-urbana/" class="btn btn-outline-primary">Course site &amp; materials →</a></p>
-</section>
-</section>
-<section id="estatística-descomplicada-youtube-channel" class="level2">
-<h2 class="anchored" data-anchor-id="estatística-descomplicada-youtube-channel">Estatística Descomplicada — YouTube channel</h2>
 <div class="callout callout-style-simple callout-tip no-icon">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<p><a href="https://www.youtube.com/@DiogoBProvete"><i class="fa-brands fa-youtube" aria-label="youtube"></i> <strong>youtube.com/<span class="citation" data-cites="DiogoBProvete">@DiogoBProvete</span></strong></a> · <em>Statistics for the life sciences, in plain Portuguese.</em></p>
+<p>Disciplina <strong>ANÁLISES MULTIDIMENSIONAIS</strong> (201521415, 45 h) do <a href="https://ppgba.ufms.br/">Mestrado em Biologia Animal</a> da UFMS. Esta página reúne os <strong>materiais públicos</strong> das edições anteriores — slides, scripts R com walkthroughs HTML, datasets e bibliografia. Para informações sobre a próxima oferta, <a href="mailto:diogo.provete@ufms.br">entre em contato</a>.</p>
 </div>
 </div>
 </div>
-<p>I run a YouTube channel — <strong>Estatística Descomplicada</strong> — with lessons on statistics aimed at biologists and other life-scientists. The content mirrors what I teach in graduate and undergraduate courses at UFMS: <strong>Generalized Linear (Mixed) Models</strong>, <strong>multivariate methods</strong>, study design, and the reproducible-analysis workflow in R.</p>
-<p>Topics covered include hypothesis testing, GLM/GLMM with appropriate error families, ordinations (PCA, NMDS, RDA, CCA), classification, and how to read statistical results in the ecological literature without getting lost in the jargon. New videos are released as the academic semester progresses.</p>
-<p><a href="https://www.youtube.com/@DiogoBProvete?sub_confirmation=1" class="btn btn-outline-primary">Subscribe to the channel →</a></p>
+<section id="ementa" class="level2">
+<h2 class="anchored" data-anchor-id="ementa">Ementa</h2>
+<p>Análises multidimensionais: técnicas de agrupamento, ordenação restrita e irrestrita, e análise de relações entre dois conjuntos de dados multidimensionais.</p>
 </section>
-<section id="graduate-courses-ufms" class="level2">
-<h2 class="anchored" data-anchor-id="graduate-courses-ufms">Graduate courses (UFMS)</h2>
-<section id="multidimensional-analyses" class="level3">
-<h3 class="anchored" data-anchor-id="multidimensional-analyses">Multidimensional analyses</h3>
-<p>Graduate course (45 h) for the <a href="https://ppgba.ufms.br">Mestrado em Biologia Animal</a> at UFMS, Campo Grande. Covers classification (hierarchical and k-means clustering, IndVal), unconstrained ordination (PCA, PCoA, nMDS, CA), constrained ordination (CCA, RDA, db-RDA, LDA), Mantel/Procrustes/PROTEST, and PERMANOVA — all hands-on in R with the <code>vegan</code>, <code>ade4</code> and <code>labdsv</code> packages.</p>
-<p><a href="teaching/multidimensionais/" class="btn btn-outline-primary">Course site &amp; materials →</a></p>
+<section id="conteúdo-programático" class="level2">
+<h2 class="anchored" data-anchor-id="conteúdo-programático">Conteúdo programático</h2>
+<ol type="1">
+<li><strong>Técnicas de classificação:</strong> parecença; análises hierárquicas e não-hierárquicas.</li>
+<li><strong>Técnicas de ordenação irrestrita:</strong> análise de componentes principais (PCA), análise de coordenadas principais (PCoA), escalonamento multidimensional não-métrico (nMDS), análise de correspondência (CA) e variações.</li>
+<li><strong>Análise de relações entre dois conjuntos de dados multidimensionais:</strong> análise de correspondência canônica (CCA), análise de redundância (RDA) e suas parciais, db-RDA, RDA de consenso, análise discriminante (LDA).</li>
+<li><strong>Análises canônicas simétricas:</strong> análise de co-inércia, teste de Mantel, Mantel parcial, Procrustes, PROTEST.</li>
+<li><strong>Análises de variância multidimensionais:</strong> PERMANOVA.</li>
+<li><strong>Outras:</strong> análise de espécies indicadoras (IndVal), análise de dispersão multidimensional entre grupos.</li>
+</ol>
 </section>
-<section id="phylogenetic-comparative-methods" class="level3">
-<h3 class="anchored" data-anchor-id="phylogenetic-comparative-methods">Phylogenetic comparative methods</h3>
-<p>Graduate course (45 h) for the <a href="https://ppgba.ufms.br">Mestrado em Biologia Animal</a> at UFMS, Campo Grande. Covers Brownian motion, PGLS, ancestral state reconstruction, phylogenetic signal, multi-regime OU models, and multivariate extensions — all hands-on in R. Open to graduate students from any line of research with basic familiarity with phylogenetic inference.</p>
-<p><a href="teaching/mfc/" class="btn btn-outline-primary">Course site &amp; materials →</a> <a href="https://coggle.it/diagram/WhbkkxE2BAAB0R0m" class="btn btn-outline-primary">Mind map summarising the methods →</a></p>
+<section id="objetivos" class="level2">
+<h2 class="anchored" data-anchor-id="objetivos">Objetivos</h2>
+<p>Ao final do curso, espera-se que o(a) aluno(a) seja capaz de <strong>identificar e aplicar métodos multidimensionais adequados</strong> para analisar dados multivariados comumente encontrados em estudos avançados de ecologia e evolução, bem como interpretar criticamente os resultados em linguagem ecológica.</p>
 </section>
+<section id="cronograma" class="level2">
+<h2 class="anchored" data-anchor-id="cronograma">Cronograma</h2>
+<div id="listing-cronograma" class="quarto-listing quarto-listing-container-table">
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+
+<th>
+Aula
+</th>
+
+<th>
+Tópico
+</th>
+
+<th>
+Conteúdo
+</th>
+
+</tr>
+</thead>
+<tbody class="list">
+
+<tr data-index="0" data-listing-file-modified-sort="1781727645147" data-listing-reading-time-sort="1" data-listing-word-count-sort="122" data-listing-title-sort="Aula 01 — Introdução à estatística multivariada" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-order">1</span>
+</td>
+<td>
+<a href="../../teaching/multidimensionais/aula-01-intro-multivariada/index.html" class="title listing-title">Aula 01 — Introdução à estatística multivariada</a>
+</td>
+<td>
+<span class="listing-description">Por que dados multivariados exigem ferramentas diferentes. Álgebra de matrizes essencial para o resto do curso: combinações lineares, autovalores e autovetores.</span>
+</td>
+
+</tr>
+
+<tr data-index="1" data-listing-file-modified-sort="1781727645148" data-listing-reading-time-sort="1" data-listing-word-count-sort="188" data-listing-title-sort="Aula 02 — Coeficientes de associação" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-order">2</span>
+</td>
+<td>
+<a href="../../teaching/multidimensionais/aula-02-coeficientes-associacao/index.html" class="title listing-title">Aula 02 — Coeficientes de associação</a>
+</td>
+<td>
+<span class="listing-description">Distância e similaridade entre objetos. Quando usar distância euclideana, Bray-Curtis, Jaccard, Mahalanobis. Propriedades métricas das matrizes de dissimilaridade.</span>
+</td>
+
+</tr>
+
+<tr data-index="2" data-listing-file-modified-sort="1781727645150" data-listing-reading-time-sort="1" data-listing-word-count-sort="165" data-listing-title-sort="Aula 03 — Agrupamento: cluster hierárquico, k-means e IndVal" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-order">3</span>
+</td>
+<td>
+<a href="../../teaching/multidimensionais/aula-03-agrupamento/index.html" class="title listing-title">Aula 03 — Agrupamento: cluster hierárquico, k-means e IndVal</a>
+</td>
+<td>
+<span class="listing-description">Métodos hierárquicos (UPGMA, single-linkage, complete-linkage, Ward) versus não-hierárquicos (k-means). Análise de espécies indicadoras (IndVal). Estabilidade de cluster via bootstrap (pvclust).</span>
+</td>
+
+</tr>
+
+<tr data-index="3" data-listing-file-modified-sort="1781727645151" data-listing-reading-time-sort="1" data-listing-word-count-sort="136" data-listing-title-sort="Aula 04 — Ordenações irrestritas: PCA, PCoA, nMDS e CA" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-order">4</span>
+</td>
+<td>
+<a href="../../teaching/multidimensionais/aula-04-ordenacoes-irrestritas/index.html" class="title listing-title">Aula 04 — Ordenações irrestritas: PCA, PCoA, nMDS e CA</a>
+</td>
+<td>
+<span class="listing-description">Reduzir a dimensionalidade preservando estrutura. PCA (variáveis contínuas), PCoA (qualquer distância), nMDS (não-paramétrica, robusta), CA (dados de frequência).</span>
+</td>
+
+</tr>
+
+<tr data-index="4" data-listing-file-modified-sort="1781727645152" data-listing-reading-time-sort="1" data-listing-word-count-sort="114" data-listing-title-sort="Aula 05 — Ordenações restritas: CCA, RDA, pRDA, db-RDA, LDA" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-order">5</span>
+</td>
+<td>
+<a href="../../teaching/multidimensionais/aula-05-ordenacoes-restritas/index.html" class="title listing-title">Aula 05 — Ordenações restritas: CCA, RDA, pRDA, db-RDA, LDA</a>
+</td>
+<td>
+<span class="listing-description">Ordenação canônica: explica composição em função de variáveis ambientais. CCA, RDA, RDA parcial, db-RDA (RDA baseada em distância), e Análise Discriminante Linear (LDA).</span>
+</td>
+
+</tr>
+
+<tr data-index="5" data-listing-file-modified-sort="1781727645153" data-listing-reading-time-sort="1" data-listing-word-count-sort="101" data-listing-title-sort="Aula 06 — Regressão de matrizes, Mantel, PROCRUSTES e (PER)MANOVA" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-order">6</span>
+</td>
+<td>
+<a href="../../teaching/multidimensionais/aula-06-matrizes-mantel-manova/index.html" class="title listing-title">Aula 06 — Regressão de matrizes, Mantel, PROCRUSTES e (PER)MANOVA</a>
+</td>
+<td>
+<span class="listing-description">Comparação entre matrizes de distância: teste de Mantel e Mantel parcial. Comparação de configurações multivariadas: Procrustes/PROTEST. Inferência multivariada robusta: PERMANOVA.</span>
+</td>
+
+</tr>
+
+</tbody>
+</table>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
 </section>
-<section id="past-courses-short-courses" class="level2">
-<h2 class="anchored" data-anchor-id="past-courses-short-courses">Past courses &amp; short-courses</h2>
-<section id="mendeley-demo-universidade-federal-de-goiás" class="level3">
-<h3 class="anchored" data-anchor-id="mendeley-demo-universidade-federal-de-goiás">2012 — Mendeley demo, Universidade Federal de Goiás</h3>
-<p><a href="http://www.slideshare.net/provete/mendeley-presentation">Slides with screenshots and tutorials</a></p>
-</section>
-<section id="ecological-statistics-with-r" class="level3">
-<h3 class="anchored" data-anchor-id="ecological-statistics-with-r">2011 — Ecological statistics with R</h3>
-<p><em>Tópicos em Biologia Animal — Estatística aplicada à ecologia usando o R.</em> A two-week graduate course in Animal Biology at <a href="http://www.ibilce.unesp.br/">UNESP</a> (São Paulo State University), in collaboration with <a href="http://thiagocalvesouza.wixsite.com/ecoffun">Thiago Gonçalves-Souza</a> and <a href="http://fernandoecologia.wixsite.com/fernandorodrigues">Fernando R. Silva</a>. We covered Generalized Linear Models, the main multivariate methods, and other ecological tools, using R as the analysis platform.</p>
+<section id="pré-requisitos" class="level2">
+<h2 class="anchored" data-anchor-id="pré-requisitos">Pré-requisitos</h2>
 <ul>
-<li><a href="https://www.sugarsync.com/pf/D9712667_69058108_487278">Class slides</a></li>
-<li><a href="http://cran.r-project.org/doc/contrib/Provete-Estatistica_aplicada.pdf">Course book (CRAN-hosted)</a></li>
-<li><a href="https://diogoprovete.weebly.com/uploads/1/7/3/6/17367099/data.zip">Datasets for exercises</a></li>
-<li><a href="https://diogoprovete.weebly.com/uploads/1/7/3/6/17367099/script_completo_apostila_estatistica_aplicada_a_ecologia_usando_o_r.r">R scripts</a></li>
+<li>Familiaridade básica com R (leitura de dados, funções, objetos). Recomendo <a href="https://pt.r4ds.hadley.nz/">Wickham et al.&nbsp;<em>R para Ciência de Dados</em></a> como ponto de partida;</li>
+<li>Bioestatística aplicada à ecologia (modelos lineares, teste de hipóteses).</li>
 </ul>
 </section>
-<section id="sampling-techniques-for-vertebrates-pt" class="level3">
-<h3 class="anchored" data-anchor-id="sampling-techniques-for-vertebrates-pt">2009 — Sampling techniques for vertebrates (PT)</h3>
-<p>Short course (4 h) for undergraduates at UNESP, given as a pre-meeting course at the <em>4º Simpósio de Biologia Animal</em>. Ricardo Brassaloti and I covered field sampling techniques for the four classes of vertebrates.</p>
-<p><a href="http://slidesha.re/eiu9Fx">Class slides</a></p>
-<p><strong>Recommended bibliography</strong></p>
+<section id="avaliação" class="level2">
+<h2 class="anchored" data-anchor-id="avaliação">Avaliação</h2>
 <ul>
-<li>Colwell, R.K. &amp; Coddington, J.A. 1994. Estimating terrestrial biodiversity through extrapolation. <em>Phil. Trans. R. Soc. B</em> 345:101–118. <a href="http://viceroy.eeb.uconn.edu/RKCPublications/ColwellAndCoddington1994_hr.pdf">PDF</a></li>
-<li>Dias, S.C. 2004. Planejando estudos de diversidade e riqueza: uma abordagem para estudantes de graduação. <em>Acta Scientiarum</em> 26:373–9. <a href="http://periodicos.uem.br/ojs/index.php/ActaSciBiolSci/article/view/1511/945">PDF</a></li>
-<li>Gotelli, N. &amp; Colwell, R.K. 2001. Quantifying biodiversity: procedures and pitfalls in the measurement and comparison of species richness. <em>Ecology Letters</em> 4:379–391. <a href="http://viceroy.eeb.uconn.edu/RKCPublications/GotelliAndColwell2001.pdf">PDF</a></li>
-<li>Sutherland, W.J. (Ed.) 2006. <em>Ecological census techniques: a handbook.</em> 2nd ed.&nbsp;Cambridge University Press.</li>
+<li><strong>Prova teórica</strong> ao final da disciplina;</li>
+<li><strong>Trabalho de análise</strong> — relatório com análise de um conjunto de dados multivariado escolhido pelo(a) aluno(a), incluindo interpretação ecológica dos resultados (entrega posterior à prova).</li>
+</ul>
+</section>
+<section id="bibliografia" class="level2">
+<h2 class="anchored" data-anchor-id="bibliografia">Bibliografia</h2>
+<section id="livros-principais" class="level3">
+<h3 class="anchored" data-anchor-id="livros-principais">Livros principais</h3>
+<ul>
+<li>Borcard, D.; Gillet, F. &amp; Legendre, P. 2018. <em>Numerical Ecology with R.</em> 2ª ed.&nbsp;Cham: Springer. — <strong>livro-texto principal</strong>.</li>
+<li>Legendre, P. &amp; Legendre, L.F.J. 2012. <em>Numerical Ecology.</em> 3ª ed. Amsterdam: Elsevier. — referência teórica de fundo.</li>
+<li>McCune, B. &amp; Grace, J.B. 2002. <em>Analysis of Ecological Communities.</em> Gleneden Beach: MjM Software Design.</li>
+</ul>
+</section>
+<section id="complementares" class="level3">
+<h3 class="anchored" data-anchor-id="complementares">Complementares</h3>
+<ul>
+<li>Gotelli, N.J. &amp; Ellison, A.M. 2011. <em>Princípios de estatística em ecologia.</em> Porto Alegre: Artmed.</li>
+<li>Jongman, R.H.G.; ter Braak, C.J.F. &amp; van Tongeren, O.F.R. 1995. <em>Data analysis in community and landscape ecology.</em> Cambridge University Press.</li>
+<li>Manly, B.J.F. 2008. <em>Métodos estatísticos multivariados.</em> 3ª ed. Porto Alegre: Artmed.</li>
+<li>Šmilauer, P. &amp; Lepš, J. 2014. <em>Multivariate Analysis of Ecological Data using CANOCO 5.</em> 2ª ed.&nbsp;Cambridge University Press. <a href="https://doi.org/10.1017/CBO9781139627061">doi:10.1017/CBO9781139627061</a></li>
+<li>Thioulouse, J.; Dray, S.; Dufour, A.B.; Siberchicot, A.; Jombart, T. &amp; Pavoine, S. 2018. <em>Multivariate Analysis of Ecological Data with ade4.</em> New York: Springer.</li>
+</ul>
+</section>
+<section id="recursos-online" class="level3">
+<h3 class="anchored" data-anchor-id="recursos-online">Recursos online</h3>
+<ul>
+<li><a href="https://analises-ecologicas.com">Análises ecológicas no R — da Silva, Gonçalves-Souza, Paterno, Provete, Vancine</a></li>
+<li><a href="http://ecology.msu.montana.edu/labdsv/R/">Página do pacote <code>labdsv</code> (Dave Roberts) com várias aulas</a></li>
+<li><a href="https://github.com/JoeyBernhardt/NumericalEcology">Numerical Ecology with R — código do livro</a></li>
+</ul>
+</section>
+</section>
+<section id="edições-anteriores" class="level2">
+<h2 class="anchored" data-anchor-id="edições-anteriores">Edições anteriores</h2>
+<ul>
+<li><strong>2025/2</strong> — UFMS, modalidade semestral (45 h). Plano de ensino oficial: 201521415.</li>
+<li><strong>2023/1</strong> — UFMS, oferecida como <em>Ecologia Quantitativa</em> (código antigo 20011043). <strong>Materiais desta edição estão arquivados abaixo.</strong></li>
 </ul>
 
 
-</section>
+
 </section>
 
 </main> <!-- /main -->
@@ -900,5 +1070,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

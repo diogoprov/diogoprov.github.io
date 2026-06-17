@@ -47,6 +47,17 @@ in the jargon. New videos are released as the academic semester progresses.
 
 ## Graduate courses (UFMS)
 
+### Multidimensional analyses
+
+Graduate course (45 h) for the [Mestrado em Biologia
+Animal](https://ppgba.ufms.br) at UFMS, Campo Grande. Covers
+classification (hierarchical and k-means clustering, IndVal),
+unconstrained ordination (PCA, PCoA, nMDS, CA), constrained ordination
+(CCA, RDA, db-RDA, LDA), Mantel/Procrustes/PROTEST, and PERMANOVA —
+all hands-on in R with the `vegan`, `ade4` and `labdsv` packages.
+
+[Course site & materials →](teaching/multidimensionais/){.btn .btn-outline-primary}
+
 ### Phylogenetic comparative methods
 
 Graduate course (45 h) for the [Mestrado em Biologia
