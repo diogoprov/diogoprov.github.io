@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Teaching – Biodiversity Synthesis Lab</title>
+<title>Introdução à Linguagem R – Biodiversity Synthesis Lab</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,29 +26,29 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./assets/favicon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6b38416d90cdbb41281c8a2a0df0236b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-1732e9b120b8faec2f4b22e599a6250f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-6b38416d90cdbb41281c8a2a0df0236b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../assets/favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-listing/list.min.js"></script>
+<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-6b38416d90cdbb41281c8a2a0df0236b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-1732e9b120b8faec2f4b22e599a6250f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-6b38416d90cdbb41281c8a2a0df0236b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,6 +76,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-cronograma .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-order','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-cronograma'] = new List('listing-cronograma', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -84,13 +113,42 @@ ul.task-list li input[type="checkbox"] {
   .ai { vertical-align: -.05em; }
 </style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="Teaching – Biodiversity Synthesis Lab">
-<meta property="og:description" content="Lab of Diogo B. Provete at UFMS — community ecology, eco-evolutionary dynamics, freshwater metacommunities.">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="Introdução à Linguagem R – Biodiversity Synthesis Lab">
+<meta property="og:description" content="Disciplina de pós-graduação — PPG em Ecologia e Conservação, UFMS (30 h, intensiva)">
 <meta property="og:site_name" content="Biodiversity Synthesis Lab">
-<meta name="twitter:title" content="Teaching – Biodiversity Synthesis Lab">
-<meta name="twitter:description" content="Lab of Diogo B. Provete at UFMS — community ecology, eco-evolutionary dynamics, freshwater metacommunities.">
+<meta name="twitter:title" content="Introdução à Linguagem R – Biodiversity Synthesis Lab">
+<meta name="twitter:description" content="Disciplina de pós-graduação — PPG em Ecologia e Conservação, UFMS (30 h, intensiva)">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -263,11 +321,11 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo light-content">
-    <img src="./assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo dark-content">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo light-content">
+    <img src="../../assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Biodiversity Synthesis Lab</span>
     </a>
   </div>
@@ -278,39 +336,39 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html"> 
+    <a class="nav-link" href="../../research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publications.html"> 
+    <a class="nav-link" href="../../publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./people.html"> 
+    <a class="nav-link" href="../../people.html"> 
 <span class="menu-text">People</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cv.html"> 
+    <a class="nav-link" href="../../cv.html"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./teaching.html" aria-current="page"> 
+    <a class="nav-link" href="../../teaching.html"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./opportunities.html"> 
+    <a class="nav-link" href="../../opportunities.html"> 
 <span class="menu-text">Opportunities</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
+    <a class="nav-link" href="../../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./software.html"> 
+    <a class="nav-link" href="../../software.html"> 
 <span class="menu-text">Software</span></a>
   </li>  
   <li class="nav-item">
@@ -346,25 +404,18 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#undergraduate-courses-ufms" id="toc-undergraduate-courses-ufms" class="nav-link active" data-scroll-target="#undergraduate-courses-ufms">Undergraduate courses (UFMS)</a>
+  <li><a href="#ementa" id="toc-ementa" class="nav-link active" data-scroll-target="#ementa">Ementa</a></li>
+  <li><a href="#objetivos" id="toc-objetivos" class="nav-link" data-scroll-target="#objetivos">Objetivos</a></li>
+  <li><a href="#cronograma" id="toc-cronograma" class="nav-link" data-scroll-target="#cronograma">Cronograma</a></li>
+  <li><a href="#pré-requisitos" id="toc-pré-requisitos" class="nav-link" data-scroll-target="#pré-requisitos">Pré-requisitos</a></li>
+  <li><a href="#metodologia-e-avaliação" id="toc-metodologia-e-avaliação" class="nav-link" data-scroll-target="#metodologia-e-avaliação">Metodologia e avaliação</a></li>
+  <li><a href="#bibliografia" id="toc-bibliografia" class="nav-link" data-scroll-target="#bibliografia">Bibliografia</a>
   <ul class="collapse">
-  <li><a href="#bioestatística-ciências-biológicas" id="toc-bioestatística-ciências-biológicas" class="nav-link" data-scroll-target="#bioestatística-ciências-biológicas">Bioestatística — Ciências Biológicas</a></li>
-  <li><a href="#urban-ecology-ciências-biológicas" id="toc-urban-ecology-ciências-biológicas" class="nav-link" data-scroll-target="#urban-ecology-ciências-biológicas">Urban Ecology — Ciências Biológicas</a></li>
+  <li><a href="#livros-principais-acesso-aberto" id="toc-livros-principais-acesso-aberto" class="nav-link" data-scroll-target="#livros-principais-acesso-aberto">Livros principais (acesso aberto)</a></li>
+  <li><a href="#livros-complementares" id="toc-livros-complementares" class="nav-link" data-scroll-target="#livros-complementares">Livros complementares</a></li>
+  <li><a href="#recursos-online-complementares" id="toc-recursos-online-complementares" class="nav-link" data-scroll-target="#recursos-online-complementares">Recursos online complementares</a></li>
   </ul></li>
-  <li><a href="#estatística-descomplicada-youtube-channel" id="toc-estatística-descomplicada-youtube-channel" class="nav-link" data-scroll-target="#estatística-descomplicada-youtube-channel">Estatística Descomplicada — YouTube channel</a></li>
-  <li><a href="#graduate-courses-ufms" id="toc-graduate-courses-ufms" class="nav-link" data-scroll-target="#graduate-courses-ufms">Graduate courses (UFMS)</a>
-  <ul class="collapse">
-  <li><a href="#introduction-to-r" id="toc-introduction-to-r" class="nav-link" data-scroll-target="#introduction-to-r">Introduction to R</a></li>
-  <li><a href="#history-and-philosophy-of-science" id="toc-history-and-philosophy-of-science" class="nav-link" data-scroll-target="#history-and-philosophy-of-science">History and Philosophy of Science</a></li>
-  <li><a href="#multidimensional-analyses" id="toc-multidimensional-analyses" class="nav-link" data-scroll-target="#multidimensional-analyses">Multidimensional analyses</a></li>
-  <li><a href="#phylogenetic-comparative-methods" id="toc-phylogenetic-comparative-methods" class="nav-link" data-scroll-target="#phylogenetic-comparative-methods">Phylogenetic comparative methods</a></li>
-  </ul></li>
-  <li><a href="#past-courses-short-courses" id="toc-past-courses-short-courses" class="nav-link" data-scroll-target="#past-courses-short-courses">Past courses &amp; short-courses</a>
-  <ul class="collapse">
-  <li><a href="#mendeley-demo-universidade-federal-de-goiás" id="toc-mendeley-demo-universidade-federal-de-goiás" class="nav-link" data-scroll-target="#mendeley-demo-universidade-federal-de-goiás">2012 — Mendeley demo, Universidade Federal de Goiás</a></li>
-  <li><a href="#ecological-statistics-with-r" id="toc-ecological-statistics-with-r" class="nav-link" data-scroll-target="#ecological-statistics-with-r">2011 — Ecological statistics with R</a></li>
-  <li><a href="#sampling-techniques-for-vertebrates-pt" id="toc-sampling-techniques-for-vertebrates-pt" class="nav-link" data-scroll-target="#sampling-techniques-for-vertebrates-pt">2009 — Sampling techniques for vertebrates (PT)</a></li>
-  </ul></li>
+  <li><a href="#edições-anteriores" id="toc-edições-anteriores" class="nav-link" data-scroll-target="#edições-anteriores">Edições anteriores</a></li>
   </ul>
 </nav>
     </div>
@@ -374,7 +425,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Teaching</h1>
+<h1 class="title">Introdução à Linguagem R</h1>
+<p class="subtitle lead">Disciplina de pós-graduação — PPG em Ecologia e Conservação, UFMS (30 h, intensiva)</p>
 </div>
 
 
@@ -391,88 +443,217 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="undergraduate-courses-ufms" class="level2">
-<h2 class="anchored" data-anchor-id="undergraduate-courses-ufms">Undergraduate courses (UFMS)</h2>
-<section id="bioestatística-ciências-biológicas" class="level3">
-<h3 class="anchored" data-anchor-id="bioestatística-ciências-biológicas">Bioestatística — Ciências Biológicas</h3>
-<p>Disciplina obrigatória de 68 h ministrada anualmente no INBio/UFMS, cobrindo estatística descritiva, delineamento amostral, distribuições de probabilidade, inferência via teste de hipóteses e modelos lineares (t, ANOVA, regressão, qui-quadrado).</p>
-<p><a href="teaching/bioestatistica/" class="btn btn-outline-primary">Course site &amp; materials →</a></p>
-</section>
-<section id="urban-ecology-ciências-biológicas" class="level3">
-<h3 class="anchored" data-anchor-id="urban-ecology-ciências-biológicas">Urban Ecology — Ciências Biológicas</h3>
-<p>Disciplina optativa de 51 h para alunos de graduação em Ciências Biológicas. Cobre biodiversidade urbana, fragmentação de hábitats, ilha de calor, respostas ecossistêmicas, invasões biológicas, desigualdade social e “luxury effect”, ambientes aquáticos urbanos, evolução contemporânea, e ciência cidadã (iNaturalist + R). Ofertada em 2019/2 e 2022/2.</p>
-<p><a href="teaching/ecologia-urbana/" class="btn btn-outline-primary">Course site &amp; materials →</a></p>
-</section>
-</section>
-<section id="estatística-descomplicada-youtube-channel" class="level2">
-<h2 class="anchored" data-anchor-id="estatística-descomplicada-youtube-channel">Estatística Descomplicada — YouTube channel</h2>
 <div class="callout callout-style-simple callout-tip no-icon">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<p><a href="https://www.youtube.com/@DiogoBProvete"><i class="fa-brands fa-youtube" aria-label="youtube"></i> <strong>youtube.com/<span class="citation" data-cites="DiogoBProvete">@DiogoBProvete</span></strong></a> · <em>Statistics for the life sciences, in plain Portuguese.</em></p>
+<p>Disciplina <strong>INTRODUÇÃO À LINGUAGEM R</strong> (300451417, 30 h) do <a href="https://ppgec.ufms.br/">Programa de Pós-Graduação em Ecologia e Conservação</a> da UFMS, oferecida no formato <strong>intensivo</strong> (uma semana). Esta página reúne os <strong>materiais públicos</strong> do curso — slides, scripts R, datasets e recursos online. Para informações sobre a próxima oferta, <a href="mailto:diogo.provete@ufms.br">entre em contato</a>.</p>
 </div>
 </div>
 </div>
-<p>I run a YouTube channel — <strong>Estatística Descomplicada</strong> — with lessons on statistics aimed at biologists and other life-scientists. The content mirrors what I teach in graduate and undergraduate courses at UFMS: <strong>Generalized Linear (Mixed) Models</strong>, <strong>multivariate methods</strong>, study design, and the reproducible-analysis workflow in R.</p>
-<p>Topics covered include hypothesis testing, GLM/GLMM with appropriate error families, ordinations (PCA, NMDS, RDA, CCA), classification, and how to read statistical results in the ecological literature without getting lost in the jargon. New videos are released as the academic semester progresses.</p>
-<p><a href="https://www.youtube.com/@DiogoBProvete?sub_confirmation=1" class="btn btn-outline-primary">Subscribe to the channel →</a></p>
+<section id="ementa" class="level2">
+<h2 class="anchored" data-anchor-id="ementa">Ementa</h2>
+<p>Introdução à linguagem de programação R: sintaxe e lógica. Técnicas de visualização e manuseio de dados com o pacote <code>tidyverse</code>. Introdução a algoritmos. Rudimentos de programação: controle de fluxo. Como melhorar o próprio código utilizando grandes modelos de linguagem (LLMs, como ChatGPT). Ferramentas de reprodutibilidade. Boas práticas em documentação, compartilhamento e apresentação de análises. Rudimentos de modelos lineares generalizados. Introdução às ferramentas de reprodutibilidade em pesquisa (Markdown e Quarto). Introdução ao controle de versão (git e GitHub).</p>
 </section>
-<section id="graduate-courses-ufms" class="level2">
-<h2 class="anchored" data-anchor-id="graduate-courses-ufms">Graduate courses (UFMS)</h2>
-<section id="introduction-to-r" class="level3">
-<h3 class="anchored" data-anchor-id="introduction-to-r">Introduction to R</h3>
-<p>Intensive graduate course (30 h, one-week format) for the <a href="https://ppgec.ufms.br/">PPG in Ecology &amp; Conservation</a> at UFMS. Covers R from scratch: syntax, RStudio, data import, <code>tidyverse</code> (<code>dplyr</code>, <code>tidyr</code>, <code>purrr</code>, <code>broom</code>), data visualization with <code>ggplot2</code>, simple linear models, basic programming, version control with <code>git</code>/GitHub, and reproducible reports with R Markdown / Quarto. Designed for students arriving at R for the first time.</p>
-<p><a href="teaching/intro-r/" class="btn btn-outline-primary">Course site &amp; materials →</a></p>
+<section id="objetivos" class="level2">
+<h2 class="anchored" data-anchor-id="objetivos">Objetivos</h2>
+<p>Apresentar a linguagem R como uma plataforma para realização e documentação de análises estatísticas, incluindo manuseio e exploração de dados comumente utilizados em ecologia. Ao fim da disciplina o(a) aluno(a) terá familiaridade e independência com a linguagem R e estará preparado(a) para cursar disciplinas específicas em estatística — por exemplo, modelos lineares e <a href="../multidimensionais/">métodos multivariados</a> — bem como para implementar análises reproduzíveis em seu próprio trabalho.</p>
 </section>
-<section id="history-and-philosophy-of-science" class="level3">
-<h3 class="anchored" data-anchor-id="history-and-philosophy-of-science">History and Philosophy of Science</h3>
-<p>Seminar-style graduate course (45 h) for the <a href="https://ppgec.ufms.br/">PPG in Ecology &amp; Conservation</a> at UFMS. Open to graduate students from any line of research. Covers the structure of scientific theories, induction vs deduction, Popper’s falsifiability, Kuhn’s revolutions, Lakatos’s research programmes, the nature of causality and explanation, holism vs reductionism in biology, and how science differs from pseudoscience. Reading-based discussion sessions led by student pairs.</p>
-<p><a href="teaching/hfc/" class="btn btn-outline-primary">Course site &amp; materials →</a></p>
+<section id="cronograma" class="level2">
+<h2 class="anchored" data-anchor-id="cronograma">Cronograma</h2>
+<div id="listing-cronograma" class="quarto-listing quarto-listing-container-table">
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+
+<th>
+Aula
+</th>
+
+<th>
+Tópico
+</th>
+
+<th>
+Conteúdo
+</th>
+
+</tr>
+</thead>
+<tbody class="list">
+
+<tr data-index="0" data-listing-file-modified-sort="1781729866050" data-listing-reading-time-sort="1" data-listing-word-count-sort="129" data-listing-title-sort="Aula 01 — Apresentação e introdução ao R" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-order">1</span>
+</td>
+<td>
+<a href="../../teaching/intro-r/aula-01-intro-r/index.html" class="title listing-title">Aula 01 — Apresentação e introdução ao R</a>
+</td>
+<td>
+<span class="listing-description">Histórico da linguagem R, instalação, RStudio, importação de dados, tipos de objetos, pacotes. Fundamentos sobre os quais o resto do curso é construído.</span>
+</td>
+
+</tr>
+
+<tr data-index="1" data-listing-file-modified-sort="1781729866051" data-listing-reading-time-sort="1" data-listing-word-count-sort="157" data-listing-title-sort="Aula 02 — Curadoria de dados e boas práticas" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-order">2</span>
+</td>
+<td>
+<a href="../../teaching/intro-r/aula-02-curadoria-dados/index.html" class="title listing-title">Aula 02 — Curadoria de dados e boas práticas</a>
+</td>
+<td>
+<span class="listing-description">Como organizar planilhas e diretórios de projeto, nomenclatura de arquivos, plano de gerenciamento de dados. Princípios FAIR e por que importam para reprodutibilidade.</span>
+</td>
+
+</tr>
+
+<tr data-index="2" data-listing-file-modified-sort="1781729866052" data-listing-reading-time-sort="1" data-listing-word-count-sort="138" data-listing-title-sort="Aula 03 — Controle de versão com git e GitHub" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-order">3</span>
+</td>
+<td>
+<a href="../../teaching/intro-r/aula-03-git-github/index.html" class="title listing-title">Aula 03 — Controle de versão com git e GitHub</a>
+</td>
+<td>
+<span class="listing-description">Por que controle de versão é fundamental para pesquisa reprodutível. Conceitos básicos de git (commit, branch, push, pull). Integração git/GitHub com RStudio.</span>
+</td>
+
+</tr>
+
+<tr data-index="3" data-listing-file-modified-sort="1781729866054" data-listing-reading-time-sort="1" data-listing-word-count-sort="140" data-listing-title-sort="Aula 04 — Manuseio de dados com o tidyverse" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-order">4</span>
+</td>
+<td>
+<a href="../../teaching/intro-r/aula-04-tidyverse/index.html" class="title listing-title">Aula 04 — Manuseio de dados com o tidyverse</a>
+</td>
+<td>
+<span class="listing-description">Filosofia tidy. Os pacotes principais (<code>dplyr</code>, <code>tidyr</code>, <code>purrr</code>, <code>broom</code>, <code>forcats</code>, <code>stringr</code>). Pipe nativa (<code>|&gt;</code>) vs <code>magrittr</code> (<code>%&gt;%</code>). Verbs principais de manipulação de dados.</span>
+</td>
+
+</tr>
+
+<tr data-index="4" data-listing-file-modified-sort="1781729866055" data-listing-reading-time-sort="1" data-listing-word-count-sort="114" data-listing-title-sort="Aula 05 — Visualização de dados com ggplot2" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-order">5</span>
+</td>
+<td>
+<a href="../../teaching/intro-r/aula-05-ggplot2/index.html" class="title listing-title">Aula 05 — Visualização de dados com ggplot2</a>
+</td>
+<td>
+<span class="listing-description">A gramática de gráficos de Wilkinson e a implementação no <code>ggplot2</code>. Camadas, geoms, aesthetics, scales, themes, facets. Princípios de visualização honesta.</span>
+</td>
+
+</tr>
+
+<tr data-index="5" data-listing-file-modified-sort="1781729866057" data-listing-reading-time-sort="1" data-listing-word-count-sort="132" data-listing-title-sort="Aula 06 — Análises com modelos lineares simples" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-order">6</span>
+</td>
+<td>
+<a href="../../teaching/intro-r/aula-06-modelos-lineares/index.html" class="title listing-title">Aula 06 — Análises com modelos lineares simples</a>
+</td>
+<td>
+<span class="listing-description">Teste de hipótese e regressão linear no R. Sintaxe <code>formula</code>. Diagnóstico de resíduos: detecção de outliers, normalidade, heterocedasticidade. Quando linear é apropriado.</span>
+</td>
+
+</tr>
+
+<tr data-index="6" data-listing-file-modified-sort="1781729866059" data-listing-reading-time-sort="1" data-listing-word-count-sort="93" data-listing-title-sort="Aula 07 — Rudimentos de programação" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-order">7</span>
+</td>
+<td>
+<a href="../../teaching/intro-r/aula-07-programacao/index.html" class="title listing-title">Aula 07 — Rudimentos de programação</a>
+</td>
+<td>
+<span class="listing-description">Como escrever funções no R. Controle de fluxo (<code>if</code>, <code>for</code>, <code>while</code>). Programação funcional com <code>purrr::map</code> e <code>purrr::pmap</code>. Estratégias para evitar copiar-e-colar.</span>
+</td>
+
+</tr>
+
+<tr data-index="7" data-listing-file-modified-sort="1781729866061" data-listing-reading-time-sort="1" data-listing-word-count-sort="123" data-listing-title-sort="Aula 08 — Reprodutibilidade com Markdown e Quarto" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-order">8</span>
+</td>
+<td>
+<a href="../../teaching/intro-r/aula-08-markdown-quarto/index.html" class="title listing-title">Aula 08 — Reprodutibilidade com Markdown e Quarto</a>
+</td>
+<td>
+<span class="listing-description">Documentos dinâmicos como prática-padrão em pesquisa: análise + texto + gráficos em um único arquivo. <code>R Markdown</code>, <code>knitr</code> e <code>Quarto</code>. Saídas em HTML, PDF, Word, slides.</span>
+</td>
+
+</tr>
+
+</tbody>
+</table>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
 </section>
-<section id="multidimensional-analyses" class="level3">
-<h3 class="anchored" data-anchor-id="multidimensional-analyses">Multidimensional analyses</h3>
-<p>Graduate course (45 h) for the <a href="https://ppgba.ufms.br">Mestrado em Biologia Animal</a> at UFMS, Campo Grande. Covers classification (hierarchical and k-means clustering, IndVal), unconstrained ordination (PCA, PCoA, nMDS, CA), constrained ordination (CCA, RDA, db-RDA, LDA), Mantel/Procrustes/PROTEST, and PERMANOVA — all hands-on in R with the <code>vegan</code>, <code>ade4</code> and <code>labdsv</code> packages.</p>
-<p><a href="teaching/multidimensionais/" class="btn btn-outline-primary">Course site &amp; materials →</a></p>
+<section id="pré-requisitos" class="level2">
+<h2 class="anchored" data-anchor-id="pré-requisitos">Pré-requisitos</h2>
+<p>Nenhum. A disciplina é projetada para quem está chegando ao R, e cobre do conceito mais básico (o que é um objeto, o que é um pacote) até ferramentas de fluxo de trabalho profissional (git, Quarto).</p>
 </section>
-<section id="phylogenetic-comparative-methods" class="level3">
-<h3 class="anchored" data-anchor-id="phylogenetic-comparative-methods">Phylogenetic comparative methods</h3>
-<p>Graduate course (45 h) for the <a href="https://ppgba.ufms.br">Mestrado em Biologia Animal</a> at UFMS, Campo Grande. Covers Brownian motion, PGLS, ancestral state reconstruction, phylogenetic signal, multi-regime OU models, and multivariate extensions — all hands-on in R. Open to graduate students from any line of research with basic familiarity with phylogenetic inference.</p>
-<p><a href="teaching/mfc/" class="btn btn-outline-primary">Course site &amp; materials →</a> <a href="https://coggle.it/diagram/WhbkkxE2BAAB0R0m" class="btn btn-outline-primary">Mind map summarising the methods →</a></p>
+<section id="metodologia-e-avaliação" class="level2">
+<h2 class="anchored" data-anchor-id="metodologia-e-avaliação">Metodologia e avaliação</h2>
+<p>A disciplina combina <strong>aulas expositivas</strong> e <strong>exercícios práticos</strong> feitos em sala. A avaliação é um <strong>trabalho final</strong> apresentando uma análise de dados à escolha do(a) aluno(a), em formato Markdown ou Quarto, contendo:</p>
+<ol type="1">
+<li>pergunta de pesquisa;</li>
+<li>estratégia de análise;</li>
+<li>manipulação de dados;</li>
+<li>visualização gráfica;</li>
+<li>breve descrição e interpretação dos resultados.</li>
+</ol>
+<p>O trabalho é o exercício prático completo do fluxo aprendido na disciplina — da curadoria do dataset à entrega de um documento dinâmico reproduzível.</p>
 </section>
-</section>
-<section id="past-courses-short-courses" class="level2">
-<h2 class="anchored" data-anchor-id="past-courses-short-courses">Past courses &amp; short-courses</h2>
-<section id="mendeley-demo-universidade-federal-de-goiás" class="level3">
-<h3 class="anchored" data-anchor-id="mendeley-demo-universidade-federal-de-goiás">2012 — Mendeley demo, Universidade Federal de Goiás</h3>
-<p><a href="http://www.slideshare.net/provete/mendeley-presentation">Slides with screenshots and tutorials</a></p>
-</section>
-<section id="ecological-statistics-with-r" class="level3">
-<h3 class="anchored" data-anchor-id="ecological-statistics-with-r">2011 — Ecological statistics with R</h3>
-<p><em>Tópicos em Biologia Animal — Estatística aplicada à ecologia usando o R.</em> A two-week graduate course in Animal Biology at <a href="http://www.ibilce.unesp.br/">UNESP</a> (São Paulo State University), in collaboration with <a href="http://thiagocalvesouza.wixsite.com/ecoffun">Thiago Gonçalves-Souza</a> and <a href="http://fernandoecologia.wixsite.com/fernandorodrigues">Fernando R. Silva</a>. We covered Generalized Linear Models, the main multivariate methods, and other ecological tools, using R as the analysis platform.</p>
+<section id="bibliografia" class="level2">
+<h2 class="anchored" data-anchor-id="bibliografia">Bibliografia</h2>
+<section id="livros-principais-acesso-aberto" class="level3">
+<h3 class="anchored" data-anchor-id="livros-principais-acesso-aberto">Livros principais (acesso aberto)</h3>
 <ul>
-<li><a href="https://www.sugarsync.com/pf/D9712667_69058108_487278">Class slides</a></li>
-<li><a href="http://cran.r-project.org/doc/contrib/Provete-Estatistica_aplicada.pdf">Course book (CRAN-hosted)</a></li>
-<li><a href="https://diogoprovete.weebly.com/uploads/1/7/3/6/17367099/data.zip">Datasets for exercises</a></li>
-<li><a href="https://diogoprovete.weebly.com/uploads/1/7/3/6/17367099/script_completo_apostila_estatistica_aplicada_a_ecologia_usando_o_r.r">R scripts</a></li>
+<li><a href="https://pt.r4ds.hadley.nz/">Wickham, H.; Çetinkaya-Rundel, M. &amp; Grolemund, G. <em>R para Ciência de Dados</em> (2ª ed.)</a> — <strong>livro-texto principal</strong>.</li>
+<li><a href="https://www.locus.ufv.br/handle/123456789/13598">Mello, M.P. &amp; Peternelli, L.A. 2013. <em>Conhecendo o R: uma visão mais que estatística.</em> Editora UFV</a>.</li>
+<li><a href="https://pedro-faria.netlify.app/pt/publication/book/introducao_linguagem_r/">Faria, P.D. <em>Introdução à Linguagem R: seus fundamentos e sua prática.</em></a></li>
+<li><a href="https://analises-ecologicas.com">da Silva, F.R.; Gonçalves-Souza, T.; Paterno, G.; <strong>PROVETE, D.B.</strong> &amp; Vancine, M.A.&nbsp;2022. <em>Análises ecológicas no R.</em> NUPEEA</a>.</li>
+<li><a href="https://cran.r-project.org/doc/contrib/Landeiro-Introducao.pdf">Landeiro, V.L. 2011. <em>Introdução ao uso do programa R.</em> (CRAN)</a>.</li>
 </ul>
 </section>
-<section id="sampling-techniques-for-vertebrates-pt" class="level3">
-<h3 class="anchored" data-anchor-id="sampling-techniques-for-vertebrates-pt">2009 — Sampling techniques for vertebrates (PT)</h3>
-<p>Short course (4 h) for undergraduates at UNESP, given as a pre-meeting course at the <em>4º Simpósio de Biologia Animal</em>. Ricardo Brassaloti and I covered field sampling techniques for the four classes of vertebrates.</p>
-<p><a href="http://slidesha.re/eiu9Fx">Class slides</a></p>
-<p><strong>Recommended bibliography</strong></p>
+<section id="livros-complementares" class="level3">
+<h3 class="anchored" data-anchor-id="livros-complementares">Livros complementares</h3>
 <ul>
-<li>Colwell, R.K. &amp; Coddington, J.A. 1994. Estimating terrestrial biodiversity through extrapolation. <em>Phil. Trans. R. Soc. B</em> 345:101–118. <a href="http://viceroy.eeb.uconn.edu/RKCPublications/ColwellAndCoddington1994_hr.pdf">PDF</a></li>
-<li>Dias, S.C. 2004. Planejando estudos de diversidade e riqueza: uma abordagem para estudantes de graduação. <em>Acta Scientiarum</em> 26:373–9. <a href="http://periodicos.uem.br/ojs/index.php/ActaSciBiolSci/article/view/1511/945">PDF</a></li>
-<li>Gotelli, N. &amp; Colwell, R.K. 2001. Quantifying biodiversity: procedures and pitfalls in the measurement and comparison of species richness. <em>Ecology Letters</em> 4:379–391. <a href="http://viceroy.eeb.uconn.edu/RKCPublications/GotelliAndColwell2001.pdf">PDF</a></li>
-<li>Sutherland, W.J. (Ed.) 2006. <em>Ecological census techniques: a handbook.</em> 2nd ed.&nbsp;Cambridge University Press.</li>
+<li>Adler, J. 2010. <em>R in a nutshell: a desktop quick reference.</em> O’Reilly.</li>
+<li>Beckerman, A.P. &amp; Petchey, O.L. 2012. <em>Getting started with R: an introduction for biologists.</em> Oxford University Press.</li>
+<li>Crawley, M.J. 2012. <em>The R-Book.</em> 2ª ed.&nbsp;Wiley.</li>
+<li>Gandrud, C. 2013. <em>Reproducible Research with R and RStudio.</em> CRC Press.</li>
+<li>Gotelli, N.J. &amp; Ellison, A.M. 2015. <em>Princípios de estatística em ecologia.</em> Porto Alegre: Artmed.</li>
+<li>Loeliger, J. &amp; McCullough, M. 2012. <em>Version Control with Git: Powerful tools and techniques for collaborative software development.</em> O’Reilly.</li>
+<li>Zuur, A.; Ieno, E.N. &amp; Meesters, E. 2009. <em>A Beginner’s Guide to R.</em> Springer.</li>
+</ul>
+</section>
+<section id="recursos-online-complementares" class="level3">
+<h3 class="anchored" data-anchor-id="recursos-online-complementares">Recursos online complementares</h3>
+<ul>
+<li><a href="https://quarto.org/">Quarto — site oficial e tutoriais</a></li>
+<li><a href="https://happygitwithr.com/">Happy Git with R (Jenny Bryan)</a> — git
+<ul>
+<li>R + GitHub para pesquisadores.</li>
+</ul></li>
+<li><a href="https://swcarpentry.github.io/r-novice-gapminder/">The Carpentries — R for Reproducible Scientific Analysis</a></li>
+<li><a href="https://adv-r.hadley.nz/">Advanced R (Hadley Wickham)</a> — para depois do curso.</li>
+</ul>
+</section>
+</section>
+<section id="edições-anteriores" class="level2">
+<h2 class="anchored" data-anchor-id="edições-anteriores">Edições anteriores</h2>
+<ul>
+<li><strong>2026/1</strong> — UFMS, PPG em Ecologia e Conservação. Edição intensiva (9–13 de março de 2026). Materiais desta edição estão arquivados abaixo.</li>
 </ul>
 
 
-</section>
+
 </section>
 
 </main> <!-- /main -->
@@ -912,5 +1093,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

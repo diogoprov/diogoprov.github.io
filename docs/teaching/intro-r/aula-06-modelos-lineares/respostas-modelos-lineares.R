@@ -1,0 +1,169 @@
+library(ecodados)
+library(ggpubr)
+library(lme4)
+library(emmeans)
+library(easystats)
+library(ggforce)
+library(sjPlot)
+
+#cap7 <- read.csv("Cap7_exercicio1.csv", header = TRUE)
+
+#1
+head(Cap7_exercicio1);str(Cap7_exercicio1)
+Cap7_exercicio1$Sexo <- as.factor(Cap7_exercicio1$Sexo)
+
+meu_modelo <- lm(Tamanho~Sexo, data = Cap7_exercicio1)
+summary(meu_modelo)
+
+#2
+head(Cap7_exercicio2)
+Cap7_exercicio2$Predadores <- as.factor(Cap7_exercicio2$Predadores)
+Cap7_exercicio2$Planta <- as.factor(Cap7_exercicio2$Planta)
+
+ggpaired(Cap7_exercicio2, x = "Predadores", y = "Polinizadores",
+         color = "Predadores", line.color = "gray", linewidth = 0.8, 
+         palette = c("darkorange", "cyan4"), width = 0.5, 
+         point.size = 4, xlab = "Predadores", 
+         ylab = "Número de polinizadores visitando a planta",
+         legend = "none") 
+
+mode2 <- lmer(Polinizadores~Predadores+(1|Planta), data = Cap7_exercicio2)
+summary(mode2)
+emmeans(mode2, specs = pairwise ~ Predadores)$contrasts
+
+#3
+
+ggplot(Cap7_exercicio3, aes(Fragmentos, Filhotes))+
+       geom_point()+
+       geom_smooth(method = "lm")
+
+mode3 <- lm(Filhotes~Fragmentos, data = Cap7_exercicio3)
+
+par(mfrow=c(2,2))
+plot(mode3)
+par(mfrow=c(1,1))
+check_model(mode3)
+
+summary(mode3)
+
+#4
+# Carregar a planilha com os dados
+exercicio_4 <- ecodados::Cap7_exercicio4
+
+## Gráfico
+ggplot(data = exercicio_4, aes(x = Area_ilhas, y = Riqueza)) + 
+       labs(x = "Tamanho das ilhas (km2)", y = "Riqueza de espécies de lagartos") +
+       geom_point(size = 6, shape = 21, fill = "darkorange", alpha = 0.7) +
+       theme(legend.position = "none") +
+       geom_smooth(method = lm, se = TRUE, color = "black") +
+       theme_bw(base_size = 16)
+
+## Análise Regressão Simples
+modelo_regressao <- lm(Riqueza ~ Area_ilhas, data = exercicio_4)
+
+## Análise das premissas
+check_model(modelo_regressao)
+
+summary(modelo_regressao)
+
+#6
+# Carregar a planilha com os dados
+exercicio_6 <- ecodados::Cap7_exercicio6
+
+## Gráfico
+ggplot(data = exercicio_6, 
+       aes(x = Local, y = Peso)) + 
+       geom_boxplot(width = .5, show.legend = FALSE) +
+       geom_jitter(size = 4, width = 0.1) +
+       geom_text(x = 1, y = 17.5, label = "a", color = "black", size = 5) +
+       geom_text(x = 2, y = 18.5, label = "b", color = "black", size = 5) +
+       geom_text(x = 3, y = 16.5, label = "c", color = "black", size = 5) +
+       ylim(16, 18.5) +
+       theme_bw(base_size = 16) +
+       labs(x = "Local", y = "Peso (g)")
+
+## Análise anova um fator
+modelo6 <- lm(Peso ~ Local, data = exercicio_6)
+
+par(mfrow=c(2,2))
+plot(modelo6)
+par(mfrow=c(1,1))
+check_model(modelo6)
+
+summary(modelo6)
+
+#7
+# Carregar a planilha com os dados
+exercicio_7 <- ecodados::Cap7_exercicio7
+
+## Gráfico
+ggplot(data = exercicio_7, 
+       aes(y = Abundancia, x = Domacea, color = Idade)) + 
+       geom_boxplot() +
+       stat_summary(fun = mean, geom ="point", aes(group = Idade, x = Domacea), 
+                    color = "black", position = position_dodge(0.7), size  = 4) +
+       geom_link(aes(x = 0.85, y = 27, xend = 1.8, yend = 24), color = "darkorange", 
+                 lwd  = 1.3, linetype = 2) + 
+       geom_link(aes(x = 1.17, y = 26.5, xend = 2.15, yend = 10), color = "cyan4", 
+                 lwd  = 1.3, linetype = 2) + 
+       labs(x = "Condição da domácea", 
+            y = "Abundância de formigas") +
+       theme_bw(base_size = 16)
+
+
+## Análise anova dois fatores
+modelo_aov_2 <- lm(Abundancia ~ Domacea * Idade, data = exercicio_7)
+
+par(mfrow=c(2,2))
+plot(modelo_aov_2)
+par(mfrow=c(1,1))
+check_model(modelo_aov_2)
+
+summary(modelo_aov_2)
+
+#8
+# Carregar a planilha com os dados
+exercicio_8 <- ecodados::Cap7_exercicio8
+
+## Gráfico
+ggplot(data = exercicio_8, aes(x = Idade, y = Parasitas)) + 
+       labs(x = "Idade das aves", y = "Número de parasitas") +
+       geom_point(size = 6, shape = 19, alpha = 0.7) +
+       theme(legend.position = "none") +
+       geom_smooth(method = lm, se = TRUE, color = "black") +
+       theme_bw(base_size = 16)
+
+## Análise ancova
+modelo_ancova <- lm(Parasitas ~ Femeas * Idade, data = exercicio_8)
+
+## Verificar as premissas
+check_model(modelo_ancova)
+
+summary(modelo_ancova)
+
+MuMIn::std.coef(modelo_ancova, partial.sd = TRUE)
+
+#9
+
+# Carregar a planilha com os dados
+exercicio_9 <- ecodados::Cap7_exercicio9
+
+## Gráfico
+ggplot(data = exercicio_9, aes(x = Predadores, y = Riqueza)) + 
+       geom_boxplot(color = "black", show.legend = FALSE, alpha = 0.4) +
+       geom_jitter(size = 4, width = 0.1) +
+       labs(x = "Predadores", y = "Riqueza de macroinvertebrados") +
+       theme_bw(base_size = 16)
+
+## Análise anova em blocos
+model_bloco <- lmer(Riqueza ~ Predadores + (1|Lago), data = exercicio_9)
+
+par(mfrow=c(2,2))
+plot(model_bloco)
+par(mfrow=c(1,1))
+check_model(model_bloco)
+
+model_parameters(model_bloco, standardize = "refit")
+plot(parameters(model_bloco, standardize = "refit"))
+
+tab_model(model_bloco)
