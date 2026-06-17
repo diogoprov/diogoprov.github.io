@@ -62,19 +62,19 @@ Icons: <i class="fa-solid fa-file-pdf"></i> PDF · <i class="ai ai-biorxiv"></i>
 
 Rebouças, R.; Moroti, M.T.; Carvalho, T.; Martins, M.R.; Toledo, L.F.;
 **PROVETE, D.B.** 2026. Environmental and geomorphological drivers of frog
-diversity on islands worldwide. *Ecography.* &nbsp;
+diversity on islands worldwide. *Ecography* 2026:e07818. &nbsp;
 <a href="https://nsojournals.onlinelibrary.wiley.com/doi/epdf/10.1002/ecog.07818" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 ### 2025
 
 Ramalho, Q.; de Souza, J.C.; **PROVETE, D.B.** 2025. Irregular funding cycles
 in Brazilian science pose a barrier to biodiversity conservation and global
-leadership. *Perspectives in Ecology and Conservation.* &nbsp;
+leadership. *Perspectives in Ecology and Conservation* 23(4):231–235. &nbsp;
 <a href="https://www.sciencedirect.com/science/article/pii/S2530064425000422" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 Menezes, L.B.C.; Severgnini, M.R.; Pezzuti, T.L.; Garey, M.V.;
 **PROVETE, D.B.** 2025. The tadpole of *Chiasmocleis altomontana* (Anura:
-Microhylidae). *PeerJ.* <a href="https://peerj.com/articles/19220/" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
+Microhylidae). *PeerJ* 13:e19220. <a href="https://peerj.com/articles/19220/" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 Fiorillo, B.F.; Faggioni, G.; **PROVETE, D.B.** 2025. The utility of an index
 of biotic integrity for predicting terrestrial frog species diversity in a
@@ -83,15 +83,26 @@ tropical forest. *Studies on Neotropical Fauna and Environment* 61(1):36–45. &
 
 Soares, H.K.L.; Barboza, R.R.D.; Feijó, A.; **PROVETE, D.B.**; Alves, R.R.N.
 2025. Worldwide patterns of wild mammal trade are driven by ecological traits
-and evolutionary relationships. *Ethnobiology and Conservation.* &nbsp;
+and evolutionary relationships. *Ethnobiology and Conservation* 14:25. &nbsp;
 <a href="https://ethnobioconservation.com/ebc/article/view/1067" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 ### 2024
 
 Severgnini, M.R.; Oliveira, M.M.; Valério, L.M.; **PROVETE, D.B.** 2024.
-Temporal dynamics of frog species richness and composition in a peri-urban
-environment. *Ecology and Evolution* 14(11):e70628. &nbsp;
+Temporal dynamics of species richness and composition in a peri-urban
+tropical frog community in central Brazil. *Ecology and Evolution* 14(1):e70628. &nbsp;
 <a href="https://doi.org/10.1002/ece3.70628" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
+
+[Editorial] Jenkins, G.B.; Bosso, L.; Muth, A.; Nazareno, A.G.;
+**PROVETE, D.B.** 2024. The same, but different: introducing a new chapter
+at *Journal of Biogeography*. *Journal of Biogeography* 51:1825–1826. &nbsp;
+<a href="https://doi.org/10.1111/jbi.14965" title="DOI: 10.1111/jbi.14965" aria-label="DOI"><i class="ai ai-doi"></i> 10.1111/jbi.14965</a>
+
+[Commentary] **PROVETE, D.B.**; Moreno, S.; D'Bastiani, E.;
+Santiago-Rosario, L.Y.; Tumber-Dávila, S.J. 2024. We are stronger
+together: building community to face barriers for Latin American and
+underrepresented ecologists. *Bulletin of the Ecological Society of
+America* 105(4):e02180.
 
 Moroti, M.T.; Skeels, A.; da Silva, F.R.; **PROVETE, D.B.** 2024. Climate
 interacts with diversification rate in determining species richness and
@@ -121,6 +132,12 @@ code. *Ecology and Evolution* 13(5):e9961. &nbsp;
 in South America: present state and future prospects. *Austral Ecology* 49(1):e13457. &nbsp;
 <a href="https://doi.org/10.1111/aec.13457" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
+[Editorial] Williams, J.W.; Taylor, A.; Tolley, K.A.; **PROVETE, D.B.**
+(...) Zizka, A. 2023. Shifts to open access with high article processing
+charges hinder research equity and careers. *Journal of Biogeography*
+50:1485–1489. &nbsp;
+<a href="https://doi.org/10.1111/jbi.14697" title="DOI: 10.1111/jbi.14697" aria-label="DOI"><i class="ai ai-doi"></i> 10.1111/jbi.14697</a>
+
 Acero-Murcia, A.C.; Severgnini, M.R.; Fischer, E.A.; **PROVETE, D.B.** 2023.
 An evolutionary ecomorphological perspective on the assembly of a Neotropical
 bat metacommunity. *Journal of Mammalian Evolution.* &nbsp;
@@ -135,7 +152,7 @@ in a seasonal environment. *Journal of Insect Conservation.* &nbsp;
 
 Kloh, J.S.; Figueredo, C.C.; **PROVETE, D.B.**; Eterovick, P.C. 2023. Taste
 for pollen comes in different shapes: consumption by tadpoles from three
-ecomorphotypes. *Journal of Zoology.* &nbsp;
+ecomorphotypes. *Journal of Zoology* 320(1):42–52. &nbsp;
 <a href="https://zslpublications.onlinelibrary.wiley.com/doi/10.1111/jzo.13051" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 Helpern, B. (...) **PROVETE, D.B.** (...) Yongflesh, C. 2023. Priorities for
@@ -143,9 +160,9 @@ synthesis in ecology and environmental science. *Ecosphere* 14(1):e4342. &nbsp;
 <a href="https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecs2.4342" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 Bovo, R.; Simon, M.; **PROVETE, D.B.**; Lyra, M.L.; Navas, C.; Andrade, D.
-2023. Altitudinal gradients drive intraspecific physiological variation in
-tropical amphibians and alter species vulnerability to climate change.
-*Integrative Organismal Biology.* &nbsp;
+2023. Beyond Janzen's hypothesis: how amphibians that climb tropical
+mountains respond to climate variation. *Integrative Organismal Biology*
+5(1):obad009. &nbsp;
 <a href="https://academic.oup.com/iob/advance-article/doi/10.1093/iob/obad009/7084019" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 ### 2022
@@ -162,11 +179,15 @@ Santana, D.J. 2022. Prey availability and interaction rewiring drive the
 spatial and seasonal structure of a predator-prey metaweb. *Ecology* 103(8):e3716. &nbsp;
 <a href="https://doi.org/10.1002/ecy.3716" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
+[Commentary] Jenkins, G.B.; **PROVETE, D.B.**; Harris, A.J. 2022.
+Expanding nature notes? A space for ecological observations, new species,
+and species records. *Ecology and Evolution* 12:e9215.
+
 ### 2021
 
 Ganci, C.C.; **PROVETE, D.B.**; Püttker, T.; Lindermayer, D.; Almeida-Gomes, M.
 2021. High species turnover shapes anuran community composition in ponds
-along an urban-rural gradient. *Urban Ecosystems.* &nbsp;
+along an urban-rural gradient. *Urban Ecosystems* 25:633–642. &nbsp;
 <a href="https://link.springer.com/article/10.1007/s11252-021-01174-8" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 Gomes-Mello, F.; **PROVETE, D.B.**; Heino, J.; da Silva, F.R. 2021.
@@ -176,9 +197,9 @@ studies of metacommunity dynamics useful? *Basic and Applied Ecology* 56:85–96
 
 Franco-Belussi, L.\*; **PROVETE, D.B.\***; Leão, T.R.F.; Siqueira, M.S.;
 Valverde, B.S.L.; Martins, B.O.; de Oliveira, C.; Fernandes, C.E.S. 2021.
-Hematological correlates of body condition in a wild frog population, with a
+Hematological parameters of a Neotropical wild frog population, with a
 phylogenetic perspective on blood cell composition in Anura. *Current
-Zoology.* ^\*equal contributions^ &nbsp;
+Zoology* 68(3):361–369. ^\*equal contributions^ &nbsp;
 <a href="https://academic.oup.com/cz/advance-article/doi/10.1093/cz/zoab059/6326800" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 **PROVETE, D.B.**; Garey, M.V.; Picheli, K.O.; Mello, C.M.; Gonçalves, D.S.;
@@ -189,7 +210,7 @@ Herpetology.* &nbsp;
 
 Oliveira, C.; Campos, I.; **PROVETE, D.B.**; Garnieri, M.; Cardozo, S. 2021.
 Defensive behavior and caudal autotomy rate in *Coleodactylus meridionalis*
-(Squamata: Sphaerodactylidae). *Journal of Natural History* 52. &nbsp;
+(Squamata: Sphaerodactylidae). *Journal of Natural History* 54:2209–2218. &nbsp;
 <a href="https://figshare.com/articles/dataset/Data_and_description_of_analysis_of_the_paper_Defensive_behavior_and_caudal_autotomy_rate_in_Coleodactylus_meridionalis_Squamata_Sphaerodactylidae_/5592412" title="Data" aria-label="Data"><i class="ai ai-open-data"></i></a>
 
 Moroti, M.T.; Soares, P.T.; Pedrozo, M.; **PROVETE, D.B.**; Santana, D.J.
@@ -208,7 +229,7 @@ Martins, B.O.; Franco-Belussi, F.; Siqueira, M.S.; Fernandes, C.E;
 Mello, F.N.A.; Bender, A.; Martínez-Blancas, A.; Vaz, M.C.;
 **PROVETE, D.B.** 2021. Human dimensions: the Latin America and the Caribbean
 chapter of ESA — embracing our diversity during adverse times. *Bulletin of
-the Ecological Society of America.* &nbsp;
+the Ecological Society of America* 102(3):e01883. &nbsp;
 <a href="https://esajournals.onlinelibrary.wiley.com/doi/10.1002/bes2.1883" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 Benicio, R.; **PROVETE, D.B.**; Lyra, M.L.; Heino, J.; Haddad, C.F.B.;
@@ -220,7 +241,7 @@ regions. *Journal of Biogeography* 48(9):2211–2225. &nbsp;
 Valente-Neto, F.; Roque, F.O.; Pauliquevis, C.F.; de Oliveira, A.K.M.;
 **PROVETE, D.B.**; Szabo, J.K.; Souza, F.L. 2021. Loss of cultural and
 functional diversity associated with birds across the urbanization gradient
-in a tropical city. *Frontiers in Ecology and Evolution.* &nbsp;
+in a tropical city. *Frontiers in Ecology and Evolution* 9:615797. &nbsp;
 <a href="https://www.frontiersin.org/articles/10.3389/fevo.2021.615797/abstract" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 **PROVETE, D.B.** 2021. Challenges and strategies to teach history and
@@ -236,7 +257,7 @@ de séries temporais em herpetologia. *Herpetologia Brasileira* 9(3):70–83. &n
 Alves, R.R.N.; Borges, A.K.M.; Barboza, R.R.D.; Souto, W.M.S.;
 Gonçalves-Souza, T.; **PROVETE, D.B.**; Albuquerque, U.P. 2020. A global
 analysis of the evolutionary drivers of wild mammals use in traditional
-medicine. *Mammal Review.* &nbsp;
+medicine. *Mammal Review* 50. &nbsp;
 <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/mam.12233" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 Franco-Belussi, L.; **PROVETE, D.B.**; Borges, R.E.; Oliveira, C.;
@@ -254,17 +275,17 @@ ahenea* (Anura: Hylidae). *South American Journal of Herpetology* 17(1):1–16. 
 Almeida-Gomes, M.; Valente-Neto, F.; Pacheco, E.; Ganci, C.; Leibold, M.A.;
 Melo, A.S.; **PROVETE, D.B.** 2020. How does the landscape affect
 metacommunity structure? A quantitative review in lentic environments.
-*Current Landscape Ecology Reports.* &nbsp;
+*Current Landscape Ecology Reports* 5(2):1–8. &nbsp;
 <a href="https://diogoprovete.weebly.com/uploads/1/7/3/6/17367099/almeida-gomer_et_al._2020.pdf" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 Tonini, J.\*; **PROVETE, D.B.\***; Maciel, N.; Morais, A.R.; Goute, S.;
 Toledo, F.; Pyron, R.A. 2020. Ecomorphological escape from constrained
-acoustic allometry in frogs. *Ecology and Evolution* 10. ^\*equal contributions^ &nbsp;
+acoustic allometry in frogs. *Ecology and Evolution* 10:3686–3695. ^\*equal contributions^ &nbsp;
 <a href="https://onlinelibrary.wiley.com/doi/10.1002/ece3.6155" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 Ceron, K.; Santana, D.J.; Lucas, E.M.; Zocche, J.J.; **PROVETE, D.B.** 2020.
 Microclimatic variables influence the temporal dynamics of an anuran
-metacommunity in a non-stationary way. *Ecology and Evolution* 10. &nbsp;
+metacommunity in a non-stationary way. *Ecology and Evolution* 10:4630–4639. &nbsp;
 <a href="https://onlinelibrary.wiley.com/doi/10.1002/ece3.6217" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 ### 2019
@@ -462,7 +483,7 @@ do Jordão, Serra da Mantiqueira, Southeastern Brazil. *Zootaxa* 2327:65–68. &
 
 Acero-Murcia, A.C.; **PROVETE, D.B.**; Fischer, E. 2023.
 [Morcegos da Serra da Bodoquena](https://repositorio.ufms.br/handle/123456789/5678).
-Editora UFMS, Campo Grande.
+Editora UFMS, Campo Grande. 30 p. [in Portuguese].
 
 da Silva, F.R.; Gonçalves-Souza, T.; Paterno, G.; **PROVETE, D.B.**;
 Vancine, M.A. 2022. *Análises ecológicas no R.* Recife: NUPEEA.
@@ -479,7 +500,7 @@ Springer, Berlin.
 Severgnini, M.R.; Ganci, C.; Souza, F.L.; Almeida-Gomes, M.; Angeoleto, F.;
 **PROVETE, D.B.** 2025. Ecological dynamics of frogs in tropical cities:
 uncovering bias using a systematic literature review. In: Angeoleto, F. (Ed.)
-*Ecology of Tropical Cities.* Springer. &nbsp;
+*Ecology of Tropical Cities,* pp. 265–290. Springer. &nbsp;
 <a href="https://doi.org/10.1007/978-3-031-70867-1" title="DOI: 10.1007/978-3-031-70867-1" aria-label="DOI"><i class="ai ai-doi"></i> 10.1007/978-3-031-70867-1</a>
 
 ### 2020
