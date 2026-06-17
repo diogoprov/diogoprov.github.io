@@ -385,7 +385,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#features" id="toc-features" class="nav-link" data-scroll-target="#features">Features</a></li>
   <li><a href="#why-coda-stereo" id="toc-why-coda-stereo" class="nav-link" data-scroll-target="#why-coda-stereo">Why CoDa Stereo</a></li>
-  <li><a href="#install-and-run" id="toc-install-and-run" class="nav-link" data-scroll-target="#install-and-run">Install and run</a></li>
+  <li><a href="#use-it-now-no-install" id="toc-use-it-now-no-install" class="nav-link" data-scroll-target="#use-it-now-no-install">Use it now (no install)</a></li>
+  <li><a href="#run-locally-optional" id="toc-run-locally-optional" class="nav-link" data-scroll-target="#run-locally-optional">Run locally (optional)</a></li>
   <li><a href="#citation" id="toc-citation" class="nav-link" data-scroll-target="#citation">Citation</a></li>
   <li><a href="#issues-feedback-and-contributions" id="toc-issues-feedback-and-contributions" class="nav-link" data-scroll-target="#issues-feedback-and-contributions">Issues, feedback, and contributions</a></li>
   </ul></li>
@@ -425,7 +426,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="callout-body-container">
 <p><strong>Compositional Data Analysis for Stereological and Histomorphometric Data</strong></p>
-<p><a href="https://github.com/diogoprov/CoDaStereo"><i class="fa-brands fa-github" aria-label="github"></i> GitHub repository</a> · <a href="https://github.com/diogoprov/CoDaStereo/releases"><i class="fa-solid fa-tag" aria-label="tag"></i> v2.0.0 (Apr 2026)</a> · <a href="https://github.com/diogoprov/CoDaStereo/blob/main/LICENSE"><i class="fa-solid fa-scale-balanced" aria-label="scale-balanced"></i> MIT License</a></p>
+<p><a href="https://019dde61-4363-e3fa-b788-13ddfa456c0b.share.connect.posit.cloud" class="btn btn-primary"><i class="fa-solid fa-arrow-up-right-from-square" aria-label="arrow-up-right-from-square"></i> <strong>Launch the live app →</strong></a> &nbsp; <a href="https://github.com/diogoprov/CoDaStereo" class="btn btn-outline-secondary"><i class="fa-brands fa-github" aria-label="github"></i> GitHub repository</a> &nbsp; <a href="https://github.com/diogoprov/CoDaStereo/releases" class="btn btn-outline-secondary"><i class="fa-solid fa-tag" aria-label="tag"></i> v2.0.0 (Apr 2026)</a></p>
+<p><em>Free, browser-based — no installation required. Hosted on Posit Connect Cloud · MIT License.</em></p>
 </div>
 </div>
 </div>
@@ -476,13 +478,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="why-coda-stereo">Why CoDa Stereo</h3>
 <p>Stereological datasets are routinely analysed as if cell-fraction or tissue-fraction percentages were independent variables — they’re not. The <strong>unit-sum constraint</strong> induces spurious correlations and false significance in standard MANOVA. CoDa Stereo handles the geometry correctly throughout, without requiring users to write log-ratio transforms by hand.</p>
 </section>
-<section id="install-and-run" class="level3">
-<h3 class="anchored" data-anchor-id="install-and-run">Install and run</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Run locally</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("devtools")</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"diogoprov/CoDaStereo"</span>)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>CoDaStereo<span class="sc">::</span><span class="fu">run_app</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>A deployment on <a href="https://connect.posit.cloud/">Posit Connect Cloud</a> (free tier) is also supported — see the <a href="https://github.com/diogoprov/CoDaStereo">README</a> for step-by-step instructions.</p>
+<section id="use-it-now-no-install" class="level3">
+<h3 class="anchored" data-anchor-id="use-it-now-no-install">Use it now (no install)</h3>
+<p>The recommended way to use CoDa Stereo is to <strong>open it directly in your browser</strong> — the app is hosted on <a href="https://connect.posit.cloud/">Posit Connect Cloud</a> (free tier), so there’s nothing to install:</p>
+<p><a href="https://019dde61-4363-e3fa-b788-13ddfa456c0b.share.connect.posit.cloud" class="btn btn-primary"><i class="fa-solid fa-arrow-up-right-from-square" aria-label="arrow-up-right-from-square"></i> <strong>019dde61-4363-e3fa-b788-13ddfa456c0b.share.connect.posit.cloud</strong></a></p>
+</section>
+<section id="run-locally-optional" class="level3">
+<h3 class="anchored" data-anchor-id="run-locally-optional">Run locally (optional)</h3>
+<p>If you’d rather run the app on your own machine — useful for sensitive data, offline work, or customisation — install from GitHub:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("devtools")</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"diogoprov/CoDaStereo"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>CoDaStereo<span class="sc">::</span><span class="fu">run_app</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>See the <a href="https://github.com/diogoprov/CoDaStereo">README</a> for full deployment notes (including how to re-deploy to your own Posit Connect Cloud account).</p>
 </section>
 <section id="citation" class="level3">
 <h3 class="anchored" data-anchor-id="citation">Citation</h3>

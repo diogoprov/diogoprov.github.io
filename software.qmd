@@ -9,9 +9,12 @@ toc: true
 ::: {.callout-tip icon=false appearance="minimal"}
 **Compositional Data Analysis for Stereological and Histomorphometric Data**
 
-[{{< fa brands github >}} GitHub repository](https://github.com/diogoprov/CoDaStereo) ·
-[{{< fa solid tag >}} v2.0.0 (Apr 2026)](https://github.com/diogoprov/CoDaStereo/releases) ·
-[{{< fa solid scale-balanced >}} MIT License](https://github.com/diogoprov/CoDaStereo/blob/main/LICENSE)
+[{{< fa solid arrow-up-right-from-square >}} **Launch the live app →**](https://019dde61-4363-e3fa-b788-13ddfa456c0b.share.connect.posit.cloud){.btn .btn-primary} &nbsp;
+[{{< fa brands github >}} GitHub repository](https://github.com/diogoprov/CoDaStereo){.btn .btn-outline-secondary} &nbsp;
+[{{< fa solid tag >}} v2.0.0 (Apr 2026)](https://github.com/diogoprov/CoDaStereo/releases){.btn .btn-outline-secondary}
+
+*Free, browser-based — no installation required. Hosted on Posit Connect
+Cloud · MIT License.*
 :::
 
 **CoDa Stereo** is an open-source [Shiny](https://shiny.posit.co/)
@@ -46,18 +49,28 @@ tissue-fraction percentages were independent variables — they're not. The
 in standard MANOVA. CoDa Stereo handles the geometry correctly throughout,
 without requiring users to write log-ratio transforms by hand.
 
-### Install and run
+### Use it now (no install)
+
+The recommended way to use CoDa Stereo is to **open it directly in your
+browser** — the app is hosted on [Posit Connect Cloud](https://connect.posit.cloud/)
+(free tier), so there's nothing to install:
+
+[{{< fa solid arrow-up-right-from-square >}} **019dde61-4363-e3fa-b788-13ddfa456c0b.share.connect.posit.cloud**](https://019dde61-4363-e3fa-b788-13ddfa456c0b.share.connect.posit.cloud){.btn .btn-primary}
+
+### Run locally (optional)
+
+If you'd rather run the app on your own machine — useful for sensitive
+data, offline work, or customisation — install from GitHub:
 
 ```r
-# Run locally
 # install.packages("devtools")
 devtools::install_github("diogoprov/CoDaStereo")
 CoDaStereo::run_app()
 ```
 
-A deployment on [Posit Connect Cloud](https://connect.posit.cloud/) (free
-tier) is also supported — see the [README](https://github.com/diogoprov/CoDaStereo)
-for step-by-step instructions.
+See the [README](https://github.com/diogoprov/CoDaStereo) for full
+deployment notes (including how to re-deploy to your own Posit Connect
+Cloud account).
 
 ### Citation
 
