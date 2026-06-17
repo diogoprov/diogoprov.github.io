@@ -1,0 +1,31 @@
+---
+title: "Aula 09 — Kuhn — ciência normal e revoluções científicas"
+order: 9
+description: "Paradigmas, ciência normal, anomalias e revoluções. A estrutura kuhniana do progresso científico. Aplicações e limites na biologia/ecologia."
+---
+
+::: {.aula-meta}
+**Encontro 9**  ·  **Curso:** História e Filosofia da Ciência (PPGEC, UFMS)
+:::
+
+Paradigmas, ciência normal, anomalias e revoluções. A estrutura kuhniana do progresso científico. Aplicações e limites na biologia/ecologia.
+
+## Leituras obrigatórias
+
+Os capítulos abaixo eram disponibilizados via Moodle para a turma. Como
+são materiais de copyright, esta página lista apenas as citações
+completas — consulte a biblioteca da UFMS ou peça acesso ao
+[professor](mailto:diogo.provete@ufms.br).
+
+- Caps. 5 e 6 de Godfrey-Smith, P. 2009. *Theory and Reality.*
+
+## Recursos públicos
+
+- [Thomas Kuhn — Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/entries/thomas-kuhn/)
+- [Scientific Progress — Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/entries/scientific-progress/)
+- [D.B. Provete — *Revoluções Científicas, Kuhn* (slides curtos)](https://www.slideshare.net/provete/revolues-cientficas-thomas-s-kuhn)
+- [Book review — *The Structure of Scientific Revolutions*, ed. de 50 anos (Nature)](https://www.nature.com/articles/484164a)
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*

@@ -1,0 +1,120 @@
+---
+title: "História e Filosofia da Ciência"
+subtitle: "Disciplina de pós-graduação — PPG em Ecologia e Conservação, UFMS (45 h)"
+toc: true
+listing:
+  - id: cronograma
+    contents: "aula-*/index.qmd"
+    type: table
+    sort: "order asc"
+    fields: [order, title, description]
+    field-display-names:
+      order: "Aula"
+      title: "Tópico"
+      description: "Conteúdo"
+    sort-ui: false
+    filter-ui: false
+    page-size: 20
+---
+
+::: {.callout-tip appearance="minimal"}
+Disciplina **HISTÓRIA E FILOSOFIA DA CIÊNCIA** (200111373, 45 h) do
+[Programa de Pós-Graduação em Ecologia e
+Conservação](https://ppgec.ufms.br/) da UFMS. Aberta a alunos de
+qualquer linha de pesquisa do programa. Esta página reúne os
+**materiais públicos** das edições anteriores — lista de leituras e
+recursos online. Para informações sobre a próxima oferta,
+[entre em contato](mailto:diogo.provete@ufms.br).
+:::
+
+## Ementa
+
+Introdução à epistemologia. Estrutura das teorias científicas.
+História do pensamento e dos programas científicos. Método científico
+contemporâneo.
+
+## Objetivos
+
+Ao final do curso, espera-se que o(a) aluno(a) seja capaz de:
+
+- **reconhecer** a necessidade e o papel da filosofia para a ciência;
+- **compreender** as estruturas envolvidas em uma explicação científica;
+- **refletir** sobre como a ciência progride e seus limites;
+- **analisar e contrastar** tentativas de delimitação de ciência e
+  suas consequências;
+- **esclarecer** as diferenças entre ciência e práticas pseudocientíficas;
+- **estimular o pensamento crítico** sobre o projeto de pesquisa do
+  próprio aluno (mestrado e doutorado).
+
+## Metodologia — formato seminário
+
+O curso é conduzido como **seminário com discussões abertas**: a cada
+encontro lemos 2–3 capítulos (≈ 20 páginas) relacionados ao tema da
+semana. Uma **dupla de alunos diferente lidera a discussão** dos
+textos a cada aula e contribui para a **Wiki da disciplina** com uma
+resenha. O professor modera a discussão.
+
+## Cronograma
+
+::: {#cronograma}
+:::
+
+## Avaliação
+
+- **Participação nas discussões** — formulando perguntas e auxiliando
+  no desenvolvimento delas em sala;
+- **Resenhas** inseridas na Wiki da disciplina (cada dupla contribui
+  com uma resenha do tema que lideraram).
+
+## Bibliografia
+
+### Livros principais
+
+- Chalmers, A.F. 2013. *What is this thing called science?* 4ª ed.
+  Hackett.
+- Ford, E.D. 2000. *Scientific method for ecological research.*
+  Cambridge University Press.
+- Godfrey-Smith, P. 2009. *Theory and reality: an introduction to the
+  philosophy of science.* University of Chicago Press.
+- Losee, J. 2001. *A historical introduction to the philosophy of
+  science.* 4ª ed. OUP Oxford.
+- McIntyre, L. 2019. *The scientific attitude: defending science from
+  denial, fraud, and pseudoscience.* MIT Press.
+- Okasha, S. 2016. *Philosophy of science: a very short introduction.*
+  2ª ed. OUP.
+- Pickett, S.T.A.; Kolasa, J. & Jones, C.G. 2010. *Ecological
+  understanding: the nature of theory and the theory of nature.*
+  2ª ed. Elsevier.
+- Rosenberg, A. & McIntyre, L. 2019. *Philosophy of science: a
+  contemporary introduction.* 4ª ed. Routledge.
+- Sagan, C. 2006. *O mundo assombrado pelos demônios: a ciência vista
+  como uma vela no escuro.* Companhia das Letras.
+- Shipley, B. 2016. *Cause and correlation in biology.* 2ª ed.
+  Cambridge University Press.
+- Valiela, I. 2009. *Doing science: design, analysis, and
+  communication of scientific research.* OUP.
+
+### Artigos-chave
+
+- Coelho, M.T.P.; Diniz-Filho, J.A.F. & Rangel, T.F. 2019. A
+  parsimonious view of the parsimony principle in ecology and
+  evolution. *Ecography* 42(5):968–976.
+- Gonçalves-Souza, T.; **PROVETE, D.B.**; Garey, M.V.; da Silva, F.R.
+  & Albuquerque, U.P. 2019. Going back to basics: how to master the
+  art of making scientifically sound questions. In: *Methods and
+  Techniques in Ethnobiology and Ethnoecology,* pp. 71–86. Humana Press.
+- Levins, R. 1966. The strategy of model building in population
+  biology. *American Scientist* 54(4):421–431.
+
+### Recursos online
+
+- [Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/) —
+  fonte de referência usada em todas as aulas.
+- [Internet Encyclopedia of Philosophy](https://iep.utm.edu/) — alternativa.
+
+## Edições anteriores
+
+- **2021/2** — UFMS, PPG em Ecologia e Conservação. Plano oficial
+  200111373 (45 h). Estrutura ligeiramente reorganizada (12 aulas).
+- **2019** — UFMS, PPG em Ecologia e Conservação. Primeira oferta,
+  15 encontros. **Materiais arquivados abaixo.**

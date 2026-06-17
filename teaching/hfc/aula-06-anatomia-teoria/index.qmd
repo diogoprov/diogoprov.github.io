@@ -1,0 +1,34 @@
+---
+title: "Aula 06 — Anatomia de uma teoria"
+order: 6
+description: "Componentes de uma teoria científica. Como teorias se desenvolvem em ecologia. Mecanismos vs leis. A discussão de Smaldino: melhores métodos não geram melhores teorias."
+---
+
+::: {.aula-meta}
+**Encontro 6**  ·  **Curso:** História e Filosofia da Ciência (PPGEC, UFMS)
+:::
+
+Componentes de uma teoria científica. Como teorias se desenvolvem em ecologia. Mecanismos vs leis. A discussão de Smaldino: melhores métodos não geram melhores teorias.
+
+## Leituras obrigatórias
+
+Os capítulos abaixo eram disponibilizados via Moodle para a turma. Como
+são materiais de copyright, esta página lista apenas as citações
+completas — consulte a biblioteca da UFMS ou peça acesso ao
+[professor](mailto:diogo.provete@ufms.br).
+
+- Caps. 4 e 5 de Pickett, S.T.A.; Kolasa, J. & Jones, C.G. 2010. *Ecological Understanding: The Nature of Theory and the Theory of Nature.* 2ª ed. Elsevier.
+- Cap. 5 de Ford, E.D. 2000. *Scientific Method for Ecological Research.*
+- Cap. 1 de Scheiner, S.M. & Willig, M.R. (Eds.) 2011. *The Theory of Ecology.* University of Chicago Press.
+
+## Recursos públicos
+
+- [Marquet, P.A. et al. 2014. *On theory in ecology.* BioScience (PDF)](http://neti-net.org/wp-content/uploads/2016/05/Marquet-et-al-BioScience-2014-Full.pdf)
+- [Illari & Williamson 2012 — What is a mechanism? (Springer)](https://link.springer.com/article/10.1007/s13194-011-0038-2)
+- [Theory and Observation in Science — Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/entries/science-theory-observation/)
+- [Smaldino, P. 2019. Better methods don't make better theories. *Nature* news](https://www.nature.com/articles/d41586-019-03350-5)
+- [Marco Mello — *O que é uma teoria?* (blog)](https://marcoarmello.wordpress.com/2012/03/13/teoria/)
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*

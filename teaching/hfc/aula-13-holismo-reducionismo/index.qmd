@@ -1,0 +1,36 @@
+---
+title: "Aula 13 — Holismo e reducionismo em Biologia e Ecologia"
+order: 13
+description: "O debate clássico entre abordagens holísticas e reducionistas em ecologia (Schoener, Levins & Lewontin). Quando cada uma é apropriada."
+---
+
+::: {.aula-meta}
+**Encontro 13**  ·  **Curso:** História e Filosofia da Ciência (PPGEC, UFMS)
+:::
+
+O debate clássico entre abordagens holísticas e reducionistas em ecologia (Schoener, Levins & Lewontin). Quando cada uma é apropriada.
+
+## Leituras obrigatórias
+
+Os capítulos abaixo eram disponibilizados via Moodle para a turma. Como
+são materiais de copyright, esta página lista apenas as citações
+completas — consulte a biblioteca da UFMS ou peça acesso ao
+[professor](mailto:diogo.provete@ufms.br).
+
+- Cap. 6 de Levins, R. & Lewontin, R. 1987. *The Dialectical Biologist.* Harvard University Press.
+- Rowe, J. 1997. Reductionism, *Trumpeter.*
+- Bergandi, D. 1995. Reductionist holism: an oxymoron or a philosophical chimera of E.P. Odum's systems ecology? *Ludus Vitalis.*
+- Redfield, R.J. 1988. Holism and reductionism in community ecology. *Oikos.*
+
+## Recursos públicos
+
+- [Trepl, L. & Voigt, A. 2011. The classical holism-reductionism debate in ecology (Springer)](https://link.springer.com/chapter/10.1007/978-90-481-9744-6_5)
+- [Looijen, R.C. 2000. Holism and Reductionism in Biology and Ecology, cap. 1 (Springer)](https://link.springer.com/chapter/10.1007/978-94-015-9560-5_1)
+- [Looijen, R.C. 2000. cap. 7 (Springer)](https://link.springer.com/chapter/10.1007/978-94-015-9560-5_7)
+- [Schoener, T.W. 1986. Mechanistic approaches to community ecology: a new reductionism. *Am Zool.*](https://academic.oup.com/icb/article/26/1/81/114045)
+- [Pigliucci, M. 2014. Between holism and reductionism: a primer. *BJLS.*](https://academic.oup.com/biolinnean/article/112/2/261/2415616)
+- [Reductionism in Biology — Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/entries/reduction-biology/)
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*

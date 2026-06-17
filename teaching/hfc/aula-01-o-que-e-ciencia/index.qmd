@@ -1,0 +1,31 @@
+---
+title: "Aula 01 — O que é ciência?"
+order: 1
+description: "Tentativas históricas de definir ciência. A demarcação entre conhecimento científico e outras formas de conhecimento."
+---
+
+::: {.aula-meta}
+**Encontro 1**  ·  **Curso:** História e Filosofia da Ciência (PPGEC, UFMS)
+:::
+
+Tentativas históricas de definir ciência. A demarcação entre conhecimento científico e outras formas de conhecimento.
+
+## Leituras obrigatórias
+
+Os capítulos abaixo eram disponibilizados via Moodle para a turma. Como
+são materiais de copyright, esta página lista apenas as citações
+completas — consulte a biblioteca da UFMS ou peça acesso ao
+[professor](mailto:diogo.provete@ufms.br).
+
+- Cap. 1 de Okasha, S. 2016. *Philosophy of Science: A Very Short Introduction.* 2ª ed. OUP.
+- Cap. 1 de Chalmers, A.F. 2013. *What is this Thing Called Science?* 4ª ed. Hackett.
+
+## Recursos públicos
+
+- [Tutorial — como usar a Wiki no Moodle 3.7 (vídeo)](https://youtu.be/stwGaeg-mwA)
+- [O que é um ensaio científico?](https://www.escritaacademica.com/topicos/generos-academicos/o-ensaio/)
+- [How science works? A Flowchart (UC Berkeley)](https://undsci.berkeley.edu/article/scienceflowchart)
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*

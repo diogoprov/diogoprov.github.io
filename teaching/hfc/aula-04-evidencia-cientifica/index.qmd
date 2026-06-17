@@ -1,0 +1,30 @@
+---
+title: "Aula 04 — O que constitui evidência científica?"
+order: 4
+description: "Como observação se torna evidência. Subjetividade do observador, teoria-dependência da observação, o problema dos fatos."
+---
+
+::: {.aula-meta}
+**Encontro 4**  ·  **Curso:** História e Filosofia da Ciência (PPGEC, UFMS)
+:::
+
+Como observação se torna evidência. Subjetividade do observador, teoria-dependência da observação, o problema dos fatos.
+
+## Leituras obrigatórias
+
+Os capítulos abaixo eram disponibilizados via Moodle para a turma. Como
+são materiais de copyright, esta página lista apenas as citações
+completas — consulte a biblioteca da UFMS ou peça acesso ao
+[professor](mailto:diogo.provete@ufms.br).
+
+- Cap. 1 de Valiela, I. 2009. *Doing Science: Design, Analysis, and Communication of Scientific Research.* OUP.
+- Caps. 2 e 3 de Chalmers, A.F. 2013. *What is this Thing Called Science?* 4ª ed. Hackett.
+
+## Recursos públicos
+
+- [Facts — Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/entries/facts/)
+- [Evidence — Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/entries/evidence/)
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*

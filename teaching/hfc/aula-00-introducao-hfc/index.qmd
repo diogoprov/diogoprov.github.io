@@ -1,0 +1,31 @@
+---
+title: "Aula 00 — Porque estudar História e Filosofia da Ciência"
+order: 0
+description: "Por que cientistas (em particular, ecólogos) precisam refletir sobre a estrutura da própria atividade que praticam? Apresentação do programa do curso."
+---
+
+::: {.aula-meta}
+**Encontro 0**  ·  **Curso:** História e Filosofia da Ciência (PPGEC, UFMS)
+:::
+
+Por que cientistas (em particular, ecólogos) precisam refletir sobre a estrutura da própria atividade que praticam? Apresentação do programa do curso.
+
+## Leituras obrigatórias
+
+Os capítulos abaixo eram disponibilizados via Moodle para a turma. Como
+são materiais de copyright, esta página lista apenas as citações
+completas — consulte a biblioteca da UFMS ou peça acesso ao
+[professor](mailto:diogo.provete@ufms.br).
+
+- Cap. 1 de Rosenberg, A. & McIntyre, L. 2019. *Philosophy of Science: a Contemporary Introduction.* 4ª ed. Routledge.
+- Malaterre, C. et al. 2019. *What is this thing called philosophy of science? A computational topic-modeling perspective, 1934–2015.* HOPOS.
+
+## Recursos públicos
+
+- [Leite et al. 2010 — Epistemologia e história da Ciência em Ecologia: o passo inicial na formação](http://ojs.rbpg.capes.gov.br/index.php/rbpg/article/view/13)
+- [Scientific Objectivity — Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/entries/scientific-objectivity/)
+- [Value Theory — Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/entries/value-theory/)
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*

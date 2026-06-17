@@ -47,6 +47,19 @@ in the jargon. New videos are released as the academic semester progresses.
 
 ## Graduate courses (UFMS)
 
+### History and Philosophy of Science
+
+Seminar-style graduate course (45 h) for the [PPG in Ecology &
+Conservation](https://ppgec.ufms.br/) at UFMS. Open to graduate
+students from any line of research. Covers the structure of
+scientific theories, induction vs deduction, Popper's
+falsifiability, Kuhn's revolutions, Lakatos's research programmes,
+the nature of causality and explanation, holism vs reductionism in
+biology, and how science differs from pseudoscience. Reading-based
+discussion sessions led by student pairs.
+
+[Course site & materials →](teaching/hfc/){.btn .btn-outline-primary}
+
 ### Multidimensional analyses
 
 Graduate course (45 h) for the [Mestrado em Biologia

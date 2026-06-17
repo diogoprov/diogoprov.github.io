@@ -1,0 +1,32 @@
+---
+title: "Aula 12 — Realismo e anti-realismo científico (Laudan, Feyerabend)"
+order: 12
+description: "O debate entre realismo e anti-realismo científico. Underdetermination. Laudan e a abordagem do problem solving. Anarquismo metodológico de Feyerabend."
+---
+
+::: {.aula-meta}
+**Encontro 12**  ·  **Curso:** História e Filosofia da Ciência (PPGEC, UFMS)
+:::
+
+O debate entre realismo e anti-realismo científico. Underdetermination. Laudan e a abordagem do problem solving. Anarquismo metodológico de Feyerabend.
+
+## Leituras obrigatórias
+
+Os capítulos abaixo eram disponibilizados via Moodle para a turma. Como
+são materiais de copyright, esta página lista apenas as citações
+completas — consulte a biblioteca da UFMS ou peça acesso ao
+[professor](mailto:diogo.provete@ufms.br).
+
+- Cap. 4 de Okasha, S. 2016. *Philosophy of Science.* [Samir Okasha]
+- Cap. 15 de Chalmers, A.F. 2013. *What is this Thing Called Science?*
+- Laudan, L. 1981. A problem-solving approach to scientific progress. In: *Scientific Revolutions.*
+
+## Recursos públicos
+
+- [Underdetermination of Scientific Theory — Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/entries/scientific-underdetermination/)
+- [Truth — Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/entries/truth/#ReaAntRea)
+- [Scientific Realism — Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/entries/scientific-realism/)
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*

@@ -1,0 +1,29 @@
+---
+title: "Aula 03 — A importância das perguntas"
+order: 3
+description: "Como formular boas perguntas científicas. A pergunta como ponto de partida da pesquisa e como ela molda o que pode ser respondido."
+---
+
+::: {.aula-meta}
+**Encontro 3**  ·  **Curso:** História e Filosofia da Ciência (PPGEC, UFMS)
+:::
+
+Como formular boas perguntas científicas. A pergunta como ponto de partida da pesquisa e como ela molda o que pode ser respondido.
+
+## Leituras obrigatórias
+
+Os capítulos abaixo eram disponibilizados via Moodle para a turma. Como
+são materiais de copyright, esta página lista apenas as citações
+completas — consulte a biblioteca da UFMS ou peça acesso ao
+[professor](mailto:diogo.provete@ufms.br).
+
+- Cap. 3 de Ford, E.D. 2000. *Scientific Method for Ecological Research.* Cambridge University Press.
+- Gonçalves-Souza, T.; Provete, D.B.; Garey, M.V.; da Silva, F.R. & Albuquerque, U.P. 2019. *Going Back to Basics: How to Master the Art of Making Scientifically Sound Questions.* In: *Methods and Techniques in Ethnobiology and Ethnoecology.* Humana Press.
+
+## Recursos públicos
+
+- [Questions — Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/entries/questions/)
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*

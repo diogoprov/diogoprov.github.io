@@ -1,0 +1,33 @@
+---
+title: "Aula 14 — Pseudociência e seu papel na sociedade contemporânea"
+order: 14
+description: "Diferenças entre ciência e pseudociência. Negacionismo, conspiracionismo, fraudes. O papel social do cientista em uma sociedade que questiona evidências."
+---
+
+::: {.aula-meta}
+**Encontro 14**  ·  **Curso:** História e Filosofia da Ciência (PPGEC, UFMS)
+:::
+
+Diferenças entre ciência e pseudociência. Negacionismo, conspiracionismo, fraudes. O papel social do cientista em uma sociedade que questiona evidências.
+
+## Leituras obrigatórias
+
+Os capítulos abaixo eram disponibilizados via Moodle para a turma. Como
+são materiais de copyright, esta página lista apenas as citações
+completas — consulte a biblioteca da UFMS ou peça acesso ao
+[professor](mailto:diogo.provete@ufms.br).
+
+- Caps. 12, 14 e 17 de Sagan, C. 2006. *O mundo assombrado pelos demônios: a ciência vista como uma vela no escuro.* Companhia das Letras.
+
+## Recursos públicos
+
+- [Pseudoscience — Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/entries/pseudo-science/)
+- [Dynamic Ecology blog — *We aren't scientists because of our method — we're scientists because of our attitude.*](https://dynamicecology.wordpress.com/2016/02/29/we-arent-scientists-because-of-our-method-were-scientists-because-of-our-attitude/)
+- [TEDx USP — Pseudociência (vídeo)](https://www.youtube.com/watch?v=F3kUeDlP3Io)
+- [Pirula — sobre *O mundo assombrado pelos demônios* (vídeo)](https://youtu.be/J5ncvehkWMw)
+- [Pirula — O que é pseudociência? (vídeo)](https://youtu.be/_olYYmL7WHA)
+- [Review do *Mundo assombrado pelos demônios* (vídeo)](https://youtu.be/9jtgBHZPl-4)
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*
