@@ -43,7 +43,7 @@ jobs:
       # render — keeping them was making CI fail.
       - name: Install R packages used by the site
         run: |
-          Rscript -e 'install.packages(c("yaml","scholar","pagedown","chromote","httr"), repos="https://cloud.r-project.org")'
+          Rscript -e 'install.packages(c("rmarkdown","knitr","yaml","scholar","pagedown","chromote","httr"), repos="https://cloud.r-project.org")'
 
       - name: Render site (validation)
         run: quarto render
