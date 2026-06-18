@@ -1,0 +1,107 @@
+---
+title: "Comunidades de ambientes lênticos"
+subtitle: "Disciplina de pós-graduação — PPG em Ecologia e Conservação, UFMS"
+toc: true
+listing:
+  - id: cronograma
+    contents: "aula-*/index.qmd"
+    type: table
+    sort: "order asc"
+    fields: [order, title, description]
+    field-display-names:
+      order: "Aula"
+      title: "Tópico"
+      description: "Conteúdo"
+    sort-ui: false
+    filter-ui: false
+    page-size: 20
+---
+
+::: {.callout-tip appearance="minimal"}
+Disciplina **COMUNIDADES DE AMBIENTES LÊNTICOS** ministrada em 2018
+para o [PPG em Ecologia e Conservação](https://ppgec.ufms.br/) da
+UFMS. Esta página reúne os **materiais públicos** desta edição —
+slides e bibliografia indicada para cada encontro. Para informações
+sobre próximas ofertas, [entre em
+contato](mailto:diogo.provete@ufms.br).
+:::
+
+## Ementa
+
+Disciplina focada em **ecologia de comunidades de ambientes
+aquáticos lênticos** — de poças temporárias a lagos profundos —
+combinando fundamentos de limnologia, características físico-químicas
+desses ambientes, padrões de distribuição e adaptações de organismos,
+e métodos de amostragem e análise de dados aplicados a comunidades
+aquáticas.
+
+## Conteúdo programático
+
+1. **Limnologia básica:** tipos de corpos d'água lênticos, gradientes
+   ambientais, características físico-químicas (luz, temperatura,
+   estratificação, oxigênio, nutrientes).
+2. **Adaptações dos organismos:** flutuação, respiração, ciclo de
+   vida, permanência do hábitat, metamorfose.
+3. **Comunidades e padrões:** estrutura de comunidades planctônicas,
+   bentônicas e nectônicas; dinâmica de metacomunidades; relações
+   tróficas e redes ecológicas.
+4. **Métodos:** introdução à análise multivariada (agrupamento,
+   ordenação); técnicas de amostragem em ambientes lênticos.
+5. **Conservação e manejo:** estados estáveis alternativos,
+   mudanças globais e estratégias de manejo.
+
+## Objetivos
+
+Ao final da disciplina, espera-se que o(a) aluno(a) seja capaz de
+(i) compreender a heterogeneidade ambiental e os principais
+gradientes que estruturam ambientes lênticos; (ii) identificar as
+principais adaptações que permitem a colonização desses ambientes
+por diferentes grupos de organismos; (iii) reconhecer padrões e
+processos que estruturam comunidades em metacomunidades lênticas; e
+(iv) planejar uma amostragem em um corpo d'água lêntico, escolhendo
+métodos adequados à comunidade-alvo.
+
+## Cronograma
+
+::: {#cronograma}
+:::
+
+## Metodologia
+
+Aulas conduzidas em formato **sala de aula invertida** (*flipped
+classroom*): leituras e questionários prévios em Moodle, com
+discussão presencial dos conceitos. Avaliação contínua via
+exercícios semanais (P1), relatório final do trabalho de campo (P2)
+e prova optativa (PO).
+
+## Bibliografia
+
+### Livros principais
+
+- Brönmark, C. & Hansson, L.-A. 2017. *The Biology of Lakes and Ponds.*
+  3ª ed. Oxford University Press.
+- Esteves, F.A. 2011. *Fundamentos de Limnologia.* 3ª ed.
+  Interciência.
+- Wetzel, R.G. 2001. *Limnology: Lake and River Ecosystems.* 3ª ed.
+  Academic Press.
+- Williams, D.D. 2006. *The Biology of Temporary Waters.* Oxford
+  University Press.
+- Scheffer, M. 2004. *Ecology of Shallow Lakes.* Springer.
+- Mittelbach, G.G. 2012. *Community Ecology.* Sinauer.
+- Morin, P.J. 2011. *Community Ecology.* 2ª ed. Wiley-Blackwell.
+- van der Valk, A.G. 2012. *The Biology of Freshwater Wetlands.* 2ª ed.
+  Oxford University Press.
+
+### Complementares
+
+- Legendre, P. & Legendre, L.F.J. 2012. *Numerical Ecology.* 3ª ed.
+  Elsevier.
+- Tundisi, J.G. & Tundisi, T.M. 2008. *Limnologia.* Oficina de Textos.
+- Bicudo, C.E.M. & Bicudo, D.C. (Orgs.) 2004. *Amostragem em
+  Limnologia.* RiMa.
+
+## Edição arquivada
+
+- **2018/1** — PPG em Ecologia e Conservação, UFMS. Encontros
+  semanais, fevereiro a maio. Materiais desta edição estão
+  arquivados nesta página.

@@ -1,0 +1,40 @@
+---
+title: "Aula 04 — Adaptações de organismos ao ambiente aquático"
+order: 4
+description: "Adaptações para flutuação, respiração, temperatura, luz, carbono, pH, nutrientes e oxigênio. Permanência do hábitat e metamorfose."
+---
+
+::: {.aula-meta}
+**Aula 4**  ·  **Curso:** Comunidades de ambientes lênticos (PPG em Ecologia & Conservação, UFMS, 2018)
+:::
+
+Diferenças entre lagos e poças. **Adaptações para flutuação**
+(vacúolos, vesículas de gás, formato, flagelos) e grandes grupos de
+fitoplâncton. Adaptações à temperatura (estenotermia vs euritermia,
+**efípio em *Daphnia***), luz, carbono (metabolismo CAM em
+*Isoetes*, heterofilia em *Hippuris vulgaris*), pH (*Eudiaptomus*),
+nutrientes (P como limitante — Schindler 1977) e oxigênio
+(respiração cutânea, branquial, tubo respiratório, bolha de ar em
+Corixidae e Dytiscidae). **Permanência do hábitat** (residentes
+permanentes vs temporários), metamorfose e transições ontogenéticas
+(Wilbur 1980, 1984; Werner & Gilliam 1984).
+
+## Slides
+
+[{{< fa solid file-pdf >}} Baixar slides em PDF](../slides/aula-04.pdf){.btn .btn-outline-primary}
+
+## Leituras recomendadas
+
+- Williams, D.D. *The Biology of Temporary Waters*, capítulo 3.
+- Brönmark, C. & Hansson, L.-A. *The Biology of Lakes and Ponds*,
+  capítulo 2.
+- Schindler, D.W. 1977. Evolution of phosphorus limitation in lakes.
+  *Science* 195:260–262.
+- Sherratt, E. et al. 2017. Vertebral evolution and the diversification
+  of squamate reptiles. *Nature Ecology & Evolution*.
+- Richter-Boix, A. et al. 2011. Hybridogenetic water frogs and
+  morphological plasticity. *Ecology and Evolution*.
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*

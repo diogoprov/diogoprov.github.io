@@ -1,0 +1,30 @@
+---
+title: "Aula 06 — Dinâmica de metacomunidades"
+order: 6
+description: "Conceitos de metacomunidade aplicados a ambientes lênticos: paradigmas, dispersão, conectividade e padrões espaciais."
+---
+
+::: {.aula-meta}
+**Aula 6**  ·  **Curso:** Comunidades de ambientes lênticos (PPG em Ecologia & Conservação, UFMS, 2018)
+:::
+
+**Dinâmica de metacomunidades** aplicada a ambientes lênticos.
+Paradigmas de metacomunidade (*patch dynamics*, *species sorting*,
+*mass effects*, *neutral*); papel da dispersão e da conectividade
+entre poças e lagos.
+
+## Slides
+
+*Slides desta aula em revisão — disponíveis sob pedido por
+[e-mail](mailto:diogo.provete@ufms.br).*
+
+## Leituras recomendadas
+
+- Leibold, M.A. et al. 2004. The metacommunity concept: a framework
+  for multi-scale community ecology. *Ecology Letters* 7:601–613.
+- Heino, J. et al. 2015. Metacommunity organisation, spatial extent and
+  dispersal in aquatic systems. *Freshwater Biology* 60:845–869.
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*

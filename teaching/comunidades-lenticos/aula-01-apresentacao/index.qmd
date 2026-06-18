@@ -1,0 +1,28 @@
+---
+title: "Aula 01 — Apresentação da disciplina"
+order: 1
+description: "Plano de ensino, formato sala de aula invertida, sistema de avaliação (P1, P2, PO) e bibliografia."
+---
+
+::: {.aula-meta}
+**Aula 1**  ·  **Curso:** Comunidades de ambientes lênticos (PPG em Ecologia & Conservação, UFMS, 2018)
+:::
+
+Apresentação do plano de ensino, dinâmica de **sala de aula
+invertida** com leituras e questionários prévios em Moodle, sistema
+de avaliação (P1 contínua, P2 — relatório da aula prática, PO
+optativa) e bibliografia da disciplina.
+
+## Slides
+
+[{{< fa solid file-pdf >}} Baixar slides em PDF](../slides/aula-01.pdf){.btn .btn-outline-primary}
+
+## Leituras recomendadas
+
+- Brönmark, C. & Hansson, L.-A. — *The Biology of Lakes and Ponds*
+  (capítulo introdutório).
+- Esteves, F.A. — *Fundamentos de Limnologia* (capítulos 1–2).
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*

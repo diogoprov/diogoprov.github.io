@@ -1,0 +1,36 @@
+---
+title: "Aula 10 — Técnicas de amostragem comumente utilizadas"
+order: 10
+description: "Teoria de amostragem, desenhos amostrais em ambientes lênticos, curva do coletor e estimadores de riqueza, equipamentos e técnicas para peixes, anfíbios, plâncton, macrófitas, perifíton, insetos aquáticos e variáveis ambientais."
+---
+
+::: {.aula-meta}
+**Aula 10**  ·  **Curso:** Comunidades de ambientes lênticos (PPG em Ecologia & Conservação, UFMS, 2018)
+:::
+
+**Rudimentos de teoria de amostragem** — amostragem vs população
+real; população alvo vs população estatística; acurácia e precisão.
+**Desenhos amostrais** mais comuns em ambientes lênticos e
+estratégias para planejar um estudo de campo. **Como avaliar a
+suficiência amostral** — curva do coletor e estimadores de riqueza.
+
+**Equipamentos e técnicas de coleta** para os principais grupos:
+peixes, anfíbios, plâncton (rede vertical/horizontal), macrófitas,
+perifíton, insetos aquáticos e variáveis ambientais físico-químicas.
+
+## Slides
+
+[{{< fa solid file-pdf >}} Baixar slides em PDF](../slides/aula-10.pdf){.btn .btn-outline-primary}
+
+## Leituras recomendadas
+
+- Bicudo, C.E.M. & Bicudo, D.C. (Orgs.) 2004. *Amostragem em
+  Limnologia.* RiMa.
+- Magurran, A.E. 2004. *Measuring Biological Diversity.* Blackwell.
+- Gotelli, N.J. & Colwell, R.K. 2001. Quantifying biodiversity:
+  procedures and pitfalls in the measurement and comparison of
+  species richness. *Ecology Letters* 4:379–391.
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*

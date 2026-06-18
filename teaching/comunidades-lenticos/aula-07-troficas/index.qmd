@@ -1,0 +1,52 @@
+---
+title: "Aula 07 — Determinantes de relações tróficas em ambientes aquáticos"
+order: 7
+description: "Tipos de redes ecológicas (conectividade, fluxo de energia, funcionais), força de interação, efeitos indiretos, espécies-chave, complexidade vs estabilidade e estados estáveis alternativos."
+---
+
+::: {.aula-meta}
+**Aula 7**  ·  **Curso:** Comunidades de ambientes lênticos (PPG em Ecologia & Conservação, UFMS, 2018)
+:::
+
+Tipos de **redes ecológicas** — interações tróficas (teias
+alimentares), bipartidas (mutualismos, hospedeiro-parasitóide),
+redes de **conectividade**, redes de **fluxo de energia** e redes
+**funcionais**. Construção de teias tróficas; Interaction Web
+DataBase (IWDB). **Força de interação** e *keystone species* (Paine
+1992); efeitos indiretos diretos vs *trait-mediated*; cascatas
+tróficas.
+
+**Atributos como chave** — tamanho do corpo, taxa metabólica,
+tempo de manuseio; razão de massa corpórea predador-presa.
+**Complexidade vs estabilidade** — definições (resistência,
+resiliência, estabilidade dinâmica), histórico do debate (Elton
+1927; MacArthur 1955; May 1973; McCann 2000). **Estados estáveis
+alternativos** (Scheffer et al. 1993 — lagos rasos; Folke et al.
+2004) e suas consequências para o manejo.
+
+## Slides
+
+[{{< fa solid file-pdf >}} Baixar slides em PDF](../slides/aula-07.pdf){.btn .btn-outline-primary}
+
+## Leituras recomendadas
+
+- Mittelbach, G.G. 2012. *Community Ecology.* Sinauer (cap. 10) —
+  livro-texto da aula.
+- Morin, P.J. 2011. *Community Ecology.* 2ª ed. Wiley-Blackwell.
+- Paine, R.T. 1992. Food-web analysis through field measurement of
+  per capita interaction strength. *Nature* 355:73–75.
+- McCann, K.S. 2000. The diversity–stability debate. *Nature*
+  405:228–233.
+- Scheffer, M.; Hosper, S.H.; Meijer, M.-L.; Moss, B. & Jeppesen, E.
+  1993. Alternative equilibria in shallow lakes. *Trends in Ecology
+  & Evolution* 8(8):275–279.
+- Loreau, M. & de Mazancourt, C. 2013. Biodiversity and ecosystem
+  stability: a synthesis of underlying mechanisms. *Ecology Letters*
+  16:106–115.
+- Folke, C. et al. 2004. Regime shifts, resilience, and biodiversity
+  in ecosystem management. *Annual Review of Ecology, Evolution, and
+  Systematics* 35:557–581.
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*

@@ -1,0 +1,27 @@
+---
+title: "Aula 05 — Estrutura de comunidades em ambientes lênticos"
+order: 5
+description: "Padrões de distribuição de comunidades planctônicas, bentônicas e nectônicas em ambientes lênticos."
+---
+
+::: {.aula-meta}
+**Aula 5**  ·  **Curso:** Comunidades de ambientes lênticos (PPG em Ecologia & Conservação, UFMS, 2018)
+:::
+
+Padrões de estrutura e distribuição de **comunidades planctônicas**,
+**bentônicas** e **nectônicas** em ambientes lênticos. Riqueza,
+composição e relações ambientais.
+
+## Slides
+
+[{{< fa solid file-pdf >}} Baixar slides em PDF](../slides/aula-05.pdf){.btn .btn-outline-primary}
+
+## Leituras recomendadas
+
+- Brönmark, C. & Hansson, L.-A. *The Biology of Lakes and Ponds*
+  (capítulos sobre comunidades planctônica, bentônica e nectônica).
+- Scheffer, M. *Ecology of Shallow Lakes.*
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*

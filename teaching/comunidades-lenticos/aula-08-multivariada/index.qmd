@@ -1,0 +1,60 @@
+---
+title: "Aula 08 — Introdução à análise multivariada de dados"
+order: 8
+description: "Objetivos da análise multivariada, índices de dissimilaridade, análises exploratórias vs testes, classificação (cluster, IndVal) e ordenação (PCA, PCoA, nMDS, CCA, RDA)."
+---
+
+::: {.aula-meta}
+**Aula 8**  ·  **Curso:** Comunidades de ambientes lênticos (PPG em Ecologia & Conservação, UFMS, 2018)
+:::
+
+Introdução à **análise multivariada** aplicada a dados de comunidades
+de ambientes lênticos. Objetivos principais (direção de variação,
+correlação de matrizes, diferenças entre grupos); **índices de
+dissimilaridade** (Jaccard, Sørensen, Bray–Curtis, Morisita-Horn,
+Gower, Euclidiana, Manhattan, Canberra); análises exploratórias vs
+testes de hipótese.
+
+**Classificação** — análise de *cluster* hierárquica (UPGMA, Ward),
+**coeficiente de correlação cofenética**, validação por *bootstrap*
+multiescala (`pvclust`), análise de espécie indicadora (**IndVal**;
+Dufrêne & Legendre 1997). **Ordenação irrestrita** — PCA, PCoA,
+nMDS. **Ordenação restrita** — CCA (gradientes longos, modelo
+unimodal) e RDA (gradientes curtos, modelo linear).
+
+## Slides
+
+[{{< fa solid file-pdf >}} Baixar slides em PDF](../slides/aula-08.pdf){.btn .btn-outline-primary}
+
+## Leituras recomendadas
+
+- James, F.C. & McCulloch, C.E. 1990. Multivariate analysis in
+  ecology and systematics: panacea or Pandora's box? *Annual Review
+  of Ecology and Systematics* 21:129–166.
+- Legendre, P. & Legendre, L.F.J. 2012. *Numerical Ecology.* 3ª ed.
+  Elsevier.
+- Valentin, J.L. 2012. *Ecologia Numérica.* 2ª ed. Interciência.
+- Legendre, P. & De Cáceres, M. 2013. Beta diversity as the variance
+  of community data: dissimilarity coefficients and partitioning.
+  *Ecology Letters* 16:951–963.
+- Dufrêne, M. & Legendre, P. 1997. Species assemblages and indicator
+  species: the need for a flexible asymmetrical approach.
+  *Ecological Monographs* 67:345–366.
+- De Cáceres, M. & Legendre, P. 2009. Associations between species
+  and groups of sites: indices and statistical inference. *Ecology*
+  90:3566–3574.
+- Shimodaira, H. 2004. Approximately unbiased tests of regions using
+  multistep-multiscale bootstrap resampling. *Annals of Statistics*
+  32:2616–2641.
+- Ramette, A. 2007. Multivariate analyses in microbial ecology.
+  *FEMS Microbiology Ecology* 62:142–160.
+
+::: {.callout-note}
+Para aprofundar nos métodos multivariados, veja o curso de
+[**Análises Multidimensionais**](../../multidimensionais/) (PPG em
+Biologia Animal).
+:::
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*

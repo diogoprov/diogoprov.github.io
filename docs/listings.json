@@ -36,6 +36,39 @@
     ]
   },
   {
+    "listing": "/teaching/comunidades-lenticos/index.html",
+    "items": [
+      "/teaching/comunidades-lenticos/aula-01-apresentacao/index.html",
+      "/teaching/comunidades-lenticos/aula-02-tipos-corpos-dagua/index.html",
+      "/teaching/comunidades-lenticos/aula-03-fisico-quimica/index.html",
+      "/teaching/comunidades-lenticos/aula-04-adaptacoes/index.html",
+      "/teaching/comunidades-lenticos/aula-05-comunidades/index.html",
+      "/teaching/comunidades-lenticos/aula-06-metacomunidades/index.html",
+      "/teaching/comunidades-lenticos/aula-07-troficas/index.html",
+      "/teaching/comunidades-lenticos/aula-08-multivariada/index.html",
+      "/teaching/comunidades-lenticos/aula-10-amostragem/index.html",
+      "/teaching/comunidades-lenticos/aula-11-manejo/index.html"
+    ]
+  },
+  {
+    "listing": "/news/index.html",
+    "items": [
+      "/news/2025-09-15-iara-beatriz/index.html",
+      "/news/2025-02-15-bruna-master/index.html",
+      "/news/2024-10-01-fundect-grant/index.html",
+      "/news/2024-07-15-ana-paula-joins/index.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/news/2025-09-15-iara-beatriz/index.html",
+      "/news/2025-02-15-bruna-master/index.html",
+      "/news/2024-10-01-fundect-grant/index.html",
+      "/news/2024-07-15-ana-paula-joins/index.html"
+    ]
+  },
+  {
     "listing": "/teaching/bioestatistica/index.html",
     "items": [
       "/teaching/bioestatistica/aula-01-introducao/index.html",
@@ -49,24 +82,6 @@
       "/teaching/bioestatistica/aula-09-regressao-correlacao/index.html",
       "/teaching/bioestatistica/aula-10-qui-quadrado/index.html",
       "/teaching/bioestatistica/aula-11-anova/index.html"
-    ]
-  },
-  {
-    "listing": "/index.html",
-    "items": [
-      "/news/2025-09-15-iara-beatriz/index.html",
-      "/news/2025-02-15-bruna-master/index.html",
-      "/news/2024-10-01-fundect-grant/index.html",
-      "/news/2024-07-15-ana-paula-joins/index.html"
-    ]
-  },
-  {
-    "listing": "/news/index.html",
-    "items": [
-      "/news/2025-09-15-iara-beatriz/index.html",
-      "/news/2025-02-15-bruna-master/index.html",
-      "/news/2024-10-01-fundect-grant/index.html",
-      "/news/2024-07-15-ana-paula-joins/index.html"
     ]
   },
   {

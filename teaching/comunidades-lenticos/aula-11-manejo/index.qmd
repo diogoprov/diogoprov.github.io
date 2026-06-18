@@ -1,0 +1,35 @@
+---
+title: "Aula 11 — Manejo de ambientes lênticos em vista das mudanças globais"
+order: 11
+description: "Mudanças globais e suas implicações para corpos d'água lênticos continentais; principais ameaças; iniciativas nacionais e internacionais de conservação; estratégias de manejo."
+---
+
+::: {.aula-meta}
+**Aula 11**  ·  **Curso:** Comunidades de ambientes lênticos (PPG em Ecologia & Conservação, UFMS, 2018)
+:::
+
+O que são **mudanças globais** e como elas afetam corpos d'água
+lênticos continentais. Principais ameaças a lagos e poças
+(eutrofização, aquecimento, espécies invasoras, alteração do
+regime hidrológico). Iniciativas **nacionais e internacionais** para
+a conservação desses ambientes em diferentes escalas.
+**Estratégias de manejo** com base nos conceitos discutidos ao
+longo do curso (resiliência, resistência, estados estáveis
+alternativos).
+
+## Slides
+
+[{{< fa solid file-pdf >}} Baixar slides em PDF](../slides/aula-11.pdf){.btn .btn-outline-primary}
+
+## Leituras recomendadas
+
+- Scheffer, M. *Ecology of Shallow Lakes* (cap. 6).
+- Brönmark, C. & Hansson, L.-A. *The Biology of Lakes and Ponds*
+  (cap. 6).
+- Williams, D.D. *The Biology of Temporary Waters* (cap. 10).
+- van der Valk, A.G. *The Biology of Freshwater Wetlands* (cap.
+  7–10).
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*

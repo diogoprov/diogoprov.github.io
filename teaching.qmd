@@ -95,6 +95,19 @@ familiarity with phylogenetic inference.
 [Course site & materials →](teaching/mfc/){.btn .btn-outline-primary}
 [Mind map summarising the methods →](https://coggle.it/diagram/WhbkkxE2BAAB0R0m){.btn .btn-outline-primary}
 
+### Comunidades de ambientes lênticos
+
+Graduate course offered in 2018 to the [PPG in Ecology &
+Conservation](https://ppgec.ufms.br/) at UFMS. Covers limnology
+fundamentals, physical–chemical drivers of lentic systems
+(stratification, light, oxygen, nutrients), organismal adaptations,
+community structure and metacommunity dynamics, trophic relationships,
+field sampling techniques, and an introduction to multivariate
+analysis applied to aquatic communities — closing with a field
+practical at *Lago do Amor* (Campo Grande, MS).
+
+[Course site & materials →](teaching/comunidades-lenticos/){.btn .btn-outline-primary}
+
 ## Past courses & short-courses
 
 ### 2012 — Mendeley demo, Universidade Federal de Goiás
