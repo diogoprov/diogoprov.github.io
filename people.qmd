@@ -182,6 +182,16 @@ citizen-science data (iNaturalist, eBird).</p>
 :::
 
 ::: {.person-card}
+<img src="assets/images/people/vianna.jpg" alt="Pedro Abi-Rezik Barros Vianna"
+     onerror="this.style.display='none'">
+<p class="name">Pedro Abi-Rezik Barros Vianna</p>
+<p class="role">Former Master's student · Biologia Animal</p>
+<p class="topic">Geographic variation in morphological traits and fitness
+surface of the snake *Dipsas turgida*.</p>
+<a href="http://lattes.cnpq.br/4802782044597460" title="Lattes CV"><i class="ai ai-lattes"></i></a>
+:::
+
+::: {.person-card}
 <img src="assets/images/people/negre.jpg" alt="Daniel Din Negre"
      onerror="this.style.display='none'">
 <p class="name">Daniel Din Negre</p>
@@ -206,16 +216,6 @@ Nascentes de Paranapiacaba (SP).</p>
 <p class="topic">Evolution of echolocation in bats worldwide using
 phylogenetic comparative methods.</p>
 <a href="http://lattes.cnpq.br/0590588262836363" title="Lattes CV"><i class="ai ai-lattes"></i></a>
-:::
-
-::: {.person-card}
-<img src="assets/images/people/vianna.jpg" alt="Pedro Abi-Rezik Barros Vianna"
-     onerror="this.style.display='none'">
-<p class="name">Pedro Abi-Rezik Barros Vianna</p>
-<p class="role">Former undergrad</p>
-<p class="topic">Geographic variation in morphological traits and fitness
-surface of the snake *Dipsas turgida*.</p>
-<a href="http://lattes.cnpq.br/4802782044597460" title="Lattes CV"><i class="ai ai-lattes"></i></a>
 :::
 
 :::

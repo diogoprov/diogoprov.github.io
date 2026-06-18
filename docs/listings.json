@@ -32,22 +32,57 @@
     ]
   },
   {
-    "listing": "/teaching/ecologia-urbana/index.html",
+    "listing": "/teaching/hfc-graduacao/index.html",
     "items": [
-      "/teaching/ecologia-urbana/aula-01-cidades-paisagem/index.html",
-      "/teaching/ecologia-urbana/aula-02-clima-ilha-calor/index.html",
-      "/teaching/ecologia-urbana/aula-03-fragmentacao-habitats/index.html",
-      "/teaching/ecologia-urbana/aula-04-ecossistemas-ciclagem/index.html",
-      "/teaching/ecologia-urbana/aula-05-macroecologia/index.html",
-      "/teaching/ecologia-urbana/aula-06-invasao-biologica/index.html",
-      "/teaching/ecologia-urbana/aula-07-desigualdade-biodiversidade/index.html",
-      "/teaching/ecologia-urbana/aula-08-ambientes-aquaticos/index.html",
-      "/teaching/ecologia-urbana/aula-09-socio-ecologico/index.html",
-      "/teaching/ecologia-urbana/aula-10-apresentacao-artigo/index.html",
-      "/teaching/ecologia-urbana/aula-11-ciencia-cidada/index.html",
-      "/teaching/ecologia-urbana/aula-12-evolucao-contemporanea/index.html",
-      "/teaching/ecologia-urbana/aula-13-solucoes-conservacao/index.html",
-      "/teaching/ecologia-urbana/aula-14-conservacao-sustentabilidade/index.html"
+      "/teaching/hfc-graduacao/aula-01-introducao-aristoteles/index.html",
+      "/teaching/hfc-graduacao/aula-02-o-que-e-ciencia/index.html",
+      "/teaching/hfc-graduacao/aula-03-papel-filosofia-ciencia/index.html",
+      "/teaching/hfc-graduacao/aula-04-ciencia-e-senso-comum/index.html",
+      "/teaching/hfc-graduacao/aula-05-papel-da-observacao/index.html",
+      "/teaching/hfc-graduacao/aula-06-racionalismo-descartes/index.html",
+      "/teaching/hfc-graduacao/aula-07-empirismo-britanico/index.html",
+      "/teaching/hfc-graduacao/aula-08-semana-integra/index.html",
+      "/teaching/hfc-graduacao/aula-09-justificacao-conhecimento/index.html",
+      "/teaching/hfc-graduacao/aula-10-kant-filosofia-critica/index.html",
+      "/teaching/hfc-graduacao/aula-11-teorias-cientificas/index.html",
+      "/teaching/hfc-graduacao/aula-12-popper-falseabilidade/index.html",
+      "/teaching/hfc-graduacao/aula-13-kuhn-revolucoes/index.html",
+      "/teaching/hfc-graduacao/aula-14-boas-perguntas-cientificas/index.html",
+      "/teaching/hfc-graduacao/aula-15-ciencia-sociedade/index.html",
+      "/teaching/hfc-graduacao/aula-16-pseudociencias/index.html"
+    ]
+  },
+  {
+    "listing": "/teaching/comunidades-lenticos/index.html",
+    "items": [
+      "/teaching/comunidades-lenticos/aula-01-apresentacao/index.html",
+      "/teaching/comunidades-lenticos/aula-02-tipos-corpos-dagua/index.html",
+      "/teaching/comunidades-lenticos/aula-03-fisico-quimica/index.html",
+      "/teaching/comunidades-lenticos/aula-04-adaptacoes/index.html",
+      "/teaching/comunidades-lenticos/aula-05-comunidades/index.html",
+      "/teaching/comunidades-lenticos/aula-06-metacomunidades/index.html",
+      "/teaching/comunidades-lenticos/aula-07-troficas/index.html",
+      "/teaching/comunidades-lenticos/aula-08-multivariada/index.html",
+      "/teaching/comunidades-lenticos/aula-10-amostragem/index.html",
+      "/teaching/comunidades-lenticos/aula-11-manejo/index.html"
+    ]
+  },
+  {
+    "listing": "/news/index.html",
+    "items": [
+      "/news/2025-09-15-iara-beatriz/index.html",
+      "/news/2025-02-15-bruna-master/index.html",
+      "/news/2024-10-01-fundect-grant/index.html",
+      "/news/2024-07-15-ana-paula-joins/index.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/news/2025-09-15-iara-beatriz/index.html",
+      "/news/2025-02-15-bruna-master/index.html",
+      "/news/2024-10-01-fundect-grant/index.html",
+      "/news/2024-07-15-ana-paula-joins/index.html"
     ]
   },
   {
@@ -67,36 +102,22 @@
     ]
   },
   {
-    "listing": "/index.html",
+    "listing": "/teaching/ecologia-urbana/index.html",
     "items": [
-      "/news/2025-09-15-iara-beatriz/index.html",
-      "/news/2025-02-15-bruna-master/index.html",
-      "/news/2024-10-01-fundect-grant/index.html",
-      "/news/2024-07-15-ana-paula-joins/index.html"
-    ]
-  },
-  {
-    "listing": "/news/index.html",
-    "items": [
-      "/news/2025-09-15-iara-beatriz/index.html",
-      "/news/2025-02-15-bruna-master/index.html",
-      "/news/2024-10-01-fundect-grant/index.html",
-      "/news/2024-07-15-ana-paula-joins/index.html"
-    ]
-  },
-  {
-    "listing": "/teaching/comunidades-lenticos/index.html",
-    "items": [
-      "/teaching/comunidades-lenticos/aula-01-apresentacao/index.html",
-      "/teaching/comunidades-lenticos/aula-02-tipos-corpos-dagua/index.html",
-      "/teaching/comunidades-lenticos/aula-03-fisico-quimica/index.html",
-      "/teaching/comunidades-lenticos/aula-04-adaptacoes/index.html",
-      "/teaching/comunidades-lenticos/aula-05-comunidades/index.html",
-      "/teaching/comunidades-lenticos/aula-06-metacomunidades/index.html",
-      "/teaching/comunidades-lenticos/aula-07-troficas/index.html",
-      "/teaching/comunidades-lenticos/aula-08-multivariada/index.html",
-      "/teaching/comunidades-lenticos/aula-10-amostragem/index.html",
-      "/teaching/comunidades-lenticos/aula-11-manejo/index.html"
+      "/teaching/ecologia-urbana/aula-01-cidades-paisagem/index.html",
+      "/teaching/ecologia-urbana/aula-02-clima-ilha-calor/index.html",
+      "/teaching/ecologia-urbana/aula-03-fragmentacao-habitats/index.html",
+      "/teaching/ecologia-urbana/aula-04-ecossistemas-ciclagem/index.html",
+      "/teaching/ecologia-urbana/aula-05-macroecologia/index.html",
+      "/teaching/ecologia-urbana/aula-06-invasao-biologica/index.html",
+      "/teaching/ecologia-urbana/aula-07-desigualdade-biodiversidade/index.html",
+      "/teaching/ecologia-urbana/aula-08-ambientes-aquaticos/index.html",
+      "/teaching/ecologia-urbana/aula-09-socio-ecologico/index.html",
+      "/teaching/ecologia-urbana/aula-10-apresentacao-artigo/index.html",
+      "/teaching/ecologia-urbana/aula-11-ciencia-cidada/index.html",
+      "/teaching/ecologia-urbana/aula-12-evolucao-contemporanea/index.html",
+      "/teaching/ecologia-urbana/aula-13-solucoes-conservacao/index.html",
+      "/teaching/ecologia-urbana/aula-14-conservacao-sustentabilidade/index.html"
     ]
   },
   {
