@@ -1,0 +1,51 @@
+---
+title: "Introdução à Macroevolução e Métodos Filogenéticos Comparativos"
+subtitle: "Minicurso — III Congresso Paulista de Ciências Biológicas, IBILCE/UNESP (2019)"
+toc: true
+---
+
+::: {.callout-tip appearance="minimal"}
+Minicurso apresentado em **maio de 2019** no [III Congresso Paulista de
+Ciências Biológicas (III CPBio)](https://cpbioriopreto.wixsite.com/cpbio/terceira-edicao),
+no [IBILCE/UNESP](https://www.ibilce.unesp.br/) (Instituto de Biociências,
+Letras e Ciências Exatas, São José do Rio Preto). Esta página reúne os
+**slides públicos** do curso, divididos em quatro partes. Para mais
+informações, [entre em contato](mailto:diogo.provete@ufms.br).
+:::
+
+## Sobre o minicurso
+
+Introdução à **macroevolução** — a evolução de fenótipos acima do nível de
+espécies — e aos **métodos filogenéticos comparativos** usados para estudá-la.
+O curso parte dos conceitos evolutivos fundamentais, apresenta o arcabouço dos
+métodos comparativos, ilustra aplicações com exemplos da literatura recente e
+encerra com linhas de pesquisa desenvolvidas no laboratório.
+
+## Slides
+
+**Parte 1 — Introdução à Macroevolução**
+Evolução de fenótipos acima do nível de espécies: o que é evolução, da
+microevolução à macroevolução.
+
+[{{< fa solid file-pdf >}} Baixar Parte 1 (PDF)](slides/parte-1.pdf){.btn .btn-outline-primary}
+
+**Parte 2 — Métodos Filogenéticos Comparativos**
+O que são, por que precisamos deles e como a estrutura filogenética entra na
+análise comparativa.
+
+[{{< fa solid file-pdf >}} Baixar Parte 2 (PDF)](slides/parte-2.pdf){.btn .btn-outline-primary}
+
+**Parte 3 — Exemplos de aplicação**
+Estudos recentes de macroevolução, com casos de evolução de caracteres
+morfológicos em anuros.
+
+[{{< fa solid file-pdf >}} Baixar Parte 3 (PDF)](slides/parte-3.pdf){.btn .btn-outline-primary}
+
+**Parte 4 — Pesquisa no laboratório**
+Linhas de pesquisa atuais do laboratório que aplicam essas abordagens.
+
+[{{< fa solid file-pdf >}} Baixar Parte 4 (PDF)](slides/parte-4.pdf){.btn .btn-outline-primary}
+
+---
+
+*Volta para a página de [ensino](../../teaching.qmd).*

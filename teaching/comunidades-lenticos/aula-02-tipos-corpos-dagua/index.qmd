@@ -5,7 +5,7 @@ description: "Classificação de ambientes lênticos (lagos, lagoas, açudes, po
 ---
 
 ::: {.aula-meta}
-**Aula 2**  ·  **Curso:** Comunidades de ambientes lênticos (PPG em Ecologia & Conservação, UFMS, 2018)
+**Aula 2**  ·  **Curso:** Comunidades de ambientes lênticos (Ciências Biológicas, UFMS, 2018)
 :::
 
 Classificação de **ambientes lênticos** — de lagos profundos a poças

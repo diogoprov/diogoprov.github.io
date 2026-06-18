@@ -12,76 +12,23 @@
     ]
   },
   {
-    "listing": "/teaching/mfc/index.html",
+    "listing": "/teaching/hfc/index.html",
     "items": [
-      "/teaching/mfc/aula-01-intro-desenho/index.html",
-      "/teaching/mfc/aula-02-modelos-evolucao-pgls/index.html",
-      "/teaching/mfc/aula-03-estado-ancestral/index.html",
-      "/teaching/mfc/aula-04-ou-multi-regime/index.html",
-      "/teaching/mfc/aula-05-autovetores-visualizacao/index.html",
-      "/teaching/mfc/aula-06-atributos-multivariados/index.html"
-    ]
-  },
-  {
-    "listing": "/teaching/intro-r/index.html",
-    "items": [
-      "/teaching/intro-r/aula-01-intro-r/index.html",
-      "/teaching/intro-r/aula-02-curadoria-dados/index.html",
-      "/teaching/intro-r/aula-03-git-github/index.html",
-      "/teaching/intro-r/aula-04-tidyverse/index.html",
-      "/teaching/intro-r/aula-05-ggplot2/index.html",
-      "/teaching/intro-r/aula-06-modelos-lineares/index.html",
-      "/teaching/intro-r/aula-07-programacao/index.html",
-      "/teaching/intro-r/aula-08-markdown-quarto/index.html"
-    ]
-  },
-  {
-    "listing": "/teaching/comunidades-lenticos/index.html",
-    "items": [
-      "/teaching/comunidades-lenticos/aula-01-apresentacao/index.html",
-      "/teaching/comunidades-lenticos/aula-02-tipos-corpos-dagua/index.html",
-      "/teaching/comunidades-lenticos/aula-03-fisico-quimica/index.html",
-      "/teaching/comunidades-lenticos/aula-04-adaptacoes/index.html",
-      "/teaching/comunidades-lenticos/aula-05-comunidades/index.html",
-      "/teaching/comunidades-lenticos/aula-06-metacomunidades/index.html",
-      "/teaching/comunidades-lenticos/aula-07-troficas/index.html",
-      "/teaching/comunidades-lenticos/aula-08-multivariada/index.html",
-      "/teaching/comunidades-lenticos/aula-10-amostragem/index.html",
-      "/teaching/comunidades-lenticos/aula-11-manejo/index.html"
-    ]
-  },
-  {
-    "listing": "/news/index.html",
-    "items": [
-      "/news/2025-09-15-iara-beatriz/index.html",
-      "/news/2025-02-15-bruna-master/index.html",
-      "/news/2024-10-01-fundect-grant/index.html",
-      "/news/2024-07-15-ana-paula-joins/index.html"
-    ]
-  },
-  {
-    "listing": "/index.html",
-    "items": [
-      "/news/2025-09-15-iara-beatriz/index.html",
-      "/news/2025-02-15-bruna-master/index.html",
-      "/news/2024-10-01-fundect-grant/index.html",
-      "/news/2024-07-15-ana-paula-joins/index.html"
-    ]
-  },
-  {
-    "listing": "/teaching/bioestatistica/index.html",
-    "items": [
-      "/teaching/bioestatistica/aula-01-introducao/index.html",
-      "/teaching/bioestatistica/aula-02-organizacao-dados/index.html",
-      "/teaching/bioestatistica/aula-03-tendencia-dispersao/index.html",
-      "/teaching/bioestatistica/aula-04-amostragem/index.html",
-      "/teaching/bioestatistica/aula-05-probabilidade/index.html",
-      "/teaching/bioestatistica/aula-06-estimativas/index.html",
-      "/teaching/bioestatistica/aula-07-teste-hipoteses/index.html",
-      "/teaching/bioestatistica/aula-08-modelos-lineares-teste-t/index.html",
-      "/teaching/bioestatistica/aula-09-regressao-correlacao/index.html",
-      "/teaching/bioestatistica/aula-10-qui-quadrado/index.html",
-      "/teaching/bioestatistica/aula-11-anova/index.html"
+      "/teaching/hfc/aula-00-introducao-hfc/index.html",
+      "/teaching/hfc/aula-01-o-que-e-ciencia/index.html",
+      "/teaching/hfc/aula-02-metodo-cientifico/index.html",
+      "/teaching/hfc/aula-03-perguntas-cientificas/index.html",
+      "/teaching/hfc/aula-04-evidencia-cientifica/index.html",
+      "/teaching/hfc/aula-05-inducao-deducao/index.html",
+      "/teaching/hfc/aula-06-anatomia-teoria/index.html",
+      "/teaching/hfc/aula-07-modelos-ciencia/index.html",
+      "/teaching/hfc/aula-08-popper-falseabilidade/index.html",
+      "/teaching/hfc/aula-09-kuhn-revolucoes/index.html",
+      "/teaching/hfc/aula-10-lakatos-programas/index.html",
+      "/teaching/hfc/aula-11-causalidade-explicacao/index.html",
+      "/teaching/hfc/aula-12-realismo-anti-realismo/index.html",
+      "/teaching/hfc/aula-13-holismo-reducionismo/index.html",
+      "/teaching/hfc/aula-14-pseudociencia/index.html"
     ]
   },
   {
@@ -104,23 +51,76 @@
     ]
   },
   {
-    "listing": "/teaching/hfc/index.html",
+    "listing": "/teaching/bioestatistica/index.html",
     "items": [
-      "/teaching/hfc/aula-00-introducao-hfc/index.html",
-      "/teaching/hfc/aula-01-o-que-e-ciencia/index.html",
-      "/teaching/hfc/aula-02-metodo-cientifico/index.html",
-      "/teaching/hfc/aula-03-perguntas-cientificas/index.html",
-      "/teaching/hfc/aula-04-evidencia-cientifica/index.html",
-      "/teaching/hfc/aula-05-inducao-deducao/index.html",
-      "/teaching/hfc/aula-06-anatomia-teoria/index.html",
-      "/teaching/hfc/aula-07-modelos-ciencia/index.html",
-      "/teaching/hfc/aula-08-popper-falseabilidade/index.html",
-      "/teaching/hfc/aula-09-kuhn-revolucoes/index.html",
-      "/teaching/hfc/aula-10-lakatos-programas/index.html",
-      "/teaching/hfc/aula-11-causalidade-explicacao/index.html",
-      "/teaching/hfc/aula-12-realismo-anti-realismo/index.html",
-      "/teaching/hfc/aula-13-holismo-reducionismo/index.html",
-      "/teaching/hfc/aula-14-pseudociencia/index.html"
+      "/teaching/bioestatistica/aula-01-introducao/index.html",
+      "/teaching/bioestatistica/aula-02-organizacao-dados/index.html",
+      "/teaching/bioestatistica/aula-03-tendencia-dispersao/index.html",
+      "/teaching/bioestatistica/aula-04-amostragem/index.html",
+      "/teaching/bioestatistica/aula-05-probabilidade/index.html",
+      "/teaching/bioestatistica/aula-06-estimativas/index.html",
+      "/teaching/bioestatistica/aula-07-teste-hipoteses/index.html",
+      "/teaching/bioestatistica/aula-08-modelos-lineares-teste-t/index.html",
+      "/teaching/bioestatistica/aula-09-regressao-correlacao/index.html",
+      "/teaching/bioestatistica/aula-10-qui-quadrado/index.html",
+      "/teaching/bioestatistica/aula-11-anova/index.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/news/2025-09-15-iara-beatriz/index.html",
+      "/news/2025-02-15-bruna-master/index.html",
+      "/news/2024-10-01-fundect-grant/index.html",
+      "/news/2024-07-15-ana-paula-joins/index.html"
+    ]
+  },
+  {
+    "listing": "/news/index.html",
+    "items": [
+      "/news/2025-09-15-iara-beatriz/index.html",
+      "/news/2025-02-15-bruna-master/index.html",
+      "/news/2024-10-01-fundect-grant/index.html",
+      "/news/2024-07-15-ana-paula-joins/index.html"
+    ]
+  },
+  {
+    "listing": "/teaching/comunidades-lenticos/index.html",
+    "items": [
+      "/teaching/comunidades-lenticos/aula-01-apresentacao/index.html",
+      "/teaching/comunidades-lenticos/aula-02-tipos-corpos-dagua/index.html",
+      "/teaching/comunidades-lenticos/aula-03-fisico-quimica/index.html",
+      "/teaching/comunidades-lenticos/aula-04-adaptacoes/index.html",
+      "/teaching/comunidades-lenticos/aula-05-comunidades/index.html",
+      "/teaching/comunidades-lenticos/aula-06-metacomunidades/index.html",
+      "/teaching/comunidades-lenticos/aula-07-troficas/index.html",
+      "/teaching/comunidades-lenticos/aula-08-multivariada/index.html",
+      "/teaching/comunidades-lenticos/aula-10-amostragem/index.html",
+      "/teaching/comunidades-lenticos/aula-11-manejo/index.html"
+    ]
+  },
+  {
+    "listing": "/teaching/intro-r/index.html",
+    "items": [
+      "/teaching/intro-r/aula-01-intro-r/index.html",
+      "/teaching/intro-r/aula-02-curadoria-dados/index.html",
+      "/teaching/intro-r/aula-03-git-github/index.html",
+      "/teaching/intro-r/aula-04-tidyverse/index.html",
+      "/teaching/intro-r/aula-05-ggplot2/index.html",
+      "/teaching/intro-r/aula-06-modelos-lineares/index.html",
+      "/teaching/intro-r/aula-07-programacao/index.html",
+      "/teaching/intro-r/aula-08-markdown-quarto/index.html"
+    ]
+  },
+  {
+    "listing": "/teaching/mfc/index.html",
+    "items": [
+      "/teaching/mfc/aula-01-intro-desenho/index.html",
+      "/teaching/mfc/aula-02-modelos-evolucao-pgls/index.html",
+      "/teaching/mfc/aula-03-estado-ancestral/index.html",
+      "/teaching/mfc/aula-04-ou-multi-regime/index.html",
+      "/teaching/mfc/aula-05-autovetores-visualizacao/index.html",
+      "/teaching/mfc/aula-06-atributos-multivariados/index.html"
     ]
   }
 ]

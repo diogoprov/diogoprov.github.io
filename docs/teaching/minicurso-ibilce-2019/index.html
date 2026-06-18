@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Conceitos de metacomunidade aplicados a ambientes lênticos: paradigmas, dispersão, conectividade e padrões espaciais.">
 
-<title>Aula 06 — Dinâmica de metacomunidades – Biodiversity Synthesis Lab</title>
+<title>Introdução à Macroevolução e Métodos Filogenéticos Comparativos – Biodiversity Synthesis Lab</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -27,27 +26,29 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../../">
-<link href="../../../assets/favicon.png" rel="icon" type="image/png">
-<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-6b38416d90cdbb41281c8a2a0df0236b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-1732e9b120b8faec2f4b22e599a6250f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../../site_libs/bootstrap/bootstrap-6b38416d90cdbb41281c8a2a0df0236b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../assets/favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-6b38416d90cdbb41281c8a2a0df0236b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-1732e9b120b8faec2f4b22e599a6250f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-6b38416d90cdbb41281c8a2a0df0236b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -84,12 +85,12 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<link rel="stylesheet" href="../../../styles.css">
-<meta property="og:title" content="Aula 06 — Dinâmica de metacomunidades – Biodiversity Synthesis Lab">
-<meta property="og:description" content="Conceitos de metacomunidade aplicados a ambientes lênticos: paradigmas, dispersão, conectividade e padrões espaciais.">
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="Introdução à Macroevolução e Métodos Filogenéticos Comparativos – Biodiversity Synthesis Lab">
+<meta property="og:description" content="Minicurso — III Congresso Paulista de Ciências Biológicas, IBILCE/UNESP (2019)">
 <meta property="og:site_name" content="Biodiversity Synthesis Lab">
-<meta name="twitter:title" content="Aula 06 — Dinâmica de metacomunidades – Biodiversity Synthesis Lab">
-<meta name="twitter:description" content="Conceitos de metacomunidade aplicados a ambientes lênticos: paradigmas, dispersão, conectividade e padrões espaciais.">
+<meta name="twitter:title" content="Introdução à Macroevolução e Métodos Filogenéticos Comparativos – Biodiversity Synthesis Lab">
+<meta name="twitter:description" content="Minicurso — III Congresso Paulista de Ciências Biológicas, IBILCE/UNESP (2019)">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -262,11 +263,11 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../../assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo light-content">
-    <img src="../../../assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo dark-content">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo light-content">
+    <img src="../../assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="../../../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Biodiversity Synthesis Lab</span>
     </a>
   </div>
@@ -277,39 +278,39 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../research.html"> 
+    <a class="nav-link" href="../../research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../publications.html"> 
+    <a class="nav-link" href="../../publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../people.html"> 
+    <a class="nav-link" href="../../people.html"> 
 <span class="menu-text">People</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../cv.html"> 
+    <a class="nav-link" href="../../cv.html"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../teaching.html"> 
+    <a class="nav-link" href="../../teaching.html"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../opportunities.html"> 
+    <a class="nav-link" href="../../opportunities.html"> 
 <span class="menu-text">Opportunities</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../projects.html"> 
+    <a class="nav-link" href="../../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../software.html"> 
+    <a class="nav-link" href="../../software.html"> 
 <span class="menu-text">Software</span></a>
   </li>  
   <li class="nav-item">
@@ -345,8 +346,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#slides" id="toc-slides" class="nav-link active" data-scroll-target="#slides">Slides</a></li>
-  <li><a href="#leituras-recomendadas" id="toc-leituras-recomendadas" class="nav-link" data-scroll-target="#leituras-recomendadas">Leituras recomendadas</a></li>
+  <li><a href="#sobre-o-minicurso" id="toc-sobre-o-minicurso" class="nav-link active" data-scroll-target="#sobre-o-minicurso">Sobre o minicurso</a></li>
+  <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides">Slides</a></li>
   </ul>
 </nav>
     </div>
@@ -356,14 +357,10 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Aula 06 — Dinâmica de metacomunidades</h1>
+<h1 class="title">Introdução à Macroevolução e Métodos Filogenéticos Comparativos</h1>
+<p class="subtitle lead">Minicurso — III Congresso Paulista de Ciências Biológicas, IBILCE/UNESP (2019)</p>
 </div>
 
-<div>
-  <div class="description">
-    Conceitos de metacomunidade aplicados a ambientes lênticos: paradigmas, dispersão, conectividade e padrões espaciais.
-  </div>
-</div>
 
 
 <div class="quarto-title-meta">
@@ -378,22 +375,32 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="aula-meta">
-<p><strong>Aula 6</strong> · <strong>Curso:</strong> Comunidades de ambientes lênticos (Ciências Biológicas, UFMS, 2018)</p>
+<div class="callout callout-style-simple callout-tip no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
 </div>
-<p><strong>Dinâmica de metacomunidades</strong> aplicada a ambientes lênticos. Paradigmas de metacomunidade (<em>patch dynamics</em>, <em>species sorting</em>, <em>mass effects</em>, <em>neutral</em>); papel da dispersão e da conectividade entre poças e lagos.</p>
+<div class="callout-body-container">
+<p>Minicurso apresentado em <strong>maio de 2019</strong> no <a href="https://cpbioriopreto.wixsite.com/cpbio/terceira-edicao">III Congresso Paulista de Ciências Biológicas (III CPBio)</a>, no <a href="https://www.ibilce.unesp.br/">IBILCE/UNESP</a> (Instituto de Biociências, Letras e Ciências Exatas, São José do Rio Preto). Esta página reúne os <strong>slides públicos</strong> do curso, divididos em quatro partes. Para mais informações, <a href="mailto:diogo.provete@ufms.br">entre em contato</a>.</p>
+</div>
+</div>
+</div>
+<section id="sobre-o-minicurso" class="level2">
+<h2 class="anchored" data-anchor-id="sobre-o-minicurso">Sobre o minicurso</h2>
+<p>Introdução à <strong>macroevolução</strong> — a evolução de fenótipos acima do nível de espécies — e aos <strong>métodos filogenéticos comparativos</strong> usados para estudá-la. O curso parte dos conceitos evolutivos fundamentais, apresenta o arcabouço dos métodos comparativos, ilustra aplicações com exemplos da literatura recente e encerra com linhas de pesquisa desenvolvidas no laboratório.</p>
+</section>
 <section id="slides" class="level2">
 <h2 class="anchored" data-anchor-id="slides">Slides</h2>
-<p><em>Slides desta aula em revisão — disponíveis sob pedido por <a href="mailto:diogo.provete@ufms.br">e-mail</a>.</em></p>
-</section>
-<section id="leituras-recomendadas" class="level2">
-<h2 class="anchored" data-anchor-id="leituras-recomendadas">Leituras recomendadas</h2>
-<ul>
-<li>Leibold, M.A.&nbsp;et al.&nbsp;2004. The metacommunity concept: a framework for multi-scale community ecology. <em>Ecology Letters</em> 7:601–613.</li>
-<li>Heino, J. et al.&nbsp;2015. Metacommunity organisation, spatial extent and dispersal in aquatic systems. <em>Freshwater Biology</em> 60:845–869.</li>
-</ul>
+<p><strong>Parte 1 — Introdução à Macroevolução</strong> Evolução de fenótipos acima do nível de espécies: o que é evolução, da microevolução à macroevolução.</p>
+<p><a href="slides/parte-1.pdf" class="btn btn-outline-primary"><i class="fa-solid fa-file-pdf" aria-label="file-pdf"></i> Baixar Parte 1 (PDF)</a></p>
+<p><strong>Parte 2 — Métodos Filogenéticos Comparativos</strong> O que são, por que precisamos deles e como a estrutura filogenética entra na análise comparativa.</p>
+<p><a href="slides/parte-2.pdf" class="btn btn-outline-primary"><i class="fa-solid fa-file-pdf" aria-label="file-pdf"></i> Baixar Parte 2 (PDF)</a></p>
+<p><strong>Parte 3 — Exemplos de aplicação</strong> Estudos recentes de macroevolução, com casos de evolução de caracteres morfológicos em anuros.</p>
+<p><a href="slides/parte-3.pdf" class="btn btn-outline-primary"><i class="fa-solid fa-file-pdf" aria-label="file-pdf"></i> Baixar Parte 3 (PDF)</a></p>
+<p><strong>Parte 4 — Pesquisa no laboratório</strong> Linhas de pesquisa atuais do laboratório que aplicam essas abordagens.</p>
+<p><a href="slides/parte-4.pdf" class="btn btn-outline-primary"><i class="fa-solid fa-file-pdf" aria-label="file-pdf"></i> Baixar Parte 4 (PDF)</a></p>
 <hr>
-<p><em>Volta para o <a href="../../../teaching/comunidades-lenticos/index.html">índice do curso</a>.</em></p>
+<p><em>Volta para a página de <a href="../../teaching.html">ensino</a>.</em></p>
 
 
 </section>
@@ -835,5 +842,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<script src="../../../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

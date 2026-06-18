@@ -5,7 +5,7 @@ description: "Mudanças globais e suas implicações para corpos d'água lêntic
 ---
 
 ::: {.aula-meta}
-**Aula 11**  ·  **Curso:** Comunidades de ambientes lênticos (PPG em Ecologia & Conservação, UFMS, 2018)
+**Aula 11**  ·  **Curso:** Comunidades de ambientes lênticos (Ciências Biológicas, UFMS, 2018)
 :::
 
 O que são **mudanças globais** e como elas afetam corpos d'água

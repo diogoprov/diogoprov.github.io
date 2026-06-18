@@ -25,6 +25,19 @@ Ofertada em 2019/2 e 2022/2.
 
 [Course site & materials →](teaching/ecologia-urbana/){.btn .btn-outline-primary}
 
+### Comunidades de ambientes lênticos — Ciências Biológicas
+
+Disciplina optativa de graduação em Ciências Biológicas, ofertada
+em 2018. Cobre fundamentos de limnologia, características
+físico-químicas de sistemas lênticos (estratificação, luz,
+oxigênio, nutrientes), adaptações dos organismos, estrutura de
+comunidades, dinâmica de metacomunidades, relações tróficas,
+técnicas de amostragem, introdução à análise multivariada
+aplicada a comunidades aquáticas e manejo de ambientes lênticos
+frente às mudanças globais.
+
+[Course site & materials →](teaching/comunidades-lenticos/){.btn .btn-outline-primary}
+
 ## Estatística Descomplicada — YouTube channel
 
 ::: {.callout-tip icon=false appearance="minimal"}
@@ -95,20 +108,19 @@ familiarity with phylogenetic inference.
 [Course site & materials →](teaching/mfc/){.btn .btn-outline-primary}
 [Mind map summarising the methods →](https://coggle.it/diagram/WhbkkxE2BAAB0R0m){.btn .btn-outline-primary}
 
-### Comunidades de ambientes lênticos
-
-Graduate course offered in 2018 to the [PPG in Ecology &
-Conservation](https://ppgec.ufms.br/) at UFMS. Covers limnology
-fundamentals, physical–chemical drivers of lentic systems
-(stratification, light, oxygen, nutrients), organismal adaptations,
-community structure and metacommunity dynamics, trophic relationships,
-field sampling techniques, and an introduction to multivariate
-analysis applied to aquatic communities — closing with a field
-practical at *Lago do Amor* (Campo Grande, MS).
-
-[Course site & materials →](teaching/comunidades-lenticos/){.btn .btn-outline-primary}
-
 ## Past courses & short-courses
+
+### 2019 — Introduction to Macroevolution & Phylogenetic Comparative Methods (PT)
+
+Short-course given at the [III Congresso Paulista de Ciências Biológicas (III
+CPBio)](https://cpbioriopreto.wixsite.com/cpbio/terceira-edicao),
+[IBILCE/UNESP](https://www.ibilce.unesp.br/) (São José do Rio Preto), May 2019.
+Introduces macroevolution — the evolution of phenotypes above the species
+level — and the phylogenetic comparative methods used to study it. Four parts:
+fundamentals of evolution, comparative methods, applied examples from the
+recent literature, and the lab's current research lines.
+
+[Course slides →](teaching/minicurso-ibilce-2019/){.btn .btn-outline-primary}
 
 ### 2012 — Mendeley demo, Universidade Federal de Goiás
 

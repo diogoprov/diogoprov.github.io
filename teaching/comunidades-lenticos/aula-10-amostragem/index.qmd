@@ -5,7 +5,7 @@ description: "Teoria de amostragem, desenhos amostrais em ambientes lênticos, c
 ---
 
 ::: {.aula-meta}
-**Aula 10**  ·  **Curso:** Comunidades de ambientes lênticos (PPG em Ecologia & Conservação, UFMS, 2018)
+**Aula 10**  ·  **Curso:** Comunidades de ambientes lênticos (Ciências Biológicas, UFMS, 2018)
 :::
 
 **Rudimentos de teoria de amostragem** — amostragem vs população

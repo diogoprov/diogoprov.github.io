@@ -1,6 +1,6 @@
 ---
 title: "Comunidades de ambientes lênticos"
-subtitle: "Disciplina de pós-graduação — PPG em Ecologia e Conservação, UFMS"
+subtitle: "Disciplina optativa de graduação — Ciências Biológicas, UFMS"
 toc: true
 listing:
   - id: cronograma
@@ -18,8 +18,8 @@ listing:
 ---
 
 ::: {.callout-tip appearance="minimal"}
-Disciplina **COMUNIDADES DE AMBIENTES LÊNTICOS** ministrada em 2018
-para o [PPG em Ecologia e Conservação](https://ppgec.ufms.br/) da
+Disciplina optativa **COMUNIDADES DE AMBIENTES LÊNTICOS**
+ministrada em 2018 para o curso de **Ciências Biológicas** da
 UFMS. Esta página reúne os **materiais públicos** desta edição —
 slides e bibliografia indicada para cada encontro. Para informações
 sobre próximas ofertas, [entre em
@@ -102,6 +102,6 @@ e prova optativa (PO).
 
 ## Edição arquivada
 
-- **2018/1** — PPG em Ecologia e Conservação, UFMS. Encontros
-  semanais, fevereiro a maio. Materiais desta edição estão
-  arquivados nesta página.
+- **2018** — Disciplina optativa, Ciências Biológicas, UFMS.
+  Encontros semanais. Materiais desta edição estão arquivados
+  nesta página.

@@ -5,7 +5,7 @@ description: "Conceitos de metacomunidade aplicados a ambientes lênticos: parad
 ---
 
 ::: {.aula-meta}
-**Aula 6**  ·  **Curso:** Comunidades de ambientes lênticos (PPG em Ecologia & Conservação, UFMS, 2018)
+**Aula 6**  ·  **Curso:** Comunidades de ambientes lênticos (Ciências Biológicas, UFMS, 2018)
 :::
 
 **Dinâmica de metacomunidades** aplicada a ambientes lênticos.
