@@ -43,7 +43,7 @@ jobs:
       # render — keeping them was making CI fail.
       - name: Install R packages used by the site
         run: |
-          Rscript -e 'install.packages(c("rmarkdown","knitr","yaml","scholar","pagedown","chromote","httr"), repos="https://cloud.r-project.org")'
+          Rscript -e 'options(repos = c(CRAN = Sys.getenv("RSPM", "https://packagemanager.posit.co/cran/__linux__/noble/latest"))); install.packages(c("rmarkdown","knitr","yaml","scholar","pagedown","chromote","httr")); if (!requireNamespace("rmarkdown", quietly = TRUE)) stop("rmarkdown failed to install")'
 
       - name: Render site (validation)
         run: quarto render
