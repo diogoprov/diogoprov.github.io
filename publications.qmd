@@ -546,7 +546,8 @@ revisions in Evolution.*
 
 **PROVETE, D.B.**; Severgnini, M.R.; Fernandes, C.E.; Franco-Belussi, L.
 2026. A practical guide to compositional data analysis in tissue stereology
-and blood cell profile. *In review at Histochemistry and Cell Biology.* &nbsp;
+and blood cell profile. *In the 1st round of revision at Journal of
+Anatomy.* &nbsp;
 <a href="https://www.researchsquare.com/article/rs-9590298/v1" title="Open-access preprint" aria-label="Open-access preprint"><i class="ai ai-open-access"></i></a>
 
 **PROVETE, D.B.**; Citadini, J.M.; Gomes, F.R. 2026. Microhabitat
@@ -570,8 +571,8 @@ update. *Submitted to Biota Neotropica.*
 
 **PROVETE, D.B.**; Ganci, C.C.; Ortega, Z. 2026. Behavioural
 thermoregulation in a Neotropical frog is detectable only when physiological
-integrity allows movement. *In review in Behavioral Ecology and
-Sociobiology.* &nbsp;
+integrity allows movement. *In the 1st round of revision at
+Naturwissenschaften.* &nbsp;
 <a href="https://www.biorxiv.org/content/10.1101/2020.06.11.146613v1" title="Preprint on bioRxiv" aria-label="Preprint on bioRxiv"><i class="ai ai-biorxiv"></i></a>
 
 ## In preparation
