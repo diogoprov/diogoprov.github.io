@@ -6,18 +6,24 @@ toc: true
 
 ## Message for prospective students
 
-I'm currently **recruiting graduate students**. If you've browsed the lab
-page, liked what you found, and would like to join the lab as an undergrad,
-Master's, or PhD student, please send me an email
-(`diogo.provete[at]ufms.br`) telling me about yourself, your research
-interests, your experience, and your goals.
+::: {.callout-note appearance="simple"}
+**I'm not recruiting new graduate students at the moment.** The lab is
+currently at capacity for both Master's and PhD supervision. This page
+will be updated whenever new positions become available.
+:::
 
-I can supervise graduate students in the [Ecology and Conservation graduate
-program](https://ppgec.ufms.br) and in Animal Biology at UFMS — check their
-website for deadlines and admission details.
+**Undergraduate students at UFMS** interested in scientific initiation
+(PIBIC/PIVIC) or a monograph project are still welcome to get in touch
+— please send me an email (`diogo.provete[at]ufms.br`) with a brief
+note about yourself, your research interests, and your goals.
 
-I'm always interested in meeting and talking to people about ecology,
-evolution, and science in general.
+I'm always happy to talk to people about ecology, evolution, and
+science in general — even if there's no formal position open.
+
+When positions do open, I can supervise graduate students in the
+[Ecology and Conservation graduate program](https://ppgec.ufms.br) and
+in Animal Biology at UFMS — check their websites for deadlines and
+admission details.
 
 ### Recommended reading
 
