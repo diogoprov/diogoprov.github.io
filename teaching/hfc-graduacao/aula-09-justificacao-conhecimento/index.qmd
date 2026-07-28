@@ -1,0 +1,25 @@
+---
+title: "Aula 09 — Justificação do conhecimento"
+order: 9
+description: "Como o conhecimento é justificado e o problema da justificação."
+---
+
+::: {.aula-meta}
+**Encontro 9**  ·  **Curso:** História e Filosofia da Ciência — graduação (Ciências Biológicas, UFMS)
+:::
+
+Como o conhecimento é justificado e o problema da justificação.
+
+## Leituras
+
+Capítulos de livros de copyright, disponibilizados via Moodle para a
+turma. Esta página lista apenas as citações — consulte a biblioteca da
+UFMS ou peça acesso ao [professor](mailto:diogo.provete@ufms.br). Veja a
+[bibliografia completa](../index.qmd#bibliografia) no índice do curso.
+
+- Cap. 4 de French
+- Cap. 3 de Dutra
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*

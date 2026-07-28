@@ -1,0 +1,25 @@
+---
+title: "Aula 05 — O papel da observação"
+order: 5
+description: "Como o mundo é descrito: a observação é neutra? Relação entre teoria e observação."
+---
+
+::: {.aula-meta}
+**Encontro 5**  ·  **Curso:** História e Filosofia da Ciência — graduação (Ciências Biológicas, UFMS)
+:::
+
+Como o mundo é descrito: a observação é neutra? Relação entre teoria e observação.
+
+## Leituras
+
+Capítulos de livros de copyright, disponibilizados via Moodle para a
+turma. Esta página lista apenas as citações — consulte a biblioteca da
+UFMS ou peça acesso ao [professor](mailto:diogo.provete@ufms.br). Veja a
+[bibliografia completa](../index.qmd#bibliografia) no índice do curso.
+
+- Cap. 5 de French, *Ciência, conceitos-chave*
+- Cap. 2 de Chalmers (4ª ed.)
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*

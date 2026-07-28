@@ -1,0 +1,127 @@
+---
+title: "História e Filosofia da Ciência"
+subtitle: "Disciplina de graduação — Ciências Biológicas (Bacharelado), UFMS (51 h)"
+toc: true
+listing:
+  - id: cronograma
+    contents: "aula-*/index.qmd"
+    type: table
+    sort: "order asc"
+    fields: [order, title, description]
+    field-display-names:
+      order: "Aula"
+      title: "Tópico"
+      description: "Conteúdo"
+    sort-ui: false
+    filter-ui: false
+    page-size: 20
+---
+
+::: {.callout-tip appearance="minimal"}
+Disciplina **TÓPICOS ESPECIAIS EM CIÊNCIAS BIOLÓGICAS VI** (27010001486,
+51 h) do curso de **Ciências Biológicas – Bacharelado** do INBio/UFMS,
+oferecida em **2021/2** com o conteúdo de **História e Filosofia da
+Ciência**. Tem o mesmo formato de seminários da [versão de
+pós-graduação](../hfc/), com leituras introdutórias diferentes. Esta página
+reúne os **materiais públicos** — lista de leituras e recursos online. Para
+informações sobre a próxima oferta, [entre em contato](mailto:diogo.provete@ufms.br).
+:::
+
+## Ementa
+
+Breve introdução à epistemologia. Como conhecimento científico e não
+científico são gerados. Visão de ciência de Aristóteles e o silogismo,
+racionalismo de Descartes, empirismo de David Hume e a crítica da razão pura
+de I. Kant. Teorias de progresso científico e as revoluções científicas.
+Critérios de demarcação. Diferenças entre métodos de aquisição de
+conhecimento científico. Definição dos componentes do método científico. Como
+teorias científicas são formuladas e usadas. Como formular boas perguntas
+científicas. Pseudociência e o ataque à ciência no mundo moderno. Sociologia
+da ciência: como a ciência é feita na prática; questões éticas ligadas à
+prática científica. Limites do conhecimento humano.
+
+## Objetivos
+
+Ao final do curso, espera-se que o(a) aluno(a) seja capaz de:
+
+- **reconhecer** a necessidade e o papel da filosofia para a ciência;
+- **identificar** os problemas filosóficos na atividade científica;
+- **compreender** as estruturas envolvidas numa explicação científica;
+- **refletir** sobre como a ciência progride e seus limites;
+- **analisar e contrastar** tentativas de delimitação de ciência e suas
+  consequências;
+- **esclarecer** as diferenças entre ciência e práticas pseudocientíficas.
+
+## Metodologia — formato seminário
+
+Discussão em sala mediada por **duplas de alunos** sobre textos retirados de
+livros de introdução à história e filosofia da ciência. A cada semana uma
+dupla lidera a discussão dos capítulos do tema, e o professor atua como
+balizador e orientador. Material: fotocópias de capítulos e textos
+selecionados da bibliografia.
+
+## Cronograma
+
+::: {#cronograma}
+:::
+
+A disciplina encerrava com uma **prova optativa** (2/DEZ/2021).
+
+## Avaliação
+
+- **P1 — participação** nas discussões em sala (cada dupla lidera a discussão
+  de uma semana);
+- **P2 — ensaios** sobre os capítulos de livro, entregues semanalmente.
+- **Recuperação:** teste escrito com questões discursivas sobre os principais
+  conceitos discutidos ao longo da disciplina.
+
+## Bibliografia
+
+### Bibliografia básica
+
+- Alves, R. 1999. *Filosofia da Ciência: introdução ao jogo e a suas regras.*
+  Loyola. 240 p.
+- Bortolotti, L. 2013. *Introdução à Filosofia da Ciência.* Gradiva, Lisboa.
+  340 p.
+- Chalmers, A.F. 1997. *O que é ciência afinal?* São Paulo: Brasiliense.
+- Chalmers, A. 2004. *A fabricação da ciência.* São Paulo: Editora UNESP.
+- Dutra, L.H.A. 2010. *Introdução à epistemologia.* São Paulo: Editora UNESP.
+  192 p.
+- French, S. 2008. *Ciência: conceitos-chave.* Porto Alegre: Artmed. 154 p.
+- Gaarder, J. 2012. *O mundo de Sofia.* São Paulo: Companhia das Letras.
+  568 p.
+- Gleiser, M. 2014. *A ilha do conhecimento.* 6ª ed. São Paulo: Record.
+  364 p.
+- Hacking, I. 2012. *Representar e intervir: tópicos introdutórios de
+  filosofia da ciência natural.* Rio de Janeiro: Editora da UERJ.
+- Losee, J. 2000. *Introdução histórica à filosofia da ciência.* Itatiaia.
+- Morin, E. 2003. *O Método 1 — a natureza da natureza.* 2ª ed. Porto Alegre:
+  Sulina. 479 p.
+- Moulines, C.U. 2020. *O desenvolvimento moderno da filosofia da ciência
+  (1890–2000).* São Paulo: Associação Filosófica Scientiae Studia. 272 p.
+
+### Bibliografia complementar
+
+- Feyerabend, P. 2011. *Contra o método.* Editora UNESP. 376 p.
+- Ford, E.D. 2000. *Scientific method for ecological research.* Cambridge
+  University Press.
+- Godfrey-Smith, P. 2009. *Theory and reality: an introduction to the
+  philosophy of science.* University of Chicago Press.
+- Hume, D. 2004. *Investigações sobre o entendimento humano e sobre os
+  princípios da moral.* Editora UNESP. 440 p.
+- Kant, I. 2013. *Crítica da razão pura.* 2ª ed. Petrópolis: Vozes. 621 p.
+- Kuhn, T.S. 2011. *A estrutura das revoluções científicas.* São Paulo:
+  Perspectiva.
+- Popper, K. 2013. *A lógica da pesquisa científica.* São Paulo: Cultrix.
+
+### Recursos online
+
+- [Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/) — fonte
+  de referência usada em todas as aulas.
+- [Internet Encyclopedia of Philosophy](https://iep.utm.edu/) — alternativa.
+
+## Edições
+
+- **2021/2** — UFMS, Ciências Biológicas (Bacharelado). *Tópicos Especiais em
+  Ciências Biológicas VI* (27010001486, 51 h). Plano de ensino aprovado em
+  30/07/2021.

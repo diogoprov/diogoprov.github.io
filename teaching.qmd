@@ -38,6 +38,19 @@ frente às mudanças globais.
 
 [Course site & materials →](teaching/comunidades-lenticos/){.btn .btn-outline-primary}
 
+### History and Philosophy of Science — Ciências Biológicas
+
+Undergraduate seminar course (51 h) offered in 2021/2 for the Biological
+Sciences (Bacharelado) programme at INBio/UFMS, under the administrative title
+*Tópicos Especiais em Ciências Biológicas VI*. Same seminar format as the
+[graduate version](teaching/hfc/) — student pairs lead the discussion of
+weekly readings — but with introductory readings (Chalmers, French, Rubem
+Alves, Dutra, *O Mundo de Sofia*, Sagan). Covers epistemology, rationalism vs
+empiricism (Descartes, Hume, Kant), scientific theories, Popper, Kuhn, asking
+good scientific questions, and pseudoscience.
+
+[Course site & materials →](teaching/hfc-graduacao/){.btn .btn-outline-primary}
+
 ## Estatística Descomplicada — YouTube channel
 
 ::: {.callout-tip icon=false appearance="minimal"}

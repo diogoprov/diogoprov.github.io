@@ -1,0 +1,24 @@
+---
+title: "Aula 12 — Karl Popper e a falseabilidade"
+order: 12
+description: "O critério de demarcação de Popper: falseabilidade e crítica ao indutivismo."
+---
+
+::: {.aula-meta}
+**Encontro 12**  ·  **Curso:** História e Filosofia da Ciência — graduação (Ciências Biológicas, UFMS)
+:::
+
+O critério de demarcação de Popper: falseabilidade e crítica ao indutivismo.
+
+## Leituras
+
+Capítulos de livros de copyright, disponibilizados via Moodle para a
+turma. Esta página lista apenas as citações — consulte a biblioteca da
+UFMS ou peça acesso ao [professor](mailto:diogo.provete@ufms.br). Veja a
+[bibliografia completa](../index.qmd#bibliografia) no índice do curso.
+
+- Cap. 4 de Chalmers
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*

@@ -534,9 +534,14 @@ pp. 1237–1239. New Jersey: Salem Press. &nbsp;
 
 ## In review
 
+Vasconcelos, T.; da Silva, F.R.; dos Santos, T.G.; Prado, V.H.M.;
+**PROVETE, D.B.** 2026. Disentangling the topographical, spatial, and
+climatic drivers of multiregional anuran beta diversity in South
+America. *Submitted to Oecologia.*
+
 Martins, P.M.; Galvão, G.A.; Gonçalves-Souza, T.; **PROVETE, D.B.**;
 de Miranda, G.S. 2026. The evolution of body size and shape in whip-spiders.
-*In the 2nd round of revision in Evolution.* &nbsp;
+*Received minor revisions in Evolution.* &nbsp;
 <a href="https://www.biorxiv.org/content/10.1101/2025.10.06.680801v1" title="Preprint on bioRxiv" aria-label="Preprint on bioRxiv"><i class="ai ai-biorxiv"></i></a>
 
 Pacheco, G.; Torquato, F.; Caron, F.S.; (...) **PROVETE, D.B.** (...)
@@ -546,8 +551,7 @@ revisions in Evolution.*
 
 **PROVETE, D.B.**; Severgnini, M.R.; Fernandes, C.E.; Franco-Belussi, L.
 2026. A practical guide to compositional data analysis in tissue stereology
-and blood cell profile. *In the 1st round of revision at Journal of
-Anatomy.* &nbsp;
+and blood cell profile. *In the 1st round of revision in Physiological Reports.* &nbsp;
 <a href="https://www.researchsquare.com/article/rs-9590298/v1" title="Open-access preprint" aria-label="Open-access preprint"><i class="ai ai-open-access"></i></a>
 
 **PROVETE, D.B.**; Citadini, J.M.; Gomes, F.R. 2026. Microhabitat
@@ -558,12 +562,14 @@ by frogs. *Submitted to Behavioral Ecology.* &nbsp;
 Piatti, L.; de Sousa, D.L.H.; Oliveira, B.S.; de Melo, A.V.;
 Sugai, L.S.M.; **PROVETE, D.B.** 2026. Methodological choices influence
 ecological inference in passive acoustic monitoring of a Neotropical
-nightjar. *Submitted to Journal of Avian Biology.* &nbsp;
+nightjar. *Received major revisions in Journal of Avian Biology.* &nbsp;
 <a href="https://ecoevorxiv.org/repository/view/13229/" title="Open-access preprint" aria-label="Open-access preprint"><i class="ai ai-open-access"></i></a>
 
 Franco-Belussi, L.; Trevisan, L.; De Oliveira, C.; Fernandes, C.E.;
-**PROVETE, D.B.** 2026. Seasonal hepatic plasticity follows a descending
-cascade in a Neotropical frog. *Submitted to Integrative Zoology.*
+**PROVETE, D.B.** 2026. Seasonal hepatic plasticity follows a temporal
+response hierarchy in a Neotropical frog. *In the 1st round of revision in
+Frontiers in Zoology.* &nbsp;
+<a href="https://www.biorxiv.org/content/10.64898/2026.07.26.740824v1" title="Preprint on bioRxiv" aria-label="Preprint on bioRxiv"><i class="ai ai-biorxiv"></i></a>
 
 **PROVETE, D.B.**; da Silva, F.R. 2026. Knowledge gap on the larval
 morphology of free-swimming anuran tadpoles from Brazil: a 14-year

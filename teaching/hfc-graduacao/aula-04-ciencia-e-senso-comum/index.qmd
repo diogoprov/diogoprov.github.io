@@ -1,0 +1,28 @@
+---
+title: "Aula 04 — Ciência e senso comum"
+order: 4
+description: "O que separa o conhecimento científico do senso comum e da opinião."
+---
+
+::: {.aula-meta}
+**Encontro 4**  ·  **Curso:** História e Filosofia da Ciência — graduação (Ciências Biológicas, UFMS)
+:::
+
+O que separa o conhecimento científico do senso comum e da opinião.
+
+## Leituras
+
+Capítulos de livros de copyright, disponibilizados via Moodle para a
+turma. Esta página lista apenas as citações — consulte a biblioteca da
+UFMS ou peça acesso ao [professor](mailto:diogo.provete@ufms.br). Veja a
+[bibliografia completa](../index.qmd#bibliografia) no índice do curso.
+
+- Caps. 1 e 2 de Rubem Alves, *Filosofia da Ciência*
+
+## Recursos públicos
+
+- [Por que ciência é diferente de opinião? — Nexo Jornal](https://www.nexojornal.com.br/expresso/2020/04/05/Como-funciona-o-método-científico.-E-por-que-ele-é-diferente-de-opinião)
+
+---
+
+*Volta para o [índice do curso](../index.qmd).*
