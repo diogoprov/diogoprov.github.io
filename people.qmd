@@ -100,6 +100,14 @@ of frogs to urbanisation in the Atlantic Forest.</p>
 </p>
 :::
 
+::: {.person-card}
+<img src="assets/images/people/barros.jpg" alt="João Victor Santos Barros"
+     onerror="this.style.display='none'">
+<p class="name">João Victor Santos Barros</p>
+<p class="role">Undergrad researcher</p>
+<p class="topic">Thermal adaptation in stingless bees (CNPq fellowship, 2026).</p>
+:::
+
 :::
 
 ::: {.callout-note}
