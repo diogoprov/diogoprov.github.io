@@ -2,13 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.8.26">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <title>Walkthrough principal — ASR (atributos discretos e contínuos), sinal filogenético – Biodiversity Synthesis Lab</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -66,18 +63,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../../assets/favicon.png" rel="icon" type="image/png">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-6b38416d90cdbb41281c8a2a0df0236b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-1732e9b120b8faec2f4b22e599a6250f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../../site_libs/bootstrap/bootstrap-6b38416d90cdbb41281c8a2a0df0236b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+<link href="../../../site_libs/bootstrap/bootstrap-ec100a28b3f28334d858203a6e0baf76.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-792179fa6f5e867ef93c0d1b175e11f0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../site_libs/bootstrap/bootstrap-ec100a28b3f28334d858203a6e0baf76.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
@@ -490,7 +488,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span><span class="co">#---K de Blomberg</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">picante</span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/liamrevell/phytools">phytools</a></span><span class="op">)</span></span>
-<span><span class="fu">phylosignal</span><span class="op">(</span><span class="va">svl</span>, <span class="va">anolis.tree</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/pkg/picante/man/phylosignal.html">phylosignal</a></span><span class="op">(</span><span class="va">svl</span>, <span class="va">anolis.tree</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/phylosig.html">phylosig</a></span><span class="op">(</span><span class="va">anolis.tree</span>, <span class="va">svl</span>, test <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
 <span></span>
 <span><span class="co">#---Lambda de Pagel</span></span>
@@ -512,7 +510,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/adeverse/adephylo">adephylo</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">PVR</span><span class="op">)</span></span>
 <span><span class="va">filo</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/read.tree.html">read.tree</a></span><span class="op">(</span><span class="st">"filogenia_bocaina.txt"</span><span class="op">)</span></span>
-<span><span class="va">cc</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/PVR/man/PVRdecomp.html">PVRdecomp</a></span><span class="op">(</span><span class="va">filo</span><span class="op">)</span></span>
+<span><span class="va">cc</span> <span class="op">&lt;-</span> <span class="fu">PVRdecomp</span><span class="op">(</span><span class="va">filo</span><span class="op">)</span></span>
 <span><span class="va">trait</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/utils/read.table.html">read.csv2</a></span><span class="op">(</span><span class="st">"canto.csv"</span>, h<span class="op">=</span><span class="cn">TRUE</span>, dec <span class="op">=</span> <span class="st">"."</span><span class="op">)</span></span>
 <span><span class="va">trait</span><span class="op">&lt;-</span><span class="va">trait</span><span class="op">[</span>,<span class="op">-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">2</span>,<span class="fl">4</span>,<span class="fl">8</span><span class="op">)</span><span class="op">]</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">trait</span><span class="op">)</span></span>
@@ -526,10 +524,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span><span class="va">espectral</span><span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/matrix.html">as.matrix</a></span><span class="op">(</span><span class="va">vectors</span><span class="op">)</span><span class="op">[</span>,<span class="fl">1</span><span class="op">]</span></span>
 <span><span class="fu"><a href="https://rdrr.io/pkg/phylobase/man/print-methods.html">names</a></span><span class="op">(</span><span class="va">espectral</span><span class="op">)</span><span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/colnames.html">rownames</a></span><span class="op">(</span><span class="va">vectors</span><span class="op">)</span></span>
 <span></span>
-<span><span class="va">psrcurve</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/PVR/man/PSR.html">PSR</a></span><span class="op">(</span><span class="va">x</span>, trait <span class="op">=</span> <span class="va">vectors</span>, null.model <span class="op">=</span> <span class="cn">TRUE</span>, Brownian.model <span class="op">=</span> <span class="cn">TRUE</span>, times <span class="op">=</span> <span class="fl">999</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/PVR/man/PSRplot.html">PSRplot</a></span><span class="op">(</span><span class="va">psrcurve</span>, info <span class="op">=</span> <span class="st">"both"</span><span class="op">)</span></span>
-<span><span class="va">anal_pvr</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/PVR/man/PVR.html">PVR</a></span><span class="op">(</span><span class="va">psrcurve</span>, trait <span class="op">=</span> <span class="va">espectral</span>, envVar <span class="op">=</span> <span class="va">new.data2</span><span class="op">$</span><span class="va">data</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/PVR/man/VarPartplot.html">VarPartplot</a></span><span class="op">(</span><span class="va">anal_pvr</span><span class="op">)</span><span class="co">#plot of variation partitioning</span></span>
+<span><span class="va">psrcurve</span><span class="op">&lt;-</span><span class="fu">PSR</span><span class="op">(</span><span class="va">x</span>, trait <span class="op">=</span> <span class="va">vectors</span>, null.model <span class="op">=</span> <span class="cn">TRUE</span>, Brownian.model <span class="op">=</span> <span class="cn">TRUE</span>, times <span class="op">=</span> <span class="fl">999</span><span class="op">)</span></span>
+<span><span class="fu">PSRplot</span><span class="op">(</span><span class="va">psrcurve</span>, info <span class="op">=</span> <span class="st">"both"</span><span class="op">)</span></span>
+<span><span class="va">anal_pvr</span><span class="op">&lt;-</span><span class="fu">PVR</span><span class="op">(</span><span class="va">psrcurve</span>, trait <span class="op">=</span> <span class="va">espectral</span>, envVar <span class="op">=</span> <span class="va">new.data2</span><span class="op">$</span><span class="va">data</span><span class="op">)</span></span>
+<span><span class="fu">VarPartplot</span><span class="op">(</span><span class="va">anal_pvr</span><span class="op">)</span><span class="co">#plot of variation partitioning</span></span>
 <span></span>
 <span><span class="co">#---Correlograma de Moran</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/source.html">source</a></span><span class="op">(</span><span class="st">'https://www.mail-archive.com/r-sig-phylo@r-project.org/msg02131/distcor.R'</span><span class="op">)</span></span>

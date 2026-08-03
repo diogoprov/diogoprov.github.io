@@ -412,7 +412,7 @@ Vasconcelos, T.; da Silva, F. R.; **PROVETE, D. B.**; Gomes, T.; Prado, V. H. M.
 ### Administrative positions
 
 ::: {.cv-timeline}
-| **2022 – present** | Coordinator, Evolution English Language Service (EELS), Society for the Study of Evolution |
+| **2022 – 2026** | Coordinator, Evolution English Language Service (EELS), Society for the Study of Evolution |
 |---|---|
 | **2024 – 2026** | Council Speaker, Ecological Society of America |
 | **2022 – 2026** | Member of the Council, Ecological Society of America |
@@ -497,8 +497,9 @@ Acta Herpetologica · American Journal of Botany · American Naturalist · Amphi
 ## Invited symposia and seminars
 
 ::: {.cv-timeline}
-| **2025** | Evolution seminar — Universität Bielefeld, Germany |
+| **2026** | Macroevolution symposium and Editor's round table — Brazilian Society for Evolutionary Biology |
 |---|---|
+| **2025** | Evolution seminar — Universität Bielefeld, Germany |
 | **2025** | *Boas práticas para redação e submissão de artigos* — Wiley Customer Education |
 | **2025** | *Acesso aberto e seus benefícios* — Wiley Customer Education |
 | **2024** | Panelist — "Equity in open access publishing" — Association of Learned and Professional Society Publishers |
