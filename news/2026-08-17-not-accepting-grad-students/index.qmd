@@ -1,0 +1,11 @@
+---
+title: "Not accepting new graduate students"
+description: "As of August 2026, Diogo is not taking on new graduate students."
+date: "2026-08-17"
+categories: [news]
+---
+
+As of **August 2026**, Diogo is **not accepting new graduate students** for
+the time being. Prospective students are welcome to [get in
+touch](mailto:diogo.provete@ufms.br) about other opportunities or to check
+back in the future.

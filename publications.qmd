@@ -545,7 +545,7 @@ size evolution in charontid whip-spiders. *Accepted in Evolution.* &nbsp;
 Vasconcelos, T.; da Silva, F.R.; dos Santos, T.G.; Prado, V.H.M.;
 **PROVETE, D.B.** 2026. Disentangling the topographical, spatial, and
 climatic drivers of multiregional anuran beta diversity in South
-America. *Submitted to Oecologia.*
+America. *In first round of revisions in Austral Ecology.*
 
 Pacheco, G.; Torquato, F.; Caron, F.S.; (...) **PROVETE, D.B.** (...)
 Russo, C.A.M. 2026. The birth of the Brazilian Society for Evolutionary
@@ -559,7 +559,7 @@ and blood cell profile. *In the 1st round of revision in Physiological Reports.*
 
 **PROVETE, D.B.**; Citadini, J.M.; Gomes, F.R. 2026. Microhabitat
 structural complexity and predator stimulus drive predator escape decision
-by frogs. *Submitted to Behavioral Ecology.* &nbsp;
+by frogs. *Received major revisions in Behavioral Ecology.* &nbsp;
 <a href="https://www.biorxiv.org/content/10.64898/2026.05.26.728007v1" title="Preprint on bioRxiv" aria-label="Preprint on bioRxiv"><i class="ai ai-biorxiv"></i></a>
 
 Piatti, L.; de Sousa, D.L.H.; Oliveira, B.S.; de Melo, A.V.;
@@ -595,9 +595,9 @@ local environmental heterogeneity on phenotypic variability in a tropical
 frog. *In the 2nd round of revision in Ecology.* &nbsp;
 <a href="http://www.biorxiv.org/content/10.1101/2024.11.28.625871v1" title="Preprint on bioRxiv" aria-label="Preprint on bioRxiv"><i class="ai ai-biorxiv"></i></a>
 
-**PROVETE, D.B.**; Garey, M.V.; Rossa-Feres, D.C. 2026. Phenotype–environment
-interaction in a tropical tadpole metacommunity shows pervasive effect of
-habitat structural complexity. *To be submitted to Ecology Letters.*
+**PROVETE, D.B.**; Garey, M.V.; Menin, M.; Rossa-Feres, D.C. 2026. Pond depth
+filters tadpole body shape in a species-poor Amazonian pond metacommunity with
+pronounced internal structure. *To be submitted to Freshwater Biology.*
 
 Moroti, M.T.; Moura, M.; Pires, M.M.; **PROVETE, D.B.** Divergent pathways
 shape climatic niches and body size evolution across terrestrial vertebrates.

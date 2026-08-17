@@ -1,0 +1,9 @@
+---
+title: "Welcome to João Barros"
+description: "João Barros joins the lab as an undergraduate research fellow (PIBIC)."
+date: "2026-07-01"
+categories: [news, people]
+---
+
+In **July 2026**, **João Barros** started working with us as an
+**undergraduate research fellow (PIBIC)**.
