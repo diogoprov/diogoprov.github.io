@@ -60,6 +60,13 @@ Icons: <i class="fa-solid fa-file-pdf"></i> PDF · <i class="ai ai-biorxiv"></i>
 
 ### 2026
 
+Martins, P.M.; Galvão, G.A.; Gonçalves-Souza, T.; **PROVETE, D.B.**;
+de Miranda, G.S. 2026. The impact of climate and habitat on body shape and
+size evolution in charontid whip spiders. *Evolution* qpag138. &nbsp;
+<a href="https://doi.org/10.1093/evolut/qpag138" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a> · &nbsp;
+<a href="https://www.biorxiv.org/content/10.1101/2025.10.06.680801v1" title="Preprint on bioRxiv" aria-label="Preprint on bioRxiv"><i class="ai ai-biorxiv"></i></a> · &nbsp;
+<a href="https://figshare.com/articles/journal_contribution/Data_and_analysis_for_The_impact_of_climate_and_habitat_on_body_shape_and_size_evolution_in_charontid_whip_spiders/32436555" title="Data" aria-label="Data"><i class="ai ai-open-data"></i></a>
+
 Rebouças, R.; Moroti, M.T.; Carvalho, T.; Martins, M.R.; Toledo, L.F.;
 **PROVETE, D.B.** 2026. Environmental and geomorphological drivers of frog
 diversity on islands worldwide. *Ecography* 2026:e07818. &nbsp;
@@ -531,14 +538,6 @@ in ethnobiology and ethnoecology.* Springer, Berlin. &nbsp;
 *[Biomes & Ecosystems.](http://salempress.com/Store/samples/Biomes_Ecosystems/Biomes_Ecosystems.htm)*
 pp. 1237–1239. New Jersey: Salem Press. &nbsp;
 <a href="https://diogoprovete.weebly.com/uploads/1/7/3/6/17367099/tocantins_river.pdf" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
-
-## In press
-
-Martins, P.M.; Galvão, G.A.; Gonçalves-Souza, T.; **PROVETE, D.B.**;
-de Miranda, G.S. 2026. The impact of climate and habitat on body shape and
-size evolution in charontid whip-spiders. *Accepted in Evolution.* &nbsp;
-<a href="https://www.biorxiv.org/content/10.1101/2025.10.06.680801v1" title="Preprint on bioRxiv" aria-label="Preprint on bioRxiv"><i class="ai ai-biorxiv"></i></a> · &nbsp;
-<a href="https://figshare.com/articles/journal_contribution/Data_and_analysis_for_The_impact_of_climate_and_habitat_on_body_shape_and_size_evolution_in_charontid_whip_spiders/32436555" title="Data" aria-label="Data"><i class="ai ai-open-data"></i></a>
 
 ## In review
 
