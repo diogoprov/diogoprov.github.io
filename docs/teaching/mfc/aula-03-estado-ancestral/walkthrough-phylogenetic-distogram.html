@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.8.26">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
 <title>Distograma filogenético – Biodiversity Synthesis Lab</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -57,6 +57,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 </style>
 
+
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -66,18 +67,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../../assets/favicon.png" rel="icon" type="image/png">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-6b38416d90cdbb41281c8a2a0df0236b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-1732e9b120b8faec2f4b22e599a6250f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../../site_libs/bootstrap/bootstrap-6b38416d90cdbb41281c8a2a0df0236b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+<link href="../../../site_libs/bootstrap/bootstrap-ec100a28b3f28334d858203a6e0baf76.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
@@ -103,13 +102,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script><style>html{ scroll-behavior: smooth; }</style>
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <style>
   /* Tame Academicons next to text in card rows */
   .ai { vertical-align: -.05em; }
 </style>
+
+
 <link rel="stylesheet" href="../../../styles.css">
 <meta property="og:title" content="Distograma filogenético – Biodiversity Synthesis Lab">
 <meta property="og:description" content="Walkthrough do código — Aula 3: Estimativa de estado ancestral e sinal filogenético">
@@ -118,175 +120,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta name="twitter:description" content="Walkthrough do código — Aula 3: Estimativa de estado ancestral e sinal filogenético">
 <meta name="twitter:card" content="summary">
 </head>
-<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        window.scrollTo(0, 1);
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
-      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
+
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../../assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo light-content"><img src="../../../assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo dark-content"></a>
+    <img src="../../../assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo light-content">
+    <img src="../../../assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo dark-content">
+    </a>
     <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Biodiversity Synthesis Lab</span>
     </a>
@@ -297,7 +142,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-<li class="nav-item">
+  <li class="nav-item">
     <a class="nav-link" href="../../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
@@ -312,10 +157,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li class="nav-item">
     <a class="nav-link" href="../../../people.html"> 
 <span class="menu-text">People</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../../cv.html"> 
-<span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../../teaching.html"> 
@@ -338,8 +179,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Brazilian Tadpoles</span></a>
   </li>  
 </ul>
-<ul class="navbar-nav navbar-nav-scroll ms-auto">
-<li class="nav-item compact">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/diogoprov"> <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
 <span class="menu-text"></span></a>
@@ -350,19 +191,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text"></span></a>
   </li>  
 </ul>
-</div> <!-- /navcollapse -->
+          </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
-    </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
 <div class="quarto-title-block"><div><h1 class="title">Distograma filogenético</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 <p class="subtitle lead">Walkthrough do código — Aula 3: Estimativa de estado ancestral e sinal filogenético</p>
 </div>
@@ -378,7 +224,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   
 
 
-</header><div class="callout callout-style-simple callout-note no-icon">
+</header>
+
+
+<div class="callout callout-style-simple callout-note no-icon">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
@@ -389,82 +238,70 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Generates either a distogram or an autocorrelogram based on Hardy, O. J., and S. Pavoine. 2012. Evolution 66:2614-2621 and Diniz-Filho, J. A. F. 2001. Evolution 55:1104-1109</span></span>
-<span><span class="co"># code is modified from Hardy and Pavoine 2012</span></span>
-<span><span class="co"># includes a comparison to Brownian motion model (simulations scaled by the original data) and to a case of no phylogenetic structure (permutations of the original data)</span></span>
-<span><span class="co"># Input is data matrix (for multivariate data) or vector (for univariate data) and tree as a phylo object</span></span>
-<span><span class="co"># dcfun specifies whether the Euclidean distance ("ED") is calculated or Moran's I ("IM")</span></span>
-<span><span class="co"># nsims specifies the number of simulations for the BM simulations and permutations</span></span>
-<span><span class="co"># default (plot=TRUE) generates the plot itself (either distogram or autocorrelogram), otherwise you can set plot=FALSE and plot it yourself based on the output</span></span>
-<span><span class="co"># output is a matrix in which every row is a class of patristic distance over which the distance/similarity is averaged. columns are the mean patristic distance for that class ("pdcm"), the observed value of distance/similarity ("obs"), the mean ("Pm"), lower ("Pl"), and upper ("Pu") bounds of the 95% CI of permutations, and the mean ("BMm"), lower ("BMl"), and upper ("BMu") bounds of the 95% CI of BM simulations</span></span>
-<span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">require</a></span><span class="op">(</span><span class="va">abind</span><span class="op">)</span>; <span class="kw"><a href="https://rdrr.io/r/base/library.html">require</a></span><span class="op">(</span><span class="va">geiger</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">distcor</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">X</span>, <span class="va">tree</span>, <span class="va">dcfun</span><span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"ED"</span>,<span class="st">"IM"</span><span class="op">)</span>, <span class="va">nsims</span> <span class="op">=</span> <span class="fl">100</span>, <span class="va">plot</span><span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span> <span class="op">{</span></span>
-<span>    <span class="va">X</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/matrix.html">as.matrix</a></span><span class="op">(</span><span class="va">X</span><span class="op">)</span></span>
-<span>    <span class="va">pd</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/ape/man/cophenetic.phylo.html">cophenetic.phylo</a></span><span class="op">(</span><span class="va">tree</span><span class="op">)</span></span>
-<span>    <span class="va">pd</span> <span class="op">&lt;-</span> <span class="va">pd</span><span class="op">/</span><span class="fu"><a href="https://rdrr.io/r/base/Extremes.html">max</a></span><span class="op">(</span><span class="va">pd</span><span class="op">)</span></span>
-<span>    <span class="va">class</span> <span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">0</span>, <span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span><span class="op">)</span><span class="op">/</span><span class="fl">10</span><span class="op">)</span></span>
-<span>    <span class="kw">if</span> <span class="op">(</span><span class="va">dcfun</span><span class="op">==</span><span class="st">"ED"</span><span class="op">)</span> <span class="va">class</span> <span class="op">&lt;-</span> <span class="va">class</span><span class="op">^</span><span class="fl">2</span></span>
-<span>    <span class="va">pdcm</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="op">)</span></span>
-<span>    <span class="kw">for</span><span class="op">(</span><span class="va">j</span> <span class="kw">in</span> <span class="fl">2</span><span class="op">:</span><span class="fu"><a href="https://rdrr.io/r/base/length.html">length</a></span><span class="op">(</span><span class="va">class</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span><span class="va">pdcm</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">pdcm</span>, <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">pd</span><span class="op">[</span><span class="va">pd</span><span class="op">&gt;</span><span class="va">class</span><span class="op">[</span><span class="va">j</span><span class="op">-</span><span class="fl">1</span><span class="op">]</span> <span class="op">&amp;</span> <span class="va">pd</span><span class="op">&lt;=</span><span class="va">class</span><span class="op">[</span><span class="va">j</span><span class="op">]</span><span class="op">]</span><span class="op">)</span><span class="op">)</span><span class="op">}</span></span>
-<span>    <span class="va">XP</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/array.html">array</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/apply.html">apply</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/array.html">array</a></span><span class="op">(</span><span class="va">X</span>, dim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/nrow.html">nrow</a></span><span class="op">(</span><span class="va">X</span><span class="op">)</span>,<span class="fu"><a href="https://rdrr.io/r/base/nrow.html">ncol</a></span><span class="op">(</span><span class="va">X</span><span class="op">)</span>,<span class="va">nsims</span><span class="op">)</span><span class="op">)</span>, <span class="fl">3</span>, <span class="kw">function</span><span class="op">(</span><span class="va">X</span><span class="op">)</span><span class="op">{</span><span class="va">X</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/sample.html">sample</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fu"><a href="https://rdrr.io/r/base/nrow.html">nrow</a></span><span class="op">(</span><span class="va">X</span><span class="op">)</span>,<span class="fu"><a href="https://rdrr.io/r/base/nrow.html">nrow</a></span><span class="op">(</span><span class="va">X</span><span class="op">)</span><span class="op">)</span>,<span class="op">]</span><span class="op">}</span><span class="op">)</span>, dim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/nrow.html">nrow</a></span><span class="op">(</span><span class="va">X</span><span class="op">)</span>,<span class="fu"><a href="https://rdrr.io/r/base/nrow.html">ncol</a></span><span class="op">(</span><span class="va">X</span><span class="op">)</span>,<span class="va">nsims</span><span class="op">)</span><span class="op">)</span> <span class="co">#permutations of species to simulate no phylogenetic structure</span></span>
-<span>    <span class="va">XS</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/geiger/man/sim.char.html">sim.char</a></span><span class="op">(</span><span class="va">tree</span>, <span class="fu"><a href="https://rdrr.io/r/stats/cor.html">var</a></span><span class="op">(</span><span class="va">X</span><span class="op">)</span>, nsim<span class="op">=</span><span class="va">nsims</span><span class="op">)</span> <span class="co"># simulations of BM</span></span>
-<span>    <span class="va">XX</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/abind/man/abind.html">abind</a></span><span class="op">(</span><span class="va">XP</span>, <span class="va">XS</span>, <span class="va">X</span>, along<span class="op">=</span><span class="fl">3</span><span class="op">)</span></span>
-<span>    <span class="kw">if</span> <span class="op">(</span><span class="va">dcfun</span><span class="op">==</span><span class="st">"ED"</span><span class="op">)</span> <span class="va">dfun</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">X</span><span class="op">)</span><span class="op">{</span><span class="fu"><a href="https://rdrr.io/r/base/matrix.html">as.matrix</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/dist.html">dist</a></span><span class="op">(</span><span class="va">X</span><span class="op">)</span><span class="op">)</span><span class="op">}</span> <span class="kw">else</span> <span class="kw">if</span> <span class="op">(</span><span class="va">dcfun</span><span class="op">==</span><span class="st">"IM"</span><span class="op">)</span> <span class="va">dfun</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">X</span><span class="op">)</span><span class="op">{</span><span class="va">X</span><span class="op"><a href="https://rdrr.io/r/base/matmult.html">%*%</a></span><span class="fu"><a href="https://rdrr.io/r/base/t.html">t</a></span><span class="op">(</span><span class="va">X</span><span class="op">)</span><span class="op">/</span><span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/diag.html">diag</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/cor.html">var</a></span><span class="op">(</span><span class="va">X</span><span class="op">)</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> <span class="fl">1</span><span class="op">/</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/nrow.html">nrow</a></span><span class="op">(</span><span class="va">X</span><span class="op">)</span><span class="op">-</span><span class="fl">1</span><span class="op">)</span><span class="op">}</span></span>
-<span>    <span class="va">cM0</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="op">)</span></span>
-<span>    <span class="kw">for</span> <span class="op">(</span><span class="va">h</span> <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="fu"><a href="https://rdrr.io/r/base/dim.html">dim</a></span><span class="op">(</span><span class="va">XX</span><span class="op">)</span><span class="op">[</span><span class="fl">3</span><span class="op">]</span><span class="op">)</span> <span class="op">{</span></span>
-<span>        <span class="va">X</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/matrix.html">as.matrix</a></span><span class="op">(</span><span class="va">XX</span><span class="op">[</span>,,<span class="va">h</span><span class="op">]</span><span class="op">)</span></span>
-<span>        <span class="va">D</span> <span class="op">&lt;-</span> <span class="fu">dfun</span><span class="op">(</span><span class="va">X</span><span class="op">)</span></span>
-<span>        <span class="va">cm</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="op">)</span></span>
-<span>        <span class="kw">for</span><span class="op">(</span><span class="va">j</span> <span class="kw">in</span> <span class="fl">2</span><span class="op">:</span><span class="fu"><a href="https://rdrr.io/r/base/length.html">length</a></span><span class="op">(</span><span class="va">class</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span><span class="va">cm</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">cm</span>, <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">D</span><span class="op">[</span><span class="va">pd</span><span class="op">&gt;</span><span class="va">class</span><span class="op">[</span><span class="va">j</span><span class="op">-</span><span class="fl">1</span><span class="op">]</span> <span class="op">&amp;</span> <span class="va">pd</span><span class="op">&lt;=</span><span class="va">class</span><span class="op">[</span><span class="va">j</span><span class="op">]</span><span class="op">]</span><span class="op">)</span><span class="op">)</span><span class="op">}</span></span>
-<span>        <span class="va">cM0</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/cbind.html">cbind</a></span><span class="op">(</span><span class="va">cM0</span>, <span class="va">cm</span><span class="op">)</span>           </span>
-<span>        <span class="op">}</span></span>
-<span>    <span class="va">na</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/which.html">which</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/NA.html">is.na</a></span><span class="op">(</span><span class="va">pdcm</span><span class="op">)</span><span class="op">)</span></span>
-<span>    <span class="va">cMP</span> <span class="op">&lt;-</span> <span class="va">cM0</span><span class="op">[</span><span class="op">-</span><span class="va">na</span>,<span class="fl">1</span><span class="op">:</span><span class="va">nsims</span><span class="op">]</span></span>
-<span>    <span class="va">cMS</span> <span class="op">&lt;-</span> <span class="va">cM0</span><span class="op">[</span><span class="op">-</span><span class="va">na</span>,<span class="op">(</span><span class="va">nsims</span><span class="op">+</span><span class="fl">1</span><span class="op">)</span><span class="op">:</span><span class="op">(</span><span class="va">nsims</span><span class="op">*</span><span class="fl">2</span><span class="op">)</span><span class="op">]</span></span>
-<span>    <span class="va">cM</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/cbind.html">cbind</a></span><span class="op">(</span><span class="st">"pdcm"</span><span class="op">=</span><span class="va">pdcm</span><span class="op">[</span><span class="op">-</span><span class="va">na</span><span class="op">]</span>, <span class="st">"obs"</span><span class="op">=</span><span class="va">cM0</span><span class="op">[</span><span class="op">-</span><span class="va">na</span>,<span class="fu"><a href="https://rdrr.io/r/base/nrow.html">ncol</a></span><span class="op">(</span><span class="va">cM0</span><span class="op">)</span><span class="op">]</span>, <span class="st">"Pm"</span><span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/colSums.html">rowMeans</a></span><span class="op">(</span><span class="va">cMP</span><span class="op">)</span>, <span class="st">"Pl"</span><span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/apply.html">apply</a></span><span class="op">(</span><span class="va">cMP</span>, <span class="fl">1</span>, <span class="va">quantile</span>, <span class="fl">0.025</span><span class="op">)</span>, <span class="st">"Pu"</span><span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/apply.html">apply</a></span><span class="op">(</span><span class="va">cMP</span>, <span class="fl">1</span>, <span class="va">quantile</span>, <span class="fl">0.975</span><span class="op">)</span>, <span class="st">"BMm"</span><span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/colSums.html">rowMeans</a></span><span class="op">(</span><span class="va">cMS</span><span class="op">)</span>, <span class="st">"BMl"</span><span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/apply.html">apply</a></span><span class="op">(</span><span class="va">cMS</span>, <span class="fl">1</span>, <span class="va">quantile</span>, <span class="fl">0.025</span><span class="op">)</span>, <span class="st">"BMu"</span><span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/apply.html">apply</a></span><span class="op">(</span><span class="va">cMS</span>, <span class="fl">1</span>, <span class="va">quantile</span>, <span class="fl">0.975</span><span class="op">)</span><span class="op">)</span></span>
-<span>    <span class="kw">if</span> <span class="op">(</span><span class="va">plot</span><span class="op">==</span><span class="cn">TRUE</span><span class="op">)</span> <span class="op">{</span></span>
-<span>        <span class="va">ltys</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="cn">NA</span>,<span class="fl">1</span>,<span class="fl">3</span>,<span class="fl">3</span>,<span class="fl">3</span>,<span class="fl">1</span>,<span class="fl">1</span>,<span class="fl">1</span><span class="op">)</span></span>
-<span>        <span class="va">cols</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="cn">NA</span>,<span class="st">"Black"</span>,<span class="st">"black"</span>,<span class="st">"grey"</span>,<span class="st">"grey"</span>,<span class="st">"black"</span>,<span class="st">"grey"</span>,<span class="st">"grey"</span><span class="op">)</span></span>
-<span>        <span class="kw">if</span><span class="op">(</span><span class="va">dcfun</span><span class="op">==</span><span class="st">"ED"</span><span class="op">)</span> <span class="op">{</span></span>
-<span>            <span class="va">cM</span><span class="op">[</span>,<span class="st">"pdcm"</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/MathFun.html">sqrt</a></span><span class="op">(</span><span class="va">cM</span><span class="op">[</span>,<span class="st">"pdcm"</span><span class="op">]</span><span class="op">)</span></span>
-<span>            <span class="va">legpos</span> <span class="op">&lt;-</span> <span class="st">"bottomright"</span></span>
-<span>            <span class="va">yttl</span> <span class="op">&lt;-</span> <span class="st">"Euclidean distance"</span></span>
-<span>            <span class="va">xttl</span> <span class="op">&lt;-</span> <span class="st">"Square root of patristic distance"</span></span>
-<span>            <span class="op">}</span> </span>
-<span>        <span class="kw">else</span> <span class="kw">if</span><span class="op">(</span><span class="va">dcfun</span><span class="op">==</span><span class="st">"IM"</span><span class="op">)</span> <span class="op">{</span></span>
-<span>            <span class="va">legpos</span> <span class="op">&lt;-</span> <span class="st">"topright"</span></span>
-<span>            <span class="va">yttl</span> <span class="op">&lt;-</span> <span class="st">"Moran's I (trait similarity)"</span></span>
-<span>            <span class="va">xttl</span> <span class="op">&lt;-</span> <span class="st">"patristic distance"</span></span>
-<span>            <span class="op">}</span></span>
-<span>        <span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">cM</span><span class="op">[</span>,<span class="st">"pdcm"</span><span class="op">]</span>, <span class="va">cM</span><span class="op">[</span>,<span class="st">"obs"</span><span class="op">]</span>, ylim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/Extremes.html">min</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fu"><a href="https://rdrr.io/r/base/Extremes.html">min</a></span><span class="op">(</span><span class="va">cM</span><span class="op">[</span>,<span class="op">-</span><span class="fl">1</span><span class="op">]</span><span class="op">)</span><span class="op">)</span>,<span class="fu"><a href="https://rdrr.io/r/base/Extremes.html">max</a></span><span class="op">(</span><span class="va">cM</span><span class="op">[</span>,<span class="op">-</span><span class="fl">1</span><span class="op">]</span><span class="op">)</span><span class="op">)</span>, pch<span class="op">=</span><span class="fl">19</span>, xlab<span class="op">=</span><span class="va">xttl</span>, ylab<span class="op">=</span><span class="va">yttl</span><span class="op">)</span></span>
-<span>        <span class="kw">for</span> <span class="op">(</span><span class="va">j</span> <span class="kw">in</span> <span class="fl">2</span><span class="op">:</span><span class="fu"><a href="https://rdrr.io/r/base/nrow.html">ncol</a></span><span class="op">(</span><span class="va">cM</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span><span class="fu"><a href="https://rdrr.io/r/graphics/lines.html">lines</a></span><span class="op">(</span><span class="va">cM</span><span class="op">[</span>,<span class="st">"pdcm"</span><span class="op">]</span>, <span class="va">cM</span><span class="op">[</span>,<span class="va">j</span><span class="op">]</span>, lty<span class="op">=</span><span class="va">ltys</span><span class="op">[</span><span class="va">j</span><span class="op">]</span>, col<span class="op">=</span><span class="va">cols</span><span class="op">[</span><span class="va">j</span><span class="op">]</span><span class="op">)</span><span class="op">}</span></span>
-<span>        <span class="fu"><a href="https://rdrr.io/r/graphics/legend.html">legend</a></span><span class="op">(</span><span class="va">legpos</span>, legend<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"Observed"</span>,<span class="st">"Permutated"</span>,<span class="st">"Brownian"</span><span class="op">)</span>, cex<span class="op">=</span><span class="fl">0.8</span>, lty<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">3</span>,<span class="fl">1</span><span class="op">)</span>, pch<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">19</span>,<span class="cn">NA</span>,<span class="cn">NA</span><span class="op">)</span><span class="op">)</span></span>
-<span>        <span class="op">}</span></span>
-<span>    <span class="va">cM</span></span>
-<span>    <span class="op">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Generates either a distogram or an autocorrelogram based on Hardy, O. J., and S. Pavoine. 2012. Evolution 66:2614-2621 and Diniz-Filho, J. A. F. 2001. Evolution 55:1104-1109</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># code is modified from Hardy and Pavoine 2012</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># includes a comparison to Brownian motion model (simulations scaled by the original data) and to a case of no phylogenetic structure (permutations of the original data)</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Input is data matrix (for multivariate data) or vector (for univariate data) and tree as a phylo object</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># dcfun specifies whether the Euclidean distance ("ED") is calculated or Moran's I ("IM")</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># nsims specifies the number of simulations for the BM simulations and permutations</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># default (plot=TRUE) generates the plot itself (either distogram or autocorrelogram), otherwise you can set plot=FALSE and plot it yourself based on the output</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># output is a matrix in which every row is a class of patristic distance over which the distance/similarity is averaged. columns are the mean patristic distance for that class ("pdcm"), the observed value of distance/similarity ("obs"), the mean ("Pm"), lower ("Pl"), and upper ("Pu") bounds of the 95% CI of permutations, and the mean ("BMm"), lower ("BMl"), and upper ("BMu") bounds of the 95% CI of BM simulations</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">require</span>(abind); <span class="fu">require</span>(geiger)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>distcor <span class="ot">&lt;-</span> <span class="cf">function</span>(X, tree, <span class="at">dcfun=</span><span class="fu">c</span>(<span class="st">"ED"</span>,<span class="st">"IM"</span>), <span class="at">nsims =</span> <span class="dv">100</span>, <span class="at">plot=</span><span class="cn">TRUE</span>) {</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    X <span class="ot">&lt;-</span> <span class="fu">as.matrix</span>(X)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    pd <span class="ot">&lt;-</span> <span class="fu">cophenetic.phylo</span>(tree)</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    pd <span class="ot">&lt;-</span> pd<span class="sc">/</span><span class="fu">max</span>(pd)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    class <span class="ot">&lt;-</span><span class="fu">c</span>(<span class="dv">0</span>, (<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>)<span class="sc">/</span><span class="dv">10</span>)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (dcfun<span class="sc">==</span><span class="st">"ED"</span>) class <span class="ot">&lt;-</span> class<span class="sc">^</span><span class="dv">2</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    pdcm <span class="ot">&lt;-</span> <span class="fu">c</span>()</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span>(j <span class="cf">in</span> <span class="dv">2</span><span class="sc">:</span><span class="fu">length</span>(class)) {pdcm <span class="ot">&lt;-</span> <span class="fu">c</span>(pdcm, <span class="fu">mean</span>(pd[pd<span class="sc">&gt;</span>class[j<span class="dv">-1</span>] <span class="sc">&amp;</span> pd<span class="sc">&lt;=</span>class[j]]))}</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    XP <span class="ot">&lt;-</span> <span class="fu">array</span>(<span class="fu">apply</span>(<span class="fu">array</span>(X, <span class="at">dim=</span><span class="fu">c</span>(<span class="fu">nrow</span>(X),<span class="fu">ncol</span>(X),nsims)), <span class="dv">3</span>, <span class="cf">function</span>(X){X[<span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(X),<span class="fu">nrow</span>(X)),]}), <span class="at">dim=</span><span class="fu">c</span>(<span class="fu">nrow</span>(X),<span class="fu">ncol</span>(X),nsims)) <span class="co">#permutations of species to simulate no phylogenetic structure</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    XS <span class="ot">&lt;-</span> <span class="fu">sim.char</span>(tree, <span class="fu">var</span>(X), <span class="at">nsim=</span>nsims) <span class="co"># simulations of BM</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    XX <span class="ot">&lt;-</span> <span class="fu">abind</span>(XP, XS, X, <span class="at">along=</span><span class="dv">3</span>)</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (dcfun<span class="sc">==</span><span class="st">"ED"</span>) dfun <span class="ot">&lt;-</span> <span class="cf">function</span>(X){<span class="fu">as.matrix</span>(<span class="fu">dist</span>(X))} <span class="cf">else</span> <span class="cf">if</span> (dcfun<span class="sc">==</span><span class="st">"IM"</span>) dfun <span class="ot">&lt;-</span> <span class="cf">function</span>(X){X<span class="sc">%*%</span><span class="fu">t</span>(X)<span class="sc">/</span><span class="fu">sum</span>(<span class="fu">diag</span>(<span class="fu">var</span>(X))) <span class="sc">+</span> <span class="dv">1</span><span class="sc">/</span>(<span class="fu">nrow</span>(X)<span class="sc">-</span><span class="dv">1</span>)}</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    cM0 <span class="ot">&lt;-</span> <span class="fu">c</span>()</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> (h <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">dim</span>(XX)[<span class="dv">3</span>]) {</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>        X <span class="ot">&lt;-</span> <span class="fu">as.matrix</span>(XX[,,h])</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>        D <span class="ot">&lt;-</span> <span class="fu">dfun</span>(X)</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>        cm <span class="ot">&lt;-</span> <span class="fu">c</span>()</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span>(j <span class="cf">in</span> <span class="dv">2</span><span class="sc">:</span><span class="fu">length</span>(class)) {cm <span class="ot">&lt;-</span> <span class="fu">c</span>(cm, <span class="fu">mean</span>(D[pd<span class="sc">&gt;</span>class[j<span class="dv">-1</span>] <span class="sc">&amp;</span> pd<span class="sc">&lt;=</span>class[j]]))}</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>        cM0 <span class="ot">&lt;-</span> <span class="fu">cbind</span>(cM0, cm)           </span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>    na <span class="ot">&lt;-</span> <span class="fu">which</span>(<span class="fu">is.na</span>(pdcm))</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>    cMP <span class="ot">&lt;-</span> cM0[<span class="sc">-</span>na,<span class="dv">1</span><span class="sc">:</span>nsims]</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>    cMS <span class="ot">&lt;-</span> cM0[<span class="sc">-</span>na,(nsims<span class="sc">+</span><span class="dv">1</span>)<span class="sc">:</span>(nsims<span class="sc">*</span><span class="dv">2</span>)]</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>    cM <span class="ot">&lt;-</span> <span class="fu">cbind</span>(<span class="st">"pdcm"</span><span class="ot">=</span>pdcm[<span class="sc">-</span>na], <span class="st">"obs"</span><span class="ot">=</span>cM0[<span class="sc">-</span>na,<span class="fu">ncol</span>(cM0)], <span class="st">"Pm"</span><span class="ot">=</span><span class="fu">rowMeans</span>(cMP), <span class="st">"Pl"</span><span class="ot">=</span><span class="fu">apply</span>(cMP, <span class="dv">1</span>, quantile, <span class="fl">0.025</span>), <span class="st">"Pu"</span><span class="ot">=</span><span class="fu">apply</span>(cMP, <span class="dv">1</span>, quantile, <span class="fl">0.975</span>), <span class="st">"BMm"</span><span class="ot">=</span><span class="fu">rowMeans</span>(cMS), <span class="st">"BMl"</span><span class="ot">=</span><span class="fu">apply</span>(cMS, <span class="dv">1</span>, quantile, <span class="fl">0.025</span>), <span class="st">"BMu"</span><span class="ot">=</span><span class="fu">apply</span>(cMS, <span class="dv">1</span>, quantile, <span class="fl">0.975</span>))</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (plot<span class="sc">==</span><span class="cn">TRUE</span>) {</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>        ltys <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="cn">NA</span>,<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">3</span>,<span class="dv">3</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>)</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>        cols <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="cn">NA</span>,<span class="st">"Black"</span>,<span class="st">"black"</span>,<span class="st">"grey"</span>,<span class="st">"grey"</span>,<span class="st">"black"</span>,<span class="st">"grey"</span>,<span class="st">"grey"</span>)</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span>(dcfun<span class="sc">==</span><span class="st">"ED"</span>) {</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>            cM[,<span class="st">"pdcm"</span>] <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(cM[,<span class="st">"pdcm"</span>])</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>            legpos <span class="ot">&lt;-</span> <span class="st">"bottomright"</span></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>            yttl <span class="ot">&lt;-</span> <span class="st">"Euclidean distance"</span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>            xttl <span class="ot">&lt;-</span> <span class="st">"Square root of patristic distance"</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>            } </span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span> <span class="cf">if</span>(dcfun<span class="sc">==</span><span class="st">"IM"</span>) {</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>            legpos <span class="ot">&lt;-</span> <span class="st">"topright"</span></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>            yttl <span class="ot">&lt;-</span> <span class="st">"Moran's I (trait similarity)"</span></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>            xttl <span class="ot">&lt;-</span> <span class="st">"patristic distance"</span></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>            }</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>        <span class="fu">plot</span>(cM[,<span class="st">"pdcm"</span>], cM[,<span class="st">"obs"</span>], <span class="at">ylim=</span><span class="fu">c</span>(<span class="fu">min</span>(<span class="dv">0</span>,<span class="fu">min</span>(cM[,<span class="sc">-</span><span class="dv">1</span>])),<span class="fu">max</span>(cM[,<span class="sc">-</span><span class="dv">1</span>])), <span class="at">pch=</span><span class="dv">19</span>, <span class="at">xlab=</span>xttl, <span class="at">ylab=</span>yttl)</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> (j <span class="cf">in</span> <span class="dv">2</span><span class="sc">:</span><span class="fu">ncol</span>(cM)) {<span class="fu">lines</span>(cM[,<span class="st">"pdcm"</span>], cM[,j], <span class="at">lty=</span>ltys[j], <span class="at">col=</span>cols[j])}</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>        <span class="fu">legend</span>(legpos, <span class="at">legend=</span><span class="fu">c</span>(<span class="st">"Observed"</span>,<span class="st">"Permutated"</span>,<span class="st">"Brownian"</span>), <span class="at">cex=</span><span class="fl">0.8</span>, <span class="at">lty=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">1</span>), <span class="at">pch=</span><span class="fu">c</span>(<span class="dv">19</span>,<span class="cn">NA</span>,<span class="cn">NA</span>))</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>    cM</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>    }</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 
 
 <!-- -->
 
 
-</main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
-    }
-    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -998,7 +835,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
-<footer class="footer"><div class="nav-footer">
+<footer class="footer">
+  <div class="nav-footer">
     <div class="nav-footer-left">
 <p>© Diogo B. Provete · Biodiversity Synthesis Lab · Instituto de Biociências, UFMS</p>
 </div>   
@@ -1010,6 +848,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
   </div>
 </footer>
+
+
 
 
 <script src="../../../site_libs/quarto-html/zenscroll-min.js"></script>

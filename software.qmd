@@ -78,7 +78,7 @@ CoDa Stereo was developed as supplementary material for:
 
 > **Provete, D.B.**, Severgnini, M.R., Fernandes, C.E., Franco-Belussi, L.
 > (2026). A practical guide to compositional data analysis in tissue
-> stereology and blood cell profile. *Histochemistry and Cell Biology*
+> stereology and blood cell profile. *Physiological Reports*
 > (*in review*).
 > [Preprint on Research Square](https://www.researchsquare.com/article/rs-9590298/v1).
 
@@ -93,3 +93,30 @@ A `CITATION.cff` and BibTeX snippets are available on the
 Bug reports, feature requests, and pull requests are very welcome on
 [GitHub Issues](https://github.com/diogoprov/CoDaStereo/issues). PRs should
 target the `dev` branch.
+
+## BirdNET Validation Sampler
+
+::: {.callout-tip icon=false appearance="minimal"}
+**Sampling and manual-validation pipeline for BirdNET custom classifiers**
+
+[{{< fa brands github >}} GitHub repository](https://github.com/diogoprov/birdnet-validation-sampler){.btn .btn-primary}
+
+*R pipeline — MIT License.*
+:::
+
+**BirdNET Validation Sampler** turns the raw output of a
+[BirdNET](https://birdnet.cornell.edu/) custom classifier into a set of audio
+clips that a person can realistically sit down and validate — the step that
+decides whether a classifier's detections mean anything in a passive acoustic
+monitoring study.
+
+The pipeline selects high-confidence predictions, applies an explicit sampling
+design (alternate nights, balanced quotas per species, restricted time
+windows), and extracts reproducible `.wav` clips. After the manual review, it
+returns precision-by-confidence metrics, suggested confidence thresholds,
+presence/absence tables by night, and the clip lists needed to retrain the
+classifier.
+
+It was developed for the **FrogNet** project, which monitors frog vocalisations
+in the Pantanal and Cerrado, but works with the output of any BirdNET custom
+classifier.

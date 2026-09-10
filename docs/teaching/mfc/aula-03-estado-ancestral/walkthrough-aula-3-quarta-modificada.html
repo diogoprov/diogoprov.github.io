@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.8.26">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
 <title>Walkthrough principal — ASR (atributos discretos e contínuos), sinal filogenético – Biodiversity Synthesis Lab</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -57,6 +57,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 </style>
 
+
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -66,18 +67,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../../assets/favicon.png" rel="icon" type="image/png">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-6b38416d90cdbb41281c8a2a0df0236b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-1732e9b120b8faec2f4b22e599a6250f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../../site_libs/bootstrap/bootstrap-6b38416d90cdbb41281c8a2a0df0236b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+<link href="../../../site_libs/bootstrap/bootstrap-ec100a28b3f28334d858203a6e0baf76.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
@@ -103,13 +102,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script><style>html{ scroll-behavior: smooth; }</style>
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <style>
   /* Tame Academicons next to text in card rows */
   .ai { vertical-align: -.05em; }
 </style>
+
+
 <link rel="stylesheet" href="../../../styles.css">
 <meta property="og:title" content="Walkthrough principal — ASR (atributos discretos e contínuos), sinal filogenético – Biodiversity Synthesis Lab">
 <meta property="og:description" content="Walkthrough do código — Aula 3: Estimativa de estado ancestral e sinal filogenético">
@@ -118,175 +120,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta name="twitter:description" content="Walkthrough do código — Aula 3: Estimativa de estado ancestral e sinal filogenético">
 <meta name="twitter:card" content="summary">
 </head>
-<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        window.scrollTo(0, 1);
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
-      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
+
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../../assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo light-content"><img src="../../../assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo dark-content"></a>
+    <img src="../../../assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo light-content">
+    <img src="../../../assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo dark-content">
+    </a>
     <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Biodiversity Synthesis Lab</span>
     </a>
@@ -297,7 +142,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-<li class="nav-item">
+  <li class="nav-item">
     <a class="nav-link" href="../../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
@@ -312,10 +157,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li class="nav-item">
     <a class="nav-link" href="../../../people.html"> 
 <span class="menu-text">People</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../../cv.html"> 
-<span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../../teaching.html"> 
@@ -338,8 +179,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Brazilian Tadpoles</span></a>
   </li>  
 </ul>
-<ul class="navbar-nav navbar-nav-scroll ms-auto">
-<li class="nav-item compact">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/diogoprov"> <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
 <span class="menu-text"></span></a>
@@ -350,19 +191,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text"></span></a>
   </li>  
 </ul>
-</div> <!-- /navcollapse -->
+          </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
-    </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
 <div class="quarto-title-block"><div><h1 class="title">Walkthrough principal — ASR (atributos discretos e contínuos), sinal filogenético</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 <p class="subtitle lead">Walkthrough do código — Aula 3: Estimativa de estado ancestral e sinal filogenético</p>
 </div>
@@ -378,7 +224,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   
 
 
-</header><div class="callout callout-style-simple callout-note no-icon">
+</header>
+
+
+<div class="callout callout-style-simple callout-note no-icon">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
@@ -389,195 +238,183 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co">#Aula 3 - quarta</span></span>
-<span><span class="co">#Estimativa de estado ancestral para atributos conínuos e categóricos</span></span>
-<span><span class="co">#Estimativa e teste de sinal filogenético</span></span>
-<span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">caper</span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/liamrevell/phytools">phytools</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">geiger</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co">###---ACE atributos continuos</span></span>
-<span></span>
-<span><span class="va">anolis.tree</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/read.tree.html">read.tree</a></span><span class="op">(</span><span class="st">"Anolis.tre"</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/plotTree.html">plotTree</a></span><span class="op">(</span><span class="va">anolis.tree</span>,type<span class="op">=</span><span class="st">"fan"</span>,ftype<span class="op">=</span><span class="st">"i"</span><span class="op">)</span></span>
-<span><span class="va">svl</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/utils/read.table.html">read.csv</a></span><span class="op">(</span><span class="st">"svl.csv"</span>,</span>
-<span>              row.names<span class="op">=</span><span class="fl">1</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">svl</span><span class="op">)</span></span>
-<span><span class="va">svl</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/stats/setNames.html">setNames</a></span><span class="op">(</span><span class="va">svl</span><span class="op">$</span><span class="va">svl</span>,<span class="fu"><a href="https://rdrr.io/r/base/colnames.html">rownames</a></span><span class="op">(</span><span class="va">svl</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/geiger/man/name.check.html">name.check</a></span><span class="op">(</span><span class="va">anolis.tree</span>, <span class="va">svl</span><span class="op">)</span></span>
-<span><span class="va">fit</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/fastAnc.html">fastAnc</a></span><span class="op">(</span><span class="va">anolis.tree</span>,<span class="va">svl</span>,vars<span class="op">=</span><span class="cn">TRUE</span>,CI<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/phylobase/man/print-methods.html">print</a></span><span class="op">(</span><span class="va">fit</span>,printlen<span class="op">=</span><span class="fl">10</span><span class="op">)</span></span>
-<span><span class="va">obj</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/contMap.html">contMap</a></span><span class="op">(</span><span class="va">anolis.tree</span>,<span class="va">svl</span>,plot<span class="op">=</span><span class="cn">FALSE</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/plot.html">plot</a></span><span class="op">(</span><span class="va">obj</span>,type<span class="op">=</span><span class="st">"fan"</span>,legend<span class="op">=</span><span class="fl">0.7</span><span class="op">*</span><span class="fu"><a href="https://rdrr.io/r/base/Extremes.html">max</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/nodeHeights.html">nodeHeights</a></span><span class="op">(</span><span class="va">anolis.tree</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="va">obj</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/setMap.html">setMap</a></span><span class="op">(</span><span class="va">obj</span>, invert<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/plot.html">plot</a></span><span class="op">(</span><span class="va">obj</span>,type<span class="op">=</span><span class="st">"fan"</span>,legend<span class="op">=</span><span class="fl">0.7</span><span class="op">*</span><span class="fu"><a href="https://rdrr.io/r/base/Extremes.html">max</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/nodeHeights.html">nodeHeights</a></span><span class="op">(</span><span class="va">anolis.tree</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/plot.phylo.html">plot.phylo</a></span><span class="op">(</span><span class="va">anolis.tree</span>, type <span class="op">=</span> <span class="st">"fan"</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/nodelabels.html">nodelabels</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/Round.html">round</a></span><span class="op">(</span><span class="va">fit</span><span class="op">$</span><span class="va">ace</span>, digits<span class="op">=</span><span class="fl">1</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="va">fit</span><span class="op">$</span><span class="va">CI95</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/plot.phylo.html">plot.phylo</a></span><span class="op">(</span><span class="va">anolis.tree</span>, type <span class="op">=</span> <span class="st">"fan"</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/nodelabels.html">nodelabels</a></span><span class="op">(</span>cex<span class="op">=</span><span class="fl">0.9</span>, frame <span class="op">=</span> <span class="st">'n'</span>, bg <span class="op">=</span> <span class="cn">NULL</span>, col <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span><span class="co">#to check the node numbers in the tree</span></span>
-<span></span>
-<span><span class="co">#---Atributos discretos</span></span>
-<span></span>
-<span><span class="va">X</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/utils/read.table.html">read.csv</a></span><span class="op">(</span><span class="st">"elopomorph.csv"</span>,row.names<span class="op">=</span><span class="fl">1</span><span class="op">)</span></span>
-<span><span class="va">feed.mode</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/stats/setNames.html">setNames</a></span><span class="op">(</span><span class="va">X</span><span class="op">[</span>,<span class="fl">1</span><span class="op">]</span>,<span class="fu"><a href="https://rdrr.io/r/base/colnames.html">rownames</a></span><span class="op">(</span><span class="va">X</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">feed.mode</span><span class="op">)</span></span>
-<span><span class="va">eel.tree</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/read.tree.html">read.tree</a></span><span class="op">(</span><span class="st">"elopomorph.tre"</span><span class="op">)</span></span>
-<span><span class="va">eel.tree</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/plotTree.html">plotTree</a></span><span class="op">(</span><span class="va">eel.tree</span>,type<span class="op">=</span><span class="st">"fan"</span>,fsize<span class="op">=</span><span class="fl">0.7</span>,ftype<span class="op">=</span><span class="st">"i"</span>,lwd<span class="op">=</span><span class="fl">1</span><span class="op">)</span></span>
-<span><span class="va">cols</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/stats/setNames.html">setNames</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"red"</span>,<span class="st">"blue"</span><span class="op">)</span>,<span class="fu"><a href="https://rdrr.io/r/base/levels.html">levels</a></span><span class="op">(</span><span class="va">feed.mode</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/nodelabels.html">tiplabels</a></span><span class="op">(</span>pie<span class="op">=</span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/to.matrix.html">to.matrix</a></span><span class="op">(</span><span class="va">feed.mode</span><span class="op">[</span><span class="va">eel.tree</span><span class="op">$</span><span class="va">tip.label</span><span class="op">]</span>,<span class="fu"><a href="https://rdrr.io/r/base/levels.html">levels</a></span><span class="op">(</span><span class="va">feed.mode</span><span class="op">)</span><span class="op">)</span>,</span>
-<span>          piecol<span class="op">=</span><span class="va">cols</span>,cex<span class="op">=</span><span class="fl">0.3</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/add.simmap.legend.html">add.simmap.legend</a></span><span class="op">(</span>colors<span class="op">=</span><span class="va">cols</span>,prompt<span class="op">=</span><span class="cn">FALSE</span>,x<span class="op">=</span><span class="fl">0.9</span><span class="op">*</span><span class="fu"><a href="https://rdrr.io/r/graphics/par.html">par</a></span><span class="op">(</span><span class="op">)</span><span class="op">$</span><span class="va">usr</span><span class="op">[</span><span class="fl">1</span><span class="op">]</span>,</span>
-<span>                  y<span class="op">=</span><span class="fl">0.8</span><span class="op">*</span><span class="fu"><a href="https://rdrr.io/r/graphics/par.html">par</a></span><span class="op">(</span><span class="op">)</span><span class="op">$</span><span class="va">usr</span><span class="op">[</span><span class="fl">3</span><span class="op">]</span>,fsize<span class="op">=</span><span class="fl">0.8</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">fitER</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/ace.html">ace</a></span><span class="op">(</span><span class="va">feed.mode</span>,<span class="va">eel.tree</span>,model<span class="op">=</span><span class="st">"ER"</span>,type<span class="op">=</span><span class="st">"discrete"</span><span class="op">)</span></span>
-<span><span class="va">fitER</span></span>
-<span><span class="co">#The element lik.anc gives us the marginal ancestral states, </span></span>
-<span><span class="co">#also known as the 'empirical Bayesian posterior probabilities.'</span></span>
-<span><span class="co">#the matrix is in the same numerical order of the nodes in the tree</span></span>
-<span><span class="va">fitER</span><span class="op">$</span><span class="va">lik.anc</span></span>
-<span></span>
-<span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/plotTree.html">plotTree</a></span><span class="op">(</span><span class="va">eel.tree</span>,type<span class="op">=</span><span class="st">"fan"</span>,fsize<span class="op">=</span><span class="fl">0.7</span>,ftype<span class="op">=</span><span class="st">"i"</span>,lwd<span class="op">=</span><span class="fl">1</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/par.html">par</a></span><span class="op">(</span>fg<span class="op">=</span><span class="st">"transparent"</span><span class="op">)</span><span class="co">#pie sem os outline pretos</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/nodelabels.html">nodelabels</a></span><span class="op">(</span>node<span class="op">=</span><span class="fl">1</span><span class="op">:</span><span class="va">eel.tree</span><span class="op">$</span><span class="va">Nnode</span><span class="op">+</span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/summary.phylo.html">Ntip</a></span><span class="op">(</span><span class="va">eel.tree</span><span class="op">)</span>,</span>
-<span>           pie<span class="op">=</span><span class="va">fitER</span><span class="op">$</span><span class="va">lik.anc</span>,piecol<span class="op">=</span><span class="va">cols</span>,cex<span class="op">=</span><span class="fl">0.4</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/nodelabels.html">tiplabels</a></span><span class="op">(</span>pie<span class="op">=</span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/to.matrix.html">to.matrix</a></span><span class="op">(</span><span class="va">feed.mode</span><span class="op">[</span><span class="va">eel.tree</span><span class="op">$</span><span class="va">tip.label</span><span class="op">]</span>,<span class="fu"><a href="https://rdrr.io/r/base/levels.html">levels</a></span><span class="op">(</span><span class="va">feed.mode</span><span class="op">)</span><span class="op">)</span>,</span>
-<span>          piecol<span class="op">=</span><span class="va">cols</span>,cex<span class="op">=</span><span class="fl">0.3</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/par.html">par</a></span><span class="op">(</span>fg<span class="op">=</span><span class="st">"black"</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/add.simmap.legend.html">add.simmap.legend</a></span><span class="op">(</span>colors<span class="op">=</span><span class="va">cols</span>,prompt<span class="op">=</span><span class="cn">FALSE</span>,x<span class="op">=</span><span class="fl">0.9</span><span class="op">*</span><span class="fu"><a href="https://rdrr.io/r/graphics/par.html">par</a></span><span class="op">(</span><span class="op">)</span><span class="op">$</span><span class="va">usr</span><span class="op">[</span><span class="fl">1</span><span class="op">]</span>,</span>
-<span>                  y<span class="op">=</span><span class="fl">0.8</span><span class="op">*</span><span class="fu"><a href="https://rdrr.io/r/graphics/par.html">par</a></span><span class="op">(</span><span class="op">)</span><span class="op">$</span><span class="va">usr</span><span class="op">[</span><span class="fl">3</span><span class="op">]</span>,fsize<span class="op">=</span><span class="fl">0.8</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co">#---Como resumir informações de mapeamento estocástico de caracteres</span></span>
-<span><span class="va">anguilatree</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/read.nexus.html">read.nexus</a></span><span class="op">(</span><span class="st">"anguila.nex"</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/class.html">class</a></span><span class="op">(</span><span class="va">anguilatree</span><span class="op">)</span></span>
-<span><span class="va">anguilatree</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span></span>
-<span><span class="va">pruned.trees</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/lapply.html">lapply</a></span><span class="op">(</span><span class="va">anguilatree</span>,<span class="va">treedata</span>,<span class="va">feed.mode</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/class.html">class</a></span><span class="op">(</span><span class="va">pruned.trees</span><span class="op">)</span><span class="op">&lt;-</span><span class="st">"multiPhylo"</span></span>
-<span><span class="va">pruned.trees</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/lapply.html">lapply</a></span><span class="op">(</span><span class="va">pruned.trees</span>,<span class="kw">function</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="va">x</span><span class="op">$</span><span class="va">phy</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/class.html">class</a></span><span class="op">(</span><span class="va">pruned.trees</span><span class="op">)</span><span class="op">&lt;-</span><span class="st">"multiPhylo"</span></span>
-<span><span class="va">scr</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/make.simmap.html">make.simmap</a></span><span class="op">(</span><span class="va">pruned.trees</span>, <span class="va">feed.mode</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/describe.simmap.html">describe.simmap</a></span><span class="op">(</span><span class="va">scr</span><span class="op">)</span></span>
-<span><span class="va">cons.tree</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/consensus.edges.html">consensus.edges</a></span><span class="op">(</span><span class="va">pruned.trees</span>,method<span class="op">=</span><span class="st">"least.squares"</span><span class="op">)</span></span>
-<span><span class="va">obj</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="va">scr</span>,ref.tree<span class="op">=</span><span class="va">cons.tree</span><span class="op">)</span></span>
-<span><span class="va">obj</span></span>
-<span><span class="va">colors</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/stats/setNames.html">setNames</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"red"</span>,<span class="st">"blue"</span><span class="op">)</span>,<span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"bite"</span>,<span class="st">"suction"</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/plot.html">plot</a></span><span class="op">(</span><span class="va">obj</span>,ftype<span class="op">=</span><span class="st">"i"</span>,fsize<span class="op">=</span><span class="fl">0.7</span>,colors<span class="op">=</span><span class="va">colors</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/add.simmap.legend.html">add.simmap.legend</a></span><span class="op">(</span>x<span class="op">=</span><span class="fl">0</span>,y<span class="op">=</span><span class="fl">5</span>,prompt<span class="op">=</span><span class="cn">FALSE</span>,colors<span class="op">=</span><span class="va">colors</span>,shape<span class="op">=</span><span class="st">"circle"</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co">#---Sinal filogenético</span></span>
-<span></span>
-<span><span class="co">#decomposição entropia quadrática</span></span>
-<span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://adeverse.github.io/ade4/">ade4</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/source.html">source</a></span><span class="op">(</span><span class="st">"SUPFILEAc.R"</span><span class="op">)</span><span class="co">#Carrega a função que realiza os testes</span></span>
-<span><span class="va">filo</span><span class="op">=</span><span class="st">"((Elachistocleis_cesarii:41.65909598,Dermatonotus_muelleri:41.65909296):130.6759311,((((((((Leptodactylus_latinasus:19.99081957,Leptodactylus_podicipinus:19.99081999):21.39223911,(Leptodactylus_furnarius:36.78100277,((Leptodactylus_mystaceus:24.51631316,Leptodactylus_fuscus:24.51631401):2.926964726,Leptodactylus_mystacinus:27.44327579):9.337726985):4.602052962):14.62924222,Adenomera_bokermanni:56.0123002):21.07195011,(((((Physalaemus_centralis:18.74795043,Physalaemus_cuvieri:18.74795043):13.97291572,Physalaemus_olfersii:32.72086615):12.45573016,(Physalaemus_marmoratus:33.51018394,Eupemphix_nattereri:33.51018143):11.66641381):14.73984391,Pleurodema_tucumanum:59.91644488):15.70595544,Pseudopaludicola_murundu:75.62239676):1.461867095):15.598816,((Rhinella_schneideri:15.99225121,Rhinella_ornata:15.99225112):70.87053535,(Odontophrynus_americanus:38.18978918,(Proceratophrys_boiei:24.95467863,Proceratophrys_melanopogon:24.95468034):13.23510769):48.67300639):5.820258):2.655002,((((Scinax_fuscomarginatus:28.82698777,Scinax_similis:28.82699371):4.472076052,Scinax_fuscovarius:33.29907001):35.21992923,(Dendropsophus_jimi:42.90155319,(Dendropsophus_minutus:36.95028212,Dendropsophus_nanus:36.95028595):5.951269464):25.61743536):9.145439519,(Hypsiboas_prasinus:14.13890513,Hypsiboas_latistriatus:14.13890212):63.52552477):17.673621):11.463261,((Hylodes_cardosoi:30.4819059,Hylodes_sazimai:30.48190016):10.31759659,(Crossodactylus_caramaschii:29.19061118,Crossodactylus_gaudichaudii:29.19061793):11.60887814):66.00184117):24.96725,(Ischnocnema_guentheri:63.77862054,Ischnocnema_juipoca:63.77860605):67.98996335):40.566457);"</span></span>
-<span><span class="va">trait</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/utils/read.table.html">read.table</a></span><span class="op">(</span><span class="st">"testes_matrix_r.txt"</span>, h<span class="op">=</span><span class="cn">TRUE</span>, dec <span class="op">=</span> <span class="st">","</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">trait</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">mel.phy</span><span class="op">=</span><span class="fu"><a href="https://adeverse.github.io/ade4/reference/newick2phylog.html">newick2phylog</a></span><span class="op">(</span><span class="va">filo</span>, add.tools <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span> <span class="co">#converte a árvore para formato phylog</span></span>
-<span><span class="va">mel.phy</span></span>
-<span><span class="va">trait.dist</span><span class="op">=</span><span class="fu"><a href="https://adeverse.github.io/ade4/reference/dist.ktab.html">dist.ktab</a></span><span class="op">(</span><span class="fu"><a href="https://adeverse.github.io/ade4/reference/ktab.list.df.html">ktab.list.df</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/as.data.frame.html">as.data.frame</a></span><span class="op">(</span><span class="va">trait</span><span class="op">[</span>,<span class="fl">2</span><span class="op">]</span><span class="op">)</span><span class="op">)</span><span class="op">)</span>, type<span class="op">=</span><span class="st">"Q"</span>, scan<span class="op">=</span><span class="cn">T</span><span class="op">)</span></span>
-<span><span class="va">decompos</span><span class="op">=</span><span class="fu">decdiv</span><span class="op">(</span><span class="va">mel.phy</span>, <span class="fu"><a href="https://rdrr.io/r/base/rep.html">rep</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">35</span><span class="op">)</span>, <span class="va">trait.dist</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">decompos</span><span class="op">)</span></span>
-<span><span class="va">dev1</span><span class="op">=</span><span class="fu">rtest.decdiv</span><span class="op">(</span><span class="va">mel.phy</span>, <span class="fu"><a href="https://rdrr.io/r/base/rep.html">rep</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">35</span><span class="op">)</span>, <span class="va">trait.dist</span>, optiontest<span class="op">=</span><span class="st">"greater"</span><span class="op">)</span></span>
-<span><span class="va">dev1</span></span>
-<span><span class="fu">plot.decdiv</span><span class="op">(</span><span class="va">mel.phy</span>, vnodes <span class="op">=</span> <span class="va">decompos</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co">#---K de Blomberg</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">picante</span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/liamrevell/phytools">phytools</a></span><span class="op">)</span></span>
-<span><span class="fu">phylosignal</span><span class="op">(</span><span class="va">svl</span>, <span class="va">anolis.tree</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/phylosig.html">phylosig</a></span><span class="op">(</span><span class="va">anolis.tree</span>, <span class="va">svl</span>, test <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co">#---Lambda de Pagel</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/phylosig.html">phylosig</a></span><span class="op">(</span><span class="va">anolis.tree</span>, <span class="va">svl</span>, test <span class="op">=</span> <span class="cn">TRUE</span>, method <span class="op">=</span> <span class="st">"lambda"</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co">#---Fritz's D</span></span>
-<span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">caper</span><span class="op">)</span></span>
-<span><span class="va">phy</span><span class="op">=</span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/read.tree.html">read.tree</a></span><span class="op">(</span><span class="st">"arvore.txt"</span><span class="op">)</span><span class="co">#filogenia</span></span>
-<span><span class="va">Trait</span><span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/utils/read.table.html">read.table</a></span><span class="op">(</span><span class="st">"traits selecionados.txt"</span>, h<span class="op">=</span><span class="cn">T</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">Trait</span><span class="op">)</span></span>
-<span><span class="va">traits.bin</span><span class="op">=</span><span class="va">Trait</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">4</span>,<span class="fl">8</span><span class="op">)</span><span class="op">]</span><span class="co">#Separando os traits binários</span></span>
-<span><span class="va">dados.bin</span><span class="op">=</span><span class="fu">comparative.data</span><span class="op">(</span><span class="va">phy</span>, <span class="va">traits.bin</span>, <span class="va">X</span><span class="op">)</span></span>
-<span><span class="va">ab</span><span class="op">&lt;-</span><span class="fu">phylo.d</span><span class="op">(</span><span class="va">dados.bin</span>, binvar<span class="op">=</span><span class="va">posolhos</span><span class="op">)</span><span class="co">#pos.olhos Tem sinal filogenetico</span></span>
-<span><span class="va">ab</span></span>
-<span></span>
-<span><span class="co">#---PVR</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/fmichonneau/phylobase">phylobase</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/adeverse/adephylo">adephylo</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">PVR</span><span class="op">)</span></span>
-<span><span class="va">filo</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/read.tree.html">read.tree</a></span><span class="op">(</span><span class="st">"filogenia_bocaina.txt"</span><span class="op">)</span></span>
-<span><span class="va">cc</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/PVR/man/PVRdecomp.html">PVRdecomp</a></span><span class="op">(</span><span class="va">filo</span><span class="op">)</span></span>
-<span><span class="va">trait</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/utils/read.table.html">read.csv2</a></span><span class="op">(</span><span class="st">"canto.csv"</span>, h<span class="op">=</span><span class="cn">TRUE</span>, dec <span class="op">=</span> <span class="st">"."</span><span class="op">)</span></span>
-<span><span class="va">trait</span><span class="op">&lt;-</span><span class="va">trait</span><span class="op">[</span>,<span class="op">-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">2</span>,<span class="fl">4</span>,<span class="fl">8</span><span class="op">)</span><span class="op">]</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">trait</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">obj</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/phylobase/man/phylo4d-methods.html">phylo4d</a></span><span class="op">(</span><span class="va">filo</span>, <span class="va">trait</span><span class="op">[</span>,<span class="op">-</span><span class="fl">7</span><span class="op">]</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/adephylo/man/table.phylo4d.html">table.phylo4d</a></span><span class="op">(</span><span class="va">obj</span>, box <span class="op">=</span> <span class="cn">FALSE</span>, cex.label <span class="op">=</span> <span class="fl">0.7</span><span class="op">)</span></span>
-<span><span class="va">phylo.pca</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/adephylo/man/ppca.html">ppca</a></span><span class="op">(</span><span class="va">obj</span>, method <span class="op">=</span> <span class="st">"patristic"</span>,scannf<span class="op">=</span><span class="cn">FALSE</span>, nfposi<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
-<span><span class="va">vectors</span><span class="op">&lt;-</span><span class="va">phylo.pca</span><span class="op">$</span><span class="va">li</span><span class="co">#eigenvectors of PCA</span></span>
-<span><span class="va">temporal</span><span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/matrix.html">as.matrix</a></span><span class="op">(</span><span class="va">vectors</span><span class="op">)</span><span class="op">[</span>,<span class="fl">2</span><span class="op">]</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/phylobase/man/print-methods.html">names</a></span><span class="op">(</span><span class="va">temporal</span><span class="op">)</span><span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/colnames.html">rownames</a></span><span class="op">(</span><span class="va">vectors</span><span class="op">)</span></span>
-<span><span class="va">espectral</span><span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/matrix.html">as.matrix</a></span><span class="op">(</span><span class="va">vectors</span><span class="op">)</span><span class="op">[</span>,<span class="fl">1</span><span class="op">]</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/phylobase/man/print-methods.html">names</a></span><span class="op">(</span><span class="va">espectral</span><span class="op">)</span><span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/colnames.html">rownames</a></span><span class="op">(</span><span class="va">vectors</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">psrcurve</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/PVR/man/PSR.html">PSR</a></span><span class="op">(</span><span class="va">x</span>, trait <span class="op">=</span> <span class="va">vectors</span>, null.model <span class="op">=</span> <span class="cn">TRUE</span>, Brownian.model <span class="op">=</span> <span class="cn">TRUE</span>, times <span class="op">=</span> <span class="fl">999</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/PVR/man/PSRplot.html">PSRplot</a></span><span class="op">(</span><span class="va">psrcurve</span>, info <span class="op">=</span> <span class="st">"both"</span><span class="op">)</span></span>
-<span><span class="va">anal_pvr</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/PVR/man/PVR.html">PVR</a></span><span class="op">(</span><span class="va">psrcurve</span>, trait <span class="op">=</span> <span class="va">espectral</span>, envVar <span class="op">=</span> <span class="va">new.data2</span><span class="op">$</span><span class="va">data</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/PVR/man/VarPartplot.html">VarPartplot</a></span><span class="op">(</span><span class="va">anal_pvr</span><span class="op">)</span><span class="co">#plot of variation partitioning</span></span>
-<span></span>
-<span><span class="co">#---Correlograma de Moran</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/source.html">source</a></span><span class="op">(</span><span class="st">'https://www.mail-archive.com/r-sig-phylo@r-project.org/msg02131/distcor.R'</span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/source.html">source</a></span><span class="op">(</span><span class="st">'Phylogenetic distogram.R'</span><span class="op">)</span></span>
-<span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">phylosignal</span><span class="op">)</span></span>
-<span><span class="va">core</span><span class="op">&lt;-</span><span class="fu">phyloCorrelogram</span><span class="op">(</span><span class="va">obj</span>, trait <span class="op">=</span> <span class="st">"F_max"</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/plot.html">plot</a></span><span class="op">(</span><span class="va">core</span><span class="op">)</span></span>
-<span></span>
-<span><span class="fu">distcor</span><span class="op">(</span><span class="va">temporal</span>, <span class="va">filo</span>, <span class="st">"IM"</span><span class="op">)</span><span class="co">#correlograma</span></span>
-<span><span class="fu">distcor</span><span class="op">(</span><span class="va">temporal</span>, <span class="va">filo</span>, <span class="st">"ED"</span><span class="op">)</span><span class="co">#distograma</span></span>
-<span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.12401">letsR</a></span><span class="op">)</span></span>
-<span><span class="fu">lets.correl</span><span class="op">(</span><span class="va">espectral</span>, <span class="fu"><a href="https://rdrr.io/pkg/ape/man/cophenetic.phylo.html">cophenetic.phylo</a></span><span class="op">(</span><span class="va">filo</span><span class="op">)</span>, <span class="fl">4</span><span class="op">)</span></span>
-<span><span class="fu">lets.correl</span><span class="op">(</span><span class="va">temporal</span>, <span class="fu"><a href="https://rdrr.io/pkg/ape/man/cophenetic.phylo.html">cophenetic.phylo</a></span><span class="op">(</span><span class="va">filo</span><span class="op">)</span>, <span class="fl">4</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co">#---correlação de Mantel</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://vegandevs.github.io/vegan/">vegan</a></span><span class="op">)</span><span class="co">#o phytools tem o multi.mantel</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/liamrevell/phytools">phytools</a></span><span class="op">)</span></span>
-<span><span class="va">tr.dist</span><span class="op">&lt;-</span><span class="fu"><a href="https://vegandevs.github.io/vegan/reference/vegdist.html">vegdist</a></span><span class="op">(</span><span class="va">trait</span>, <span class="st">"gower"</span><span class="op">)</span><span class="co">#All call parameters</span></span>
-<span><span class="va">dist.phyl</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/cophenetic.phylo.html">cophenetic.phylo</a></span><span class="op">(</span><span class="va">filo</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/multi.mantel.html">multi.mantel</a></span><span class="op">(</span><span class="va">tr.dist</span>, <span class="va">dist.phyl</span><span class="op">)</span><span class="op">$</span><span class="va">r.squared</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/multi.mantel.html">multi.mantel</a></span><span class="op">(</span><span class="va">tr.dist</span>, <span class="va">dist.phyl</span><span class="op">)</span><span class="op">$</span><span class="va">probF</span></span>
-<span><span class="fu"><a href="https://vegandevs.github.io/vegan/reference/mantel.html">mantel</a></span><span class="op">(</span><span class="va">tr.dist</span>, <span class="va">dist.phyl</span><span class="op">)</span></span>
-<span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/plot.html">plot</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/dist.html">as.dist</a></span><span class="op">(</span><span class="va">dist.phyl</span><span class="op">)</span>, <span class="va">tr.dist</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/lines.html">lines</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/lowess.html">lowess</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/dist.html">as.dist</a></span><span class="op">(</span><span class="va">dist.phyl</span><span class="op">)</span>, <span class="va">tr.dist</span><span class="op">)</span>, col<span class="op">=</span><span class="st">"red"</span>, lty<span class="op">=</span><span class="fl">2</span>, lwd<span class="op">=</span><span class="fl">3</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Aula 3 - quarta</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#Estimativa de estado ancestral para atributos conínuos e categóricos</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#Estimativa e teste de sinal filogenético</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(caper)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(phytools)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(geiger)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="do">###---ACE atributos continuos</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>anolis.tree<span class="ot">&lt;-</span><span class="fu">read.tree</span>(<span class="st">"Anolis.tre"</span>)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">plotTree</span>(anolis.tree,<span class="at">type=</span><span class="st">"fan"</span>,<span class="at">ftype=</span><span class="st">"i"</span>)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>svl<span class="ot">&lt;-</span><span class="fu">read.csv</span>(<span class="st">"svl.csv"</span>,</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>              <span class="at">row.names=</span><span class="dv">1</span>)</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(svl)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>svl<span class="ot">&lt;-</span><span class="fu">setNames</span>(svl<span class="sc">$</span>svl,<span class="fu">rownames</span>(svl))</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">name.check</span>(anolis.tree, svl)</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>fit<span class="ot">&lt;-</span><span class="fu">fastAnc</span>(anolis.tree,svl,<span class="at">vars=</span><span class="cn">TRUE</span>,<span class="at">CI=</span><span class="cn">TRUE</span>)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(fit,<span class="at">printlen=</span><span class="dv">10</span>)</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>obj<span class="ot">&lt;-</span><span class="fu">contMap</span>(anolis.tree,svl,<span class="at">plot=</span><span class="cn">FALSE</span>)</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(obj,<span class="at">type=</span><span class="st">"fan"</span>,<span class="at">legend=</span><span class="fl">0.7</span><span class="sc">*</span><span class="fu">max</span>(<span class="fu">nodeHeights</span>(anolis.tree)))</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>obj<span class="ot">&lt;-</span><span class="fu">setMap</span>(obj, <span class="at">invert=</span><span class="cn">TRUE</span>)</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(obj,<span class="at">type=</span><span class="st">"fan"</span>,<span class="at">legend=</span><span class="fl">0.7</span><span class="sc">*</span><span class="fu">max</span>(<span class="fu">nodeHeights</span>(anolis.tree)))</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="fu">plot.phylo</span>(anolis.tree, <span class="at">type =</span> <span class="st">"fan"</span>)</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="fu">nodelabels</span>(<span class="fu">round</span>(fit<span class="sc">$</span>ace, <span class="at">digits=</span><span class="dv">1</span>))</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>fit<span class="sc">$</span>CI95</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="fu">plot.phylo</span>(anolis.tree, <span class="at">type =</span> <span class="st">"fan"</span>)</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="fu">nodelabels</span>(<span class="at">cex=</span><span class="fl">0.9</span>, <span class="at">frame =</span> <span class="st">'n'</span>, <span class="at">bg =</span> <span class="cn">NULL</span>, <span class="at">col =</span> <span class="cn">NULL</span>)<span class="co">#to check the node numbers in the tree</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="co">#---Atributos discretos</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>X<span class="ot">&lt;-</span><span class="fu">read.csv</span>(<span class="st">"elopomorph.csv"</span>,<span class="at">row.names=</span><span class="dv">1</span>)</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>feed.mode<span class="ot">&lt;-</span><span class="fu">setNames</span>(X[,<span class="dv">1</span>],<span class="fu">rownames</span>(X))</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(feed.mode)</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>eel.tree<span class="ot">&lt;-</span><span class="fu">read.tree</span>(<span class="st">"elopomorph.tre"</span>)</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>eel.tree</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="fu">plotTree</span>(eel.tree,<span class="at">type=</span><span class="st">"fan"</span>,<span class="at">fsize=</span><span class="fl">0.7</span>,<span class="at">ftype=</span><span class="st">"i"</span>,<span class="at">lwd=</span><span class="dv">1</span>)</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>cols<span class="ot">&lt;-</span><span class="fu">setNames</span>(<span class="fu">c</span>(<span class="st">"red"</span>,<span class="st">"blue"</span>),<span class="fu">levels</span>(feed.mode))</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="fu">tiplabels</span>(<span class="at">pie=</span><span class="fu">to.matrix</span>(feed.mode[eel.tree<span class="sc">$</span>tip.label],<span class="fu">levels</span>(feed.mode)),</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>          <span class="at">piecol=</span>cols,<span class="at">cex=</span><span class="fl">0.3</span>)</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="fu">add.simmap.legend</span>(<span class="at">colors=</span>cols,<span class="at">prompt=</span><span class="cn">FALSE</span>,<span class="at">x=</span><span class="fl">0.9</span><span class="sc">*</span><span class="fu">par</span>()<span class="sc">$</span>usr[<span class="dv">1</span>],</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>                  <span class="at">y=</span><span class="fl">0.8</span><span class="sc">*</span><span class="fu">par</span>()<span class="sc">$</span>usr[<span class="dv">3</span>],<span class="at">fsize=</span><span class="fl">0.8</span>)</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>fitER<span class="ot">&lt;-</span><span class="fu">ace</span>(feed.mode,eel.tree,<span class="at">model=</span><span class="st">"ER"</span>,<span class="at">type=</span><span class="st">"discrete"</span>)</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>fitER</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="co">#The element lik.anc gives us the marginal ancestral states, </span></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="co">#also known as the 'empirical Bayesian posterior probabilities.'</span></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="co">#the matrix is in the same numerical order of the nodes in the tree</span></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>fitER<span class="sc">$</span>lik.anc</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="fu">plotTree</span>(eel.tree,<span class="at">type=</span><span class="st">"fan"</span>,<span class="at">fsize=</span><span class="fl">0.7</span>,<span class="at">ftype=</span><span class="st">"i"</span>,<span class="at">lwd=</span><span class="dv">1</span>)</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">fg=</span><span class="st">"transparent"</span>)<span class="co">#pie sem os outline pretos</span></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="fu">nodelabels</span>(<span class="at">node=</span><span class="dv">1</span><span class="sc">:</span>eel.tree<span class="sc">$</span>Nnode<span class="sc">+</span><span class="fu">Ntip</span>(eel.tree),</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>           <span class="at">pie=</span>fitER<span class="sc">$</span>lik.anc,<span class="at">piecol=</span>cols,<span class="at">cex=</span><span class="fl">0.4</span>)</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="fu">tiplabels</span>(<span class="at">pie=</span><span class="fu">to.matrix</span>(feed.mode[eel.tree<span class="sc">$</span>tip.label],<span class="fu">levels</span>(feed.mode)),</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>          <span class="at">piecol=</span>cols,<span class="at">cex=</span><span class="fl">0.3</span>)</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">fg=</span><span class="st">"black"</span>)</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="fu">add.simmap.legend</span>(<span class="at">colors=</span>cols,<span class="at">prompt=</span><span class="cn">FALSE</span>,<span class="at">x=</span><span class="fl">0.9</span><span class="sc">*</span><span class="fu">par</span>()<span class="sc">$</span>usr[<span class="dv">1</span>],</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>                  <span class="at">y=</span><span class="fl">0.8</span><span class="sc">*</span><span class="fu">par</span>()<span class="sc">$</span>usr[<span class="dv">3</span>],<span class="at">fsize=</span><span class="fl">0.8</span>)</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="co">#---Como resumir informações de mapeamento estocástico de caracteres</span></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>anguilatree<span class="ot">&lt;-</span><span class="fu">read.nexus</span>(<span class="st">"anguila.nex"</span>)</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(anguilatree)</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>anguilatree[[<span class="dv">1</span>]]</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>pruned.trees<span class="ot">&lt;-</span><span class="fu">lapply</span>(anguilatree,treedata,feed.mode)</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(pruned.trees)<span class="ot">&lt;-</span><span class="st">"multiPhylo"</span></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>pruned.trees<span class="ot">&lt;-</span><span class="fu">lapply</span>(pruned.trees,<span class="cf">function</span>(x) x<span class="sc">$</span>phy)</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(pruned.trees)<span class="ot">&lt;-</span><span class="st">"multiPhylo"</span></span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>scr<span class="ot">&lt;-</span><span class="fu">make.simmap</span>(pruned.trees, feed.mode)</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="fu">describe.simmap</span>(scr)</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>cons.tree<span class="ot">&lt;-</span><span class="fu">consensus.edges</span>(pruned.trees,<span class="at">method=</span><span class="st">"least.squares"</span>)</span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>obj<span class="ot">&lt;-</span><span class="fu">summary</span>(scr,<span class="at">ref.tree=</span>cons.tree)</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>obj</span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>colors<span class="ot">&lt;-</span><span class="fu">setNames</span>(<span class="fu">c</span>(<span class="st">"red"</span>,<span class="st">"blue"</span>),<span class="fu">c</span>(<span class="st">"bite"</span>,<span class="st">"suction"</span>))</span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(obj,<span class="at">ftype=</span><span class="st">"i"</span>,<span class="at">fsize=</span><span class="fl">0.7</span>,<span class="at">colors=</span>colors)</span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a><span class="fu">add.simmap.legend</span>(<span class="at">x=</span><span class="dv">0</span>,<span class="at">y=</span><span class="dv">5</span>,<span class="at">prompt=</span><span class="cn">FALSE</span>,<span class="at">colors=</span>colors,<span class="at">shape=</span><span class="st">"circle"</span>)</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a><span class="co">#---Sinal filogenético</span></span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a><span class="co">#decomposição entropia quadrática</span></span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ade4)</span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"SUPFILEAc.R"</span>)<span class="co">#Carrega a função que realiza os testes</span></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>filo<span class="ot">=</span><span class="st">"((Elachistocleis_cesarii:41.65909598,Dermatonotus_muelleri:41.65909296):130.6759311,((((((((Leptodactylus_latinasus:19.99081957,Leptodactylus_podicipinus:19.99081999):21.39223911,(Leptodactylus_furnarius:36.78100277,((Leptodactylus_mystaceus:24.51631316,Leptodactylus_fuscus:24.51631401):2.926964726,Leptodactylus_mystacinus:27.44327579):9.337726985):4.602052962):14.62924222,Adenomera_bokermanni:56.0123002):21.07195011,(((((Physalaemus_centralis:18.74795043,Physalaemus_cuvieri:18.74795043):13.97291572,Physalaemus_olfersii:32.72086615):12.45573016,(Physalaemus_marmoratus:33.51018394,Eupemphix_nattereri:33.51018143):11.66641381):14.73984391,Pleurodema_tucumanum:59.91644488):15.70595544,Pseudopaludicola_murundu:75.62239676):1.461867095):15.598816,((Rhinella_schneideri:15.99225121,Rhinella_ornata:15.99225112):70.87053535,(Odontophrynus_americanus:38.18978918,(Proceratophrys_boiei:24.95467863,Proceratophrys_melanopogon:24.95468034):13.23510769):48.67300639):5.820258):2.655002,((((Scinax_fuscomarginatus:28.82698777,Scinax_similis:28.82699371):4.472076052,Scinax_fuscovarius:33.29907001):35.21992923,(Dendropsophus_jimi:42.90155319,(Dendropsophus_minutus:36.95028212,Dendropsophus_nanus:36.95028595):5.951269464):25.61743536):9.145439519,(Hypsiboas_prasinus:14.13890513,Hypsiboas_latistriatus:14.13890212):63.52552477):17.673621):11.463261,((Hylodes_cardosoi:30.4819059,Hylodes_sazimai:30.48190016):10.31759659,(Crossodactylus_caramaschii:29.19061118,Crossodactylus_gaudichaudii:29.19061793):11.60887814):66.00184117):24.96725,(Ischnocnema_guentheri:63.77862054,Ischnocnema_juipoca:63.77860605):67.98996335):40.566457);"</span></span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>trait<span class="ot">&lt;-</span><span class="fu">read.table</span>(<span class="st">"testes_matrix_r.txt"</span>, <span class="at">h=</span><span class="cn">TRUE</span>, <span class="at">dec =</span> <span class="st">","</span>)</span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(trait)</span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>mel.phy<span class="ot">=</span><span class="fu">newick2phylog</span>(filo, <span class="at">add.tools =</span> <span class="cn">FALSE</span>) <span class="co">#converte a árvore para formato phylog</span></span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a>mel.phy</span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a>trait.dist<span class="ot">=</span><span class="fu">dist.ktab</span>(<span class="fu">ktab.list.df</span>(<span class="fu">list</span>(<span class="fu">as.data.frame</span>(trait[,<span class="dv">2</span>]))), <span class="at">type=</span><span class="st">"Q"</span>, <span class="at">scan=</span>T)</span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a>decompos<span class="ot">=</span><span class="fu">decdiv</span>(mel.phy, <span class="fu">rep</span>(<span class="dv">1</span>, <span class="dv">35</span>), trait.dist)</span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(decompos)</span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>dev1<span class="ot">=</span><span class="fu">rtest.decdiv</span>(mel.phy, <span class="fu">rep</span>(<span class="dv">1</span>, <span class="dv">35</span>), trait.dist, <span class="at">optiontest=</span><span class="st">"greater"</span>)</span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a>dev1</span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a><span class="fu">plot.decdiv</span>(mel.phy, <span class="at">vnodes =</span> decompos)</span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a><span class="co">#---K de Blomberg</span></span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(picante)</span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(phytools)</span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a><span class="fu">phylosignal</span>(svl, anolis.tree)</span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a><span class="fu">phylosig</span>(anolis.tree, svl, <span class="at">test =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a><span class="co">#---Lambda de Pagel</span></span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a><span class="fu">phylosig</span>(anolis.tree, svl, <span class="at">test =</span> <span class="cn">TRUE</span>, <span class="at">method =</span> <span class="st">"lambda"</span>)</span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a><span class="co">#---Fritz's D</span></span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(caper)</span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a>phy<span class="ot">=</span><span class="fu">read.tree</span>(<span class="st">"arvore.txt"</span>)<span class="co">#filogenia</span></span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a>Trait<span class="ot">=</span><span class="fu">read.table</span>(<span class="st">"traits selecionados.txt"</span>, <span class="at">h=</span>T)</span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(Trait)</span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a>traits.bin<span class="ot">=</span>Trait[, <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">4</span>,<span class="dv">8</span>)]<span class="co">#Separando os traits binários</span></span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a>dados.bin<span class="ot">=</span><span class="fu">comparative.data</span>(phy, traits.bin, X)</span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a>ab<span class="ot">&lt;-</span><span class="fu">phylo.d</span>(dados.bin, <span class="at">binvar=</span>posolhos)<span class="co">#pos.olhos Tem sinal filogenetico</span></span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a>ab</span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a><span class="co">#---PVR</span></span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(phylobase)</span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(adephylo)</span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(PVR)</span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a>filo<span class="ot">&lt;-</span><span class="fu">read.tree</span>(<span class="st">"filogenia_bocaina.txt"</span>)</span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a>cc <span class="ot">&lt;-</span> <span class="fu">PVRdecomp</span>(filo)</span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a>trait<span class="ot">&lt;-</span><span class="fu">read.csv2</span>(<span class="st">"canto.csv"</span>, <span class="at">h=</span><span class="cn">TRUE</span>, <span class="at">dec =</span> <span class="st">"."</span>)</span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a>trait<span class="ot">&lt;-</span>trait[,<span class="sc">-</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">8</span>)]</span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(trait)</span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a>obj<span class="ot">&lt;-</span><span class="fu">phylo4d</span>(filo, trait[,<span class="sc">-</span><span class="dv">7</span>])</span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a><span class="fu">table.phylo4d</span>(obj, <span class="at">box =</span> <span class="cn">FALSE</span>, <span class="at">cex.label =</span> <span class="fl">0.7</span>)</span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a>phylo.pca<span class="ot">&lt;-</span><span class="fu">ppca</span>(obj, <span class="at">method =</span> <span class="st">"patristic"</span>,<span class="at">scannf=</span><span class="cn">FALSE</span>, <span class="at">nfposi=</span><span class="dv">2</span>)</span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a>vectors<span class="ot">&lt;-</span>phylo.pca<span class="sc">$</span>li<span class="co">#eigenvectors of PCA</span></span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a>temporal<span class="ot">=</span><span class="fu">as.matrix</span>(vectors)[,<span class="dv">2</span>]</span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(temporal)<span class="ot">=</span><span class="fu">rownames</span>(vectors)</span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a>espectral<span class="ot">=</span><span class="fu">as.matrix</span>(vectors)[,<span class="dv">1</span>]</span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(espectral)<span class="ot">=</span><span class="fu">rownames</span>(vectors)</span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a>psrcurve<span class="ot">&lt;-</span><span class="fu">PSR</span>(x, <span class="at">trait =</span> vectors, <span class="at">null.model =</span> <span class="cn">TRUE</span>, <span class="at">Brownian.model =</span> <span class="cn">TRUE</span>, <span class="at">times =</span> <span class="dv">999</span>)</span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a><span class="fu">PSRplot</span>(psrcurve, <span class="at">info =</span> <span class="st">"both"</span>)</span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a>anal_pvr<span class="ot">&lt;-</span><span class="fu">PVR</span>(psrcurve, <span class="at">trait =</span> espectral, <span class="at">envVar =</span> new.data2<span class="sc">$</span>data)</span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a><span class="fu">VarPartplot</span>(anal_pvr)<span class="co">#plot of variation partitioning</span></span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a><span class="co">#---Correlograma de Moran</span></span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">'https://www.mail-archive.com/r-sig-phylo@r-project.org/msg02131/distcor.R'</span>)</span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">'Phylogenetic distogram.R'</span>)</span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(phylosignal)</span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a>core<span class="ot">&lt;-</span><span class="fu">phyloCorrelogram</span>(obj, <span class="at">trait =</span> <span class="st">"F_max"</span>)</span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(core)</span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a><span class="fu">distcor</span>(temporal, filo, <span class="st">"IM"</span>)<span class="co">#correlograma</span></span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a><span class="fu">distcor</span>(temporal, filo, <span class="st">"ED"</span>)<span class="co">#distograma</span></span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(letsR)</span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a><span class="fu">lets.correl</span>(espectral, <span class="fu">cophenetic.phylo</span>(filo), <span class="dv">4</span>)</span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a><span class="fu">lets.correl</span>(temporal, <span class="fu">cophenetic.phylo</span>(filo), <span class="dv">4</span>)</span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a><span class="co">#---correlação de Mantel</span></span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(vegan)<span class="co">#o phytools tem o multi.mantel</span></span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(phytools)</span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a>tr.dist<span class="ot">&lt;-</span><span class="fu">vegdist</span>(trait, <span class="st">"gower"</span>)<span class="co">#All call parameters</span></span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a>dist.phyl<span class="ot">&lt;-</span><span class="fu">cophenetic.phylo</span>(filo)</span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a><span class="fu">multi.mantel</span>(tr.dist, dist.phyl)<span class="sc">$</span>r.squared</span>
+<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a><span class="fu">multi.mantel</span>(tr.dist, dist.phyl)<span class="sc">$</span>probF</span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a><span class="fu">mantel</span>(tr.dist, dist.phyl)</span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">as.dist</span>(dist.phyl), tr.dist)</span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(<span class="fu">lowess</span>(<span class="fu">as.dist</span>(dist.phyl), tr.dist), <span class="at">col=</span><span class="st">"red"</span>, <span class="at">lty=</span><span class="dv">2</span>, <span class="at">lwd=</span><span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 
 
 <!-- -->
 
 
-</main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
-    }
-    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -1224,7 +1061,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
-<footer class="footer"><div class="nav-footer">
+<footer class="footer">
+  <div class="nav-footer">
     <div class="nav-footer-left">
 <p>© Diogo B. Provete · Biodiversity Synthesis Lab · Instituto de Biociências, UFMS</p>
 </div>   
@@ -1236,6 +1074,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
   </div>
 </footer>
+
+
 
 
 <script src="../../../site_libs/quarto-html/zenscroll-min.js"></script>

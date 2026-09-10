@@ -31,8 +31,6 @@ website:
         text: Publications
       - href: people.qmd
         text: People
-      - href: cv.qmd
-        text: CV
       - href: teaching.qmd
         text: Teaching
       - href: opportunities.qmd
@@ -61,14 +59,12 @@ website:
 
 format:
   html:
-    theme:
-      light: cosmo
-      dark: darkly
+    theme: cosmo
     css: styles.css
     toc: true
     toc-location: right
     toc-depth: 3
-    code-link: true
+    code-link: false   # needs downlit+xml2 AND hits CRAN on every render
     anchor-sections: true
     smooth-scroll: true
     link-external-newwindow: true

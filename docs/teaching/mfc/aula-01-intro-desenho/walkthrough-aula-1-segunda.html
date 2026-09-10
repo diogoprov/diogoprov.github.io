@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.8.26">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
 <title>Walkthrough completo da aula prática — R básico, importação de filogenias, manipulação de objetos phylo – Biodiversity Synthesis Lab</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -57,6 +57,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 </style>
 
+
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -66,18 +67,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../../assets/favicon.png" rel="icon" type="image/png">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-6b38416d90cdbb41281c8a2a0df0236b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-1732e9b120b8faec2f4b22e599a6250f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../../site_libs/bootstrap/bootstrap-6b38416d90cdbb41281c8a2a0df0236b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+<link href="../../../site_libs/bootstrap/bootstrap-ec100a28b3f28334d858203a6e0baf76.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
@@ -103,13 +102,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script><style>html{ scroll-behavior: smooth; }</style>
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <style>
   /* Tame Academicons next to text in card rows */
   .ai { vertical-align: -.05em; }
 </style>
+
+
 <link rel="stylesheet" href="../../../styles.css">
 <meta property="og:title" content="Walkthrough completo da aula prática — R básico, importação de filogenias, manipulação de objetos phylo – Biodiversity Synthesis Lab">
 <meta property="og:description" content="Walkthrough do código — Aula 1: Introdução e desenho de estudos comparativos">
@@ -118,175 +120,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta name="twitter:description" content="Walkthrough do código — Aula 1: Introdução e desenho de estudos comparativos">
 <meta name="twitter:card" content="summary">
 </head>
-<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        window.scrollTo(0, 1);
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
-      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
+
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../../assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo light-content"><img src="../../../assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo dark-content"></a>
+    <img src="../../../assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo light-content">
+    <img src="../../../assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo dark-content">
+    </a>
     <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Biodiversity Synthesis Lab</span>
     </a>
@@ -297,7 +142,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-<li class="nav-item">
+  <li class="nav-item">
     <a class="nav-link" href="../../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
@@ -312,10 +157,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li class="nav-item">
     <a class="nav-link" href="../../../people.html"> 
 <span class="menu-text">People</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../../cv.html"> 
-<span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../../teaching.html"> 
@@ -338,8 +179,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Brazilian Tadpoles</span></a>
   </li>  
 </ul>
-<ul class="navbar-nav navbar-nav-scroll ms-auto">
-<li class="nav-item compact">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/diogoprov"> <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
 <span class="menu-text"></span></a>
@@ -350,21 +191,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text"></span></a>
   </li>  
 </ul>
-</div> <!-- /navcollapse -->
+          </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
-    </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Walkthrough completo da aula prática — R básico, importação de filogenias, manipulação de objetos <code>phylo</code>
-</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title">Walkthrough completo da aula prática — R básico, importação de filogenias, manipulação de objetos <code>phylo</code></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 <p class="subtitle lead">Walkthrough do código — Aula 1: Introdução e desenho de estudos comparativos</p>
 </div>
 
@@ -379,7 +224,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   
 
 
-</header><div class="callout callout-style-simple callout-note no-icon">
+</header>
+
+
+<div class="callout callout-style-simple callout-note no-icon">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
@@ -390,230 +238,218 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co">#Aula 1 - Segunda</span></span>
-<span></span>
-<span><span class="co">#Nesta aula vamos aprender a importar e manipular dados no R.</span></span>
-<span></span>
-<span><span class="co">#carregando pacotes</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/emmanuelparadis/ape">ape</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/liamrevell/phytools">phytools</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">geiger</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co">#Básico do R</span></span>
-<span></span>
-<span><span class="va">N</span><span class="op">&lt;-</span><span class="fl">2</span></span>
-<span><span class="va">n</span><span class="op">&lt;-</span><span class="fl">3</span></span>
-<span><span class="fl">3</span><span class="op">+</span><span class="fl">2</span></span>
-<span><span class="va">N</span><span class="op">+</span><span class="va">n</span></span>
-<span><span class="va">x</span><span class="op">&lt;-</span><span class="fl">1</span><span class="op">:</span><span class="fl">5</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/mode.html">mode</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/length.html">length</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span>
-<span><span class="va">z</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"ordem"</span>,<span class="st">"superfamília"</span>,<span class="st">"família"</span>,<span class="st">"gênero"</span>,<span class="st">"espécies"</span><span class="op">)</span></span>
-<span><span class="va">z</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/mode.html">mode</a></span><span class="op">(</span><span class="va">z</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/class.html">class</a></span><span class="op">(</span><span class="va">z</span><span class="op">)</span></span>
-<span><span class="va">z</span><span class="op">[</span><span class="fl">2</span><span class="op">]</span></span>
-<span><span class="va">z</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">3</span><span class="op">)</span><span class="op">]</span></span>
-<span><span class="va">z</span><span class="op">[</span><span class="op">-</span><span class="fl">2</span><span class="op">]</span></span>
-<span><span class="va">f</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"Male"</span>,<span class="st">"Male"</span>,<span class="st">"Female"</span>,<span class="st">"Female"</span>,<span class="st">"Female"</span><span class="op">)</span></span>
-<span><span class="va">f</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/factor.html">factor</a></span><span class="op">(</span><span class="va">f</span><span class="op">)</span></span>
-<span><span class="va">f</span></span>
-<span><span class="va">X</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/matrix.html">matrix</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">9</span>,<span class="fl">3</span>,<span class="fl">3</span><span class="op">)</span></span>
-<span><span class="va">X</span></span>
-<span><span class="va">X</span><span class="op">[</span><span class="fl">3</span>,<span class="fl">2</span><span class="op">]</span></span>
-<span><span class="va">X</span><span class="op">[</span>,<span class="fl">3</span><span class="op">]</span></span>
-<span><span class="va">X</span><span class="op">[</span><span class="fl">3</span>,<span class="op">]</span></span>
-<span><span class="va">Y</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/data.frame.html">data.frame</a></span><span class="op">(</span><span class="va">z</span>,y<span class="op">=</span><span class="fl">1</span><span class="op">:</span><span class="fl">5</span>,x<span class="op">=</span><span class="fl">5</span><span class="op">:</span><span class="fl">1</span><span class="op">)</span></span>
-<span><span class="va">Y</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/class.html">class</a></span><span class="op">(</span><span class="va">Y</span><span class="op">)</span></span>
-<span><span class="co">#Importanto filogenias em diferentes formatos</span></span>
-<span></span>
-<span><span class="co">##Arquivo em formato nexus</span></span>
-<span></span>
-<span><span class="va">barb</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/read.nexus.html">read.nexus</a></span><span class="op">(</span><span class="st">"BarbetTree.nex"</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co">##Arquivo em formato newick</span></span>
-<span></span>
-<span><span class="va">cent</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/read.tree.html">read.tree</a></span><span class="op">(</span><span class="st">"Centrarchidae.tre"</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co">#Essa extensão .tre é a extensão que muitos programas trabalham, p.ex., o BEAST. </span></span>
-<span><span class="co">#É o formato nativo do FigTree, um programa de visualização de filogenias</span></span>
-<span></span>
-<span><span class="co">#Vamos explorar os formatos e entender a classe de dados</span></span>
-<span><span class="va">cent</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/str.html">str</a></span><span class="op">(</span><span class="va">cent</span><span class="op">)</span></span>
-<span><span class="va">barb</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/str.html">str</a></span><span class="op">(</span><span class="va">barb</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">barb</span><span class="op">$</span><span class="va">edge</span></span>
-<span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/plot.phylo.html">plot.phylo</a></span><span class="op">(</span><span class="va">barb</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/nodelabels.html">nodelabels</a></span><span class="op">(</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co">#newick simples em txt</span></span>
-<span><span class="va">gomes</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/read.tree.html">read.tree</a></span><span class="op">(</span><span class="st">"Gomes_phylo.txt"</span><span class="op">)</span></span>
-<span><span class="va">gomes_dat</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/read.tree.html">read.tree</a></span><span class="op">(</span><span class="st">"Gomes_tree_datada.txt"</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">gomes_dat</span></span>
-<span><span class="va">gomes</span></span>
-<span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">gomes_dat</span><span class="op">)</span>;<span class="fu"><a href="https://rdrr.io/pkg/ape/man/axisPhylo.html">axisPhylo</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">gomes</span><span class="op">)</span>;<span class="fu"><a href="https://rdrr.io/pkg/ape/man/axisPhylo.html">axisPhylo</a></span><span class="op">(</span><span class="op">)</span></span>
-<span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/is.ultrametric.html">is.ultrametric</a></span><span class="op">(</span><span class="va">gomes</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/is.ultrametric.html">is.ultrametric</a></span><span class="op">(</span><span class="va">gomes_dat</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">branch</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/compute.brlen.html">compute.brlen</a></span><span class="op">(</span><span class="va">gomes</span>, <span class="fl">1</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">branch</span><span class="op">)</span>;<span class="fu"><a href="https://rdrr.io/pkg/ape/man/axisPhylo.html">axisPhylo</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/is.ultrametric.html">is.ultrametric</a></span><span class="op">(</span><span class="va">branch</span><span class="op">)</span></span>
-<span><span class="va">branch1</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/compute.brlen.html">compute.brlen</a></span><span class="op">(</span><span class="va">gomes</span>, method <span class="op">=</span> <span class="st">"Grafen"</span>, <span class="fl">0.8</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">branch1</span><span class="op">)</span>;<span class="fu"><a href="https://rdrr.io/pkg/ape/man/axisPhylo.html">axisPhylo</a></span><span class="op">(</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">branch4</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/compute.brlen.html">compute.brlen</a></span><span class="op">(</span><span class="va">gomes</span>, method <span class="op">=</span> <span class="st">"Grafen"</span>, <span class="fl">2</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">branch4</span><span class="op">)</span>;<span class="fu"><a href="https://rdrr.io/pkg/ape/man/axisPhylo.html">axisPhylo</a></span><span class="op">(</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co">#É muito commum que nossos dados de atributos estejam em uma planilha. Quando </span></span>
-<span><span class="co">#importada no R essa planilha de dados torna-se um data frame</span></span>
-<span></span>
-<span><span class="va">obj</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/utils/read.table.html">read.csv</a></span><span class="op">(</span><span class="st">"Centrarchidae.csv"</span>,header<span class="op">=</span><span class="cn">TRUE</span>,row.names<span class="op">=</span><span class="fl">1</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">obj</span><span class="op">)</span></span>
-<span><span class="co">#Vejam que os nomes das especies estao na 1a coluna, que esta nomeada</span></span>
-<span><span class="co">#agora precisamos extrair os dados para buccal length e guardar num vetor, mas </span></span>
-<span><span class="co">#conservando o nome das especies em cada elemento do vetor. Uma forma de fazer isso </span></span>
-<span><span class="co">#é</span></span>
-<span></span>
-<span><span class="va">buccal.length</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/stats/setNames.html">setNames</a></span><span class="op">(</span><span class="va">obj</span><span class="op">[</span>,<span class="st">"buccal.length"</span><span class="op">]</span>,<span class="fu"><a href="https://rdrr.io/r/base/colnames.html">rownames</a></span><span class="op">(</span><span class="va">obj</span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">gape</span><span class="op">&lt;-</span><span class="va">obj</span><span class="op">$</span><span class="va">gape.width</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/names.html">names</a></span><span class="op">(</span><span class="va">gape</span><span class="op">)</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/colnames.html">rownames</a></span><span class="op">(</span><span class="va">obj</span><span class="op">)</span></span>
-<span><span class="va">gape</span></span>
-<span></span>
-<span><span class="co">#outra forma é usando o as.matrix</span></span>
-<span><span class="va">X</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/utils/read.table.html">read.csv</a></span><span class="op">(</span><span class="st">"anole.data.csv"</span>,header<span class="op">=</span><span class="cn">TRUE</span>,row.names<span class="op">=</span><span class="fl">1</span><span class="op">)</span></span>
-<span><span class="va">X</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">X</span><span class="op">)</span></span>
-<span><span class="va">Y</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/matrix.html">as.matrix</a></span><span class="op">(</span><span class="va">X</span><span class="op">)</span></span>
-<span><span class="va">Y</span><span class="op">[</span>,<span class="fl">1</span><span class="op">]</span><span class="co">#pega os nomes das linhas e atribui aos elementos do vetor</span></span>
-<span></span>
-<span><span class="co">#Tudo vai depender do formato dos dados</span></span>
-<span></span>
-<span><span class="co">#---Demonstrando efeito de correlação filogenética nos resultados</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/Random.html">set.seed</a></span><span class="op">(</span><span class="fl">21</span><span class="op">)</span> <span class="co">## 10 ok, 2 ok, 3 ok, 6 ok, 7 ok, </span></span>
-<span><span class="co">## simulate a coalescent shaped tree</span></span>
-<span><span class="va">tree</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/rtree.html">rcoal</a></span><span class="op">(</span>n<span class="op">=</span><span class="fl">100</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/plotTree.html">plotTree</a></span><span class="op">(</span><span class="va">tree</span>,ftype<span class="op">=</span><span class="st">"off"</span><span class="op">)</span></span>
-<span><span class="co">## simulate uncorrelated Brownian evolution</span></span>
-<span><span class="va">x</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/fastBM.html">fastBM</a></span><span class="op">(</span><span class="va">tree</span><span class="op">)</span></span>
-<span><span class="va">y</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/fastBM.html">fastBM</a></span><span class="op">(</span><span class="va">tree</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/par.html">par</a></span><span class="op">(</span>mar<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">5.1</span>,<span class="fl">4.1</span>,<span class="fl">2.1</span>,<span class="fl">2.1</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">x</span>,<span class="va">y</span><span class="op">)</span></span>
-<span><span class="co">#test relationship without taking into account phylogeny </span></span>
-<span><span class="va">fit</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/stats/lm.html">lm</a></span><span class="op">(</span><span class="va">y</span><span class="op">~</span><span class="va">x</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/abline.html">abline</a></span><span class="op">(</span><span class="va">fit</span>,lwd<span class="op">=</span><span class="fl">2</span>,lty<span class="op">=</span><span class="st">"dashed"</span>,col<span class="op">=</span><span class="st">"red"</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/stats/anova.html">anova</a></span><span class="op">(</span><span class="va">fit</span><span class="op">)</span><span class="co">#very significant relationship</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/phylomorphospace.html">phylomorphospace</a></span><span class="op">(</span><span class="va">tree</span>,<span class="fu"><a href="https://rdrr.io/r/base/cbind.html">cbind</a></span><span class="op">(</span><span class="va">x</span>,<span class="va">y</span><span class="op">)</span>,label<span class="op">=</span><span class="st">"off"</span>,node.size<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">0.5</span>,<span class="fl">0.7</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/abline.html">abline</a></span><span class="op">(</span><span class="va">fit</span>,lwd<span class="op">=</span><span class="fl">2</span>,lty<span class="op">=</span><span class="st">"dashed"</span>,col<span class="op">=</span><span class="st">"red"</span><span class="op">)</span></span>
-<span><span class="va">ix</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/pic.html">pic</a></span><span class="op">(</span><span class="va">x</span>,<span class="va">tree</span><span class="op">)</span></span>
-<span><span class="va">iy</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/pic.html">pic</a></span><span class="op">(</span><span class="va">y</span>,<span class="va">tree</span><span class="op">)</span></span>
-<span><span class="va">fit1</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/stats/lm.html">lm</a></span><span class="op">(</span><span class="va">iy</span><span class="op">~</span><span class="va">ix</span><span class="op">-</span><span class="fl">1</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/stats/anova.html">anova</a></span><span class="op">(</span><span class="va">fit1</span><span class="op">)</span><span class="co">#no significance</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="va">fit1</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co">##---Demonstrando o phyndr</span></span>
-<span><span class="co">#use some external information,such as a topological hypothesis or taxonomic resource, </span></span>
-<span><span class="co">#to swap out species in the tree that don't have trait data with "phylogenetically </span></span>
-<span><span class="co">#equivalent" species that do.</span></span>
-<span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/emmanuelparadis/ape">ape</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">phyndr</span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">taxonlookup</span><span class="op">)</span></span>
-<span><span class="co">#https://github.com/traitecoevo/phyndr-ms/blob/master/vignette/vignette.md</span></span>
-<span><span class="co">#Filogenia de angiospermas datada com 798 taxa</span></span>
-<span><span class="va">angio_phy</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/ape/man/read.nexus.html">read.nexus</a></span><span class="op">(</span><span class="st">"https://datadryad.org/bitstream/handle/10255/dryad.76144/Magallon_etal_PL_ML.nex?sequence=1"</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co">#dados para plant growth form (i.e., woody v. herbaceous) para 238 spp</span></span>
-<span><span class="va">wood_dat</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/utils/read.table.html">read.csv</a></span><span class="op">(</span><span class="st">"https://datadryad.org/bitstream/handle/10255/dryad.59002/GlobalWoodinessDatabase.csv?sequence=1"</span>, row.names <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">wood_dat</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/dim.html">dim</a></span><span class="op">(</span><span class="va">wood_dat</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co">#We want to build a taxonomic table that includes all species in the phylogenetic tree</span></span>
-<span><span class="co">#AND all species in the trait data.</span></span>
-<span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="fu">plant_lookup</span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="va">angio_spp</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/unique.html">unique</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">angio_phy</span><span class="op">$</span><span class="va">tip.label</span>, <span class="fu"><a href="https://rdrr.io/r/base/colnames.html">rownames</a></span><span class="op">(</span><span class="va">wood_dat</span><span class="op">)</span><span class="op">)</span><span class="op">)</span><span class="co">#Create a vector of taxa for the union of names in the tree and the data</span></span>
-<span><span class="va">angio_tax</span> <span class="op">&lt;-</span> <span class="fu">lookup_table</span><span class="op">(</span><span class="va">angio_spp</span>, by_species<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span><span class="co">#Get a taxonomic lookup table for this vector of names</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">angio_tax</span><span class="op">)</span></span>
-<span><span class="va">angio_tax_alt</span> <span class="op">&lt;-</span> <span class="fu">lookup_table</span><span class="op">(</span><span class="va">angio_spp</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">angio_tax_alt</span><span class="op">)</span></span>
-<span><span class="va">angio_tax</span> <span class="op">&lt;-</span> <span class="va">angio_tax</span><span class="op">[</span>,<span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"genus"</span>, <span class="st">"family"</span>, <span class="st">"order"</span><span class="op">)</span><span class="op">]</span><span class="co">#subset the taxonomy so we only consider the genus, family and order columns</span></span>
-<span></span>
-<span><span class="co">#we need to supply the chronogram, the trait data with rownames set to species names, and the taxonomic table.</span></span>
-<span><span class="va">angio_phyndr</span> <span class="op">&lt;-</span> <span class="fu">phyndr_taxonomy</span><span class="op">(</span><span class="va">angio_phy</span>, <span class="fu"><a href="https://rdrr.io/r/base/colnames.html">rownames</a></span><span class="op">(</span><span class="va">wood_dat</span><span class="op">)</span>, <span class="va">angio_tax</span><span class="op">)</span></span>
-<span><span class="va">angio_phyndr</span></span>
-<span><span class="co">#Encontraram dados para mais 531 spp. Ficando a filogenia fully-matched para 778 sp</span></span>
-<span><span class="co">#com dados de história de vida</span></span>
-<span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/class.html">class</a></span><span class="op">(</span><span class="va">angio_phyndr</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/plot.phylo.html">plot.phylo</a></span><span class="op">(</span><span class="va">angio_phy</span>, type <span class="op">=</span> <span class="st">"fan"</span>, cex<span class="op">=</span><span class="fl">0.3</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co">#Demonstrando Rphylopars</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/ericgoolsby/Rphylopars/wiki">Rphylopars</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/liamrevell/phytools">phytools</a></span><span class="op">)</span> <span class="co"># for simulating pure-birth phylogenies</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/Random.html">set.seed</a></span><span class="op">(</span><span class="fl">21</span><span class="op">)</span> <span class="co"># Set the seed for reproducible results</span></span>
-<span><span class="va">trait_cov</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/matrix.html">matrix</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">4</span>,<span class="fl">2</span>,<span class="fl">2.2</span>,<span class="fl">2</span>,<span class="fl">3</span>,<span class="fl">1.5</span>,<span class="fl">2.2</span>,<span class="fl">1.5</span>,<span class="fl">2.5</span><span class="op">)</span>,nrow <span class="op">=</span> <span class="fl">3</span>,ncol <span class="op">=</span> <span class="fl">3</span><span class="op">)</span></span>
-<span><span class="va">tree</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/phytools/man/pbtree.html">pbtree</a></span><span class="op">(</span>n <span class="op">=</span> <span class="fl">20</span><span class="op">)</span></span>
-<span><span class="va">sim_data</span> <span class="op">&lt;-</span> <span class="fu">simtraits</span><span class="op">(</span>v <span class="op">=</span> <span class="va">trait_cov</span>,tree <span class="op">=</span> <span class="va">tree</span>,nmissing <span class="op">=</span> <span class="fl">10</span><span class="op">)</span></span>
-<span><span class="va">original</span><span class="op">&lt;-</span><span class="va">sim_data</span><span class="op">$</span><span class="va">trait_data</span><span class="op">[</span>,<span class="fl">2</span><span class="op">:</span><span class="fl">4</span><span class="op">]</span> <span class="co"># Original data with missing values</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/which.html">which</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/NA.html">is.na</a></span><span class="op">(</span><span class="va">original</span><span class="op">)</span><span class="op">)</span><span class="co">#quais espécies tem dados faltantes</span></span>
-<span><span class="va">original</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/colSums.html">rowSums</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/NA.html">is.na</a></span><span class="op">(</span><span class="va">original</span><span class="op">)</span><span class="op">)</span> <span class="op">&gt;</span> <span class="fl">0</span>,<span class="op">]</span><span class="co">#mostra só as linhas com NA</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/phylo.heatmap.html">phylo.heatmap</a></span><span class="op">(</span><span class="va">tree</span>,<span class="fu"><a href="https://rdrr.io/r/base/matrix.html">as.matrix</a></span><span class="op">(</span><span class="va">original</span><span class="op">)</span>,standardize<span class="op">=</span><span class="cn">TRUE</span>,lwd<span class="op">=</span><span class="fl">3</span>,</span>
-<span>              pts<span class="op">=</span><span class="cn">FALSE</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">p_BM</span> <span class="op">&lt;-</span> <span class="fu">phylopars</span><span class="op">(</span>trait_data <span class="op">=</span> <span class="va">sim_data</span><span class="op">$</span><span class="va">trait_data</span>,tree <span class="op">=</span> <span class="va">sim_data</span><span class="op">$</span><span class="va">tree</span>, model <span class="op">=</span> <span class="st">"BM"</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">imput</span><span class="op">&lt;-</span><span class="va">p_BM</span><span class="op">$</span><span class="va">anc_recon</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">20</span>,<span class="op">]</span> <span class="co"># Data with imputed species means</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/phylo.heatmap.html">phylo.heatmap</a></span><span class="op">(</span><span class="va">tree</span>,<span class="fu"><a href="https://rdrr.io/r/base/matrix.html">as.matrix</a></span><span class="op">(</span><span class="va">imput</span><span class="op">)</span>,standardize<span class="op">=</span><span class="cn">TRUE</span>,lwd<span class="op">=</span><span class="fl">3</span>,</span>
-<span>              pts<span class="op">=</span><span class="cn">FALSE</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">p_BM</span><span class="op">$</span><span class="va">anc_var</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">20</span>,<span class="op">]</span> <span class="co"># Variances for each estimate</span></span>
-<span><span class="va">p_BM</span><span class="op">$</span><span class="va">anc_recon</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">20</span>,<span class="op">]</span> <span class="op">-</span> <span class="fu"><a href="https://rdrr.io/r/base/MathFun.html">sqrt</a></span><span class="op">(</span><span class="va">p_BM</span><span class="op">$</span><span class="va">anc_var</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">20</span>,<span class="op">]</span><span class="op">)</span><span class="op">*</span><span class="fl">1.96</span> <span class="co"># Lower 95% CI</span></span>
-<span><span class="va">p_BM</span><span class="op">$</span><span class="va">anc_recon</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">20</span>,<span class="op">]</span> <span class="op">+</span> <span class="fu"><a href="https://rdrr.io/r/base/MathFun.html">sqrt</a></span><span class="op">(</span><span class="va">p_BM</span><span class="op">$</span><span class="va">anc_var</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">20</span>,<span class="op">]</span><span class="op">)</span><span class="op">*</span><span class="fl">1.96</span> <span class="co"># Upper 95% CI</span></span>
-<span></span>
-<span><span class="co">#Demonstrando o rtol</span></span>
-<span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://docs.ropensci.org/rotl/">rotl</a></span><span class="op">)</span></span>
-<span><span class="va">apes</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"Pongo"</span>, <span class="st">"Pan"</span>, <span class="st">"Gorilla"</span>, <span class="st">"Hoolock"</span>, <span class="st">"Homo"</span><span class="op">)</span></span>
-<span><span class="va">resolved_names</span> <span class="op">&lt;-</span> <span class="fu">tnrs_match_names</span><span class="op">(</span><span class="va">apes</span><span class="op">)</span></span>
-<span><span class="va">resolved_names</span></span>
-<span><span class="va">tr</span> <span class="op">&lt;-</span> <span class="fu">tol_induced_subtree</span><span class="op">(</span>ott_ids<span class="op">=</span><span class="fu">ott_id</span><span class="op">(</span><span class="va">resolved_names</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">tr</span><span class="op">)</span><span class="co">#;axisPhylo()</span></span>
-<span></span>
-<span><span class="va">treefrogs</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"Hypsiboas"</span>, <span class="st">"Bokermannohyla"</span>, <span class="st">"Xenohyla"</span>, <span class="st">"Hyla"</span>, <span class="st">"Trachycephalus"</span><span class="op">)</span></span>
-<span><span class="va">resolved_names</span> <span class="op">&lt;-</span> <span class="fu">tnrs_match_names</span><span class="op">(</span><span class="va">treefrogs</span><span class="op">)</span></span>
-<span><span class="va">resolved_names</span></span>
-<span><span class="va">tr</span> <span class="op">&lt;-</span> <span class="fu">tol_induced_subtree</span><span class="op">(</span>ott_ids<span class="op">=</span><span class="fu">ott_id</span><span class="op">(</span><span class="va">resolved_names</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">tr</span><span class="op">)</span>;<span class="fu"><a href="https://rdrr.io/pkg/ape/man/axisPhylo.html">axisPhylo</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Aula 1 - Segunda</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#Nesta aula vamos aprender a importar e manipular dados no R.</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">#carregando pacotes</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ape)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(phytools)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(geiger)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">#Básico do R</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>N<span class="ot">&lt;-</span><span class="dv">2</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>n<span class="ot">&lt;-</span><span class="dv">3</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span><span class="sc">+</span><span class="dv">2</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>N<span class="sc">+</span>n</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>x<span class="ot">&lt;-</span><span class="dv">1</span><span class="sc">:</span><span class="dv">5</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">mode</span>(x)</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(x)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>z<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">"ordem"</span>,<span class="st">"superfamília"</span>,<span class="st">"família"</span>,<span class="st">"gênero"</span>,<span class="st">"espécies"</span>)</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>z</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="fu">mode</span>(z)</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(z)</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>z[<span class="dv">2</span>]</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>z[<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>)]</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>z[<span class="sc">-</span><span class="dv">2</span>]</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>f<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">"Male"</span>,<span class="st">"Male"</span>,<span class="st">"Female"</span>,<span class="st">"Female"</span>,<span class="st">"Female"</span>)</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>f<span class="ot">&lt;-</span><span class="fu">factor</span>(f)</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>f</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>X<span class="ot">&lt;-</span><span class="fu">matrix</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">9</span>,<span class="dv">3</span>,<span class="dv">3</span>)</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>X</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>X[<span class="dv">3</span>,<span class="dv">2</span>]</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>X[,<span class="dv">3</span>]</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>X[<span class="dv">3</span>,]</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>Y<span class="ot">&lt;-</span><span class="fu">data.frame</span>(z,<span class="at">y=</span><span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>,<span class="at">x=</span><span class="dv">5</span><span class="sc">:</span><span class="dv">1</span>)</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>Y</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(Y)</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="co">#Importanto filogenias em diferentes formatos</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="do">##Arquivo em formato nexus</span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>barb<span class="ot">&lt;-</span><span class="fu">read.nexus</span>(<span class="st">"BarbetTree.nex"</span>)</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="do">##Arquivo em formato newick</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>cent<span class="ot">&lt;-</span><span class="fu">read.tree</span>(<span class="st">"Centrarchidae.tre"</span>)</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="co">#Essa extensão .tre é a extensão que muitos programas trabalham, p.ex., o BEAST. </span></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="co">#É o formato nativo do FigTree, um programa de visualização de filogenias</span></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="co">#Vamos explorar os formatos e entender a classe de dados</span></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>cent</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(cent)</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>barb</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(barb)</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>barb<span class="sc">$</span>edge</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="fu">plot.phylo</span>(barb)</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="fu">nodelabels</span>()</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="co">#newick simples em txt</span></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>gomes<span class="ot">&lt;-</span><span class="fu">read.tree</span>(<span class="st">"Gomes_phylo.txt"</span>)</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>gomes_dat<span class="ot">&lt;-</span><span class="fu">read.tree</span>(<span class="st">"Gomes_tree_datada.txt"</span>)</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>gomes_dat</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>gomes</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(gomes_dat);<span class="fu">axisPhylo</span>()</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(gomes);<span class="fu">axisPhylo</span>()</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="fu">is.ultrametric</span>(gomes)</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="fu">is.ultrametric</span>(gomes_dat)</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>branch<span class="ot">&lt;-</span><span class="fu">compute.brlen</span>(gomes, <span class="dv">1</span>)</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(branch);<span class="fu">axisPhylo</span>()</span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a><span class="fu">is.ultrametric</span>(branch)</span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>branch1<span class="ot">&lt;-</span><span class="fu">compute.brlen</span>(gomes, <span class="at">method =</span> <span class="st">"Grafen"</span>, <span class="fl">0.8</span>)</span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(branch1);<span class="fu">axisPhylo</span>()</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>branch4<span class="ot">&lt;-</span><span class="fu">compute.brlen</span>(gomes, <span class="at">method =</span> <span class="st">"Grafen"</span>, <span class="dv">2</span>)</span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(branch4);<span class="fu">axisPhylo</span>()</span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a><span class="co">#É muito commum que nossos dados de atributos estejam em uma planilha. Quando </span></span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a><span class="co">#importada no R essa planilha de dados torna-se um data frame</span></span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>obj<span class="ot">&lt;-</span><span class="fu">read.csv</span>(<span class="st">"Centrarchidae.csv"</span>,<span class="at">header=</span><span class="cn">TRUE</span>,<span class="at">row.names=</span><span class="dv">1</span>)</span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(obj)</span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a><span class="co">#Vejam que os nomes das especies estao na 1a coluna, que esta nomeada</span></span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a><span class="co">#agora precisamos extrair os dados para buccal length e guardar num vetor, mas </span></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a><span class="co">#conservando o nome das especies em cada elemento do vetor. Uma forma de fazer isso </span></span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a><span class="co">#é</span></span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a>buccal.length<span class="ot">&lt;-</span><span class="fu">setNames</span>(obj[,<span class="st">"buccal.length"</span>],<span class="fu">rownames</span>(obj))</span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>gape<span class="ot">&lt;-</span>obj<span class="sc">$</span>gape.width</span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(gape)<span class="ot">&lt;-</span><span class="fu">rownames</span>(obj)</span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a>gape</span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a><span class="co">#outra forma é usando o as.matrix</span></span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a>X<span class="ot">&lt;-</span><span class="fu">read.csv</span>(<span class="st">"anole.data.csv"</span>,<span class="at">header=</span><span class="cn">TRUE</span>,<span class="at">row.names=</span><span class="dv">1</span>)</span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a>X</span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(X)</span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a>Y<span class="ot">&lt;-</span><span class="fu">as.matrix</span>(X)</span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a>Y[,<span class="dv">1</span>]<span class="co">#pega os nomes das linhas e atribui aos elementos do vetor</span></span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a><span class="co">#Tudo vai depender do formato dos dados</span></span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a><span class="co">#---Demonstrando efeito de correlação filogenética nos resultados</span></span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">21</span>) <span class="do">## 10 ok, 2 ok, 3 ok, 6 ok, 7 ok, </span></span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a><span class="do">## simulate a coalescent shaped tree</span></span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a>tree<span class="ot">&lt;-</span><span class="fu">rcoal</span>(<span class="at">n=</span><span class="dv">100</span>)</span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a><span class="fu">plotTree</span>(tree,<span class="at">ftype=</span><span class="st">"off"</span>)</span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a><span class="do">## simulate uncorrelated Brownian evolution</span></span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a>x<span class="ot">&lt;-</span><span class="fu">fastBM</span>(tree)</span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a>y<span class="ot">&lt;-</span><span class="fu">fastBM</span>(tree)</span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mar=</span><span class="fu">c</span>(<span class="fl">5.1</span>,<span class="fl">4.1</span>,<span class="fl">2.1</span>,<span class="fl">2.1</span>))</span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,y)</span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a><span class="co">#test relationship without taking into account phylogeny </span></span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a>fit<span class="ot">&lt;-</span><span class="fu">lm</span>(y<span class="sc">~</span>x)</span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(fit,<span class="at">lwd=</span><span class="dv">2</span>,<span class="at">lty=</span><span class="st">"dashed"</span>,<span class="at">col=</span><span class="st">"red"</span>)</span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(fit)<span class="co">#very significant relationship</span></span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a><span class="fu">phylomorphospace</span>(tree,<span class="fu">cbind</span>(x,y),<span class="at">label=</span><span class="st">"off"</span>,<span class="at">node.size=</span><span class="fu">c</span>(<span class="fl">0.5</span>,<span class="fl">0.7</span>))</span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(fit,<span class="at">lwd=</span><span class="dv">2</span>,<span class="at">lty=</span><span class="st">"dashed"</span>,<span class="at">col=</span><span class="st">"red"</span>)</span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a>ix<span class="ot">&lt;-</span><span class="fu">pic</span>(x,tree)</span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a>iy<span class="ot">&lt;-</span><span class="fu">pic</span>(y,tree)</span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a>fit1<span class="ot">&lt;-</span><span class="fu">lm</span>(iy<span class="sc">~</span>ix<span class="dv">-1</span>)</span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(fit1)<span class="co">#no significance</span></span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fit1)</span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a><span class="do">##---Demonstrando o phyndr</span></span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a><span class="co">#use some external information,such as a topological hypothesis or taxonomic resource, </span></span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a><span class="co">#to swap out species in the tree that don't have trait data with "phylogenetically </span></span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a><span class="co">#equivalent" species that do.</span></span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ape)</span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(phyndr)</span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(taxonlookup)</span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a><span class="co">#https://github.com/traitecoevo/phyndr-ms/blob/master/vignette/vignette.md</span></span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a><span class="co">#Filogenia de angiospermas datada com 798 taxa</span></span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a>angio_phy <span class="ot">&lt;-</span> <span class="fu">read.nexus</span>(<span class="st">"https://datadryad.org/bitstream/handle/10255/dryad.76144/Magallon_etal_PL_ML.nex?sequence=1"</span>)</span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a><span class="co">#dados para plant growth form (i.e., woody v. herbaceous) para 238 spp</span></span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a>wood_dat<span class="ot">&lt;-</span><span class="fu">read.csv</span>(<span class="st">"https://datadryad.org/bitstream/handle/10255/dryad.59002/GlobalWoodinessDatabase.csv?sequence=1"</span>, <span class="at">row.names =</span> <span class="dv">1</span>)</span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(wood_dat)</span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(wood_dat)</span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a><span class="co">#We want to build a taxonomic table that includes all species in the phylogenetic tree</span></span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a><span class="co">#AND all species in the trait data.</span></span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">plant_lookup</span>())</span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a>angio_spp <span class="ot">&lt;-</span> <span class="fu">unique</span>(<span class="fu">c</span>(angio_phy<span class="sc">$</span>tip.label, <span class="fu">rownames</span>(wood_dat)))<span class="co">#Create a vector of taxa for the union of names in the tree and the data</span></span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a>angio_tax <span class="ot">&lt;-</span> <span class="fu">lookup_table</span>(angio_spp, <span class="at">by_species=</span><span class="cn">TRUE</span>)<span class="co">#Get a taxonomic lookup table for this vector of names</span></span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(angio_tax)</span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a>angio_tax_alt <span class="ot">&lt;-</span> <span class="fu">lookup_table</span>(angio_spp)</span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(angio_tax_alt)</span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a>angio_tax <span class="ot">&lt;-</span> angio_tax[,<span class="fu">c</span>(<span class="st">"genus"</span>, <span class="st">"family"</span>, <span class="st">"order"</span>)]<span class="co">#subset the taxonomy so we only consider the genus, family and order columns</span></span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a><span class="co">#we need to supply the chronogram, the trait data with rownames set to species names, and the taxonomic table.</span></span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a>angio_phyndr <span class="ot">&lt;-</span> <span class="fu">phyndr_taxonomy</span>(angio_phy, <span class="fu">rownames</span>(wood_dat), angio_tax)</span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a>angio_phyndr</span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a><span class="co">#Encontraram dados para mais 531 spp. Ficando a filogenia fully-matched para 778 sp</span></span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a><span class="co">#com dados de história de vida</span></span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(angio_phyndr)</span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a><span class="fu">plot.phylo</span>(angio_phy, <span class="at">type =</span> <span class="st">"fan"</span>, <span class="at">cex=</span><span class="fl">0.3</span>)</span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a><span class="co">#Demonstrando Rphylopars</span></span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(Rphylopars)</span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(phytools) <span class="co"># for simulating pure-birth phylogenies</span></span>
+<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">21</span>) <span class="co"># Set the seed for reproducible results</span></span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a>trait_cov <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">2</span>,<span class="fl">2.2</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="fl">1.5</span>,<span class="fl">2.2</span>,<span class="fl">1.5</span>,<span class="fl">2.5</span>),<span class="at">nrow =</span> <span class="dv">3</span>,<span class="at">ncol =</span> <span class="dv">3</span>)</span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a>tree <span class="ot">&lt;-</span> <span class="fu">pbtree</span>(<span class="at">n =</span> <span class="dv">20</span>)</span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a>sim_data <span class="ot">&lt;-</span> <span class="fu">simtraits</span>(<span class="at">v =</span> trait_cov,<span class="at">tree =</span> tree,<span class="at">nmissing =</span> <span class="dv">10</span>)</span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a>original<span class="ot">&lt;-</span>sim_data<span class="sc">$</span>trait_data[,<span class="dv">2</span><span class="sc">:</span><span class="dv">4</span>] <span class="co"># Original data with missing values</span></span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a><span class="fu">which</span>(<span class="fu">is.na</span>(original))<span class="co">#quais espécies tem dados faltantes</span></span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a>original[<span class="fu">rowSums</span>(<span class="fu">is.na</span>(original)) <span class="sc">&gt;</span> <span class="dv">0</span>,]<span class="co">#mostra só as linhas com NA</span></span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a><span class="fu">phylo.heatmap</span>(tree,<span class="fu">as.matrix</span>(original),<span class="at">standardize=</span><span class="cn">TRUE</span>,<span class="at">lwd=</span><span class="dv">3</span>,</span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a>              <span class="at">pts=</span><span class="cn">FALSE</span>)</span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a>p_BM <span class="ot">&lt;-</span> <span class="fu">phylopars</span>(<span class="at">trait_data =</span> sim_data<span class="sc">$</span>trait_data,<span class="at">tree =</span> sim_data<span class="sc">$</span>tree, <span class="at">model =</span> <span class="st">"BM"</span>)</span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a>imput<span class="ot">&lt;-</span>p_BM<span class="sc">$</span>anc_recon[<span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>,] <span class="co"># Data with imputed species means</span></span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a><span class="fu">phylo.heatmap</span>(tree,<span class="fu">as.matrix</span>(imput),<span class="at">standardize=</span><span class="cn">TRUE</span>,<span class="at">lwd=</span><span class="dv">3</span>,</span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a>              <span class="at">pts=</span><span class="cn">FALSE</span>)</span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a>p_BM<span class="sc">$</span>anc_var[<span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>,] <span class="co"># Variances for each estimate</span></span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a>p_BM<span class="sc">$</span>anc_recon[<span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>,] <span class="sc">-</span> <span class="fu">sqrt</span>(p_BM<span class="sc">$</span>anc_var[<span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>,])<span class="sc">*</span><span class="fl">1.96</span> <span class="co"># Lower 95% CI</span></span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a>p_BM<span class="sc">$</span>anc_recon[<span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>,] <span class="sc">+</span> <span class="fu">sqrt</span>(p_BM<span class="sc">$</span>anc_var[<span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>,])<span class="sc">*</span><span class="fl">1.96</span> <span class="co"># Upper 95% CI</span></span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a><span class="co">#Demonstrando o rtol</span></span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rotl)</span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a>apes <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Pongo"</span>, <span class="st">"Pan"</span>, <span class="st">"Gorilla"</span>, <span class="st">"Hoolock"</span>, <span class="st">"Homo"</span>)</span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a>resolved_names <span class="ot">&lt;-</span> <span class="fu">tnrs_match_names</span>(apes)</span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a>resolved_names</span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a>tr <span class="ot">&lt;-</span> <span class="fu">tol_induced_subtree</span>(<span class="at">ott_ids=</span><span class="fu">ott_id</span>(resolved_names))</span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(tr)<span class="co">#;axisPhylo()</span></span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a>treefrogs<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">"Hypsiboas"</span>, <span class="st">"Bokermannohyla"</span>, <span class="st">"Xenohyla"</span>, <span class="st">"Hyla"</span>, <span class="st">"Trachycephalus"</span>)</span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>resolved_names <span class="ot">&lt;-</span> <span class="fu">tnrs_match_names</span>(treefrogs)</span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a>resolved_names</span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a>tr <span class="ot">&lt;-</span> <span class="fu">tol_induced_subtree</span>(<span class="at">ott_ids=</span><span class="fu">ott_id</span>(resolved_names))</span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(tr);<span class="fu">axisPhylo</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 
 
 <!-- -->
 
 
-</main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
-    }
-    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -1295,7 +1131,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
-<footer class="footer"><div class="nav-footer">
+<footer class="footer">
+  <div class="nav-footer">
     <div class="nav-footer-left">
 <p>© Diogo B. Provete · Biodiversity Synthesis Lab · Instituto de Biociências, UFMS</p>
 </div>   
@@ -1307,6 +1144,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
   </div>
 </footer>
+
+
 
 
 <script src="../../../site_libs/quarto-html/zenscroll-min.js"></script>

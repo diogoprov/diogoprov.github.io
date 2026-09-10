@@ -214,6 +214,8 @@ Authorship key: <span class="cv-pub-flag">red number</span> = three most importa
 ### Peer-reviewed journal articles
 
 ::: {.cv-pubs}
+[58] Martins, P. M.; Galvão, G. A.; Gonçalves-Souza, T.; **PROVETE, D. B.**; de Miranda, G. S. 2026. The impact of climate and habitat on body shape and size evolution in charontid whip spiders. *Evolution* qpag138. [doi:10.1093/evolut/qpag138](https://doi.org/10.1093/evolut/qpag138)
+
 [57] Rebouças, R.; Moroti, M. T.; Carvalho, T.; Martins, M. R.; Toledo, L. F.; **PROVETE, D. B.** 2026. Environmental and geomorphological drivers of frog diversity on islands worldwide. *Ecography* 2026: e07818. [doi:10.1002/ecog.07818](https://doi.org/10.1002/ecog.07818)
 
 [56] Ramalho, Q.; De Souza, J. S.; **Provete, D. B.** 2025. Irregular funding cycles in Brazilian science pose a barrier to conservation and global leadership. *Perspectives in Ecology and Conservation* 23(4): 231–235.

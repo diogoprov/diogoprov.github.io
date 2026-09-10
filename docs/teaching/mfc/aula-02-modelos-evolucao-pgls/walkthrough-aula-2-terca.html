@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.8.26">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
 <title>Walkthrough da aula prática — Movimento Browniano, OU básico, PGLS, estimativa de λ – Biodiversity Synthesis Lab</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -57,6 +57,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 </style>
 
+
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -66,18 +67,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../../assets/favicon.png" rel="icon" type="image/png">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-6b38416d90cdbb41281c8a2a0df0236b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-1732e9b120b8faec2f4b22e599a6250f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../../site_libs/bootstrap/bootstrap-6b38416d90cdbb41281c8a2a0df0236b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+<link href="../../../site_libs/bootstrap/bootstrap-ec100a28b3f28334d858203a6e0baf76.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
@@ -103,13 +102,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script><style>html{ scroll-behavior: smooth; }</style>
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <style>
   /* Tame Academicons next to text in card rows */
   .ai { vertical-align: -.05em; }
 </style>
+
+
 <link rel="stylesheet" href="../../../styles.css">
 <meta property="og:title" content="Walkthrough da aula prática — Movimento Browniano, OU básico, PGLS, estimativa de λ – Biodiversity Synthesis Lab">
 <meta property="og:description" content="Walkthrough do código — Aula 2: Modelos de evolução de atributos contínuos e PGLS">
@@ -118,175 +120,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta name="twitter:description" content="Walkthrough do código — Aula 2: Modelos de evolução de atributos contínuos e PGLS">
 <meta name="twitter:card" content="summary">
 </head>
-<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        window.scrollTo(0, 1);
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
-      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
+
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../../assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo light-content"><img src="../../../assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo dark-content"></a>
+    <img src="../../../assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo light-content">
+    <img src="../../../assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo dark-content">
+    </a>
     <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Biodiversity Synthesis Lab</span>
     </a>
@@ -297,7 +142,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-<li class="nav-item">
+  <li class="nav-item">
     <a class="nav-link" href="../../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
@@ -312,10 +157,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li class="nav-item">
     <a class="nav-link" href="../../../people.html"> 
 <span class="menu-text">People</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../../cv.html"> 
-<span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../../teaching.html"> 
@@ -338,8 +179,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Brazilian Tadpoles</span></a>
   </li>  
 </ul>
-<ul class="navbar-nav navbar-nav-scroll ms-auto">
-<li class="nav-item compact">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/diogoprov"> <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
 <span class="menu-text"></span></a>
@@ -350,19 +191,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text"></span></a>
   </li>  
 </ul>
-</div> <!-- /navcollapse -->
+          </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
-    </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
 <div class="quarto-title-block"><div><h1 class="title">Walkthrough da aula prática — Movimento Browniano, OU básico, PGLS, estimativa de λ</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 <p class="subtitle lead">Walkthrough do código — Aula 2: Modelos de evolução de atributos contínuos e PGLS</p>
 </div>
@@ -378,7 +224,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   
 
 
-</header><div class="callout callout-style-simple callout-note no-icon">
+</header>
+
+
+<div class="callout callout-style-simple callout-note no-icon">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
@@ -389,269 +238,257 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co">#Aula 2 - Terça </span></span>
-<span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/Random.html">set.seed</a></span><span class="op">(</span><span class="fl">21</span><span class="op">)</span><span class="co">#reprodutibilidade</span></span>
-<span></span>
-<span><span class="va">t</span><span class="op">&lt;-</span><span class="fl">0</span><span class="op">:</span><span class="fl">100</span> <span class="co"># time</span></span>
-<span><span class="va">sig2</span><span class="op">&lt;-</span><span class="fl">0.01</span></span>
-<span></span>
-<span><span class="co">#simulando 100 traits sem uma filogenia</span></span>
-<span><span class="va">nsim</span><span class="op">&lt;-</span><span class="fl">100</span></span>
-<span><span class="va">X</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/matrix.html">matrix</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">rnorm</a></span><span class="op">(</span>n<span class="op">=</span><span class="va">nsim</span><span class="op">*</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/length.html">length</a></span><span class="op">(</span><span class="va">t</span><span class="op">)</span><span class="op">-</span><span class="fl">1</span><span class="op">)</span>,sd<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/MathFun.html">sqrt</a></span><span class="op">(</span><span class="va">sig2</span><span class="op">)</span><span class="op">)</span>,<span class="va">nsim</span>,<span class="fu"><a href="https://rdrr.io/r/base/length.html">length</a></span><span class="op">(</span><span class="va">t</span><span class="op">)</span><span class="op">-</span><span class="fl">1</span><span class="op">)</span></span>
-<span><span class="va">X</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/cbind.html">cbind</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/rep.html">rep</a></span><span class="op">(</span><span class="fl">0</span>,<span class="va">nsim</span><span class="op">)</span>,<span class="fu"><a href="https://rdrr.io/r/base/t.html">t</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/apply.html">apply</a></span><span class="op">(</span><span class="va">X</span>,<span class="fl">1</span>,<span class="va">cumsum</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">t</span>,<span class="va">X</span><span class="op">[</span><span class="fl">1</span>,<span class="op">]</span>,xlab<span class="op">=</span><span class="st">"time"</span>,ylab<span class="op">=</span><span class="st">"phenotype"</span>,ylim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">2</span>,<span class="fl">2</span><span class="op">)</span>,type<span class="op">=</span><span class="st">"l"</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/apply.html">apply</a></span><span class="op">(</span><span class="va">X</span><span class="op">[</span><span class="fl">2</span><span class="op">:</span><span class="va">nsim</span>,<span class="op">]</span>,<span class="fl">1</span>,<span class="kw">function</span><span class="op">(</span><span class="va">x</span>,<span class="va">t</span><span class="op">)</span> <span class="fu"><a href="https://rdrr.io/r/graphics/lines.html">lines</a></span><span class="op">(</span><span class="va">t</span>,<span class="va">x</span><span class="op">)</span>,t<span class="op">=</span><span class="va">t</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co">#mude sig2, divida por 10 -&gt; a variância irá diminuir</span></span>
-<span><span class="va">X</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/matrix.html">matrix</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">rnorm</a></span><span class="op">(</span>n<span class="op">=</span><span class="va">nsim</span><span class="op">*</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/length.html">length</a></span><span class="op">(</span><span class="va">t</span><span class="op">)</span><span class="op">-</span><span class="fl">1</span><span class="op">)</span>,sd<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/MathFun.html">sqrt</a></span><span class="op">(</span><span class="va">sig2</span><span class="op">/</span><span class="fl">10</span><span class="op">)</span><span class="op">)</span>,<span class="va">nsim</span>,<span class="fu"><a href="https://rdrr.io/r/base/length.html">length</a></span><span class="op">(</span><span class="va">t</span><span class="op">)</span><span class="op">-</span><span class="fl">1</span><span class="op">)</span></span>
-<span><span class="va">X</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/cbind.html">cbind</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/rep.html">rep</a></span><span class="op">(</span><span class="fl">0</span>,<span class="va">nsim</span><span class="op">)</span>,<span class="fu"><a href="https://rdrr.io/r/base/t.html">t</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/apply.html">apply</a></span><span class="op">(</span><span class="va">X</span>,<span class="fl">1</span>,<span class="va">cumsum</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">t</span>,<span class="va">X</span><span class="op">[</span><span class="fl">1</span>,<span class="op">]</span>,xlab<span class="op">=</span><span class="st">"time"</span>,ylab<span class="op">=</span><span class="st">"phenotype"</span>,ylim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">2</span>,<span class="fl">2</span><span class="op">)</span>,type<span class="op">=</span><span class="st">"l"</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/apply.html">apply</a></span><span class="op">(</span><span class="va">X</span><span class="op">[</span><span class="fl">2</span><span class="op">:</span><span class="va">nsim</span>,<span class="op">]</span>,<span class="fl">1</span>,<span class="kw">function</span><span class="op">(</span><span class="va">x</span>,<span class="va">t</span><span class="op">)</span> <span class="fu"><a href="https://rdrr.io/r/graphics/lines.html">lines</a></span><span class="op">(</span><span class="va">t</span>,<span class="va">x</span><span class="op">)</span>,t<span class="op">=</span><span class="va">t</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co">#Simulando Movimento Browniano sem considerar a filogenia</span></span>
-<span><span class="va">BM</span><span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">t</span> <span class="op">=</span> <span class="fl">100</span>, <span class="va">sig2</span> <span class="op">=</span> <span class="fl">0.01</span>, <span class="va">sp</span> <span class="op">=</span> <span class="fl">100</span>, <span class="va">...</span><span class="op">)</span> <span class="op">{</span> </span>
-<span>       <span class="co">#written by Bruno Vilela Jun 2016 PCM workshop       </span></span>
-<span>       <span class="fu"><a href="https://rdrr.io/r/graphics/par.html">par</a></span><span class="op">(</span>mar <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">4</span>, <span class="fl">4</span>, <span class="fl">2</span>, <span class="fl">2</span><span class="op">)</span><span class="op">)</span></span>
-<span>       <span class="va">t2</span> <span class="op">&lt;-</span> <span class="fl">0</span><span class="op">:</span><span class="va">t</span> <span class="co"># time</span></span>
-<span>       <span class="va">x</span><span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">rnorm</a></span><span class="op">(</span>n <span class="op">=</span> <span class="va">t</span>, sd<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/MathFun.html">sqrt</a></span><span class="op">(</span><span class="va">sig2</span><span class="op">)</span><span class="op">)</span></span>
-<span>       <span class="co">## now compute their cumulative sum</span></span>
-<span>       <span class="va">x</span><span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fu"><a href="https://rdrr.io/r/base/cumsum.html">cumsum</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span><span class="op">)</span></span>
-<span>       <span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">t2</span>, <span class="va">x</span>, type<span class="op">=</span><span class="st">"l"</span>, <span class="va">...</span><span class="op">)</span></span>
-<span>       </span>
-<span>       <span class="kw">for</span><span class="op">(</span><span class="va">i</span> <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="va">sp</span><span class="op">)</span> <span class="op">{</span></span>
-<span>              <span class="co">## first, simulate a set of random deviates</span></span>
-<span>              <span class="va">x</span><span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">rnorm</a></span><span class="op">(</span>n <span class="op">=</span> <span class="va">t</span>, sd<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/MathFun.html">sqrt</a></span><span class="op">(</span><span class="va">sig2</span><span class="op">)</span><span class="op">)</span></span>
-<span>              <span class="co">## now compute their cumulative sum</span></span>
-<span>              <span class="va">x</span><span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fu"><a href="https://rdrr.io/r/base/cumsum.html">cumsum</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span><span class="op">)</span></span>
-<span>              <span class="fu"><a href="https://rdrr.io/r/graphics/lines.html">lines</a></span><span class="op">(</span><span class="va">t2</span>, <span class="va">x</span>, type<span class="op">=</span><span class="st">"l"</span>, col <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/grDevices/palettes.html">rainbow</a></span><span class="op">(</span><span class="fl">100</span><span class="op">)</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/sample.html">sample</a></span><span class="op">(</span><span class="fl">100</span>, <span class="fl">1</span><span class="op">)</span><span class="op">]</span>, <span class="va">...</span><span class="op">)</span></span>
-<span>       <span class="op">}</span></span>
-<span><span class="op">}</span></span>
-<span></span>
-<span><span class="fu">BM</span><span class="op">(</span><span class="fl">100</span>, <span class="fl">0.01</span>, <span class="fl">1000</span>, ylim <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">10</span>, <span class="fl">10</span><span class="op">)</span>, ylab <span class="op">=</span> <span class="st">"Phenotype"</span>, xlab <span class="op">=</span> <span class="st">"time"</span>,</span>
-<span>   main <span class="op">=</span> <span class="st">"Brownian motion"</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co">#Simulando BM numa filogenia</span></span>
-<span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/Random.html">set.seed</a></span><span class="op">(</span><span class="fl">1003</span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/liamrevell/phytools">phytools</a></span><span class="op">)</span></span>
-<span><span class="va">tree</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/make.era.map.html">make.era.map</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/pbtree.html">pbtree</a></span><span class="op">(</span>n<span class="op">=</span><span class="fl">10</span>,tip.label<span class="op">=</span><span class="va">LETTERS</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span><span class="op">]</span>,scale<span class="op">=</span><span class="fl">100</span><span class="op">)</span>,<span class="fl">0</span><span class="op">:</span><span class="fl">200</span><span class="op">/</span><span class="fl">2</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">tree</span><span class="op">)</span></span>
-<span><span class="va">obj</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/map.to.singleton.html">map.to.singleton</a></span><span class="op">(</span><span class="va">tree</span><span class="op">)</span></span>
-<span><span class="va">x</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/fastBM.html">fastBM</a></span><span class="op">(</span><span class="va">obj</span>,internal<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/par.html">par</a></span><span class="op">(</span>mar<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">5.1</span>,<span class="fl">4.1</span>,<span class="fl">2.1</span>,<span class="fl">2.1</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/phenogram.html">phenogram</a></span><span class="op">(</span><span class="va">obj</span>,<span class="va">x</span>,fsize<span class="op">=</span><span class="fl">0.8</span>,spread.cost<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">0</span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co">#Simulando um OU</span></span>
-<span><span class="va">tree</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/pbtree.html">pbtree</a></span><span class="op">(</span>n<span class="op">=</span><span class="fl">26</span>,tip.label<span class="op">=</span><span class="va">LETTERS</span>,scale<span class="op">=</span><span class="fl">10</span><span class="op">)</span></span>
-<span><span class="va">x</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/fastBM.html">fastBM</a></span><span class="op">(</span><span class="va">tree</span>,a<span class="op">=</span><span class="fl">0</span>,theta<span class="op">=</span><span class="fl">3</span>,alpha<span class="op">=</span><span class="fl">0.2</span>,sig2<span class="op">=</span><span class="fl">0.1</span>, internal<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/phenogram.html">phenogram</a></span><span class="op">(</span><span class="va">tree</span>,<span class="va">x</span>,spread.labels<span class="op">=</span><span class="cn">TRUE</span>,spread.cost<span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">0.01</span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co">#mudando o theta</span></span>
-<span><span class="va">y</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/fastBM.html">fastBM</a></span><span class="op">(</span><span class="va">tree</span>,a<span class="op">=</span><span class="fl">0</span>,theta<span class="op">=</span><span class="fl">6</span>,alpha<span class="op">=</span><span class="fl">0.2</span>,sig2<span class="op">=</span><span class="fl">0.1</span>, internal<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/phenogram.html">phenogram</a></span><span class="op">(</span><span class="va">tree</span>,<span class="va">y</span>,spread.labels<span class="op">=</span><span class="cn">TRUE</span>,spread.cost<span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">0.01</span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co">#mudando o alpha</span></span>
-<span><span class="va">b</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/fastBM.html">fastBM</a></span><span class="op">(</span><span class="va">tree</span>,a<span class="op">=</span><span class="fl">0</span>,theta<span class="op">=</span><span class="fl">3</span>,alpha<span class="op">=</span><span class="fl">0.8</span>,sig2<span class="op">=</span><span class="fl">0.1</span>, internal<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/phenogram.html">phenogram</a></span><span class="op">(</span><span class="va">tree</span>,<span class="va">b</span>,spread.labels<span class="op">=</span><span class="cn">TRUE</span>,spread.cost<span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">0.01</span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co">#Simulando Trend </span></span>
-<span><span class="va">tree2</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/pbtree.html">pbtree</a></span><span class="op">(</span>n<span class="op">=</span><span class="fl">100</span><span class="op">)</span></span>
-<span><span class="va">w</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/fastBM.html">fastBM</a></span><span class="op">(</span><span class="va">tree2</span>,mu<span class="op">=</span><span class="fl">3</span>,a<span class="op">=</span><span class="fl">1</span>,sig2<span class="op">=</span><span class="fl">0.1</span>, internal<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span> <span class="co"># with a trend</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/phenogram.html">phenogram</a></span><span class="op">(</span><span class="va">tree2</span>,<span class="va">w</span>,spread.labels<span class="op">=</span><span class="cn">TRUE</span>,spread.cost<span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">0.01</span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co">#--- Comparando ajuste de modelos evolutivos</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">geiger</span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">picante</span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/liamrevell/phytools">phytools</a></span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">anoleData</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/utils/read.table.html">read.csv</a></span><span class="op">(</span><span class="st">"anolisDataAppended.csv"</span>, row.names <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">anoleData</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/dim.html">dim</a></span><span class="op">(</span><span class="va">anoleData</span><span class="op">)</span></span>
-<span><span class="va">anoleTree</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/ape/man/read.tree.html">read.tree</a></span><span class="op">(</span><span class="st">"anolis.phy"</span><span class="op">)</span></span>
-<span><span class="va">anoleSize</span> <span class="op">&lt;-</span> <span class="va">anoleData</span><span class="op">[</span>, <span class="fl">1</span><span class="op">]</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/names.html">names</a></span><span class="op">(</span><span class="va">anoleSize</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/colnames.html">rownames</a></span><span class="op">(</span><span class="va">anoleData</span><span class="op">)</span></span>
-<span><span class="va">cn</span><span class="op">&lt;-</span><span class="fu">match.phylo.data</span><span class="op">(</span><span class="va">anoleTree</span>, <span class="va">anoleSize</span><span class="op">)</span></span>
-<span><span class="va">cn</span><span class="op">$</span><span class="va">data</span></span>
-<span><span class="op">(</span><span class="va">brownianModel</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/geiger/man/fitContinuous.html">fitContinuous</a></span><span class="op">(</span><span class="va">cn</span><span class="op">$</span><span class="va">phy</span>, <span class="va">cn</span><span class="op">$</span><span class="va">data</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="op">(</span><span class="va">OUModel</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/geiger/man/fitContinuous.html">fitContinuous</a></span><span class="op">(</span><span class="va">cn</span><span class="op">$</span><span class="va">phy</span>, <span class="va">cn</span><span class="op">$</span><span class="va">data</span>, model <span class="op">=</span> <span class="st">"OU"</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="op">(</span><span class="va">EBModel</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/geiger/man/fitContinuous.html">fitContinuous</a></span><span class="op">(</span><span class="va">cn</span><span class="op">$</span><span class="va">phy</span>, <span class="va">cn</span><span class="op">$</span><span class="va">data</span>, model <span class="op">=</span> <span class="st">"EB"</span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">bmAICC</span> <span class="op">&lt;-</span> <span class="va">brownianModel</span><span class="op">$</span><span class="va">opt</span><span class="op">$</span><span class="va">aicc</span></span>
-<span><span class="va">ouAICC</span> <span class="op">&lt;-</span> <span class="va">OUModel</span><span class="op">$</span><span class="va">opt</span><span class="op">$</span><span class="va">aicc</span></span>
-<span><span class="va">ebAICC</span> <span class="op">&lt;-</span> <span class="va">EBModel</span><span class="op">$</span><span class="va">opt</span><span class="op">$</span><span class="va">aicc</span></span>
-<span></span>
-<span><span class="va">aicc</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">bmAICC</span>, <span class="va">ouAICC</span>, <span class="va">ebAICC</span><span class="op">)</span></span>
-<span><span class="va">aiccD</span> <span class="op">&lt;-</span> <span class="va">aicc</span> <span class="op">-</span> <span class="fu"><a href="https://rdrr.io/r/base/Extremes.html">min</a></span><span class="op">(</span><span class="va">aicc</span><span class="op">)</span></span>
-<span><span class="va">aw</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/Log.html">exp</a></span><span class="op">(</span><span class="op">-</span><span class="fl">0.5</span> <span class="op">*</span> <span class="va">aiccD</span><span class="op">)</span></span>
-<span><span class="va">aiccW</span> <span class="op">&lt;-</span> <span class="va">aw</span><span class="op">/</span><span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">aw</span><span class="op">)</span></span>
-<span><span class="va">aiccW</span></span>
-<span></span>
-<span><span class="co">##---Testando model adequacy</span></span>
-<span><span class="co">#install.packages(devtools)</span></span>
-<span><span class="co">#library(devtools)</span></span>
-<span><span class="co">#devtools::install_github("mwpennell/arbutus")</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">arbutus</span><span class="op">)</span></span>
-<span><span class="va">modadeq</span><span class="op">&lt;-</span><span class="fu">arbutus</span><span class="op">(</span><span class="va">brownianModel</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">modadeq</span><span class="op">)</span></span>
-<span><span class="va">modadeq1</span><span class="op">&lt;-</span><span class="fu">arbutus</span><span class="op">(</span><span class="va">OUModel</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">modadeq1</span><span class="op">)</span></span>
-<span><span class="va">modadeq2</span><span class="op">&lt;-</span><span class="fu">arbutus</span><span class="op">(</span><span class="va">EBModel</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">modadeq2</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co">#--- Ajustando modelos de evolução para caracteres discretos</span></span>
-<span></span>
-<span><span class="va">sqData</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/utils/read.table.html">read.csv</a></span><span class="op">(</span><span class="st">"brandley_table.csv"</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">sqData</span><span class="op">)</span></span>
-<span><span class="va">sqTree</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/read.nexus.html">read.nexus</a></span><span class="op">(</span><span class="st">"squamate.tre"</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/par.html">par</a></span><span class="op">(</span>mfrow<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">1</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/plotTree.html">plotTree</a></span><span class="op">(</span><span class="va">sqTree</span>,type<span class="op">=</span><span class="st">"fan"</span>,lwd<span class="op">=</span><span class="fl">1</span>,fsize<span class="op">=</span><span class="fl">0.5</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">hindLimbs</span><span class="op">&lt;-</span><span class="va">sqData</span><span class="op">[</span>,<span class="st">"HLL"</span><span class="op">]</span><span class="op">!=</span><span class="fl">0</span></span>
-<span><span class="va">foreLimbs</span><span class="op">&lt;-</span><span class="va">sqData</span><span class="op">[</span>,<span class="st">"FLL"</span><span class="op">]</span><span class="op">!=</span><span class="fl">0</span></span>
-<span><span class="va">limbless</span><span class="op">&lt;-</span><span class="op">!</span><span class="va">hindLimbs</span> <span class="op">&amp;</span> <span class="op">!</span><span class="va">foreLimbs</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">limbless</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">speciesNames</span><span class="op">&lt;-</span><span class="va">sqData</span><span class="op">[</span>,<span class="fl">1</span><span class="op">]</span></span>
-<span><span class="va">species</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/grep.html">sub</a></span><span class="op">(</span><span class="st">" "</span>, <span class="st">"_"</span>, <span class="va">speciesNames</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/names.html">names</a></span><span class="op">(</span><span class="va">limbless</span><span class="op">)</span><span class="op">&lt;-</span><span class="va">species</span></span>
-<span></span>
-<span><span class="va">limbless</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/character.html">as.character</a></span><span class="op">(</span><span class="va">limbless</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/names.html">names</a></span><span class="op">(</span><span class="va">limbless</span><span class="op">)</span><span class="op">&lt;-</span><span class="va">species</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/table.html">table</a></span><span class="op">(</span><span class="va">foreLimbs</span>, <span class="va">hindLimbs</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co">#ER model - simpler one = forward same as backward - same probability</span></span>
-<span><span class="co">#of gaining and losing limbs</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/geiger/man/name.check.html">name.check</a></span><span class="op">(</span><span class="va">sqTree</span>, <span class="va">limbless</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">compfilo</span><span class="op">&lt;-</span><span class="fu">match.phylo.data</span><span class="op">(</span><span class="va">sqTree</span>, <span class="va">limbless</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">erModel</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/geiger/man/fitDiscrete.html">fitDiscrete</a></span><span class="op">(</span><span class="va">sqTree</span>, <span class="va">compfilo</span><span class="op">$</span><span class="va">data</span>, model<span class="op">=</span><span class="st">"ER"</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">erModel</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">ardModel</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/geiger/man/fitDiscrete.html">fitDiscrete</a></span><span class="op">(</span><span class="va">sqTree</span>, <span class="va">limbless</span>, model<span class="op">=</span><span class="st">"ARD"</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">ardModel</span><span class="op">)</span></span>
-<span><span class="co">#irreversible - impossible to regain limbs</span></span>
-<span><span class="va">irrMat</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/cbind.html">cbind</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="cn">NA</span>, <span class="fl">1</span><span class="op">)</span>,<span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">0</span>,<span class="cn">NA</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="va">irrModel</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/geiger/man/fitDiscrete.html">fitDiscrete</a></span><span class="op">(</span><span class="va">sqTree</span>, <span class="va">limbless</span>, model <span class="op">=</span> <span class="va">irrMat</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">aic.vals</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/setNames.html">setNames</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">erModel</span><span class="op">$</span><span class="va">opt</span><span class="op">$</span><span class="va">aicc</span>, <span class="va">ardModel</span><span class="op">$</span><span class="va">opt</span><span class="op">$</span><span class="va">aicc</span>, <span class="va">irrModel</span><span class="op">$</span><span class="va">opt</span><span class="op">$</span><span class="va">aicc</span><span class="op">)</span>,</span>
-<span>                     <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"ER"</span>,<span class="st">"ARD"</span>,<span class="st">"iRR"</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="va">aic.vals</span></span>
-<span><span class="va">aic.w</span><span class="op">&lt;-</span><span class="kw">function</span><span class="op">(</span><span class="va">aic</span><span class="op">)</span><span class="op">{</span></span>
-<span>       <span class="va">d.aic</span><span class="op">&lt;-</span><span class="va">aic</span><span class="op">-</span><span class="fu"><a href="https://rdrr.io/r/base/Extremes.html">min</a></span><span class="op">(</span><span class="va">aic</span><span class="op">)</span></span>
-<span>       <span class="fu"><a href="https://rdrr.io/r/base/Log.html">exp</a></span><span class="op">(</span><span class="op">-</span><span class="fl">1</span><span class="op">/</span><span class="fl">2</span><span class="op">*</span><span class="va">d.aic</span><span class="op">)</span><span class="op">/</span><span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/Log.html">exp</a></span><span class="op">(</span><span class="op">-</span><span class="fl">1</span><span class="op">/</span><span class="fl">2</span><span class="op">*</span><span class="va">d.aic</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="op">}</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/aic.w.html">aic.w</a></span><span class="op">(</span><span class="va">aic.vals</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">limbState</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/paste.html">paste</a></span><span class="op">(</span><span class="va">foreLimbs</span>, <span class="va">hindLimbs</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/names.html">names</a></span><span class="op">(</span><span class="va">limbState</span><span class="op">)</span><span class="op">&lt;-</span><span class="va">species</span></span>
-<span><span class="va">erModel</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/geiger/man/fitDiscrete.html">fitDiscrete</a></span><span class="op">(</span><span class="va">sqTree</span>, <span class="va">limbState</span>, model<span class="op">=</span><span class="st">"ER"</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">erModel</span><span class="op">)</span></span>
-<span><span class="va">symModel</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/geiger/man/fitDiscrete.html">fitDiscrete</a></span><span class="op">(</span><span class="va">sqTree</span>, <span class="va">limbState</span>, model<span class="op">=</span><span class="st">"SYM"</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">symModel</span><span class="op">)</span></span>
-<span><span class="va">ardModel</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/geiger/man/fitDiscrete.html">fitDiscrete</a></span><span class="op">(</span><span class="va">sqTree</span>, <span class="va">limbState</span>, model<span class="op">=</span><span class="st">"ARD"</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">ardModel</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co">#Convergence diagnostics</span></span>
-<span><span class="co">##frequency of best fit =&gt; proporção dos cadeias que chegam encontram a mesma solução</span></span>
-<span><span class="co">#quanto menor esse número pior</span></span>
-<span></span>
-<span><span class="va">aicc</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">erModel</span><span class="op">$</span><span class="va">opt</span><span class="op">$</span><span class="va">aicc</span>, <span class="va">symModel</span><span class="op">$</span><span class="va">opt</span><span class="op">$</span><span class="va">aicc</span>, <span class="va">ardModel</span><span class="op">$</span><span class="va">opt</span><span class="op">$</span><span class="va">aicc</span><span class="op">)</span></span>
-<span><span class="va">aiccD</span> <span class="op">&lt;-</span> <span class="va">aicc</span> <span class="op">-</span> <span class="fu"><a href="https://rdrr.io/r/base/Extremes.html">min</a></span><span class="op">(</span><span class="va">aicc</span><span class="op">)</span></span>
-<span><span class="va">aw</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/Log.html">exp</a></span><span class="op">(</span><span class="op">-</span><span class="fl">0.5</span> <span class="op">*</span> <span class="va">aiccD</span><span class="op">)</span></span>
-<span><span class="va">aiccW</span> <span class="op">&lt;-</span> <span class="va">aw</span><span class="op">/</span><span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">aw</span><span class="op">)</span></span>
-<span><span class="va">aiccW</span></span>
-<span></span>
-<span><span class="co">##Exercício:</span></span>
-<span><span class="co">#montar a matriz de transição para limbState de forma que </span></span>
-<span><span class="co">#membros podem ser perdidos, um de cada vez ou os dois ao mesmo tempo, </span></span>
-<span><span class="co">#mas não ganhados novamente</span></span>
-<span></span>
-<span><span class="co">#---PGLS</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://svn.r-project.org/R-packages/trunk/nlme/">nlme</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">geiger</span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">picante</span><span class="op">)</span></span>
-<span><span class="va">datos</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/utils/read.table.html">read.csv</a></span><span class="op">(</span><span class="st">"Barbetdata.csv"</span>,header<span class="op">=</span><span class="cn">TRUE</span>,row.names<span class="op">=</span><span class="fl">1</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">datos</span><span class="op">)</span></span>
-<span><span class="va">arbol</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/read.nexus.html">read.nexus</a></span><span class="op">(</span><span class="st">"BarbetTree.nex"</span><span class="op">)</span></span>
-<span><span class="va">obj</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/geiger/man/name.check.html">name.check</a></span><span class="op">(</span><span class="va">arbol</span>,<span class="va">datos</span><span class="op">)</span></span>
-<span><span class="va">obj</span></span>
-<span><span class="va">arbol.cortado</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/drop.tip.html">drop.tip</a></span><span class="op">(</span><span class="va">arbol</span>, <span class="va">obj</span><span class="op">$</span><span class="va">tree_not_data</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/geiger/man/name.check.html">name.check</a></span><span class="op">(</span><span class="va">arbol.cortado</span>,<span class="va">datos</span><span class="op">)</span></span>
-<span><span class="va">aa</span><span class="op">&lt;-</span><span class="fu">match.phylo.data</span><span class="op">(</span><span class="va">arbol.cortado</span>, <span class="va">datos</span><span class="op">)</span></span>
-<span><span class="va">modelo1</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/nlme/man/gls.html">gls</a></span><span class="op">(</span><span class="va">Lnote</span><span class="op">~</span><span class="va">Lnalt</span>, data<span class="op">=</span><span class="va">aa</span><span class="op">$</span><span class="va">data</span>, correlation<span class="op">=</span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/corBrownian.html">corBrownian</a></span><span class="op">(</span><span class="fl">1</span>, <span class="va">arbol.cortado</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="va">modelo1</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">modelo2</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/nlme/man/gls.html">gls</a></span><span class="op">(</span><span class="va">Lnote</span><span class="op">~</span><span class="va">Lnalt</span>, data<span class="op">=</span><span class="va">aa</span><span class="op">$</span><span class="va">data</span>, correlation<span class="op">=</span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/corPagel.html">corPagel</a></span><span class="op">(</span><span class="fl">1</span>,<span class="va">arbol.cortado</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">modelo2</span><span class="op">)</span><span class="co">#diganóstico</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="va">modelo2</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">modelo3</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/nlme/man/gls.html">gls</a></span><span class="op">(</span><span class="va">Lnote</span><span class="op">~</span><span class="va">Lnalt</span><span class="op">+</span><span class="va">Length</span>, data<span class="op">=</span><span class="va">aa</span><span class="op">$</span><span class="va">data</span><span class="op">)</span></span>
-<span><span class="va">modelo2</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/nlme/man/gls.html">gls</a></span><span class="op">(</span><span class="va">Lnote</span><span class="op">~</span><span class="va">Length</span>, data<span class="op">=</span><span class="va">aa</span><span class="op">$</span><span class="va">data</span>, correlation<span class="op">=</span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/corPagel.html">corPagel</a></span><span class="op">(</span><span class="fl">1</span>,<span class="va">arbol.cortado</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="va">modelo2</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co">#---Testando adequabilidade dos modelos</span></span>
-<span><span class="va">adeq</span><span class="op">&lt;-</span><span class="fu">arbutus</span><span class="op">(</span><span class="va">modelo1</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">adeq</span><span class="op">)</span></span>
-<span><span class="va">adeq</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">adeq</span><span class="op">)</span></span>
-<span><span class="va">adeq2</span><span class="op">&lt;-</span><span class="fu">arbutus</span><span class="op">(</span><span class="va">modelo2</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">adeq2</span><span class="op">)</span></span>
-<span><span class="va">adeq2</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">Lnote</span><span class="op">~</span><span class="va">Lnalt</span>, data<span class="op">=</span><span class="va">aa</span><span class="op">$</span><span class="va">data</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/abline.html">abline</a></span><span class="op">(</span><span class="va">modelo2</span>,lwd<span class="op">=</span><span class="fl">2</span>,lty<span class="op">=</span><span class="st">"dashed"</span>,col<span class="op">=</span><span class="st">"red"</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/abline.html">abline</a></span><span class="op">(</span><span class="va">modelo1</span>,lwd<span class="op">=</span><span class="fl">2</span>,lty<span class="op">=</span><span class="st">"dashed"</span>,col<span class="op">=</span><span class="st">"blue"</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/abline.html">abline</a></span><span class="op">(</span><span class="va">modelo3</span>,lwd<span class="op">=</span><span class="fl">2</span>,lty<span class="op">=</span><span class="st">"dashed"</span>,col<span class="op">=</span><span class="st">"green"</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co">#---ANOVA filogenética</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/liamrevell/phytools">phytools</a></span><span class="op">)</span></span>
-<span><span class="va">trait</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/utils/read.table.html">read.table</a></span><span class="op">(</span><span class="st">"testes_matrix_r.txt"</span>, h<span class="op">=</span><span class="cn">TRUE</span>, dec <span class="op">=</span> <span class="st">","</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">trait</span><span class="op">)</span></span>
-<span><span class="va">filogenia</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/pkg/ape/man/read.tree.html">read.tree</a></span><span class="op">(</span><span class="st">"filogenia_gabi.txt"</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">saz</span><span class="op">&lt;-</span><span class="va">trait</span><span class="op">$</span><span class="va">sazonalidade</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/names.html">names</a></span><span class="op">(</span><span class="va">saz</span><span class="op">)</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/colnames.html">rownames</a></span><span class="op">(</span><span class="va">trait</span><span class="op">)</span></span>
-<span><span class="va">diam</span><span class="op">&lt;-</span><span class="va">trait</span><span class="op">$</span><span class="va">diametro</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/names.html">names</a></span><span class="op">(</span><span class="va">diam</span><span class="op">)</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/colnames.html">rownames</a></span><span class="op">(</span><span class="va">trait</span><span class="op">)</span></span>
-<span><span class="va">repmode</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/factor.html">as.factor</a></span><span class="op">(</span><span class="va">trait</span><span class="op">$</span><span class="va">modos</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/names.html">names</a></span><span class="op">(</span><span class="va">repmode</span><span class="op">)</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/colnames.html">rownames</a></span><span class="op">(</span><span class="va">trait</span><span class="op">)</span></span>
-<span><span class="va">ret</span><span class="op">&lt;-</span><span class="va">trait</span><span class="op">$</span><span class="va">reticular</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/names.html">names</a></span><span class="op">(</span><span class="va">ret</span><span class="op">)</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/colnames.html">rownames</a></span><span class="op">(</span><span class="va">trait</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co">##---Testing the influence of reproductive modes on testicular characters</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/phylANOVA.html">phylANOVA</a></span><span class="op">(</span><span class="va">filogenia</span>, <span class="va">repmode</span>, <span class="fu"><a href="https://rdrr.io/r/base/Log.html">log</a></span><span class="op">(</span><span class="va">diam</span><span class="op">)</span>, nsim <span class="op">=</span> <span class="fl">2000</span>, p.adj <span class="op">=</span> <span class="st">"BY"</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/phytools/man/phylANOVA.html">phylANOVA</a></span><span class="op">(</span><span class="va">filogenia</span>, <span class="va">repmode</span>, <span class="fu"><a href="https://rdrr.io/r/base/Log.html">log</a></span><span class="op">(</span><span class="va">ret</span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/str.html">str</a></span><span class="op">(</span><span class="va">trait</span><span class="op">)</span></span>
-<span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/pkg/nlme/man/gls.html">gls</a></span><span class="op">(</span><span class="va">diametro</span><span class="op">~</span><span class="fu"><a href="https://rdrr.io/r/base/factor.html">as.factor</a></span><span class="op">(</span><span class="va">modos</span><span class="op">)</span>, data<span class="op">=</span><span class="va">dados_novos</span><span class="op">$</span><span class="va">data</span>, correlation <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/ape/man/corPagel.html">corPagel</a></span><span class="op">(</span><span class="fl">1</span>, <span class="va">dados_novos</span><span class="op">$</span><span class="va">phy</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/pairs.html">pairs</a></span><span class="op">(</span><span class="fu">lsmeans</span><span class="op">(</span><span class="va">a</span>,  <span class="op">~</span> <span class="va">modos</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/pkg/nlme/man/gls.html">gls</a></span><span class="op">(</span><span class="va">reticular</span><span class="op">~</span><span class="fu"><a href="https://rdrr.io/r/base/factor.html">as.factor</a></span><span class="op">(</span><span class="va">modos</span><span class="op">)</span>, data<span class="op">=</span><span class="va">dados_novos</span><span class="op">$</span><span class="va">data</span>, correlation <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/ape/man/corPagel.html">corPagel</a></span><span class="op">(</span><span class="fl">1</span>, <span class="va">dados_novos</span><span class="op">$</span><span class="va">phy</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span><span class="fu">ggplot</span><span class="op">(</span><span class="va">trait</span>, <span class="fu">aes</span><span class="op">(</span><span class="va">modos</span>,<span class="va">diametro</span><span class="op">)</span><span class="op">)</span><span class="op">+</span></span>
-<span>       <span class="fu">geom_col</span><span class="op">(</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Aula 2 - Terça </span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">21</span>)<span class="co">#reprodutibilidade</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>t<span class="ot">&lt;-</span><span class="dv">0</span><span class="sc">:</span><span class="dv">100</span> <span class="co"># time</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>sig2<span class="ot">&lt;-</span><span class="fl">0.01</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">#simulando 100 traits sem uma filogenia</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>nsim<span class="ot">&lt;-</span><span class="dv">100</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>X<span class="ot">&lt;-</span><span class="fu">matrix</span>(<span class="fu">rnorm</span>(<span class="at">n=</span>nsim<span class="sc">*</span>(<span class="fu">length</span>(t)<span class="sc">-</span><span class="dv">1</span>),<span class="at">sd=</span><span class="fu">sqrt</span>(sig2)),nsim,<span class="fu">length</span>(t)<span class="sc">-</span><span class="dv">1</span>)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>X<span class="ot">&lt;-</span><span class="fu">cbind</span>(<span class="fu">rep</span>(<span class="dv">0</span>,nsim),<span class="fu">t</span>(<span class="fu">apply</span>(X,<span class="dv">1</span>,cumsum)))</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(t,X[<span class="dv">1</span>,],<span class="at">xlab=</span><span class="st">"time"</span>,<span class="at">ylab=</span><span class="st">"phenotype"</span>,<span class="at">ylim=</span><span class="fu">c</span>(<span class="sc">-</span><span class="dv">2</span>,<span class="dv">2</span>),<span class="at">type=</span><span class="st">"l"</span>)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="fu">apply</span>(X[<span class="dv">2</span><span class="sc">:</span>nsim,],<span class="dv">1</span>,<span class="cf">function</span>(x,t) <span class="fu">lines</span>(t,x),<span class="at">t=</span>t)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">#mude sig2, divida por 10 -&gt; a variância irá diminuir</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>X<span class="ot">&lt;-</span><span class="fu">matrix</span>(<span class="fu">rnorm</span>(<span class="at">n=</span>nsim<span class="sc">*</span>(<span class="fu">length</span>(t)<span class="sc">-</span><span class="dv">1</span>),<span class="at">sd=</span><span class="fu">sqrt</span>(sig2<span class="sc">/</span><span class="dv">10</span>)),nsim,<span class="fu">length</span>(t)<span class="sc">-</span><span class="dv">1</span>)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>X<span class="ot">&lt;-</span><span class="fu">cbind</span>(<span class="fu">rep</span>(<span class="dv">0</span>,nsim),<span class="fu">t</span>(<span class="fu">apply</span>(X,<span class="dv">1</span>,cumsum)))</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(t,X[<span class="dv">1</span>,],<span class="at">xlab=</span><span class="st">"time"</span>,<span class="at">ylab=</span><span class="st">"phenotype"</span>,<span class="at">ylim=</span><span class="fu">c</span>(<span class="sc">-</span><span class="dv">2</span>,<span class="dv">2</span>),<span class="at">type=</span><span class="st">"l"</span>)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="fu">apply</span>(X[<span class="dv">2</span><span class="sc">:</span>nsim,],<span class="dv">1</span>,<span class="cf">function</span>(x,t) <span class="fu">lines</span>(t,x),<span class="at">t=</span>t)</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="co">#Simulando Movimento Browniano sem considerar a filogenia</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>BM<span class="ot">&lt;-</span> <span class="cf">function</span>(<span class="at">t =</span> <span class="dv">100</span>, <span class="at">sig2 =</span> <span class="fl">0.01</span>, <span class="at">sp =</span> <span class="dv">100</span>, ...) { </span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>       <span class="co">#written by Bruno Vilela Jun 2016 PCM workshop       </span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>       <span class="fu">par</span>(<span class="at">mar =</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">4</span>, <span class="dv">2</span>, <span class="dv">2</span>))</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>       t2 <span class="ot">&lt;-</span> <span class="dv">0</span><span class="sc">:</span>t <span class="co"># time</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>       x<span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="at">n =</span> t, <span class="at">sd=</span><span class="fu">sqrt</span>(sig2))</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>       <span class="do">## now compute their cumulative sum</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>       x<span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fu">cumsum</span>(x))</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>       <span class="fu">plot</span>(t2, x, <span class="at">type=</span><span class="st">"l"</span>, ...)</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>       </span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>       <span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>sp) {</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>              <span class="do">## first, simulate a set of random deviates</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>              x<span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="at">n =</span> t, <span class="at">sd=</span><span class="fu">sqrt</span>(sig2))</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>              <span class="do">## now compute their cumulative sum</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>              x<span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fu">cumsum</span>(x))</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>              <span class="fu">lines</span>(t2, x, <span class="at">type=</span><span class="st">"l"</span>, <span class="at">col =</span> <span class="fu">rainbow</span>(<span class="dv">100</span>)[<span class="fu">sample</span>(<span class="dv">100</span>, <span class="dv">1</span>)], ...)</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>       }</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="fu">BM</span>(<span class="dv">100</span>, <span class="fl">0.01</span>, <span class="dv">1000</span>, <span class="at">ylim =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">10</span>, <span class="dv">10</span>), <span class="at">ylab =</span> <span class="st">"Phenotype"</span>, <span class="at">xlab =</span> <span class="st">"time"</span>,</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>   <span class="at">main =</span> <span class="st">"Brownian motion"</span>)</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="co">#Simulando BM numa filogenia</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1003</span>)</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(phytools)</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>tree<span class="ot">&lt;-</span><span class="fu">make.era.map</span>(<span class="fu">pbtree</span>(<span class="at">n=</span><span class="dv">10</span>,<span class="at">tip.label=</span>LETTERS[<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>],<span class="at">scale=</span><span class="dv">100</span>),<span class="dv">0</span><span class="sc">:</span><span class="dv">200</span><span class="sc">/</span><span class="dv">2</span>)</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(tree)</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>obj<span class="ot">&lt;-</span><span class="fu">map.to.singleton</span>(tree)</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>x<span class="ot">&lt;-</span><span class="fu">fastBM</span>(obj,<span class="at">internal=</span><span class="cn">TRUE</span>)</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mar=</span><span class="fu">c</span>(<span class="fl">5.1</span>,<span class="fl">4.1</span>,<span class="fl">2.1</span>,<span class="fl">2.1</span>))</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="fu">phenogram</span>(obj,x,<span class="at">fsize=</span><span class="fl">0.8</span>,<span class="at">spread.cost=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">0</span>))</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="co">#Simulando um OU</span></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>tree<span class="ot">&lt;-</span><span class="fu">pbtree</span>(<span class="at">n=</span><span class="dv">26</span>,<span class="at">tip.label=</span>LETTERS,<span class="at">scale=</span><span class="dv">10</span>)</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>x<span class="ot">&lt;-</span><span class="fu">fastBM</span>(tree,<span class="at">a=</span><span class="dv">0</span>,<span class="at">theta=</span><span class="dv">3</span>,<span class="at">alpha=</span><span class="fl">0.2</span>,<span class="at">sig2=</span><span class="fl">0.1</span>, <span class="at">internal=</span><span class="cn">TRUE</span>)</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="fu">phenogram</span>(tree,x,<span class="at">spread.labels=</span><span class="cn">TRUE</span>,<span class="at">spread.cost=</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="fl">0.01</span>))</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="co">#mudando o theta</span></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>y<span class="ot">&lt;-</span><span class="fu">fastBM</span>(tree,<span class="at">a=</span><span class="dv">0</span>,<span class="at">theta=</span><span class="dv">6</span>,<span class="at">alpha=</span><span class="fl">0.2</span>,<span class="at">sig2=</span><span class="fl">0.1</span>, <span class="at">internal=</span><span class="cn">TRUE</span>)</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="fu">phenogram</span>(tree,y,<span class="at">spread.labels=</span><span class="cn">TRUE</span>,<span class="at">spread.cost=</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="fl">0.01</span>))</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="co">#mudando o alpha</span></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>b<span class="ot">&lt;-</span><span class="fu">fastBM</span>(tree,<span class="at">a=</span><span class="dv">0</span>,<span class="at">theta=</span><span class="dv">3</span>,<span class="at">alpha=</span><span class="fl">0.8</span>,<span class="at">sig2=</span><span class="fl">0.1</span>, <span class="at">internal=</span><span class="cn">TRUE</span>)</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="fu">phenogram</span>(tree,b,<span class="at">spread.labels=</span><span class="cn">TRUE</span>,<span class="at">spread.cost=</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="fl">0.01</span>))</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="co">#Simulando Trend </span></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>tree2<span class="ot">&lt;-</span><span class="fu">pbtree</span>(<span class="at">n=</span><span class="dv">100</span>)</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>w<span class="ot">&lt;-</span><span class="fu">fastBM</span>(tree2,<span class="at">mu=</span><span class="dv">3</span>,<span class="at">a=</span><span class="dv">1</span>,<span class="at">sig2=</span><span class="fl">0.1</span>, <span class="at">internal=</span><span class="cn">TRUE</span>) <span class="co"># with a trend</span></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a><span class="fu">phenogram</span>(tree2,w,<span class="at">spread.labels=</span><span class="cn">TRUE</span>,<span class="at">spread.cost=</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="fl">0.01</span>))</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="co">#--- Comparando ajuste de modelos evolutivos</span></span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(geiger)</span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(picante)</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(phytools)</span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>anoleData <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"anolisDataAppended.csv"</span>, <span class="at">row.names =</span> <span class="dv">1</span>)</span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(anoleData)</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(anoleData)</span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>anoleTree <span class="ot">&lt;-</span> <span class="fu">read.tree</span>(<span class="st">"anolis.phy"</span>)</span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>anoleSize <span class="ot">&lt;-</span> anoleData[, <span class="dv">1</span>]</span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(anoleSize) <span class="ot">&lt;-</span> <span class="fu">rownames</span>(anoleData)</span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>cn<span class="ot">&lt;-</span><span class="fu">match.phylo.data</span>(anoleTree, anoleSize)</span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a>cn<span class="sc">$</span>data</span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a>(brownianModel <span class="ot">&lt;-</span> <span class="fu">fitContinuous</span>(cn<span class="sc">$</span>phy, cn<span class="sc">$</span>data))</span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>(OUModel <span class="ot">&lt;-</span> <span class="fu">fitContinuous</span>(cn<span class="sc">$</span>phy, cn<span class="sc">$</span>data, <span class="at">model =</span> <span class="st">"OU"</span>))</span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>(EBModel <span class="ot">&lt;-</span> <span class="fu">fitContinuous</span>(cn<span class="sc">$</span>phy, cn<span class="sc">$</span>data, <span class="at">model =</span> <span class="st">"EB"</span>))</span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a>bmAICC <span class="ot">&lt;-</span> brownianModel<span class="sc">$</span>opt<span class="sc">$</span>aicc</span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>ouAICC <span class="ot">&lt;-</span> OUModel<span class="sc">$</span>opt<span class="sc">$</span>aicc</span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a>ebAICC <span class="ot">&lt;-</span> EBModel<span class="sc">$</span>opt<span class="sc">$</span>aicc</span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a>aicc <span class="ot">&lt;-</span> <span class="fu">c</span>(bmAICC, ouAICC, ebAICC)</span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a>aiccD <span class="ot">&lt;-</span> aicc <span class="sc">-</span> <span class="fu">min</span>(aicc)</span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>aw <span class="ot">&lt;-</span> <span class="fu">exp</span>(<span class="sc">-</span><span class="fl">0.5</span> <span class="sc">*</span> aiccD)</span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a>aiccW <span class="ot">&lt;-</span> aw<span class="sc">/</span><span class="fu">sum</span>(aw)</span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a>aiccW</span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a><span class="do">##---Testando model adequacy</span></span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages(devtools)</span></span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a><span class="co">#library(devtools)</span></span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a><span class="co">#devtools::install_github("mwpennell/arbutus")</span></span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(arbutus)</span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a>modadeq<span class="ot">&lt;-</span><span class="fu">arbutus</span>(brownianModel)</span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(modadeq)</span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a>modadeq1<span class="ot">&lt;-</span><span class="fu">arbutus</span>(OUModel)</span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(modadeq1)</span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a>modadeq2<span class="ot">&lt;-</span><span class="fu">arbutus</span>(EBModel)</span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(modadeq2)</span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a><span class="co">#--- Ajustando modelos de evolução para caracteres discretos</span></span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a>sqData<span class="ot">&lt;-</span><span class="fu">read.csv</span>(<span class="st">"brandley_table.csv"</span>)</span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(sqData)</span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a>sqTree<span class="ot">&lt;-</span><span class="fu">read.nexus</span>(<span class="st">"squamate.tre"</span>)</span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">1</span>))</span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a><span class="fu">plotTree</span>(sqTree,<span class="at">type=</span><span class="st">"fan"</span>,<span class="at">lwd=</span><span class="dv">1</span>,<span class="at">fsize=</span><span class="fl">0.5</span>)</span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a>hindLimbs<span class="ot">&lt;-</span>sqData[,<span class="st">"HLL"</span>]<span class="sc">!=</span><span class="dv">0</span></span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a>foreLimbs<span class="ot">&lt;-</span>sqData[,<span class="st">"FLL"</span>]<span class="sc">!=</span><span class="dv">0</span></span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a>limbless<span class="ot">&lt;-</span><span class="sc">!</span>hindLimbs <span class="sc">&amp;</span> <span class="sc">!</span>foreLimbs</span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(limbless)</span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a>speciesNames<span class="ot">&lt;-</span>sqData[,<span class="dv">1</span>]</span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a>species<span class="ot">&lt;-</span><span class="fu">sub</span>(<span class="st">" "</span>, <span class="st">"_"</span>, speciesNames)</span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(limbless)<span class="ot">&lt;-</span>species</span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a>limbless<span class="ot">&lt;-</span><span class="fu">as.character</span>(limbless)</span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(limbless)<span class="ot">&lt;-</span>species</span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(foreLimbs, hindLimbs)</span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a><span class="co">#ER model - simpler one = forward same as backward - same probability</span></span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a><span class="co">#of gaining and losing limbs</span></span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a><span class="fu">name.check</span>(sqTree, limbless)</span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a>compfilo<span class="ot">&lt;-</span><span class="fu">match.phylo.data</span>(sqTree, limbless)</span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a>erModel<span class="ot">&lt;-</span><span class="fu">fitDiscrete</span>(sqTree, compfilo<span class="sc">$</span>data, <span class="at">model=</span><span class="st">"ER"</span>)</span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(erModel)</span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a>ardModel<span class="ot">&lt;-</span><span class="fu">fitDiscrete</span>(sqTree, limbless, <span class="at">model=</span><span class="st">"ARD"</span>)</span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(ardModel)</span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a><span class="co">#irreversible - impossible to regain limbs</span></span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a>irrMat<span class="ot">&lt;-</span><span class="fu">cbind</span>(<span class="fu">c</span>(<span class="cn">NA</span>, <span class="dv">1</span>),<span class="fu">c</span>(<span class="dv">0</span>,<span class="cn">NA</span>))</span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a>irrModel<span class="ot">&lt;-</span><span class="fu">fitDiscrete</span>(sqTree, limbless, <span class="at">model =</span> irrMat)</span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a>aic.vals <span class="ot">&lt;-</span> <span class="fu">setNames</span>(<span class="fu">c</span>(erModel<span class="sc">$</span>opt<span class="sc">$</span>aicc, ardModel<span class="sc">$</span>opt<span class="sc">$</span>aicc, irrModel<span class="sc">$</span>opt<span class="sc">$</span>aicc),</span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a>                     <span class="fu">c</span>(<span class="st">"ER"</span>,<span class="st">"ARD"</span>,<span class="st">"iRR"</span>))</span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a>aic.vals</span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a>aic.w<span class="ot">&lt;-</span><span class="cf">function</span>(aic){</span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a>       d.aic<span class="ot">&lt;-</span>aic<span class="sc">-</span><span class="fu">min</span>(aic)</span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a>       <span class="fu">exp</span>(<span class="sc">-</span><span class="dv">1</span><span class="sc">/</span><span class="dv">2</span><span class="sc">*</span>d.aic)<span class="sc">/</span><span class="fu">sum</span>(<span class="fu">exp</span>(<span class="sc">-</span><span class="dv">1</span><span class="sc">/</span><span class="dv">2</span><span class="sc">*</span>d.aic))</span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a><span class="fu">aic.w</span>(aic.vals)</span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a>limbState<span class="ot">&lt;-</span><span class="fu">paste</span>(foreLimbs, hindLimbs)</span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(limbState)<span class="ot">&lt;-</span>species</span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a>erModel<span class="ot">&lt;-</span><span class="fu">fitDiscrete</span>(sqTree, limbState, <span class="at">model=</span><span class="st">"ER"</span>)</span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(erModel)</span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a>symModel<span class="ot">&lt;-</span><span class="fu">fitDiscrete</span>(sqTree, limbState, <span class="at">model=</span><span class="st">"SYM"</span>)</span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(symModel)</span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a>ardModel<span class="ot">&lt;-</span><span class="fu">fitDiscrete</span>(sqTree, limbState, <span class="at">model=</span><span class="st">"ARD"</span>)</span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(ardModel)</span>
+<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a><span class="co">#Convergence diagnostics</span></span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a><span class="do">##frequency of best fit =&gt; proporção dos cadeias que chegam encontram a mesma solução</span></span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a><span class="co">#quanto menor esse número pior</span></span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a>aicc <span class="ot">&lt;-</span> <span class="fu">c</span>(erModel<span class="sc">$</span>opt<span class="sc">$</span>aicc, symModel<span class="sc">$</span>opt<span class="sc">$</span>aicc, ardModel<span class="sc">$</span>opt<span class="sc">$</span>aicc)</span>
+<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a>aiccD <span class="ot">&lt;-</span> aicc <span class="sc">-</span> <span class="fu">min</span>(aicc)</span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a>aw <span class="ot">&lt;-</span> <span class="fu">exp</span>(<span class="sc">-</span><span class="fl">0.5</span> <span class="sc">*</span> aiccD)</span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a>aiccW <span class="ot">&lt;-</span> aw<span class="sc">/</span><span class="fu">sum</span>(aw)</span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a>aiccW</span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a><span class="do">##Exercício:</span></span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a><span class="co">#montar a matriz de transição para limbState de forma que </span></span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a><span class="co">#membros podem ser perdidos, um de cada vez ou os dois ao mesmo tempo, </span></span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a><span class="co">#mas não ganhados novamente</span></span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a><span class="co">#---PGLS</span></span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(nlme)</span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(geiger)</span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(picante)</span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a>datos<span class="ot">&lt;-</span><span class="fu">read.csv</span>(<span class="st">"Barbetdata.csv"</span>,<span class="at">header=</span><span class="cn">TRUE</span>,<span class="at">row.names=</span><span class="dv">1</span>)</span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(datos)</span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a>arbol<span class="ot">&lt;-</span><span class="fu">read.nexus</span>(<span class="st">"BarbetTree.nex"</span>)</span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a>obj<span class="ot">&lt;-</span><span class="fu">name.check</span>(arbol,datos)</span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a>obj</span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a>arbol.cortado<span class="ot">&lt;-</span><span class="fu">drop.tip</span>(arbol, obj<span class="sc">$</span>tree_not_data)</span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a><span class="fu">name.check</span>(arbol.cortado,datos)</span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a>aa<span class="ot">&lt;-</span><span class="fu">match.phylo.data</span>(arbol.cortado, datos)</span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a>modelo1<span class="ot">&lt;-</span><span class="fu">gls</span>(Lnote<span class="sc">~</span>Lnalt, <span class="at">data=</span>aa<span class="sc">$</span>data, <span class="at">correlation=</span><span class="fu">corBrownian</span>(<span class="dv">1</span>, arbol.cortado))</span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(modelo1)</span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a>modelo2<span class="ot">&lt;-</span><span class="fu">gls</span>(Lnote<span class="sc">~</span>Lnalt, <span class="at">data=</span>aa<span class="sc">$</span>data, <span class="at">correlation=</span><span class="fu">corPagel</span>(<span class="dv">1</span>,arbol.cortado))</span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(modelo2)<span class="co">#diganóstico</span></span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(modelo2)</span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a>modelo3<span class="ot">&lt;-</span><span class="fu">gls</span>(Lnote<span class="sc">~</span>Lnalt<span class="sc">+</span>Length, <span class="at">data=</span>aa<span class="sc">$</span>data)</span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>modelo2<span class="ot">&lt;-</span><span class="fu">gls</span>(Lnote<span class="sc">~</span>Length, <span class="at">data=</span>aa<span class="sc">$</span>data, <span class="at">correlation=</span><span class="fu">corPagel</span>(<span class="dv">1</span>,arbol.cortado))</span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(modelo2)</span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a><span class="co">#---Testando adequabilidade dos modelos</span></span>
+<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a>adeq<span class="ot">&lt;-</span><span class="fu">arbutus</span>(modelo1)</span>
+<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(adeq)</span>
+<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a>adeq</span>
+<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(adeq)</span>
+<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a>adeq2<span class="ot">&lt;-</span><span class="fu">arbutus</span>(modelo2)</span>
+<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(adeq2)</span>
+<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a>adeq2</span>
+<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(Lnote<span class="sc">~</span>Lnalt, <span class="at">data=</span>aa<span class="sc">$</span>data)</span>
+<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(modelo2,<span class="at">lwd=</span><span class="dv">2</span>,<span class="at">lty=</span><span class="st">"dashed"</span>,<span class="at">col=</span><span class="st">"red"</span>)</span>
+<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(modelo1,<span class="at">lwd=</span><span class="dv">2</span>,<span class="at">lty=</span><span class="st">"dashed"</span>,<span class="at">col=</span><span class="st">"blue"</span>)</span>
+<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(modelo3,<span class="at">lwd=</span><span class="dv">2</span>,<span class="at">lty=</span><span class="st">"dashed"</span>,<span class="at">col=</span><span class="st">"green"</span>)</span>
+<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a><span class="co">#---ANOVA filogenética</span></span>
+<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(phytools)</span>
+<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a>trait<span class="ot">&lt;-</span><span class="fu">read.table</span>(<span class="st">"testes_matrix_r.txt"</span>, <span class="at">h=</span><span class="cn">TRUE</span>, <span class="at">dec =</span> <span class="st">","</span>)</span>
+<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(trait)</span>
+<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a>filogenia<span class="ot">&lt;-</span><span class="fu">read.tree</span>(<span class="st">"filogenia_gabi.txt"</span>)</span>
+<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a>saz<span class="ot">&lt;-</span>trait<span class="sc">$</span>sazonalidade</span>
+<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(saz)<span class="ot">&lt;-</span><span class="fu">rownames</span>(trait)</span>
+<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a>diam<span class="ot">&lt;-</span>trait<span class="sc">$</span>diametro</span>
+<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(diam)<span class="ot">&lt;-</span><span class="fu">rownames</span>(trait)</span>
+<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a>repmode<span class="ot">&lt;-</span><span class="fu">as.factor</span>(trait<span class="sc">$</span>modos)</span>
+<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(repmode)<span class="ot">&lt;-</span><span class="fu">rownames</span>(trait)</span>
+<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a>ret<span class="ot">&lt;-</span>trait<span class="sc">$</span>reticular</span>
+<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(ret)<span class="ot">&lt;-</span><span class="fu">rownames</span>(trait)</span>
+<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a><span class="do">##---Testing the influence of reproductive modes on testicular characters</span></span>
+<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a><span class="fu">phylANOVA</span>(filogenia, repmode, <span class="fu">log</span>(diam), <span class="at">nsim =</span> <span class="dv">2000</span>, <span class="at">p.adj =</span> <span class="st">"BY"</span>)</span>
+<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a><span class="fu">phylANOVA</span>(filogenia, repmode, <span class="fu">log</span>(ret))</span>
+<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(trait)</span>
+<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(<span class="fu">gls</span>(diametro<span class="sc">~</span><span class="fu">as.factor</span>(modos), <span class="at">data=</span>dados_novos<span class="sc">$</span>data, <span class="at">correlation =</span> <span class="fu">corPagel</span>(<span class="dv">1</span>, dados_novos<span class="sc">$</span>phy)))</span>
+<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a><span class="fu">pairs</span>(<span class="fu">lsmeans</span>(a,  <span class="sc">~</span> modos))</span>
+<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(<span class="fu">gls</span>(reticular<span class="sc">~</span><span class="fu">as.factor</span>(modos), <span class="at">data=</span>dados_novos<span class="sc">$</span>data, <span class="at">correlation =</span> <span class="fu">corPagel</span>(<span class="dv">1</span>, dados_novos<span class="sc">$</span>phy)))</span>
+<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(trait, <span class="fu">aes</span>(modos,diametro))<span class="sc">+</span></span>
+<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a>       <span class="fu">geom_col</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 
 
 <!-- -->
 
 
-</main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
-    }
-    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -1372,7 +1209,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
-<footer class="footer"><div class="nav-footer">
+<footer class="footer">
+  <div class="nav-footer">
     <div class="nav-footer-left">
 <p>© Diogo B. Provete · Biodiversity Synthesis Lab · Instituto de Biociências, UFMS</p>
 </div>   
@@ -1384,6 +1222,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
   </div>
 </footer>
+
+
 
 
 <script src="../../../site_libs/quarto-html/zenscroll-min.js"></script>

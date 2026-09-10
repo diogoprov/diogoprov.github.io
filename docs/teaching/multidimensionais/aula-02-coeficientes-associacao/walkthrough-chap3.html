@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.8.26">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
 <title>Capítulo 3 — coeficientes de associação e distâncias entre objetos. – Biodiversity Synthesis Lab</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -57,6 +57,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 </style>
 
+
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -66,18 +67,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../../assets/favicon.png" rel="icon" type="image/png">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-6b38416d90cdbb41281c8a2a0df0236b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-1732e9b120b8faec2f4b22e599a6250f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../../site_libs/bootstrap/bootstrap-6b38416d90cdbb41281c8a2a0df0236b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+<link href="../../../site_libs/bootstrap/bootstrap-ec100a28b3f28334d858203a6e0baf76.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
@@ -103,13 +102,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script><style>html{ scroll-behavior: smooth; }</style>
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <style>
   /* Tame Academicons next to text in card rows */
   .ai { vertical-align: -.05em; }
 </style>
+
+
 <link rel="stylesheet" href="../../../styles.css">
 <meta property="og:title" content="Capítulo 3 — coeficientes de associação e distâncias entre objetos. – Biodiversity Synthesis Lab">
 <meta property="og:description" content="Walkthrough do código — Aula 2: Coeficientes de associação">
@@ -118,175 +120,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta name="twitter:description" content="Walkthrough do código — Aula 2: Coeficientes de associação">
 <meta name="twitter:card" content="summary">
 </head>
-<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        window.scrollTo(0, 1);
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
-      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
+
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../../assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo light-content"><img src="../../../assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo dark-content"></a>
+    <img src="../../../assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo light-content">
+    <img src="../../../assets/navbar-logo.png" alt="Biodiversity Synthesis Lab logo" class="navbar-logo dark-content">
+    </a>
     <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Biodiversity Synthesis Lab</span>
     </a>
@@ -297,7 +142,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-<li class="nav-item">
+  <li class="nav-item">
     <a class="nav-link" href="../../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
@@ -312,10 +157,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li class="nav-item">
     <a class="nav-link" href="../../../people.html"> 
 <span class="menu-text">People</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../../cv.html"> 
-<span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../../teaching.html"> 
@@ -338,8 +179,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Brazilian Tadpoles</span></a>
   </li>  
 </ul>
-<ul class="navbar-nav navbar-nav-scroll ms-auto">
-<li class="nav-item compact">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/diogoprov"> <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
 <span class="menu-text"></span></a>
@@ -350,19 +191,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text"></span></a>
   </li>  
 </ul>
-</div> <!-- /navcollapse -->
+          </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
-    </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
 <div class="quarto-title-block"><div><h1 class="title">Capítulo 3 — coeficientes de associação e distâncias entre objetos.</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 <p class="subtitle lead">Walkthrough do código — Aula 2: Coeficientes de associação</p>
 </div>
@@ -378,7 +224,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   
 
 
-</header><div class="callout callout-style-simple callout-note no-icon">
+</header>
+
+
+<div class="callout callout-style-simple callout-note no-icon">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
@@ -389,438 +238,426 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co">### CHAPTER 3: ASSOCIATION MEASURES</span></span>
-<span><span class="co">###</span></span>
-<span><span class="co">### Online supporting material for:</span></span>
-<span><span class="co">### Borcard D., Gillet F. &amp; Legendre P. Numerical Ecology with R,</span></span>
-<span><span class="co">### Springer, 2nd edition, 2018</span></span>
-<span></span>
-<span><span class="co"># Load packages, functions and data ===============================</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://adeverse.github.io/ade4/">ade4</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/adeverse/adespatial">adespatial</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://vegandevs.github.io/vegan/">vegan</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">gclus</span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://svn.r-project.org/R-packages/trunk/cluster/">cluster</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">FD</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co"># Source additional functions that will be used later in this</span></span>
-<span><span class="co"># Chapter. Our scripts assume that files to be read are in</span></span>
-<span><span class="co"># the working directory.</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/source.html">source</a></span><span class="op">(</span><span class="st">"coldiss.R"</span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/source.html">source</a></span><span class="op">(</span><span class="st">"panelutils.R"</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co"># Load the data</span></span>
-<span><span class="co"># File Doubs.Rdata is assumed to be in the working directory</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/load.html">load</a></span><span class="op">(</span><span class="st">"Doubs.Rdata"</span><span class="op">)</span></span>
-<span><span class="co"># Remove empty site 8</span></span>
-<span><span class="va">spe</span> <span class="op">&lt;-</span> <span class="va">spe</span><span class="op">[</span><span class="op">-</span><span class="fl">8</span>, <span class="op">]</span></span>
-<span><span class="va">env</span> <span class="op">&lt;-</span> <span class="va">env</span><span class="op">[</span><span class="op">-</span><span class="fl">8</span>, <span class="op">]</span></span>
-<span><span class="va">spa</span> <span class="op">&lt;-</span> <span class="va">spa</span><span class="op">[</span><span class="op">-</span><span class="fl">8</span>, <span class="op">]</span></span>
-<span></span>
-<span></span>
-<span><span class="co">### Q-mode dissimilarity matrices</span></span>
-<span></span>
-<span><span class="co">## Q-mode dissimilarity and distance measures for</span></span>
-<span><span class="co">## (semi-)quantitative data</span></span>
-<span></span>
-<span><span class="co"># Percentage difference (aka Bray-Curtis) dissimilarity matrix</span></span>
-<span><span class="co"># on raw species data. ".db" means "distance Bray".</span></span>
-<span><span class="va">spe.db</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://vegandevs.github.io/vegan/reference/vegdist.html">vegdist</a></span><span class="op">(</span><span class="va">spe</span><span class="op">)</span>  <span class="co"># method = "bray" (default)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">spe.db</span><span class="op">)</span></span>
-<span><span class="co"># Percentage difference (aka Bray-Curtis) dissimilarity matrix</span></span>
-<span><span class="co"># on log-transformed abundances</span></span>
-<span><span class="va">spe.dbln</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://vegandevs.github.io/vegan/reference/vegdist.html">vegdist</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/Log.html">log1p</a></span><span class="op">(</span><span class="va">spe</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">spe.dbln</span><span class="op">)</span></span>
-<span><span class="co"># Chord distance matrix</span></span>
-<span><span class="va">spe.dc</span> <span class="op">&lt;-</span> <span class="fu"><a href="http://adeverse.github.io/adespatial/reference/dist.ldc.html">dist.ldc</a></span><span class="op">(</span><span class="va">spe</span>, <span class="st">"chord"</span><span class="op">)</span></span>
-<span>   <span class="co"># Alternate, two-step computation in vegan:</span></span>
-<span>   <span class="va">spe.norm</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://vegandevs.github.io/vegan/reference/decostand.html">decostand</a></span><span class="op">(</span><span class="va">spe</span>, <span class="st">"nor"</span><span class="op">)</span></span>
-<span>   <span class="va">spe.dc</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/dist.html">dist</a></span><span class="op">(</span><span class="va">spe.norm</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">spe.dc</span><span class="op">)</span></span>
-<span><span class="co"># Hellinger distance matrix</span></span>
-<span><span class="va">spe.dh</span> <span class="op">&lt;-</span> <span class="fu"><a href="http://adeverse.github.io/adespatial/reference/dist.ldc.html">dist.ldc</a></span><span class="op">(</span><span class="va">spe</span><span class="op">)</span> <span class="co"># Hellinger is the default distance</span></span>
-<span>   <span class="co"># Alternate, two-step computation in vegan:</span></span>
-<span>   <span class="va">spe.hel</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://vegandevs.github.io/vegan/reference/decostand.html">decostand</a></span><span class="op">(</span><span class="va">spe</span>, <span class="st">"hel"</span><span class="op">)</span></span>
-<span>   <span class="va">spe.dh</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/dist.html">dist</a></span><span class="op">(</span><span class="va">spe.hel</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">spe.dh</span><span class="op">)</span></span>
-<span><span class="co"># Log-chord distance matrix</span></span>
-<span><span class="va">spe.logchord</span> <span class="op">&lt;-</span> <span class="fu"><a href="http://adeverse.github.io/adespatial/reference/dist.ldc.html">dist.ldc</a></span><span class="op">(</span><span class="va">spe</span>, <span class="st">"log.chord"</span><span class="op">)</span></span>
-<span>   <span class="co"># Alternate, three-step computation in vegan:</span></span>
-<span>   <span class="va">spe.ln</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/Log.html">log1p</a></span><span class="op">(</span><span class="va">spe</span><span class="op">)</span></span>
-<span>   <span class="va">spe.ln.norm</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://vegandevs.github.io/vegan/reference/decostand.html">decostand</a></span><span class="op">(</span><span class="va">spe.ln</span>, <span class="st">"nor"</span><span class="op">)</span></span>
-<span>   <span class="va">spe.logchord</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/dist.html">dist</a></span><span class="op">(</span><span class="va">spe.ln.norm</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">spe.logchord</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co">## Q-mode dissimilarity measures for binary data</span></span>
-<span></span>
-<span><span class="co"># Jaccard dissimilarity matrix using function vegdist()</span></span>
-<span><span class="va">spe.dj</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://vegandevs.github.io/vegan/reference/vegdist.html">vegdist</a></span><span class="op">(</span><span class="va">spe</span>, <span class="st">"jac"</span>, binary <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">spe.dj</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/MathFun.html">sqrt</a></span><span class="op">(</span><span class="va">spe.dj</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="co"># Jaccard dissimilarity matrix using function dist()</span></span>
-<span><span class="va">spe.dj2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/dist.html">dist</a></span><span class="op">(</span><span class="va">spe</span>, <span class="st">"binary"</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">spe.dj2</span><span class="op">)</span></span>
-<span><span class="co"># Jaccard dissimilarity matrix using function dist.binary()</span></span>
-<span><span class="va">spe.dj3</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://adeverse.github.io/ade4/reference/dist.binary.html">dist.binary</a></span><span class="op">(</span><span class="va">spe</span>, method <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">spe.dj3</span><span class="op">)</span></span>
-<span><span class="co"># Sorensen dissimilarity matrix using function dist.ldc()</span></span>
-<span><span class="va">spe.ds</span> <span class="op">&lt;-</span> <span class="fu"><a href="http://adeverse.github.io/adespatial/reference/dist.ldc.html">dist.ldc</a></span><span class="op">(</span><span class="va">spe</span>, <span class="st">"sorensen"</span><span class="op">)</span></span>
-<span><span class="co"># Sorensen dissimilarity matrix using function vegdist()</span></span>
-<span><span class="va">spe.ds2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://vegandevs.github.io/vegan/reference/vegdist.html">vegdist</a></span><span class="op">(</span><span class="va">spe</span>, method <span class="op">=</span> <span class="st">"bray"</span>, binary <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
-<span><span class="co"># Sorensen dissimilarity matrix using function dist.binary()</span></span>
-<span><span class="va">spe.ds3</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://adeverse.github.io/ade4/reference/dist.binary.html">dist.binary</a></span><span class="op">(</span><span class="va">spe</span>, method <span class="op">=</span> <span class="fl">5</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">spe.ds</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">spe.ds2</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/MathFun.html">sqrt</a></span><span class="op">(</span><span class="va">spe.ds2</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">spe.ds3</span><span class="op">)</span></span>
-<span><span class="co"># Ochiai dissimilarity matrix</span></span>
-<span><span class="va">spe.och</span> <span class="op">&lt;-</span> <span class="fu"><a href="http://adeverse.github.io/adespatial/reference/dist.ldc.html">dist.ldc</a></span><span class="op">(</span><span class="va">spe</span>, <span class="st">"ochiai"</span><span class="op">)</span>   <span class="co"># or</span></span>
-<span><span class="va">spe.och</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://adeverse.github.io/ade4/reference/dist.binary.html">dist.binary</a></span><span class="op">(</span><span class="va">spe</span>, method <span class="op">=</span> <span class="fl">7</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">spe.och</span><span class="op">)</span></span>
-<span></span>
-<span></span>
-<span><span class="co">## Graphical display of association matrices</span></span>
-<span></span>
-<span><span class="co"># Colour plots (also called heat maps, or trellis diagrams in the</span></span>
-<span><span class="co"># data analysis literature) using the coldiss() function</span></span>
-<span></span>
-<span><span class="co"># Usage:</span></span>
-<span><span class="co"># coldiss(D = dissimilarity.matrix,</span></span>
-<span><span class="co">#         nc = 4,</span></span>
-<span><span class="co">#         byrank = TRUE,</span></span>
-<span><span class="co">#         diag = FALSE)</span></span>
-<span><span class="co"># If D is not a dissimilarity matrix (max(D) &gt; 1), then D is</span></span>
-<span><span class="co"># divided by max(D)</span></span>
-<span><span class="co"># nc number of colours (classes)</span></span>
-<span><span class="co"># byrank =  TRUE    equal-sized classes</span></span>
-<span><span class="co"># byrank =  FALSE   equal-length intervals</span></span>
-<span><span class="co"># diag = TRUE   print object labels also on the diagonal</span></span>
-<span></span>
-<span><span class="co">## Compare dissimilarity and distance matrices obtained from the</span></span>
-<span><span class="co">## species data. Four colours are used with equal-length intervals</span></span>
-<span></span>
-<span><span class="co"># Percentage difference (aka Bray-Curtis) dissimilarity matrix on</span></span>
-<span><span class="co"># raw species abundance data</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/grDevices/dev.html">dev.new</a></span><span class="op">(</span></span>
-<span>  title <span class="op">=</span> <span class="st">"Percentage difference (Bray-Curtis), raw data"</span>,</span>
-<span>  width <span class="op">=</span> <span class="fl">10</span>,</span>
-<span>  height <span class="op">=</span> <span class="fl">5</span>,</span>
-<span>  noRStudioGD <span class="op">=</span> <span class="cn">TRUE</span></span>
-<span><span class="op">)</span></span>
-<span><span class="fu">coldiss</span><span class="op">(</span><span class="va">spe.db</span>, byrank <span class="op">=</span> <span class="cn">FALSE</span>, diag <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co"># Same but on log-transformed data</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/grDevices/dev.html">dev.new</a></span><span class="op">(</span></span>
-<span>  title <span class="op">=</span> <span class="st">"Percentage difference (Bray-Curtis), ln(y+1) data"</span>,</span>
-<span>  width <span class="op">=</span> <span class="fl">10</span>,</span>
-<span>  height <span class="op">=</span> <span class="fl">5</span>,</span>
-<span>  noRStudioGD <span class="op">=</span> <span class="cn">TRUE</span></span>
-<span><span class="op">)</span></span>
-<span><span class="fu">coldiss</span><span class="op">(</span><span class="va">spe.dbln</span>, byrank <span class="op">=</span> <span class="cn">FALSE</span>, diag <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co"># Chord distance matrix</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/grDevices/dev.html">dev.new</a></span><span class="op">(</span></span>
-<span>  title <span class="op">=</span> <span class="st">"Chord"</span>,</span>
-<span>  width <span class="op">=</span> <span class="fl">10</span>,</span>
-<span>  height <span class="op">=</span> <span class="fl">5</span>,</span>
-<span>  noRStudioGD <span class="op">=</span> <span class="cn">TRUE</span></span>
-<span><span class="op">)</span></span>
-<span><span class="fu">coldiss</span><span class="op">(</span><span class="va">spe.dc</span>, byrank <span class="op">=</span> <span class="cn">FALSE</span>, diag <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co"># Hellinger distance matrix</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/grDevices/dev.html">dev.new</a></span><span class="op">(</span></span>
-<span>  title <span class="op">=</span> <span class="st">"Hellinger"</span>,</span>
-<span>  width <span class="op">=</span> <span class="fl">10</span>,</span>
-<span>  height <span class="op">=</span> <span class="fl">5</span>,</span>
-<span>  noRStudioGD <span class="op">=</span> <span class="cn">TRUE</span></span>
-<span><span class="op">)</span></span>
-<span><span class="fu">coldiss</span><span class="op">(</span><span class="va">spe.dh</span>, byrank <span class="op">=</span> <span class="cn">FALSE</span>, diag <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co"># log-chord distance matrix</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/grDevices/dev.html">dev.new</a></span><span class="op">(</span></span>
-<span>  title <span class="op">=</span> <span class="st">"Log-chord"</span>,</span>
-<span>  width <span class="op">=</span> <span class="fl">10</span>,</span>
-<span>  height <span class="op">=</span> <span class="fl">5</span>,</span>
-<span>  noRStudioGD <span class="op">=</span> <span class="cn">TRUE</span></span>
-<span><span class="op">)</span></span>
-<span><span class="fu">coldiss</span><span class="op">(</span><span class="va">spe.logchord</span>, byrank <span class="op">=</span> <span class="cn">FALSE</span>, diag <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co"># Jaccard distance matrix</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/grDevices/dev.html">dev.new</a></span><span class="op">(</span></span>
-<span>  title <span class="op">=</span> <span class="st">"Jaccard"</span>,</span>
-<span>  width <span class="op">=</span> <span class="fl">10</span>,</span>
-<span>  height <span class="op">=</span> <span class="fl">5</span>,</span>
-<span>  noRStudioGD <span class="op">=</span> <span class="cn">TRUE</span></span>
-<span><span class="op">)</span></span>
-<span><span class="fu">coldiss</span><span class="op">(</span><span class="va">spe.dj</span>, byrank <span class="op">=</span> <span class="cn">FALSE</span>, diag <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co"># Simple matching dissimilarity</span></span>
-<span><span class="co"># (called the Sokal and Michener index in ade4)</span></span>
-<span><span class="va">spe.s1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://adeverse.github.io/ade4/reference/dist.binary.html">dist.binary</a></span><span class="op">(</span><span class="va">spe</span>, method <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/grDevices/dev.html">dev.new</a></span><span class="op">(</span></span>
-<span>  title <span class="op">=</span> <span class="st">"S1 on species data"</span>,</span>
-<span>  width <span class="op">=</span> <span class="fl">10</span>,</span>
-<span>  height <span class="op">=</span> <span class="fl">5</span>,</span>
-<span>  noRStudioGD <span class="op">=</span> <span class="cn">TRUE</span></span>
-<span><span class="op">)</span></span>
-<span><span class="fu">coldiss</span><span class="op">(</span><span class="va">spe.s1</span> <span class="op">^</span> <span class="fl">2</span>, byrank <span class="op">=</span> <span class="cn">FALSE</span>, diag <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
-<span></span>
-<span></span>
-<span><span class="co">## Compare distance matrices from environmental, species and</span></span>
-<span><span class="co">## spatial data. 16 colours with equal-size classes</span></span>
-<span></span>
-<span><span class="co"># Remove the 'dfs' variable from the env dataset</span></span>
-<span><span class="va">env2</span> <span class="op">&lt;-</span> <span class="va">env</span><span class="op">[</span>, <span class="op">-</span><span class="fl">1</span><span class="op">]</span></span>
-<span></span>
-<span><span class="co"># Euclidean distance matrix of the standardized env2 data frame</span></span>
-<span><span class="va">env.de</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/dist.html">dist</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/scale.html">scale</a></span><span class="op">(</span><span class="va">env2</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/grDevices/dev.html">dev.new</a></span><span class="op">(</span></span>
-<span>  title <span class="op">=</span> <span class="st">"Environment"</span>,</span>
-<span>  width <span class="op">=</span> <span class="fl">10</span>,</span>
-<span>  height <span class="op">=</span> <span class="fl">5</span>,</span>
-<span>  noRStudioGD <span class="op">=</span> <span class="cn">TRUE</span></span>
-<span><span class="op">)</span></span>
-<span><span class="fu">coldiss</span><span class="op">(</span><span class="va">env.de</span>, nc <span class="op">=</span> <span class="fl">16</span>, diag <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co"># Hellinger distance matrix of the species data</span></span>
-<span><span class="co"># Use nc = 16 equal-sized classes</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/grDevices/dev.html">dev.new</a></span><span class="op">(</span></span>
-<span>  title <span class="op">=</span> <span class="st">"Species"</span>,</span>
-<span>  width <span class="op">=</span> <span class="fl">10</span>,</span>
-<span>  height <span class="op">=</span> <span class="fl">5</span>,</span>
-<span>  noRStudioGD <span class="op">=</span> <span class="cn">TRUE</span></span>
-<span><span class="op">)</span></span>
-<span><span class="fu">coldiss</span><span class="op">(</span><span class="va">spe.dh</span>, nc <span class="op">=</span> <span class="fl">16</span>, diag <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co"># Euclidean distance matrix on spatial coordinates (2D)</span></span>
-<span><span class="va">spa.de</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/dist.html">dist</a></span><span class="op">(</span><span class="va">spa</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/grDevices/dev.html">dev.new</a></span><span class="op">(</span></span>
-<span>  title <span class="op">=</span> <span class="st">"x-y"</span>,</span>
-<span>  width <span class="op">=</span> <span class="fl">10</span>,</span>
-<span>  height <span class="op">=</span> <span class="fl">5</span>,</span>
-<span>  noRStudioGD <span class="op">=</span> <span class="cn">TRUE</span></span>
-<span><span class="op">)</span></span>
-<span><span class="fu">coldiss</span><span class="op">(</span><span class="va">spa.de</span>, nc <span class="op">=</span> <span class="fl">16</span>, diag <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co"># Euclidean distance matrix on distance from the source (1D)</span></span>
-<span><span class="va">dfs.df</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/as.data.frame.html">as.data.frame</a></span><span class="op">(</span><span class="va">env</span><span class="op">$</span><span class="va">dfs</span>, row.names <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/colnames.html">rownames</a></span><span class="op">(</span><span class="va">env</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="va">riv.de</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/dist.html">dist</a></span><span class="op">(</span><span class="va">dfs.df</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/grDevices/dev.html">dev.new</a></span><span class="op">(</span></span>
-<span>  title <span class="op">=</span> <span class="st">"Distance from the source"</span>,</span>
-<span>  width <span class="op">=</span> <span class="fl">10</span>,</span>
-<span>  height <span class="op">=</span> <span class="fl">5</span>,</span>
-<span>  noRStudioGD <span class="op">=</span> <span class="cn">TRUE</span></span>
-<span><span class="op">)</span></span>
-<span><span class="fu">coldiss</span><span class="op">(</span><span class="va">riv.de</span>, nc <span class="op">=</span> <span class="fl">16</span>, diag <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
-<span></span>
-<span></span>
-<span><span class="co">## Examples with artificial data</span></span>
-<span></span>
-<span><span class="co"># Compute five binary variables with 30 objects each.</span></span>
-<span><span class="co"># Each variable has a predefined number of 0 and 1</span></span>
-<span><span class="co"># Variable 1: 10 x 1 and 20 x 0; the order is randomized</span></span>
-<span><span class="va">var1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/sample.html">sample</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/rep.html">rep</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">10</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/rep.html">rep</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">20</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="co"># Variable 2: 15 x 0 and 15 x 1, one block each</span></span>
-<span><span class="va">var2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/rep.html">rep</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">15</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/rep.html">rep</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">15</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="co"># Variable 3: alternation of 3 x 1 and 3 x 0 up to 30 objects</span></span>
-<span><span class="va">var3</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/rep.html">rep</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">1</span>, <span class="fl">1</span>, <span class="fl">0</span>, <span class="fl">0</span>, <span class="fl">0</span><span class="op">)</span>, <span class="fl">5</span><span class="op">)</span></span>
-<span><span class="co"># Variable 4: alternation of 5 x 1 and 10 x 0 up to 30 objects</span></span>
-<span><span class="va">var4</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/rep.html">rep</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/rep.html">rep</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">5</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/rep.html">rep</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">10</span><span class="op">)</span><span class="op">)</span>, <span class="fl">2</span><span class="op">)</span></span>
-<span><span class="co"># Variable 5: 16 objects with randomized distribution of 7 x 1</span></span>
-<span><span class="co"># and 9 x 0, followed by 4 x 0 and 10 x 1</span></span>
-<span><span class="va">var5.1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/sample.html">sample</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/rep.html">rep</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">7</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/rep.html">rep</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">9</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="va">var5.2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/rep.html">rep</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">4</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/rep.html">rep</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">10</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="va">var5</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">var5.1</span>, <span class="va">var5.2</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co"># Variables 1 to 5 are put into a data frame</span></span>
-<span><span class="op">(</span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html">data.frame</a></span><span class="op">(</span><span class="va">var1</span>, <span class="va">var2</span>, <span class="va">var3</span>, <span class="va">var4</span>, <span class="va">var5</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/dim.html">dim</a></span><span class="op">(</span><span class="va">dat</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co"># Computation of a matrix of simple matching coefficients</span></span>
-<span><span class="co"># (called the Sokal and Michener index in ade4)</span></span>
-<span><span class="va">dat.s1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://adeverse.github.io/ade4/reference/dist.binary.html">dist.binary</a></span><span class="op">(</span><span class="va">dat</span>, method <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/grDevices/dev.html">dev.new</a></span><span class="op">(</span></span>
-<span>  title <span class="op">=</span> <span class="st">"S1 on fictitious data"</span>,</span>
-<span>  width <span class="op">=</span> <span class="fl">10</span>,</span>
-<span>  height <span class="op">=</span> <span class="fl">5</span>,</span>
-<span>  noRStudioGD <span class="op">=</span> <span class="cn">TRUE</span></span>
-<span><span class="op">)</span></span>
-<span><span class="fu">coldiss</span><span class="op">(</span><span class="va">dat.s1</span>, diag <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
-<span></span>
-<span></span>
-<span><span class="co"># Fictitious data for Gower (S15) index</span></span>
-<span><span class="co"># Random normal deviates with zero mean and unit standard deviation</span></span>
-<span><span class="va">var.g1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">rnorm</a></span><span class="op">(</span><span class="fl">30</span>, <span class="fl">0</span>, <span class="fl">1</span><span class="op">)</span></span>
-<span><span class="co"># Random uniform deviates from 0 to 5</span></span>
-<span><span class="va">var.g2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/Uniform.html">runif</a></span><span class="op">(</span><span class="fl">30</span>, <span class="fl">0</span>, <span class="fl">5</span><span class="op">)</span></span>
-<span><span class="co"># Factor with 3 levels (10 objects each)</span></span>
-<span><span class="va">var.g3</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/gl.html">gl</a></span><span class="op">(</span><span class="fl">3</span>, <span class="fl">10</span>, labels <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="co"># Factor with 2 levels, orthogonal to var.g3</span></span>
-<span><span class="va">var.g4</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/gl.html">gl</a></span><span class="op">(</span><span class="fl">2</span>, <span class="fl">5</span>, <span class="fl">30</span>, labels <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"D"</span>, <span class="st">"E"</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="op">(</span><span class="va">dat2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html">data.frame</a></span><span class="op">(</span><span class="va">var.g1</span>, <span class="va">var.g2</span>, <span class="va">var.g3</span>, <span class="va">var.g4</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="va">dat2</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co"># Computation of a matrix of Gower dissimilarity using</span></span>
-<span><span class="co"># function daisy()</span></span>
-<span></span>
-<span><span class="co"># Complete data matrix (4 variables)</span></span>
-<span><span class="va">dat2.S15</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/cluster/man/daisy.html">daisy</a></span><span class="op">(</span><span class="va">dat2</span>, <span class="st">"gower"</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/range.html">range</a></span><span class="op">(</span><span class="va">dat2.S15</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/grDevices/dev.html">dev.new</a></span><span class="op">(</span></span>
-<span>  title <span class="op">=</span> <span class="st">"S15 on fictitious data - daisy"</span>,</span>
-<span>  width <span class="op">=</span> <span class="fl">10</span>,</span>
-<span>  height <span class="op">=</span> <span class="fl">5</span>,</span>
-<span>  noRStudioGD <span class="op">=</span> <span class="cn">TRUE</span></span>
-<span><span class="op">)</span></span>
-<span><span class="fu">coldiss</span><span class="op">(</span><span class="va">dat2.S15</span>, diag <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co"># Data matrix with the two orthogonal factors only</span></span>
-<span><span class="va">dat2partial.S15</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/cluster/man/daisy.html">daisy</a></span><span class="op">(</span><span class="va">dat2</span><span class="op">[</span>, <span class="fl">3</span><span class="op">:</span><span class="fl">4</span><span class="op">]</span>, <span class="st">"gower"</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/grDevices/dev.html">dev.new</a></span><span class="op">(</span></span>
-<span>  title <span class="op">=</span> <span class="st">"S15 on fictitious data, 2 factors - daisy"</span>,</span>
-<span>  width <span class="op">=</span> <span class="fl">10</span>,</span>
-<span>  height <span class="op">=</span> <span class="fl">5</span>,</span>
-<span>  noRStudioGD <span class="op">=</span> <span class="cn">TRUE</span></span>
-<span><span class="op">)</span></span>
-<span><span class="fu">coldiss</span><span class="op">(</span><span class="va">dat2partial.S15</span>, diag <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/matrix.html">as.matrix</a></span><span class="op">(</span><span class="va">dat2partial.S15</span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co"># What are the dissimilarity values in the dat2partial.S15 matrix?</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/levels.html">levels</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/factor.html">factor</a></span><span class="op">(</span><span class="va">dat2partial.S15</span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co"># Computation of a matrix of Gower dissimilarity using</span></span>
-<span><span class="co"># function gowdis() of package FD</span></span>
-<span><span class="op">?</span><span class="va">gowdis</span></span>
-<span><span class="va">dat2.S15.2</span> <span class="op">&lt;-</span> <span class="fu">gowdis</span><span class="op">(</span><span class="va">dat2</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/range.html">range</a></span><span class="op">(</span><span class="va">dat2.S15.2</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/grDevices/dev.html">dev.new</a></span><span class="op">(</span></span>
-<span>  title <span class="op">=</span> <span class="st">"S15 on fictitious data - gowdis"</span>,</span>
-<span>  width <span class="op">=</span> <span class="fl">10</span>,</span>
-<span>  height <span class="op">=</span> <span class="fl">5</span>,</span>
-<span>  noRStudioGD <span class="op">=</span> <span class="cn">TRUE</span></span>
-<span><span class="op">)</span></span>
-<span><span class="fu">coldiss</span><span class="op">(</span><span class="va">dat2.S15.2</span>, diag <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co"># Data matrix with the two orthogonal factors only</span></span>
-<span><span class="va">dat2partial.S15.2</span> <span class="op">&lt;-</span> <span class="fu">gowdis</span><span class="op">(</span><span class="va">dat2</span><span class="op">[</span>, <span class="fl">3</span><span class="op">:</span><span class="fl">4</span><span class="op">]</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/grDevices/dev.html">dev.new</a></span><span class="op">(</span></span>
-<span>  title <span class="op">=</span> <span class="st">"S15 on fictitious data, 2 factors - gowdis"</span>,</span>
-<span>  width <span class="op">=</span> <span class="fl">10</span>,</span>
-<span>  height <span class="op">=</span> <span class="fl">5</span>,</span>
-<span>  noRStudioGD <span class="op">=</span> <span class="cn">TRUE</span></span>
-<span><span class="op">)</span></span>
-<span><span class="fu">coldiss</span><span class="op">(</span><span class="va">dat2partial.S15.2</span>, diag <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/matrix.html">as.matrix</a></span><span class="op">(</span><span class="va">dat2partial.S15.2</span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co"># What are the dissimilarity values in the dat2partial.S15.2 </span></span>
-<span><span class="co"># matrix? </span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/levels.html">levels</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/factor.html">factor</a></span><span class="op">(</span><span class="va">dat2partial.S15.2</span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span></span>
-<span><span class="co">### R-mode dissimilarity matrices</span></span>
-<span></span>
-<span><span class="co"># Transpose matrix of species abundances</span></span>
-<span><span class="va">spe.t</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/t.html">t</a></span><span class="op">(</span><span class="va">spe</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co"># Chi-square pre-transformation followed by Euclidean distance</span></span>
-<span><span class="va">spe.t.chi</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://vegandevs.github.io/vegan/reference/decostand.html">decostand</a></span><span class="op">(</span><span class="va">spe.t</span>, <span class="st">"chi.square"</span><span class="op">)</span></span>
-<span><span class="va">spe.t.D16</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/dist.html">dist</a></span><span class="op">(</span><span class="va">spe.t.chi</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/grDevices/dev.html">dev.new</a></span><span class="op">(</span></span>
-<span>  title <span class="op">=</span> <span class="st">"D16 on fish species (R-mode)"</span>,</span>
-<span>  width <span class="op">=</span> <span class="fl">10</span>,</span>
-<span>  height <span class="op">=</span> <span class="fl">5</span>,</span>
-<span>  noRStudioGD <span class="op">=</span> <span class="cn">TRUE</span></span>
-<span><span class="op">)</span></span>
-<span><span class="fu">coldiss</span><span class="op">(</span><span class="va">spe.t.D16</span>, diag <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co"># Jaccard index on fish presence-absence</span></span>
-<span><span class="va">spe.t.S7</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://vegandevs.github.io/vegan/reference/vegdist.html">vegdist</a></span><span class="op">(</span><span class="va">spe.t</span>, <span class="st">"jaccard"</span>, binary <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/grDevices/dev.html">dev.new</a></span><span class="op">(</span></span>
-<span>  title <span class="op">=</span> <span class="st">"S7 on fish species (R-mode)"</span>,</span>
-<span>  width <span class="op">=</span> <span class="fl">10</span>,</span>
-<span>  height <span class="op">=</span> <span class="fl">5</span>,</span>
-<span>  noRStudioGD <span class="op">=</span> <span class="cn">TRUE</span></span>
-<span><span class="op">)</span></span>
-<span><span class="fu">coldiss</span><span class="op">(</span><span class="va">spe.t.S7</span>, diag <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
-<span></span>
-<span></span>
-<span><span class="co">## R-mode correlation matrices</span></span>
-<span></span>
-<span><span class="co"># Pearson r linear correlation among environmental variables</span></span>
-<span><span class="va">env.pearson</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/cor.html">cor</a></span><span class="op">(</span><span class="va">env</span><span class="op">)</span> <span class="co"># default method = "pearson"</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/Round.html">round</a></span><span class="op">(</span><span class="va">env.pearson</span>, <span class="fl">2</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co"># Reorder the variables prior to plotting</span></span>
-<span><span class="va">env.o</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/gclus/man/order.html">order.single</a></span><span class="op">(</span><span class="va">env.pearson</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co"># pairs() is a function to plot a matrix of bivariate scatter </span></span>
-<span><span class="co"># plots.</span></span>
-<span><span class="co"># panelutils.R is a set of functions that add useful features to</span></span>
-<span><span class="co"># pairs():</span></span>
-<span><span class="co"># upper.panel = panel.cor: to print correlation coefficients in the</span></span>
-<span><span class="co"># upper panel, with significance levels;</span></span>
-<span><span class="co"># diag.panel = panel.hist: to plot histograms of the variables in</span></span>
-<span><span class="co"># the diagonal.</span></span>
-<span><span class="co"># Specify method for the choice of the correlation coefficient:</span></span>
-<span><span class="co"># by default, method = "pearson", other choices are "spearman"</span></span>
-<span><span class="co"># and "kendall".</span></span>
-<span><span class="co"># To get a plot in grey tones instead of colors, use no.col = TRUE</span></span>
-<span><span class="co"># and lower.panel = panel.smoothb.</span></span>
-<span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/grDevices/dev.html">dev.new</a></span><span class="op">(</span></span>
-<span>  title <span class="op">=</span> <span class="st">"Linear correlation matrix"</span>,</span>
-<span>  width <span class="op">=</span> <span class="fl">8</span>,</span>
-<span>  height <span class="op">=</span> <span class="fl">8</span>,</span>
-<span>  noRStudioGD <span class="op">=</span> <span class="cn">TRUE</span></span>
-<span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/pairs.html">pairs</a></span><span class="op">(</span></span>
-<span>  <span class="va">env</span><span class="op">[</span>, <span class="va">env.o</span><span class="op">]</span>,</span>
-<span>  lower.panel <span class="op">=</span> <span class="va">panel.smooth</span>,</span>
-<span>  upper.panel <span class="op">=</span> <span class="va">panel.cor</span>,</span>
-<span>  diag.panel <span class="op">=</span> <span class="va">panel.hist</span>,</span>
-<span>  main <span class="op">=</span> <span class="st">"Pearson Correlation Matrix"</span></span>
-<span><span class="op">)</span></span>
-<span></span>
-<span><span class="co"># Kendall tau rank correlation among environmental variables,</span></span>
-<span><span class="co"># no colours</span></span>
-<span><span class="va">env.ken</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/cor.html">cor</a></span><span class="op">(</span><span class="va">env</span>, method <span class="op">=</span> <span class="st">"kendall"</span><span class="op">)</span></span>
-<span><span class="va">env.o</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/gclus/man/order.html">order.single</a></span><span class="op">(</span><span class="va">env.ken</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/grDevices/dev.html">dev.new</a></span><span class="op">(</span></span>
-<span>  title <span class="op">=</span> <span class="st">"Rank correlation matrix"</span>,</span>
-<span>  width <span class="op">=</span> <span class="fl">8</span>,</span>
-<span>  height <span class="op">=</span> <span class="fl">8</span>,</span>
-<span>  noRStudioGD <span class="op">=</span> <span class="cn">TRUE</span></span>
-<span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/pairs.html">pairs</a></span><span class="op">(</span></span>
-<span>  <span class="va">env</span><span class="op">[</span>, <span class="va">env.o</span><span class="op">]</span>,</span>
-<span>  lower.panel <span class="op">=</span> <span class="va">panel.smoothb</span>,</span>
-<span>  upper.panel <span class="op">=</span> <span class="va">panel.cor</span>,</span>
-<span>  no.col <span class="op">=</span> <span class="cn">TRUE</span>,</span>
-<span>  method <span class="op">=</span> <span class="st">"kendall"</span>,</span>
-<span>  diag.panel <span class="op">=</span> <span class="va">panel.hist</span>,</span>
-<span>  main <span class="op">=</span> <span class="st">"Kendall Correlation Matrix"</span></span>
-<span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="do">### CHAPTER 3: ASSOCIATION MEASURES</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="do">###</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="do">### Online supporting material for:</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="do">### Borcard D., Gillet F. &amp; Legendre P. Numerical Ecology with R,</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="do">### Springer, 2nd edition, 2018</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Load packages, functions and data ===============================</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ade4)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(adespatial)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(vegan)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gclus)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(cluster)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(FD)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Source additional functions that will be used later in this</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Chapter. Our scripts assume that files to be read are in</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co"># the working directory.</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"coldiss.R"</span>)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"panelutils.R"</span>)</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the data</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="co"># File Doubs.Rdata is assumed to be in the working directory</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="st">"Doubs.Rdata"</span>)</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Remove empty site 8</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>spe <span class="ot">&lt;-</span> spe[<span class="sc">-</span><span class="dv">8</span>, ]</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>env <span class="ot">&lt;-</span> env[<span class="sc">-</span><span class="dv">8</span>, ]</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>spa <span class="ot">&lt;-</span> spa[<span class="sc">-</span><span class="dv">8</span>, ]</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="do">### Q-mode dissimilarity matrices</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="do">## Q-mode dissimilarity and distance measures for</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="do">## (semi-)quantitative data</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="co"># Percentage difference (aka Bray-Curtis) dissimilarity matrix</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="co"># on raw species data. ".db" means "distance Bray".</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>spe.db <span class="ot">&lt;-</span> <span class="fu">vegdist</span>(spe)  <span class="co"># method = "bray" (default)</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(spe.db)</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="co"># Percentage difference (aka Bray-Curtis) dissimilarity matrix</span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="co"># on log-transformed abundances</span></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>spe.dbln <span class="ot">&lt;-</span> <span class="fu">vegdist</span>(<span class="fu">log1p</span>(spe))</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(spe.dbln)</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="co"># Chord distance matrix</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>spe.dc <span class="ot">&lt;-</span> <span class="fu">dist.ldc</span>(spe, <span class="st">"chord"</span>)</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>   <span class="co"># Alternate, two-step computation in vegan:</span></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>   spe.norm <span class="ot">&lt;-</span> <span class="fu">decostand</span>(spe, <span class="st">"nor"</span>)</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>   spe.dc <span class="ot">&lt;-</span> <span class="fu">dist</span>(spe.norm)</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(spe.dc)</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="co"># Hellinger distance matrix</span></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>spe.dh <span class="ot">&lt;-</span> <span class="fu">dist.ldc</span>(spe) <span class="co"># Hellinger is the default distance</span></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>   <span class="co"># Alternate, two-step computation in vegan:</span></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>   spe.hel <span class="ot">&lt;-</span> <span class="fu">decostand</span>(spe, <span class="st">"hel"</span>)</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>   spe.dh <span class="ot">&lt;-</span> <span class="fu">dist</span>(spe.hel)</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(spe.dh)</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="co"># Log-chord distance matrix</span></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>spe.logchord <span class="ot">&lt;-</span> <span class="fu">dist.ldc</span>(spe, <span class="st">"log.chord"</span>)</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>   <span class="co"># Alternate, three-step computation in vegan:</span></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>   spe.ln <span class="ot">&lt;-</span> <span class="fu">log1p</span>(spe)</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>   spe.ln.norm <span class="ot">&lt;-</span> <span class="fu">decostand</span>(spe.ln, <span class="st">"nor"</span>)</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>   spe.logchord <span class="ot">&lt;-</span> <span class="fu">dist</span>(spe.ln.norm)</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(spe.logchord)</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="do">## Q-mode dissimilarity measures for binary data</span></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="co"># Jaccard dissimilarity matrix using function vegdist()</span></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>spe.dj <span class="ot">&lt;-</span> <span class="fu">vegdist</span>(spe, <span class="st">"jac"</span>, <span class="at">binary =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(spe.dj)</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">sqrt</span>(spe.dj))</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="co"># Jaccard dissimilarity matrix using function dist()</span></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>spe.dj2 <span class="ot">&lt;-</span> <span class="fu">dist</span>(spe, <span class="st">"binary"</span>)</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(spe.dj2)</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="co"># Jaccard dissimilarity matrix using function dist.binary()</span></span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>spe.dj3 <span class="ot">&lt;-</span> <span class="fu">dist.binary</span>(spe, <span class="at">method =</span> <span class="dv">1</span>)</span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(spe.dj3)</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a><span class="co"># Sorensen dissimilarity matrix using function dist.ldc()</span></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>spe.ds <span class="ot">&lt;-</span> <span class="fu">dist.ldc</span>(spe, <span class="st">"sorensen"</span>)</span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a><span class="co"># Sorensen dissimilarity matrix using function vegdist()</span></span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>spe.ds2 <span class="ot">&lt;-</span> <span class="fu">vegdist</span>(spe, <span class="at">method =</span> <span class="st">"bray"</span>, <span class="at">binary =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a><span class="co"># Sorensen dissimilarity matrix using function dist.binary()</span></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>spe.ds3 <span class="ot">&lt;-</span> <span class="fu">dist.binary</span>(spe, <span class="at">method =</span> <span class="dv">5</span>)</span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(spe.ds)</span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(spe.ds2)</span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">sqrt</span>(spe.ds2))</span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(spe.ds3)</span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a><span class="co"># Ochiai dissimilarity matrix</span></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>spe.och <span class="ot">&lt;-</span> <span class="fu">dist.ldc</span>(spe, <span class="st">"ochiai"</span>)   <span class="co"># or</span></span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>spe.och <span class="ot">&lt;-</span> <span class="fu">dist.binary</span>(spe, <span class="at">method =</span> <span class="dv">7</span>)</span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(spe.och)</span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a><span class="do">## Graphical display of association matrices</span></span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a><span class="co"># Colour plots (also called heat maps, or trellis diagrams in the</span></span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a><span class="co"># data analysis literature) using the coldiss() function</span></span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a><span class="co"># Usage:</span></span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a><span class="co"># coldiss(D = dissimilarity.matrix,</span></span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a><span class="co">#         nc = 4,</span></span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a><span class="co">#         byrank = TRUE,</span></span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a><span class="co">#         diag = FALSE)</span></span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a><span class="co"># If D is not a dissimilarity matrix (max(D) &gt; 1), then D is</span></span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a><span class="co"># divided by max(D)</span></span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a><span class="co"># nc number of colours (classes)</span></span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a><span class="co"># byrank =  TRUE    equal-sized classes</span></span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a><span class="co"># byrank =  FALSE   equal-length intervals</span></span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a><span class="co"># diag = TRUE   print object labels also on the diagonal</span></span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a><span class="do">## Compare dissimilarity and distance matrices obtained from the</span></span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a><span class="do">## species data. Four colours are used with equal-length intervals</span></span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a><span class="co"># Percentage difference (aka Bray-Curtis) dissimilarity matrix on</span></span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a><span class="co"># raw species abundance data</span></span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.new</span>(</span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Percentage difference (Bray-Curtis), raw data"</span>,</span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a>  <span class="at">width =</span> <span class="dv">10</span>,</span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a>  <span class="at">height =</span> <span class="dv">5</span>,</span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a>  <span class="at">noRStudioGD =</span> <span class="cn">TRUE</span></span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a><span class="fu">coldiss</span>(spe.db, <span class="at">byrank =</span> <span class="cn">FALSE</span>, <span class="at">diag =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a><span class="co"># Same but on log-transformed data</span></span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.new</span>(</span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Percentage difference (Bray-Curtis), ln(y+1) data"</span>,</span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a>  <span class="at">width =</span> <span class="dv">10</span>,</span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a>  <span class="at">height =</span> <span class="dv">5</span>,</span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a>  <span class="at">noRStudioGD =</span> <span class="cn">TRUE</span></span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a><span class="fu">coldiss</span>(spe.dbln, <span class="at">byrank =</span> <span class="cn">FALSE</span>, <span class="at">diag =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a><span class="co"># Chord distance matrix</span></span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.new</span>(</span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Chord"</span>,</span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a>  <span class="at">width =</span> <span class="dv">10</span>,</span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a>  <span class="at">height =</span> <span class="dv">5</span>,</span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a>  <span class="at">noRStudioGD =</span> <span class="cn">TRUE</span></span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a><span class="fu">coldiss</span>(spe.dc, <span class="at">byrank =</span> <span class="cn">FALSE</span>, <span class="at">diag =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a><span class="co"># Hellinger distance matrix</span></span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.new</span>(</span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Hellinger"</span>,</span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a>  <span class="at">width =</span> <span class="dv">10</span>,</span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a>  <span class="at">height =</span> <span class="dv">5</span>,</span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a>  <span class="at">noRStudioGD =</span> <span class="cn">TRUE</span></span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a><span class="fu">coldiss</span>(spe.dh, <span class="at">byrank =</span> <span class="cn">FALSE</span>, <span class="at">diag =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a><span class="co"># log-chord distance matrix</span></span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.new</span>(</span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Log-chord"</span>,</span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a>  <span class="at">width =</span> <span class="dv">10</span>,</span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a>  <span class="at">height =</span> <span class="dv">5</span>,</span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a>  <span class="at">noRStudioGD =</span> <span class="cn">TRUE</span></span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a><span class="fu">coldiss</span>(spe.logchord, <span class="at">byrank =</span> <span class="cn">FALSE</span>, <span class="at">diag =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a><span class="co"># Jaccard distance matrix</span></span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.new</span>(</span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Jaccard"</span>,</span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a>  <span class="at">width =</span> <span class="dv">10</span>,</span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a>  <span class="at">height =</span> <span class="dv">5</span>,</span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a>  <span class="at">noRStudioGD =</span> <span class="cn">TRUE</span></span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a><span class="fu">coldiss</span>(spe.dj, <span class="at">byrank =</span> <span class="cn">FALSE</span>, <span class="at">diag =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a><span class="co"># Simple matching dissimilarity</span></span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a><span class="co"># (called the Sokal and Michener index in ade4)</span></span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a>spe.s1 <span class="ot">&lt;-</span> <span class="fu">dist.binary</span>(spe, <span class="at">method =</span> <span class="dv">2</span>)</span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.new</span>(</span>
+<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"S1 on species data"</span>,</span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a>  <span class="at">width =</span> <span class="dv">10</span>,</span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a>  <span class="at">height =</span> <span class="dv">5</span>,</span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a>  <span class="at">noRStudioGD =</span> <span class="cn">TRUE</span></span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a><span class="fu">coldiss</span>(spe.s1 <span class="sc">^</span> <span class="dv">2</span>, <span class="at">byrank =</span> <span class="cn">FALSE</span>, <span class="at">diag =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a><span class="do">## Compare distance matrices from environmental, species and</span></span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a><span class="do">## spatial data. 16 colours with equal-size classes</span></span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a><span class="co"># Remove the 'dfs' variable from the env dataset</span></span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a>env2 <span class="ot">&lt;-</span> env[, <span class="sc">-</span><span class="dv">1</span>]</span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a><span class="co"># Euclidean distance matrix of the standardized env2 data frame</span></span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a>env.de <span class="ot">&lt;-</span> <span class="fu">dist</span>(<span class="fu">scale</span>(env2))</span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.new</span>(</span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Environment"</span>,</span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a>  <span class="at">width =</span> <span class="dv">10</span>,</span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a>  <span class="at">height =</span> <span class="dv">5</span>,</span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a>  <span class="at">noRStudioGD =</span> <span class="cn">TRUE</span></span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a><span class="fu">coldiss</span>(env.de, <span class="at">nc =</span> <span class="dv">16</span>, <span class="at">diag =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a><span class="co"># Hellinger distance matrix of the species data</span></span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a><span class="co"># Use nc = 16 equal-sized classes</span></span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.new</span>(</span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Species"</span>,</span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a>  <span class="at">width =</span> <span class="dv">10</span>,</span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a>  <span class="at">height =</span> <span class="dv">5</span>,</span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>  <span class="at">noRStudioGD =</span> <span class="cn">TRUE</span></span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a><span class="fu">coldiss</span>(spe.dh, <span class="at">nc =</span> <span class="dv">16</span>, <span class="at">diag =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a><span class="co"># Euclidean distance matrix on spatial coordinates (2D)</span></span>
+<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a>spa.de <span class="ot">&lt;-</span> <span class="fu">dist</span>(spa)</span>
+<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.new</span>(</span>
+<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"x-y"</span>,</span>
+<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a>  <span class="at">width =</span> <span class="dv">10</span>,</span>
+<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a>  <span class="at">height =</span> <span class="dv">5</span>,</span>
+<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a>  <span class="at">noRStudioGD =</span> <span class="cn">TRUE</span></span>
+<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a><span class="fu">coldiss</span>(spa.de, <span class="at">nc =</span> <span class="dv">16</span>, <span class="at">diag =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a><span class="co"># Euclidean distance matrix on distance from the source (1D)</span></span>
+<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a>dfs.df <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(env<span class="sc">$</span>dfs, <span class="at">row.names =</span> <span class="fu">rownames</span>(env))</span>
+<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a>riv.de <span class="ot">&lt;-</span> <span class="fu">dist</span>(dfs.df)</span>
+<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.new</span>(</span>
+<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Distance from the source"</span>,</span>
+<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a>  <span class="at">width =</span> <span class="dv">10</span>,</span>
+<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a>  <span class="at">height =</span> <span class="dv">5</span>,</span>
+<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a>  <span class="at">noRStudioGD =</span> <span class="cn">TRUE</span></span>
+<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a><span class="fu">coldiss</span>(riv.de, <span class="at">nc =</span> <span class="dv">16</span>, <span class="at">diag =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a><span class="do">## Examples with artificial data</span></span>
+<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute five binary variables with 30 objects each.</span></span>
+<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a><span class="co"># Each variable has a predefined number of 0 and 1</span></span>
+<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a><span class="co"># Variable 1: 10 x 1 and 20 x 0; the order is randomized</span></span>
+<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a>var1 <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="fu">c</span>(<span class="fu">rep</span>(<span class="dv">1</span>, <span class="dv">10</span>), <span class="fu">rep</span>(<span class="dv">0</span>, <span class="dv">20</span>)))</span>
+<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a><span class="co"># Variable 2: 15 x 0 and 15 x 1, one block each</span></span>
+<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a>var2 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">rep</span>(<span class="dv">0</span>, <span class="dv">15</span>), <span class="fu">rep</span>(<span class="dv">1</span>, <span class="dv">15</span>))</span>
+<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a><span class="co"># Variable 3: alternation of 3 x 1 and 3 x 0 up to 30 objects</span></span>
+<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a>var3 <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>), <span class="dv">5</span>)</span>
+<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a><span class="co"># Variable 4: alternation of 5 x 1 and 10 x 0 up to 30 objects</span></span>
+<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a>var4 <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="fu">rep</span>(<span class="dv">1</span>, <span class="dv">5</span>), <span class="fu">rep</span>(<span class="dv">0</span>, <span class="dv">10</span>)), <span class="dv">2</span>)</span>
+<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a><span class="co"># Variable 5: 16 objects with randomized distribution of 7 x 1</span></span>
+<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a><span class="co"># and 9 x 0, followed by 4 x 0 and 10 x 1</span></span>
+<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a>var5<span class="fl">.1</span> <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="fu">c</span>(<span class="fu">rep</span>(<span class="dv">1</span>, <span class="dv">7</span>), <span class="fu">rep</span>(<span class="dv">0</span>, <span class="dv">9</span>)))</span>
+<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a>var5<span class="fl">.2</span> <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">rep</span>(<span class="dv">0</span>, <span class="dv">4</span>), <span class="fu">rep</span>(<span class="dv">1</span>, <span class="dv">10</span>))</span>
+<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a>var5 <span class="ot">&lt;-</span> <span class="fu">c</span>(var5<span class="fl">.1</span>, var5<span class="fl">.2</span>)</span>
+<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a><span class="co"># Variables 1 to 5 are put into a data frame</span></span>
+<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a>(dat <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(var1, var2, var3, var4, var5))</span>
+<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(dat)</span>
+<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a><span class="co"># Computation of a matrix of simple matching coefficients</span></span>
+<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a><span class="co"># (called the Sokal and Michener index in ade4)</span></span>
+<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a>dat.s1 <span class="ot">&lt;-</span> <span class="fu">dist.binary</span>(dat, <span class="at">method =</span> <span class="dv">2</span>)</span>
+<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.new</span>(</span>
+<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"S1 on fictitious data"</span>,</span>
+<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a>  <span class="at">width =</span> <span class="dv">10</span>,</span>
+<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a>  <span class="at">height =</span> <span class="dv">5</span>,</span>
+<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a>  <span class="at">noRStudioGD =</span> <span class="cn">TRUE</span></span>
+<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a><span class="fu">coldiss</span>(dat.s1, <span class="at">diag =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a><span class="co"># Fictitious data for Gower (S15) index</span></span>
+<span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a><span class="co"># Random normal deviates with zero mean and unit standard deviation</span></span>
+<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a>var.g1 <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">30</span>, <span class="dv">0</span>, <span class="dv">1</span>)</span>
+<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a><span class="co"># Random uniform deviates from 0 to 5</span></span>
+<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a>var.g2 <span class="ot">&lt;-</span> <span class="fu">runif</span>(<span class="dv">30</span>, <span class="dv">0</span>, <span class="dv">5</span>)</span>
+<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a><span class="co"># Factor with 3 levels (10 objects each)</span></span>
+<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a>var.g3 <span class="ot">&lt;-</span> <span class="fu">gl</span>(<span class="dv">3</span>, <span class="dv">10</span>, <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>))</span>
+<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a><span class="co"># Factor with 2 levels, orthogonal to var.g3</span></span>
+<span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a>var.g4 <span class="ot">&lt;-</span> <span class="fu">gl</span>(<span class="dv">2</span>, <span class="dv">5</span>, <span class="dv">30</span>, <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"D"</span>, <span class="st">"E"</span>))</span>
+<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a>(dat2 <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(var.g1, var.g2, var.g3, var.g4))</span>
+<span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(dat2)</span>
+<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a><span class="co"># Computation of a matrix of Gower dissimilarity using</span></span>
+<span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a><span class="co"># function daisy()</span></span>
+<span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a><span class="co"># Complete data matrix (4 variables)</span></span>
+<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a>dat2.S15 <span class="ot">&lt;-</span> <span class="fu">daisy</span>(dat2, <span class="st">"gower"</span>)</span>
+<span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a><span class="fu">range</span>(dat2.S15)</span>
+<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.new</span>(</span>
+<span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"S15 on fictitious data - daisy"</span>,</span>
+<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a>  <span class="at">width =</span> <span class="dv">10</span>,</span>
+<span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a>  <span class="at">height =</span> <span class="dv">5</span>,</span>
+<span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a>  <span class="at">noRStudioGD =</span> <span class="cn">TRUE</span></span>
+<span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a><span class="fu">coldiss</span>(dat2.S15, <span class="at">diag =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-286"><a href="#cb1-286" aria-hidden="true" tabindex="-1"></a><span class="co"># Data matrix with the two orthogonal factors only</span></span>
+<span id="cb1-287"><a href="#cb1-287" aria-hidden="true" tabindex="-1"></a>dat2partial.S15 <span class="ot">&lt;-</span> <span class="fu">daisy</span>(dat2[, <span class="dv">3</span><span class="sc">:</span><span class="dv">4</span>], <span class="st">"gower"</span>)</span>
+<span id="cb1-288"><a href="#cb1-288" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.new</span>(</span>
+<span id="cb1-289"><a href="#cb1-289" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"S15 on fictitious data, 2 factors - daisy"</span>,</span>
+<span id="cb1-290"><a href="#cb1-290" aria-hidden="true" tabindex="-1"></a>  <span class="at">width =</span> <span class="dv">10</span>,</span>
+<span id="cb1-291"><a href="#cb1-291" aria-hidden="true" tabindex="-1"></a>  <span class="at">height =</span> <span class="dv">5</span>,</span>
+<span id="cb1-292"><a href="#cb1-292" aria-hidden="true" tabindex="-1"></a>  <span class="at">noRStudioGD =</span> <span class="cn">TRUE</span></span>
+<span id="cb1-293"><a href="#cb1-293" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-294"><a href="#cb1-294" aria-hidden="true" tabindex="-1"></a><span class="fu">coldiss</span>(dat2partial.S15, <span class="at">diag =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-295"><a href="#cb1-295" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">as.matrix</span>(dat2partial.S15))</span>
+<span id="cb1-296"><a href="#cb1-296" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-297"><a href="#cb1-297" aria-hidden="true" tabindex="-1"></a><span class="co"># What are the dissimilarity values in the dat2partial.S15 matrix?</span></span>
+<span id="cb1-298"><a href="#cb1-298" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(<span class="fu">factor</span>(dat2partial.S15))</span>
+<span id="cb1-299"><a href="#cb1-299" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-300"><a href="#cb1-300" aria-hidden="true" tabindex="-1"></a><span class="co"># Computation of a matrix of Gower dissimilarity using</span></span>
+<span id="cb1-301"><a href="#cb1-301" aria-hidden="true" tabindex="-1"></a><span class="co"># function gowdis() of package FD</span></span>
+<span id="cb1-302"><a href="#cb1-302" aria-hidden="true" tabindex="-1"></a>?gowdis</span>
+<span id="cb1-303"><a href="#cb1-303" aria-hidden="true" tabindex="-1"></a>dat2.S15<span class="fl">.2</span> <span class="ot">&lt;-</span> <span class="fu">gowdis</span>(dat2)</span>
+<span id="cb1-304"><a href="#cb1-304" aria-hidden="true" tabindex="-1"></a><span class="fu">range</span>(dat2.S15<span class="fl">.2</span>)</span>
+<span id="cb1-305"><a href="#cb1-305" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.new</span>(</span>
+<span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"S15 on fictitious data - gowdis"</span>,</span>
+<span id="cb1-307"><a href="#cb1-307" aria-hidden="true" tabindex="-1"></a>  <span class="at">width =</span> <span class="dv">10</span>,</span>
+<span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a>  <span class="at">height =</span> <span class="dv">5</span>,</span>
+<span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a>  <span class="at">noRStudioGD =</span> <span class="cn">TRUE</span></span>
+<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-311"><a href="#cb1-311" aria-hidden="true" tabindex="-1"></a><span class="fu">coldiss</span>(dat2.S15<span class="fl">.2</span>, <span class="at">diag =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-312"><a href="#cb1-312" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-313"><a href="#cb1-313" aria-hidden="true" tabindex="-1"></a><span class="co"># Data matrix with the two orthogonal factors only</span></span>
+<span id="cb1-314"><a href="#cb1-314" aria-hidden="true" tabindex="-1"></a>dat2partial.S15<span class="fl">.2</span> <span class="ot">&lt;-</span> <span class="fu">gowdis</span>(dat2[, <span class="dv">3</span><span class="sc">:</span><span class="dv">4</span>])</span>
+<span id="cb1-315"><a href="#cb1-315" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.new</span>(</span>
+<span id="cb1-316"><a href="#cb1-316" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"S15 on fictitious data, 2 factors - gowdis"</span>,</span>
+<span id="cb1-317"><a href="#cb1-317" aria-hidden="true" tabindex="-1"></a>  <span class="at">width =</span> <span class="dv">10</span>,</span>
+<span id="cb1-318"><a href="#cb1-318" aria-hidden="true" tabindex="-1"></a>  <span class="at">height =</span> <span class="dv">5</span>,</span>
+<span id="cb1-319"><a href="#cb1-319" aria-hidden="true" tabindex="-1"></a>  <span class="at">noRStudioGD =</span> <span class="cn">TRUE</span></span>
+<span id="cb1-320"><a href="#cb1-320" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-321"><a href="#cb1-321" aria-hidden="true" tabindex="-1"></a><span class="fu">coldiss</span>(dat2partial.S15<span class="fl">.2</span>, <span class="at">diag =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-322"><a href="#cb1-322" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">as.matrix</span>(dat2partial.S15<span class="fl">.2</span>))</span>
+<span id="cb1-323"><a href="#cb1-323" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-324"><a href="#cb1-324" aria-hidden="true" tabindex="-1"></a><span class="co"># What are the dissimilarity values in the dat2partial.S15.2 </span></span>
+<span id="cb1-325"><a href="#cb1-325" aria-hidden="true" tabindex="-1"></a><span class="co"># matrix? </span></span>
+<span id="cb1-326"><a href="#cb1-326" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(<span class="fu">factor</span>(dat2partial.S15<span class="fl">.2</span>))</span>
+<span id="cb1-327"><a href="#cb1-327" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-328"><a href="#cb1-328" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-329"><a href="#cb1-329" aria-hidden="true" tabindex="-1"></a><span class="do">### R-mode dissimilarity matrices</span></span>
+<span id="cb1-330"><a href="#cb1-330" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-331"><a href="#cb1-331" aria-hidden="true" tabindex="-1"></a><span class="co"># Transpose matrix of species abundances</span></span>
+<span id="cb1-332"><a href="#cb1-332" aria-hidden="true" tabindex="-1"></a>spe.t <span class="ot">&lt;-</span> <span class="fu">t</span>(spe)</span>
+<span id="cb1-333"><a href="#cb1-333" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-334"><a href="#cb1-334" aria-hidden="true" tabindex="-1"></a><span class="co"># Chi-square pre-transformation followed by Euclidean distance</span></span>
+<span id="cb1-335"><a href="#cb1-335" aria-hidden="true" tabindex="-1"></a>spe.t.chi <span class="ot">&lt;-</span> <span class="fu">decostand</span>(spe.t, <span class="st">"chi.square"</span>)</span>
+<span id="cb1-336"><a href="#cb1-336" aria-hidden="true" tabindex="-1"></a>spe.t.D16 <span class="ot">&lt;-</span> <span class="fu">dist</span>(spe.t.chi)</span>
+<span id="cb1-337"><a href="#cb1-337" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.new</span>(</span>
+<span id="cb1-338"><a href="#cb1-338" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"D16 on fish species (R-mode)"</span>,</span>
+<span id="cb1-339"><a href="#cb1-339" aria-hidden="true" tabindex="-1"></a>  <span class="at">width =</span> <span class="dv">10</span>,</span>
+<span id="cb1-340"><a href="#cb1-340" aria-hidden="true" tabindex="-1"></a>  <span class="at">height =</span> <span class="dv">5</span>,</span>
+<span id="cb1-341"><a href="#cb1-341" aria-hidden="true" tabindex="-1"></a>  <span class="at">noRStudioGD =</span> <span class="cn">TRUE</span></span>
+<span id="cb1-342"><a href="#cb1-342" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-343"><a href="#cb1-343" aria-hidden="true" tabindex="-1"></a><span class="fu">coldiss</span>(spe.t.D16, <span class="at">diag =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-344"><a href="#cb1-344" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-345"><a href="#cb1-345" aria-hidden="true" tabindex="-1"></a><span class="co"># Jaccard index on fish presence-absence</span></span>
+<span id="cb1-346"><a href="#cb1-346" aria-hidden="true" tabindex="-1"></a>spe.t.S7 <span class="ot">&lt;-</span> <span class="fu">vegdist</span>(spe.t, <span class="st">"jaccard"</span>, <span class="at">binary =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-347"><a href="#cb1-347" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.new</span>(</span>
+<span id="cb1-348"><a href="#cb1-348" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"S7 on fish species (R-mode)"</span>,</span>
+<span id="cb1-349"><a href="#cb1-349" aria-hidden="true" tabindex="-1"></a>  <span class="at">width =</span> <span class="dv">10</span>,</span>
+<span id="cb1-350"><a href="#cb1-350" aria-hidden="true" tabindex="-1"></a>  <span class="at">height =</span> <span class="dv">5</span>,</span>
+<span id="cb1-351"><a href="#cb1-351" aria-hidden="true" tabindex="-1"></a>  <span class="at">noRStudioGD =</span> <span class="cn">TRUE</span></span>
+<span id="cb1-352"><a href="#cb1-352" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-353"><a href="#cb1-353" aria-hidden="true" tabindex="-1"></a><span class="fu">coldiss</span>(spe.t.S7, <span class="at">diag =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-354"><a href="#cb1-354" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-355"><a href="#cb1-355" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-356"><a href="#cb1-356" aria-hidden="true" tabindex="-1"></a><span class="do">## R-mode correlation matrices</span></span>
+<span id="cb1-357"><a href="#cb1-357" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-358"><a href="#cb1-358" aria-hidden="true" tabindex="-1"></a><span class="co"># Pearson r linear correlation among environmental variables</span></span>
+<span id="cb1-359"><a href="#cb1-359" aria-hidden="true" tabindex="-1"></a>env.pearson <span class="ot">&lt;-</span> <span class="fu">cor</span>(env) <span class="co"># default method = "pearson"</span></span>
+<span id="cb1-360"><a href="#cb1-360" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(env.pearson, <span class="dv">2</span>)</span>
+<span id="cb1-361"><a href="#cb1-361" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-362"><a href="#cb1-362" aria-hidden="true" tabindex="-1"></a><span class="co"># Reorder the variables prior to plotting</span></span>
+<span id="cb1-363"><a href="#cb1-363" aria-hidden="true" tabindex="-1"></a>env.o <span class="ot">&lt;-</span> <span class="fu">order.single</span>(env.pearson)</span>
+<span id="cb1-364"><a href="#cb1-364" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-365"><a href="#cb1-365" aria-hidden="true" tabindex="-1"></a><span class="co"># pairs() is a function to plot a matrix of bivariate scatter </span></span>
+<span id="cb1-366"><a href="#cb1-366" aria-hidden="true" tabindex="-1"></a><span class="co"># plots.</span></span>
+<span id="cb1-367"><a href="#cb1-367" aria-hidden="true" tabindex="-1"></a><span class="co"># panelutils.R is a set of functions that add useful features to</span></span>
+<span id="cb1-368"><a href="#cb1-368" aria-hidden="true" tabindex="-1"></a><span class="co"># pairs():</span></span>
+<span id="cb1-369"><a href="#cb1-369" aria-hidden="true" tabindex="-1"></a><span class="co"># upper.panel = panel.cor: to print correlation coefficients in the</span></span>
+<span id="cb1-370"><a href="#cb1-370" aria-hidden="true" tabindex="-1"></a><span class="co"># upper panel, with significance levels;</span></span>
+<span id="cb1-371"><a href="#cb1-371" aria-hidden="true" tabindex="-1"></a><span class="co"># diag.panel = panel.hist: to plot histograms of the variables in</span></span>
+<span id="cb1-372"><a href="#cb1-372" aria-hidden="true" tabindex="-1"></a><span class="co"># the diagonal.</span></span>
+<span id="cb1-373"><a href="#cb1-373" aria-hidden="true" tabindex="-1"></a><span class="co"># Specify method for the choice of the correlation coefficient:</span></span>
+<span id="cb1-374"><a href="#cb1-374" aria-hidden="true" tabindex="-1"></a><span class="co"># by default, method = "pearson", other choices are "spearman"</span></span>
+<span id="cb1-375"><a href="#cb1-375" aria-hidden="true" tabindex="-1"></a><span class="co"># and "kendall".</span></span>
+<span id="cb1-376"><a href="#cb1-376" aria-hidden="true" tabindex="-1"></a><span class="co"># To get a plot in grey tones instead of colors, use no.col = TRUE</span></span>
+<span id="cb1-377"><a href="#cb1-377" aria-hidden="true" tabindex="-1"></a><span class="co"># and lower.panel = panel.smoothb.</span></span>
+<span id="cb1-378"><a href="#cb1-378" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-379"><a href="#cb1-379" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.new</span>(</span>
+<span id="cb1-380"><a href="#cb1-380" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Linear correlation matrix"</span>,</span>
+<span id="cb1-381"><a href="#cb1-381" aria-hidden="true" tabindex="-1"></a>  <span class="at">width =</span> <span class="dv">8</span>,</span>
+<span id="cb1-382"><a href="#cb1-382" aria-hidden="true" tabindex="-1"></a>  <span class="at">height =</span> <span class="dv">8</span>,</span>
+<span id="cb1-383"><a href="#cb1-383" aria-hidden="true" tabindex="-1"></a>  <span class="at">noRStudioGD =</span> <span class="cn">TRUE</span></span>
+<span id="cb1-384"><a href="#cb1-384" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-385"><a href="#cb1-385" aria-hidden="true" tabindex="-1"></a><span class="fu">pairs</span>(</span>
+<span id="cb1-386"><a href="#cb1-386" aria-hidden="true" tabindex="-1"></a>  env[, env.o],</span>
+<span id="cb1-387"><a href="#cb1-387" aria-hidden="true" tabindex="-1"></a>  <span class="at">lower.panel =</span> panel.smooth,</span>
+<span id="cb1-388"><a href="#cb1-388" aria-hidden="true" tabindex="-1"></a>  <span class="at">upper.panel =</span> panel.cor,</span>
+<span id="cb1-389"><a href="#cb1-389" aria-hidden="true" tabindex="-1"></a>  <span class="at">diag.panel =</span> panel.hist,</span>
+<span id="cb1-390"><a href="#cb1-390" aria-hidden="true" tabindex="-1"></a>  <span class="at">main =</span> <span class="st">"Pearson Correlation Matrix"</span></span>
+<span id="cb1-391"><a href="#cb1-391" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-392"><a href="#cb1-392" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-393"><a href="#cb1-393" aria-hidden="true" tabindex="-1"></a><span class="co"># Kendall tau rank correlation among environmental variables,</span></span>
+<span id="cb1-394"><a href="#cb1-394" aria-hidden="true" tabindex="-1"></a><span class="co"># no colours</span></span>
+<span id="cb1-395"><a href="#cb1-395" aria-hidden="true" tabindex="-1"></a>env.ken <span class="ot">&lt;-</span> <span class="fu">cor</span>(env, <span class="at">method =</span> <span class="st">"kendall"</span>)</span>
+<span id="cb1-396"><a href="#cb1-396" aria-hidden="true" tabindex="-1"></a>env.o <span class="ot">&lt;-</span> <span class="fu">order.single</span>(env.ken)</span>
+<span id="cb1-397"><a href="#cb1-397" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.new</span>(</span>
+<span id="cb1-398"><a href="#cb1-398" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Rank correlation matrix"</span>,</span>
+<span id="cb1-399"><a href="#cb1-399" aria-hidden="true" tabindex="-1"></a>  <span class="at">width =</span> <span class="dv">8</span>,</span>
+<span id="cb1-400"><a href="#cb1-400" aria-hidden="true" tabindex="-1"></a>  <span class="at">height =</span> <span class="dv">8</span>,</span>
+<span id="cb1-401"><a href="#cb1-401" aria-hidden="true" tabindex="-1"></a>  <span class="at">noRStudioGD =</span> <span class="cn">TRUE</span></span>
+<span id="cb1-402"><a href="#cb1-402" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-403"><a href="#cb1-403" aria-hidden="true" tabindex="-1"></a><span class="fu">pairs</span>(</span>
+<span id="cb1-404"><a href="#cb1-404" aria-hidden="true" tabindex="-1"></a>  env[, env.o],</span>
+<span id="cb1-405"><a href="#cb1-405" aria-hidden="true" tabindex="-1"></a>  <span class="at">lower.panel =</span> panel.smoothb,</span>
+<span id="cb1-406"><a href="#cb1-406" aria-hidden="true" tabindex="-1"></a>  <span class="at">upper.panel =</span> panel.cor,</span>
+<span id="cb1-407"><a href="#cb1-407" aria-hidden="true" tabindex="-1"></a>  <span class="at">no.col =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb1-408"><a href="#cb1-408" aria-hidden="true" tabindex="-1"></a>  <span class="at">method =</span> <span class="st">"kendall"</span>,</span>
+<span id="cb1-409"><a href="#cb1-409" aria-hidden="true" tabindex="-1"></a>  <span class="at">diag.panel =</span> panel.hist,</span>
+<span id="cb1-410"><a href="#cb1-410" aria-hidden="true" tabindex="-1"></a>  <span class="at">main =</span> <span class="st">"Kendall Correlation Matrix"</span></span>
+<span id="cb1-411"><a href="#cb1-411" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 
 
 <!-- -->
 
 
-</main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
-    }
-    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -1710,7 +1547,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
-<footer class="footer"><div class="nav-footer">
+<footer class="footer">
+  <div class="nav-footer">
     <div class="nav-footer-left">
 <p>© Diogo B. Provete · Biodiversity Synthesis Lab · Instituto de Biociências, UFMS</p>
 </div>   
@@ -1722,6 +1560,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
   </div>
 </footer>
+
+
 
 
 <script src="../../../site_libs/quarto-html/zenscroll-min.js"></script>

@@ -506,6 +506,7 @@ body:has(.cv-page) header#title-block-header { display: none !important; }
 @media print {
   @page { size: A4; margin: 12mm 9mm; }
   .navbar, .nav-footer, footer, #quarto-header { display: none !important; }
+  .cv-actions { display: none !important; }   /* no 'Download PDF' button inside the PDF */
   body { background: #fff !important; }
   .cv-page {
     box-shadow: none;
@@ -519,6 +520,14 @@ body:has(.cv-page) header#title-block-header { display: none !important; }
     print-color-adjust: exact;
     padding: 1.4rem 1rem 1.6rem;
     font-size: .82rem;
+    /* PRINT FIX: sticky + max-height:100vh + overflow made the sidebar a
+       viewport-tall scroll box, which Chrome expanded across the first
+       pages of the PDF. Paged media needs plain static flow. */
+    position: static !important;
+    top: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    border-radius: 0;
   }
   .cv-photo { width: 130px; height: 130px; margin-bottom: .7rem; }
   .cv-name { font-size: 1.25rem; }
@@ -572,7 +581,9 @@ body:has(.cv-page) header#title-block-header { display: none !important; }
 }
 
 /* ---------- Mobile ---------- */
-@media (max-width: 820px) {
+/* `screen and` is essential: an A4 print canvas is ~794px wide, which would
+   otherwise match this breakpoint and collapse the CV to a single column. */
+@media screen and (max-width: 820px) {
   .cv-page {
     grid-template-columns: 1fr;
     margin: 1rem .6rem 1.5rem;
