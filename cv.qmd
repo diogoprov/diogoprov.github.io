@@ -1,6 +1,7 @@
 ---
 title: "Curriculum Vitae"
 pagetitle: "CV — Diogo B. Provete"
+robots: noindex, follow
 toc: false
 page-layout: full
 title-block-style: none

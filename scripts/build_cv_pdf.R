@@ -40,3 +40,16 @@ pagedown::chrome_print(
 )
 
 message("Wrote ", pdf_out, " (", file.info(pdf_out)$size %/% 1024, " KB).")
+
+# 3. GitHub Pages serves the site from docs/, so https://provetelab.org/assets/cv.pdf
+#    is docs/assets/cv.pdf -- NOT the copy at the repo root. `quarto render` only
+#    copies assets/ into docs/ while it runs, so a PDF built afterwards would be
+#    left behind and the site would keep serving the previous version. Refresh the
+#    served copy here so the build order stops mattering.
+docs_copy <- file.path("docs", pdf_out)
+if (dir.exists(dirname(docs_copy))) {
+  file.copy(pdf_out, docs_copy, overwrite = TRUE)
+  message("Refreshed ", docs_copy, " (the copy the site actually serves).")
+} else {
+  warning(dirname(docs_copy), " not found - run `quarto render` once, then re-run this script.")
+}
