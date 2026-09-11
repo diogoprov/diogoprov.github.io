@@ -11,7 +11,7 @@ toc: true
 
 ::: {}
 <p class="pi-name">Prof. Dr. Diogo B. Provete</p>
-<p class="pi-role">Associate Professor · Head of Lab</p>
+<p class="pi-role">Assistant Professor (Tenured) · Head of Lab</p>
 
 Diogo obtained his Bachelor's in Biological Sciences at the [Federal
 University of Alfenas (UNIFAL)](http://www.unifal-mg.edu.br/) in 2006, his
@@ -67,36 +67,14 @@ frog metacommunities.</p>
 :::
 
 ::: {.person-card}
-<img src="assets/images/people/bruna.jpg" alt="Bruna Maria"
+<img src="assets/images/people/bruna.jpg" alt="Bruna M. P. Campos"
      onerror="this.style.display='none'">
-<p class="name">Bruna Maria</p>
+<p class="name">Bruna M. P. Campos</p>
 <p class="role">Master's student · Ecologia e Conservação</p>
 <p class="topic">Macroecological responses of multiple biodiversity facets
 of frogs to urbanisation in the Atlantic Forest.</p>
 <p class="card-links">
 <a href="http://lattes.cnpq.br/5222169874530411" title="Lattes CV"><i class="ai ai-lattes"></i></a>
-</p>
-:::
-
-::: {.person-card}
-<img src="assets/images/people/iara.jpg" alt="Iara Coimbra"
-     onerror="this.style.display='none'">
-<p class="name">Iara Coimbra</p>
-<p class="role">Undergrad researcher</p>
-<p class="topic">Independent research project (CNPq fellowship, 2025).</p>
-<p class="card-links">
-<a href="http://lattes.cnpq.br/5952895063234870" title="Lattes CV"><i class="ai ai-lattes"></i></a>
-</p>
-:::
-
-::: {.person-card}
-<img src="assets/images/people/beatriz.jpg" alt="Beatriz Oliveira"
-     onerror="this.style.display='none'">
-<p class="name">Beatriz Oliveira</p>
-<p class="role">Undergrad researcher</p>
-<p class="topic">Independent research project (FUNDECT fellowship, 2025).</p>
-<p class="card-links">
-<a href="http://lattes.cnpq.br/3716194579932697" title="Lattes CV"><i class="ai ai-lattes"></i></a>
 </p>
 :::
 
@@ -122,8 +100,8 @@ of frogs to urbanisation in the Atlantic Forest.</p>
 ::: {.person-card}
 <img src="assets/images/people/severgnini.jpg" alt="Marcos Severgnini"
      onerror="this.style.display='none'">
-<p class="name">Marcos Rafael Severgnini</p>
-<p class="role">former PhD student · Ecologia e Conservação</p>
+<p class="name">Dr. Marcos R. Severgnini</p>
+<p class="role">Former PhD · Ecologia e Conservação</p>
 <p class="topic">Eco-evolutionary dynamics shaping frog phenotypic and
 life-history traits along urban gradients.</p>
 <p class="card-links">
@@ -135,7 +113,7 @@ life-history traits along urban gradients.</p>
 <img src="assets/images/people/menezes.jpg" alt="Leandro Menezes"
      onerror="this.style.display='none'">
 <p class="name">Leandro B. Menezes</p>
-<p class="role">Master's student · Ecologia e Conservação</p>
+<p class="role">Former Master's student · Ecologia e Conservação</p>
 <p class="topic">Intra- vs. interspecific phenotypic variation of frogs
 along urban gradients.</p>
 <p class="card-links">
@@ -220,10 +198,32 @@ Nascentes de Paranapiacaba (SP).</p>
 <img src="assets/images/people/bonin.jpg" alt="Laura Bonin"
      onerror="this.style.display='none'">
 <p class="name">Laura Bonin</p>
-<p class="role">Former undergrad</p>
+<p class="role">Former undergraduate</p>
 <p class="topic">Evolution of echolocation in bats worldwide using
 phylogenetic comparative methods.</p>
 <a href="http://lattes.cnpq.br/0590588262836363" title="Lattes CV"><i class="ai ai-lattes"></i></a>
+:::
+
+::: {.person-card}
+<img src="assets/images/people/iara.jpg" alt="Iara Coimbra"
+     onerror="this.style.display='none'">
+<p class="name">Iara Coimbra</p>
+<p class="role">Former undergraduate</p>
+<p class="topic">Independent research project (CNPq fellowship, 2025).</p>
+<p class="card-links">
+<a href="http://lattes.cnpq.br/5952895063234870" title="Lattes CV"><i class="ai ai-lattes"></i></a>
+</p>
+:::
+
+::: {.person-card}
+<img src="assets/images/people/beatriz.jpg" alt="Beatriz Oliveira"
+     onerror="this.style.display='none'">
+<p class="name">Beatriz Oliveira</p>
+<p class="role">Former undergraduate</p>
+<p class="topic">Independent research project (FUNDECT fellowship, 2025).</p>
+<p class="card-links">
+<a href="http://lattes.cnpq.br/3716194579932697" title="Lattes CV"><i class="ai ai-lattes"></i></a>
+</p>
 :::
 
 :::
