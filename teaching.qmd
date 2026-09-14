@@ -83,7 +83,7 @@ models, basic programming, version control with `git`/GitHub, and
 reproducible reports with R Markdown / Quarto. Designed for students
 arriving at R for the first time.
 
-[Course site & materials →](teaching/intro-r/){.btn .btn-outline-primary}
+[Course site & materials →](https://provetelab.org/intro-r/){.btn .btn-outline-primary}
 
 ### History and Philosophy of Science
 
