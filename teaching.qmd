@@ -121,6 +121,21 @@ familiarity with phylogenetic inference.
 [Course site & materials →](teaching/mfc/){.btn .btn-outline-primary}
 [Mind map summarising the methods →](https://coggle.it/diagram/WhbkkxE2BAAB0R0m){.btn .btn-outline-primary}
 
+### Análise de dados univariados
+
+Intensive graduate course (45 h, one-week format, 21–25 September 2026) for
+the [PPG in Biologia Animal](https://ppgba.ufms.br) at UFMS, Campo Grande.
+Presents the usual statistical tests as a single family under the linear
+model, then relaxes its assumptions one at a time: the distribution of the
+response (GLM — likelihood, binomial and Poisson, diagnostics,
+overdispersion, zero inflation), the independence of observations (GLMM —
+rationale for random effects, implementation and Bayesian approaches),
+uncertainty in model selection (information theory), and multivariate
+responses (model-based methods and joint species distribution models).
+Opens with exploratory data analysis, reproducibility, and AI literacy.
+
+[Course site & materials →](https://provetelab.org/analise-dados-univariados-2026-2/){.btn .btn-outline-primary}
+
 ## Past courses & short-courses
 
 ### 2019 — Introduction to Macroevolution & Phylogenetic Comparative Methods (PT)
