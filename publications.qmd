@@ -493,7 +493,9 @@ Acero-Murcia, A.C.; **PROVETE, D.B.**; Fischer, E. 2023.
 Editora UFMS, Campo Grande. 30 p. [in Portuguese].
 
 da Silva, F.R.; Gonçalves-Souza, T.; Paterno, G.; **PROVETE, D.B.**;
-Vancine, M.A. 2022. *Análises ecológicas no R.* Recife: NUPEEA.
+Vancine, M.A. 2022.
+[*Análises ecológicas no R*](https://analises-ecologicas.com).
+Recife: NUPEEA.
 
 Vasconcelos, T.; da Silva, F.R.; **PROVETE, D.B.**; Gomes, T.;
 Prado, V.H.M. 2019.
