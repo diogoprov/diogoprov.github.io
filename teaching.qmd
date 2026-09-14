@@ -12,7 +12,7 @@ cobrindo estatística descritiva, delineamento amostral, distribuições
 de probabilidade, inferência via teste de hipóteses e modelos lineares
 (t, ANOVA, regressão, qui-quadrado).
 
-[Course site & materials →](teaching/bioestatistica/){.btn .btn-outline-primary}
+[Course site & materials →](https://provetelab.org/bioestatistica/){.btn .btn-outline-primary}
 
 ### Urban Ecology — Ciências Biológicas
 
