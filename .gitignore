@@ -18,3 +18,8 @@ _site/
 
 # Moodle backup files used to seed teaching/ — too large for git
 *.mbz
+
+# Rendered site. Built and published by GitHub Actions (see
+# .github/workflows/render-cv.yml) — never committed. Pages is configured
+# with Source = "GitHub Actions", not "deploy from branch /docs".
+/docs/

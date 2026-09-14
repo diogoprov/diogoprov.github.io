@@ -1,10 +1,14 @@
-name: Validate site build
+name: Render & deploy site
 
-# Validation only — runs on every push and on demand.
-# Renders the site and rebuilds the CV PDF in a clean environment so we
-# catch broken markdown / missing assets BEFORE GitHub Pages serves a
-# broken page. NOTHING is committed back to the repo — you stay in
-# charge of docs/, assets/cv.pdf and assets/metrics.yml locally.
+# Renders the Quarto site and publishes it to GitHub Pages.
+#
+# Pages must be configured as: Settings -> Pages -> Source = "GitHub Actions".
+# The rendered site (docs/) is NO LONGER committed to the repo — it is built
+# here on every push and handed straight to Pages. Publishing a change is
+# therefore one step: edit the .qmd, commit, push.
+#
+# Pull requests build but do not deploy, so a broken render is caught before
+# it can reach the live site.
 
 on:
   push:
@@ -13,14 +17,24 @@ on:
     branches: [main]
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Never let two deploys race; queue them instead of cancelling, so a push
+# that lands during a build still gets published.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
 jobs:
-  validate:
+  build:
     runs-on: ubuntu-latest
     env:
-      # .Rprofile sources renv/activate.R which forces every R session in
-      # this repo to use renv's local library. In CI we want plain R so
-      # install.packages can install into the system library — this flag
-      # tells the renv bootstrap to skip auto-activation.
+      # .Rprofile sources renv/activate.R, which forces every R session in
+      # this repo into renv's local library. In CI we want plain R so
+      # install.packages can write to the system library.
       RENV_CONFIG_AUTOLOADER_ENABLED: "FALSE"
     steps:
       - uses: actions/checkout@v4
@@ -33,25 +47,40 @@ jobs:
         with:
           use-public-rspm: true
 
-      - name: Install Chrome (used by pagedown for HTML → PDF)
+      - name: Install Chrome (used by pagedown for HTML -> PDF)
         uses: browser-actions/setup-chrome@v1
 
-      # Install only the R packages actually used by .qmd / .R chunks in
-      # this repo. We deliberately skip `renv::restore()` because renv.lock
-      # carries legacy packages (e.g. igraph) that need extra system
-      # libraries on the Ubuntu runner and aren't actually used during
-      # render — keeping them was making CI fail.
+      # Only the packages actually used by .qmd / .R chunks here. We skip
+      # renv::restore() on purpose: renv.lock carries legacy packages that
+      # need extra system libraries and are never used during render.
       - name: Install R packages used by the site
         run: |
           Rscript -e 'options(repos = c(CRAN = Sys.getenv("RSPM", "https://packagemanager.posit.co/cran/__linux__/noble/latest"))); install.packages(c("rmarkdown","knitr","yaml","scholar","pagedown","chromote","httr")); if (!requireNamespace("rmarkdown", quietly = TRUE)) stop("rmarkdown failed to install")'
 
-      - name: Render site (validation)
+      # Rebuilt BEFORE the full render, so `quarto render` copies the fresh
+      # PDF into docs/. Non-blocking: if headless Chrome misbehaves on the
+      # runner we still deploy, falling back to the committed assets/cv.pdf.
+      - name: Rebuild CV PDF
+        run: |
+          Rscript scripts/build_cv_pdf.R \
+            || echo "::warning::CV PDF build failed — deploying the committed assets/cv.pdf instead."
+
+      - name: Render site
         run: quarto render
 
-      - name: Build CV PDF (validation)
-        run: Rscript scripts/build_cv_pdf.R
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
 
-      # No commit step — this workflow exists purely to catch render errors.
-      # When you change content: edit .qmd → `quarto render` → optionally
-      # `Rscript scripts/build_cv_pdf.R` → commit → push. One push, one
-      # remote update, no bot in the loop.
+  deploy:
+    needs: build
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
