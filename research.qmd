@@ -61,3 +61,31 @@ functioning.
 
 Studying the morphology of tadpoles in an evolutionary context can therefore
 help us understand community patterns and freshwater ecosystem functioning.
+
+## Quantitative methods and research software
+
+A large part of the work above depends on getting the statistics right for
+data that rarely behave like textbook examples — compositional proportions,
+multivariate community matrices, phylogenetically non-independent species,
+traits measured on very different scales. Diogo is an accredited
+**Professional Statistician (PStat®)** and **Graduate Statistician (GStat®)**
+of the American Statistical Association, and methodological development is
+treated here as a research output in its own right, not as a by-product.
+
+Two of those outputs are openly available:
+
+- [**CoDa Stereo**](software.qmd#coda-stereo) brings Aitchison geometry to
+  stereological and histomorphometric data, where measurements are
+  proportions of a whole and therefore cannot be analysed with off-the-shelf
+  parametric tools. It is registered with the Brazilian National Institute of
+  Industrial Property (INPI, **BR512026003293-8**) and released under the MIT
+  licence, and accompanies a methodological paper currently in review.
+- [**ecodados**](software.qmd#ecodados) is the R package behind
+  [*Análises Ecológicas no R*](https://analises-ecologicas.com), an open
+  626-page textbook on ecological data analysis. It carries the datasets that
+  make every example in the book reproducible.
+
+The same commitment shows up in teaching: course materials are written in
+Quarto, versioned on GitHub, and built around real published datasets rather
+than simulated ones, so that students meet the problems that actual data
+bring with them. See [Software](software.qmd) and [Teaching](teaching.qmd).

@@ -71,11 +71,12 @@ last_checked <- if (!is.null(m$last_checked)) m$last_checked else "—"
 <span>Natural history of Neotropical anurans</span>
 </div>
 
-<h3 class="cv-sb-title">Programming & tools</h3>
+<h3 class="cv-sb-title">Statistics & computing</h3>
 <ul class="cv-meta">
-<li><strong>R</strong> — intermediate–advanced (phylogenetic, trait and multivariate community data)</li>
-<li><strong>Matlab</strong> — beginner</li>
-<li>Mesquite · SUPERSMART · Phylocom</li>
+<li><strong>Professional Statistician (PStat<sup>&reg;</sup>)</strong> and <strong>Graduate Statistician (GStat<sup>&reg;</sup>)</strong>, American Statistical Association (2026)</li>
+<li><strong>R</strong> — advanced. Package and Shiny development, Quarto, git/GitHub, reproducible workflows</li>
+<li><strong>Methods:</strong> generalised linear and mixed models; GAM/GAMM; latent-variable and model-based multivariate analysis (GLLVM, HMSC); compositional data analysis; structural equation models; Bayesian inference (Stan/brms); meta-analysis; phylogenetic comparative methods; geometric morphometrics</li>
+<li><strong>Also:</strong> Matlab (beginner) · Mesquite · Phylocom</li>
 </ul>
 
 <h3 class="cv-sb-title">Memberships</h3>
@@ -193,12 +194,15 @@ last_checked <- if (!is.null(m$last_checked)) m$last_checked else "—"
 ## Awards
 
 ::: {.cv-timeline}
-| **2024** | Ecological Society of America Early Career Fellow |
+| **2026** | **Professional Statistician (PStat<sup>&reg;</sup>)** — American Statistical Association |
 |---|---|
+| **2026** | **Graduate Statistician (GStat<sup>&reg;</sup>)** — American Statistical Association |
+| **2024** | Ecological Society of America Early Career Fellow |
 | **2021** | Highly Commended best poster (Acero-Murcia & Severgnini, PhD students) — Brazilian Symposium of Vertebrate Morphology |
 | **2021** | Highly Commended best oral presentation — Brazilian Symposium of Vertebrate Morphology |
 | **2019** | Best poster (L. Bonin, undergrad) — X Brazilian Congress of Mammalogy |
 | **2016** | Sentinels of Science Award — Champions of Recognition (Editors) and top 10% reviewer (Publons) |
+| **2016** | 4th best reviewer of the year — Peerage of Science |
 | **2013** | Best student paper in Herpetology published in 2012 — Copeia |
 | **2012** | Travel award — Association for Tropical Biology and Conservation (USD 500) |
 | **2011** | Travel award — South American Chapter of ESA (USD 700) |
@@ -390,6 +394,40 @@ Acero-Murcia, A. C.; **PROVETE, D. B.**; Fischer, E. A. 2023. *Morcegos da Serra
 da Silva, F. R.; Gonçalves-Souza, T.; Paterno, G. B.; **PROVETE, D. B.**; Vancine, M. H. 2022. *Análises Ecológicas no R*. NUPEA, Recife, Brazil. Freely available at [analises-ecologicas.com](https://analises-ecologicas.com)
 
 Vasconcelos, T.; da Silva, F. R.; **PROVETE, D. B.**; Gomes, T.; Prado, V. H. M. 2019. *Biogeographic patterns of South American Amphibians*. Springer, Berlin.
+
+Carvalho, F. R.; Mangia, S.; Garcia, M. E. C.; Laps, R. R.; Ferreira, V. L.; Santana, D. J.; Eduardo, W. N. M.; Santos, L. G. R. O.; **PROVETE, D. B.** 2022. *Guia de identificação dos vertebrados do Lago do Amor: peixes, anfíbios, répteis, aves e mamíferos*. Editora UFMS, Campo Grande. 121 p. [Field guide for public outreach, in Portuguese]
+:::
+
+## Software and intellectual property
+
+### Registered software
+
+::: {.cv-timeline}
+| **2026** | **CoDa Stereo: Compositional Data Analysis for Tissue Stereology.** Brazilian National Institute of Industrial Property (INPI), registration **BR512026003293-8**; filed 28 Apr 2026, granted 19 May 2026. Funded by FUNDECT, UFMS and CNPq. |
+|---|---|
+:::
+
+### Open-source software
+
+::: {.cv-pubs}
+**PROVETE, D. B.** 2026. *CoDa Stereo* — Shiny application bringing Aitchison geometry to stereological and histomorphometric data. MIT License. [Live app](https://019dde61-4363-e3fa-b788-13ddfa456c0b.share.connect.posit.cloud) · [Source](https://github.com/diogoprov/CoDaStereo)
+
+**PROVETE, D. B.** 2025. *BirdNET Validation Sampler* — R pipeline for sampling and manually validating detections from BirdNET custom classifiers. MIT License. [Source](https://github.com/diogoprov/birdnet-validation-sampler)
+
+Paterno, G. B.; **PROVETE, D. B.**; da Silva, F. R.; Gonçalves-Souza, T.; Vancine, M. H. 2022. *ecodados* — R package with the datasets and helper functions of the book *Análises Ecológicas no R*. [Source](https://github.com/paternogbc/ecodados)
+
+**PROVETE, D. B.**; Jordani, M. X.; Garey, M. V.; da Silva, F. R. 2012. *Brazilian Tadpoles* — online identification reference for the tadpoles of Brazil. [Website](https://diogoprov.github.io/Brazilian-Tadpoles-5.0/)
+:::
+
+### Contributions to scientific infrastructure
+
+::: {.cv-timeline}
+| **2012** | Translator, *ThesBio* — Portuguese synonym thesaurus for the Biodiversity Heritage Library / SciELO |
+|---|---|
+| **2011** | Contributor, Brazilian Portuguese translation of the **R** statistical environment (R Foundation, Vienna) |
+| **2010** | Curator of frogs and toads — **Encyclopedia of Life** |
+| **2007** | Taxonomic reviewer for photographic records — **CalPhotos**, UC Berkeley |
+| **2016** | Reviewer of amphibian roadkill identifications — Brazilian Wildlife Roadkill Database |
 :::
 
 ## Selected oral presentations
@@ -435,8 +473,9 @@ Vasconcelos, T.; da Silva, F. R.; **PROVETE, D. B.**; Gomes, T.; Prado, V. H. M.
 ### Grant reviewer panelist
 
 ::: {.cv-timeline}
-| **2021** | Holsworth Wildlife Research Endowment |
+| **2026** | São Paulo Research Foundation (FAPESP), Brazil |
 |---|---|
+| **2021** | Holsworth Wildlife Research Endowment |
 | **2020** | Superintendência de Ciência, Tecnologia e Ensino Superior do Paraná (Brazil) |
 | **2018 – 2020** | Society of Systematic Biologists (graduate student research award) |
 | **2016** | Amazonas State Research Foundation (Brazil) |
@@ -448,6 +487,13 @@ Vasconcelos, T.; da Silva, F. R.; **PROVETE, D. B.**; Gomes, T.; Prado, V. H. M.
 Full record: [Web of Science author profile](https://www.webofscience.com/wos/author/record/B-3704-2008).
 
 Acta Herpetologica · American Journal of Botany · American Naturalist · Amphibia-Reptilia · Anatomical Record · Animal Conservation · Asian Herpetology Research · Austral Ecology · Biodiversity Data Journal · Biodiversity and Conservation · Biological Reviews · Biological Journal of the Linnean Society · Biota Neotropica · Biotropica · Botany · Brazilian Journal of Biology · Caldasia · Check List · Chemosphere · Climatic Change · Community Ecology · Communications Biology · Copeia · Current Zoology · Diversity and Distributions · Ecography · Ecology · Ecology and Evolution · Ecological Research · Environmental Entomology · Environmental Management · Ethnobiology and Conservation · Evolution · Forest Ecology and Management · Freshwater Biology · Functional Ecology · Herpetologia Brasileira · Herpetology Notes · Herpetological Conservation and Biology · Herpetological Journal · Herpetologica · Hydrobiologia · Integrative and Comparative Biology · Integrative Zoology · Journal of Animal Ecology · Journal of Avian Biology · Journal of Biogeography · Journal of Evolutionary Biology · Journal of Experimental Biology · Journal of Herpetology · Journal of Mountain Science · Journal of Natural History · Journal for Nature Conservation · Journal of Thermal Biology · Journal of Tropical Ecology · Landscape Ecology · Methods in Ecology and Evolution (Reviewer programme advisor) · Natureza & Conservação · Neotropical Biodiversity · Neotropical Ichthyology · North-Western Journal of Zoology · Oecologia · Oecologia Australis · Oikos · One Earth · Peerage of Science · PeerJ · Perspectives in Ecology and Conservation · PLoS One · Philosophical Transactions of the Royal Society B · Phyllomedusa · Proceedings of the Royal Society B · Restoration Ecology · Revista de Biologia Neotropical · Salamandra · South American Journal of Herpetology · Urban Ecosystems · Web Ecology · Wetlands · ZooKeys · Zoologia · Zoology · Zoomorphology · Zootaxa.
+:::
+
+### Guest editor
+
+::: {.cv-timeline}
+| **2025** | Special Collection *Waking up on Climate Change: Measuring Impact, Focusing Efforts and Building Futures* |
+|---|---|
 :::
 
 ### Editorial board membership
@@ -479,8 +525,22 @@ Acta Herpetologica · American Journal of Botany · American Naturalist · Amphi
 ## Research Experience and Technical Skills
 
 - **Field work surveying anuran amphibians:** Serra da Bocaina National Park (Atlantic Rainforest, SP); Salto Morato Private Reserve (Atlantic Rainforest, PR); several localities in NW São Paulo (Atlantic Dry Forest); Lambari State Park (Atlantic Dry Forest, MG); several localities in southern Minas Gerais (Atlantic Dry Forest); Silvânia National Forest (Cerrado, GO); Base de Estudos do Pantanal (Pantanal, MS).
-- **Programming languages:** R (intermediate–advanced), including phylogenetic, trait and multivariate community data; Matlab (beginner). Mesquite, SUPERSMART, Phylocom.
+- **Statistics and computing:** Accredited Professional Statistician (PStat®) and Graduate Statistician (GStat®) by the American Statistical Association. Advanced R, including package and Shiny application development, Quarto, and version-controlled reproducible workflows. Applied experience with generalised linear and mixed models, GAM/GAMM, model-based and latent-variable multivariate analysis (GLLVM, HMSC), compositional data analysis, structural equation models, Bayesian inference, meta-analysis, phylogenetic comparative methods and geometric morphometrics. Also Matlab (beginner), Mesquite and Phylocom.
+- **Teaching of statistics:** undergraduate and graduate courses since 2016, covering generalised linear mixed models and multivariate methods; course materials are open and version-controlled.
 - **Wet-laboratory procedures:** processing biological material for scanning electron microscopy; clearing and staining of vertebrate bone and cartilage tissues.
+
+### Advanced training
+
+Selected short courses and summer schools:
+
+::: {.cv-timeline}
+| **2025** | Summer school in statistics for biologists — Université de Sherbrooke, Canada; GLLVMs for advanced multivariate analysis; GAMM and GLMM; meta-analysis in R; probabilistic inference; functional trait diversity |
+|---|---|
+| **2024** | Path analysis and structural equation modelling; functional trait space analyses; Bayesian phylogenetic inference; model-based statistical inference |
+| **2020** | Hierarchical Modelling of Species Communities (HMSC) — University of Helsinki, Finland; multivariate modelling in ecology — University of New South Wales, Australia |
+| **2019** | Geometric morphometrics using R — Universidad de Concepción, Chile; mathematical ecology |
+| **2017** | Evolutionary Quantitative Genetics — NIMBioS, University of Tennessee, USA; advances in spatial analysis |
+:::
 
 ## Grants and Fellowships
 

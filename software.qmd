@@ -15,6 +15,10 @@ toc: true
 
 *Free, browser-based — no installation required. Hosted on Posit Connect
 Cloud · MIT License.*
+
+**Registered software:** Brazilian National Institute of Industrial Property
+(INPI), registration no. **BR512026003293-8** — filed 28 April 2026, granted
+19 May 2026. Funded by FUNDECT, UFMS and CNPq.
 :::
 
 **CoDa Stereo** is an open-source [Shiny](https://shiny.posit.co/)
@@ -88,6 +92,16 @@ comparing CoDa with naïve approaches, and worked examples.
 A `CITATION.cff` and BibTeX snippets are available on the
 [repository](https://github.com/diogoprov/CoDaStereo#how-to-cite).
 
+::: {.callout-note collapse="true"}
+## Registration and licence are two different things
+
+The INPI registration records authorship and the date the source code existed
+in a given form — it is the Brazilian equivalent of a software copyright
+deposit, and it does **not** restrict use. The app is released under the MIT
+licence: you may use, modify and redistribute it, including commercially,
+provided the copyright notice is kept.
+:::
+
 ### Issues, feedback, and contributions
 
 Bug reports, feature requests, and pull requests are very welcome on
@@ -120,3 +134,36 @@ classifier.
 It was developed for the **FrogNet** project, which monitors frog vocalisations
 in the Pantanal and Cerrado, but works with the output of any BirdNET custom
 classifier.
+
+## ecodados
+
+::: {.callout-tip icon=false appearance="minimal"}
+**Datasets and helper functions for *Análises Ecológicas no R***
+
+[{{< fa brands github >}} GitHub repository](https://github.com/paternogbc/ecodados){.btn .btn-primary} &nbsp;
+[{{< fa solid book >}} The book (free, in Portuguese)](https://analises-ecologicas.com){.btn .btn-outline-secondary}
+
+*R package — community-maintained.*
+:::
+
+**ecodados** is the companion R package to
+[*Análises Ecológicas no R*](https://analises-ecologicas.com) (da Silva,
+Gonçalves-Souza, Paterno, Provete & Vancine, 2022), a 626-page open textbook
+that teaches the full workflow of ecological data analysis in R — from data
+organisation and visualisation to multivariate analysis, spatial ecology and
+phylogenetic comparative methods.
+
+The package ships the datasets used across the book's chapters, so every
+example in the text can be reproduced with a single `library(ecodados)`
+instead of hunting for files. It is what makes the book runnable rather than
+merely readable.
+
+The book is freely available online and has become a standard reference for
+teaching ecological data analysis in Portuguese-speaking universities.
+
+::: {.callout-note}
+## Authors
+
+Gustavo B. Paterno, Diogo B. Provete, Fernando R. da Silva, Thiago
+Gonçalves-Souza and Maurício H. Vancine.
+:::
