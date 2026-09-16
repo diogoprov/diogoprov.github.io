@@ -162,6 +162,7 @@ gradients ([Bovo et al. 2023](https://doi.org/10.1093/iob/obad009)).
 |--------|-------|--------|
 | **Primeiros Passos** | 01 | R as a calculator, assignment, coercion, reading and inspecting data, `table()`, missing values, packages |
 | **Manuseio de Dados com dplyr** | 04 | the pipe (`\|>` and `%>%`), `rename()`, `select()`, `mutate()`, `filter()`, `group_by()` + `summarise()`, `count()` |
+| **Modelos Lineares** | 06 | the PPDAC cycle: sampling design, exploration, `lm()`, diagnostics with `plot()` and `performance`, interpretation with `anova()` and `broom` |
 
 Answers are checked by their result, not by how they are written, so both
 pipes, `summarise()` or `summarize()`, and arguments in any order are
