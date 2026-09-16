@@ -135,6 +135,45 @@ It was developed for the **FrogNet** project, which monitors frog vocalisations
 in the Pantanal and Cerrado, but works with the output of any BirdNET custom
 classifier.
 
+## Introdução à Linguagem R — swirl lessons
+
+::: {.callout-tip icon=false appearance="minimal"}
+**Interactive lessons in Portuguese for learning R inside the R console**
+
+[{{< fa brands github >}} GitHub repository](https://github.com/diogoprov/Introducao_a_Linguagem_R){.btn .btn-primary} &nbsp;
+[{{< fa solid chalkboard-user >}} The course](https://provetelab.org/intro-r/){.btn .btn-outline-secondary}
+
+*swirl course — CC BY 4.0.*
+:::
+
+A course for [swirl](https://swirlstats.com), the R package that turns the
+console into an interactive tutor: it asks a question, the student types
+real R code, and swirl checks the answer and gives a hint when it is wrong.
+swirl has a long list of community courses, but until now none written in
+Portuguese for ecologists.
+
+The lessons follow the graduate course *Introdução à Linguagem R*
+(PPGEC/UFMS) and use the same real, published dataset as the practical
+classes: thermal tolerance of Atlantic Forest frogs along two elevational
+gradients ([Bovo et al. 2023](https://doi.org/10.1093/iob/obad009)).
+
+| Lesson | Class | Topics |
+|--------|-------|--------|
+| **Primeiros Passos** | 01 | R as a calculator, assignment, coercion, reading and inspecting data, `table()`, missing values, packages |
+| **Manuseio de Dados com dplyr** | 04 | the pipe (`\|>` and `%>%`), `rename()`, `select()`, `mutate()`, `filter()`, `group_by()` + `summarise()`, `count()` |
+
+Answers are checked by their result, not by how they are written, so both
+pipes, `summarise()` or `summarize()`, and arguments in any order are
+accepted.
+
+```r
+install.packages("swirl")
+library(swirl)
+select_language("portuguese")
+install_course_url("https://github.com/diogoprov/Introducao_a_Linguagem_R/zipball/main")
+swirl()
+```
+
 ## ecodados
 
 ::: {.callout-tip icon=false appearance="minimal"}
