@@ -141,9 +141,10 @@ classifier.
 **Interactive lessons in Portuguese for learning R inside the R console**
 
 [{{< fa brands github >}} GitHub repository](https://github.com/diogoprov/Introducao_a_Linguagem_R){.btn .btn-primary} &nbsp;
-[{{< fa solid chalkboard-user >}} The course](https://provetelab.org/intro-r/){.btn .btn-outline-secondary}
+[{{< fa solid chalkboard-user >}} The course](https://provetelab.org/intro-r/){.btn .btn-outline-secondary} &nbsp;
+[{{< fa solid tag >}} DOI 10.5281/zenodo.22782697](https://doi.org/10.5281/zenodo.22782697){.btn .btn-outline-secondary}
 
-*swirl course — CC BY 4.0.*
+*swirl course — CC BY 4.0 · archived on Zenodo.*
 :::
 
 A course for [swirl](https://swirlstats.com), the R package that turns the
