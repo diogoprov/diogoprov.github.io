@@ -171,7 +171,7 @@ accepted.
 ```r
 install.packages("swirl")
 library(swirl)
-select_language("portuguese")
+select_language("portuguese", append_rprofile = TRUE)
 install_course_url("https://github.com/diogoprov/Introducao_a_Linguagem_R/zipball/main")
 swirl()
 ```
