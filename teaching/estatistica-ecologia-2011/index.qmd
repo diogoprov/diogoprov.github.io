@@ -38,6 +38,8 @@ São José do Rio Preto. Contribuição documental do CRAN.
 
 ## Slides
 
+### Aulas ministradas por mim
+
 **Parte 1 — Introdução ao R**
 Primeiro contato com a linguagem: objetos, importação de dados e as funções
 básicas de inspeção.
@@ -60,11 +62,27 @@ comunidades.
 
 [{{< fa solid file-pdf >}} Baixar Parte 4 (PDF)](slides/04-multivariada.pdf){.btn .btn-outline-primary}
 
-::: {.callout-note appearance="simple"}
-As aulas de distribuições estatísticas, modelos lineares generalizados e
-análises canônicas (RDA, CCA, Mantel e Procrustes) foram ministradas pelos
-co-autores da disciplina e não estão reproduzidas aqui.
-:::
+### Aulas ministradas pelos co-autores
+
+Reproduzidas aqui com autorização de Thiago Gonçalves-Souza e Fernando R. da
+Silva. Os arquivos originais estavam em `.pptx`; foram convertidos para PDF
+sem alteração de conteúdo.
+
+**Introdução ao R** — Thiago Gonçalves-Souza
+
+[{{< fa solid file-pdf >}} Baixar (PDF)](slides/05-intro-r-tgs.pdf){.btn .btn-outline-secondary}
+
+**Distribuições estatísticas** — Fernando R. da Silva
+
+[{{< fa solid file-pdf >}} Baixar (PDF)](slides/06-distribuicoes.pdf){.btn .btn-outline-secondary}
+
+**Modelos lineares generalizados** — Fernando R. da Silva
+
+[{{< fa solid file-pdf >}} Baixar (PDF)](slides/07-glm.pdf){.btn .btn-outline-secondary}
+
+**Análises canônicas — RDA, CCA, Mantel e Procrustes** — Thiago Gonçalves-Souza
+
+[{{< fa solid file-pdf >}} Baixar (PDF)](slides/08-analises-canonicas.pdf){.btn .btn-outline-secondary}
 
 ## Scripts e dados
 

@@ -1,0 +1,53 @@
+---
+title: "Técnicas de amostragem de vertebrados"
+subtitle: "Minicurso — 4º Simpósio de Biologia Animal, UNESP/IBILCE (2009)"
+toc: true
+---
+
+::: {.callout-tip appearance="minimal"}
+Minicurso de **4 horas** para estudantes de graduação, oferecido como curso
+pré-evento do *4º Simpósio de Biologia Animal* na
+[UNESP/IBILCE](https://www.ibilce.unesp.br/) (São José do Rio Preto), em 2009.
+Ministrado em conjunto com **Ricardo A. Brassaloti**.
+:::
+
+## Sobre o minicurso
+
+O curso cobriu técnicas de amostragem de campo para as quatro classes de
+vertebrados terrestres, partindo do desenho amostral — amostragem aleatória
+estratificada, esforço, e o que cada método de fato mede — e passando pelos
+protocolos específicos de cada grupo.
+
+::: {.callout-note appearance="simple"}
+Material de 2009, preservado como registro. Os protocolos de campo seguem
+válidos; as recomendações sobre estimadores de riqueza e suficiência amostral
+envelheceram, e hoje seriam tratadas com números de Hill e rarefação baseada
+em cobertura.
+:::
+
+## Slides
+
+[{{< fa solid file-pdf >}} Baixar os slides (PDF, 49 páginas)](slides/amostragem-vertebrados.pdf){.btn .btn-outline-primary}
+
+Os slides também estão no
+[SlideShare](https://pt.slideshare.net/slideshow/techniques-for-sampling-vertebrates/7000148).
+
+## Bibliografia recomendada
+
+- Colwell, R.K. & Coddington, J.A. 1994. Estimating terrestrial biodiversity
+  through extrapolation. *Philosophical Transactions of the Royal Society B*
+  345:101–118.
+  [PDF](http://viceroy.eeb.uconn.edu/RKCPublications/ColwellAndCoddington1994_hr.pdf)
+- Dias, S.C. 2004. Planejando estudos de diversidade e riqueza: uma abordagem
+  para estudantes de graduação. *Acta Scientiarum* 26:373–379.
+  [PDF](http://periodicos.uem.br/ojs/index.php/ActaSciBiolSci/article/view/1511/945)
+- Gotelli, N.J. & Colwell, R.K. 2001. Quantifying biodiversity: procedures and
+  pitfalls in the measurement and comparison of species richness. *Ecology
+  Letters* 4:379–391.
+  [PDF](http://viceroy.eeb.uconn.edu/RKCPublications/GotelliAndColwell2001.pdf)
+- Sutherland, W.J. (Ed.) 2006. *Ecological census techniques: a handbook.*
+  2ª ed. Cambridge University Press.
+
+---
+
+*Volta para a página de [ensino](../../teaching.qmd).*

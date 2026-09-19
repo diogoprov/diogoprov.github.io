@@ -176,7 +176,7 @@ Short course (4 h) for undergraduates at UNESP, given as a pre-meeting
 course at the *4º Simpósio de Biologia Animal*. Ricardo Brassaloti and I
 covered field sampling techniques for the four classes of vertebrates.
 
-[Class slides](https://pt.slideshare.net/slideshow/techniques-for-sampling-vertebrates/7000148)
+[Course page — slides and bibliography →](teaching/amostragem-vertebrados-2009/){.btn .btn-outline-primary}
 
 **Recommended bibliography**
 

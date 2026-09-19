@@ -6,6 +6,7 @@ project:
     - "!_archive_alban_template/"
     - "!README.md"
   resources:
+    - talks/
     - CNAME          # ensure GitHub Pages keeps the custom domain after every render
 
 website:
