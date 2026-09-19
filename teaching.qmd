@@ -149,6 +149,26 @@ Opens with exploratory data analysis, reproducibility, and AI literacy.
 
 ## Past courses & short-courses
 
+### 2026 — IA na revisão de literatura (PT)
+
+*Upcoming · workshop (2 h) for the [PPG in Biologia Animal](https://ppgba.ufms.br),
+UFMS · in Portuguese*
+
+Hands-on workshop on AI-assisted literature searching. How the web stopped being
+machine-readable and why that reaches your review; why hallucinated references and
+blocked crawlers are two different failure modes; machine-readable bibliographic
+databases (OpenAlex, Semantic Scholar) and the `openalexR` and `litsearchr` routes
+in R; a live demonstration of citation fabrication checked against CrossRef; and a
+hands-on comparison of Consensus and Undermind against a reproducible Boolean
+search. Closes on what the published evidence says about sensitivity vs precision,
+on reproducibility under PRISMA-S/ROSES, and on how to declare an AI-assisted
+search. Companion to the talk [*IA na redação
+científica*](talks.html#ia-escrita-cientifica).
+
+[Workshop slides →](https://provetelab.org/ia-revisao-literatura/){.btn .btn-outline-primary}
+&nbsp;
+[{{< fa brands github >}} Source](https://github.com/diogoprov/ia-revisao-literatura){.btn .btn-outline-secondary}
+
 ### 2019 — Introduction to Macroevolution & Phylogenetic Comparative Methods (PT)
 
 Short-course given at the [III Congresso Paulista de Ciências Biológicas (III
