@@ -1,0 +1,98 @@
+---
+title: "Invited talks and oral presentations"
+toc: true
+toc-depth: 2
+---
+
+Slides from invited talks, seminars and panels, gathered here so they stay
+reachable after the event. Unless noted otherwise, the material is shared
+under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); figures
+reused from third parties keep the licence of their originals.
+
+## Scientific publishing, open access and research integrity
+
+### IA na redação científica: ética, regras editoriais e boas práticas de reporte {#ia-escrita-cientifica}
+
+*2026 · 40 min · in Portuguese*
+
+Where generative AI stands in the writing of a scientific paper: authorship
+and responsibility, the policies of the five largest publishers plus Cambridge
+and OUP, Brazil's CNPq Ordinance nº 2.664/2026, COPE's position, the known
+limits of LLMs, and the AIdIT framework for reporting AI use. Every quoted
+policy comes from the publisher's own page; the deck closes with its own AI
+use declaration.
+
+[{{< fa solid display >}} Open the slides](https://provetelab.org/ia-escrita-cientifica/){.btn .btn-outline-primary}
+&nbsp;
+[{{< fa brands github >}} Source](https://github.com/diogoprov/ia-escrita-cientifica){.btn .btn-outline-secondary}
+
+### Boas práticas para redação e submissão de artigos {#wiley-redacao}
+
+*2025 · Wiley Customer Education · in Portuguese*
+
+What editors and reviewers actually look for, from choosing a journal to
+responding to a decision letter — aimed at graduate students and early-career
+researchers publishing in English as a second language.
+
+[{{< fa solid file-pdf >}} Slides (PDF)](talks/2025-wiley-boas-praticas-redacao.pdf){.btn .btn-outline-primary}
+
+### Acesso aberto e seus benefícios {#wiley-acesso-aberto}
+
+*2025 · Wiley Customer Education · in Portuguese*
+
+Routes to open access, what transformative agreements do and do not cover, and
+what the choice means in practice for a researcher based in the Global South.
+
+[{{< fa solid file-pdf >}} Slides (PDF)](talks/2025-wiley-acesso-aberto.pdf){.btn .btn-outline-primary}
+
+### Equity in open access publishing {#alspp-equity}
+
+*2024 · Panel — Association of Learned and Professional Society Publishers (ALPSP)*
+
+Invited panellist. Article processing charges as a barrier that moves the
+paywall from reading to publishing, and what waiver schemes miss when the
+constraint is institutional rather than individual.
+
+[{{< fa solid file-pdf >}} Slides (PDF)](talks/2024-alpsp-equity-open-access.pdf){.btn .btn-outline-primary}
+
+## Community ecology and evolution
+
+### Teoria e conceitos de nicho ecológico {#nicho-neutro}
+
+*Workshop of Community Ecology, UNESP/IBILCE · 1st edition, 9–14 April 2018;
+[2020 online edition](https://simposioecologiaco.wixsite.com/site),
+31 August – 5 September 2020 · in Portuguese*
+
+A long-form lecture on niche theory and neutral theory as competing — and
+partly reconcilable — accounts of community assembly: from Grinnell, Elton and
+Hutchinson to modern coexistence theory, the main criticisms of the niche
+concept, the structure and limits of neutral models, and the attempts to
+integrate the two.
+
+[{{< fa solid file-pdf >}} Slides (PDF, 114 pp.)](talks/2018-nicho-teoria-neutra.pdf){.btn .btn-outline-primary}
+
+### Science Club seminar {#swansea}
+
+*2017 · Department of Biosciences, Swansea University, UK · in English*
+
+[{{< fa solid file-pdf >}} Slides (PDF)](talks/2017-swansea-science-club.pdf){.btn .btn-outline-primary}
+
+## Other invited symposia and seminars
+
+Talks for which slides are not posted here.
+
+::: {.cv-timeline}
+| **2026** | Macroevolution symposium and Editor's round table — Brazilian Society for Evolutionary Biology |
+|---|---|
+| **2025** | Evolution seminar — Universität Bielefeld, Germany |
+| **2024** | iDiv Seminar Series — *The other story told by urban ecology in the Global South* |
+| **2019** | Short-course on Macroevolution — III Congresso Paulista de Ciências Biológicas, UNESP, São José do Rio Preto |
+| **2017** | Seminar series, Department of Environmental Sciences — UFSCar, Sorocaba |
+| **2016** | Institute of Biosciences, Letters and Exact Sciences — UNESP, São José do Rio Preto |
+| **2016** | Seminars in Aquatic Biology, Institute of Biosciences — UNESP, Santos |
+:::
+
+---
+
+Course and short-course material lives on the [teaching page](teaching.qmd);
+the full record is in the [CV](cv.qmd).
