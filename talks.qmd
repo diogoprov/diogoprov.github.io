@@ -13,7 +13,8 @@ reused from third parties keep the licence of their originals.
 
 ### IA na redação científica: ética, regras editoriais e boas práticas de reporte {#ia-escrita-cientifica}
 
-*2026 · 40 min · in Portuguese*
+*Upcoming · October 2026 · annual meeting of the Graduate Programme in Animal Biology
+· 40 min · in Portuguese*
 
 Where generative AI stands in the writing of a scientific paper: authorship
 and responsibility, the policies of the five largest publishers plus Cambridge
@@ -57,19 +58,20 @@ constraint is institutional rather than individual.
 
 ## Community ecology and evolution
 
-### Teoria e conceitos de nicho ecológico {#nicho-neutro}
+### Processos neutros e baseados no nicho em comunidades {#nicho-neutro}
 
 *Workshop of Community Ecology, UNESP/IBILCE · 1st edition, 9–14 April 2018;
 [2020 online edition](https://simposioecologiaco.wixsite.com/site),
-31 August – 5 September 2020 · in Portuguese*
+31 August – 5 September 2020. Later revised and taught as a lecture in the
+graduate course "Ecologia de interações" · in Portuguese*
 
-A long-form lecture on niche theory and neutral theory as competing — and
-partly reconcilable — accounts of community assembly: from Grinnell, Elton and
-Hutchinson to modern coexistence theory, the main criticisms of the niche
-concept, the structure and limits of neutral models, and the attempts to
-integrate the two.
+Niche theory and neutral theory as competing — and partly reconcilable —
+accounts of community assembly: the concepts of community, resources and
+conditions; modern coexistence theory; the niche concept from Grinnell and
+Elton to Hutchinson, and its main criticisms; the structure and limits of
+neutral models; and the attempts to integrate the two.
 
-[{{< fa solid file-pdf >}} Slides (PDF, 114 pp.)](talks/2018-nicho-teoria-neutra.pdf){.btn .btn-outline-primary}
+[{{< fa solid file-pdf >}} Slides (PDF, 101 pp.)](talks/2018-nicho-teoria-neutra.pdf){.btn .btn-outline-primary}
 
 ### Science Club seminar {#swansea}
 
