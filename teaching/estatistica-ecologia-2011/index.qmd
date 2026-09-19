@@ -1,0 +1,82 @@
+---
+title: "Estatística aplicada à ecologia usando o R"
+subtitle: "Tópicos em Biologia Animal — UNESP/IBILCE, São José do Rio Preto (2011)"
+toc: true
+---
+
+::: {.callout-tip appearance="minimal"}
+Disciplina de pós-graduação de duas semanas em Biologia Animal na
+[UNESP/IBILCE](https://www.ibilce.unesp.br/) (São José do Rio Preto), oferecida
+em 2011 em conjunto com
+[Thiago Gonçalves-Souza](https://thiagocalvesouza.wixsite.com/ecofun) e
+[Fernando R. da Silva](http://fernandoecologia.wixsite.com/fernandorodrigues).
+Esta página reúne os **slides das aulas ministradas por mim**, além da
+apostila, dos scripts e dos dados dos exercícios.
+:::
+
+## Sobre a disciplina
+
+O curso cobriu modelos lineares generalizados, os principais métodos
+multivariados e outras ferramentas de análise em ecologia, usando o R como
+plataforma. Foi a origem da apostila *Estatística aplicada à ecologia usando o
+R*, hospedada pelo CRAN e usada desde então em várias disciplinas de
+pós-graduação no Brasil.
+
+Os materiais abaixo são de 2011 e estão preservados como registro histórico.
+Muita coisa na prática de análise em R mudou desde então — para o material
+atualizado, veja o livro
+[*Análises Ecológicas no R*](https://analises-ecologicas.com) e a disciplina
+[Introdução à Linguagem R](https://provetelab.org/intro-r/).
+
+## Apostila
+
+[{{< fa solid book >}} Apostila no CRAN (PDF, 6,7 MB)](https://cran.r-project.org/doc/contrib/Provete-Estatistica_aplicada.pdf){.btn .btn-outline-primary}
+
+Provete, D.B.; Silva, F.R.; Gonçalves-Souza, T. (2011).
+*Estatística aplicada à ecologia usando o R.* Universidade Estadual Paulista,
+São José do Rio Preto. Contribuição documental do CRAN.
+
+## Slides
+
+**Parte 1 — Introdução ao R**
+Primeiro contato com a linguagem: objetos, importação de dados e as funções
+básicas de inspeção.
+
+[{{< fa solid file-pdf >}} Baixar Parte 1 (PDF)](slides/01-introducao-ao-r.pdf){.btn .btn-outline-primary}
+
+**Parte 2 — Estatística básica**
+Do ciclo dados–análise–teoria–modelo aos testes elementares.
+
+[{{< fa solid file-pdf >}} Baixar Parte 2 (PDF)](slides/02-estatistica-basica.pdf){.btn .btn-outline-primary}
+
+**Parte 3 — Gráficos**
+Construção de gráficos no R base para exploração e publicação.
+
+[{{< fa solid file-pdf >}} Baixar Parte 3 (PDF)](slides/03-graficos.pdf){.btn .btn-outline-primary}
+
+**Parte 4 — Métodos multivariados**
+Agrupamento, ordenação e análises de gradiente aplicadas a dados de
+comunidades.
+
+[{{< fa solid file-pdf >}} Baixar Parte 4 (PDF)](slides/04-multivariada.pdf){.btn .btn-outline-primary}
+
+::: {.callout-note appearance="simple"}
+As aulas de distribuições estatísticas, modelos lineares generalizados e
+análises canônicas (RDA, CCA, Mantel e Procrustes) foram ministradas pelos
+co-autores da disciplina e não estão reproduzidas aqui.
+:::
+
+## Scripts e dados
+
+[{{< fa solid file-code >}} Script completo da apostila (.R)](scripts/script-completo-apostila.R){.btn .btn-outline-primary}
+&nbsp;
+[{{< fa solid file-zipper >}} Scripts por aula (.zip)](scripts/scripts-por-aula.zip){.btn .btn-outline-primary}
+&nbsp;
+[{{< fa solid database >}} Dados dos exercícios (.zip)](dados/dados-exercicios.zip){.btn .btn-outline-primary}
+
+O arquivo de dados reúne os 49 conjuntos usados ao longo da apostila e das
+aulas práticas.
+
+---
+
+*Volta para a página de [ensino](../../teaching.qmd).*

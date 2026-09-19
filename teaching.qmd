@@ -152,23 +152,23 @@ recent literature, and the lab's current research lines.
 
 ### 2012 — Mendeley demo, Universidade Federal de Goiás
 
-[Slides with screenshots and tutorials](http://www.slideshare.net/provete/mendeley-presentation)
+[Slides with screenshots and tutorials](https://pt.slideshare.net/slideshow/mendeley-presentation/16273645)
 
 ### 2011 — Ecological statistics with R
 
 *Tópicos em Biologia Animal — Estatística aplicada à ecologia usando o R.*
 A two-week graduate course in Animal Biology at
-[UNESP](http://www.ibilce.unesp.br/) (São Paulo State University), in
+[UNESP](https://www.ibilce.unesp.br/) (São Paulo State University), in
 collaboration with [Thiago
-Gonçalves-Souza](http://thiagocalvesouza.wixsite.com/ecoffun) and
-[Fernando R. Silva](http://fernandoecologia.wixsite.com/fernandorodrigues).
+Gonçalves-Souza](https://thiagocalvesouza.wixsite.com/ecofun) and
+[Fernando R. da Silva](http://fernandoecologia.wixsite.com/fernandorodrigues).
 We covered Generalized Linear Models, the main multivariate methods, and
-other ecological tools, using R as the analysis platform.
+other ecological tools, using R as the analysis platform. It gave rise to the
+course book *Estatística aplicada à ecologia usando o R*, hosted by CRAN.
 
-- [Class slides](https://www.sugarsync.com/pf/D9712667_69058108_487278)
-- [Course book (CRAN-hosted)](http://cran.r-project.org/doc/contrib/Provete-Estatistica_aplicada.pdf)
-- [Datasets for exercises](https://diogoprovete.weebly.com/uploads/1/7/3/6/17367099/data.zip)
-- [R scripts](https://diogoprovete.weebly.com/uploads/1/7/3/6/17367099/script_completo_apostila_estatistica_aplicada_a_ecologia_usando_o_r.r)
+[Course page — slides, scripts and data →](teaching/estatistica-ecologia-2011/){.btn .btn-outline-primary}
+
+- [Course book (CRAN-hosted)](https://cran.r-project.org/doc/contrib/Provete-Estatistica_aplicada.pdf)
 
 ### 2009 — Sampling techniques for vertebrates (PT)
 
@@ -176,7 +176,7 @@ Short course (4 h) for undergraduates at UNESP, given as a pre-meeting
 course at the *4º Simpósio de Biologia Animal*. Ricardo Brassaloti and I
 covered field sampling techniques for the four classes of vertebrates.
 
-[Class slides](http://slidesha.re/eiu9Fx)
+[Class slides](https://pt.slideshare.net/slideshow/techniques-for-sampling-vertebrates/7000148)
 
 **Recommended bibliography**
 
