@@ -13,7 +13,7 @@ reused from third parties keep the licence of their originals.
 
 ### IA na redação científica: ética, regras editoriais e boas práticas de reporte {#ia-escrita-cientifica}
 
-*Upcoming · October 2026 · annual meeting of the Graduate Programme in Animal Biology
+*Upcoming · October 2026 · annual meeting of the Graduate Programme in Animal Biology, UFMS
 · 40 min · in Portuguese*
 
 Where generative AI stands in the writing of a scientific paper: authorship
@@ -36,6 +36,8 @@ responding to a decision letter — aimed at graduate students and early-career
 researchers publishing in English as a second language.
 
 [{{< fa solid file-pdf >}} Slides (PDF)](talks/2025-wiley-boas-praticas-redacao.pdf){.btn .btn-outline-primary}
+&nbsp;
+[{{< fa brands youtube >}} Assistir](https://youtu.be/0b4y-8yhjnY){.btn .btn-outline-secondary}
 
 ### Acesso aberto e seus benefícios {#wiley-acesso-aberto}
 
@@ -45,6 +47,8 @@ Routes to open access, what transformative agreements do and do not cover, and
 what the choice means in practice for a researcher based in the Global South.
 
 [{{< fa solid file-pdf >}} Slides (PDF)](talks/2025-wiley-acesso-aberto.pdf){.btn .btn-outline-primary}
+&nbsp;
+[{{< fa brands youtube >}} Assistir](https://youtu.be/yTz446eXNA0){.btn .btn-outline-secondary}
 
 ### Equity in open access publishing {#alspp-equity}
 
@@ -58,21 +62,6 @@ constraint is institutional rather than individual.
 
 ## Community ecology and evolution
 
-### Processos neutros e baseados no nicho em comunidades {#nicho-neutro}
-
-*Workshop of Community Ecology, UNESP/IBILCE · 1st edition, 9–14 April 2018;
-[2020 online edition](https://simposioecologiaco.wixsite.com/site),
-31 August – 5 September 2020. Later revised and taught as a lecture in the
-graduate course "Ecologia de interações" · in Portuguese*
-
-Niche theory and neutral theory as competing — and partly reconcilable —
-accounts of community assembly: the concepts of community, resources and
-conditions; modern coexistence theory; the niche concept from Grinnell and
-Elton to Hutchinson, and its main criticisms; the structure and limits of
-neutral models; and the attempts to integrate the two.
-
-[{{< fa solid file-pdf >}} Slides (PDF, 101 pp.)](talks/2018-nicho-teoria-neutra.pdf){.btn .btn-outline-primary}
-
 ### Science Club seminar {#swansea}
 
 *2017 · Department of Biosciences, Swansea University, UK · in English*
@@ -81,14 +70,14 @@ neutral models; and the attempts to integrate the two.
 
 ## Other invited symposia and seminars
 
-Talks for which slides are not posted here.
+Talks for which slides are not posted here. Short-courses have their own
+pages on the [teaching page](teaching.qmd).
 
 ::: {.cv-timeline}
 | **2026** | Macroevolution symposium and Editor's round table — Brazilian Society for Evolutionary Biology |
 |---|---|
 | **2025** | Evolution seminar — Universität Bielefeld, Germany |
 | **2024** | iDiv Seminar Series — *The other story told by urban ecology in the Global South* |
-| **2019** | Short-course on Macroevolution — III Congresso Paulista de Ciências Biológicas, UNESP, São José do Rio Preto |
 | **2017** | Seminar series, Department of Environmental Sciences — UFSCar, Sorocaba |
 | **2016** | Institute of Biosciences, Letters and Exact Sciences — UNESP, São José do Rio Preto |
 | **2016** | Seminars in Aquatic Biology, Institute of Biosciences — UNESP, Santos |

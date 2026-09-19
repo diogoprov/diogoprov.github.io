@@ -1,0 +1,168 @@
+---
+title: "Ecologia de interações"
+subtitle: "Disciplina de graduação — INBio/UFMS (2017/2 e 2019/1)"
+toc: true
+toc-depth: 2
+---
+
+::: {.callout-tip appearance="minimal"}
+Disciplina de **51 horas** (código 27010001079) para os cursos de Ciências
+Biológicas — Bacharelado e Licenciatura — no
+[Instituto de Biociências da UFMS](https://inbio.ufms.br). Ofertada em
+**2017/2** e **2019/1**. Esta página reúne os slides das aulas, o roteiro da
+prática de simulação de modelos e o script de R usado em aula.
+:::
+
+## Sobre a disciplina
+
+A ementa é um panorama das interações entre espécies — competição, predação,
+parasitismo e mutualismo — tratadas num contexto evolutivo, com atenção às
+variações espaciais e temporais e ao papel das interações como determinantes da
+distribuição e da abundância.
+
+A parte quantitativa é feita com modelos explícitos: Lotka-Volterra para
+competição e para predação, Tilman para competição por recursos, e
+Nicholson-Bailey para a dinâmica parasitoide-hospedeiro. Os alunos exploram os
+quatro no Populus e reimplementam parte deles no R.
+
+**A disciplina não é só expositiva.** Antes de cada aula os alunos respondem um
+questionário sobre o texto do dia, disponibilizado no Moodle — a nota P1 é a
+soma desses questionários. E há uma prática de campo no próprio campus, em que
+a turma coleta dados de herbivoria e analisa os dados na aula seguinte. Quem
+chega na aula já leu, e quem sai da prática sai com dados que precisam ser
+analisados.
+
+[{{< fa solid file-lines >}} Plano de ensino 2019/1 (PDF)](plano-de-ensino-2019-1.pdf){.btn .btn-outline-secondary}
+
+::: {.callout-note appearance="simple"}
+Material preservado como registro. Os slides foram convertidos de PowerPoint
+para PDF sem alteração de conteúdo — as animações, que em várias aulas
+revelavam os tópicos um a um, aparecem achatadas em algumas páginas.
+:::
+
+## Slides
+
+A ordem abaixo segue o programa aprovado.
+
+**1 · Apresentação e revisão dos conceitos de ecologia de comunidades**
+
+[{{< fa solid file-pdf >}} Baixar (PDF, 32 pp.)](slides/01-apresentacao-conceitos.pdf){.btn .btn-outline-primary}
+
+**2 · Modelos de competição e predação**
+Lotka-Volterra para competição e para predação, modelo de Tilman para
+competição por recursos, corrida armamentícia e coevolução.
+
+[{{< fa solid file-pdf >}} Baixar (PDF, 69 pp.)](slides/02-competicao-predacao-modelos.pdf){.btn .btn-outline-primary}
+
+**3 · Parasitoide-hospedeiro e cleptoparasitismo**
+O modelo de Nicholson-Bailey, em tempo discreto, e o que muda quando o
+"predador" mata um hospedeiro por geração.
+
+[{{< fa solid file-pdf >}} Baixar (PDF, 81 pp.)](slides/03-parasitoide-hospedeiro.pdf){.btn .btn-outline-primary}
+
+**4 · Coevolução de interações positivas**
+Mutualismo: mecanismos que sustentam a exploração mútua, o gradiente entre
+mutualismo e parasitismo, e o problema dos trapaceiros.
+
+[{{< fa solid file-pdf >}} Baixar (PDF, 70 pp.)](slides/04-coevolucao-interacoes-positivas.pdf){.btn .btn-outline-primary}
+
+**5 · Interações negativas e sua influência na evolução das espécies**
+
+[{{< fa solid file-pdf >}} Baixar (PDF, 28 pp.)](slides/05-interacoes-negativas-evolucao.pdf){.btn .btn-outline-primary}
+
+**6 · Interações e distribuição geográfica**
+Como as interações interespecíficas limitam — e às vezes ampliam — a
+distribuição das espécies.
+
+[{{< fa solid file-pdf >}} Baixar (PDF, 31 pp.)](slides/06-distribuicao-geografica.pdf){.btn .btn-outline-primary}
+
+**7 · Redes de interação**
+Interações inseridas em redes bipartidas: teias tróficas, redes mutualísticas,
+aninhamento e modularidade.
+
+[{{< fa solid file-pdf >}} Baixar (PDF, 73 pp.)](slides/07-redes-interacao.pdf){.btn .btn-outline-primary}
+
+### Aulas complementares
+
+Temas que não constam do programa aprovado de 2019/1, mas que fazem parte do
+material da disciplina.
+
+**Processos neutros e baseados no nicho**
+Teoria do nicho e teorias neutras como explicações concorrentes — e
+parcialmente reconciliáveis — para a estrutura das comunidades.
+
+[{{< fa solid file-pdf >}} Baixar (PDF, 101 pp.)](slides/08-nicho-teoria-neutra.pdf){.btn .btn-outline-primary}
+
+**Diversidade funcional e filogenética**
+Medir a comunidade por atributos e por história evolutiva, em vez de só por
+contagem de espécies.
+
+[{{< fa solid file-pdf >}} Baixar (PDF, 110 pp.)](slides/09-diversidade-funcional-filogenetica.pdf){.btn .btn-outline-primary}
+
+**Evolução contemporânea e interações**
+Quando a mudança evolutiva acontece rápido o bastante para alterar a própria
+dinâmica ecológica. Baseada no cap. 15 de Mittelbach.
+
+[{{< fa solid file-pdf >}} Baixar (PDF, 71 pp.)](slides/10-evolucao-contemporanea.pdf){.btn .btn-outline-primary}
+
+**Biodiversidade e funcionamento de ecossistemas**
+Como as interações alteram o fluxo de matéria e energia. Baseada no cap. 3 de
+Mittelbach.
+
+[{{< fa solid file-pdf >}} Baixar (PDF, 71 pp.)](slides/11-biodiversidade-funcionamento.pdf){.btn .btn-outline-primary}
+
+## Aulas práticas
+
+**Simulação de modelos no Populus**
+Roteiro passo a passo para quatro modelos baseados em equações diferenciais
+ordinárias: Lotka-Volterra de competição, Tilman de competição por recursos,
+Lotka-Volterra de predação (tempo contínuo) e Nicholson-Bailey (tempo discreto,
+parasitoide-hospedeiro).
+
+[{{< fa solid file-pdf >}} Roteiro do Populus (PDF)](praticas/roteiro-populus.pdf){.btn .btn-outline-primary}
+
+**Crescimento logístico e competição no R**
+Script com o crescimento logístico, o efeito do tamanho populacional inicial e
+a competição de Lotka-Volterra implementados à mão, para ver o que o Populus
+faz por baixo do capô.
+
+[{{< fa solid file-code >}} competicao-lotka-volterra.R](praticas/competicao-lotka-volterra.R){.btn .btn-outline-primary}
+
+**Herbivoria no campus**
+Coleta de dados de herbivoria em campo, com análise dos dados na aula seguinte.
+
+O Populus é um software gratuito de simulação de modelos ecológicos,
+desenvolvido por Don Alstad na Universidade de Minnesota. Está disponível no
+[site do College of Biological Sciences](https://cbs.umn.edu/populus) e no
+[GitHub](https://github.com/cbs-rlt/populus).
+
+## Bibliografia
+
+Do plano de ensino:
+
+- Begon, M.; Townsend, C.R.; Harper, J.L. 2006. *Ecology: from individuals to
+  ecosystems.* 4ª ed. Oxford: Blackwell.
+- Chittka, L. & Thomson, J.D. 2003. *Cognitive ecology of pollination.*
+  Cambridge: Cambridge University Press.
+- Pellmyr, O. & Herrera, C.M. 2002. *Plant-animal interactions: an evolutionary
+  approach.* Oxford: Blackwell.
+- Bernays, E.A. & Chapman, R.F. 1994. *Host-plant selection by phytophagous
+  insects.* New York: Chapman & Hall.
+- Price, P.W. 1997. *Insect ecology.* 3ª ed. New York: Wiley.
+- Richards, A.J. 1986. *Plant breeding systems.* London: Allen & Unwin.
+
+Citados nos slides e no roteiro da prática:
+
+- Mittelbach, G.G. *Community Ecology.* Sinauer Associates. — caps. 3 e 15.
+- Zimmer, C. & Emlen, D.J. *Evolution: Making Sense of Life.* Roberts & Company.
+  — cap. 15.
+- Gotelli, N.J. *Ecologia.* Editora Planta. — cap. 5, leitura recomendada para a
+  prática de competição.
+
+Os textos semanais que serviam de base aos questionários pré-aula eram
+distribuídos pelo Moodle e **não** são redisponibilizados aqui, por serem
+material protegido por direitos autorais.
+
+---
+
+*Volta para a página de [ensino](../../teaching.qmd).*

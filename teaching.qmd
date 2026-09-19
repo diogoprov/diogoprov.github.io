@@ -38,6 +38,17 @@ frente às mudanças globais.
 
 [Course site & materials →](teaching/comunidades-lenticos/){.btn .btn-outline-primary}
 
+### Ecologia de interações — Ciências Biológicas
+
+Disciplina de 51 h para Ciências Biológicas (Bacharelado e Licenciatura),
+ofertada em 2017/2 e 2019/1. Competição, predação, parasitismo e mutualismo
+num contexto evolutivo, com modelos explícitos (Lotka-Volterra, Tilman,
+Nicholson-Bailey) explorados no Populus e reimplementados no R, questionários
+pré-aula sobre os textos da semana e uma prática de campo de herbivoria no
+campus.
+
+[Course site & materials →](teaching/ecologia-interacoes/){.btn .btn-outline-primary}
+
 ### History and Philosophy of Science — Ciências Biológicas
 
 Undergraduate seminar course (51 h) offered in 2021/2 for the Biological

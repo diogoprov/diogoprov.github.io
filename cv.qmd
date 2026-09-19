@@ -144,6 +144,7 @@ last_checked <- if (!is.null(m$last_checked)) m$last_checked else "—"
 |---|---|
 | **2019** | Multivariate statistics *(grad)* — UFMS |
 | | Urban ecology *(undergrad)* — UFMS |
+| | Ecology of interactions *(undergrad)* — UFMS |
 | | Introduction to GLMMs with R *(grad)* — UFPE |
 | **2018** | Ecology of freshwater communities *(undergrad)* — UFMS |
 | | General Ecology *(undergrad)* — UFMS |
@@ -571,14 +572,14 @@ Slides for several of these are on the [talks page](talks.qmd).
 ::: {.cv-timeline}
 | **2026** | Macroevolution symposium and Editor's round table — Brazilian Society for Evolutionary Biology |
 |---|---|
-| **2026** | *IA na redação científica: ética, regras editoriais e boas práticas de reporte* — annual meeting, Graduate Programme in Animal Biology · [slides](https://provetelab.org/ia-escrita-cientifica/) |
+| **2026** | *IA na redação científica: ética, regras editoriais e boas práticas de reporte* — annual meeting of the Graduate Programme in Animal Biology, UFMS · [slides](https://provetelab.org/ia-escrita-cientifica/) |
 | **2025** | Evolution seminar — Universität Bielefeld, Germany |
-| **2025** | *Boas práticas para redação e submissão de artigos* — Wiley Customer Education · [slides](talks/2025-wiley-boas-praticas-redacao.pdf) |
-| **2025** | *Acesso aberto e seus benefícios* — Wiley Customer Education · [slides](talks/2025-wiley-acesso-aberto.pdf) |
+| **2025** | *Boas práticas para redação e submissão de artigos* — Wiley Customer Education · [slides](talks/2025-wiley-boas-praticas-redacao.pdf) · [video](https://youtu.be/0b4y-8yhjnY) |
+| **2025** | *Acesso aberto e seus benefícios* — Wiley Customer Education · [slides](talks/2025-wiley-acesso-aberto.pdf) · [video](https://youtu.be/yTz446eXNA0) |
 | **2024** | Panelist — "Equity in open access publishing" — Association of Learned and Professional Society Publishers · [slides](talks/2024-alpsp-equity-open-access.pdf) |
 | **2024** | iDiv Seminar Series — *The other story told by urban ecology in the Global South* |
 | **2019** | Short-course on Macroevolution — III Congresso Paulista de Ciências Biológicas, UNESP, São José do Rio Preto |
-| **2018** | *Processos neutros e baseados no nicho em comunidades* — Workshop of Community Ecology, UNESP/IBILCE (1st edition, Apr 2018; also 2020 online edition) · [slides](talks/2018-nicho-teoria-neutra.pdf) |
+| **2018** | *Processos neutros e baseados no nicho em comunidades* — Workshop of Community Ecology, UNESP/IBILCE (1st edition, Apr 2018; also 2020 online edition) · [slides](teaching/ecologia-interacoes/slides/08-nicho-teoria-neutra.pdf) |
 | **2017** | Seminar series, Department of Environmental Sciences — UFSCar, Sorocaba |
 | **2017** | Science Club event series, Department of Biosciences — Swansea University, UK · [slides](talks/2017-swansea-science-club.pdf) |
 | **2016** | Institute of Biosciences, Letters and Exact Sciences — UNESP, São José do Rio Preto |
