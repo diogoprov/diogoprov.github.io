@@ -13,8 +13,8 @@ reused from third parties keep the licence of their originals.
 
 ### IA na redação científica: ética, regras editoriais e boas práticas de reporte {#ia-escrita-cientifica}
 
-*Upcoming · October 2026 · annual meeting of the Graduate Programme in Animal Biology, UFMS
-· 40 min · in Portuguese*
+*Upcoming · October 2026, annual meeting of the Graduate Programme in Animal Biology, UFMS
+(Campo Grande) · and December 2026, UNILA (Foz do Iguaçu) · 40 min · in Portuguese*
 
 Where generative AI stands in the writing of a scientific paper: authorship
 and responsibility, the policies of the five largest publishers plus Cambridge
@@ -22,6 +22,8 @@ and OUP, Brazil's CNPq Ordinance nº 2.664/2026, COPE's position, the known
 limits of LLMs, and the AIdIT framework for reporting AI use. Every quoted
 policy comes from the publisher's own page; the deck closes with its own AI
 use declaration.
+
+Companion hands-on workshop: [*IA na revisão de literatura*](teaching.html#past-courses-short-courses).
 
 [{{< fa solid display >}} Open the slides](https://provetelab.org/ia-escrita-cientifica/){.btn .btn-outline-primary}
 &nbsp;
