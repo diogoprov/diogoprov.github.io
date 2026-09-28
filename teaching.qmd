@@ -151,8 +151,8 @@ Opens with exploratory data analysis, reproducibility, and AI literacy.
 
 ### 2026 — IA na revisão de literatura (PT)
 
-*Upcoming · workshop (2 h) for the [PPG in Biologia Animal](https://ppgba.ufms.br),
-UFMS · in Portuguese*
+*Upcoming · 19 October 2026 · workshop (2 h) for the [PPG in Biologia
+Animal](https://ppgba.ufms.br), UFMS · in Portuguese*
 
 Hands-on workshop on AI-assisted literature searching. How the web stopped being
 machine-readable and why that reaches your review; why hallucinated references and
