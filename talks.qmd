@@ -86,7 +86,10 @@ The slides below are the 2025 Bielefeld version of the talk.
 
 ### Evolutionary macroecology of the Atlantic Forest of South America {#gottingen}
 
-*2024 · Seminar, Göttingen, Germany · in English*
+*16 May 2024 · [Biodiversity, Macroecology and Biogeography
+group](https://www.uni-goettingen.de/en/128741.html), Faculty of Forest
+Sciences and Forest Ecology, University of Göttingen · at the invitation of
+Gustavo B. Paterno · in English*
 
 The regional species pool of the Atlantic Forest as a macroevolutionary
 product: how biogeographic history, diversification and the evolution of
@@ -97,13 +100,19 @@ Given during a Humboldt-funded sabbatical at iDiv.
 
 ### Usos e desusos de métodos filogenéticos comparativos {#pcm-unesp}
 
-*2019 · Seminar, UNESP · in Portuguese*
+*23 September 2016 · Seminários Gerais em Biodiversidade Aquática, Graduate
+Programme in Aquatic Biodiversity — Instituto de Biociências do Câmpus do
+Litoral Paulista, UNESP, São Vicente · at the invitation of Ivan Nunes ·
+2 h · in Portuguese*
 
 What phylogenetic comparative methods are for, what they are routinely asked
 to do that they cannot, and how to tell the two apart — the main legitimate
 uses, the common misuses, and practical advice for choosing a method.
 
-[{{< fa solid file-pdf >}} Slides (PDF, 56 pp.)](talks/2019-unesp-metodos-filogeneticos-comparativos.pdf){.btn .btn-outline-primary}
+The deck kept being revised after the seminar, so a few slides cite work
+published later.
+
+[{{< fa solid file-pdf >}} Slides (PDF, 56 pp.)](talks/2016-unesp-clp-metodos-filogeneticos-comparativos.pdf){.btn .btn-outline-primary}
 
 ### Biogeography and macroevolution of anuran amphibians in the Brazilian Atlantic Forest {#swansea}
 
