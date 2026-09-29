@@ -132,8 +132,10 @@ published later.
 
 ### Eco-evolutionary dynamics in metacommunities {#eco-evo-metacom}
 
-*Integrating space, phenotypes and environment to understand multi-scale
-patterns · in English; also given in Portuguese at UEPB*
+*1 September 2020 · II Workshop of Community Ecology, held online 31 August –
+4 September 2020, organised by IBILCE/UNESP (São José do Rio Preto) and UFRPE
+and coordinated by Denise de Cerqueira Rossa-Feres · in English; also given in
+Portuguese at UEPB*
 
 Why community ecology cannot simply set evolution aside: evolutionary change
 can happen fast enough to alter ecological dynamics within the span of a study.
@@ -141,7 +143,9 @@ A recap of the population genetics needed, worked examples of processes feeding
 back into one another, what eco-evolutionary dynamics are and — as importantly
 — what they are not, and what it takes to let a metacommunity evolve.
 
-[{{< fa solid file-pdf >}} Slides (PDF, 101 pp.)](talks/eco-evolutionary-dynamics-metacommunities.pdf){.btn .btn-outline-primary}
+[{{< fa solid file-pdf >}} Slides (PDF, 101 pp.)](talks/2020-ii-workshop-eco-evolutionary-dynamics.pdf){.btn .btn-outline-primary}
+&nbsp;
+[{{< fa brands youtube >}} Assistir](https://www.youtube.com/watch?v=ZRLomP-K0o4&list=PLy2rjqiD2VP4M8K-19Whs0bs3bHQEGvwJ){.btn .btn-outline-secondary}
 
 ### Biogeography and macroevolution of anuran amphibians in the Brazilian Atlantic Forest {#swansea}
 
