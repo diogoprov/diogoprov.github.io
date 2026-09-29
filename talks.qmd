@@ -31,7 +31,7 @@ Companion hands-on workshop: [*IA na revisão de literatura*](teaching.html#past
 
 ### FAIR peer review and publication: fostering a transparent publication ecosystem {#esa-fair}
 
-*2025 · Ecological Society of America Annual Meeting · in English*
+*2025 · Ecological Society of America Annual Meeting, Baltimore · in English*
 
 Why the publication system around ecological data is slow, opaque and siloed,
 and what a FAIR-aligned review and dissemination pipeline would have to look
@@ -39,6 +39,8 @@ like instead. From the vantage point of a senior editor at *Journal of
 Biogeography* and *Ecology and Evolution*.
 
 [{{< fa solid file-pdf >}} Slides (PDF, 19 pp.)](talks/2025-esa-fair-peer-review.pdf){.btn .btn-outline-primary}
+&nbsp;
+[{{< fa solid calendar-days >}} Sessão no programa](https://events.rdmobile.com/Lists/Details/2977203){.btn .btn-outline-secondary}
 
 ### Boas práticas para redação e submissão de artigos {#wiley-redacao}
 

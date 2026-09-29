@@ -574,6 +574,7 @@ Slides for several of these are on the [talks page](talks.qmd).
 |---|---|
 | **2026** | *IA na redação científica: ética, regras editoriais e boas práticas de reporte* — annual meeting of the Graduate Programme in Animal Biology, UFMS · [slides](https://provetelab.org/ia-escrita-cientifica/) |
 | **2025** | *The other story told by urban ecology in the Global South* — Universität Bielefeld, Germany · [slides](talks/2024-idiv-urban-ecology-global-south.pdf) |
+| | *FAIR peer review and publication: fostering a transparent publication ecosystem* — Ecological Society of America Annual Meeting, Baltimore, USA · [slides](talks/2025-esa-fair-peer-review.pdf) |
 | **2025** | *Boas práticas para redação e submissão de artigos* — Wiley Customer Education · [slides](talks/2025-wiley-boas-praticas-redacao.pdf) · [video](https://youtu.be/0b4y-8yhjnY) |
 | **2025** | *Acesso aberto e seus benefícios* — Wiley Customer Education · [slides](talks/2025-wiley-acesso-aberto.pdf) · [video](https://youtu.be/yTz446eXNA0) |
 | **2024** | Panelist — "Equity in open access publishing" — Association of Learned and Professional Society Publishers · [slides](talks/2024-alpsp-equity-open-access.pdf) |
