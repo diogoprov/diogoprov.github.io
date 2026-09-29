@@ -29,6 +29,17 @@ Companion hands-on workshop: [*IA na revisão de literatura*](teaching.html#past
 &nbsp;
 [{{< fa brands github >}} Source](https://github.com/diogoprov/ia-escrita-cientifica){.btn .btn-outline-secondary}
 
+### FAIR peer review and publication: fostering a transparent publication ecosystem {#esa-fair}
+
+*2025 · Ecological Society of America Annual Meeting · in English*
+
+Why the publication system around ecological data is slow, opaque and siloed,
+and what a FAIR-aligned review and dissemination pipeline would have to look
+like instead. From the vantage point of a senior editor at *Journal of
+Biogeography* and *Ecology and Evolution*.
+
+[{{< fa solid file-pdf >}} Slides (PDF, 19 pp.)](talks/2025-esa-fair-peer-review.pdf){.btn .btn-outline-primary}
+
 ### Boas práticas para redação e submissão de artigos {#wiley-redacao}
 
 *27 de maio de 2025 · webinário da Wiley em parceria com o Portal de
@@ -114,6 +125,19 @@ published later.
 
 [{{< fa solid file-pdf >}} Slides (PDF, 56 pp.)](talks/2016-unesp-clp-metodos-filogeneticos-comparativos.pdf){.btn .btn-outline-primary}
 
+### Eco-evolutionary dynamics in metacommunities {#eco-evo-metacom}
+
+*Integrating space, phenotypes and environment to understand multi-scale
+patterns · in English; also given in Portuguese at UEPB*
+
+Why community ecology cannot simply set evolution aside: evolutionary change
+can happen fast enough to alter ecological dynamics within the span of a study.
+A recap of the population genetics needed, worked examples of processes feeding
+back into one another, what eco-evolutionary dynamics are and — as importantly
+— what they are not, and what it takes to let a metacommunity evolve.
+
+[{{< fa solid file-pdf >}} Slides (PDF, 101 pp.)](talks/eco-evolutionary-dynamics-metacommunities.pdf){.btn .btn-outline-primary}
+
 ### Biogeography and macroevolution of anuran amphibians in the Brazilian Atlantic Forest {#swansea}
 
 *13 April 2017 · Science Club, Department of Biosciences, Swansea University,
@@ -128,6 +152,21 @@ comparative methods can and cannot tell us about it.
 [{{< fa solid bullhorn >}} Anúncio do evento](https://swantalks.blogspot.com/2017/04/biosciences-science-club-events-13.html){.btn .btn-outline-secondary}
 
 ## Conference presentations
+
+### The tempo and mode of body size evolution in charontid whip spiders {#evolution-whip-spiders}
+
+*June 2026 · Macroevolution session, Evolution 2026 · in English*
+
+With Paulo M. Martins, Gabriela A. Galvão, Thiago Gonçalves-Souza and Gustavo
+S. de Miranda. Amblypygi emerged over 330 million years ago and kept a
+remarkably conserved body plan — an evolutionary paradox next to the adaptive
+radiations other lineages show on reaching new niches. The talk disentangles
+the climatic from the habitat drivers of what body size variation there is.
+
+Published as Martins et al. 2026, *Evolution*
+([10.1093/evolut/qpag138](https://doi.org/10.1093/evolut/qpag138)).
+
+[{{< fa solid file-pdf >}} Slides (PDF, 14 pp.)](talks/2026-evolution-whip-spiders.pdf){.btn .btn-outline-primary}
 
 ### The tempo and mode of tadpole body shape evolution {#asn-asilomar}
 
