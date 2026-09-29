@@ -581,7 +581,7 @@ Slides for several of these are on the [talks page](talks.qmd).
 | **2019** | Short-course on Macroevolution — III Congresso Paulista de Ciências Biológicas, UNESP, São José do Rio Preto |
 | **2018** | *Processos neutros e baseados no nicho em comunidades* — Workshop of Community Ecology, UNESP/IBILCE (1st edition, Apr 2018; also 2020 online edition) · [slides](teaching/ecologia-interacoes/slides/08-nicho-teoria-neutra.pdf) |
 | **2017** | Seminar series, Department of Environmental Sciences — UFSCar, Sorocaba |
-| **2017** | Science Club event series, Department of Biosciences — Swansea University, UK · [slides](talks/2017-swansea-science-club.pdf) |
+| **2017** | *Biogeography and macroevolution of anuran amphibians in the Brazilian Atlantic Forest* — Science Club, Department of Biosciences, Swansea University, UK · [slides](talks/2017-swansea-science-club.pdf) · [announcement](https://swantalks.blogspot.com/2017/04/biosciences-science-club-events-13.html) |
 | **2016** | Institute of Biosciences, Letters and Exact Sciences — UNESP, São José do Rio Preto |
 | **2016** | Seminars in Aquatic Biology, Institute of Biosciences — UNESP, Santos |
 :::

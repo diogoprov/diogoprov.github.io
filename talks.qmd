@@ -31,7 +31,9 @@ Companion hands-on workshop: [*IA na revisão de literatura*](teaching.html#past
 
 ### Boas práticas para redação e submissão de artigos {#wiley-redacao}
 
-*2025 · Wiley Customer Education · in Portuguese*
+*27 de maio de 2025 · webinário da Wiley em parceria com o Portal de
+Periódicos da CAPES, sob o título "Dominando a escrita acadêmica: boas
+práticas, erros a evitar e estratégias de submissão" · in Portuguese*
 
 What editors and reviewers actually look for, from choosing a journal to
 responding to a decision letter — aimed at graduate students and early-career
@@ -40,6 +42,8 @@ researchers publishing in English as a second language.
 [{{< fa solid file-pdf >}} Slides (PDF)](talks/2025-wiley-boas-praticas-redacao.pdf){.btn .btn-outline-primary}
 &nbsp;
 [{{< fa brands youtube >}} Assistir](https://youtu.be/0b4y-8yhjnY){.btn .btn-outline-secondary}
+&nbsp;
+[{{< fa solid bullhorn >}} Anúncio da CAPES](https://www.periodicos.capes.gov.br/index.php/informativos/93-/4195-wiley-promove-seminario-sobre-escrita-academica-no-dia-27.html){.btn .btn-outline-secondary}
 
 ### Acesso aberto e seus benefícios {#wiley-acesso-aberto}
 
@@ -64,11 +68,18 @@ constraint is institutional rather than individual.
 
 ## Community ecology and evolution
 
-### Science Club seminar {#swansea}
+### Biogeography and macroevolution of anuran amphibians in the Brazilian Atlantic Forest {#swansea}
 
-*2017 · Department of Biosciences, Swansea University, UK · in English*
+*13 April 2017 · Science Club, Department of Biosciences, Swansea University,
+UK · in English*
+
+How the anuran assemblages of the Brazilian Atlantic Forest came to be what
+they are: biogeographic history, diversification, and what phylogenetic
+comparative methods can and cannot tell us about it.
 
 [{{< fa solid file-pdf >}} Slides (PDF)](talks/2017-swansea-science-club.pdf){.btn .btn-outline-primary}
+&nbsp;
+[{{< fa solid bullhorn >}} Anúncio do evento](https://swantalks.blogspot.com/2017/04/biosciences-science-club-events-13.html){.btn .btn-outline-secondary}
 
 ## Other invited symposia and seminars
 
