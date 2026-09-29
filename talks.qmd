@@ -213,11 +213,9 @@ pages on the [teaching page](teaching.qmd).
 ::: {.cv-timeline}
 | **2026** | Macroevolution symposium and Editor's round table — Brazilian Society for Evolutionary Biology |
 |---|---|
-| **2025** | Evolution seminar — Universität Bielefeld, Germany |
-| **2024** | iDiv Seminar Series — *The other story told by urban ecology in the Global South* |
 | **2017** | Seminar series, Department of Environmental Sciences — UFSCar, Sorocaba |
 | **2016** | Institute of Biosciences, Letters and Exact Sciences — UNESP, São José do Rio Preto |
-| **2016** | Seminars in Aquatic Biology, Institute of Biosciences — UNESP, Santos |
+| | Seminars in Aquatic Biology, Institute of Biosciences — UNESP, Santos |
 :::
 
 ---
