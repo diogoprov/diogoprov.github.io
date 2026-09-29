@@ -29,14 +29,17 @@ Companion hands-on workshop: [*IA na revisão de literatura*](teaching.html#past
 &nbsp;
 [{{< fa brands github >}} Source](https://github.com/diogoprov/ia-escrita-cientifica){.btn .btn-outline-secondary}
 
-### FAIR peer review and publication: fostering a transparent publication ecosystem {#esa-fair}
+### FAIR and CARE peer review and publication {#esa-fair}
 
-*2025 · Ecological Society of America Annual Meeting, Baltimore · in English*
+*11 August 2025 · contribution INS 01-03 to the session “Ecology Is Everywhere,
+But It Needs to CARE and Be FAIR” (1:30–3:00 PM EDT, Hilton Key 7) ·
+Ecological Society of America Annual Meeting, Baltimore · in English*
 
 Why the publication system around ecological data is slow, opaque and siloed,
 and what a FAIR-aligned review and dissemination pipeline would have to look
 like instead. From the vantage point of a senior editor at *Journal of
-Biogeography* and *Ecology and Evolution*.
+Biogeography* and *Ecology and Evolution*. The deck carries the subtitle
+*Fostering a Transparent Publication Ecosystem*.
 
 [{{< fa solid file-pdf >}} Slides (PDF, 19 pp.)](talks/2025-esa-fair-peer-review.pdf){.btn .btn-outline-primary}
 &nbsp;
