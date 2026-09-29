@@ -586,8 +586,7 @@ Slides for several of these are on the [talks page](talks.qmd).
 | **2017** | Seminar series, Department of Environmental Sciences — UFSCar, Sorocaba |
 | | *Biogeography and macroevolution of anuran amphibians in the Brazilian Atlantic Forest* — Science Club, Department of Biosciences, Swansea University, UK · [slides](talks/2017-swansea-science-club.pdf) · [announcement](https://swantalks.blogspot.com/2017/04/biosciences-science-club-events-13.html) |
 | **2016** | Institute of Biosciences, Letters and Exact Sciences — UNESP, São José do Rio Preto |
-| | Seminars in Aquatic Biology, Institute of Biosciences — UNESP, Santos |
-| | *Uso e desuso dos métodos filogenéticos comparativos* — Seminários Gerais em Biodiversidade Aquática, Institute of Biosciences, UNESP, São Vicente · [slides](talks/2016-unesp-clp-metodos-filogeneticos-comparativos.pdf) |
+| | *Uso e desuso dos métodos filogenéticos comparativos* — Seminários Gerais em Biodiversidade Aquática, Institute of Biosciences, Câmpus do Litoral Paulista, UNESP · [slides](talks/2016-unesp-clp-metodos-filogeneticos-comparativos.pdf) |
 :::
 
 :::

@@ -118,8 +118,8 @@ Given during a Humboldt-funded sabbatical at iDiv.
 
 *23 September 2016 · Seminários Gerais em Biodiversidade Aquática, Graduate
 Programme in Aquatic Biodiversity — Instituto de Biociências do Câmpus do
-Litoral Paulista, UNESP, São Vicente · at the invitation of Ivan Nunes ·
-2 h · in Portuguese*
+Litoral Paulista, UNESP · at the invitation of Ivan Nunes · 2 h · in
+Portuguese*
 
 What phylogenetic comparative methods are for, what they are routinely asked
 to do that they cannot, and how to tell the two apart — the main legitimate
@@ -215,7 +215,6 @@ pages on the [teaching page](teaching.qmd).
 |---|---|
 | **2017** | Seminar series, Department of Environmental Sciences — UFSCar, Sorocaba |
 | **2016** | Institute of Biosciences, Letters and Exact Sciences — UNESP, São José do Rio Preto |
-| | Seminars in Aquatic Biology, Institute of Biosciences — UNESP, Santos |
 :::
 
 ---
