@@ -70,14 +70,17 @@ constraint is institutional rather than individual.
 
 ### The other story told by urban ecology in the Global South {#idiv-urban}
 
-*Setembro de 2024 · iDiv Seminar Series — German Centre for Integrative
-Biodiversity Research (Halle-Jena-Leipzig) · in English*
+*iDiv Seminar Series — German Centre for Integrative Biodiversity Research
+(Halle-Jena-Leipzig), September 2024 · and Universität Bielefeld, 2025 · in
+English*
 
 Urban ecology written from the Global South rather than read from it: what
 changes in the questions, in the study systems and in the conclusions when the
 cities under study are Campo Grande and São José dos Campos instead of the
 northern-hemisphere cities that dominate the literature. Given while a Humboldt
 fellow on sabbatical at iDiv.
+
+The slides below are the 2025 Bielefeld version of the talk.
 
 [{{< fa solid file-pdf >}} Slides (PDF, 69 pp.)](talks/2024-idiv-urban-ecology-global-south.pdf){.btn .btn-outline-primary}
 
