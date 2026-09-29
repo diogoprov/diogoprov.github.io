@@ -68,6 +68,19 @@ constraint is institutional rather than individual.
 
 ## Community ecology and evolution
 
+### The other story told by urban ecology in the Global South {#idiv-urban}
+
+*Setembro de 2024 · iDiv Seminar Series — German Centre for Integrative
+Biodiversity Research (Halle-Jena-Leipzig) · in English*
+
+Urban ecology written from the Global South rather than read from it: what
+changes in the questions, in the study systems and in the conclusions when the
+cities under study are Campo Grande and São José dos Campos instead of the
+northern-hemisphere cities that dominate the literature. Given while a Humboldt
+fellow on sabbatical at iDiv.
+
+[{{< fa solid file-pdf >}} Slides (PDF, 69 pp.)](talks/2024-idiv-urban-ecology-global-south.pdf){.btn .btn-outline-primary}
+
 ### Biogeography and macroevolution of anuran amphibians in the Brazilian Atlantic Forest {#swansea}
 
 *13 April 2017 · Science Club, Department of Biosciences, Swansea University,
