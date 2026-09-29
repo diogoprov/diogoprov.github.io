@@ -689,7 +689,8 @@ continental de peixes.
 [Oral, I Simpósio Brasileiro de Morfologia Comparada de Vertebrados,
 Brasília]. *Honorable mention — Best oral presentation.* &nbsp;
 <a href="https://proceedings.science/simorf-2021/papers/evolucao-do-formato-de-celulas-vermelhas-sanguineas-numa-radiacao-continental-de-peixes" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a> · &nbsp;
-<a href="https://f1000research.com/posters/8-1700" title="Poster" aria-label="Poster"><i class="fa-solid fa-image"></i></a>
+<a href="https://f1000research.com/posters/8-1700" title="Poster" aria-label="Poster"><i class="fa-solid fa-image"></i></a> · &nbsp;
+<a href="talks/2021-simorf-red-blood-cell-shape.pdf" title="Slides" aria-label="Slides"><i class="fa-solid fa-file-pdf"></i></a>
 
 ### 2019
 

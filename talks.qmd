@@ -84,6 +84,27 @@ The slides below are the 2025 Bielefeld version of the talk.
 
 [{{< fa solid file-pdf >}} Slides (PDF, 69 pp.)](talks/2024-idiv-urban-ecology-global-south.pdf){.btn .btn-outline-primary}
 
+### Evolutionary macroecology of the Atlantic Forest of South America {#gottingen}
+
+*2024 · Seminar, Göttingen, Germany · in English*
+
+The regional species pool of the Atlantic Forest as a macroevolutionary
+product: how biogeographic history, diversification and the evolution of
+ecologically relevant traits combine to shape the assemblages we sample today.
+Given during a Humboldt-funded sabbatical at iDiv.
+
+[{{< fa solid file-pdf >}} Slides (PDF, 26 pp.)](talks/2024-gottingen-evolutionary-macroecology.pdf){.btn .btn-outline-primary}
+
+### Usos e desusos de métodos filogenéticos comparativos {#pcm-unesp}
+
+*2019 · Seminar, UNESP · in Portuguese*
+
+What phylogenetic comparative methods are for, what they are routinely asked
+to do that they cannot, and how to tell the two apart — the main legitimate
+uses, the common misuses, and practical advice for choosing a method.
+
+[{{< fa solid file-pdf >}} Slides (PDF, 56 pp.)](talks/2019-unesp-metodos-filogeneticos-comparativos.pdf){.btn .btn-outline-primary}
+
 ### Biogeography and macroevolution of anuran amphibians in the Brazilian Atlantic Forest {#swansea}
 
 *13 April 2017 · Science Club, Department of Biosciences, Swansea University,
@@ -96,6 +117,36 @@ comparative methods can and cannot tell us about it.
 [{{< fa solid file-pdf >}} Slides (PDF)](talks/2017-swansea-science-club.pdf){.btn .btn-outline-primary}
 &nbsp;
 [{{< fa solid bullhorn >}} Anúncio do evento](https://swantalks.blogspot.com/2017/04/biosciences-science-club-events-13.html){.btn .btn-outline-secondary}
+
+## Conference presentations
+
+### The tempo and mode of tadpole body shape evolution {#asn-asilomar}
+
+*9 January 2021 · American Society of Naturalists stand-alone meeting, Virtual
+Asilomar · session "Contributed Papers II: Trait Evolution" · in English*
+
+With Marcos Rafael Severgnini. Free-swimming tadpoles occupy habitats with very
+different hydrodynamics — permanent and temporary ponds, streams, phytotelmata,
+tree holes — and the larval morphospace shows repeated convergence. The talk
+asks at what rate, and under which model, that body-shape variation accumulated.
+
+[{{< fa solid file-pdf >}} Slides (PDF, 26 pp.)](talks/2021-asn-asilomar-tadpole-body-shape.pdf){.btn .btn-outline-primary}
+&nbsp;
+[{{< fa brands youtube >}} Assistir (a partir de 4:20:48)](https://www.youtube.com/watch?v=zxIyjsI3VQw&t=15648s){.btn .btn-outline-secondary}
+
+### The evolution of red blood cell shape in fishes {#simorf}
+
+*2021 · Oral presentation, I Simpósio Brasileiro de Morfologia Comparada de
+Vertebrados (SIMORF), Brasília · in English*
+
+With Brenda O. Martins, Lilian Franco-Belussi, Mayara S. Siqueira and Carlos E.
+Fernandes. **Honourable mention — best oral presentation.** The work behind the
+talk was published in the *Journal of Evolutionary Biology*
+([10.1111/jeb.13757](https://doi.org/10.1111/jeb.13757)).
+
+[{{< fa solid file-pdf >}} Slides (PDF, 21 pp.)](talks/2021-simorf-red-blood-cell-shape.pdf){.btn .btn-outline-primary}
+&nbsp;
+[{{< fa solid file-lines >}} Resumo nos anais](https://proceedings.science/simorf-2021/papers/evolucao-do-formato-de-celulas-vermelhas-sanguineas-numa-radiacao-continental-de-peixes){.btn .btn-outline-secondary}
 
 ## Other invited symposia and seminars
 
