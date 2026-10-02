@@ -492,8 +492,8 @@ Acero-Murcia, A.C.; **PROVETE, D.B.**; Fischer, E. 2023.
 [Morcegos da Serra da Bodoquena](https://repositorio.ufms.br/handle/123456789/5678).
 Editora UFMS, Campo Grande. 30 p. [in Portuguese].
 
-da Silva, F.R.; Gonçalves-Souza, T.; Paterno, G.; **PROVETE, D.B.**;
-Vancine, M.A. 2022.
+da Silva, F.R.; Gonçalves-Souza, T.; Paterno, G.B.; **PROVETE, D.B.**;
+Vancine, M.H. 2022.
 [*Análises ecológicas no R*](https://analises-ecologicas.com).
 Recife: NUPEEA.
 
@@ -580,7 +580,7 @@ Frontiers in Zoology.* &nbsp;
 
 **PROVETE, D.B.**; da Silva, F.R. 2026. Knowledge gap on the larval
 morphology of free-swimming anuran tadpoles from Brazil: a 14-year
-update. *Submitted to Biota Neotropica.*
+update. *Received minor revisions in Biota Neotropica.*
 
 **PROVETE, D.B.**; Ganci, C.C.; Ortega, Z. 2026. Behavioural
 thermoregulation in a Neotropical frog is detectable only when physiological
