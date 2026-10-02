@@ -544,7 +544,8 @@ pp. 1237–1239. New Jersey: Salem Press. &nbsp;
 ## In review
 
 **PROVETE, D.B.** 2026. A Middle Way proposal towards an equitable open access
-publishing model. *In the first round of revision in Learned Publishing.*
+publishing model. *In the first round of revision in Learned Publishing.* &nbsp;
+<a href="https://doi.org/10.31235/osf.io/pybrz_v1" title="Preprint on SocArXiv" aria-label="Preprint on SocArXiv"><i class="ai ai-osf"></i></a>
 
 Vasconcelos, T.; da Silva, F.R.; dos Santos, T.G.; Prado, V.H.M.;
 **PROVETE, D.B.** 2026. Disentangling the topographical, spatial, and

@@ -358,6 +358,8 @@ Ganci, C. C.; Ortega, Z.; **Provete, D. B.** 2020. Harlequin frogs (*Lysapsus*) 
 Martins, C. de A.; Pays, O.; Souza, F. L.; Renaud, P.-C.; Valente-Neto, F.; Silveira, M.; Ochoa-Quintero, J.; **Provete, D. B.**; Santos, C. C.; Melo, I.; Rodrigues, M. E.; Duleba, S.; Nunes, A. V.; Ceballos-Rivera, O. D.; de O. Roque, F. 2023. Biodiversity responses to forest cover loss: taxonomy and metrics matter. *bioRxiv*. [doi:10.1101/2023.05.21.541657](https://doi.org/10.1101/2023.05.21.541657)
 
 Severgnini, M. R.; **Provete, D. B.** 2024. The effect of urbanisation and local environmental heterogeneity on phenotypic variability of a tropical treefrog. *bioRxiv* 2024.11.28.625871. [doi:10.1101/2024.11.28.62587](https://doi.org/10.1101/2024.11.28.62587)
+
+**Provete, D. B.** 2026. A Middle Way proposal towards an equitable open access publishing model. *SocArXiv*. [doi:10.31235/osf.io/pybrz_v1](https://doi.org/10.31235/osf.io/pybrz_v1)
 :::
 
 ### Commentaries, editorials, and magazine papers
