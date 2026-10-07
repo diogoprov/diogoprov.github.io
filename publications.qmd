@@ -541,6 +541,13 @@ in ethnobiology and ethnoecology.* Springer, Berlin. &nbsp;
 pp. 1237–1239. New Jersey: Salem Press. &nbsp;
 <a href="https://diogoprovete.weebly.com/uploads/1/7/3/6/17367099/tocantins_river.pdf" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
+## In press
+
+**PROVETE, D.B.**; Citadini, J.M.; Gomes, F.R. 2026. Microhabitat
+structural complexity and predator stimulus drive predator escape decision
+by frogs. *Accepted in Behavioral Ecology.* &nbsp;
+<a href="https://www.biorxiv.org/content/10.64898/2026.05.26.728007v1" title="Preprint on bioRxiv" aria-label="Preprint on bioRxiv"><i class="ai ai-biorxiv"></i></a>
+
 ## In review
 
 **PROVETE, D.B.** 2026. A Middle Way proposal towards an equitable open access
@@ -561,11 +568,6 @@ revisions in Evolution.*
 2026. A practical guide to compositional data analysis in tissue stereology
 and blood cell profile. *In the 1st round of revision in Physiological Reports.* &nbsp;
 <a href="https://www.researchsquare.com/article/rs-9590298/v1" title="Open-access preprint" aria-label="Open-access preprint"><i class="ai ai-open-access"></i></a>
-
-**PROVETE, D.B.**; Citadini, J.M.; Gomes, F.R. 2026. Microhabitat
-structural complexity and predator stimulus drive predator escape decision
-by frogs. *Received major revisions in Behavioral Ecology.* &nbsp;
-<a href="https://www.biorxiv.org/content/10.64898/2026.05.26.728007v1" title="Preprint on bioRxiv" aria-label="Preprint on bioRxiv"><i class="ai ai-biorxiv"></i></a>
 
 Piatti, L.; de Sousa, D.L.H.; Oliveira, B.S.; de Melo, A.V.;
 Sugai, L.S.M.; **PROVETE, D.B.** 2026. Methodological choices influence
