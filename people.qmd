@@ -107,6 +107,7 @@ of frogs to urbanisation in the Atlantic Forest.</p>
 <p class="role">Former PhD · Ecologia e Conservação</p>
 <p class="topic">Eco-evolutionary dynamics shaping frog phenotypic and
 life-history traits along urban gradients.</p>
+<p class="now">Now: Substitute professor at UEMS</p>
 <p class="card-links">
 <a href="http://lattes.cnpq.br/6261003504491115" title="Lattes CV"><i class="ai ai-lattes"></i></a>
 </p>
@@ -119,6 +120,7 @@ life-history traits along urban gradients.</p>
 <p class="role">Former Master's student · Ecologia e Conservação</p>
 <p class="topic">Intra- vs. interspecific phenotypic variation of frogs
 along urban gradients.</p>
+<p class="now">Now: PhD student at UFG</p>
 <p class="card-links">
 <a href="http://lattes.cnpq.br/1991879172038018" title="Lattes CV"><i class="ai ai-lattes"></i></a>
 </p>
@@ -131,8 +133,10 @@ along urban gradients.</p>
 <p class="role">Former PhD · Ecologia e Conservação</p>
 <p class="topic">Evolutionary and ecological drivers of vertebrate diversity
 in the Brazilian Atlantic Forest.</p>
+<p class="now">Now: FAPESP postdoctoral fellow at UNICAMP</p>
 <p class="card-links">
 <a href="http://lattes.cnpq.br/3037868379750378" title="Lattes CV"><i class="ai ai-lattes"></i></a>
+<a href="https://mmoroti.github.io/research/" title="Website"><i class="fa-solid fa-globe"></i></a>
 </p>
 :::
 
@@ -167,8 +171,10 @@ distribution patterns of Neotropical frogs.</p>
 <p class="role">Former Master's student · Ecologia e Conservação</p>
 <p class="topic">Macroecology of urban bird diversity in Brazil using
 citizen-science data (iNaturalist, eBird).</p>
+<p class="now">Now: Environmental consultant</p>
 <p class="card-links">
 <a href="http://lattes.cnpq.br/8861238387153166" title="Lattes CV"><i class="ai ai-lattes"></i></a>
+<a href="https://www.linkedin.com/in/gabrieltirintan/" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
 </p>
 :::
 
@@ -179,6 +185,7 @@ citizen-science data (iNaturalist, eBird).</p>
 <p class="role">Former co-advised Master's student · Biologia Animal</p>
 <p class="topic">Geographic variation in morphological traits and fitness
 surface of the snake *Dipsas turgida*.</p>
+<p class="now">Now: High-school teacher</p>
 <p class="card-links">
 <a href="http://lattes.cnpq.br/4802782044597460" title="Lattes CV"><i class="ai ai-lattes"></i></a>
 </p>
@@ -191,6 +198,7 @@ surface of the snake *Dipsas turgida*.</p>
 <p class="role">Former undergraduate</p>
 <p class="topic">Tadpole community structure at Parque Natural Municipal
 Nascentes de Paranapiacaba (SP).</p>
+<p class="now">Now: Environmental consultant</p>
 :::
 
 ::: {.person-card}
@@ -199,6 +207,10 @@ Nascentes de Paranapiacaba (SP).</p>
 <p class="name">Gabriela B. Leite</p>
 <p class="role">Former undergraduate</p>
 <p class="topic">Comparative testis morphology in Neotropical anurans.</p>
+<p class="now">Now: Clinical research coordinator</p>
+<p class="card-links">
+<a href="https://www.linkedin.com/in/gabriela-leite-/" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+</p>
 :::
 
 ::: {.person-card}

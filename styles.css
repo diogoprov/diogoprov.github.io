@@ -481,3 +481,11 @@ blockquote {
   border-color: var(--bsl-accent);
 }
 .quarto-grid-item .card-title { font-weight: 600; font-size: 1.02rem; }
+
+/* --- People: alumni current position --- */
+.person-card .now {
+  font-size: .82rem;
+  font-weight: 600;
+  color: var(--bsl-accent-dark);
+  margin: .5rem 0 0;
+}
