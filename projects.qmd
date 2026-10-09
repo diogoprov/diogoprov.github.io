@@ -1,10 +1,37 @@
 ---
 title: "Projects"
-description-meta: "Funded research projects of the Biodiversity Synthesis Lab, including the CNPq-funded study of eco-evolutionary dynamics of urban biodiversity."
+description-meta: "Current and completed research projects of the Biodiversity Synthesis Lab: passive acoustic monitoring of frogs, urban heat and stingless bees, eco-evolutionary dynamics of urban biodiversity, and a Humboldt sabbatical at iDiv."
 toc: true
 ---
 
-## Eco-evolutionary dynamics of urban biodiversity
+## Current projects
+
+### FrogNet — acoustic monitoring of frogs
+
+<span class="project-status ongoing">Ongoing</span>
+
+FrogNet monitors frog vocalisations in the **Pantanal** and the **Cerrado**
+with passive acoustic recorders and **BirdNET custom classifiers** trained to
+recognise the calls of local species. Daiene L. Hokama Sousa's PhD applies
+ecoacoustics and CNN-based species recognition to Pantanal frog
+metacommunities within this project.
+
+The validation step — deciding whether a classifier's detections can be
+trusted — is handled by the lab's open
+[BirdNET Validation Sampler](software.qmd#birdnet-validation-sampler).
+
+### Urban heat and stingless bees
+
+<span class="project-status ongoing">Ongoing</span>
+
+How the urban heat island changes the phenotypic traits and
+honey biochemistry of **stingless bees** in a tropical city. The project brings
+together Ana Paula Andreazzi's PhD and João Victor Santos Barros's
+undergraduate research on thermal adaptation (see [People](people.qmd)).
+
+## Completed projects
+
+### Eco-evolutionary dynamics of urban biodiversity
 
 *Understanding human impacts to improve human–wildlife coexistence.*
 
@@ -25,7 +52,7 @@ three Brazilian cities — both at the **population** and
 and international conferences. Stay tuned for the papers coming out of
 this project!
 
-### Team
+#### Team
 
 ::: {.copi-grid}
 
@@ -64,9 +91,22 @@ this project!
 
 :::
 
+### Humboldt sabbatical at iDiv (2024–2025)
+
+<span class="project-status done">Completed</span>
+
+Diogo spent 2024–2025 as an **Alexander von Humboldt Research Fellow**
+(Experienced Researchers) at the German Centre for Integrative Biodiversity
+Research (**iDiv**), Leipzig. Talks from
+the sabbatical — on urban ecology in the Global South and on the evolutionary
+macroecology of the Atlantic Forest — are on the [Talks](talks.qmd) page.
+
 ## Funding history
 
-- **2024 — FUNDECT research productivity grant.** Continued support for
-  field work conducted by lab students.
+- **2024–2027 — FUNDECT research productivity grant.** Supports field work
+  conducted by lab students.
+- **2024–2025 — Alexander von Humboldt Foundation.** Research fellowship for
+  experienced researchers and subsidy towards research costs for the
+  sabbatical at iDiv.
 - **2022–2026 — CNPq Universal** (Proc 407318/2021-6). Eco-evolutionary
   dynamics of urban biodiversity. *Concluded March 2026.*

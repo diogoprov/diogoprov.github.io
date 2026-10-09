@@ -414,3 +414,17 @@ blockquote {
   .navbar-brand .navbar-title { font-size: .88rem; }
   .navbar-brand img { display: none; }   /* tiny logo; the hero logo is right below */
 }
+
+/* --- Projects: status badges --- */
+.project-status {
+  display: inline-block;
+  font-size: .75rem;
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  padding: .1rem .55rem;
+  border-radius: 999px;
+  margin-bottom: .6rem;
+}
+.project-status.ongoing { background: #e3f1ea; color: #1f6b45; }
+.project-status.done    { background: var(--bsl-bg-soft); color: var(--bsl-muted); }
