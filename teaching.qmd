@@ -7,45 +7,43 @@ toc: true
 
 ### Bioestatística — Ciências Biológicas
 
-Disciplina obrigatória de 68 h ministrada anualmente no INBio/UFMS,
-cobrindo estatística descritiva, delineamento amostral, distribuições
-de probabilidade, inferência via teste de hipóteses e modelos lineares
-(t, ANOVA, regressão, qui-quadrado).
+Compulsory undergraduate course (68 h) taught every year at INBio/UFMS.
+Covers descriptive statistics, sampling design, probability distributions,
+inference through hypothesis testing, and linear models (t-test, ANOVA,
+regression, chi-square).
 
 [Course site & materials →](https://provetelab.org/bioestatistica/){.btn .btn-outline-primary}
 
 ### Urban Ecology — Ciências Biológicas
 
-Disciplina optativa de 51 h para alunos de graduação em Ciências
-Biológicas. Cobre biodiversidade urbana, fragmentação de hábitats,
-ilha de calor, respostas ecossistêmicas, invasões biológicas,
-desigualdade social e "luxury effect", ambientes aquáticos urbanos,
-evolução contemporânea, e ciência cidadã (iNaturalist + R).
-Ofertada em 2019/2 e 2022/2.
+Elective undergraduate course (51 h) for Biological Sciences students.
+Covers urban biodiversity, habitat fragmentation, the urban heat island,
+ecosystem responses, biological invasions, social inequality and the
+"luxury effect", urban aquatic environments, contemporary evolution, and
+citizen science (iNaturalist + R). Offered in 2019/2 and 2022/2.
 
 [Course site & materials →](teaching/ecologia-urbana/){.btn .btn-outline-primary}
 
 ### Comunidades de ambientes lênticos — Ciências Biológicas
 
-Disciplina optativa de graduação em Ciências Biológicas, ofertada
-em 2018. Cobre fundamentos de limnologia, características
-físico-químicas de sistemas lênticos (estratificação, luz,
-oxigênio, nutrientes), adaptações dos organismos, estrutura de
-comunidades, dinâmica de metacomunidades, relações tróficas,
-técnicas de amostragem, introdução à análise multivariada
-aplicada a comunidades aquáticas e manejo de ambientes lênticos
-frente às mudanças globais.
+Elective undergraduate course for Biological Sciences, offered in 2018.
+Covers the fundamentals of limnology, the physical and chemical features of
+lentic systems (stratification, light, oxygen, nutrients), adaptations of
+the organisms, community structure, metacommunity dynamics, trophic
+relationships, sampling techniques, an introduction to multivariate analysis
+of aquatic communities, and the management of lentic environments in the
+face of global change.
 
 [Course site & materials →](teaching/comunidades-lenticos/){.btn .btn-outline-primary}
 
 ### Ecologia de interações — Ciências Biológicas
 
-Disciplina de 51 h para Ciências Biológicas (Bacharelado e Licenciatura),
-ofertada em 2017/2 e 2019/1. Competição, predação, parasitismo e mutualismo
-num contexto evolutivo, com modelos explícitos (Lotka-Volterra, Tilman,
-Nicholson-Bailey) explorados no Populus e reimplementados no R, questionários
-pré-aula sobre os textos da semana e uma prática de campo de herbivoria no
-campus.
+Undergraduate course (51 h) for Biological Sciences (Bacharelado and
+Licenciatura), offered in 2017/2 and 2019/1. Competition, predation,
+parasitism and mutualism in an evolutionary context, with explicit models
+(Lotka-Volterra, Tilman, Nicholson-Bailey) explored in Populus and
+re-implemented in R, pre-class quizzes on the week's readings, and a field
+practical on herbivory on campus.
 
 [Course site & materials →](teaching/ecologia-interacoes/){.btn .btn-outline-primary}
 
@@ -112,7 +110,7 @@ discussion sessions led by student pairs.
 ### Multidimensional analyses
 
 Graduate course (45 h) for the [Mestrado em Biologia
-Animal](https://ppgba.ufms.br) at UFMS, Campo Grande. Covers
+Animal](https://ppgbioanimal.ufms.br) at UFMS, Campo Grande. Covers
 classification (hierarchical and k-means clustering, IndVal),
 unconstrained ordination (PCA, PCoA, nMDS, CA), constrained ordination
 (CCA, RDA, db-RDA, LDA), Mantel/Procrustes/PROTEST, and PERMANOVA —
@@ -123,7 +121,7 @@ all hands-on in R with the `vegan`, `ade4` and `labdsv` packages.
 ### Phylogenetic comparative methods
 
 Graduate course (45 h) for the [Mestrado em Biologia
-Animal](https://ppgba.ufms.br) at UFMS, Campo Grande. Covers Brownian
+Animal](https://ppgbioanimal.ufms.br) at UFMS, Campo Grande. Covers Brownian
 motion, PGLS, ancestral state reconstruction, phylogenetic signal,
 multi-regime OU models, and multivariate extensions — all hands-on in
 R. Open to graduate students from any line of research with basic
@@ -135,7 +133,7 @@ familiarity with phylogenetic inference.
 ### Análise de dados univariados
 
 Intensive graduate course (45 h, one-week format, 21–25 September 2026) for
-the [PPG in Biologia Animal](https://ppgba.ufms.br) at UFMS, Campo Grande.
+the [PPG in Biologia Animal](https://ppgbioanimal.ufms.br) at UFMS, Campo Grande.
 Presents the usual statistical tests as a single family under the linear
 model, then relaxes its assumptions one at a time: the distribution of the
 response (GLM — likelihood, binomial and Poisson, diagnostics,
@@ -147,12 +145,12 @@ Opens with exploratory data analysis, reproducibility, and AI literacy.
 
 [Course site & materials →](https://provetelab.org/analise-dados-univariados-2026-2/){.btn .btn-outline-primary}
 
-## Past courses & short-courses
+## Short-courses, workshops and past courses {#past-courses-short-courses}
 
-### 2026 — IA na revisão de literatura (PT)
+### 2026 — IA na revisão de literatura (PT) {#ia-revisao-literatura}
 
 *Upcoming · 19 October 2026 · workshop (2 h) for the [PPG in Biologia
-Animal](https://ppgba.ufms.br), UFMS · in Portuguese*
+Animal](https://ppgbioanimal.ufms.br), UFMS · in Portuguese*
 
 Hands-on workshop on AI-assisted literature searching. How the web stopped being
 machine-readable and why that reaches your review; why hallucinated references and
@@ -163,7 +161,7 @@ hands-on comparison of Consensus and Undermind against a reproducible Boolean
 search. Closes on what the published evidence says about sensitivity vs precision,
 on reproducibility under PRISMA-S/ROSES, and on how to declare an AI-assisted
 search. Companion to the talk [*IA na redação
-científica*](talks.html#ia-escrita-cientifica).
+científica*](talks.qmd#ia-escrita-cientifica).
 
 [Workshop slides →](https://provetelab.org/ia-revisao-literatura/){.btn .btn-outline-primary}
 &nbsp;

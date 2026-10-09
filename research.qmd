@@ -82,7 +82,7 @@ Two of those outputs are openly available:
   licence, and accompanies a methodological paper currently in review.
 - [**ecodados**](software.qmd#ecodados) is the R package behind
   [*Análises Ecológicas no R*](https://analises-ecologicas.com), an open
-  626-page textbook on ecological data analysis. It carries the datasets that
+  640-page textbook on ecological data analysis. It carries the datasets that
   make every example in the book reproducible.
 
 The same commitment shows up in teaching: course materials are written in

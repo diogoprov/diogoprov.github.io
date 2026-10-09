@@ -23,8 +23,8 @@ livros (não redistribuídos publicamente por direitos autorais). Consulte o
 ## Recursos externos
 
 - [Página Campo Grande no iNaturalist](https://www.inaturalist.org/places/campo-grande-ms-br)
-- [Tutorial do pacote rinat](https://cran.r-project.org/web/packages/rinat/vignettes/rinatVignette.html)
-- [Tutorial do pacote spooc](https://ropensci.github.io/spocc/)
+- [Tutorial do pacote rinat](https://cran.r-project.org/package=rinat)
+- [Tutorial do pacote spocc](https://docs.ropensci.org/spocc/)
 
 ---
 

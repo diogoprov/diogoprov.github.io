@@ -41,8 +41,8 @@ Our lab has access to several facilities at INBIO (UFMS):
 - **Field station in the Pantanal** — [Base de Estudos do Pantanal](https://propp.ufms.br/coordenadorias/base-de-estudos-do-pantanal/)
 - **Multi-user molecular biology and image labs** —
   [stereomicroscope, light microscope, and SEM](https://ppgec.ufms.br/facilidadeslaboratorios/)
-- **Natural history collections** — [Zoology](https://ccbs.ufms.br/colecao-zoologica/)
-  and [Herbarium](https://ccbs.ufms.br/herbariocgms/), with several hundred
+- **Natural history collections** — [Zoology](https://inbio.ufms.br/zufms/)
+  and [Herbarium](https://inbio.ufms.br/cgms/), with several hundred
   catalogued specimens
 - **LTER study site** at the Bodoquena Plateau —
   [PELD Bodoquena](http://peldbodoquena.wixsite.com/home)

@@ -194,7 +194,7 @@ swirl()
 
 **ecodados** is the companion R package to
 [*Análises Ecológicas no R*](https://analises-ecologicas.com) (da Silva,
-Gonçalves-Souza, Paterno, Provete & Vancine, 2022), a 626-page open textbook
+Gonçalves-Souza, Paterno, Provete & Vancine, 2022), a 640-page open textbook
 that teaches the full workflow of ecological data analysis in R — from data
 organisation and visualisation to multivariate analysis, spatial ecology and
 phylogenetic comparative methods.

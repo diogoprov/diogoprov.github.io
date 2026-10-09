@@ -1,7 +1,7 @@
 scholar:
   h_index: 26
-  i10_index: 44
-  citations_total: 1847
+  i10_index: 45
+  citations_total: 1851
   citations_5y: 0
 wos:
   h_index: 18
@@ -11,4 +11,4 @@ scopus:
   h_index: 19
   citations: 1126
   papers: 64
-last_checked: May 2026
+last_checked: June 2026

@@ -19,7 +19,7 @@ listing:
 
 ::: {.callout-tip appearance="minimal"}
 Disciplina **MÉTODOS FILOGENÉTICOS COMPARATIVOS** (201521439, 45 h) do
-[Mestrado em Biologia Animal](https://ppgba.ufms.br/) da UFMS.
+[Mestrado em Biologia Animal](https://ppgbioanimal.ufms.br/) da UFMS.
 Esta página reúne os **materiais públicos** das edições anteriores —
 slides, scripts R com walkthroughs HTML, datasets e bibliografia.
 Para informações sobre a próxima oferta,

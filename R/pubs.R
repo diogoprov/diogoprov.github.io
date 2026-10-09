@@ -5,7 +5,8 @@
 #   pubs_list("peer_reviewed")  -> publications.qmd  (HTML view, with icons)
 #   pubs_cv("articles")         -> cv.qmd            (numbered CV view)
 #
-# Never edit the generated lists in the .qmd files - edit the YAML.
+# publications.qmd uses pubs_list()/pubs_count(); cv.qmd is still
+# hand-edited and does not call pubs_cv() yet.
 # Usage inside a .qmd chunk:
 #     ```{r}
 #     #| echo: false

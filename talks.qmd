@@ -23,7 +23,7 @@ limits of LLMs, and the AIdIT framework for reporting AI use. Every quoted
 policy comes from the publisher's own page; the deck closes with its own AI
 use declaration.
 
-Companion hands-on workshop: [*IA na revisão de literatura*](teaching.html#past-courses-short-courses).
+Companion hands-on workshop: [*IA na revisão de literatura*](teaching.qmd#ia-revisao-literatura).
 
 [{{< fa solid display >}} Open the slides](https://provetelab.org/ia-escrita-cientifica/){.btn .btn-outline-primary}
 &nbsp;
@@ -43,13 +43,13 @@ Biogeography* and *Ecology and Evolution*. The deck carries the subtitle
 
 [{{< fa solid file-pdf >}} Slides (PDF, 19 pp.)](talks/2025-esa-fair-peer-review.pdf){.btn .btn-outline-primary}
 &nbsp;
-[{{< fa solid calendar-days >}} Sessão no programa](https://events.rdmobile.com/Lists/Details/2977203){.btn .btn-outline-secondary}
+[{{< fa solid calendar-days >}} Session in the programme](https://events.rdmobile.com/Lists/Details/2977203){.btn .btn-outline-secondary}
 
 ### Boas práticas para redação e submissão de artigos {#wiley-redacao}
 
-*27 de maio de 2025 · webinário da Wiley em parceria com o Portal de
-Periódicos da CAPES, sob o título "Dominando a escrita acadêmica: boas
-práticas, erros a evitar e estratégias de submissão" · in Portuguese*
+*27 May 2025 · Wiley webinar in partnership with the CAPES Periódicos
+Portal, under the title "Dominando a escrita acadêmica: boas práticas, erros
+a evitar e estratégias de submissão" · in Portuguese*
 
 What editors and reviewers actually look for, from choosing a journal to
 responding to a decision letter — aimed at graduate students and early-career
@@ -57,9 +57,9 @@ researchers publishing in English as a second language.
 
 [{{< fa solid file-pdf >}} Slides (PDF)](talks/2025-wiley-boas-praticas-redacao.pdf){.btn .btn-outline-primary}
 &nbsp;
-[{{< fa brands youtube >}} Assistir](https://youtu.be/0b4y-8yhjnY){.btn .btn-outline-secondary}
+[{{< fa brands youtube >}} Watch](https://youtu.be/0b4y-8yhjnY){.btn .btn-outline-secondary}
 &nbsp;
-[{{< fa solid bullhorn >}} Anúncio da CAPES](https://www.periodicos.capes.gov.br/index.php/informativos/93-/4195-wiley-promove-seminario-sobre-escrita-academica-no-dia-27.html){.btn .btn-outline-secondary}
+[{{< fa solid bullhorn >}} CAPES announcement](https://www.periodicos.capes.gov.br/index.php/informativos/93-/4195-wiley-promove-seminario-sobre-escrita-academica-no-dia-27.html){.btn .btn-outline-secondary}
 
 ### Acesso aberto e seus benefícios {#wiley-acesso-aberto}
 
@@ -70,9 +70,9 @@ what the choice means in practice for a researcher based in the Global South.
 
 [{{< fa solid file-pdf >}} Slides (PDF)](talks/2025-wiley-acesso-aberto.pdf){.btn .btn-outline-primary}
 &nbsp;
-[{{< fa brands youtube >}} Assistir](https://youtu.be/yTz446eXNA0){.btn .btn-outline-secondary}
+[{{< fa brands youtube >}} Watch](https://youtu.be/yTz446eXNA0){.btn .btn-outline-secondary}
 
-### Equity in open access publishing {#alspp-equity}
+### Equity in open access publishing {#alpsp-equity}
 
 *2024 · Panel — Association of Learned and Professional Society Publishers (ALPSP)*
 
@@ -145,7 +145,7 @@ back into one another, what eco-evolutionary dynamics are and — as importantly
 
 [{{< fa solid file-pdf >}} Slides (PDF, 101 pp.)](talks/2020-ii-workshop-eco-evolutionary-dynamics.pdf){.btn .btn-outline-primary}
 &nbsp;
-[{{< fa brands youtube >}} Assistir](https://www.youtube.com/watch?v=ZRLomP-K0o4&list=PLy2rjqiD2VP4M8K-19Whs0bs3bHQEGvwJ){.btn .btn-outline-secondary}
+[{{< fa brands youtube >}} Watch](https://www.youtube.com/watch?v=ZRLomP-K0o4&list=PLy2rjqiD2VP4M8K-19Whs0bs3bHQEGvwJ){.btn .btn-outline-secondary}
 
 ### Biogeography and macroevolution of anuran amphibians in the Brazilian Atlantic Forest {#swansea}
 
@@ -158,7 +158,7 @@ comparative methods can and cannot tell us about it.
 
 [{{< fa solid file-pdf >}} Slides (PDF)](talks/2017-swansea-science-club.pdf){.btn .btn-outline-primary}
 &nbsp;
-[{{< fa solid bullhorn >}} Anúncio do evento](https://swantalks.blogspot.com/2017/04/biosciences-science-club-events-13.html){.btn .btn-outline-secondary}
+[{{< fa solid bullhorn >}} Event announcement](https://swantalks.blogspot.com/2017/04/biosciences-science-club-events-13.html){.btn .btn-outline-secondary}
 
 ## Conference presentations
 
@@ -189,7 +189,7 @@ asks at what rate, and under which model, that body-shape variation accumulated.
 
 [{{< fa solid file-pdf >}} Slides (PDF, 26 pp.)](talks/2021-asn-asilomar-tadpole-body-shape.pdf){.btn .btn-outline-primary}
 &nbsp;
-[{{< fa brands youtube >}} Assistir (a partir de 4:20:48)](https://www.youtube.com/watch?v=zxIyjsI3VQw&t=15648s){.btn .btn-outline-secondary}
+[{{< fa brands youtube >}} Watch (from 4:20:48)](https://www.youtube.com/watch?v=zxIyjsI3VQw&t=15648s){.btn .btn-outline-secondary}
 
 ### The evolution of red blood cell shape in fishes {#simorf}
 
@@ -203,7 +203,7 @@ talk was published in the *Journal of Evolutionary Biology*
 
 [{{< fa solid file-pdf >}} Slides (PDF, 21 pp.)](talks/2021-simorf-red-blood-cell-shape.pdf){.btn .btn-outline-primary}
 &nbsp;
-[{{< fa solid file-lines >}} Resumo nos anais](https://proceedings.science/simorf-2021/papers/evolucao-do-formato-de-celulas-vermelhas-sanguineas-numa-radiacao-continental-de-peixes){.btn .btn-outline-secondary}
+[{{< fa solid file-lines >}} Abstract in the proceedings](https://proceedings.science/simorf-2021/papers/evolucao-do-formato-de-celulas-vermelhas-sanguineas-numa-radiacao-continental-de-peixes){.btn .btn-outline-secondary}
 
 ## Other invited symposia and seminars
 
