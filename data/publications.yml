@@ -437,7 +437,7 @@ peer_reviewed:
           banded calico snake *Oxyrhopus petolarius* (Serpentes: Diapsidae).
           *Herpetology Notes* 7:115–118.
         links_raw: |-
-          <a href="http://www.herpetologynotes.seh-herpetology.org/Volume7_PDFs/Costa_HerpetologyNotes_volume7_pages115-118.pdf" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
+          <a href="https://web.archive.org/web/20200713045500/http://www.herpetologynotes.seh-herpetology.org/Volume7_PDFs/Costa_HerpetologyNotes_volume7_pages115-118.pdf" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
   - year: "2013"
     entries:
       - cv: articles
@@ -593,10 +593,10 @@ book_chapters:
       - cv: articles
         cite: |-
           **PROVETE, D.B.** 2013. Tocantins River. In: Howarth, R.W. (Ed.)
-          *[Biomes & Ecosystems.](http://salempress.com/Store/samples/Biomes_Ecosystems/Biomes_Ecosystems.htm)*
+          *Biomes & Ecosystems.*
           pp. 1237–1239. New Jersey: Salem Press.
         links_raw: |-
-          <a href="https://diogoprovete.weebly.com/uploads/1/7/3/6/17367099/tocantins_river.pdf" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
+          <a href="https://web.archive.org/web/20191112202612/http://diogoprovete.weebly.com/uploads/1/7/3/6/17367099/tocantins_river.pdf" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
 
 in_press:
   - year: null

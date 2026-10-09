@@ -30,6 +30,8 @@ Por que precisamos de métodos comparativos? Como o sinal de descendência comum
 - [`Gomes_phylo.txt`](Gomes_phylo.txt)
 - [`Gomes_tree_datada.txt`](Gomes_tree_datada.txt)
 - [`anole.data.csv`](anole.data.csv)
+- [`Magallon_etal_PL_ML.nex`](Magallon_etal_PL_ML.nex) — filogenia datada de angiospermas (Magallón et al. 2015; [Dryad](https://doi.org/10.5061/dryad.k4227), CC0)
+- [`GlobalWoodinessDatabase.csv`](GlobalWoodinessDatabase.csv) — hábito lenhoso vs. herbáceo (Zanne et al. 2014; [Dryad](https://doi.org/10.5061/dryad.63q27), CC0)
 
 ## Leituras recomendadas
 
@@ -39,7 +41,7 @@ Por que precisamos de métodos comparativos? Como o sinal de descendência comum
 
 ## Recursos externos
 
-- [AnthroTree (Charles Nunn)](http://www.anthrotree.info/)
+- [AnthroTree (Charles Nunn)](https://web.archive.org/web/20160127032940/http://www.anthrotree.info/wiki/projects/pica/The_AnthroTree_Website.html)
 - [Companion site — *Modern Phylogenetic Comparative Methods*](http://www.mpcm-evolution.com/)
 - [Workshop Ilhabela 2015 — material online](https://lukejharmon.github.io/ilhabela/)
 - [Treethinkers](http://treethinkers.org/)

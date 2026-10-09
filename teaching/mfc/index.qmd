@@ -176,7 +176,7 @@ em teoria.
 - [Companion site do livro *Modern PCM* (Garamszegi 2014)](http://www.mpcm-evolution.com/)
 - [Blog do Liam Revell (phytools)](http://blog.phytools.org/)
 - [Treethinkers — workshop materials](http://treethinkers.org/)
-- [AnthroTree — site de Charles Nunn](http://www.anthrotree.info/)
+- [AnthroTree — site de Charles Nunn](https://web.archive.org/web/20160127032940/http://www.anthrotree.info/wiki/projects/pica/The_AnthroTree_Website.html)
 - [Mapa mental do curso (Coggle)](https://coggle.it/diagram/WhbkkxE2BAAB0R0m)
 
 ## Edições anteriores

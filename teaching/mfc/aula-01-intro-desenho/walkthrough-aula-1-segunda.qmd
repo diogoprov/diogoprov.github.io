@@ -157,10 +157,10 @@ library(phyndr)
 library(taxonlookup)
 #https://github.com/traitecoevo/phyndr-ms/blob/master/vignette/vignette.md
 #Filogenia de angiospermas datada com 798 taxa
-angio_phy <- read.nexus("https://datadryad.org/bitstream/handle/10255/dryad.76144/Magallon_etal_PL_ML.nex?sequence=1")
+angio_phy <- read.nexus("Magallon_etal_PL_ML.nex")  # Magallón et al. 2015, Dryad doi:10.5061/dryad.k4227
 
 #dados para plant growth form (i.e., woody v. herbaceous) para 238 spp
-wood_dat<-read.csv("https://datadryad.org/bitstream/handle/10255/dryad.59002/GlobalWoodinessDatabase.csv?sequence=1", row.names = 1)
+wood_dat<-read.csv("GlobalWoodinessDatabase.csv", row.names = 1)  # Zanne et al. 2014, Dryad doi:10.5061/dryad.63q27
 head(wood_dat)
 dim(wood_dat)
 

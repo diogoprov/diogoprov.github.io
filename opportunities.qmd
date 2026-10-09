@@ -31,7 +31,7 @@ admission details.
   (highly recommended, especially for undergraduates thinking about
   approaching a potential advisor — in Portuguese)
 - [Fifteen questions to ask before attending grad school](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/bes2.70047)
-- [What to bring to a meeting with your advisor](http://www.avasthilab.org/2017/03/14/what-to-bring-to-a-meeting-with-your-advisor/)
+- [What to bring to a meeting with your advisor](https://web.archive.org/web/20191219001135/http://www.avasthilab.org/2017/03/14/what-to-bring-to-a-meeting-with-your-advisor/)
 - [Dicas para quem deseja ingressar na carreira acadêmica ainda na graduação](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/bes2.1745)
 
 ## Available resources
@@ -69,9 +69,9 @@ Model-building is essential because it lets us expand our view of the study
 system and turn ecology into a predictive science.
 
 Other influential papers that shaped our thinking (chronological):
-[Brown 1995](http://ifile.it/dpxqf3v/brown__-_macroecology.pdf),
+[Brown 1995](https://press.uchicago.edu/ucp/books/book/chicago/M/bo3632297.html),
 [Lawton 1999](https://www.jstor.org/stable/3546712),
-[Hubbell 2001](http://ecologia.ib.usp.br/bie5778/lib/exe/fetch.php?media=hubbell2001.pdf),
+[Hubbell 2001](https://doi.org/10.1515/9781400837526),
 [Simberloff 2004](https://www.journals.uchicago.edu/doi/full/10.1086/420777),
 [Roughgarden 2009](https://link.springer.com/article/10.1007/s10539-009-9164-z),
 [Scheiner & Willig 2008](https://link.springer.com/article/10.1007/s12080-007-0002-0),

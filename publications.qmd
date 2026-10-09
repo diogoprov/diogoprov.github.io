@@ -371,4 +371,4 @@ anfíbios num brejo na área urbana de Alfenas-MG.
 **PROVETE, D.B.** 2010. *Uso de recursos e padrão de co-ocorrência com
 insetos predadores em comunidades sub-tropicais de girinos* [main text in
 English, introduction in Portuguese]. Master's thesis. &nbsp;
-<a href="https://www.lap-publishing.com/catalog/details/store/gb/book/978-3-8465-1727-7/diversity-and-resource-use-in-a-neotropical-tadpole-metacommunity" title="Available as a book" aria-label="Available as a book"><i class="fa-solid fa-book"></i> Available as a book</a>.
+<a href="https://web.archive.org/web/20230327072411/https://www.lap-publishing.com/catalog/details/store/gb/book/978-3-8465-1727-7/diversity-and-resource-use-in-a-neotropical-tadpole-metacommunity" title="Available as a book" aria-label="Available as a book"><i class="fa-solid fa-book"></i> Available as a book</a>.
