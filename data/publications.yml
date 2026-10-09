@@ -645,7 +645,7 @@ in_review:
           <a href="https://www.researchsquare.com/article/rs-9590298/v1" title="Open-access preprint" aria-label="Open-access preprint"><i class="ai ai-open-access"></i></a>
       - cv: articles
         cite: |-
-          Piatti, L.; de Sousa, D.L.H.; Oliveira, B.S.; de Melo, A.V.;
+          Piatti, L.; [de Sousa, D.L.H.]{.underline}; Oliveira, B.S.; de Melo, A.V.;
           Sugai, L.S.M.; **PROVETE, D.B.** 2026. Methodological choices influence
           ecological inference in passive acoustic monitoring of a Neotropical
           nightjar. *Received major revisions in Journal of Avian Biology.*

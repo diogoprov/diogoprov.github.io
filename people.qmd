@@ -185,9 +185,9 @@ surface of the snake *Dipsas turgida*.</p>
 :::
 
 ::: {.person-card}
-<img src="assets/images/people/negre.jpg" alt="Daniel Din Negre"
+<img src="assets/images/people/negre.jpg" alt="Daniel Din Negri"
      onerror="this.style.display='none'">
-<p class="name">Daniel Din Negre</p>
+<p class="name">Daniel Din Negri</p>
 <p class="role">Former undergraduate</p>
 <p class="topic">Tadpole community structure at Parque Natural Municipal
 Nascentes de Paranapiacaba (SP).</p>
