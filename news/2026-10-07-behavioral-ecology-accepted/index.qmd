@@ -1,0 +1,13 @@
+---
+title: "Paper on frog escape decisions accepted in Behavioral Ecology"
+description: "Microhabitat complexity and predator stimulus shape how frogs decide to flee."
+date: "2026-10-07"
+categories: [papers]
+---
+
+Our paper **"Microhabitat structural complexity and predator stimulus drive
+predator escape decision by frogs"** (Provete, Citadini & Gomes) has been
+accepted in *Behavioral Ecology*.
+
+The preprint is available on
+[bioRxiv](https://www.biorxiv.org/content/10.64898/2026.05.26.728007v1).

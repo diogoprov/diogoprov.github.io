@@ -1,0 +1,13 @@
+---
+title: "Diogo accredited as Professional Statistician (PStat®)"
+description: "The American Statistical Association granted PStat® and GStat® accreditation."
+date: "2026-06-15"
+categories: [recognition]
+---
+
+Diogo is now an accredited **Professional Statistician (PStat®)** and
+**Graduate Statistician (GStat®)** of the American Statistical Association.
+
+Methodological work is a core part of the lab — see
+[Research](../../research.qmd#quantitative-methods-and-research-software) and
+[Software](../../software.qmd).

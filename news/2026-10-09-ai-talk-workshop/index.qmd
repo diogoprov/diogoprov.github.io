@@ -1,0 +1,17 @@
+---
+title: "Upcoming: AI in scientific writing and literature reviews"
+description: "A talk and a hands-on workshop on generative AI in research, in Portuguese."
+date: "2026-10-09"
+categories: [talks]
+---
+
+Diogo will give the talk **"IA na redação científica: ética, regras editoriais e
+boas práticas de reporte"** at the annual meeting of the Graduate Programme in
+Animal Biology at UFMS (October 2026), and again at UNILA, Foz do Iguaçu, in
+December 2026.
+
+A companion hands-on workshop, **"IA na revisão de literatura"**, runs on
+**19 October 2026** for the same programme.
+
+Slides and details: [Talks](../../talks.qmd#ia-escrita-cientifica) ·
+[Teaching](../../teaching.qmd#ia-revisao-literatura).

@@ -1,0 +1,11 @@
+---
+title: "Talk at Evolution 2026"
+description: "Body size evolution in charontid whip spiders, in the Macroevolution session."
+date: "2026-06-20"
+categories: [talks]
+---
+
+Diogo presented **"The tempo and mode of body size evolution in charontid whip
+spiders"** in the Macroevolution session of **Evolution 2026**.
+
+[Slides and abstract](../../talks.qmd#evolution-whip-spiders)

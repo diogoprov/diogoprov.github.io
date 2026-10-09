@@ -35,6 +35,8 @@ September 2017.
 [<i class="ai ai-orcid"></i> ORCID](https://orcid.org/0000-0002-0097-0651)
 [<i class="ai ai-researchgate"></i> ResearchGate](https://www.researchgate.net/profile/Diogo-Provete)
 [{{< fa brands github >}} GitHub](https://github.com/diogoprov)
+[{{< fa solid leaf >}} iNaturalist](https://www.inaturalist.org/people/1169)
+[{{< fa solid camera >}} CalPhotos](https://calphotos.berkeley.edu/cgi/user_query?where-name_full=Diogo+B.+Provete&one=T)
 :::
 :::
 :::

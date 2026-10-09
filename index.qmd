@@ -7,11 +7,12 @@ page-layout: full
 listing:
   - id: latest-news
     contents: "news/*/index.qmd"     # only post folders, not news/index.qmd itself
-    type: default
+    type: grid
+    grid-columns: 3
     sort: "date desc"
-    max-items: 5
+    max-items: 6
     date-format: "MMMM YYYY"
-    fields: [date, title, description]
+    fields: [date, title, description, categories]
     feed: true
 ---
 
@@ -38,6 +39,23 @@ excellence — favoring quality over quantity in everything we do.
 [Meet the team →](people.qmd){.btn .btn-outline-primary}
 [Join us →](opportunities.qmd){.btn .btn-outline-primary}
 
+:::
+
+## In the field
+
+::: {.field-strip}
+::: {.field-photo}
+![](assets/images/field/bocaina-2008.jpg){fig-alt="Diogo crouching by a shallow pond in highland grassland, sampling tadpoles with a dip net"}
+<p class="field-caption">Sampling tadpoles in highland grassland ponds, Serra da Bocaina (2008).</p>
+:::
+::: {.field-photo}
+![](assets/images/field/pantanal-2018.jpg){fig-alt="Diogo standing in a pond in the Pantanal holding a long-handled dip net"}
+<p class="field-caption">Dip-netting tadpoles in a Pantanal pond, Miranda (2018).</p>
+:::
+::: {.field-photo .field-photo-top}
+![](assets/images/field/amazonia-2009.jpg){fig-alt="Diogo at night in the Amazon forest wearing a headlamp, holding a giant leaf"}
+<p class="field-caption">Night fieldwork during a field course in the Amazon (2009).</p>
+:::
 :::
 
 ## Lab news

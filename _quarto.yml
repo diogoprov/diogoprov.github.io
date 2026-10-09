@@ -68,6 +68,8 @@ website:
       [<i class="ai ai-orcid"></i>](https://orcid.org/0000-0002-0097-0651){aria-label="ORCID" .footer-icon}
       [<i class="ai ai-google-scholar"></i>](https://scholar.google.com.br/citations?user=qDwcLvIAAAAJ){aria-label="Google Scholar" .footer-icon}
       [<i class="ai ai-lattes"></i>](http://lattes.cnpq.br/9194853434437963){aria-label="Lattes" .footer-icon}
+      [<i class="fa-solid fa-leaf"></i>](https://www.inaturalist.org/people/1169){aria-label="iNaturalist" .footer-icon}
+      [<i class="fa-solid fa-camera"></i>](https://calphotos.berkeley.edu/cgi/user_query?where-name_full=Diogo+B.+Provete&one=T){aria-label="CalPhotos" .footer-icon}
       [<i class="bi bi-bluesky"></i>](https://bsky.app/profile/provete.bsky.social){aria-label="Bluesky" .footer-icon}
       [<i class="bi bi-github"></i>](https://github.com/diogoprov){aria-label="GitHub" .footer-icon}
       · Built with [Quarto](https://quarto.org)

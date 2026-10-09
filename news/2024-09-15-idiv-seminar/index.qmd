@@ -1,0 +1,11 @@
+---
+title: "iDiv seminar on urban ecology in the Global South"
+description: "Urban ecology written from the Global South."
+date: "2024-09-15"
+categories: [talks]
+---
+
+Diogo gave a talk in the **iDiv Seminar Series** (Halle-Jena-Leipzig) on
+"The other story told by urban ecology in the Global South".
+
+[Slides](../../talks.qmd#idiv-urban)

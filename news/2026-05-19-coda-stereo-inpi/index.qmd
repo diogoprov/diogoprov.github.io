@@ -1,0 +1,14 @@
+---
+title: "CoDa Stereo registered at INPI"
+description: "Our compositional data app for stereology is now registered software."
+date: "2026-05-19"
+categories: [software]
+---
+
+**CoDa Stereo**, the lab's Shiny app for compositional data analysis of
+stereological and histomorphometric data, was granted software registration
+by the Brazilian National Institute of Industrial Property (INPI,
+**BR512026003293-8**) on 19 May 2026.
+
+The app stays free and open source under the MIT licence.
+[Try it or read more](../../software.qmd#coda-stereo).

@@ -43,6 +43,8 @@ last_checked <- if (!is.null(m$last_checked)) m$last_checked else "—"
 <li><i class="ai ai-lattes"></i> [Lattes](http://lattes.cnpq.br/9194853434437963)</li>
 <li>{{< fa brands github >}} [diogoprov](https://github.com/diogoprov)</li>
 <li>{{< fa brands bluesky >}} [provete.bsky.social](https://bsky.app/profile/provete.bsky.social)</li>
+<li>{{< fa solid leaf >}} [iNaturalist](https://www.inaturalist.org/people/1169)</li>
+<li>{{< fa solid camera >}} [CalPhotos](https://calphotos.berkeley.edu/cgi/user_query?where-name_full=Diogo+B.+Provete&one=T)</li>
 <li>{{< fa solid location-dot >}} Campo Grande, MS · Brazil — 79002-970</li>
 </ul>
 
@@ -449,7 +451,7 @@ Paterno, G. B.; **PROVETE, D. B.**; da Silva, F. R.; Gonçalves-Souza, T.; Vanci
 | **2012** | Translator, *ThesBio* — Portuguese synonym thesaurus for the Biodiversity Heritage Library / SciELO |
 | **2011** | Contributor, Brazilian Portuguese translation of the **R** statistical environment (R Foundation, Vienna) |
 | **2010** | Curator of frogs and toads — **Encyclopedia of Life** |
-| **2007** | Taxonomic reviewer for photographic records — **CalPhotos**, UC Berkeley |
+| **2007** | Taxonomic reviewer for photographic records — [**CalPhotos**](https://calphotos.berkeley.edu/cgi/user_query?where-name_full=Diogo+B.+Provete&one=T), UC Berkeley |
 :::
 
 ## Selected oral presentations
@@ -570,7 +572,7 @@ Selected short courses and summer schools:
 | **2024 – 2025** | Subsidy towards research costs *(Forschungskostenzuschuss)* — Humboldt Foundation — **EUR 12,000** |
 |---|---|
 | **2024 – 2027** | Research Productivity grant — FUNDECT-CNPq — **BRL 75,600** |
-| **2022 – 2025** | Research grant — CNPq — **BRL 99,000** |
+| **2022 – 2026** | Research grant (Universal) — CNPq — **BRL 99,000** · extended from 2025 to 2026 |
 | **Dec 2016 – Aug 2017** | FAPESP postdoctoral fellowship — **BRL 188,212** |
 | **Apr 2015 – Oct 2015** | CNPq Science-without-Borders postdoctoral fellowship — **SEK 137,740** |
 | **Apr 2011 – Mar 2015** | CAPES-DS PhD fellowship — **BRL 64,800** |

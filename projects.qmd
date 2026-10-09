@@ -41,7 +41,7 @@ funded this work has ended; papers stemming from it are still being
 written and submitted.
 :::
 
-From **March 2022 to March 2026** we ran a CNPq Universal grant
+From **March 2022 to March 2026** (originally until 2025, then extended) we ran a CNPq Universal grant
 (**Proc 407318/2021-6**) from the Brazilian National Council for
 Scientific and Technological Research (CNPq) to investigate how frogs
 are responding to urban ecosystems in terms of their phenotype. One

@@ -1,0 +1,12 @@
+---
+title: "Diogo starts a Humboldt fellowship at iDiv"
+description: "A sabbatical at the German Centre for Integrative Biodiversity Research."
+date: "2024-04-01"
+categories: [funding]
+---
+
+Diogo started a sabbatical as an **Alexander von Humboldt Research Fellow**
+(Experienced Researchers) at the German Centre for Integrative Biodiversity
+Research (**iDiv**), Leipzig.
+
+More on the sabbatical on the [Projects](../../projects.qmd) page.

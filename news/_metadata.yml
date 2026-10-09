@@ -1,0 +1,2 @@
+# Lab news posts: show month and year only (several posts have no exact day)
+date-format: "MMMM YYYY"

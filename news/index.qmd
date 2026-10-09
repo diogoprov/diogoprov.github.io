@@ -4,7 +4,8 @@ description-meta: "News from the Biodiversity Synthesis Lab: new members, grants
 listing:
   contents: "*/index.qmd"            # only post folders, not this index
   sort: "date desc"
-  type: default
+  type: grid
+  grid-columns: 3
   date-format: "MMMM YYYY"
   fields: [date, title, description, categories]
   categories: true

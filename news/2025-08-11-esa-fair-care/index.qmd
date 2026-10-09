@@ -1,0 +1,12 @@
+---
+title: "Talk on FAIR and CARE peer review at ESA 2025"
+description: "Rethinking how ecological data are reviewed and published."
+date: "2025-08-11"
+categories: [talks]
+---
+
+At the **Ecological Society of America Annual Meeting** in Baltimore, Diogo
+spoke in the session "Ecology Is Everywhere, But It Needs to CARE and Be FAIR"
+on what a FAIR-aligned review and publication pipeline would look like.
+
+[Slides](../../talks.qmd#esa-fair)

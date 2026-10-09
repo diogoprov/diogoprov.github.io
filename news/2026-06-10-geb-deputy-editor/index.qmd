@@ -1,0 +1,11 @@
+---
+title: "Diogo joins Global Ecology and Biogeography as Deputy Editor"
+description: "A new editorial role at Global Ecology and Biogeography."
+date: "2026-06-10"
+categories: [editorial]
+---
+
+Diogo is now a **Deputy Editor** of *Global Ecology and Biogeography*. He
+continues as Senior Editor at *Journal of Biogeography*.
+
+The full list of editorial roles is in the [CV](../../cv.qmd).

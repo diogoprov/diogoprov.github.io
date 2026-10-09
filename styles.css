@@ -440,3 +440,44 @@ blockquote {
   .navbar .navbar-nav .nav-link { padding-left: .3rem; padding-right: .3rem; font-size: .86rem; }
   .navbar-brand .navbar-title { font-size: .8rem; }
 }
+
+/* --- Home: field photo strip --- */
+.field-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 1.2rem 0 2rem;
+}
+.field-photo { margin: 0; }
+.field-photo p:has(img), .field-photo figure, .field-photo .quarto-figure { margin: 0; }
+.field-photo img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+.field-photo-top img { object-position: 50% 30%; }
+.field-caption {
+  font-size: .85rem;
+  color: var(--bsl-muted);
+  margin: .45rem .1rem 0;
+  line-height: 1.4;
+}
+@media (max-width: 768px) {
+  .field-strip { grid-template-columns: 1fr; }
+}
+
+/* --- News cards (home and news page) --- */
+.quarto-grid-item.card {
+  background: var(--bsl-bg-card);
+  border: 1px solid var(--bsl-border);
+  border-radius: 8px;
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+.quarto-grid-item.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,.05);
+  border-color: var(--bsl-accent);
+}
+.quarto-grid-item .card-title { font-weight: 600; font-size: 1.02rem; }

@@ -1,0 +1,14 @@
+---
+title: "Whip spider body evolution published in Evolution"
+description: "Climate and habitat drivers of body shape and size in charontid whip spiders."
+date: "2026-08-29"
+categories: [papers]
+---
+
+**"The impact of climate and habitat on body shape and size evolution in
+charontid whip spiders"** (Martins, Galvão, Gonçalves-Souza, Provete & de
+Miranda) is now out in *Evolution* 80(10):2203–2216.
+
+[Read the paper](https://doi.org/10.1093/evolut/qpag138) ·
+[preprint](https://www.biorxiv.org/content/10.1101/2025.10.06.680801v1) ·
+[data](https://figshare.com/articles/journal_contribution/Data_and_analysis_for_The_impact_of_climate_and_habitat_on_body_shape_and_size_evolution_in_charontid_whip_spiders/32436555)
