@@ -22,7 +22,7 @@ peer_reviewed:
           <a href="https://figshare.com/articles/journal_contribution/Data_and_analysis_for_The_impact_of_climate_and_habitat_on_body_shape_and_size_evolution_in_charontid_whip_spiders/32436555" title="Data" aria-label="Data"><i class="ai ai-open-data"></i></a>
       - cv: articles
         cite: |-
-          Rebouças, R.; Moroti, M.T.; Carvalho, T.; Martins, M.R.; Toledo, L.F.;
+          Rebouças, R.; [Moroti, M.T.]{.underline}; Carvalho, T.; Martins, M.R.; Toledo, L.F.;
           **PROVETE, D.B.** 2026. Environmental and geomorphological drivers of frog
           diversity on islands worldwide. *Ecography* 2026:e07818.
         links_raw: |-
@@ -38,7 +38,7 @@ peer_reviewed:
           <a href="https://www.sciencedirect.com/science/article/pii/S2530064425000422" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
       - cv: articles
         cite: |-
-          Menezes, L.B.C.; Severgnini, M.R.; Pezzuti, T.L.; Garey, M.V.;
+          [Menezes, L.B.C.]{.underline}; [Severgnini, M.R.]{.underline}; Pezzuti, T.L.; Garey, M.V.;
           **PROVETE, D.B.** 2025. The tadpole of *Chiasmocleis altomontana* (Anura:
           Microhylidae). *PeerJ* 13:e19220. <a href="https://peerj.com/articles/19220/" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
       - cv: articles
@@ -58,7 +58,7 @@ peer_reviewed:
     entries:
       - cv: articles
         cite: |-
-          Severgnini, M.R.; de Oliveira, M.M.; Valério, L.M.; **PROVETE, D.B.** 2024.
+          [Severgnini, M.R.]{.underline}; de Oliveira, M.M.; Valério, L.M.; **PROVETE, D.B.** 2024.
           Temporal dynamics of species richness and composition in a peri-urban
           tropical frog community in central Brazil. *Ecology and Evolution* 14(11):e70628.
         links_raw: |-
@@ -79,7 +79,7 @@ peer_reviewed:
           America* 105(4):e02180.
       - cv: articles
         cite: |-
-          Moroti, M.T.; Skeels, A.; da Silva, F.R.; **PROVETE, D.B.** 2024. Climate
+          [Moroti, M.T.]{.underline}; Skeels, A.; da Silva, F.R.; **PROVETE, D.B.** 2024. Climate
           interacts with diversification rate in determining species richness and trait diversity of tetrapods in a global hotspot. *Journal of
           Biogeography* 51(12):2484–2497.
         links_raw: |-
@@ -122,7 +122,7 @@ peer_reviewed:
           <a href="https://doi.org/10.1111/jbi.14697" title="DOI: 10.1111/jbi.14697" aria-label="DOI"><i class="ai ai-doi"></i> 10.1111/jbi.14697</a>
       - cv: articles
         cite: |-
-          Acero-Murcia, A.C.; Severgnini, M.R.; Fischer, E.A.; **PROVETE, D.B.** 2023.
+          [Acero-Murcia, A.C.]{.underline}; [Severgnini, M.R.]{.underline}; Fischer, E.A.; **PROVETE, D.B.** 2023.
           An evolutionary ecomorphological perspective on the assembly of a Neotropical
           bat metacommunity. *Journal of Mammalian Evolution* 30(3):627–640.
         links_raw: |-
@@ -214,7 +214,7 @@ peer_reviewed:
           <a href="https://figshare.com/articles/dataset/Data_and_description_of_analysis_of_the_paper_Defensive_behavior_and_caudal_autotomy_rate_in_Coleodactylus_meridionalis_Squamata_Sphaerodactylidae_/5592412" title="Data" aria-label="Data"><i class="ai ai-open-data"></i></a>
       - cv: articles
         cite: |-
-          Moroti, M.T.; Soares, P.T.; Pedrozo, M.; **PROVETE, D.B.**; Santana, D.J.
+          [Moroti, M.T.]{.underline}; [Soares, P.T.]{.underline}; Pedrozo, M.; **PROVETE, D.B.**; Santana, D.J.
           2021. The effects of morphology, phylogeny and prey availability on trophic resource partitioning in an anuran community. *Basic and Applied Ecology*
           50:181–191.
         links_raw: |-
@@ -261,7 +261,7 @@ peer_reviewed:
     entries:
       - cv: editorials
         cite: |-
-          Ceron, K.; Severgnini, M.R.; **PROVETE, D.B.** 2020. Boas práticas na análise de séries temporais em herpetologia. *Herpetologia Brasileira* 9(3):72–85.
+          Ceron, K.; [Severgnini, M.R.]{.underline}; **PROVETE, D.B.** 2020. Boas práticas na análise de séries temporais em herpetologia. *Herpetologia Brasileira* 9(3):72–85.
         links_raw: |-
           <a href="https://storage.builderall.com/franquias/2/6437879/editor-html/10007874.pdf" title="Issue PDF (Herpetologia Brasileira)" aria-label="Issue PDF (Herpetologia Brasileira)"><i class="fa-solid fa-file-pdf"></i></a>
       - cv: articles
@@ -395,7 +395,7 @@ peer_reviewed:
     entries:
       - cv: articles
         cite: |-
-          Leite, G.B.; Franco-Belussi, L.; **PROVETE, D.B.**; Oliveira, C. 2015.
+          [Leite, G.B.]{.underline}; Franco-Belussi, L.; **PROVETE, D.B.**; Oliveira, C. 2015.
           Comparative testis morphology of Neotropical anurans. *Zoologischer
           Anzeiger* 257:29–38.
         links_raw: |-
@@ -536,7 +536,7 @@ books:
     entries:
       - cv: articles
         cite: |-
-          Acero-Murcia, A.C.; **PROVETE, D.B.**; Fischer, E. 2023.
+          [Acero-Murcia, A.C.]{.underline}; **PROVETE, D.B.**; Fischer, E. 2023.
           [Morcegos da Serra da Bodoquena](https://repositorio.ufms.br/handle/123456789/5678).
           Editora UFMS, Campo Grande. 30 p. [in Portuguese].
       - cv: articles
@@ -563,7 +563,7 @@ book_chapters:
     entries:
       - cv: articles
         cite: |-
-          Severgnini, M.R.; Ganci, C.; Souza, F.L.; Almeida-Gomes, M.; Angeoletto, F.; **PROVETE, D.B.** 2025. Ecological dynamics of frogs in tropical cities:
+          [Severgnini, M.R.]{.underline}; Ganci, C.; Souza, F.L.; Almeida-Gomes, M.; Angeoletto, F.; **PROVETE, D.B.** 2025. Ecological dynamics of frogs in tropical cities:
           uncovering bias using a systematic literature review. In: Angeoletto, F. (Ed.)
           *Ecology of Tropical Cities,* pp. 265–290. Springer.
         links_raw: |-
@@ -638,7 +638,7 @@ in_review:
           revisions in Evolution.*
       - cv: articles
         cite: |-
-          **PROVETE, D.B.**; Severgnini, M.R.; Fernandes, C.E.; Franco-Belussi, L.
+          **PROVETE, D.B.**; [Severgnini, M.R.]{.underline}; Fernandes, C.E.; Franco-Belussi, L.
           2026. A practical guide to compositional data analysis in tissue stereology
           and blood cell profile. *In the 1st round of revision in Physiological Reports.*
         links_raw: |-
@@ -674,7 +674,7 @@ in_review:
           <a href="https://www.biorxiv.org/content/10.1101/2020.06.11.146613v1" title="Preprint on bioRxiv" aria-label="Preprint on bioRxiv"><i class="ai ai-biorxiv"></i></a>
       - cv: articles
         cite: |-
-          Severgnini, M.R.; **PROVETE, D.B.** 2026. The effect of urbanization and
+          [Severgnini, M.R.]{.underline}; **PROVETE, D.B.** 2026. The effect of urbanization and
           local environmental heterogeneity on phenotypic variability in a tropical
           frog. *In the 2nd round of revision in Ecology.*
         links_raw: |-
@@ -695,7 +695,7 @@ in_preparation:
           pronounced internal structure. *To be submitted to Freshwater Biology.*
       - cv: articles
         cite: |-
-          Moroti, M.T.; Moura, M.; Pires, M.M.; **PROVETE, D.B.** Divergent pathways
+          [Moroti, M.T.]{.underline}; Moura, M.; Pires, M.M.; **PROVETE, D.B.** Divergent pathways
           shape climatic niches and body size evolution across terrestrial vertebrates.
           *To be submitted to Proceedings of the Royal Society B.*
         links_raw: |-
@@ -715,7 +715,7 @@ in_preparation:
           Biological Reviews.*
       - cv: articles
         cite: |-
-          Soares, P.T.; da Silva, F.R.; **PROVETE, D.B.\***; Prado, V.H.M.\*
+          [Soares, P.T.]{.underline}; da Silva, F.R.; **PROVETE, D.B.\***; Prado, V.H.M.\*
           Taxonomic, functional, and phylogenetic beta diversity of Brazilian Cerrado
           frogs respond differently to climatic and spatial factors. *To be submitted
           to Journal of Biogeography.* ^\*joint senior authors^
@@ -726,7 +726,7 @@ in_preparation:
           *To be submitted to Oecologia.*
       - cv: articles
         cite: |-
-          Leite, G.B.; Franco-Belussi, L.; **PROVETE, D.B.**; Oliveira, C. The
+          [Leite, G.B.]{.underline}; Franco-Belussi, L.; **PROVETE, D.B.**; Oliveira, C. The
           influence of reproductive modes on testicular morphology in six families of
           Neotropical anurans. *To be submitted to Zoologica Scripta.*
       - cv: articles

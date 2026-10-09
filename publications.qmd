@@ -104,27 +104,27 @@ pubs_list("in_preparation")
 
 ### 2023
 
-Severgnini, M.R.; **PROVETE, D.B.** 2023. It's about time: the effects of
+[Severgnini, M.R.]{.underline}; **PROVETE, D.B.** 2023. It's about time: the effects of
 urbanization on phenotypic traits in a tropical city.
 [Poster, 108th Annual Meeting of the ESA, Portland, OR, USA]. &nbsp;
 <a href="https://esa2023.eventscribe.net/fsPopup.asp?PosterID=588896&amp;Query=provete&amp;Mode=posterinfo" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a>
 
 ### 2022
 
-Moroti, M.T.; da Silva, F.R.; **PROVETE, D.B.** 2022. Non-equilibrium
+[Moroti, M.T.]{.underline}; da Silva, F.R.; **PROVETE, D.B.** 2022. Non-equilibrium
 processes prevail in shaping species richness and functional diversity of
 terrestrial vertebrates in a global hotspot.
 [Poster, 107th Annual Meeting of the ESA, Montréal, QC, Canada]. &nbsp;
 <a href="https://programarchives.z20.web.core.windows.net/2022/Paper2155661.html" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a>
 
-Acero-Murcia, A.C.; Fischer, E.A.; **PROVETE, D.B.** 2022. Landscape
+[Acero-Murcia, A.C.]{.underline}; Fischer, E.A.; **PROVETE, D.B.** 2022. Landscape
 composition and structure as a filter to wing shape in a tropical bat
 metacommunity.
 [Poster, 2022 British Ecological Society Annual Meeting, Edinburgh, UK].
 
 ### 2021
 
-Acero-Murcia, A.C.; Severgnini, M.R.; Lacerda, H.D.; Fischer, E.A.;
+[Acero-Murcia, A.C.]{.underline}; [Severgnini, M.R.]{.underline}; Lacerda, H.D.; Fischer, E.A.;
 **PROVETE, D.B.** 2021. The influence of diet and foraging strategy in the
 skull morphology in a bat community.
 [Oral, I Simpósio Brasileiro de Morfologia Comparada de Vertebrados,
@@ -132,7 +132,7 @@ Brasília].
 *Honorable mention — Best oral presentation.* &nbsp;
 <a href="https://proceedings.science/simorf-2021/papers/the-influence-of-diet-and-foraging-strategy-in-the-skull-morphology-in-a-bat-community" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a>
 
-Severgnini, M.R.; Baldo, D.; Vera Candioti, M.F.; **PROVETE, D.B.** 2021.
+[Severgnini, M.R.]{.underline}; Baldo, D.; Vera Candioti, M.F.; **PROVETE, D.B.** 2021.
 Influência do ambiente sobre a forma de corpo em girinos do gênero
 *Melanophryniscus* (Anura: Bufonidae).
 [Poster, I Simpósio Brasileiro de Morfologia Comparada de Vertebrados,
@@ -150,7 +150,7 @@ Brasília]. *Honorable mention — Best oral presentation.* &nbsp;
 
 ### 2019
 
-Bonin, L.; Soares, P.; Eriksson, A.; **PROVETE, D.B.** 2019. Evolution of
+[Bonin, L.]{.underline}; Soares, P.; Eriksson, A.; **PROVETE, D.B.** 2019. Evolution of
 echolocation in bats (Chiroptera). *F1000Research* 8:1201.
 [Poster, X Congresso Brasileiro de Mastozoologia]. *Best poster presentation.* &nbsp;
 <a href="https://doi.org/10.7490/f1000research.1117133.1" title="DOI: 10.7490/f1000research.1117133.1" aria-label="DOI"><i class="ai ai-doi"></i> 10.7490/f1000research.1117133.1</a>
@@ -162,7 +162,7 @@ Martins, B.O.; **PROVETE, D.B.**; Franco-Belussi, L.; Fernandes, C.E.S.
 *Best poster presentation.* &nbsp;
 <a href="https://doi.org/10.7490/f1000research.1117527.1" title="DOI: 10.7490/f1000research.1117527.1" aria-label="DOI"><i class="ai ai-doi"></i> 10.7490/f1000research.1117527.1</a>
 
-Severgnini, M.R.; Souza, V. dos S.; Santana, D.; **PROVETE, D.B.** 2019.
+[Severgnini, M.R.]{.underline}; Souza, V. dos S.; Santana, D.; **PROVETE, D.B.** 2019.
 The tempo and mode of Neotropical tadpoles body shape evolution.
 *F1000Research* 8:1181.
 [Poster, IX Congresso Brasileiro de Herpetologia]. &nbsp;
@@ -200,14 +200,14 @@ da Chapada do Araripe, nordeste do Brasil.
 
 ### 2015
 
-Leite, G.B.; Franco-Belussi, L.; **PROVETE, D.B.**; Oliveira, C. 2015.
+[Leite, G.B.]{.underline}; Franco-Belussi, L.; **PROVETE, D.B.**; Oliveira, C. 2015.
 Evolution of a reproductive character in 26 Neotropical anuran species.
 [Oral, VII Encontro de Biologia Comparada, Ribeirão Preto, Brazil]. &nbsp;
 <a href="http://f1000research.com/slides/4-458" title="Slides" aria-label="Slides"><i class="fa-solid fa-file-powerpoint"></i></a>
 
 ### 2014
 
-Leite, G.B.; Franco-Belussi, L.; **PROVETE, D.B.**; Oliveira, C. 2014.
+[Leite, G.B.]{.underline}; Franco-Belussi, L.; **PROVETE, D.B.**; Oliveira, C. 2014.
 Comparative analysis of testicular histology in eight species of frogs.
 [Poster, XV Congreso Argentino de Herpetología, Mendoza, Argentina]. &nbsp;
 <a href="assets/abstracts/2014-leite-cah.pdf" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a>
@@ -289,7 +289,7 @@ Biota Minas.
 [Poster, IX Congresso Latino-Americano de Herpetologia, Curitiba, Brazil]. &nbsp;
 <a href="assets/abstracts/2011-silva-clah.pdf" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a>
 
-Negri, D.; **PROVETE, D.B.**; Laporta, J. 2011. Estrutura de comunidade de
+[Negri, D.]{.underline}; **PROVETE, D.B.**; Laporta, J. 2011. Estrutura de comunidade de
 anfíbios anuros na fase larval em ambientes lóticos e lênticos em
 Paranapiacaba, Santo André, São Paulo.
 [Poster, IX Congresso Latino-Americano de Herpetologia, Curitiba, Brazil]. &nbsp;
