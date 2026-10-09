@@ -73,7 +73,7 @@ frog metacommunities.</p>
 <img src="assets/images/people/bruna.jpg" alt="Bruna M. P. Campos"
      onerror="this.style.display='none'">
 <p class="name">Bruna M. P. Campos</p>
-<p class="role">Master's student · Ecologia e Conservação</p>
+<p class="role">Master's student · Biologia Animal</p>
 <p class="topic">Macroecological responses of multiple biodiversity facets
 of frogs to urbanisation in the Atlantic Forest.</p>
 <p class="card-links">

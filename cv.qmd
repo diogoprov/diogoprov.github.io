@@ -152,7 +152,7 @@ last_checked <- if (!is.null(m$last_checked)) m$last_checked else "—"
 ### Student supervision
 
 ::: {.cv-timeline}
-| **2025 –** | Bruna Maria de Paula Campos · MSc |
+| **2025 –** | Bruna Maria de Paula Campos · MSc, Animal Biology |
 |---|---|
 | **2024 –** | Ana Paula Andreazzi · PhD |
 | **2023 –** | Daiene L. Hokama Sousa · PhD |
