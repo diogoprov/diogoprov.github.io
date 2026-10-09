@@ -1,14 +1,62 @@
 ---
 title: "Projects"
-description-meta: "Current and completed research projects of the Biodiversity Synthesis Lab: passive acoustic monitoring of frogs, urban heat and stingless bees, eco-evolutionary dynamics of urban biodiversity, and a Humboldt sabbatical at iDiv."
+description-meta: "Funded research projects of the Biodiversity Synthesis Lab: phenotypic evolution and metacommunity theory (FUNDECT/CNPq), acoustic monitoring of frogs, eco-evolutionary dynamics of urban biodiversity (CNPq), and a Humboldt sabbatical at iDiv."
 toc: true
 ---
 
 ## Current projects
 
+### Reconciling phenotypic evolution with metacommunity theory
+
+<span class="project-status ongoing">Ongoing · Aug 2024 – Jul 2027</span>
+
+*Conciliando evolução fenotípica com o arcabouço teórico de metacomunidades:
+perspectivas para uma nova síntese*
+
+Funded by **FUNDECT** and **CNPq** through the Special Call Fundect/CNPq
+15/2024 (Research Productivity fellowships; process 83/027.032/2024). The grant
+combines a 36-month research productivity fellowship (Fundect PQ-2, equivalent
+to CNPq PQ level E) with a research allowance for field work and consumables —
+**BRL 75,600** in total.
+
+The metacommunity framework explains species distributions through a handful
+of archetypes that combine environmental heterogeneity, dispersal and
+ecological equivalence. Rapid evolution of phenotypic traits, including in
+response to human-altered environments, appears to be common, yet its role is
+still poorly integrated into metacommunity theory. This project uses
+**land-use gradients associated with urbanisation** as a natural template to
+ask how phenotypic change feeds back into the dynamics of ecological
+communities.
+
+**Aims**
+
+- Test how urbanisation reshapes the adaptive landscape of phenotypic traits
+  that represent different dimensions of the niche.
+- Quantify the relative contribution of ecology and evolution to trait
+  divergence.
+- Test how intra- and interspecific trait variation explain species
+  distributions along urbanisation gradients in multiple landscapes.
+
+**Approach.** Geometric morphometrics, phylogenetic comparative methods and
+inference of adaptive (fitness) landscapes, linking trait variation to the
+abundance, richness and distribution of species along environmental gradients
+— and asking how changes in the distribution of fitness in open populations
+scale up to metacommunity patterns.
+
+**What we expect.** More urbanised environments should be more homogeneous and
+constrain trait variation; urban populations should also be more isolated, so
+that phenotypes fix faster under reduced gene flow — and, if those phenotypes
+have low fitness, populations would be maladapted and prone to local
+extinction. The results should help plan cities that work for both people and
+biodiversity, and contribute to a "metacommunity 2.0" that integrates
+phenotypic evolution with dispersal and niche selection.
+
 ### FrogNet — acoustic monitoring of frogs
 
 <span class="project-status ongoing">Ongoing</span>
+
+*Principal investigator: Liliana Piatti. The lab participates as a
+collaborator.*
 
 FrogNet monitors frog vocalisations in the **Pantanal** and the **Cerrado**
 with passive acoustic recorders and **BirdNET custom classifiers** trained to
@@ -19,15 +67,6 @@ metacommunities within this project.
 The validation step — deciding whether a classifier's detections can be
 trusted — is handled by the lab's open
 [BirdNET Validation Sampler](software.qmd#birdnet-validation-sampler).
-
-### Urban heat and stingless bees
-
-<span class="project-status ongoing">Ongoing</span>
-
-How the urban heat island changes the phenotypic traits and
-honey biochemistry of **stingless bees** in a tropical city. The project brings
-together Ana Paula Andreazzi's PhD and João Victor Santos Barros's
-undergraduate research on thermal adaptation (see [People](people.qmd)).
 
 ## Completed projects
 
@@ -103,8 +142,9 @@ macroecology of the Atlantic Forest — are on the [Talks](talks.qmd) page.
 
 ## Funding history
 
-- **2024–2027 — FUNDECT research productivity grant.** Supports field work
-  conducted by lab students.
+- **2024–2027 — FUNDECT/CNPq research productivity grant** (Call 15/2024).
+  Reconciling phenotypic evolution with metacommunity theory; fellowship plus
+  research allowance for field work conducted by lab students.
 - **2024–2025 — Alexander von Humboldt Foundation.** Research fellowship for
   experienced researchers and subsidy towards research costs for the
   sabbatical at iDiv.
