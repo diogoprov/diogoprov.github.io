@@ -19,6 +19,7 @@
 # -------------------------------------------------------------------------
 
 set -euo pipefail
+export LC_ALL=C   # printf needs a dot as decimal separator (breaks under pt_BR)
 
 # ---- defaults --------------------------------------------------------------
 MIN_MB=5

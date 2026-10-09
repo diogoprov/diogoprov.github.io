@@ -102,11 +102,12 @@ h2 {
   border-radius: 4px;
   font-weight: 500;
 }
-.lab-welcome .btn-outline-primary {
+.btn-outline-primary {
   color: var(--bsl-accent);
   border-color: var(--bsl-accent);
 }
-.lab-welcome .btn-outline-primary:hover {
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
   background: var(--bsl-accent);
   color: #fff;
   border-color: var(--bsl-accent);
@@ -399,3 +400,17 @@ blockquote {
 
 /* --- Footer --- */
 .nav-footer { border-top: 1px solid var(--bsl-border); font-size: .88rem; color: var(--bsl-muted); }
+
+/* --- Footer: social icons --- */
+.nav-footer .footer-icon {
+  font-size: 1.05rem;
+  margin-left: .55rem;
+  color: var(--bsl-muted);
+}
+.nav-footer .footer-icon:hover { color: var(--bsl-accent); text-decoration: none; }
+
+/* --- Navbar title must fit next to the hamburger and search on phones --- */
+@media (max-width: 480px) {
+  .navbar-brand .navbar-title { font-size: .88rem; }
+  .navbar-brand img { display: none; }   /* tiny logo; the hero logo is right below */
+}

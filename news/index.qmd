@@ -1,5 +1,6 @@
 ---
 title: "Lab news"
+description-meta: "News from the Biodiversity Synthesis Lab: new members, grants, papers and talks."
 listing:
   contents: "*/index.qmd"            # only post folders, not this index
   sort: "date desc"

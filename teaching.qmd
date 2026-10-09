@@ -1,5 +1,6 @@
 ---
 title: "Teaching"
+description-meta: "Undergraduate and graduate courses taught by Diogo B. Provete at UFMS — biostatistics, R, multivariate analysis, phylogenetic comparative methods, philosophy of science — with open course materials."
 toc: true
 ---
 

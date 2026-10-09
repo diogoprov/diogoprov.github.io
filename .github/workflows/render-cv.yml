@@ -30,14 +30,14 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     env:
       # .Rprofile sources renv/activate.R, which forces every R session in
       # this repo into renv's local library. In CI we want plain R so
       # install.packages can write to the system library.
       RENV_CONFIG_AUTOLOADER_ENABLED: "FALSE"
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Install Quarto
         uses: quarto-dev/quarto-actions/setup@v2
@@ -48,14 +48,14 @@ jobs:
           use-public-rspm: true
 
       - name: Install Chrome (used by pagedown for HTML -> PDF)
-        uses: browser-actions/setup-chrome@v1
+        uses: browser-actions/setup-chrome@v2
 
       # Only the packages actually used by .qmd / .R chunks here. We skip
       # renv::restore() on purpose: renv.lock carries legacy packages that
       # need extra system libraries and are never used during render.
       - name: Install R packages used by the site
         run: |
-          Rscript -e 'options(repos = c(CRAN = Sys.getenv("RSPM", "https://packagemanager.posit.co/cran/__linux__/noble/latest"))); install.packages(c("rmarkdown","knitr","yaml","scholar","pagedown","chromote","httr")); if (!requireNamespace("rmarkdown", quietly = TRUE)) stop("rmarkdown failed to install")'
+          Rscript -e 'options(repos = c(CRAN = Sys.getenv("RSPM", "https://packagemanager.posit.co/cran/__linux__/resolute/latest"))); install.packages(c("rmarkdown","knitr","yaml","scholar","pagedown","chromote","httr")); if (!requireNamespace("rmarkdown", quietly = TRUE)) stop("rmarkdown failed to install")'
 
       # Rebuilt BEFORE the full render, so `quarto render` copies the fresh
       # PDF into docs/. Non-blocking: if headless Chrome misbehaves on the
@@ -69,18 +69,18 @@ jobs:
         run: quarto render
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: docs
 
   deploy:
     needs: build
     if: github.event_name != 'pull_request'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

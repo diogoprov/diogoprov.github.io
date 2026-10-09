@@ -2,7 +2,7 @@
 title: "Not accepting new graduate students"
 description: "As of August 2026, Diogo is not taking on new graduate students."
 date: "2026-08-17"
-categories: [news]
+categories: [opportunities]
 ---
 
 As of **August 2026**, Diogo is **not accepting new graduate students** for

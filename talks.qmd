@@ -1,5 +1,6 @@
 ---
 title: "Invited talks and oral presentations"
+description-meta: "Slides from invited talks, seminars and conference presentations by Diogo B. Provete on open access, peer review, urban ecology and macroevolution."
 toc: true
 toc-depth: 2
 ---

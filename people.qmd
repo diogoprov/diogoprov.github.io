@@ -1,5 +1,6 @@
 ---
 title: "People"
+description-meta: "Principal investigator, current students and alumni of the Biodiversity Synthesis Lab at the Federal University of Mato Grosso do Sul (UFMS)."
 toc: true
 ---
 

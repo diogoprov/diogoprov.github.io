@@ -1,5 +1,6 @@
 ---
 title: "Research"
+description-meta: "Research lines of the Biodiversity Synthesis Lab (UFMS): freshwater metacommunities, eco-evolutionary dynamics, phenotypic evolution of Neotropical species, tadpole morphology, and quantitative methods."
 subtitle: "Causes and consequences of species diversity in freshwater ecosystems"
 toc: true
 ---

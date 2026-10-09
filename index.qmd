@@ -16,12 +16,12 @@ listing:
 ---
 
 ::: {.lab-hero-logo}
-![Biodiversity Synthesis Lab](assets/logo-horizontal.png){.hero-logo fig-alt="Biodiversity Synthesis Lab logo"}
+![](assets/logo-horizontal.png){.hero-logo fig-alt="Biodiversity Synthesis Lab logo"}
 :::
 
 ::: {.lab-welcome}
 
-# Welcome to the Biodiversity Synthesis Lab
+# Who we are
 
 **We study the causes and consequences of changes in species diversity to
 metacommunity structure and ecosystem functioning.** Using freshwater
@@ -53,7 +53,7 @@ excellence — favoring quality over quantity in everything we do.
 Mato Grosso do Sul · Cidade Universitária, 79002-970 · Campo Grande, Mato
 Grosso do Sul, Brazil.
 
-E-mail: `diogo.provete[at]ufms.br`
+[{{< fa solid envelope >}}&nbsp;Email Diogo](mailto:diogo.provete@ufms.br){.btn .btn-outline-primary}
 
 > "[Theory](http://plato.stanford.edu/entries/science-theory-observation/)
 > without [Fact](http://plato.stanford.edu/entries/facts/) is phantasy; but

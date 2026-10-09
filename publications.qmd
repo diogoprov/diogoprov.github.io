@@ -1,5 +1,6 @@
 ---
 title: "Publications"
+description-meta: "Peer-reviewed articles, books, book chapters, manuscripts in review and conference abstracts by Diogo B. Provete and the Biodiversity Synthesis Lab."
 toc: true
 toc-depth: 2
 ---

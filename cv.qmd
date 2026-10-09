@@ -1,5 +1,6 @@
 ---
 title: "Curriculum Vitae"
+description-meta: "Curriculum vitae of Diogo B. Provete, Assistant Professor at the Institute of Biosciences, Federal University of Mato Grosso do Sul (UFMS)."
 pagetitle: "CV — Diogo B. Provete"
 robots: noindex, follow
 toc: false
@@ -157,10 +158,10 @@ last_checked <- if (!is.null(m$last_checked)) m$last_checked else "—"
 | **2020 – 2025** | Marcos R. Severgnini · PhD |
 | **2019 – 2023** | Matheus de Toledo Moroti · PhD |
 | **2019 – 2021** | Gabriel Tirintan · MSc |
+| **2019 – 2020** | Pedro Abi-Rezik Barros Vianna · MSc, Animal Biology (co-advised) |
 | **2018 – 2023** | Philip T. Soares · PhD |
 | **2018 – 2023** | Adriana Carolina Acero-Murcia · PhD |
 | **2018 – 2020** | Marcos R. Severgnini · MSc |
-| **Co-advised** | Pedro Abi-Rezik Barros Vianna · MSc, Animal Biology |
 | **2026 –** | João Victor Santos Barros · Biology undergrad (PIBIC) |
 | **2025** | Iara Coimbra · Biology undergrad (PIBIC) |
 | **2025** | Beatriz Oliveira · Biology undergrad (PIBIC) |

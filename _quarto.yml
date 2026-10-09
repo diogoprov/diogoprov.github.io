@@ -26,29 +26,38 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: research.qmd
-        text: Research
+      - text: Research
+        menu:
+          - href: research.qmd
+            text: Research lines
+          - href: projects.qmd
+            text: Projects
+          - href: software.qmd
+            text: Software
+          - text: "Brazilian Tadpoles database"
+            href: "https://diogoprov.github.io/Brazilian-Tadpoles-5.0/"
+            target: _blank
       - href: publications.qmd
         text: Publications
       - href: people.qmd
         text: People
-      - href: teaching.qmd
-        text: Teaching
-      - href: talks.qmd
-        text: Talks
+      - text: Teaching
+        menu:
+          - href: teaching.qmd
+            text: Courses
+          - href: talks.qmd
+            text: Talks
+      - href: news/index.qmd
+        text: News
       - href: opportunities.qmd
-        text: Opportunities
-      - href: projects.qmd
-        text: Projects
-      - href: software.qmd
-        text: Software
-      - text: Brazilian Tadpoles
-        href: "https://diogoprov.github.io/Brazilian-Tadpoles-5.0/"
-        target: _blank
+        text: Join us
     right:
       - icon: github
         href: "https://github.com/diogoprov"
         aria-label: GitHub
+      - icon: bluesky
+        href: "https://bsky.app/profile/provete.bsky.social"
+        aria-label: Bluesky
       - icon: envelope
         href: "mailto:diogo.provete@ufms.br"
         aria-label: Email
@@ -58,7 +67,12 @@ website:
     left: |
       © Diogo B. Provete · Biodiversity Synthesis Lab · Instituto de Biociências, UFMS
     right: |
-      Built with [Quarto](https://quarto.org).
+      [<i class="ai ai-orcid"></i>](https://orcid.org/0000-0002-0097-0651){aria-label="ORCID" .footer-icon}
+      [<i class="ai ai-google-scholar"></i>](https://scholar.google.com.br/citations?user=qDwcLvIAAAAJ){aria-label="Google Scholar" .footer-icon}
+      [<i class="ai ai-lattes"></i>](http://lattes.cnpq.br/9194853434437963){aria-label="Lattes" .footer-icon}
+      [<i class="bi bi-bluesky"></i>](https://bsky.app/profile/provete.bsky.social){aria-label="Bluesky" .footer-icon}
+      [<i class="bi bi-github"></i>](https://github.com/diogoprov){aria-label="GitHub" .footer-icon}
+      · Built with [Quarto](https://quarto.org)
 
 format:
   html:

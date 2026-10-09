@@ -1,5 +1,6 @@
 ---
 title: "Software"
+description-meta: "Open-source tools from the Biodiversity Synthesis Lab: CoDa Stereo, BirdNET Validation Sampler, R swirl lessons in Portuguese, and the ecodados package."
 subtitle: "Tools we build and maintain for the community"
 toc: true
 ---

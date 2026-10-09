@@ -1,5 +1,6 @@
 ---
 title: "Join us"
+description-meta: "Information for prospective students interested in joining the Biodiversity Synthesis Lab at UFMS, plus the lab's facilities and core values."
 subtitle: "Current opportunities for prospective students"
 toc: true
 ---
