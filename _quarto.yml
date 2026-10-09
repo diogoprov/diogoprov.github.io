@@ -34,9 +34,6 @@ website:
             text: Projects
           - href: software.qmd
             text: Software
-          - text: "Brazilian Tadpoles database"
-            href: "https://diogoprov.github.io/Brazilian-Tadpoles-5.0/"
-            target: _blank
       - href: publications.qmd
         text: Publications
       - href: people.qmd
@@ -47,10 +44,11 @@ website:
             text: Courses
           - href: talks.qmd
             text: Talks
-      - href: news/index.qmd
-        text: News
       - href: opportunities.qmd
         text: Join us
+      - text: Brazilian Tadpoles
+        href: "https://diogoprov.github.io/Brazilian-Tadpoles-5.0/"
+        target: _blank
     right:
       - icon: github
         href: "https://github.com/diogoprov"

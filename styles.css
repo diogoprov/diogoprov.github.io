@@ -428,3 +428,15 @@ blockquote {
 }
 .project-status.ongoing { background: #e3f1ea; color: #1f6b45; }
 .project-status.done    { background: var(--bsl-bg-soft); color: var(--bsl-muted); }
+
+/* --- Navbar: keep items on one line on narrower desktops --- */
+.navbar .nav-link { white-space: nowrap; }
+@media (min-width: 992px) and (max-width: 1250px) {
+  .navbar .navbar-nav .nav-link { padding-left: .4rem; padding-right: .4rem; font-size: .9rem; }
+  .navbar-brand .navbar-title { font-size: .95rem; }
+  .navbar-brand img { display: none; }
+}
+@media (min-width: 992px) and (max-width: 1080px) {
+  .navbar .navbar-nav .nav-link { padding-left: .3rem; padding-right: .3rem; font-size: .86rem; }
+  .navbar-brand .navbar-title { font-size: .8rem; }
+}
