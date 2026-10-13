@@ -349,7 +349,7 @@ Authorship key: <span class="cv-pub-flag">red number</span> = three most importa
 ::: {.cv-pubs}
 **PROVETE, D. B.**; Citadini, J. M.; Gomes, F. R. 2026. Microhabitat structural complexity and predator stimulus drive predator escape decision by frogs. *Accepted in Behavioral Ecology.* [bioRxiv](https://www.biorxiv.org/content/10.64898/2026.05.26.728007v1)
 
-Piatti, L.; de Sousa, D. L. H.; Oliveira, B. S.; de Melo, A. V.; Sugai, L. S. M.; **PROVETE, D. B.** 2026. Methodological choices influence ecological inference in passive acoustic monitoring of a Neotropical nightjar. *Accepted in Journal of Avian Biology.* [preprint](https://ecoevorxiv.org/repository/view/13229/)
+Piatti, L.; de Sousa, D. L. H.; Oliveira, B. S.; de Melo, A. V.; Sugai, L. S. M.; **PROVETE, D. B.** 2026. Methodological choices influence ecological inference in passive acoustic monitoring of a Neotropical nightjar. *Accepted in Journal of Avian Biology.* doi:10.1002/jav.03737 · [preprint](https://ecoevorxiv.org/repository/view/13229/)
 :::
 
 ### Manuscripts in review
