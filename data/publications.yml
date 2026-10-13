@@ -640,7 +640,7 @@ in_review:
         cite: |-
           **PROVETE, D.B.**; [Severgnini, M.R.]{.underline}; Fernandes, C.E.; Franco-Belussi, L.
           2026. A practical guide to compositional data analysis in tissue stereology
-          and blood cell profile. *In the 1st round of revision in Physiological Reports.*
+          and blood cell profile. *Received major revisions in Physiological Reports.*
         links_raw: |-
           <a href="https://www.researchsquare.com/article/rs-9590298/v1" title="Open-access preprint" aria-label="Open-access preprint"><i class="ai ai-open-access"></i></a>
       - cv: articles
@@ -672,17 +672,17 @@ in_review:
           Naturwissenschaften.*
         links_raw: |-
           <a href="https://www.biorxiv.org/content/10.1101/2020.06.11.146613v1" title="Preprint on bioRxiv" aria-label="Preprint on bioRxiv"><i class="ai ai-biorxiv"></i></a>
-      - cv: articles
-        cite: |-
-          [Severgnini, M.R.]{.underline}; **PROVETE, D.B.** 2026. The effect of urbanization and
-          local environmental heterogeneity on phenotypic variability in a tropical
-          frog. *In the 2nd round of revision in Ecology.*
-        links_raw: |-
-          <a href="http://www.biorxiv.org/content/10.1101/2024.11.28.625871v1" title="Preprint on bioRxiv" aria-label="Preprint on bioRxiv"><i class="ai ai-biorxiv"></i></a>
 
 in_preparation:
   - year: null
     entries:
+      - cv: articles
+        cite: |-
+          [Severgnini, M.R.]{.underline}; **PROVETE, D.B.** The effect of urbanization and
+          local environmental heterogeneity on phenotypic variability in a tropical
+          frog. *To be submitted to Ecology.*
+        links_raw: |-
+          <a href="http://www.biorxiv.org/content/10.1101/2024.11.28.625871v1" title="Preprint on bioRxiv" aria-label="Preprint on bioRxiv"><i class="ai ai-biorxiv"></i></a>
       - cv: articles
         cite: |-
           **PROVETE, D.B.**; Gonçalves, V.; Santana, D.J.; Costa-Pereira, R.;
