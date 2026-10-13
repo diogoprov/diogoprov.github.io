@@ -614,6 +614,14 @@ in_press:
           by frogs. *Accepted in Behavioral Ecology.*
         links_raw: |-
           <a href="https://www.biorxiv.org/content/10.64898/2026.05.26.728007v1" title="Preprint on bioRxiv" aria-label="Preprint on bioRxiv"><i class="ai ai-biorxiv"></i></a>
+      - cv: articles
+        cite: |-
+          Piatti, L.; [de Sousa, D.L.H.]{.underline}; Oliveira, B.S.; de Melo, A.V.;
+          Sugai, L.S.M.; **PROVETE, D.B.** 2026. Methodological choices influence
+          ecological inference in passive acoustic monitoring of a Neotropical
+          nightjar. *Accepted in Journal of Avian Biology.*
+        links_raw: |-
+          <a href="https://ecoevorxiv.org/repository/view/13229/" title="Open-access preprint" aria-label="Open-access preprint"><i class="ai ai-open-access"></i></a>
 
 in_review:
   - year: null
@@ -643,14 +651,6 @@ in_review:
           and blood cell profile. *Received major revisions in Physiological Reports.*
         links_raw: |-
           <a href="https://www.researchsquare.com/article/rs-9590298/v1" title="Open-access preprint" aria-label="Open-access preprint"><i class="ai ai-open-access"></i></a>
-      - cv: articles
-        cite: |-
-          Piatti, L.; [de Sousa, D.L.H.]{.underline}; Oliveira, B.S.; de Melo, A.V.;
-          Sugai, L.S.M.; **PROVETE, D.B.** 2026. Methodological choices influence
-          ecological inference in passive acoustic monitoring of a Neotropical
-          nightjar. *Received major revisions in Journal of Avian Biology.*
-        links_raw: |-
-          <a href="https://ecoevorxiv.org/repository/view/13229/" title="Open-access preprint" aria-label="Open-access preprint"><i class="ai ai-open-access"></i></a>
       - cv: articles
         cite: |-
           Franco-Belussi, L.; Trevisan, L.; De Oliveira, C.; Fernandes, C.E.;
