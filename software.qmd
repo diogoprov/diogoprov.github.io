@@ -205,6 +205,11 @@ example in the text can be reproduced with a single `library(ecodados)`
 instead of hunting for files. It is what makes the book runnable rather than
 merely readable.
 
+In 2026, *Análises Ecológicas no R* received the **SORTEE Commendation Award** from the
+Society for Open, Reliable, and Transparent Ecology and Evolutionary Biology, which
+recognises projects that promote open, transparent and reliable research practices in
+ecology and evolution.
+
 The book is freely available online and has become a standard reference for
 teaching ecological data analysis in Portuguese-speaking universities.
 

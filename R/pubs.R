@@ -35,6 +35,7 @@ pubs_list <- function(section) {
     for (e in g$entries) {
       s <- e$cite
       if (!is.null(e$links_raw)) s <- paste0(s, " &nbsp;\n", e$links_raw)
+      if (!is.null(e$note)) s <- paste0(s, "\n\n", e$note)
       out <- c(out, s)
     }
   }

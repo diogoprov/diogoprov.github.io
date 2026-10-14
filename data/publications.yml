@@ -551,6 +551,9 @@ books:
           Vancine, M.H. 2022.
           [*Análises ecológicas no R*](https://analises-ecologicas.com).
           Recife: NUPEEA.
+        note: |-
+          <small class="text-muted">Recipient of the 2026 SORTEE Commendation Award,
+          Society for Open, Reliable, and Transparent Ecology and Evolutionary Biology.</small>
       - cv: articles
         cite: |-
           Vasconcelos, T.; da Silva, F.R.; **PROVETE, D.B.**; Gomes, T.;

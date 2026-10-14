@@ -193,9 +193,10 @@ last_checked <- if (!is.null(m$last_checked)) m$last_checked else "—"
 ## Awards
 
 ::: {.cv-timeline}
-| **2026** | **Professional Statistician (PStat<sup>&reg;</sup>)** — American Statistical Association |
+| **2026** | **SORTEE Commendation Award** — *Análises Ecológicas no R*, with F. R. da Silva, T. Gonçalves-Souza, G. B. Paterno and M. H. Vancine — Society for Open, Reliable, and Transparent Ecology and Evolutionary Biology |
 |---|---|
-| **2026** | **Graduate Statistician (GStat<sup>&reg;</sup>)** — American Statistical Association |
+| | **Professional Statistician (PStat<sup>&reg;</sup>)** — American Statistical Association |
+| | **Graduate Statistician (GStat<sup>&reg;</sup>)** — American Statistical Association |
 | **2024** | Ecological Society of America Early Career Fellow |
 | **2021** | Honorable mention, best poster (M. R. Severgnini, PhD student) — I Brazilian Symposium of Comparative Vertebrate Morphology (SIMORF) |
 | **2021** | Honorable mention, best oral presentation (A. C. Acero-Murcia, PhD student) — I Brazilian Symposium of Comparative Vertebrate Morphology (SIMORF) |

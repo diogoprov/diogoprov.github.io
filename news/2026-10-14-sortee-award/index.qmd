@@ -1,0 +1,24 @@
+---
+title: "Análises Ecológicas no R receives the SORTEE Commendation Award"
+description: "The open textbook was recognised by SORTEE at its annual virtual conference."
+date: "2026-10-14"
+categories: [recognition]
+---
+
+[*Análises Ecológicas no R*](https://analises-ecologicas.com), the free open
+textbook written by **Fernando Rodrigues da Silva**, **Thiago
+Gonçalves-Souza**, **Gustavo Brant Paterno**, **Diogo Borges Provete** and
+**Maurício Humberto Vancine**, has received the **SORTEE Commendation Award**
+from the Society for Open, Reliable, and Transparent Ecology and Evolutionary
+Biology.
+
+The award recognises projects that promote open, transparent and reliable
+research practices in ecology and evolution. The project was nominated by
+Eduardo Santos, a SORTEE member, and selected by the SORTEE Awards Committee;
+the award was announced during the closing session of the SORTEE Annual
+Virtual Conference.
+
+The book teaches the full workflow of ecological data analysis in R and is
+freely available in Portuguese at
+[analises-ecologicas.com](https://analises-ecologicas.com), with its datasets
+distributed in the companion [ecodados](../../software.qmd#ecodados) package.
