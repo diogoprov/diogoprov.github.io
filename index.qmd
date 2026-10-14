@@ -45,6 +45,10 @@ excellence — favoring quality over quantity in everything we do.
 
 ::: {.field-strip}
 ::: {.field-photo}
+![](assets/images/field/PE-Nova-Baden-maio2006.jpg){fig-alt="Diogo in a white hat and rubber boots leaning over a pond edge, sweeping a dip net through the shallow vegetation"}
+<p class="field-caption">Dip-netting tadpoles at a pond edge, Nova Baden State Park, Minas Gerais (2006).</p>
+:::
+::: {.field-photo}
 ![](assets/images/field/bocaina-2008.jpg){fig-alt="Diogo crouching by a shallow pond in highland grassland, sampling tadpoles with a dip net"}
 <p class="field-caption">Sampling tadpoles in highland grassland ponds, Serra da Bocaina (2008).</p>
 :::
@@ -55,6 +59,10 @@ excellence — favoring quality over quantity in everything we do.
 ::: {.field-photo .field-photo-top}
 ![](assets/images/field/amazonia-2009.jpg){fig-alt="Diogo at night in the Amazon forest wearing a headlamp, holding a giant leaf"}
 <p class="field-caption">Night fieldwork during a field course in the Amazon (2009).</p>
+:::
+::: {.field-photo}
+![](assets/images/field/ana-paula-2019-ufms.jpg){fig-alt="Ana Paula Andreazzi smiling, sitting on a moss-covered wall beside a forest trail"}
+<p class="field-caption">Ana Paula Andreazzi in the field at UFMS (2019).</p>
 :::
 :::
 

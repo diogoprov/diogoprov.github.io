@@ -136,6 +136,45 @@ It was developed for the **FrogNet** project, which monitors frog vocalisations
 in the Pantanal and Cerrado, but works with the output of any BirdNET custom
 classifier.
 
+## crywolf
+
+::: {.callout-tip icon=false appearance="minimal"}
+**Bayesian false-positive occupancy models for data from automated detectors**
+
+[{{< fa solid book >}} Documentation](https://provetelab.org/crywolf/){.btn .btn-primary}
+[{{< fa brands github >}} GitHub repository](https://github.com/diogoprov/crywolf){.btn .btn-outline-primary}
+
+*R package (models in Stan via cmdstanr) — GPL (≥ 3). Development version.*
+:::
+
+**crywolf** fits Bayesian single-season occupancy models that correct for the
+false positives produced by automated detectors, such as acoustic classifiers.
+It implements the multiple-methods *site-confirmation* design of Miller et al.
+(2011), in which a subset of detections is verified and treated as certain,
+with the false-positive rate either constant or varying with site covariates.
+
+Besides fitting the models, the package provides simulation tools and
+calibration checks — credible-interval coverage and guidance on how many
+detections need to be verified — so the design can be evaluated before going
+to the field. It pairs naturally with the **BirdNET Validation Sampler** above:
+the sampler produces the verified detections, crywolf uses them to correct the
+occupancy estimates.
+
+```r
+# cmdstanr is distributed through the Stan r-universe
+install.packages("cmdstanr", repos = c("https://stan-dev.r-universe.dev", getOption("repos")))
+cmdstanr::install_cmdstan()
+
+remotes::install_github("diogoprov/crywolf")
+```
+
+To cite the package, use `citation("crywolf")`, together with the paper
+describing the model: Miller, D. A., et al. (2011) *Ecology* 92: 1422–1428,
+doi:[10.1890/10-1396.1](https://doi.org/10.1890/10-1396.1).
+
+Authors: Diogo B. Provete (maintainer), Liliana Piatti, Tessa Rhinehart and
+Larissa Sayuri Moreira Sugai.
+
 ## Introdução à Linguagem R — swirl lessons
 
 ::: {.callout-tip icon=false appearance="minimal"}

@@ -436,6 +436,8 @@ Carvalho, F. R.; Mangia, S.; Garcia, M. E. C.; Laps, R. R.; Ferreira, V. L.; San
 ::: {.cv-pubs}
 **PROVETE, D. B.** 2026. *CoDa Stereo* — Shiny application bringing Aitchison geometry to stereological and histomorphometric data. MIT License. [Live app](https://019dde61-4363-e3fa-b788-13ddfa456c0b.share.connect.posit.cloud) · [Source](https://github.com/diogoprov/CoDaStereo)
 
+**PROVETE, D. B.**; Piatti, L.; Rhinehart, T.; Sugai, L. S. M. 2026. *crywolf* — R package for Bayesian false-positive occupancy models for data from automated detectors. GPL (≥ 3). [Website](https://provetelab.org/crywolf/) · [Source](https://github.com/diogoprov/crywolf)
+
 **PROVETE, D. B.** 2025. *BirdNET Validation Sampler* — R pipeline for sampling and manually validating detections from BirdNET custom classifiers. MIT License. [Source](https://github.com/diogoprov/birdnet-validation-sampler)
 
 Paterno, G. B.; **PROVETE, D. B.**; da Silva, F. R.; Gonçalves-Souza, T.; Vancine, M. H. 2022. *ecodados* — R package with the datasets and helper functions of the book *Análises Ecológicas no R*. [Source](https://github.com/paternogbc/ecodados)
