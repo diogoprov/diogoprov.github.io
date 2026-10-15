@@ -489,3 +489,14 @@ blockquote {
   color: var(--bsl-accent-dark);
   margin: .5rem 0 0;
 }
+
+/* --- Software: package hex stickers, floated beside the summary callout --- */
+.hex-sticker {
+  float: right;
+  width: 130px;
+  height: auto;
+  margin: 0 0 .5rem 1.25rem;
+}
+@media (max-width: 560px) {
+  .hex-sticker { width: 90px; margin-left: .75rem; }
+}

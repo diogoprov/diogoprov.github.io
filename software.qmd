@@ -8,6 +8,7 @@ toc: true
 ## CoDa Stereo
 
 ::: {.callout-tip icon=false appearance="minimal"}
+![CoDa Stereo hex logo](assets/images/hex/codastereo.svg){.hex-sticker}
 **Compositional Data Analysis for Stereological and Histomorphometric Data**
 
 [{{< fa solid arrow-up-right-from-square >}} **Launch the live app →**](https://019dde61-4363-e3fa-b788-13ddfa456c0b.share.connect.posit.cloud){.btn .btn-primary} &nbsp;
@@ -139,6 +140,7 @@ classifier.
 ## crywolf
 
 ::: {.callout-tip icon=false appearance="minimal"}
+![crywolf hex logo](assets/images/hex/crywolf.png){.hex-sticker}
 **Bayesian false-positive occupancy models for data from automated detectors**
 
 [{{< fa solid book >}} Documentation](https://provetelab.org/crywolf/){.btn .btn-primary}
