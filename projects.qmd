@@ -8,13 +8,12 @@ toc: true
 
 ### Reconciling phenotypic evolution with metacommunity theory
 
-<span class="project-status ongoing">Ongoing · Aug 2024 – Jul 2027</span>
-
 *Conciliando evolução fenotípica com o arcabouço teórico de metacomunidades:
 perspectivas para uma nova síntese*
 
 Funded by **FUNDECT** and **CNPq** through the Special Call Fundect/CNPq
-15/2024 (Research Productivity fellowships; process 83/027.032/2024). The grant
+15/2024 (Research Productivity fellowships; process 83/027.032/2024), from
+**August 2024 to July 2027**. The grant
 combines a 36-month research productivity fellowship (Fundect PQ-2, equivalent
 to CNPq PQ level E) with a research allowance for field work and consumables —
 **BRL 75,600** in total.
@@ -53,8 +52,6 @@ phenotypic evolution with dispersal and niche selection.
 
 ### FrogNet — acoustic monitoring of frogs
 
-<span class="project-status ongoing">Ongoing</span>
-
 *Principal investigator: Liliana Piatti. The lab participates as a
 collaborator.*
 
@@ -73,12 +70,6 @@ trusted — is handled by the lab's open
 ### Eco-evolutionary dynamics of urban biodiversity
 
 *Understanding human impacts to improve human–wildlife coexistence.*
-
-::: {.callout-note appearance="simple"}
-**Project completed in March 2026.** The CNPq Universal grant that
-funded this work has ended; papers stemming from it are still being
-written and submitted.
-:::
 
 From **March 2022 to March 2026** (originally until 2025, then extended) we ran a CNPq Universal grant
 (**Proc 407318/2021-6**) from the Brazilian National Council for
@@ -132,21 +123,9 @@ this project!
 
 ### Humboldt sabbatical at iDiv (2024–2025)
 
-<span class="project-status done">Completed</span>
-
 Diogo spent 2024–2025 as an **Alexander von Humboldt Research Fellow**
 (Experienced Researchers) at the German Centre for Integrative Biodiversity
-Research (**iDiv**), Leipzig. Talks from
+Research (**iDiv**), Leipzig. The Alexander von Humboldt Foundation funded the
+fellowship and a subsidy towards research costs. Talks from
 the sabbatical — on urban ecology in the Global South and on the evolutionary
 macroecology of the Atlantic Forest — are on the [Talks](talks.qmd) page.
-
-## Funding history
-
-- **2024–2027 — FUNDECT/CNPq research productivity grant** (Call 15/2024).
-  Reconciling phenotypic evolution with metacommunity theory; fellowship plus
-  research allowance for field work conducted by lab students.
-- **2024–2025 — Alexander von Humboldt Foundation.** Research fellowship for
-  experienced researchers and subsidy towards research costs for the
-  sabbatical at iDiv.
-- **2022–2026 — CNPq Universal** (Proc 407318/2021-6). Eco-evolutionary
-  dynamics of urban biodiversity. *Concluded March 2026.*
