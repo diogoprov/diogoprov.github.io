@@ -54,6 +54,7 @@ September 2017.
 honey biochemistry of stingless bees.</p>
 <p class="card-links">
 <a href="http://lattes.cnpq.br/7233480915811512" title="Lattes CV"><i class="ai ai-lattes"></i></a>
+<a href="https://www.researchgate.net/profile/Ana-Andreazzi-2" title="ResearchGate"><i class="ai ai-researchgate"></i></a>
 </p>
 :::
 
@@ -66,6 +67,7 @@ honey biochemistry of stingless bees.</p>
 frog metacommunities.</p>
 <p class="card-links">
 <a href="http://lattes.cnpq.br/0761592864682149" title="Lattes CV"><i class="ai ai-lattes"></i></a>
+<a href="https://www.researchgate.net/profile/Daiene-Sousa" title="ResearchGate"><i class="ai ai-researchgate"></i></a>
 </p>
 :::
 
@@ -87,6 +89,9 @@ of frogs to urbanisation in the Atlantic Forest.</p>
 <p class="name">João Victor Santos Barros</p>
 <p class="role">Undergrad researcher</p>
 <p class="topic">Thermal adaptation in stingless bees (CNPq fellowship, 2026).</p>
+<p class="card-links">
+<a href="http://lattes.cnpq.br/7456882132229818" title="Lattes CV"><i class="ai ai-lattes"></i></a>
+</p>
 :::
 
 :::
@@ -110,6 +115,8 @@ life-history traits along urban gradients.</p>
 <p class="now">Now: Substitute professor at UEMS</p>
 <p class="card-links">
 <a href="http://lattes.cnpq.br/6261003504491115" title="Lattes CV"><i class="ai ai-lattes"></i></a>
+<a href="https://scholar.google.com/citations?user=h2xqpwIAAAAJ" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+<a href="https://www.researchgate.net/profile/Marcos-Severgnini" title="ResearchGate"><i class="ai ai-researchgate"></i></a>
 </p>
 :::
 
@@ -136,6 +143,8 @@ in the Brazilian Atlantic Forest.</p>
 <p class="now">Now: FAPESP postdoctoral fellow at UNICAMP</p>
 <p class="card-links">
 <a href="http://lattes.cnpq.br/3037868379750378" title="Lattes CV"><i class="ai ai-lattes"></i></a>
+<a href="https://scholar.google.com/citations?user=-_jC1e0AAAAJ" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+<a href="https://www.researchgate.net/profile/Matheus-Moroti" title="ResearchGate"><i class="ai ai-researchgate"></i></a>
 <a href="https://mmoroti.github.io/research/" title="Website"><i class="fa-solid fa-globe"></i></a>
 </p>
 :::
@@ -149,6 +158,8 @@ in the Brazilian Atlantic Forest.</p>
 using geometric morphometrics.</p>
 <p class="card-links">
 <a href="http://lattes.cnpq.br/2151570245603214" title="Lattes CV"><i class="ai ai-lattes"></i></a>
+<a href="https://scholar.google.com/citations?user=t6PEcUEAAAAJ" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+<a href="https://www.researchgate.net/profile/Adriana-Acero-Murcia" title="ResearchGate"><i class="ai ai-researchgate"></i></a>
 </p>
 :::
 
@@ -161,6 +172,8 @@ using geometric morphometrics.</p>
 distribution patterns of Neotropical frogs.</p>
 <p class="card-links">
 <a href="http://lattes.cnpq.br/9275923791121356" title="Lattes CV"><i class="ai ai-lattes"></i></a>
+<a href="https://scholar.google.com/citations?user=HU4vmoAAAAAJ" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+<a href="https://www.researchgate.net/profile/Philip-Soares" title="ResearchGate"><i class="ai ai-researchgate"></i></a>
 </p>
 :::
 
@@ -174,6 +187,7 @@ citizen-science data (iNaturalist, eBird).</p>
 <p class="now">Now: Environmental consultant</p>
 <p class="card-links">
 <a href="http://lattes.cnpq.br/8861238387153166" title="Lattes CV"><i class="ai ai-lattes"></i></a>
+<a href="https://scholar.google.com/citations?user=kzyNrLIAAAAJ" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
 <a href="https://www.linkedin.com/in/gabrieltirintan/" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
 </p>
 :::
@@ -209,6 +223,7 @@ Nascentes de Paranapiacaba (SP).</p>
 <p class="topic">Comparative testis morphology in Neotropical anurans.</p>
 <p class="now">Now: Clinical research coordinator</p>
 <p class="card-links">
+<a href="https://scholar.google.com/citations?user=6V3qYZIAAAAJ" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
 <a href="https://www.linkedin.com/in/gabriela-leite-/" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
 </p>
 :::
