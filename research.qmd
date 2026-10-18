@@ -1,38 +1,78 @@
 ---
 title: "Research"
-description-meta: "Research lines of the Biodiversity Synthesis Lab (UFMS): freshwater metacommunities, eco-evolutionary dynamics, phenotypic evolution of Neotropical species, tadpole morphology, and quantitative methods."
-subtitle: "Causes and consequences of species diversity in freshwater ecosystems"
+description-meta: "Research lines of the Biodiversity Synthesis Lab (UFMS): metacommunity ecology, eco-evolutionary dynamics, phenotypic evolution of Neotropical species, tadpole morphology, and quantitative methods."
+subtitle: "Causes and consequences of species diversity, from ponds to continents"
 toc: true
 ---
 
-We're interested in understanding what regulates species distribution,
-composition, and diversity of freshwater metacommunities at multiple spatial
-scales. Diogo has worked in a variety of environments using **tadpoles and
-aquatic invertebrates** as model organisms.
+We study what regulates the distribution, composition and diversity of
+species across spatial scales, and how the evolution of species' traits feeds
+back into those patterns. Most of our work uses **frogs and their tadpoles**
+as model organisms, in freshwater systems, along urbanisation gradients and
+across biogeographical regions, but we also work with bats, fishes, birds and
+arachnids through collaborations. We look not only at the taxonomic but also
+at the **functional and phylogenetic** dimensions of diversity, and we treat
+the statistical methods behind this work as a research line in its own right.
 
-Broad subjects include how biodiversity affects the functioning of
-multi-trophic freshwater ecosystems, how spatial distribution of organisms is
-affected by environmental gradients, and macroecological patterns of species
-richness. We often study not only taxonomic, but also **functional and
-phylogenetic** aspects of communities.
+## Metacommunity ecology across spatial scales
 
-Representative work:
+![Frog ponds sampled monthly for three years at a peri-urban site in Campo Grande, central Brazil. From Severgnini et al. (2024), *Ecology and Evolution*, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).](assets/images/research/severgnini2024-ponds.jpg){fig-alt="Satellite map of a peri-urban landscape with five ponds outlined in yellow, and inset maps locating the site in Campo Grande, Mato Grosso do Sul, Brazil"}
 
-- Provete et al. 2014. *Hydrobiologia.*
-- Livingston et al. 2017. *Journal of Animal Ecology.*
-- Villalobos et al. 2013. *PLoS One.*
+We want to understand what regulates species distribution, composition and
+diversity in metacommunities at multiple spatial scales: how environmental
+gradients, dispersal and evolutionary history combine to assemble local
+communities, and how these processes shift over time and space. Our work ranges
+from temporal dynamics of frog communities in single ponds to the assembly of
+frog faunas on islands worldwide and the delimitation of zoogeographical
+regions in the Atlantic Forest. Passive acoustic monitoring is now extending
+this work to the Pantanal.
+
+**Key papers**
+
+- Rebouças et al. 2026. [Environmental and geomorphological drivers of frog diversity on islands worldwide](https://doi.org/10.1002/ecog.07818). *Ecography.*
+- da Silva et al. 2024. [Zoogeographical regions in the Atlantic Forest: patterns and potential drivers](https://doi.org/10.1111/jbi.14859). *Journal of Biogeography.*
+- Severgnini et al. 2024. [Temporal dynamics of species richness and composition in a peri-urban tropical frog community in central Brazil](https://doi.org/10.1002/ece3.70628). *Ecology and Evolution.*
+- Ceron et al. 2022. [Differences in prey availability across space and time lead to interaction rewiring and reshape a predator–prey metaweb](https://doi.org/10.1002/ecy.3716). *Ecology.*
+- Gomes-Mello et al. 2021. [Frog community composition–environment relationships vary over time: are snapshot studies of metacommunity dynamics useful?](https://doi.org/10.1016/j.baae.2021.07.006) *Basic and Applied Ecology.*
+
+**People:** Daiene L. Hokama Sousa, Bruna M. P. Campos; alumni Philip T. Soares,
+Gabriel Tirintan and Daniel Din Negri. See [People](people.qmd).
+
+**Funding:** [FrogNet](projects.qmd#frognet-acoustic-monitoring-of-frogs)
+(collaboration).
 
 ## Eco-evolutionary dynamics in metacommunity ecology
+
+![Phenotypic trajectories of somatic indices across age classes in rural and urban populations of *Leptodactylus podicipinus*. From Franco-Belussi et al. (2024), *Conservation Physiology*, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).](assets/images/research/franco-belussi2024-trajectories.jpg){fig-alt="Ordination diagram with arrows connecting young, middle-aged and old frogs; the urban trajectory is long and steep, the rural one short"}
 
 Ecological communities are shaped by a variety of processes that operate at
 distinct temporal scales. There is now compelling evidence that evolution by
 natural selection can happen in a relatively short time. These
-**eco-evolutionary feedbacks** could potentially change species interaction
+**eco-evolutionary feedbacks** could potentially change species interactions
 and further influence evolutionary trajectories.
 
-- Provete 2013. *Natureza & Conservação.*
+Cities and agricultural landscapes are our natural experiments: they change
+the environment quickly and over large areas. We ask how frog populations
+respond to urbanisation and land use, in their physiology, life history and
+morphology, and how those responses scale up to community composition.
+
+**Key papers**
+
+- Franco-Belussi et al. 2024. [Multiple morphophysiological responses of a tropical frog to urbanization conform to the pace-of-life syndrome](https://doi.org/10.1093/conphys/coad106). *Conservation Physiology.*
+- Sánchez-Domene et al. 2022. [Combined effects of landscape composition and agrochemicals on frog communities amid sugarcane-dominated agroecosystems](https://doi.org/10.1002/eap.2781). *Ecological Applications.*
+- Ganci et al. 2021. [High species turnover shapes anuran community composition in ponds along an urban-rural gradient](https://doi.org/10.1007/s11252-021-01174-8). *Urban Ecosystems.*
+- Valente-Neto et al. 2021. [Loss of cultural and functional diversity associated with birds across the urbanization gradient in a tropical city](https://doi.org/10.3389/fevo.2021.615797). *Frontiers in Ecology and Evolution.*
+
+**People:** Ana Paula Andreazzi, João Victor Santos Barros; alumni Marcos R.
+Severgnini and Leandro B. Menezes. See [People](people.qmd).
+
+**Funding:** [FUNDECT/CNPq research productivity grant](projects.qmd#reconciling-phenotypic-evolution-with-metacommunity-theory)
+(2024–2027); [CNPq Universal](projects.qmd#eco-evolutionary-dynamics-of-urban-biodiversity)
+(2022–2026, completed).
 
 ## Phenotypic evolution and diversification of Neotropical species
+
+![Graphical abstract of Bovo et al. (2023), *Integrative Organismal Biology*, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): thermal tolerance and water balance of frogs along altitudinal gradients in the Atlantic Forest.](assets/images/research/bovo2023-graphical-abstract.jpg){fig-alt="Diagram of frogs and toads climbing a mountain silhouette, with boxes for thermal tolerance, thermal stress and water balance traits"}
 
 Biological diversity is expressed in various ways. One of these is how species
 differ from each other. Species' traits may have themselves complex
@@ -45,16 +85,29 @@ Since species traits can influence diversification patterns, we often
 integrate analytical tools and macroevolutionary theory to understand species
 distribution at broad spatial scales.
 
-- Faria et al. 2017. *PLoS One.*
-- Franco-Belussi et al. 2017. *Ecology & Evolution.*
-- Leite et al. 2015. *Zoologischer Anzeiger.*
-- Provete et al. 2012. *Zoologica Scripta.*
+**Key papers**
+
+- Martins et al. 2026. [The impact of climate and habitat on body shape and size evolution in charontid whip spiders](https://doi.org/10.1093/evolut/qpag138). *Evolution.*
+- Bovo et al. 2023. [Beyond Janzen's hypothesis: how amphibians that climb tropical mountains respond to climate variation](https://doi.org/10.1093/iob/obad009). *Integrative Organismal Biology.*
+- Acero-Murcia et al. 2023. [An evolutionary ecomorphological perspective on the assembly of a Neotropical bat metacommunity](https://doi.org/10.1007/s10914-023-09667-3). *Journal of Mammalian Evolution.*
+- Martins et al. 2021. [The evolution of red blood cell shape in fishes](https://doi.org/10.1111/jeb.13757). *Journal of Evolutionary Biology.*
+- Moroti et al. 2021. [The effects of morphology, phylogeny and prey availability on trophic resource partitioning in an anuran community](https://doi.org/10.1016/j.baae.2020.11.005). *Basic and Applied Ecology.*
+
+**People:** alumni Matheus T. Moroti, Adriana C. Acero-Murcia, Pedro
+Abi-Rezik Barros Vianna and Gabriela B. Leite. See [People](people.qmd).
+
+**Funding:** [FUNDECT/CNPq research productivity grant](projects.qmd#reconciling-phenotypic-evolution-with-metacommunity-theory)
+(2024–2027); [Humboldt Research Fellowship](projects.qmd#humboldt-sabbatical-at-idiv-20242025)
+(2024–2025, completed).
 
 ## Evolutionary morphology of Neotropical anuran larvae
 
+![External morphology of the tadpole of *Chiasmocleis altomontana*: (A) lateral, (B) dorsal and (C) oral views. From Menezes et al. (2025), *PeerJ*, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).](assets/images/research/menezes2025-tadpole.jpg){fig-alt="Photographs of a brown tadpole in lateral and dorsal view, and a close-up of its mouth, on a black background"}
+
 The morphological diversity of tadpoles is astonishing. The role of tadpoles
 in freshwater ecosystems has been challenged by recent studies using stable
-isotopes (Schiesari et al. 2009 *Freshwater Biology*; Altig et al. 2007
+isotopes ([Altig et al. 2007](https://doi.org/10.1111/j.1365-2427.2006.01694.x)
+*Freshwater Biology*; [Schiesari et al. 2009](https://doi.org/10.1111/j.1365-2427.2008.02134.x)
 *Freshwater Biology*). Both the **internal and external morphology** of
 tadpoles influence habitat use, food acquisition, diet composition, and
 several other ecological aspects — including their role in ecosystem
@@ -62,18 +115,31 @@ functioning.
 
 Studying the morphology of tadpoles in an evolutionary context can therefore
 help us understand community patterns and freshwater ecosystem functioning.
+We describe tadpoles of Brazilian species, including their internal oral
+features, and maintain the [Brazilian Tadpoles](https://diogoprov.github.io/Brazilian-Tadpoles-5.0/)
+online identification reference.
+
+**Key papers**
+
+- Menezes et al. 2025. [The tadpole of *Chiasmocleis altomontana* (Anura: Microhylidae)](https://doi.org/10.7717/peerj.19220). *PeerJ.*
+- Kloh et al. 2023. [Taste for pollen comes in different shapes: consumption by tadpoles from three divergent ecomorphotypes](https://doi.org/10.1111/jzo.13051). *Journal of Zoology.*
+- Provete et al. 2021. [The tadpoles and advertisement call of *Trachycephalus imitatrix* and *T. dibernardoi* (Anura: Hylidae)](https://doi.org/10.1670/20-010). *Journal of Herpetology.*
+
+**People:** alumni Leandro B. Menezes and Marcos R. Severgnini. See
+[People](people.qmd).
 
 ## Quantitative methods and research software
 
 A large part of the work above depends on getting the statistics right for
 data that rarely behave like textbook examples — compositional proportions,
 multivariate community matrices, phylogenetically non-independent species,
-traits measured on very different scales. Diogo is an accredited
+traits measured on very different scales, detections from automated
+classifiers that are sometimes wrong. Diogo is an accredited
 **Professional Statistician (PStat®)** and **Graduate Statistician (GStat®)**
 of the American Statistical Association, and methodological development is
 treated here as a research output in its own right, not as a by-product.
 
-Two of those outputs are openly available:
+Openly available outputs include:
 
 - [**CoDa Stereo**](software.qmd#coda-stereo) brings Aitchison geometry to
   stereological and histomorphometric data, where measurements are
@@ -81,12 +147,23 @@ Two of those outputs are openly available:
   parametric tools. It is registered with the Brazilian National Institute of
   Industrial Property (INPI, **BR512026003293-8**) and released under the MIT
   licence, and accompanies a methodological paper currently in review.
+- [**crywolf**](software.qmd#crywolf) fits Bayesian occupancy models that
+  correct for the false positives of automated detectors, and the
+  [**BirdNET Validation Sampler**](software.qmd#birdnet-validation-sampler)
+  produces the verified detections those models need.
 - [**ecodados**](software.qmd#ecodados) is the R package behind
   [*Análises Ecológicas no R*](https://analises-ecologicas.com), an open
-  640-page textbook on ecological data analysis. It carries the datasets that
-  make every example in the book reproducible.
+  640-page textbook on ecological data analysis, and
+  [**amphiBR**](software.qmd#amphibr) turns the official list of Brazilian
+  amphibians into an R dataset.
 
-The same commitment shows up in teaching: course materials are written in
-Quarto, versioned on GitHub, and built around real published datasets rather
-than simulated ones, so that students meet the problems that actual data
-bring with them. See [Software](software.qmd) and [Teaching](teaching.qmd).
+The same commitment shows up in how we publish and teach. Diogo co-authored
+an editorial proposing minimum standards for data and code in ecology and
+evolution ([Jenkins et al. 2023](https://doi.org/10.1002/ece3.9961),
+*Ecology and Evolution*); course materials
+are written in Quarto, versioned on GitHub, and built around real published
+datasets rather than simulated ones, so that students meet the problems that
+actual data bring with them. See [Software](software.qmd) and
+[Teaching](teaching.qmd).
+
+The full list of papers is on the [Publications](publications.qmd) page.
