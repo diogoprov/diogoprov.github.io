@@ -223,6 +223,41 @@ install_course_url("https://github.com/diogoprov/Introducao_a_Linguagem_R/zipbal
 swirl()
 ```
 
+## amphiBR
+
+::: {.callout-tip icon=false appearance="minimal"}
+![amphiBR hex logo](assets/images/hex/amphibr.png){.hex-sticker}
+**The official list of Brazilian amphibians as an R dataset**
+
+[{{< fa solid book >}} Documentation](https://paulobarros.github.io/amphiBR/){.btn .btn-primary}
+[{{< fa brands github >}} GitHub repository](https://github.com/paulobarros/amphiBR){.btn .btn-outline-primary}
+
+*R package — GPL (≥ 3). Development version.*
+:::
+
+**amphiBR** packages the official List of Brazilian Amphibians published by
+the Brazilian Herpetological Society (Segalla et al. 2021,
+[Zenodo](https://zenodo.org/record/4716176)) as a single table — 1,188
+species — that loads with the package. Each species comes with its taxonomy,
+common name, threat category from the Brazilian Ministry of the Environment
+assessment (MMA 2022), endemism, and occurrence by state and by biome. It also
+flags which species have their tadpoles described, using data from the
+[Brazilian Tadpoles](https://diogoprov.github.io/Brazilian-Tadpoles-5.0/)
+database: external morphology, internal oral features and chondrocranium.
+
+The goal is to make it quick to build species lists for projects, fauna
+inventories and reports.
+
+```r
+# install.packages("devtools")
+devtools::install_github("paulobarros/amphiBR")
+library(amphiBR)
+segalla2021
+```
+
+Authors: Paulo Barros de Abreu Junior (maintainer), Maurício H. Vancine and
+Diogo B. Provete.
+
 ## ecodados
 
 ::: {.callout-tip icon=false appearance="minimal"}
