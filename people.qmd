@@ -117,6 +117,7 @@ life-history traits along urban gradients.</p>
 <a href="http://lattes.cnpq.br/6261003504491115" title="Lattes CV"><i class="ai ai-lattes"></i></a>
 <a href="https://scholar.google.com/citations?user=h2xqpwIAAAAJ" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
 <a href="https://www.researchgate.net/profile/Marcos-Severgnini" title="ResearchGate"><i class="ai ai-researchgate"></i></a>
+<a href="https://repositorio.ufms.br/items/0b4456c4-caed-4040-9062-83cf7a624d07" title="PhD thesis"><i class="fa-solid fa-graduation-cap"></i></a>
 </p>
 :::
 
@@ -130,6 +131,7 @@ along urban gradients.</p>
 <p class="now">Now: PhD student at UFG</p>
 <p class="card-links">
 <a href="http://lattes.cnpq.br/1991879172038018" title="Lattes CV"><i class="ai ai-lattes"></i></a>
+<a href="https://repositorio.ufms.br/items/3ad63e40-b85e-4771-a918-1444203f45f4" title="Master's dissertation"><i class="fa-solid fa-graduation-cap"></i></a>
 </p>
 :::
 
@@ -146,6 +148,7 @@ in the Brazilian Atlantic Forest.</p>
 <a href="https://scholar.google.com/citations?user=-_jC1e0AAAAJ" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
 <a href="https://www.researchgate.net/profile/Matheus-Moroti" title="ResearchGate"><i class="ai ai-researchgate"></i></a>
 <a href="https://mmoroti.github.io/research/" title="Website"><i class="fa-solid fa-globe"></i></a>
+<a href="https://repositorio.ufms.br/items/15db41ce-720b-4a9c-aec8-b151dafca2e9" title="PhD thesis"><i class="fa-solid fa-graduation-cap"></i></a>
 </p>
 :::
 
@@ -160,6 +163,7 @@ using geometric morphometrics.</p>
 <a href="http://lattes.cnpq.br/2151570245603214" title="Lattes CV"><i class="ai ai-lattes"></i></a>
 <a href="https://scholar.google.com/citations?user=t6PEcUEAAAAJ" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
 <a href="https://www.researchgate.net/profile/Adriana-Acero-Murcia" title="ResearchGate"><i class="ai ai-researchgate"></i></a>
+<a href="https://repositorio.ufms.br/items/de49804a-0d62-433b-9d87-2590a1ac20af" title="PhD thesis"><i class="fa-solid fa-graduation-cap"></i></a>
 </p>
 :::
 
@@ -174,6 +178,7 @@ distribution patterns of Neotropical frogs.</p>
 <a href="http://lattes.cnpq.br/9275923791121356" title="Lattes CV"><i class="ai ai-lattes"></i></a>
 <a href="https://scholar.google.com/citations?user=HU4vmoAAAAAJ" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
 <a href="https://www.researchgate.net/profile/Philip-Soares" title="ResearchGate"><i class="ai ai-researchgate"></i></a>
+<a href="https://repositorio.ufms.br/items/331b0fea-aed7-4e98-887d-1fd9c5723a59" title="PhD thesis"><i class="fa-solid fa-graduation-cap"></i></a>
 </p>
 :::
 
@@ -189,6 +194,7 @@ citizen-science data (iNaturalist, eBird).</p>
 <a href="http://lattes.cnpq.br/8861238387153166" title="Lattes CV"><i class="ai ai-lattes"></i></a>
 <a href="https://scholar.google.com/citations?user=kzyNrLIAAAAJ" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
 <a href="https://www.linkedin.com/in/gabrieltirintan/" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+<a href="https://repositorio.ufms.br/items/9e926ff6-3165-4add-b8dd-9e30c3f9628f" title="Master's dissertation"><i class="fa-solid fa-graduation-cap"></i></a>
 </p>
 :::
 

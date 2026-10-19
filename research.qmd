@@ -35,8 +35,9 @@ this work to the Pantanal.
 - Ceron et al. 2022. [Differences in prey availability across space and time lead to interaction rewiring and reshape a predator–prey metaweb](https://doi.org/10.1002/ecy.3716). *Ecology.*
 - Gomes-Mello et al. 2021. [Frog community composition–environment relationships vary over time: are snapshot studies of metacommunity dynamics useful?](https://doi.org/10.1016/j.baae.2021.07.006) *Basic and Applied Ecology.*
 
-**People:** Daiene L. Hokama Sousa, Bruna M. P. Campos; alumni Philip T. Soares,
-Gabriel Tirintan and Daniel Din Negri. See [People](people.qmd).
+**People:** Daiene L. Hokama Sousa, Bruna M. P. Campos; alumni
+Philip T. Soares ([thesis](https://repositorio.ufms.br/items/331b0fea-aed7-4e98-887d-1fd9c5723a59)),
+Gabriel Tirintan ([thesis](https://repositorio.ufms.br/items/9e926ff6-3165-4add-b8dd-9e30c3f9628f)) and Daniel Din Negri. See [People](people.qmd).
 
 **Funding:** [FrogNet](projects.qmd#frognet-acoustic-monitoring-of-frogs)
 (collaboration).
@@ -62,9 +63,11 @@ morphology, and how those responses scale up to community composition.
 - Sánchez-Domene et al. 2022. [Combined effects of landscape composition and agrochemicals on frog communities amid sugarcane-dominated agroecosystems](https://doi.org/10.1002/eap.2781). *Ecological Applications.*
 - Ganci et al. 2021. [High species turnover shapes anuran community composition in ponds along an urban-rural gradient](https://doi.org/10.1007/s11252-021-01174-8). *Urban Ecosystems.*
 - Valente-Neto et al. 2021. [Loss of cultural and functional diversity associated with birds across the urbanization gradient in a tropical city](https://doi.org/10.3389/fevo.2021.615797). *Frontiers in Ecology and Evolution.*
+- Provete 2013. [What is on the horizon for ecophylogenetics?](https://doi.org/10.4322/natcon.2013.001) *Natureza & Conservação.*
 
-**People:** Ana Paula Andreazzi, João Victor Santos Barros; alumni Marcos R.
-Severgnini and Leandro B. Menezes. See [People](people.qmd).
+**People:** Ana Paula Andreazzi, João Victor Santos Barros; alumni
+Marcos R. Severgnini ([thesis](https://repositorio.ufms.br/items/0b4456c4-caed-4040-9062-83cf7a624d07)) and
+Leandro B. Menezes ([thesis](https://repositorio.ufms.br/items/3ad63e40-b85e-4771-a918-1444203f45f4)). See [People](people.qmd).
 
 **Funding:** [FUNDECT/CNPq research productivity grant](projects.qmd#reconciling-phenotypic-evolution-with-metacommunity-theory)
 (2024–2027); [CNPq Universal](projects.qmd#eco-evolutionary-dynamics-of-urban-biodiversity)
@@ -93,7 +96,9 @@ distribution at broad spatial scales.
 - Martins et al. 2021. [The evolution of red blood cell shape in fishes](https://doi.org/10.1111/jeb.13757). *Journal of Evolutionary Biology.*
 - Moroti et al. 2021. [The effects of morphology, phylogeny and prey availability on trophic resource partitioning in an anuran community](https://doi.org/10.1016/j.baae.2020.11.005). *Basic and Applied Ecology.*
 
-**People:** alumni Matheus T. Moroti, Adriana C. Acero-Murcia, Pedro
+**People:** alumni
+Matheus T. Moroti ([thesis](https://repositorio.ufms.br/items/15db41ce-720b-4a9c-aec8-b151dafca2e9)),
+Adriana C. Acero-Murcia ([thesis](https://repositorio.ufms.br/items/de49804a-0d62-433b-9d87-2590a1ac20af)), Pedro
 Abi-Rezik Barros Vianna and Gabriela B. Leite. See [People](people.qmd).
 
 **Funding:** [FUNDECT/CNPq research productivity grant](projects.qmd#reconciling-phenotypic-evolution-with-metacommunity-theory)
@@ -125,10 +130,13 @@ online identification reference.
 - Kloh et al. 2023. [Taste for pollen comes in different shapes: consumption by tadpoles from three divergent ecomorphotypes](https://doi.org/10.1111/jzo.13051). *Journal of Zoology.*
 - Provete et al. 2021. [The tadpoles and advertisement call of *Trachycephalus imitatrix* and *T. dibernardoi* (Anura: Hylidae)](https://doi.org/10.1670/20-010). *Journal of Herpetology.*
 
-**People:** alumni Leandro B. Menezes and Marcos R. Severgnini. See
-[People](people.qmd).
-
 ## Quantitative methods and research software
+
+::: {.hex-row}
+[![CoDa Stereo](assets/images/hex/codastereo.svg)](software.qmd#coda-stereo)
+[![crywolf](assets/images/hex/crywolf.png)](software.qmd#crywolf)
+[![amphiBR](assets/images/hex/amphibr.png)](software.qmd#amphibr)
+:::
 
 A large part of the work above depends on getting the statistics right for
 data that rarely behave like textbook examples — compositional proportions,

@@ -486,3 +486,16 @@ blockquote {
 @media (max-width: 560px) {
   .hex-sticker { width: 90px; margin-left: .75rem; }
 }
+
+/* --- Research: row of package hex stickers --- */
+.hex-row p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem;
+  margin: .5rem 0 1.5rem;
+}
+.hex-row img { width: 120px; height: auto; }
+@media (max-width: 560px) {
+  .hex-row img { width: 90px; }
+}
