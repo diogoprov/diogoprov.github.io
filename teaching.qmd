@@ -122,13 +122,16 @@ all hands-on in R with the `vegan`, `ade4` and `labdsv` packages.
 ### Phylogenetic comparative methods
 
 Graduate course (45 h) for the [Mestrado em Biologia
-Animal](https://ppgbioanimal.ufms.br) at UFMS, Campo Grande. Covers Brownian
-motion, PGLS, ancestral state reconstruction, phylogenetic signal,
-multi-regime OU models, and multivariate extensions — all hands-on in
-R. Open to graduate students from any line of research with basic
-familiarity with phylogenetic inference.
+Animal](https://ppgbioanimal.ufms.br) at UFMS, Campo Grande. Eight
+lessons organised by a map of trait type × question: obtaining and reading
+trees, Brownian motion and the phylogenetic covariance matrix,
+phylogenetic signal, PGLS, models of continuous and discrete trait
+evolution (OU, early burst, Mk, hidden rates, correlated evolution),
+ancestral states, and multivariate extensions — all hands-on in R. Open
+to graduate students from any line of research with basic familiarity
+with phylogenetic inference.
 
-[Course site & materials →](teaching/mfc/){.btn .btn-outline-primary}
+[Course site & materials →](https://provetelab.org/mfc/){.btn .btn-outline-primary}
 [Mind map summarising the methods →](https://coggle.it/diagram/WhbkkxE2BAAB0R0m){.btn .btn-outline-primary}
 
 ### Análise de dados univariados
