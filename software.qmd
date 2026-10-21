@@ -1,6 +1,6 @@
 ---
 title: "Software"
-description-meta: "Open-source tools from the Biodiversity Synthesis Lab: CoDa Stereo, BirdNET Validation Sampler, crywolf, R swirl lessons in Portuguese, amphiBR and ecodados."
+description-meta: "Open-source tools from the Biodiversity Synthesis Lab: CoDa Stereo, sheepdog, crywolf, R swirl lessons in Portuguese, amphiBR and ecodados."
 subtitle: "Tools we build and maintain for the community"
 toc: true
 ---
@@ -139,32 +139,57 @@ provided the copyright notice is kept.
 Bug reports, feature requests, and pull requests are very welcome on
 [GitHub Issues](https://github.com/diogoprov/CoDaStereo/issues).
 
-## BirdNET Validation Sampler
+## sheepdog
+
+[]{#birdnet-validation-sampler}
 
 ::: {.callout-tip icon=false appearance="minimal"}
-**Sampling and manual-validation pipeline for BirdNET custom classifiers**
+![sheepdog hex logo](assets/images/hex/sheepdog.png){.hex-sticker}
+**Sample, validate and calibrate BirdNET detections for passive acoustic monitoring**
 
-[{{< fa brands github >}} GitHub repository](https://github.com/diogoprov/birdnet-validation-sampler){.btn .btn-primary}
+[{{< fa solid book >}} Documentation](https://provetelab.org/sheepdog/){.btn .btn-primary}
+[{{< fa brands github >}} GitHub repository](https://github.com/diogoprov/sheepdog){.btn .btn-outline-primary}
 
-*R pipeline — MIT License.*
+*R package — MIT License. Version 2.0.0,
+doi:[10.5281/zenodo.22696210](https://doi.org/10.5281/zenodo.22696210).*
 :::
 
-**BirdNET Validation Sampler** turns the raw output of a
-[BirdNET](https://birdnet.cornell.edu/) custom classifier into a set of audio
-clips that a person can realistically sit down and validate — the step that
-decides whether a classifier's detections mean anything in a passive acoustic
-monitoring study.
+**sheepdog** checks whether the automated detections of a
+[BirdNET](https://github.com/birdnet-team/BirdNET-Analyzer) custom classifier
+are real — the step that decides whether a classifier's output means anything
+in a passive acoustic monitoring study. It works in three stages:
 
-The pipeline selects high-confidence predictions, applies an explicit sampling
-design (alternate nights, balanced quotas per species, restricted time
-windows), and extracts reproducible `.wav` clips. After the manual review, it
-returns precision-by-confidence metrics, suggested confidence thresholds,
-presence/absence tables by night, and the clip lists needed to retrain the
-classifier.
+1. **Validation data.** From the BirdNET selection tables, it builds clip sets
+   for manual review under an explicit sampling design — top-score clips,
+   random occasions (the observation-confirmation design of Chambert et al.
+   2015) or random recordings (the multiple-method design of Miller et al.
+   2011) — ready for the review tab of the BirdNET GUI. After the review, it
+   returns precision by confidence bin, suggested thresholds, confirmed
+   presence by night and the clips needed to retrain the classifier.
+2. **Calibration.** It converts confidence scores into probabilities of true
+   detection with hierarchical logistic models that let the score–probability
+   relationship vary among species and sites, compared by cross-validation,
+   and builds nightly detection histories.
+3. **Community matrices.** It turns the calibrated histories into
+   effort-standardised site × month matrices for multivariate ordinations.
+
+sheepdog is the companion of [**crywolf**](#crywolf): its clip manifest and
+validation tables are the input for occupancy models with false positives.
+The two packages are independent — sheepdog does not depend on crywolf.
 
 It was developed for the **FrogNet** project, which monitors frog vocalisations
 in the Pantanal and Cerrado, but works with the output of any BirdNET custom
-classifier.
+classifier. Version 2.0.0 turns the earlier *BirdNET Validation Sampler*
+scripts into a package; the package still reads files written by the scripts
+(v1.2.0), so validated data remain usable.
+
+```r
+# install.packages("remotes")
+remotes::install_github("diogoprov/sheepdog")
+```
+
+Author: Diogo B. Provete, from the protocol design of Larissa S. M. Sugai and
+Liliana Piatti.
 
 ## crywolf
 
@@ -187,8 +212,8 @@ with the false-positive rate either constant or varying with site covariates.
 Besides fitting the models, the package provides simulation tools and
 calibration checks — credible-interval coverage and guidance on how many
 detections need to be verified — so the design can be evaluated before going
-to the field. It pairs naturally with the **BirdNET Validation Sampler** above:
-the sampler produces the verified detections, crywolf uses them to correct the
+to the field. It pairs naturally with [**sheepdog**](#sheepdog) above:
+sheepdog produces the verified detections, crywolf uses them to correct the
 occupancy estimates.
 
 ```r

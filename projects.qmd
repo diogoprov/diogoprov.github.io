@@ -62,8 +62,8 @@ ecoacoustics and CNN-based species recognition to Pantanal frog
 metacommunities within this project.
 
 The validation step — deciding whether a classifier's detections can be
-trusted — is handled by the lab's open
-[BirdNET Validation Sampler](software.qmd#birdnet-validation-sampler).
+trusted — is handled by the lab's open R package
+[sheepdog](software.qmd#sheepdog).
 
 ## Completed projects
 
