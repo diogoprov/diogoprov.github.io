@@ -165,6 +165,10 @@ Openly available outputs include:
   640-page textbook on ecological data analysis, and
   [**amphiBR**](software.qmd#amphibr) turns the official list of Brazilian
   amphibians into an R dataset.
+- [**Introdução à Linguagem R**](software.qmd#introdução-à-linguagem-r-swirl-lessons)
+  is a set of interactive [swirl](https://swirlstats.com) lessons in
+  Portuguese that teach R to ecologists inside the R console
+  ([doi:10.5281/zenodo.22782697](https://doi.org/10.5281/zenodo.22782697)).
 
 The same commitment shows up in how we publish and teach. Diogo co-authored
 an editorial proposing minimum standards for data and code in ecology and
