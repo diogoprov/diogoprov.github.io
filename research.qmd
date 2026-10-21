@@ -133,7 +133,7 @@ online identification reference.
 ## Quantitative methods and research software
 
 ::: {.hex-row}
-[![CoDa Stereo](assets/images/hex/codastereo.svg)](software.qmd#coda-stereo)
+[![CoDa Stereo](assets/images/hex/codastereo.png)](software.qmd#coda-stereo)
 [![crywolf](assets/images/hex/crywolf.png)](software.qmd#crywolf)
 [![amphiBR](assets/images/hex/amphibr.png)](software.qmd#amphibr)
 :::

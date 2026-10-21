@@ -1,6 +1,6 @@
 ---
 title: "Software"
-description-meta: "Open-source tools from the Biodiversity Synthesis Lab: CoDa Stereo, BirdNET Validation Sampler, R swirl lessons in Portuguese, and the ecodados package."
+description-meta: "Open-source tools from the Biodiversity Synthesis Lab: CoDa Stereo, BirdNET Validation Sampler, crywolf, R swirl lessons in Portuguese, amphiBR and ecodados."
 subtitle: "Tools we build and maintain for the community"
 toc: true
 ---
@@ -8,15 +8,16 @@ toc: true
 ## CoDa Stereo
 
 ::: {.callout-tip icon=false appearance="minimal"}
-![CoDa Stereo hex logo](assets/images/hex/codastereo.svg){.hex-sticker}
-**Compositional Data Analysis for Stereological and Histomorphometric Data**
+![CoDa Stereo hex logo](assets/images/hex/codastereo.png){.hex-sticker}
+**Compositional Data Analysis for Stereological, Histomorphometric and Blood-Cell Data**
 
 [{{< fa solid arrow-up-right-from-square >}} **Launch the live app →**](https://019dde61-4363-e3fa-b788-13ddfa456c0b.share.connect.posit.cloud){.btn .btn-primary} &nbsp;
+[{{< fa solid book >}} Documentation](https://provetelab.org/CoDaStereo/){.btn .btn-outline-secondary} &nbsp;
 [{{< fa brands github >}} GitHub repository](https://github.com/diogoprov/CoDaStereo){.btn .btn-outline-secondary} &nbsp;
-[{{< fa solid tag >}} v2.0.0 (Apr 2026)](https://github.com/diogoprov/CoDaStereo/releases){.btn .btn-outline-secondary}
+[{{< fa solid tag >}} v3.1.0 (Oct 2026)](https://github.com/diogoprov/CoDaStereo/releases){.btn .btn-outline-secondary}
 
-*Free, browser-based — no installation required. Hosted on Posit Connect
-Cloud · MIT License.*
+*Free, browser-based — no installation required. Interface in English,
+Portuguese and Spanish. Hosted on Posit Connect Cloud · MIT License.*
 
 **Registered software:** Brazilian National Institute of Industrial Property
 (INPI), registration no. **BR512026003293-8** — filed 28 April 2026, granted
@@ -25,27 +26,54 @@ Cloud · MIT License.*
 
 **CoDa Stereo** is an open-source [Shiny](https://shiny.posit.co/)
 application that brings the **Aitchison geometry** to the daily workflow
-of stereological and histomorphometric studies — fields where measurements
-are naturally **compositional** (proportions of tissue types, cell-line
-fractions, organelle volume densities) and therefore must be analysed with
-the appropriate log-ratio methods rather than off-the-shelf parametric tools.
+of stereological, histomorphometric and haematological studies — fields where
+measurements are naturally **compositional** (proportions of tissue types,
+cell-line fractions, leukocyte differentials, organelle volume densities) and
+therefore must be analysed with the appropriate log-ratio methods rather than
+off-the-shelf parametric tools.
 
 The app implements the full **PPDAC cycle** (Problem → Plan → Data →
 Analysis → Conclusion) so that students and collaborators without a strong
 statistical background can move from a raw spreadsheet to a defensible
 permutational MANOVA with diagnostics, pairwise post-hoc tests, and
-publication-ready plots — all in the browser.
+publication-ready plots — all in the browser, and in their own language: the
+interface and the guided tour are available in **English, Portuguese and
+Spanish**.
+
+### What's new in version 3
+
+- **Three languages.** Switch between EN, PT and ES from the header.
+- **Reproducibility tab.** Export an R script that reproduces the analysis,
+  a self-contained HTML report, or save the session and reload it later.
+- **Balances.** An editable sequential binary partition, the CoDa
+  dendrogram, and a permutational test of each balance by group.
+- **Composition and size.** The log-total can enter the model as a joint
+  response or as a covariate (Pawlowsky-Glahn, Egozcue & Lovell 2015), to
+  separate changes in composition from changes in size.
+- **Richer models.** Numeric covariates (ANCOVA), a block term for nested
+  designs, sums of squares of type I, II or III, and pairwise tests of
+  dispersion as well as of means.
+- **Example data.** The four case studies of the companion paper load from
+  the app.
+- **Figures.** Every plot exports as PDF, PNG, SVG or TIFF at a chosen size
+  and resolution.
+
+Note that clr-biplots now use unscaled clr coordinates, so biplots made with
+version 2.x will differ. The full list of changes is in the
+[changelog](https://provetelab.org/CoDaStereo/news/index.html).
 
 ### Features
 
 | Module | Capabilities |
 |--------|--------------|
-| **Data upload** | CSV and Excel (`.xlsx`/`.xls`) with sheet selector; smart parts selector that auto-excludes ID columns |
+| **Data upload** | CSV and Excel (`.xlsx`/`.xls`) with sheet selector; the four case-study datasets as examples; aggregation of fields of view into specimens (nested designs); pre-flight check of the selected parts |
 | **Data inspection** | Zero/NA heatmap (observed zero vs. structural zero vs. missing); `naniar::vis_miss` plot; counts per part |
 | **Zero handling** | Three methods via `zCompositions` (CZM, multRepl, lrEM); NA handling via listwise deletion or geometric-mean imputation |
-| **Compositional analysis** | Manual ternary plot (pure `ggplot2`, no `ggtern` dependency); amalgamation of *D* > 3 parts into 3 groups; **clr-PCA biplot** via `FactoMineR` + `factoextra` |
-| **Statistical modelling** | Factorial permutational MANOVA via `RRPP::lm.rrpp`; pairwise post-hoc via `RRPP::pairwise`; residual diagnostics; formula preview before fitting |
-| **Downloads** | Ternary and biplot as PDF; imputed data as CSV; ANOVA and pairwise tables as CSV |
+| **Compositional analysis** | Ternary plot with amalgamation, convex hulls or 95% confidence/predictive regions; clr-biplot with scree plot, ray lengths and optional log-total; variation-matrix heatmap; compositional centre and total variance per group; interactive hover |
+| **Balances (SBP)** | Automatic sequential binary partition, editable cell by cell; CoDa dendrogram; boxplots and permutational tests of each balance |
+| **Statistical modelling** | Permutational MANOVA via `RRPP::lm.rrpp` with factors, covariates, a block term and SS type I/II/III; log-total as joint response or covariate; pairwise tests of means and dispersions; residual diagnostics |
+| **Reproducibility** | R script that reproduces the analysis; self-contained HTML report; save and reload the session (JSON) |
+| **Downloads** | Every figure as PDF, PNG, SVG or TIFF; imputed data, SBP, variation matrix, ANOVA, balance and pairwise tables as CSV |
 
 ### Why CoDa Stereo
 
@@ -61,7 +89,7 @@ The recommended way to use CoDa Stereo is to **open it directly in your
 browser** — the app is hosted on [Posit Connect Cloud](https://connect.posit.cloud/)
 (free tier), so there's nothing to install:
 
-[{{< fa solid arrow-up-right-from-square >}} **019dde61-4363-e3fa-b788-13ddfa456c0b.share.connect.posit.cloud**](https://019dde61-4363-e3fa-b788-13ddfa456c0b.share.connect.posit.cloud){.btn .btn-primary}
+[{{< fa solid arrow-up-right-from-square >}} **Launch CoDa Stereo**](https://019dde61-4363-e3fa-b788-13ddfa456c0b.share.connect.posit.cloud){.btn .btn-primary}
 
 ### Run locally (optional)
 
@@ -74,13 +102,13 @@ devtools::install_github("diogoprov/CoDaStereo")
 CoDaStereo::run_app()
 ```
 
-See the [README](https://github.com/diogoprov/CoDaStereo) for full
-deployment notes (including how to re-deploy to your own Posit Connect
-Cloud account).
+The [package website](https://provetelab.org/CoDaStereo/) has a
+getting-started guide, and the [README](https://github.com/diogoprov/CoDaStereo)
+explains how to deploy the app to your own Posit Connect Cloud account.
 
 ### Citation
 
-CoDa Stereo was developed as supplementary material for:
+CoDa Stereo was developed alongside:
 
 > **Provete, D.B.**, Severgnini, M.R., Fernandes, C.E., Franco-Belussi, L.
 > (2026). A practical guide to compositional data analysis in tissue
@@ -91,7 +119,9 @@ CoDa Stereo was developed as supplementary material for:
 The companion paper covers the methodological rationale, simulations
 comparing CoDa with naïve approaches, and worked examples.
 
-A `CITATION.cff` and BibTeX snippets are available on the
+Please cite both the paper and the software. The software is archived on
+Zenodo (doi:[10.5281/zenodo.19928374](https://doi.org/10.5281/zenodo.19928374)),
+and BibTeX entries for both are in the
 [repository](https://github.com/diogoprov/CoDaStereo#how-to-cite).
 
 ::: {.callout-note collapse="true"}
@@ -107,8 +137,7 @@ provided the copyright notice is kept.
 ### Issues, feedback, and contributions
 
 Bug reports, feature requests, and pull requests are very welcome on
-[GitHub Issues](https://github.com/diogoprov/CoDaStereo/issues). PRs should
-target the `dev` branch.
+[GitHub Issues](https://github.com/diogoprov/CoDaStereo/issues).
 
 ## BirdNET Validation Sampler
 
