@@ -64,6 +64,7 @@ morphology, and how those responses scale up to community composition.
 **Key papers**
 
 - Franco-Belussi et al. 2024. [Multiple morphophysiological responses of a tropical frog to urbanization conform to the pace-of-life syndrome](https://doi.org/10.1093/conphys/coad106). *Conservation Physiology.*
+- Acero-Murcia et al. 2023. [An evolutionary ecomorphological perspective on the assembly of a Neotropical bat metacommunity](https://doi.org/10.1007/s10914-023-09667-3). *Journal of Mammalian Evolution.*
 - Valente-Neto et al. 2021. [Loss of cultural and functional diversity associated with birds across the urbanization gradient in a tropical city](https://doi.org/10.3389/fevo.2021.615797). *Frontiers in Ecology and Evolution.*
 - Provete 2013. [What is on the horizon for ecophylogenetics?](https://doi.org/10.4322/natcon.2013.001) *Natureza & Conservação.*
 
@@ -94,7 +95,6 @@ distribution at broad spatial scales.
 
 - Martins et al. 2026. [The impact of climate and habitat on body shape and size evolution in charontid whip spiders](https://doi.org/10.1093/evolut/qpag138). *Evolution.*
 - Bovo et al. 2023. [Beyond Janzen's hypothesis: how amphibians that climb tropical mountains respond to climate variation](https://doi.org/10.1093/iob/obad009). *Integrative Organismal Biology.*
-- Acero-Murcia et al. 2023. [An evolutionary ecomorphological perspective on the assembly of a Neotropical bat metacommunity](https://doi.org/10.1007/s10914-023-09667-3). *Journal of Mammalian Evolution.*
 - Martins et al. 2021. [The evolution of red blood cell shape in fishes](https://doi.org/10.1111/jeb.13757). *Journal of Evolutionary Biology.*
 
 **People:** alumni
