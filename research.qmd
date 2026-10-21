@@ -134,6 +134,7 @@ online identification reference.
 
 ::: {.hex-row}
 [![CoDa Stereo](assets/images/hex/codastereo.png)](software.qmd#coda-stereo)
+[![sheepdog](assets/images/hex/sheepdog.png)](software.qmd#sheepdog)
 [![crywolf](assets/images/hex/crywolf.png)](software.qmd#crywolf)
 [![amphiBR](assets/images/hex/amphibr.png)](software.qmd#amphibr)
 :::
@@ -156,9 +157,9 @@ Openly available outputs include:
   Industrial Property (INPI, **BR512026003293-8**) and released under the MIT
   licence, and accompanies a methodological paper currently in review.
 - [**crywolf**](software.qmd#crywolf) fits Bayesian occupancy models that
-  correct for the false positives of automated detectors, and the
-  [**BirdNET Validation Sampler**](software.qmd#birdnet-validation-sampler)
-  produces the verified detections those models need.
+  correct for the false positives of automated detectors, and its companion
+  package [**sheepdog**](software.qmd#sheepdog) samples, validates and
+  calibrates the BirdNET detections those models need.
 - [**ecodados**](software.qmd#ecodados) is the R package behind
   [*Análises Ecológicas no R*](https://analises-ecologicas.com), an open
   640-page textbook on ecological data analysis, and
