@@ -2,7 +2,7 @@
 title: "Publications"
 description-meta: "Peer-reviewed articles, books, book chapters, manuscripts in review and conference abstracts by Diogo B. Provete and the Biodiversity Synthesis Lab."
 toc: true
-toc-depth: 2
+toc-depth: 3
 ---
 
 ```{r metrics}
@@ -48,17 +48,16 @@ if (!is.na(updated)) {
 Icons: <i class="fa-solid fa-file-pdf"></i> PDF · <i class="ai ai-biorxiv"></i> bioRxiv preprint · <i class="ai ai-open-access"></i> other open-access preprint · <i class="ai ai-open-data"></i> open data · <i class="ai ai-doi"></i> DOI · <i class="fa-solid fa-database"></i> data repository · <i class="fa-solid fa-file-powerpoint"></i> slides · <i class="fa-solid fa-image"></i> poster · <i class="fa-solid fa-file-lines"></i> abstract · <i class="fa-solid fa-flask"></i> protocol.
 :::
 
-## Peer-reviewed articles
+## Peer-reviewed articles {.pub-list}
 
-::: {.pub-list}
+<!-- The class sits on the heading, not on a ::: div, so the year headings
+     become subsections and show up in the table of contents. -->
 
 ```{r pubs-peer-reviewed}
 #| echo: false
 #| results: asis
-pubs_list("peer_reviewed")
+pubs_list("peer_reviewed", toc = TRUE)
 ```
-
-:::
 
 ## Books
 
@@ -102,14 +101,14 @@ pubs_list("in_preparation")
 
 ## Conference abstracts
 
-### 2023
+### 2023 {.unlisted}
 
 [Severgnini, M.R.]{.underline}; **PROVETE, D.B.** 2023. It's about time: the effects of
 urbanization on phenotypic traits in a tropical city.
 [Poster, 108th Annual Meeting of the ESA, Portland, OR, USA]. &nbsp;
 <a href="https://esa2023.eventscribe.net/fsPopup.asp?PosterID=588896&amp;Query=provete&amp;Mode=posterinfo" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a>
 
-### 2022
+### 2022 {.unlisted}
 
 [Moroti, M.T.]{.underline}; da Silva, F.R.; **PROVETE, D.B.** 2022. Non-equilibrium
 processes prevail in shaping species richness and functional diversity of
@@ -122,7 +121,7 @@ composition and structure as a filter to wing shape in a tropical bat
 metacommunity.
 [Poster, 2022 British Ecological Society Annual Meeting, Edinburgh, UK].
 
-### 2021
+### 2021 {.unlisted}
 
 [Acero-Murcia, A.C.]{.underline}; [Severgnini, M.R.]{.underline}; Lacerda, H.D.; Fischer, E.A.;
 **PROVETE, D.B.** 2021. The influence of diet and foraging strategy in the
@@ -148,7 +147,7 @@ Brasília]. *Honorable mention — Best oral presentation.* &nbsp;
 <a href="https://f1000research.com/posters/8-1700" title="Poster" aria-label="Poster"><i class="fa-solid fa-image"></i></a> · &nbsp;
 <a href="talks/2021-simorf-red-blood-cell-shape.pdf" title="Slides" aria-label="Slides"><i class="fa-solid fa-file-pdf"></i></a>
 
-### 2019
+### 2019 {.unlisted}
 
 [Bonin, L.]{.underline}; Soares, P.; Eriksson, A.; **PROVETE, D.B.** 2019. Evolution of
 echolocation in bats (Chiroptera). *F1000Research* 8:1201.
@@ -179,7 +178,7 @@ no tempo de resposta e distância de salto em *Lysapsus limellum*
 (Anura: Hylidae). [Anais do IX Congresso Brasileiro de Herpetologia]. &nbsp;
 <a href="https://proceedings.science/cbh-2019/papers/influencia-da-temperatura-no-tempo-de-resposta-e-distancia-de-salto-em-lysapsus-limellum--anura--hylidae--" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a>
 
-### 2017
+### 2017 {.unlisted}
 
 **PROVETE, D.B.** 2017. La evolución de la pigmentación interna en anfibios
 anuros neotropicales.
@@ -198,21 +197,21 @@ da Chapada do Araripe, nordeste do Brasil.
 [Oral, VIII Congresso Brasileiro de Herpetologia, Campo Grande, Brazil]. &nbsp;
 <a href="https://proceedings.science/cbh/trabalhos/estrutura-da-comunidade-de-lagartos-no-cerrado-relictual-da-chapada-do-araripe-n?lang=pt-br" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a>
 
-### 2015
+### 2015 {.unlisted}
 
 [Leite, G.B.]{.underline}; Franco-Belussi, L.; **PROVETE, D.B.**; Oliveira, C. 2015.
 Evolution of a reproductive character in 26 Neotropical anuran species.
 [Oral, VII Encontro de Biologia Comparada, Ribeirão Preto, Brazil]. &nbsp;
 <a href="http://f1000research.com/slides/4-458" title="Slides" aria-label="Slides"><i class="fa-solid fa-file-powerpoint"></i></a>
 
-### 2014
+### 2014 {.unlisted}
 
 [Leite, G.B.]{.underline}; Franco-Belussi, L.; **PROVETE, D.B.**; Oliveira, C. 2014.
 Comparative analysis of testicular histology in eight species of frogs.
 [Poster, XV Congreso Argentino de Herpetología, Mendoza, Argentina]. &nbsp;
 <a href="assets/abstracts/2014-leite-cah.pdf" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a>
 
-### 2013
+### 2013 {.unlisted}
 
 Garey, M.V.; **PROVETE, D.B.**; Haddad, C.F.B.; Rossa-Feres, D.C. 2013.
 The role of environmental and spatial gradients on a pond-dwelling anuran
@@ -243,7 +242,7 @@ NM, USA]. &nbsp;
 <a href="http://www.slideshare.net/provete/phylogenetic-signal-and-diversity-of-visceral-pigmentation-in-eight-anuran-families-24316658" title="Slides" aria-label="Slides"><i class="fa-solid fa-file-powerpoint"></i></a> · &nbsp;
 <a href="assets/abstracts/2013-provete-jmih.pdf" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a>
 
-### 2012
+### 2012 {.unlisted}
 
 **PROVETE, D.B.**; Gonçalves-Souza, T.; Garey, M.V.; Martins, I.A.;
 Rossa-Feres, D.C. 2012. Fine-scale spatial patterns and pond morphology
@@ -274,7 +273,7 @@ important morphological character for phylogenetic analyses.
 São Paulo, Brazil]. &nbsp;
 <a href="assets/abstracts/2012-oliveira-morphological-sciences.pdf" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a>
 
-### 2011
+### 2011 {.unlisted}
 
 **PROVETE, D.B.**; Garey, M.V.; Rossa-Feres, D.C.; Martins, I.A. 2011.
 Padrões de abundância e distribuição espacial numa metacomunidade de
@@ -310,7 +309,7 @@ of Science, Goiânia, Brazil]. &nbsp;
 <a href="https://f1000research.com/posters/2085" title="Poster" aria-label="Poster"><i class="fa-solid fa-image"></i></a> · &nbsp;
 <a href="assets/abstracts/2011-provete-sbpc.pdf" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a>
 
-### 2010
+### 2010 {.unlisted}
 
 **PROVETE, D.B.** 2010. Chondrocrania of frog larvae of the genus
 *Physalaemus* and their relatives.
@@ -318,7 +317,7 @@ of Science, Goiânia, Brazil]. &nbsp;
 <a href="http://slidesha.re/fTwYIe" title="Slides" aria-label="Slides"><i class="fa-solid fa-file-powerpoint"></i></a> · &nbsp;
 <a href="assets/abstracts/2010-provete-icvm.pdf" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a>
 
-### 2009
+### 2009 {.unlisted}
 
 **PROVETE, D.B.**; Garey, M.V.; Rossa-Feres, D.C. 2009. Descrição do girino
 e do canto de anúncio de *Physalaemus barrioi* Bokermann, 1967
@@ -326,7 +325,7 @@ e do canto de anúncio de *Physalaemus barrioi* Bokermann, 1967
 [Poster, IV Congresso Brasileiro de Herpetologia, Pirenópolis, Brazil]. &nbsp;
 <a href="https://f1000research.com/posters/853" title="Poster" aria-label="Poster"><i class="fa-solid fa-image"></i></a>
 
-### 2007
+### 2007 {.unlisted}
 
 **PROVETE, D.B.**; Sacramento, M.A.; Silva, V.X. 2007. Intra- and
 interspecific relationships between tadpoles and insects in a temporary
@@ -341,7 +340,7 @@ reprodutiva de *Phasmahyla cochranae*.
 <a href="https://f1000research.com/posters/1094221" title="Poster" aria-label="Poster"><i class="fa-solid fa-image"></i></a> · &nbsp;
 <a href="assets/abstracts/2007-sacramento-cbh.pdf" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-file-lines"></i></a>
 
-### 2006
+### 2006 {.unlisted}
 
 **PROVETE, D.B.**; Sacramento, M.A.; Silva, V.X. 2006. Relações tróficas
 entre taxocenoses de girinos (Amphibia: Anura) e insetos em poças

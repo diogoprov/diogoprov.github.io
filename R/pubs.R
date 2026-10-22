@@ -26,12 +26,17 @@
 # --- publications.qmd view -------------------------------------------------
 # Reproduces the hand-written markup exactly: citation, then the verbatim
 # icon/link row separated by " &nbsp;".
-pubs_list <- function(section) {
+# toc = FALSE keeps the year headings out of the page's table of contents.
+pubs_list <- function(section, toc = FALSE) {
   groups <- .pubs_data()[[section]]
   if (is.null(groups)) stop("Unknown section in publications.yml: ", section)
   out <- character(0)
   for (g in groups) {
-    if (!is.null(g$year)) out <- c(out, paste0("### ", g$year))
+    if (!is.null(g$year)) {
+      out <- c(out, paste0("### ", g$year,
+                           if (toc) paste0(" {#", gsub("_", "-", section), "-", g$year, "}")
+                           else " {.unlisted}"))
+    }
     for (e in g$entries) {
       s <- e$cite
       if (!is.null(e$links_raw)) s <- paste0(s, " &nbsp;\n", e$links_raw)
