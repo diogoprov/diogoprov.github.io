@@ -40,7 +40,9 @@ peer_reviewed:
         cite: |-
           [Menezes, L.B.C.]{.underline}; [Severgnini, M.R.]{.underline}; Pezzuti, T.L.; Garey, M.V.;
           **PROVETE, D.B.** 2025. The tadpole of *Chiasmocleis altomontana* (Anura:
-          Microhylidae). *PeerJ* 13:e19220. <a href="https://peerj.com/articles/19220/" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
+          Microhylidae). *PeerJ* 13:e19220.
+        links_raw: |-
+          <a href="https://peerj.com/articles/19220/" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
       - cv: articles
         cite: |-
           Fiorillo, B.F.; Faggioni, G.; **PROVETE, D.B.** 2025. The utility of an index
@@ -69,6 +71,7 @@ peer_reviewed:
           **PROVETE, D.B.** 2024. The same, but different: introducing a new chapter
           at *Journal of Biogeography*. *Journal of Biogeography* 51(10):1825–1826.
         links_raw: |-
+          <a href="https://doi.org/10.1111/jbi.14965" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a> · &nbsp;
           <a href="https://doi.org/10.1111/jbi.14965" title="DOI: 10.1111/jbi.14965" aria-label="DOI"><i class="ai ai-doi"></i> 10.1111/jbi.14965</a>
       - cv: editorials
         cite: |-
@@ -77,6 +80,8 @@ peer_reviewed:
           together: building community to face barriers for Latin American and
           underrepresented ecologists. *Bulletin of the Ecological Society of
           America* 105(4):e02180.
+        links_raw: |-
+          <a href="https://doi.org/10.1002/bes2.2180" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
       - cv: articles
         cite: |-
           [Moroti, M.T.]{.underline}; Skeels, A.; da Silva, F.R.; **PROVETE, D.B.** 2024. Climate
@@ -119,6 +124,7 @@ peer_reviewed:
           (...) Zizka, A. 2023. Shifts to open access with high article processing
           charges hinder research equity and careers. *Journal of Biogeography* 50(9):1485–1489.
         links_raw: |-
+          <a href="https://doi.org/10.1111/jbi.14697" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a> · &nbsp;
           <a href="https://doi.org/10.1111/jbi.14697" title="DOI: 10.1111/jbi.14697" aria-label="DOI"><i class="ai ai-doi"></i> 10.1111/jbi.14697</a>
       - cv: articles
         cite: |-
@@ -176,6 +182,8 @@ peer_reviewed:
         cite: |-
           [Commentary] Jenkins, G.B.; **PROVETE, D.B.**; Harris, A.J. 2022.
           Expanding *Nature Notes*—a space for ecological observations, new species, and species records. *Ecology and Evolution* 12(9):e9215.
+        links_raw: |-
+          <a href="https://doi.org/10.1002/ece3.9215" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
   - year: "2021"
     entries:
       - cv: articles
@@ -205,13 +213,15 @@ peer_reviewed:
           **PROVETE, D.B.**; Garey, M.V.; Picheli, K.O.; Mello, C.M.; Gonçalves, D.S.;
           Conte, C.E.; Rossa-Feres, D.C. 2021. The tadpoles and advertisement call of *Trachycephalus imitatrix* and *T. dibernardoi* (Anura: Hylidae). *Journal of Herpetology* 55(3).
         links_raw: |-
-          <a href="https://morphobank.org/index.php/Projects/ProjectOverview/project_id/2445" title="MorphoBank images" aria-label="MorphoBank images"><i class="fa-solid fa-database"></i></a>
+          <a href="https://morphobank.org/index.php/Projects/ProjectOverview/project_id/2445" title="MorphoBank images" aria-label="MorphoBank images"><i class="fa-solid fa-database"></i></a> · &nbsp;
+          <a href="https://doi.org/10.1670/20-010" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
       - cv: articles
         cite: |-
           Oliveira, C.N.; Campos, I.H.M.P.; **PROVETE, D.B.**; Guarnieri, M.C.; Ribeiro, S.C. 2021. Defensive behaviour and tail autotomy in *Coleodactylus meridionalis*
           (Squamata: Sphaerodactylidae). *Journal of Natural History* 54(33–34):2209–2218.
         links_raw: |-
-          <a href="https://figshare.com/articles/dataset/Data_and_description_of_analysis_of_the_paper_Defensive_behavior_and_caudal_autotomy_rate_in_Coleodactylus_meridionalis_Squamata_Sphaerodactylidae_/5592412" title="Data" aria-label="Data"><i class="ai ai-open-data"></i></a>
+          <a href="https://figshare.com/articles/dataset/Data_and_description_of_analysis_of_the_paper_Defensive_behavior_and_caudal_autotomy_rate_in_Coleodactylus_meridionalis_Squamata_Sphaerodactylidae_/5592412" title="Data" aria-label="Data"><i class="ai ai-open-data"></i></a> · &nbsp;
+          <a href="https://doi.org/10.1080/00222933.2020.1840641" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
       - cv: articles
         cite: |-
           [Moroti, M.T.]{.underline}; [Soares, P.T.]{.underline}; Pedrozo, M.; **PROVETE, D.B.**; Santana, D.J.
@@ -227,7 +237,8 @@ peer_reviewed:
           *Journal of Evolutionary Biology* 34(3):537–548.
         links_raw: |-
           <a href="https://doi.org/10.6084/m9.figshare.12044325.v1" title="Data" aria-label="Data"><i class="ai ai-open-data"></i></a> · &nbsp;
-          <a href="https://protocols.io/view/staining-of-fish-red-blood-cells-bd9yi97w.html" title="Protocol" aria-label="Protocol"><i class="fa-solid fa-flask"></i></a>
+          <a href="https://protocols.io/view/staining-of-fish-red-blood-cells-bd9yi97w.html" title="Protocol" aria-label="Protocol"><i class="fa-solid fa-flask"></i></a> · &nbsp;
+          <a href="https://doi.org/10.1111/jeb.13757" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
       - cv: editorials
         cite: |-
           Mello, F.N.A.; Martínez-Blancas, A.; Vaz, M.C.; Bender, A.;
@@ -319,6 +330,7 @@ peer_reviewed:
           Pantanal wetland: perspectives on a collaborative interface for science,
           policy, and decision-making. *Tropical Conservation Science* 12:1940082919872634.
         links_raw: |-
+          <a href="https://doi.org/10.1177/1940082919872634" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a> · &nbsp;
           <a href="https://doi.org/10.1177/1940082919872634" title="DOI: 10.1177/1940082919872634" aria-label="DOI"><i class="ai ai-doi"></i> 10.1177/1940082919872634</a>
   - year: "2018"
     entries:
@@ -405,7 +417,7 @@ peer_reviewed:
           **PROVETE, D.B.** 2015. Editorial: Wherefore and whither a *Check List*?
           The journal at the age of 10. *Check List* 11(4):1680.
         links_raw: |-
-          <a href="http://biotaxa.org/cl/article/view/11.4.1680" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
+          <a href="https://doi.org/10.15560/11.4.1680" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
   - year: "2014"
     entries:
       - cv: articles
