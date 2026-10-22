@@ -700,12 +700,29 @@ in_preparation:
           <a href="http://www.biorxiv.org/content/10.1101/2024.11.28.625871v1" title="Preprint on bioRxiv" aria-label="Preprint on bioRxiv"><i class="ai ai-biorxiv"></i></a>
       - cv: articles
         cite: |-
-          **PROVETE, D.B.**; Gonçalves, V.; Santana, D.J.; Costa-Pereira, R.;
-          Ceron, K. The macroecological correlates of individual diet
-          specialization. *To be submitted to Global Ecology and Biogeography.*
+          **PROVETE, D.B.\***; Gonçalves, V.; Costa-Pereira, R.; Santana, D.J.;
+          Ceron, K.\* Climate and morphology shape individual dietary specialization
+          in two Neotropical anurans through opposing direct and indirect pathways.
+          *To be submitted to Global Ecology and Biogeography.* ^\*equal contributions^
       - cv: articles
         cite: |-
-          **PROVETE, D.B.**; Garey, M.V.; Menin, M.; Rossa-Feres, D.C. Pond depth
+          **PROVETE, D.B.**; Vancine, M.H.; da Silva, F.R.; Peres-Neto, P.R.\*;
+          Antonelli, A.\* Climatic rarity shapes Atlantic Forest frog assemblages
+          through range size rather than physiological tolerance. *To be submitted to
+          Global Ecology and Biogeography.* ^\*joint senior authors^
+      - cv: articles
+        cite: |-
+          **PROVETE, D.B.**; Rhinehart, T.; Piatti, L.; Sugai, L.S.M. Verifying more
+          is not enough when false positives track the environmental gradient in
+          occupancy models. *To be submitted to Methods in Ecology and Evolution.*
+      - cv: articles
+        cite: |-
+          **PROVETE, D.B.** Branching times and dispersal, not tree imbalance, govern
+          the performance of phylogenetic community–environment methods. *To be
+          submitted to Methods in Ecology and Evolution.*
+      - cv: articles
+        cite: |-
+          **PROVETE, D.B.**; Garey, M.V.; Pegorini, R.J.; Menin, M.; Rossa-Feres, D.C. Pond depth
           filters tadpole body shape in a species-poor Amazonian pond metacommunity with
           pronounced internal structure. *To be submitted to Freshwater Biology.*
       - cv: articles
@@ -717,9 +734,9 @@ in_preparation:
           <a href="https://doi.org/10.22541/au.176400956.64170283/v1" title="Open-access preprint" aria-label="Open-access preprint"><i class="ai ai-open-access"></i></a>
       - cv: articles
         cite: |-
-          **PROVETE, D.B.**; Downing, A.L.; Leibold, M.A. Phylogenetic diversity
-          affects the functioning of multitrophic freshwater ecosystems non-linearly.
-          *To be submitted to Ecology.*
+          **PROVETE, D.B.**; Downing, A.L.; Leibold, M.A. Whole-community phylogenetic
+          diversity restates trophic structure in experimental pond food webs. *To be
+          submitted to Oikos.*
       - cv: articles
         cite: |-
           Meynard, C.N.; da Silva, F.R.; Carnaval, A.C.; Leibold, M.A.;
