@@ -270,7 +270,7 @@ Authorship key: <span class="cv-pub-flag">red number</span> = three most importa
 
 [36] **PROVETE, D. B.**; Garey, M. V.; Picheli, K. O.; Mello, C. M.; Gonçalves, D. S.; Conte, C. E.; Rossa-Feres, D. C. 2021. The tadpoles and advertisement call of *Trachycephalus imitatrix* and *T. dibernardoi* (Anura: Hylidae). *Journal of Herpetology* 55(3). [doi:10.1670/20-010](https://doi.org/10.1670/20-010)
 
-[35] Oliveira, C. N.; Campos, I. H. M. P.; **PROVETE, D. B.**; Guarnieri, M. C.; Ribeiro, S. C. 2021. Defensive behaviour and tail autotomy in *Coleodactylus meridionalis* (Squamata: Sphaerodactylidae). *Journal of Natural History* 54(33–34): 2209–2218.
+[35] Oliveira, C. N.; Campos, I. H. M. P.; **PROVETE, D. B.**; Guarnieri, M. C.; Ribeiro, S. C. 2021. Defensive behaviour and tail autotomy in *Coleodactylus meridionalis* (Squamata: Sphaerodactylidae). *Journal of Natural History* 54(33–34): 2209–2218. [doi:10.1080/00222933.2020.1840641](https://doi.org/10.1080/00222933.2020.1840641)
 
 [34] Martins, B. O.; Franco-Belussi, L.; Siqueira, M. S.; Fernandes, C. E.; **Provete, D. B.** 2021. The evolution of red blood cell shape in fishes. *Journal of Evolutionary Biology* 34(3): 537–548. [doi:10.1111/jeb.13757](https://doi.org/10.1111/jeb.13757)
 
@@ -383,7 +383,7 @@ Franco-Belussi, L.; Trevisan, L.; De Oliveira, C.; Fernandes, C. E.; **PROVETE, 
 
 [7] Jenkins, G. B.; **Provete, D. B.**; Harris, A. J. 2022. Expanding *Nature Notes*—a space for ecological observations, new species, and species records. *Ecology and Evolution* 12(9): e9215. [doi:10.1002/ece3.9215](https://doi.org/10.1002/ece3.9215)
 
-[6] **Provete, D. B.**; Moreno, S.; D'Bastiani, E.; Santiago-Rosario, L. Y.; Tumber-Dávila, S. J. 2024. We are stronger together: building community to face barriers for Latin American and underrepresented ecologists. *Bulletin of the ESA* 105(4): e02180.
+[6] **Provete, D. B.**; Moreno, S.; D'Bastiani, E.; Santiago-Rosario, L. Y.; Tumber-Dávila, S. J. 2024. We are stronger together: building community to face barriers for Latin American and underrepresented ecologists. *Bulletin of the ESA* 105(4): e02180. [doi:10.1002/bes2.2180](https://doi.org/10.1002/bes2.2180)
 
 [5] Mello, F. N. A.; Martínez-Blancas, A.; Vaz, M. C.; Bender, A.; **Provete, D. B.** 2021. Human dimensions: the Latin America and the Caribbean Chapter of ESA. *Bulletin of the ESA* 102(3): e01883. [doi:10.1002/bes2.1883](https://doi.org/10.1002/bes2.1883)
 
