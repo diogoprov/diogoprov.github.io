@@ -1,0 +1,6 @@
+# Copy this file to .Renviron for local configuration; .Renviron is ignored.
+# Keep secrets out of version control. In CI, use GitHub Actions secrets.
+RENV_CONFIG_AUTOLOADER_ENABLED=TRUE
+
+# Optional: used by scripts/fetch_metrics.R for Scopus metrics.
+# SCOPUS_API_KEY=

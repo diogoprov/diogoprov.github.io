@@ -12,6 +12,10 @@ project's `renv.lock` pins the render dependencies and their transitive
 dependencies; `renv/activate.R` pins renv itself. `DESCRIPTION` lists the
 direct build dependencies (`Imports`). Restore them before rendering:
 
+Copy `.Renviron.example` to `.Renviron` if you need project-local settings.
+The example enables renv and documents the optional Scopus API key. Keep real
+credentials in the ignored `.Renviron` or in GitHub Actions secrets.
+
 ```bash
 export RENV_CONFIG_AUTOLOADER_ENABLED=TRUE
 Rscript -e 'renv::restore(prompt = FALSE, retry = FALSE)'
@@ -41,6 +45,9 @@ The site is built and published by GitHub Actions
 configured with Source = "GitHub Actions". The rendered `docs/` directory is
 **not** committed (it is in `.gitignore`), so publishing a change is just:
 edit the `.qmd`, commit, push. Pull requests are rendered but not deployed.
+Builds have read-only repository access; only the deploy job receives Pages
+and OIDC write permissions. PR runs have a separate concurrency group per PR;
+new commits cancel that PR's obsolete build, while publication runs are serialized.
 
 The workflow also rebuilds `assets/cv.pdf` from `cv.qmd`
 (`scripts/build_cv_pdf.R`) before rendering. A failed CV rebuild stops deployment;
@@ -73,8 +80,7 @@ inputs, preventing a previous PDF from satisfying a new deployment.
 ├── data/               # publications.yml (source of the publication lists)
 ├── R/                  # pubs.R (renders data/publications.yml)
 ├── scripts/            # fetch_metrics.R, build_cv_pdf.R, compress_slides.sh
-├── assets/             # images, files (PDFs, CV), metrics.yml
-└── _archive_alban_template/   # old scaffold kept for reference
+└── assets/             # images, files (PDFs, CV), metrics.yml
 ```
 
 ## Adding content

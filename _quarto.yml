@@ -5,7 +5,6 @@ project:
   output-dir: docs   # GitHub Pages serves from /docs
   render:
     - "*.qmd"
-    - "!_archive_alban_template/"
     - "!README.md"
   resources:
     - talks/

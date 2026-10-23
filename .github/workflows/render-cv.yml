@@ -17,16 +17,15 @@ on:
     branches: [main]
   workflow_dispatch:
 
+# Builds and PRs only need to read the repository.
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
-# Never let two deploys race; queue them instead of cancelling, so a push
-# that lands during a build still gets published.
+# Serialize publication runs. PRs use independent groups and cancel only
+# superseded runs of the same PR, without delaying a publication.
 concurrency:
-  group: pages
-  cancel-in-progress: false
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || 'pages' }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   build:
@@ -80,6 +79,9 @@ jobs:
           path: docs
 
   deploy:
+    permissions:
+      pages: write
+      id-token: write
     needs: build
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-26.04
