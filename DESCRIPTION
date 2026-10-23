@@ -1,0 +1,16 @@
+Package: provetelab.website
+Type: Project
+Title: Biodiversity Synthesis Lab Website
+Version: 1.0.0
+Description: Dependencies for rendering the Quarto website and its CV PDF.
+Imports:
+    chromote,
+    jsonlite,
+    knitr,
+    pagedown,
+    renv,
+    rmarkdown,
+    yaml
+Suggests:
+    httr,
+    scholar

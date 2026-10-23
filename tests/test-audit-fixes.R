@@ -42,13 +42,23 @@ print_pdf <- function(input, output, ...) {
   printed <<- TRUE
   writeChar("%PDF-test", output, eos = NULL)
 }
-env$`::` <- function(package, name) print_pdf
+env$`::` <- function(package, name) {
+  pkg <- as.character(substitute(package))
+  fun <- as.character(substitute(name))
+  if (pkg == "pagedown" && fun == "chrome_print") print_pdf else getExportedValue(pkg, fun)
+}
 original_dir <- getwd()
 scratch <- tempfile("cv-regression-")
 dir.create(scratch)
+for (path in c("cv.qmd", "data/publications.yml", "R/pubs.R", "R/metrics.R",
+               "assets/metrics.yml", "assets/styles/cv.css", "styles.css",
+               "_quarto.yml", "scripts/build_cv_pdf.R")) {
+  target <- file.path(scratch, path)
+  dir.create(dirname(target), recursive = TRUE, showWarnings = FALSE)
+  stopifnot(file.copy(path, target))
+}
 setwd(scratch)
 dir.create("docs")
-dir.create("assets")
 writeLines("old PDF", "assets/cv.pdf")
 old_pdf <- readLines("assets/cv.pdf")
 writeLines("stale HTML", "docs/cv.html")

@@ -54,6 +54,20 @@ build_cv_pdf <- function() {
   dir.create(dirname(docs_copy), recursive = TRUE, showWarnings = FALSE)
   if (!file.copy(pdf_out, docs_copy, overwrite = TRUE))
     stop("Could not refresh ", docs_copy)
+
+  # The post-render validator checks this invocation and the exact source/PDF
+  # hashes, so an old committed PDF cannot satisfy the deployment checks.
+  inputs <- c("cv.qmd", "data/publications.yml", "R/pubs.R", "R/metrics.R",
+              "assets/metrics.yml", "assets/styles/cv.css", "styles.css",
+              "_quarto.yml", "scripts/build_cv_pdf.R")
+  hashes <- tools::md5sum(inputs)
+  if (anyNA(hashes)) stop("Missing CV source inputs.")
+  dir.create(".quarto", showWarnings = FALSE)
+  jsonlite::write_json(list(
+    build_id = Sys.getenv("SITE_BUILD_ID", unset = "local"),
+    pdf_md5 = unname(tools::md5sum(pdf_out)),
+    source_hashes = as.list(hashes)
+  ), ".quarto/cv-build.json", auto_unbox = TRUE, pretty = TRUE)
   message("Wrote ", pdf_out, " and refreshed ", docs_copy)
 }
 

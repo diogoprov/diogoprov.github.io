@@ -6,6 +6,7 @@ Gemfile.lock
 .Rhistory
 .RData
 .Ruserdata
+__pycache__/
 
 /.quarto/
 _freeze/
