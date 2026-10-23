@@ -1,14 +1,21 @@
 scholar:
+  last_attempt: null
+  last_success: null
   h_index: 26
   i10_index: 45
   citations_total: 1958
   citations_5y: 0
 wos:
+  last_attempt: null
+  last_success: null
   h_index: 18
   citations: 964
   papers: 70
 scopus:
+  last_attempt: null
+  last_success: null
   h_index: 19
   citations: 1126
   papers: 64
-last_checked: October 2026
+# Historical shared date; successful refresh dates were not recorded per source.
+legacy_last_checked: October 2026

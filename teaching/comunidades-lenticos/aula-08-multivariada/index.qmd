@@ -49,12 +49,6 @@ unimodal) e RDA (gradientes curtos, modelo linear).
 - Ramette, A. 2007. Multivariate analyses in microbial ecology.
   *FEMS Microbiology Ecology* 62:142–160.
 
-::: {.callout-note}
-Para aprofundar nos métodos multivariados, veja o curso de
-[**Análises Multidimensionais**](../../multidimensionais/) (PPG em
-Biologia Animal).
-:::
-
 ---
 
 *Volta para o [índice do curso](../index.qmd).*

@@ -58,12 +58,10 @@ jobs:
           Rscript -e 'options(repos = c(CRAN = Sys.getenv("RSPM", "https://packagemanager.posit.co/cran/__linux__/resolute/latest"))); install.packages(c("rmarkdown","knitr","yaml","scholar","pagedown","chromote","httr")); if (!requireNamespace("rmarkdown", quietly = TRUE)) stop("rmarkdown failed to install")'
 
       # Rebuilt BEFORE the full render, so `quarto render` copies the fresh
-      # PDF into docs/. Non-blocking: if headless Chrome misbehaves on the
-      # runner we still deploy, falling back to the committed assets/cv.pdf.
+      # PDF into docs/. A failed rebuild must stop deployment so the site
+      # cannot present an older PDF as the current CV.
       - name: Rebuild CV PDF
-        run: |
-          Rscript scripts/build_cv_pdf.R \
-            || echo "::warning::CV PDF build failed — deploying the committed assets/cv.pdf instead."
+        run: Rscript scripts/build_cv_pdf.R
 
       - name: Render site
         run: quarto render

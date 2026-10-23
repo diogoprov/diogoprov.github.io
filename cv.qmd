@@ -19,7 +19,7 @@ include-in-header:
 #| warning: false
 m <- tryCatch(yaml::read_yaml("assets/metrics.yml"), error = function(e) NULL)
 fmt <- function(x) if (is.null(x) || is.na(x) || identical(x, 0)) "—" else format(x, big.mark = ",")
-last_checked <- if (!is.null(m$last_checked)) m$last_checked else "—"
+source("R/metrics.R")
 ```
 
 ::: {.cv-page}
@@ -114,7 +114,7 @@ last_checked <- if (!is.null(m$last_checked)) m$last_checked else "—"
 <div class="cv-metric"><span class="cv-metric-value">`r fmt(m$scholar$citations_total)`</span><span class="cv-metric-label">Citations<br><small>Google Scholar</small></span></div>
 <div class="cv-metric"><span class="cv-metric-value">`r fmt(m$scopus$h_index)`</span><span class="cv-metric-label">h-index<br><small>Scopus</small></span></div>
 <div class="cv-metric"><span class="cv-metric-value">`r fmt(m$scopus$citations)`</span><span class="cv-metric-label">Citations<br><small>Scopus</small></span></div>
-<p class="cv-metrics-foot">Last checked: `r last_checked` · <a href="https://scholar.google.com.br/citations?user=qDwcLvIAAAAJ">Scholar</a> · <a href="https://www.scopus.com/authid/detail.uri?authorId=36142276300">Scopus</a> · <a href="https://www.webofscience.com/wos/author/record/B-3704-2008">WoS</a></p>
+<p class="cv-metrics-foot">Last successful refresh: Scholar `r metric_success_date(m, "scholar")`; Scopus `r metric_success_date(m, "scopus")`; WoS `r metric_success_date(m, "wos")` · <a href="https://scholar.google.com.br/citations?user=qDwcLvIAAAAJ">Scholar</a> · <a href="https://www.scopus.com/authid/detail.uri?authorId=36142276300">Scopus</a> · <a href="https://www.webofscience.com/wos/author/record/B-3704-2008">WoS</a></p>
 :::
 
 ## Education

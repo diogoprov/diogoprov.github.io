@@ -13,43 +13,48 @@
 #   Rscript scripts/build_cv_pdf.R
 # -------------------------------------------------------------------------
 
-stopifnot(requireNamespace("pagedown", quietly = TRUE))
+build_cv_pdf <- function() {
+  stopifnot(requireNamespace("pagedown", quietly = TRUE))
+  html_in <- "docs/cv.html"
+  pdf_out <- "assets/cv.pdf"
 
-# 1. Render the site (or just cv.qmd) so docs/cv.html is up to date
-message("Rendering cv.qmd …")
-system2("quarto", c("render", "cv.qmd"), stdout = "", stderr = "")
+  # Require HTML produced by this invocation, never a previous render.
+  if (file.exists(html_in) && !file.remove(html_in))
+    stop("Could not remove stale ", html_in)
+  message("Rendering cv.qmd …")
+  status <- system2("quarto", c("render", "cv.qmd"), stdout = "", stderr = "")
+  if (status != 0L)
+    stop("quarto render cv.qmd failed with exit status ", status)
+  if (!file.exists(html_in))
+    stop("Expected ", html_in, " after quarto render.")
 
-html_in <- "docs/cv.html"
-pdf_out <- "assets/cv.pdf"
-
-if (!file.exists(html_in))
-  stop("Expected ", html_in, " after `quarto render` — check the build log.")
-
-# 2. Print to PDF via headless Chrome. `format = "pdf"` honours @media print.
-message("Printing to PDF …")
-pagedown::chrome_print(
-  input  = html_in,
-  output = pdf_out,
-  format = "pdf",
-  options = list(
-    printBackground   = TRUE,         # keep the dark sidebar colour
-    preferCSSPageSize = TRUE,         # respect @page A4 from cv.css
-    marginTop = 0, marginBottom = 0,  # margins already set in @page
-    marginLeft = 0, marginRight = 0
+  # Keep the existing PDF intact unless Chrome produces a valid replacement.
+  pdf_tmp <- tempfile("cv-", tmpdir = dirname(pdf_out), fileext = ".pdf")
+  on.exit(unlink(pdf_tmp), add = TRUE)
+  message("Printing to PDF …")
+  pagedown::chrome_print(
+    input = html_in,
+    output = pdf_tmp,
+    format = "pdf",
+    options = list(
+      printBackground = TRUE,
+      preferCSSPageSize = TRUE,
+      marginTop = 0, marginBottom = 0,
+      marginLeft = 0, marginRight = 0
+    )
   )
-)
+  if (!file.exists(pdf_tmp) || file.info(pdf_tmp)$size < 5L ||
+      !identical(readChar(pdf_tmp, 5L, useBytes = TRUE), "%PDF-"))
+    stop("Chrome did not produce a valid PDF.")
+  if (!file.rename(pdf_tmp, pdf_out))
+    stop("Could not replace ", pdf_out)
 
-message("Wrote ", pdf_out, " (", file.info(pdf_out)$size %/% 1024, " KB).")
-
-# 3. GitHub Pages serves the site from docs/, so https://provetelab.org/assets/cv.pdf
-#    is docs/assets/cv.pdf -- NOT the copy at the repo root. `quarto render` only
-#    copies assets/ into docs/ while it runs, so a PDF built afterwards would be
-#    left behind and the site would keep serving the previous version. Refresh the
-#    served copy here so the build order stops mattering.
-docs_copy <- file.path("docs", pdf_out)
-if (dir.exists(dirname(docs_copy))) {
-  file.copy(pdf_out, docs_copy, overwrite = TRUE)
-  message("Refreshed ", docs_copy, " (the copy the site actually serves).")
-} else {
-  warning(dirname(docs_copy), " not found - run `quarto render` once, then re-run this script.")
+  # Also refresh the served copy when this script is run after a full render.
+  docs_copy <- file.path("docs", pdf_out)
+  dir.create(dirname(docs_copy), recursive = TRUE, showWarnings = FALSE)
+  if (!file.copy(pdf_out, docs_copy, overwrite = TRUE))
+    stop("Could not refresh ", docs_copy)
+  message("Wrote ", pdf_out, " and refreshed ", docs_copy)
 }
+
+build_cv_pdf()

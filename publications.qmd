@@ -24,7 +24,8 @@ n_inprep  <- pubs_count("in_preparation")
 m <- tryCatch(yaml::read_yaml("assets/metrics.yml"), error = function(e) NULL)
 cites   <- if (!is.null(m$scholar$citations_total)) m$scholar$citations_total else NA
 h_index <- if (!is.null(m$scholar$h_index))         m$scholar$h_index         else NA
-updated <- if (!is.null(m$last_checked))            m$last_checked            else NA
+source("R/metrics.R")
+updated <- metric_success_date(m, "scholar")
 
 cat('<div class="metrics-row">\n')
 cat(sprintf('<div class="metric"><span class="num">%d</span><span class="label">Peer-reviewed</span></div>\n', n_pr))
@@ -35,11 +36,11 @@ if (!is.na(cites))   cat(sprintf('<div class="metric"><span class="num">%s</span
 if (!is.na(h_index)) cat(sprintf('<div class="metric"><span class="num">%d</span><span class="label">h-index</span></div>\n', h_index))
 cat('</div>\n')
 
-if (!is.na(updated)) {
+if (updated != "not recorded") {
   cat(sprintf('<p class="metrics-foot">Citations and h-index from <a href="https://scholar.google.com.br/citations?user=qDwcLvIAAAAJ" target="_blank">Google Scholar</a>, last updated %s.</p>\n',
               updated))
 } else {
-  cat('<p class="metrics-foot">Live citation count on <a href="https://scholar.google.com.br/citations?user=qDwcLvIAAAAJ" target="_blank">Google Scholar</a>.</p>\n')
+  cat('<p class="metrics-foot">Cached metrics; successful refresh date not recorded. Current citation count on <a href="https://scholar.google.com.br/citations?user=qDwcLvIAAAAJ" target="_blank">Google Scholar</a>.</p>\n')
 }
 ```
 

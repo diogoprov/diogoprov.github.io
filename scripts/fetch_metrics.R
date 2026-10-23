@@ -24,6 +24,8 @@ suppressPackageStartupMessages({
   library(yaml)
 })
 
+source("R/metrics.R")
+
 path  <- "assets/metrics.yml"
 m     <- yaml::read_yaml(path)
 SCHOLAR_ID <- "qDwcLvIAAAAJ"
@@ -36,18 +38,12 @@ say <- function(...) cat(format(Sys.time(), "[%H:%M:%S]"), ..., "\n")
 try_scholar <- function() {
   p <- scholar::get_profile(SCHOLAR_ID)
   list(
-    h_index         = as.integer(p$h_index),
-    i10_index       = as.integer(p$i10_index),
-    citations_total = as.integer(p$total_cites)
+    h_index         = p$h_index,
+    i10_index       = p$i10_index,
+    citations_total = p$total_cites
   )
 }
-res <- tryCatch(try_scholar(), error = function(e) { say("Scholar failed:", conditionMessage(e)); NULL })
-if (!is.null(res)) {
-  m$scholar$h_index         <- res$h_index
-  m$scholar$i10_index       <- res$i10_index
-  m$scholar$citations_total <- res$citations_total
-  say("Scholar OK — h =", res$h_index, "| cites =", res$citations_total)
-}
+m <- refresh_metric_source(m, "scholar", try_scholar)
 
 # --- Scopus -------------------------------------------------------------
 # Key is read from the SCOPUS_API_KEY environment variable.
@@ -56,24 +52,18 @@ if (!is.null(res)) {
 # NEVER hardcode the key in this file — it goes public on push.
 SCOPUS_KEY <- Sys.getenv("SCOPUS_API_KEY")
 if (nzchar(SCOPUS_KEY)) {
-  res <- tryCatch({
+  m <- refresh_metric_source(m, "scopus", function() {
     url <- sprintf("https://api.elsevier.com/content/author/author_id/%s?view=METRICS", SCOPUS_ID)
     h   <- httr::add_headers("X-ELS-APIKey" = SCOPUS_KEY, "Accept" = "application/json")
     r   <- httr::GET(url, h)
     httr::stop_for_status(r)
     a   <- httr::content(r)$`author-retrieval-response`[[1]]
     list(
-      h_index    = as.integer(a$`h-index`),
-      citations  = as.integer(a$`coredata`$`citation-count`),
-      papers     = as.integer(a$`coredata`$`document-count`)
+      h_index    = as.numeric(a$`h-index`),
+      citations  = as.numeric(a$`coredata`$`citation-count`),
+      papers     = as.numeric(a$`coredata`$`document-count`)
     )
-  }, error = function(e) { say("Scopus failed:", conditionMessage(e)); NULL })
-  if (!is.null(res)) {
-    m$scopus$h_index   <- res$h_index
-    m$scopus$citations <- res$citations
-    m$scopus$papers    <- res$papers
-    say("Scopus OK — h =", res$h_index)
-  }
+  })
 } else {
   say("Scopus: SCOPUS_API_KEY not set — skipping.")
 }
@@ -87,6 +77,5 @@ if (nzchar(SCOPUS_KEY)) {
 # if (nzchar(WOS_KEY)) { ... }
 say("WoS: API requires subscription — edit metrics.yml manually if needed.")
 
-m$last_checked <- format(Sys.Date(), "%B %Y")
 yaml::write_yaml(m, path)
 say("Wrote", path)

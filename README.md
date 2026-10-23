@@ -21,7 +21,8 @@ configured with Source = "GitHub Actions". The rendered `docs/` directory is
 edit the `.qmd`, commit, push. Pull requests are rendered but not deployed.
 
 The workflow also rebuilds `assets/cv.pdf` from `cv.qmd`
-(`scripts/build_cv_pdf.R`) before rendering.
+(`scripts/build_cv_pdf.R`) before rendering. A failed CV rebuild stops deployment;
+the workflow does not publish the previous PDF as a fallback.
 
 ## Project layout
 
@@ -57,6 +58,20 @@ The workflow also rebuilds `assets/cv.pdf` from `cv.qmd`
   of `cv.qmd`, which is still hand-edited.
 - **Citation metrics:** `Rscript scripts/fetch_metrics.R` refreshes
   `assets/metrics.yml`, which both `publications.qmd` and `cv.qmd` read.
+  Each source records `last_attempt` and `last_success` separately (ISO dates).
+  Failed or incomplete responses preserve the previous values and success date.
+  For manual WoS updates, also set `wos.last_success` to the verification date.
+  `legacy_last_checked` preserves the old shared date, whose source-specific
+  success dates are unknown.
 - **New software:** add a new `##` section to `software.qmd` following the
   CoDa Stereo template (callout-tip with links, description, features
   table, install snippet, citation).
+
+## Regression checks
+
+```bash
+Rscript --vanilla tests/test-audit-fixes.R
+```
+
+These offline checks cover metric refresh failures and invalid responses, and
+CV render/printing failures without replacing the existing PDF.
