@@ -57,7 +57,10 @@ def check_pages(output):
             continue
         pages[path] = page
         relative = path.relative_to(output)
-        expected = "pt-BR" if relative.parts[0] == "teaching" else "en"
+        # Teaching (the course catalogue and course materials) is in Portuguese;
+        # the rest of the site is in English.
+        pt_br = relative.parts[0] == "teaching" or relative.as_posix() == "teaching.html"
+        expected = "pt-BR" if pt_br else "en"
         if page.lang != expected:
             errors.append(f"{relative}: expected lang={expected}, got {page.lang!r}")
         if not "".join(page.title).strip():
