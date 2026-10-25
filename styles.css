@@ -409,12 +409,19 @@ blockquote {
 }
 .nav-footer .footer-icon:hover { color: var(--bsl-accent); text-decoration: none; }
 
-/* --- Footer: INBio logo --- */
-.nav-footer .footer-inbio {
-  height: 40px;
+/* --- Home: INBio logo beside the address --- */
+.home-address {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.home-address p { margin: 0; }
+.home-address p:first-child { flex: 0 0 auto; }   /* keep the logo from shrinking */
+.home-address .inbio-logo {
+  height: 72px;
   width: auto;
-  vertical-align: middle;
-  margin-right: .5rem;
+  max-width: none;
 }
 
 /* --- Navbar title must fit next to the hamburger and search on phones --- */

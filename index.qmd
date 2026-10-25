@@ -75,9 +75,13 @@ excellence — favoring quality over quantity in everything we do.
 
 ## Where to find us
 
+::: {.home-address}
+[![](assets/inbio-logo.png){.inbio-logo fig-alt="Logo of the Instituto de Biociências, UFMS"}](https://inbio.ufms.br)
+
 [Instituto de Biociências](https://inbio.ufms.br) · Universidade Federal de
 Mato Grosso do Sul · Cidade Universitária, 79002-970 · Campo Grande, Mato
 Grosso do Sul, Brazil.
+:::
 
 [{{< fa solid envelope >}}&nbsp;Email Diogo](mailto:diogo.provete@ufms.br){.btn .btn-outline-primary}
 
