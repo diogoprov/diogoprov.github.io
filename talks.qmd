@@ -29,6 +29,8 @@ Companion hands-on workshop: [*IA na revisão de literatura*](teaching.qmd#ia-re
 [{{< fa solid display >}} Open the slides](https://provetelab.org/ia-escrita-cientifica/){.btn .btn-outline-primary}
 &nbsp;
 [{{< fa brands github >}} Source](https://github.com/diogoprov/ia-escrita-cientifica){.btn .btn-outline-secondary}
+&nbsp;
+[{{< fa brands youtube >}} Watch](https://youtu.be/Ghjp12FcTD0){.btn .btn-outline-secondary}
 
 ### FAIR and CARE peer review and publication {#esa-fair}
 
