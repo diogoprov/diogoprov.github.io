@@ -136,6 +136,7 @@ online identification reference.
 [![CoDa Stereo](assets/images/hex/codastereo.png)](software.qmd#coda-stereo)
 [![sheepdog](assets/images/hex/sheepdog.png)](software.qmd#sheepdog)
 [![crywolf](assets/images/hex/crywolf.png)](software.qmd#crywolf)
+[![treeshapesim](assets/images/hex/treeshapesim.png)](software.qmd#treeshapesim)
 [![amphiBR](assets/images/hex/amphibr.png)](software.qmd#amphibr)
 :::
 
@@ -160,6 +161,10 @@ Openly available outputs include:
   correct for the false positives of automated detectors, and its companion
   package [**sheepdog**](software.qmd#sheepdog) samples, validates and
   calibrates the BirdNET detections those models need.
+- [**treeshapesim**](software.qmd#treeshapesim) simulates phylogenies in
+  which tree imbalance and the timing of branching events are controlled
+  separately, so their effects on methods that use phylogenies can be told
+  apart.
 - [**ecodados**](software.qmd#ecodados) is the R package behind
   [*Análises Ecológicas no R*](https://analises-ecologicas.com), an open
   640-page textbook on ecological data analysis, and

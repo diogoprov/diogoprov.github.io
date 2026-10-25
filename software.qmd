@@ -1,6 +1,6 @@
 ---
 title: "Software"
-description-meta: "Open-source tools from the Biodiversity Synthesis Lab: CoDa Stereo, sheepdog, crywolf, R swirl lessons in Portuguese, amphiBR and ecodados."
+description-meta: "Open-source tools from the Biodiversity Synthesis Lab: CoDa Stereo, sheepdog, crywolf, treeshapesim, R swirl lessons in Portuguese, amphiBR and ecodados."
 subtitle: "Tools we build and maintain for the community"
 toc: true
 ---
@@ -230,6 +230,42 @@ doi:[10.1890/10-1396.1](https://doi.org/10.1890/10-1396.1).
 
 Authors: Diogo B. Provete (maintainer), Liliana Piatti, Tessa Rhinehart and
 Larissa Sayuri Moreira Sugai.
+
+## treeshapesim
+
+::: {.callout-tip icon=false appearance="minimal"}
+![treeshapesim hex logo](assets/images/hex/treeshapesim.png){.hex-sticker}
+**Simulate trees with separately controlled imbalance and branching times**
+
+[{{< fa solid book >}} Documentation](https://provetelab.org/treeshapesim/){.btn .btn-primary}
+[{{< fa brands github >}} GitHub repository](https://github.com/diogoprov/treeshapesim){.btn .btn-outline-primary}
+
+*R package — MIT License. Version 0.1.0.*
+:::
+
+**treeshapesim** simulates rooted, binary, ultrametric trees in which
+topological imbalance and the distribution of branching times are set by
+separate parameters. The topology comes from Aldous' (1996) beta-splitting
+model: `beta = 0` gives Yule trees, lower values more imbalanced trees and
+higher values more balanced ones. The branching times come from a pure-birth
+process in which each of *k* lineages splits at rate *k*^*c*^: `c = 0` is
+Yule, `c < 0` slows diversification towards the present (negative gamma;
+Pybus & Harvey 2000) and `c > 0` speeds it up.
+
+Because the gamma statistic depends only on the internode intervals and the
+Colless index only on the topology, `beta` mainly moves the Colless index and
+`c` mainly moves gamma. This makes it possible to build grids of tree shapes
+in which the two properties vary independently, for instance to test how
+methods that use phylogenies respond to each.
+
+```r
+install.packages("treeshapesim",
+                 repos = c("https://diogoprov.r-universe.dev", "https://cloud.r-project.org"))
+library(treeshapesim)
+tr <- sim_tree_shape(100, beta = -1, c = -0.5)   # imbalanced, early splits
+```
+
+Author: Diogo B. Provete.
 
 ## Introdução à Linguagem R — swirl lessons
 
