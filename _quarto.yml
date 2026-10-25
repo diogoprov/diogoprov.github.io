@@ -64,7 +64,7 @@ website:
   page-footer:
     background: light
     left: |
-      © Diogo B. Provete · Biodiversity Synthesis Lab · Instituto de Biociências, UFMS
+      [![Instituto de Biociências, UFMS](/assets/inbio-logo.png){.footer-inbio}](https://inbio.ufms.br) © Diogo B. Provete · Biodiversity Synthesis Lab · Instituto de Biociências, UFMS
     right: |
       [<i class="ai ai-orcid"></i>](https://orcid.org/0000-0002-0097-0651){aria-label="ORCID" .footer-icon}
       [<i class="ai ai-google-scholar"></i>](https://scholar.google.com.br/citations?user=qDwcLvIAAAAJ){aria-label="Google Scholar" .footer-icon}

@@ -1,217 +1,229 @@
 ---
-title: "Teaching"
-description-meta: "Undergraduate and graduate courses taught by Diogo B. Provete at UFMS — biostatistics, R, multivariate analysis, phylogenetic comparative methods, philosophy of science — with open course materials."
+title: "Ensino"
+lang: pt-BR
+description-meta: "Disciplinas de graduação e pós-graduação ministradas por Diogo B. Provete na UFMS — bioestatística, R, análises multidimensionais, modelos lineares generalizados, métodos filogenéticos comparativos, filosofia da ciência — com materiais abertos."
 toc: true
 ---
 
-## Undergraduate courses (UFMS)
-
-### Bioestatística — Ciências Biológicas
-
-Compulsory undergraduate course (68 h) taught every year at INBio/UFMS.
-Covers descriptive statistics, sampling design, probability distributions,
-inference through hypothesis testing, and linear models (t-test, ANOVA,
-regression, chi-square).
-
-[Course site & materials →](https://provetelab.org/bioestatistica/){.btn .btn-outline-primary}
-
-### Urban Ecology — Ciências Biológicas
-
-Elective undergraduate course (51 h) for Biological Sciences students.
-Covers urban biodiversity, habitat fragmentation, the urban heat island,
-ecosystem responses, biological invasions, social inequality and the
-"luxury effect", urban aquatic environments, contemporary evolution, and
-citizen science (iNaturalist + R). Offered in 2019/2 and 2022/2.
-
-[Course site & materials →](teaching/ecologia-urbana/){.btn .btn-outline-primary}
-
-### Comunidades de ambientes lênticos — Ciências Biológicas
-
-Elective undergraduate course for Biological Sciences, offered in 2018.
-Covers the fundamentals of limnology, the physical and chemical features of
-lentic systems (stratification, light, oxygen, nutrients), adaptations of
-the organisms, community structure, metacommunity dynamics, trophic
-relationships, sampling techniques, an introduction to multivariate analysis
-of aquatic communities, and the management of lentic environments in the
-face of global change.
-
-[Course site & materials →](teaching/comunidades-lenticos/){.btn .btn-outline-primary}
-
-### Ecologia de interações — Ciências Biológicas
-
-Undergraduate course (51 h) for Biological Sciences (Bacharelado and
-Licenciatura), offered in 2017/2 and 2019/1. Competition, predation,
-parasitism and mutualism in an evolutionary context, with explicit models
-(Lotka-Volterra, Tilman, Nicholson-Bailey) explored in Populus and
-re-implemented in R, pre-class quizzes on the week's readings, and a field
-practical on herbivory on campus.
-
-[Course site & materials →](teaching/ecologia-interacoes/){.btn .btn-outline-primary}
-
-### History and Philosophy of Science — Ciências Biológicas
-
-Undergraduate seminar course (51 h) offered in 2021/2 for the Biological
-Sciences (Bacharelado) programme at INBio/UFMS, under the administrative title
-*Tópicos Especiais em Ciências Biológicas VI*. Same seminar format as the
-[graduate version](teaching/hfc/) — student pairs lead the discussion of
-weekly readings — but with introductory readings (Chalmers, French, Rubem
-Alves, Dutra, *O Mundo de Sofia*, Sagan). Covers epistemology, rationalism vs
-empiricism (Descartes, Hume, Kant), scientific theories, Popper, Kuhn, asking
-good scientific questions, and pseudoscience.
-
-[Course site & materials →](teaching/hfc-graduacao/){.btn .btn-outline-primary}
-
-## Estatística Descomplicada — YouTube channel
-
-::: {.callout-tip icon=false appearance="minimal"}
-[{{< fa brands youtube >}} **youtube.com/@DiogoBProvete**](https://www.youtube.com/@DiogoBProvete) ·
-*Statistics for the life sciences, in plain Portuguese.*
+::: {lang="en"}
+*Courses taught by Diogo B. Provete at UFMS (Campo Grande, Brazil).
+Course materials are open and written in Portuguese.*
 :::
 
-I run a YouTube channel — **Estatística Descomplicada** — with lessons on
-statistics aimed at biologists and other life-scientists. The content
-mirrors what I teach in graduate and undergraduate courses at UFMS:
-**Generalized Linear (Mixed) Models**, **multivariate methods**, study
-design, and the reproducible-analysis workflow in R.
+As disciplinas abaixo são ministradas na UFMS, em Campo Grande. Os materiais — slides, roteiros, scripts e dados — são abertos.
 
-Topics covered include hypothesis testing, GLM/GLMM with appropriate error
-families, ordinations (PCA, NMDS, RDA, CCA), classification, and how to
-read statistical results in the ecological literature without getting lost
-in the jargon. New videos are released as the academic semester progresses.
+| Disciplina | Nível | Programa | Carga horária | Oferta |
+|---|---|---|---|---|
+| [Bioestatística](#bioestatistica) | Graduação | Ciências Biológicas | 68 h | Anual |
+| [Introdução ao R](#introducao-ao-r) | Pós-graduação | PPG Ecologia e Conservação | 30 h | Regular |
+| [Análises multidimensionais](#analises-multidimensionais) | Pós-graduação | PPG Biologia Animal | 45 h | Regular |
+| [Análise de dados univariados](#analise-de-dados-univariados) | Pós-graduação | PPG Biologia Animal | 45 h | 2026/2 |
+| [Ecologia urbana](#ecologia-urbana) | Graduação | Ciências Biológicas | 51 h | 2022/2 |
+| [História e Filosofia da Ciência](#hfc-graduacao) | Graduação | Ciências Biológicas | 51 h | 2021/2 |
+| [Ecologia de interações](#ecologia-de-interacoes) | Graduação | Ciências Biológicas | 51 h | 2019/1 |
+| [Comunidades de ambientes lênticos](#comunidades-lenticos) | Graduação | Ciências Biológicas | — | 2018 |
+| [História e Filosofia da Ciência](#hfc-pos) | Pós-graduação | PPG Ecologia e Conservação | 45 h | — |
+| [Métodos filogenéticos comparativos](#metodos-filogeneticos-comparativos) | Pós-graduação | PPG Biologia Animal | 45 h | — |
 
-[Subscribe to the channel →](https://www.youtube.com/@DiogoBProvete?sub_confirmation=1){.btn .btn-outline-primary}
+## Disciplinas em oferta {#em-oferta}
 
-## Graduate courses (UFMS)
+### Bioestatística {#bioestatistica}
 
-### Introduction to R
+*Graduação · Ciências Biológicas · obrigatória · 68 h · oferecida todo ano*
 
-Intensive graduate course (30 h, one-week format) for the [PPG in
-Ecology & Conservation](https://ppgec.ufms.br/) at UFMS. Covers R from
-scratch: syntax, RStudio, data import, `tidyverse` (`dplyr`, `tidyr`,
-`purrr`, `broom`), data visualization with `ggplot2`, simple linear
-models, basic programming, version control with `git`/GitHub, and
-reproducible reports with R Markdown / Quarto. Designed for students
-arriving at R for the first time.
+Estatística descritiva, desenho amostral, distribuições de probabilidade,
+inferência por testes de hipótese e modelos lineares (teste t, ANOVA,
+regressão, qui-quadrado).
 
-[Course site & materials →](https://provetelab.org/intro-r/){.btn .btn-outline-primary}
+[Site e materiais da disciplina →](https://provetelab.org/bioestatistica/){.btn .btn-outline-primary}
 
-### History and Philosophy of Science
+### Introdução ao R {#introducao-ao-r}
 
-Seminar-style graduate course (45 h) for the [PPG in Ecology &
-Conservation](https://ppgec.ufms.br/) at UFMS. Open to graduate
-students from any line of research. Covers the structure of
-scientific theories, induction vs deduction, Popper's
-falsifiability, Kuhn's revolutions, Lakatos's research programmes,
-the nature of causality and explanation, holism vs reductionism in
-biology, and how science differs from pseudoscience. Reading-based
-discussion sessions led by student pairs.
+*Pós-graduação · [PPG Ecologia e Conservação](https://ppgec.ufms.br/) · 30 h,
+formato intensivo de uma semana*
 
-[Course site & materials →](teaching/hfc/){.btn .btn-outline-primary}
+R desde o início: sintaxe, RStudio, importação de dados, `tidyverse`
+(`dplyr`, `tidyr`, `purrr`, `broom`), visualização com `ggplot2`, modelos
+lineares simples, noções de programação, controle de versão com
+`git`/GitHub e relatórios reprodutíveis com R Markdown / Quarto. Pensada para
+quem chega ao R pela primeira vez.
 
-### Multidimensional analyses
+[Site e materiais da disciplina →](https://provetelab.org/intro-r/){.btn .btn-outline-primary}
 
-Graduate course (45 h) for the [Mestrado em Biologia
-Animal](https://ppgbioanimal.ufms.br) at UFMS, Campo Grande. Covers
-classification (hierarchical and k-means clustering, IndVal),
-unconstrained ordination (PCA, PCoA, nMDS, CA), constrained ordination
-(CCA, RDA, db-RDA, LDA), Mantel/Procrustes/PROTEST, and PERMANOVA —
-all hands-on in R with the `vegan`, `ade4` and `labdsv` packages.
+### Análises multidimensionais {#analises-multidimensionais}
 
-[Course site & materials →](https://provetelab.org/multidimensionais/){.btn .btn-outline-primary}
+*Pós-graduação · [PPG Biologia Animal](https://ppgbioanimal.ufms.br) · 45 h*
 
-### Phylogenetic comparative methods
+Classificação (agrupamento hierárquico e k-means, IndVal), ordenação
+irrestrita (PCA, PCoA, nMDS, CA), ordenação restrita (CCA, RDA, db-RDA,
+LDA), Mantel, Procrustes e PROTEST, e PERMANOVA — tudo na prática em R, com
+os pacotes `vegan`, `ade4` e `labdsv`.
 
-Graduate course (45 h) for the [Mestrado em Biologia
-Animal](https://ppgbioanimal.ufms.br) at UFMS, Campo Grande. Eight
-lessons organised by a map of trait type × question: obtaining and reading
-trees, Brownian motion and the phylogenetic covariance matrix,
-phylogenetic signal, PGLS, models of continuous and discrete trait
-evolution (OU, early burst, Mk, hidden rates, correlated evolution),
-ancestral states, and multivariate extensions — all hands-on in R. Open
-to graduate students from any line of research with basic familiarity
-with phylogenetic inference.
+[Site e materiais da disciplina →](https://provetelab.org/multidimensionais/){.btn .btn-outline-primary}
 
-[Course site & materials →](https://provetelab.org/mfc/){.btn .btn-outline-primary}
-[Mind map summarising the methods →](https://coggle.it/diagram/WhbkkxE2BAAB0R0m){.btn .btn-outline-primary}
+### Análise de dados univariados {#analise-de-dados-univariados}
 
-### Análise de dados univariados
+*Pós-graduação · [PPG Biologia Animal](https://ppgbioanimal.ufms.br) · 45 h,
+formato intensivo de uma semana · 21 a 25 de setembro de 2026*
 
-Intensive graduate course (45 h, one-week format, 21–25 September 2026) for
-the [PPG in Biologia Animal](https://ppgbioanimal.ufms.br) at UFMS, Campo Grande.
-Presents the usual statistical tests as a single family under the linear
-model, then relaxes its assumptions one at a time: the distribution of the
-response (GLM — likelihood, binomial and Poisson, diagnostics,
-overdispersion, zero inflation), the independence of observations (GLMM —
-rationale for random effects, implementation and Bayesian approaches),
-uncertainty in model selection (information theory), and multivariate
-responses (model-based methods and joint species distribution models).
-Opens with exploratory data analysis, reproducibility, and AI literacy.
+Apresenta os testes estatísticos usuais como uma única família, a do modelo
+linear, e relaxa seus pressupostos um de cada vez: a distribuição da resposta
+(GLM — verossimilhança, binomial e Poisson, diagnósticos, sobredispersão,
+inflação de zeros), a independência das observações (GLMM — por que usar
+efeitos aleatórios, implementação e abordagens bayesianas), a incerteza na
+seleção de modelos (teoria da informação) e as respostas multivariadas
+(métodos baseados em modelos e modelos conjuntos de distribuição de
+espécies). Começa com análise exploratória de dados, reprodutibilidade e
+letramento em IA.
 
-[Course site & materials →](https://provetelab.org/analise-dados-univariados-2026-2/){.btn .btn-outline-primary}
+[Site e materiais da disciplina →](https://provetelab.org/analise-dados-univariados-2026-2/){.btn .btn-outline-primary}
 
-## Short-courses, workshops and past courses {#past-courses-short-courses}
+## Disciplinas anteriores {#anteriores}
 
-### 2026 — IA na revisão de literatura (PT) {#ia-revisao-literatura}
+Materiais das últimas ofertas, mantidos como referência.
 
-*Upcoming · 19 October 2026 · workshop (2 h) for the [PPG in Biologia
-Animal](https://ppgbioanimal.ufms.br), UFMS · in Portuguese*
+### Ecologia urbana {#ecologia-urbana}
 
-Hands-on workshop on AI-assisted literature searching. How the web stopped being
-machine-readable and why that reaches your review; why hallucinated references and
-blocked crawlers are two different failure modes; machine-readable bibliographic
-databases (OpenAlex, Semantic Scholar) and the `openalexR` and `litsearchr` routes
-in R; a live demonstration of citation fabrication checked against CrossRef; and a
-hands-on comparison of Consensus and Undermind against a reproducible Boolean
-search. Closes on what the published evidence says about sensitivity vs precision,
-on reproducibility under PRISMA-S/ROSES, and on how to declare an AI-assisted
-search. Companion to the talk [*IA na redação
+*Graduação · Ciências Biológicas · optativa · 51 h · ofertas em 2019/2 e
+2022/2*
+
+Biodiversidade urbana, fragmentação de habitats, ilha de calor urbana,
+respostas dos ecossistemas, invasões biológicas, desigualdade social e o
+"efeito luxo", ambientes aquáticos urbanos, evolução contemporânea e ciência
+cidadã (iNaturalist + R).
+
+[Site e materiais da disciplina →](teaching/ecologia-urbana/){.btn .btn-outline-primary}
+
+### História e Filosofia da Ciência (graduação) {#hfc-graduacao}
+
+*Graduação · Ciências Biológicas (Bacharelado) · 51 h · oferta em 2021/2,
+com o título administrativo* Tópicos Especiais em Ciências Biológicas VI
+
+Mesmo formato de seminários da [versão de pós-graduação](#hfc-pos) — duplas
+de estudantes conduzem a discussão das leituras da semana —, mas com leituras
+introdutórias (Chalmers, French, Rubem Alves, Dutra, *O Mundo de Sofia*,
+Sagan). Epistemologia, racionalismo e empirismo (Descartes, Hume, Kant),
+teorias científicas, Popper, Kuhn, como formular boas perguntas científicas e
+pseudociência.
+
+[Site e materiais da disciplina →](teaching/hfc-graduacao/){.btn .btn-outline-primary}
+
+### Ecologia de interações {#ecologia-de-interacoes}
+
+*Graduação · Ciências Biológicas (Bacharelado e Licenciatura) · 51 h · ofertas
+em 2017/2 e 2019/1*
+
+Competição, predação, parasitismo e mutualismo em contexto evolutivo, com
+modelos explícitos (Lotka-Volterra, Tilman, Nicholson-Bailey) explorados no
+Populus e reimplementados em R, questionários prévios sobre as leituras da
+semana e uma aula prática de campo sobre herbivoria no campus.
+
+[Site e materiais da disciplina →](teaching/ecologia-interacoes/){.btn .btn-outline-primary}
+
+### Comunidades de ambientes lênticos {#comunidades-lenticos}
+
+*Graduação · Ciências Biológicas · optativa · oferta em 2018*
+
+Fundamentos de limnologia, características físicas e químicas dos sistemas
+lênticos (estratificação, luz, oxigênio, nutrientes), adaptações dos
+organismos, estrutura de comunidades, dinâmica de metacomunidades, relações
+tróficas, técnicas de amostragem, introdução à análise multivariada de
+comunidades aquáticas e manejo de ambientes lênticos diante das mudanças
+globais.
+
+[Site e materiais da disciplina →](teaching/comunidades-lenticos/){.btn .btn-outline-primary}
+
+### História e Filosofia da Ciência (pós-graduação) {#hfc-pos}
+
+*Pós-graduação · [PPG Ecologia e Conservação](https://ppgec.ufms.br/) · 45 h ·
+aberta a estudantes de qualquer linha de pesquisa*
+
+Disciplina em formato de seminários: duplas de estudantes conduzem a
+discussão das leituras. Estrutura das teorias científicas, indução e dedução,
+falseabilidade em Popper, revoluções em Kuhn, programas de pesquisa em
+Lakatos, natureza da causalidade e da explicação, holismo e reducionismo na
+biologia, e o que diferencia ciência de pseudociência.
+
+[Site e materiais da disciplina →](teaching/hfc/){.btn .btn-outline-primary}
+
+### Métodos filogenéticos comparativos {#metodos-filogeneticos-comparativos}
+
+*Pós-graduação · [PPG Biologia Animal](https://ppgbioanimal.ufms.br) · 45 h*
+
+Oito aulas organizadas por um mapa de tipo de caráter × pergunta: obtenção e
+leitura de árvores, movimento browniano e matriz de covariância filogenética,
+sinal filogenético, PGLS, modelos de evolução de caracteres contínuos e
+discretos (OU, early burst, Mk, taxas ocultas, evolução correlacionada),
+estados ancestrais e extensões multivariadas — tudo na prática em R. Aberta a
+estudantes de qualquer linha de pesquisa com familiaridade básica com
+inferência filogenética.
+
+[Site e materiais da disciplina →](https://provetelab.org/mfc/){.btn .btn-outline-primary}
+[Mapa mental dos métodos →](https://coggle.it/diagram/WhbkkxE2BAAB0R0m){.btn .btn-outline-primary}
+
+## Minicursos e oficinas {#minicursos}
+
+### 2026 — IA na revisão de literatura {#ia-revisao-literatura}
+
+*19 de outubro de 2026 · oficina (2 h) para o [PPG Biologia
+Animal](https://ppgbioanimal.ufms.br), UFMS*
+
+Oficina prática de busca bibliográfica assistida por IA. Como a web deixou de
+ser legível por máquinas e por que isso afeta a sua revisão; por que
+referências alucinadas e robôs bloqueados são falhas diferentes; bases
+bibliográficas legíveis por máquinas (OpenAlex, Semantic Scholar) e os
+caminhos `openalexR` e `litsearchr` no R; uma demonstração ao vivo de
+fabricação de citações conferida no CrossRef; e uma comparação prática do
+Consensus e do Undermind com uma busca booleana reprodutível. Termina com o
+que a evidência publicada diz sobre sensibilidade e precisão, com a
+reprodutibilidade segundo PRISMA-S/ROSES e com como declarar uma busca
+assistida por IA. Complementa a palestra [*IA na redação
 científica*](talks.qmd#ia-escrita-cientifica).
 
-[Workshop slides →](https://provetelab.org/ia-revisao-literatura/){.btn .btn-outline-primary}
+[Slides da oficina →](https://provetelab.org/ia-revisao-literatura/){.btn .btn-outline-primary}
 &nbsp;
-[{{< fa brands github >}} Source](https://github.com/diogoprov/ia-revisao-literatura){.btn .btn-outline-secondary}
+[{{< fa brands github >}} Código-fonte](https://github.com/diogoprov/ia-revisao-literatura){.btn .btn-outline-secondary}
 
-### 2019 — Introduction to Macroevolution & Phylogenetic Comparative Methods (PT)
+### 2019 — Introdução à macroevolução e aos métodos filogenéticos comparativos {#minicurso-ibilce-2019}
 
-Short-course given at the [III Congresso Paulista de Ciências Biológicas (III
+Minicurso no [III Congresso Paulista de Ciências Biológicas (III
 CPBio)](https://cpbioriopreto.wixsite.com/cpbio/terceira-edicao),
-[IBILCE/UNESP](https://www.ibilce.unesp.br/) (São José do Rio Preto), May 2019.
-Introduces macroevolution — the evolution of phenotypes above the species
-level — and the phylogenetic comparative methods used to study it. Four parts:
-fundamentals of evolution, comparative methods, applied examples from the
-recent literature, and the lab's current research lines.
+[IBILCE/UNESP](https://www.ibilce.unesp.br/) (São José do Rio Preto), maio de
+2019. Apresenta a macroevolução — a evolução de fenótipos acima do nível de
+espécie — e os métodos filogenéticos comparativos usados para estudá-la. Quatro
+partes: fundamentos de evolução, métodos comparativos, exemplos aplicados da
+literatura recente e as linhas de pesquisa atuais do laboratório.
 
-[Course slides →](teaching/minicurso-ibilce-2019/){.btn .btn-outline-primary}
+[Slides do minicurso →](teaching/minicurso-ibilce-2019/){.btn .btn-outline-primary}
 
-### 2012 — Mendeley demo, Universidade Federal de Goiás
+### 2012 — Demonstração do Mendeley, Universidade Federal de Goiás {#mendeley-2012}
 
-[Slides with screenshots and tutorials](https://pt.slideshare.net/slideshow/mendeley-presentation/16273645)
+[Slides com capturas de tela e tutoriais](https://pt.slideshare.net/slideshow/mendeley-presentation/16273645)
 
-### 2011 — Ecological statistics with R
+### 2011 — Estatística aplicada à ecologia usando o R {#estatistica-ecologia-2011}
 
 *Tópicos em Biologia Animal — Estatística aplicada à ecologia usando o R.*
-A two-week graduate course in Animal Biology at
-[UNESP](https://www.ibilce.unesp.br/) (São Paulo State University), in
-collaboration with [Thiago
-Gonçalves-Souza](https://thiagocalvesouza.wixsite.com/ecofun) and
+Disciplina de pós-graduação de duas semanas no PPG em Biologia Animal da
+[UNESP](https://www.ibilce.unesp.br/), em colaboração com [Thiago
+Gonçalves-Souza](https://thiagocalvesouza.wixsite.com/ecofun) e
 [Fernando R. da Silva](http://fernandoecologia.wixsite.com/fernandorodrigues).
-We covered Generalized Linear Models, the main multivariate methods, and
-other ecological tools, using R as the analysis platform. It gave rise to the
-course book *Estatística aplicada à ecologia usando o R*, hosted by CRAN.
+Modelos lineares generalizados, os principais métodos multivariados e outras
+ferramentas ecológicas, com o R como plataforma de análise. Deu origem à
+apostila *Estatística aplicada à ecologia usando o R*, hospedada no CRAN.
 
-[Course page — slides, scripts and data →](teaching/estatistica-ecologia-2011/){.btn .btn-outline-primary}
+[Página da disciplina — slides, scripts e dados →](teaching/estatistica-ecologia-2011/){.btn .btn-outline-primary}
 
-- [Course book (CRAN-hosted)](https://cran.r-project.org/doc/contrib/Provete-Estatistica_aplicada.pdf)
+- [Apostila (hospedada no CRAN)](https://cran.r-project.org/doc/contrib/Provete-Estatistica_aplicada.pdf)
 
-### 2009 — Sampling techniques for vertebrates (PT)
+### 2009 — Técnicas de amostragem de vertebrados {#amostragem-vertebrados-2009}
 
-Short course (4 h) for undergraduates at UNESP, given as a pre-meeting
-course at the *4º Simpósio de Biologia Animal*. Ricardo Brassaloti and I
-covered field sampling techniques for the four classes of vertebrates.
+Minicurso (4 h) para estudantes de graduação da UNESP, oferecido antes do
+*4º Simpósio de Biologia Animal*. Ricardo Brassaloti e eu apresentamos
+técnicas de amostragem em campo para as quatro classes de vertebrados.
 
-[Course page — slides and bibliography →](teaching/amostragem-vertebrados-2009/){.btn .btn-outline-primary}
+[Página do minicurso — slides e bibliografia →](teaching/amostragem-vertebrados-2009/){.btn .btn-outline-primary}
 
-**Recommended bibliography**
+**Bibliografia recomendada**
 
 - Colwell, R.K. & Coddington, J.A. 1994. Estimating terrestrial biodiversity
   through extrapolation. *Phil. Trans. R. Soc. B* 345:101–118.
@@ -225,3 +237,30 @@ covered field sampling techniques for the four classes of vertebrates.
   [PDF](http://viceroy.eeb.uconn.edu/RKCPublications/GotelliAndColwell2001.pdf)
 - Sutherland, W.J. (Ed.) 2006. *Ecological census techniques: a handbook.*
   2nd ed. Cambridge University Press.
+
+## Materiais abertos {#materiais-abertos}
+
+### Estatística Descomplicada — canal no YouTube {#estatistica-descomplicada}
+
+::: {.callout-tip icon=false appearance="minimal"}
+[{{< fa brands youtube >}} **youtube.com/@DiogoBProvete**](https://www.youtube.com/@DiogoBProvete) ·
+*Estatística para as ciências da vida, em português simples.*
+:::
+
+Aulas de estatística para biólogos e outros cientistas da vida. O conteúdo
+acompanha o que ensino nas disciplinas de graduação e pós-graduação da UFMS:
+**modelos lineares generalizados (mistos)**, **métodos multivariados**,
+desenho amostral e o fluxo de análise reprodutível em R.
+
+Entre os temas estão testes de hipótese, GLM e GLMM com as famílias de erro
+adequadas, ordenações (PCA, NMDS, RDA, CCA), classificação e como ler
+resultados estatísticos na literatura ecológica sem se perder no jargão.
+Novos vídeos saem ao longo do semestre letivo.
+
+[Inscreva-se no canal →](https://www.youtube.com/@DiogoBProvete?sub_confirmation=1){.btn .btn-outline-primary}
+
+### Introdução à Linguagem R — lições swirl {#swirl}
+
+Lições interativas em português para aprender R dentro do próprio console,
+com o pacote [swirl](https://swirlstats.com). Mais detalhes e instruções de
+instalação na página [Software](software.qmd#introdução-à-linguagem-r-swirl-lessons).

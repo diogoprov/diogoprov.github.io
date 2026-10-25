@@ -409,6 +409,14 @@ blockquote {
 }
 .nav-footer .footer-icon:hover { color: var(--bsl-accent); text-decoration: none; }
 
+/* --- Footer: INBio logo --- */
+.nav-footer .footer-inbio {
+  height: 40px;
+  width: auto;
+  vertical-align: middle;
+  margin-right: .5rem;
+}
+
 /* --- Navbar title must fit next to the hamburger and search on phones --- */
 @media (max-width: 480px) {
   .navbar-brand .navbar-title { font-size: .88rem; }
