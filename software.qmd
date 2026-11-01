@@ -1,6 +1,6 @@
 ---
 title: "Software"
-description-meta: "Open-source tools from the Biodiversity Synthesis Lab: CoDa Stereo, sheepdog, crywolf, treeshapesim, R swirl lessons in Portuguese, amphiBR and ecodados."
+description-meta: "Open-source tools from the Biodiversity Synthesis Lab: CoDa Stereo, sheepdog, crywolf, treeshapesim, lagprotest, R swirl lessons in Portuguese, amphiBR and ecodados."
 subtitle: "Tools we build and maintain for the community"
 toc: true
 ---
@@ -265,6 +265,48 @@ library(treeshapesim)
 tr <- sim_tree_shape(100, beta = -1, c = -0.5)   # imbalanced, early splits
 ```
 
+Author: Diogo B. Provete.
+
+## lagprotest
+
+::: {.callout-tip icon=false appearance="minimal"}
+![lagprotest hex logo](assets/images/hex/lagprotest.png){.hex-sticker}
+**Lagged Procrustean randomization test for multivariate time series**
+
+[{{< fa solid book >}} Documentation](https://provetelab.org/lagprotest/){.btn .btn-primary}
+[{{< fa brands github >}} GitHub repository](https://github.com/diogoprov/lagprotest){.btn .btn-outline-primary}
+
+*R package — MIT License. Version 0.1.0,
+doi:[10.5281/zenodo.23860109](https://doi.org/10.5281/zenodo.23860109).
+Under development.*
+:::
+
+**lagprotest** extends the Procrustean randomization test (PROTEST) to
+ordered multivariate series. It scans the Procrustes concordance between two
+configurations across candidate temporal lags, tests each lag by permutation,
+and returns the lag profile, the lag of maximal concordance (minimum *m*²) and
+per-observation Procrustes residuals. Inputs can be matrices, data frames
+(rows = ordered time points) or `dist` objects.
+
+Two permutation schemes are available. The default, `"cyclic"`, shifts the
+full series cyclically (optionally with its time reversal) before lagging,
+which keeps temporal autocorrelation under the null; it assumes the series
+spans complete cycles, such as 12 monthly samples of an annual cycle.
+`"free"` permutes rows within the overlapping window, as `vegan::protest()`
+does; because autocorrelated series violate exchangeability, its Type I error
+can be severely inflated. The global *p*-value (`fit$p.global`) accounts for
+scanning several lags and selecting the best one.
+
+```r
+# install.packages("remotes")
+remotes::install_github("diogoprov/lagprotest")
+library(lagprotest)
+sim <- simulate_lagged_series(n_times = 12, true_lag = 2, noise_sd = 0.5, seed = 1)
+fit <- lagged_protest(sim$X, sim$Y, lags = 0:4, seed = 1)
+plot(fit)   # m2 against lag, with the permutation null quantile
+```
+
+The method and its calibration are described in a manuscript in preparation.
 Author: Diogo B. Provete.
 
 ## Introdução à Linguagem R — swirl lessons
