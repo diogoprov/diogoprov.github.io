@@ -43,8 +43,8 @@ Philip T. Soares ([thesis](https://repositorio.ufms.br/items/331b0fea-aed7-4e98-
 Gabriel Tirintan ([thesis](https://repositorio.ufms.br/items/9e926ff6-3165-4add-b8dd-9e30c3f9628f)) and Daniel Din Negri. See [People](people.qmd).
 
 **Funding:** [Humboldt Research Fellowship](projects.qmd#humboldt-sabbatical-at-idiv-20242025)
-(2024–2025, completed); [FrogNet](projects.qmd#frognet-acoustic-monitoring-of-frogs)
-(collaboration).
+(2024–2025, completed); [DiverSons](projects.qmd#diversons-acoustic-monitoring-of-frogs)
+(FUNDECT, collaboration, completed).
 
 ## Eco-evolutionary dynamics in metacommunity ecology
 
