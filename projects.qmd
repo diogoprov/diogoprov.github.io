@@ -1,6 +1,6 @@
 ---
 title: "Projects"
-description-meta: "Funded research projects of the Biodiversity Synthesis Lab: phenotypic evolution and metacommunity theory (FUNDECT/CNPq), acoustic monitoring of frogs, eco-evolutionary dynamics of urban biodiversity (CNPq), and a Humboldt sabbatical at iDiv."
+description-meta: "Funded research projects of the Biodiversity Synthesis Lab: phenotypic evolution and metacommunity theory (FUNDECT/CNPq), eco-evolutionary dynamics of urban biodiversity (CNPq), acoustic monitoring of frogs (DiverSons, FUNDECT), and a Humboldt sabbatical at iDiv."
 toc: true
 ---
 
@@ -49,21 +49,6 @@ have low fitness, populations would be maladapted and prone to local
 extinction. The results should help plan cities that work for both people and
 biodiversity, and contribute to a "metacommunity 2.0" that integrates
 phenotypic evolution with dispersal and niche selection.
-
-### FrogNet — acoustic monitoring of frogs
-
-*Principal investigator: Liliana Piatti. The lab participates as a
-collaborator.*
-
-FrogNet monitors frog vocalisations in the **Pantanal** and the **Cerrado**
-with passive acoustic recorders and **BirdNET custom classifiers** trained to
-recognise the calls of local species. Daiene L. Hokama Sousa's PhD applies
-ecoacoustics and CNN-based species recognition to Pantanal frog
-metacommunities within this project.
-
-The validation step — deciding whether a classifier's detections can be
-trusted — is handled by the lab's open R package
-[sheepdog](software.qmd#sheepdog).
 
 ## Completed projects
 
@@ -120,6 +105,23 @@ this project!
 :::
 
 :::
+
+### DiverSons — acoustic monitoring of frogs
+
+[]{#frognet-acoustic-monitoring-of-frogs}
+
+*Principal investigator: Liliana Piatti. The lab participated as a
+collaborator. Funded by **FUNDECT** until early 2026.*
+
+DiverSons monitored frog vocalisations in the **Pantanal** and the **Cerrado**
+with passive acoustic recorders and **BirdNET custom classifiers** trained to
+recognise the calls of local species. Daiene L. Hokama Sousa's PhD applies
+ecoacoustics and CNN-based species recognition to Pantanal frog
+metacommunities using data from this project.
+
+The validation step — deciding whether a classifier's detections can be
+trusted — is handled by the lab's open R package
+[sheepdog](software.qmd#sheepdog).
 
 ### Humboldt sabbatical at iDiv (2024–2025)
 

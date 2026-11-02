@@ -177,8 +177,8 @@ sheepdog is the companion of [**crywolf**](#crywolf): its clip manifest and
 validation tables are the input for occupancy models with false positives.
 The two packages are independent — sheepdog does not depend on crywolf.
 
-It was developed for the **FrogNet** project, which monitors frog vocalisations
-in the Pantanal and Cerrado, but works with the output of any BirdNET custom
+It was developed for the **DiverSons** project (FUNDECT), which monitored frog
+vocalisations in the Pantanal and Cerrado, but works with the output of any BirdNET custom
 classifier. Version 2.0.0 turns the earlier *BirdNET Validation Sampler*
 scripts into a package; the package still reads files written by the scripts
 (v1.2.0), so validated data remain usable.
