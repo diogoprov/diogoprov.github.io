@@ -15,6 +15,15 @@ peer_reviewed:
   - year: "2026"
     entries:
       - cv: articles
+        doi: "10.1093/beheco/arag138"
+        cite: |-
+          **PROVETE, D.B.**; Citadini, J.M.; Gomes, F.R. 2026. Predator stimulus and
+          habitat structure jointly shape antipredator behavior in frog species.
+          *Behavioral Ecology* arag138.
+        links_raw: |-
+          <a href="https://doi.org/10.1093/beheco/arag138" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a> · &nbsp;
+          <a href="https://www.biorxiv.org/content/10.64898/2026.05.26.728007v1" title="Preprint on bioRxiv" aria-label="Preprint on bioRxiv"><i class="ai ai-biorxiv"></i></a>
+      - cv: articles
         doi: "10.1093/evolut/qpag138"
         cite: |-
           Martins, P.M.; Galvão, G.A.; Gonçalves-Souza, T.; **PROVETE, D.B.**;
@@ -667,13 +676,6 @@ book_chapters:
 in_press:
   - year: null
     entries:
-      - cv: articles
-        cite: |-
-          **PROVETE, D.B.**; Citadini, J.M.; Gomes, F.R. 2026. Microhabitat
-          structural complexity and predator stimulus drive predator escape decision
-          by frogs. *Accepted in Behavioral Ecology.*
-        links_raw: |-
-          <a href="https://www.biorxiv.org/content/10.64898/2026.05.26.728007v1" title="Preprint on bioRxiv" aria-label="Preprint on bioRxiv"><i class="ai ai-biorxiv"></i></a>
       - cv: articles
         cite: |-
           Piatti, L.; [de Sousa, D.L.H.]{.underline}; Oliveira, B.S.; de Melo, A.V.;
