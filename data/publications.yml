@@ -678,6 +678,11 @@ in_press:
     entries:
       - cv: articles
         cite: |-
+          **PROVETE, D.B.**; da Silva, F.R. 2026. Knowledge gaps on the larval
+          morphology of free-swimming tadpoles from Brazil: a 14-year update.
+          *Accepted in Biota Neotropica.*
+      - cv: articles
+        cite: |-
           Piatti, L.; [de Sousa, D.L.H.]{.underline}; Oliveira, B.S.; de Melo, A.V.;
           Sugai, L.S.M.; **PROVETE, D.B.** 2026. Methodological choices influence
           ecological inference in passive acoustic monitoring of a Neotropical
@@ -722,11 +727,6 @@ in_review:
           Frontiers in Zoology.*
         links_raw: |-
           <a href="https://www.biorxiv.org/content/10.64898/2026.07.26.740824v1" title="Preprint on bioRxiv" aria-label="Preprint on bioRxiv"><i class="ai ai-biorxiv"></i></a>
-      - cv: articles
-        cite: |-
-          **PROVETE, D.B.**; da Silva, F.R. 2026. Knowledge gap on the larval
-          morphology of free-swimming anuran tadpoles from Brazil: a 14-year
-          update. *Received minor revisions in Biota Neotropica.*
       - cv: articles
         cite: |-
           **PROVETE, D.B.**; Ganci, C.C.; Ortega, Z. 2026. Behavioural
