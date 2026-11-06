@@ -32,17 +32,31 @@ build_cv_pdf <- function() {
   pdf_tmp <- tempfile("cv-", tmpdir = dirname(pdf_out), fileext = ".pdf")
   on.exit(unlink(pdf_tmp), add = TRUE)
   message("Printing to PDF …")
-  pagedown::chrome_print(
-    input = html_in,
-    output = pdf_tmp,
-    format = "pdf",
-    options = list(
-      printBackground = TRUE,
-      preferCSSPageSize = TRUE,
-      marginTop = 0, marginBottom = 0,
-      marginLeft = 0, marginRight = 0
-    )
-  )
+  # On CI, Chrome sometimes takes longer to start than pagedown waits for it,
+  # so a failed start is retried before the build gives up.
+  chrome_attempts <- 3L
+  for (attempt in seq_len(chrome_attempts)) {
+    chrome_ok <- tryCatch({
+      pagedown::chrome_print(
+        input = html_in,
+        output = pdf_tmp,
+        format = "pdf",
+        options = list(
+          printBackground = TRUE,
+          preferCSSPageSize = TRUE,
+          marginTop = 0, marginBottom = 0,
+          marginLeft = 0, marginRight = 0
+        )
+      )
+      TRUE
+    }, error = function(e) {
+      if (attempt == chrome_attempts) stop(e)
+      message("Chrome attempt ", attempt, " failed: ", conditionMessage(e))
+      FALSE
+    })
+    if (chrome_ok) break
+    Sys.sleep(5)
+  }
   if (!file.exists(pdf_tmp) || file.info(pdf_tmp)$size < 5L ||
       !identical(readChar(pdf_tmp, 5L, useBytes = TRUE), "%PDF-"))
     stop("Chrome did not produce a valid PDF.")

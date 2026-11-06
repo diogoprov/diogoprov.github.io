@@ -62,6 +62,7 @@ dir.create("docs")
 writeLines("old PDF", "assets/cv.pdf")
 old_pdf <- readLines("assets/cv.pdf")
 writeLines("stale HTML", "docs/cv.html")
+env$Sys.sleep <- function(...) invisible(NULL)
 env$system2 <- function(...) 1L
 stopifnot(inherits(try(env$build_cv_pdf(), silent = TRUE), "try-error"),
           !printed, !file.exists("docs/cv.html"),
@@ -69,14 +70,22 @@ stopifnot(inherits(try(env$build_cv_pdf(), silent = TRUE), "try-error"),
 env$system2 <- function(...) 0L
 stopifnot(inherits(try(env$build_cv_pdf(), silent = TRUE), "try-error"), !printed)
 env$system2 <- function(...) { writeLines("new HTML", "docs/cv.html"); 0L }
-print_pdf <- function(...) stop("Chrome failed")
+chrome_calls <- 0L
+print_pdf <- function(...) { chrome_calls <<- chrome_calls + 1L; stop("Chrome failed") }
 stopifnot(inherits(try(env$build_cv_pdf(), silent = TRUE), "try-error"),
+          chrome_calls == 3L,
           identical(readLines("assets/cv.pdf"), old_pdf))
 print_pdf <- function(input, output, ...) writeLines("invalid PDF", output)
 stopifnot(inherits(try(env$build_cv_pdf(), silent = TRUE), "try-error"),
           identical(readLines("assets/cv.pdf"), old_pdf))
-print_pdf <- function(input, output, ...) writeChar("%PDF-test", output, eos = NULL)
+chrome_calls <- 0L
+print_pdf <- function(input, output, ...) {
+  chrome_calls <<- chrome_calls + 1L
+  if (chrome_calls == 1L) stop("Cannot find headless Chrome")
+  writeChar("%PDF-test", output, eos = NULL)
+}
 env$build_cv_pdf()
+stopifnot(chrome_calls == 2L)
 stopifnot(identical(readBin("assets/cv.pdf", "raw", 100),
                     readBin("docs/assets/cv.pdf", "raw", 100)),
           readChar("assets/cv.pdf", 5L) == "%PDF-")
