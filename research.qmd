@@ -137,6 +137,7 @@ online identification reference.
 [![sheepdog](assets/images/hex/sheepdog.png)](software.qmd#sheepdog)
 [![crywolf](assets/images/hex/crywolf.png)](software.qmd#crywolf)
 [![treeshapesim](assets/images/hex/treeshapesim.png)](software.qmd#treeshapesim)
+[![comdynamite](assets/images/hex/comdynamite.png)](software.qmd#comdynamite)
 [![lagprotest](assets/images/hex/lagprotest.png)](software.qmd#lagprotest)
 [![amphiBR](assets/images/hex/amphibr.png)](software.qmd#amphibr)
 :::
@@ -166,6 +167,9 @@ Openly available outputs include:
   which tree imbalance and the timing of branching events are controlled
   separately, so their effects on methods that use phylogenies can be told
   apart.
+- [**comdynamite**](software.qmd#comdynamite) simulates metacommunity dynamics
+  with a process-based model, adding phylogenetic signal in traits and
+  competition, and takes trees from treeshapesim as regional pools.
 - [**lagprotest**](software.qmd#lagprotest) extends the Procrustean
   randomization test (PROTEST) to multivariate time series, finding the
   temporal lag at which two sets of variables are most concordant while
