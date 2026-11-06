@@ -94,11 +94,11 @@ browser** — the app is hosted on [Posit Connect Cloud](https://connect.posit.c
 ### Run locally (optional)
 
 If you'd rather run the app on your own machine — useful for sensitive
-data, offline work, or customisation — install from GitHub:
+data, offline work, or customisation — install from r-universe:
 
 ```r
-# install.packages("devtools")
-devtools::install_github("diogoprov/CoDaStereo")
+install.packages("CoDaStereo",
+                 repos = c("https://diogoprov.r-universe.dev", "https://cloud.r-project.org"))
 CoDaStereo::run_app()
 ```
 
@@ -184,8 +184,8 @@ scripts into a package; the package still reads files written by the scripts
 (v1.2.0), so validated data remain usable.
 
 ```r
-# install.packages("remotes")
-remotes::install_github("diogoprov/sheepdog")
+install.packages("sheepdog",
+                 repos = c("https://diogoprov.r-universe.dev", "https://cloud.r-project.org"))
 ```
 
 Author: Diogo B. Provete, from the protocol design of Larissa S. M. Sugai and
@@ -217,11 +217,11 @@ sheepdog produces the verified detections, crywolf uses them to correct the
 occupancy estimates.
 
 ```r
-# cmdstanr is distributed through the Stan r-universe
-install.packages("cmdstanr", repos = c("https://stan-dev.r-universe.dev", getOption("repos")))
+# also installs cmdstanr from the Stan r-universe
+install.packages("crywolf", repos = c("https://diogoprov.r-universe.dev",
+                                      "https://stan-dev.r-universe.dev",
+                                      getOption("repos")))
 cmdstanr::install_cmdstan()
-
-remotes::install_github("diogoprov/crywolf")
 ```
 
 To cite the package, use `citation("crywolf")`, together with the paper
@@ -357,8 +357,8 @@ can be severely inflated. The global *p*-value (`fit$p.global`) accounts for
 scanning several lags and selecting the best one.
 
 ```r
-# install.packages("remotes")
-remotes::install_github("diogoprov/lagprotest")
+install.packages("lagprotest",
+                 repos = c("https://diogoprov.r-universe.dev", "https://cloud.r-project.org"))
 library(lagprotest)
 sim <- simulate_lagged_series(n_times = 12, true_lag = 2, noise_sd = 0.5, seed = 1)
 fit <- lagged_protest(sim$X, sim$Y, lags = 0:4, seed = 1)
