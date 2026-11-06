@@ -32,8 +32,11 @@ build_cv_pdf <- function() {
   pdf_tmp <- tempfile("cv-", tmpdir = dirname(pdf_out), fileext = ".pdf")
   on.exit(unlink(pdf_tmp), add = TRUE)
   message("Printing to PDF …")
-  # On CI, Chrome sometimes takes longer to start than pagedown waits for it,
-  # so a failed start is retried before the build gives up.
+  # On CI, Chrome sometimes fails to answer within pagedown's default 10 s, so
+  # wait for 30 s, run without its sandbox (the page is our own CV) and retry a
+  # failed start before the build gives up.
+  old_options <- options(pagedown.remote.maxattempts = 60L)
+  on.exit(options(old_options), add = TRUE)
   chrome_attempts <- 3L
   for (attempt in seq_len(chrome_attempts)) {
     chrome_ok <- tryCatch({
@@ -41,6 +44,7 @@ build_cv_pdf <- function() {
         input = html_in,
         output = pdf_tmp,
         format = "pdf",
+        extra_args = c("--disable-gpu", "--no-sandbox"),
         options = list(
           printBackground = TRUE,
           preferCSSPageSize = TRUE,
