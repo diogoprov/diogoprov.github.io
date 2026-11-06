@@ -1,6 +1,6 @@
 ---
 title: "Software"
-description-meta: "Open-source tools from the Biodiversity Synthesis Lab: CoDa Stereo, sheepdog, crywolf, treeshapesim, lagprotest, R swirl lessons in Portuguese, amphiBR and ecodados."
+description-meta: "Open-source tools from the Biodiversity Synthesis Lab: CoDa Stereo, sheepdog, crywolf, treeshapesim, comdynamite, lagprotest, R swirl lessons in Portuguese, amphiBR and ecodados."
 subtitle: "Tools we build and maintain for the community"
 toc: true
 ---
@@ -263,6 +263,65 @@ install.packages("treeshapesim",
                  repos = c("https://diogoprov.r-universe.dev", "https://cloud.r-project.org"))
 library(treeshapesim)
 tr <- sim_tree_shape(100, beta = -1, c = -0.5)   # imbalanced, early splits
+```
+
+Author: Diogo B. Provete.
+
+## comdynamite
+
+::: {.callout-tip icon=false appearance="minimal"}
+![comdynamite hex logo](assets/images/hex/comdynamite.png){.hex-sticker}
+**Process-based metacommunity simulations with phylogenetic structure**
+
+[{{< fa solid book >}} Documentation](https://provetelab.org/comdynamite/){.btn .btn-primary}
+[{{< fa brands github >}} GitHub repository](https://github.com/diogoprov/comdynamite){.btn .btn-outline-primary}
+
+*R package — MIT License. Development version 0.0.0.9000.*
+:::
+
+**comdynamite** implements the process-based metacommunity model of
+[Thompson et al. (2020)](https://doi.org/10.1111/ele.13568): density-independent
+growth set by the match between each species' environmental optimum and the
+local environment, Beverton–Holt competition, Poisson demographic stochasticity
+and dispersal among sites. It was written independently from the published
+equations; the original R implementation is
+[mcomsimr](https://github.com/plthompson/mcomsimr).
+
+On top of that model, comdynamite adds:
+
+- **Phylogenetic structure.** Optima, niche breadths and maximum growth rates
+  can carry phylogenetic signal (Pagel's lambda) or evolve under single- or
+  multi-optimum Ornstein-Uhlenbeck processes, and competition can be stronger
+  between close relatives.
+- **Landscapes.** Sites can be spatially implicit, with uniform dispersal, or
+  an explicit grid (optionally a torus) with an exponential dispersal kernel
+  and a spatially autocorrelated environment. Restricted null models permute
+  sites on a torus while keeping its spatial structure.
+- **Change over time.** The environment can change during a run, and abundances
+  can be recorded at chosen steps.
+- **Rule-based assembly.** Communities can also be assembled without population
+  dynamics, as in [Kraft et al. (2007)](https://doi.org/10.1086/519400), by
+  limiting similarity, habitat filtering or neutral assembly.
+
+The phylogeny is an input: the tree is fixed and traits are placed on it. Tree
+shape and phylogenetic signal can therefore be set independently, which is what
+simulation studies of methods need. [**treeshapesim**](#treeshapesim) produces
+trees with controlled imbalance and branching times to use as regional pools.
+
+```r
+# install.packages("remotes")
+remotes::install_github("diogoprov/comdynamite")
+library(comdynamite)
+set.seed(1)
+tr <- ape::rcoal(40)
+sim <- simulate_metacommunity(
+  landscape = landscape_implicit(50),
+  traits    = species_traits(tr, lambda = 1),
+  alpha     = competition_matrix(tr, type = "phylo"),
+  dispersal = 0.01,
+  n_steps   = 1000
+)
+sim$abundance   # sites x species
 ```
 
 Author: Diogo B. Provete.
