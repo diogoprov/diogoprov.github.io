@@ -695,6 +695,13 @@ in_review:
     entries:
       - cv: articles
         cite: |-
+          Bates, A.E.; Greentree, W.L.; Clark, L.; Dingwall, J.; Herrington, C.;
+          Nikoo, M.L.; Spriel, B.; Weir, E.; Belmaker, J.; Qiao, H.J.; Sheard, C.;
+          **PROVETE, D.B.** 2026. From pattern extraction to design and inference:
+          the macroecologist in the age of AI. *In the first round of revisions in
+          Global Ecology and Biogeography.*
+      - cv: articles
+        cite: |-
           **PROVETE, D.B.** 2026. A Middle Way proposal towards an equitable open access
           publishing model. *In the first round of revision in Learned Publishing.*
         links_raw: |-
