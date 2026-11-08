@@ -777,7 +777,7 @@ in_preparation:
           occupancy models. *To be submitted to Methods in Ecology and Evolution.*
       - cv: articles
         cite: |-
-          **PROVETE, D.B.**; Duarte, I.C.D.; Sugai, L.S.M.; Piatti, L. Bidirectional
+          **PROVETE, D.B.**; [Duarte, I.C.D.]{.underline}; Sugai, L.S.M.; Piatti, L. Bidirectional
           colonization and trait-mediated homogenization of a fire-affected frog
           metacommunity. *To be submitted to Oikos.*
       - cv: articles
