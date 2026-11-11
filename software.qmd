@@ -14,7 +14,7 @@ toc: true
 [{{< fa solid arrow-up-right-from-square >}} **Launch the live app →**](https://019dde61-4363-e3fa-b788-13ddfa456c0b.share.connect.posit.cloud){.btn .btn-primary} &nbsp;
 [{{< fa solid book >}} Documentation](https://provetelab.org/CoDaStereo/){.btn .btn-outline-secondary} &nbsp;
 [{{< fa brands github >}} GitHub repository](https://github.com/diogoprov/CoDaStereo){.btn .btn-outline-secondary} &nbsp;
-[{{< fa solid tag >}} v3.1.0 (Oct 2026)](https://github.com/diogoprov/CoDaStereo/releases){.btn .btn-outline-secondary}
+[{{< fa solid tag >}} v3.1.1 (Oct 2026)](https://github.com/diogoprov/CoDaStereo/releases){.btn .btn-outline-secondary}
 
 *Free, browser-based — no installation required. Interface in English,
 Portuguese and Spanish. Hosted on Posit Connect Cloud · MIT License.*
@@ -150,8 +150,8 @@ Bug reports, feature requests, and pull requests are very welcome on
 [{{< fa solid book >}} Documentation](https://provetelab.org/sheepdog/){.btn .btn-primary}
 [{{< fa brands github >}} GitHub repository](https://github.com/diogoprov/sheepdog){.btn .btn-outline-primary}
 
-*R package — MIT License. Version 2.0.0,
-doi:[10.5281/zenodo.22696210](https://doi.org/10.5281/zenodo.22696210).*
+*R package — MIT License. Version 3.3.2,
+doi:[10.5281/zenodo.22696209](https://doi.org/10.5281/zenodo.22696209).*
 :::
 
 **sheepdog** checks whether the automated detections of a
@@ -200,7 +200,8 @@ Liliana Piatti.
 [{{< fa solid book >}} Documentation](https://provetelab.org/crywolf/){.btn .btn-primary}
 [{{< fa brands github >}} GitHub repository](https://github.com/diogoprov/crywolf){.btn .btn-outline-primary}
 
-*R package (models in Stan via cmdstanr) — GPL (≥ 3). Development version.*
+*R package (models in Stan via cmdstanr) — GPL (≥ 3). Version 2.2.0,
+doi:[10.5281/zenodo.23385045](https://doi.org/10.5281/zenodo.23385045).*
 :::
 
 **crywolf** fits Bayesian single-season occupancy models that correct for the
@@ -240,7 +241,8 @@ Larissa Sayuri Moreira Sugai.
 [{{< fa solid book >}} Documentation](https://provetelab.org/treeshapesim/){.btn .btn-primary}
 [{{< fa brands github >}} GitHub repository](https://github.com/diogoprov/treeshapesim){.btn .btn-outline-primary}
 
-*R package — MIT License. Version 0.1.0.*
+*R package — MIT License. Version 0.2.1,
+doi:[10.5281/zenodo.23647260](https://doi.org/10.5281/zenodo.23647260).*
 :::
 
 **treeshapesim** simulates rooted, binary, ultrametric trees in which
@@ -276,7 +278,8 @@ Author: Diogo B. Provete.
 [{{< fa solid book >}} Documentation](https://provetelab.org/comdynamite/){.btn .btn-primary}
 [{{< fa brands github >}} GitHub repository](https://github.com/diogoprov/comdynamite){.btn .btn-outline-primary}
 
-*R package — MIT License. Development version 0.0.0.9000.*
+*R package — MIT License. Version 0.7.0,
+doi:[10.5281/zenodo.23993533](https://doi.org/10.5281/zenodo.23993533).*
 :::
 
 **comdynamite** implements the process-based metacommunity model of
@@ -309,8 +312,8 @@ simulation studies of methods need. [**treeshapesim**](#treeshapesim) produces
 trees with controlled imbalance and branching times to use as regional pools.
 
 ```r
-# install.packages("remotes")
-remotes::install_github("diogoprov/comdynamite")
+install.packages("comdynamite", repos = c("https://diogoprov.r-universe.dev",
+                                          "https://cloud.r-project.org"))
 library(comdynamite)
 set.seed(1)
 tr <- ape::rcoal(40)
@@ -335,7 +338,7 @@ Author: Diogo B. Provete.
 [{{< fa solid book >}} Documentation](https://provetelab.org/lagprotest/){.btn .btn-primary}
 [{{< fa brands github >}} GitHub repository](https://github.com/diogoprov/lagprotest){.btn .btn-outline-primary}
 
-*R package — MIT License. Version 0.1.0,
+*R package — MIT License. Version 0.6.0,
 doi:[10.5281/zenodo.23860109](https://doi.org/10.5281/zenodo.23860109).
 Under development.*
 :::
