@@ -121,9 +121,9 @@ source("R/pubs.R")
 ## Education
 
 ::: {.cv-timeline}
-| **2011 – 2015** | **PhD, Ecology and Evolution** — Federal University of Goiás, Brazil. Visiting scholar at the Mathew A. Leibold Lab, University of Texas at Austin.<br>*Phylogenetic structure of metacommunities along environmental gradients.* Advisor: Adriano S. Melo. |
+| **2011 – 2015** | **PhD, Ecology and Evolution** — Federal University of Goiás, Brazil. Visiting scholar at the Mathew A. Leibold Lab, University of Texas at Austin.<br>*Phylogenetic structure of metacommunities along environmental gradients.* Advisor: Adriano S. Melo. [Full text](https://repositorio.bc.ufg.br/tede/items/c7b2b239-e4e5-4781-92b8-62ed607d0b43) |
 |---|---|
-| **2008 – 2010** | **MSc, Animal Biology** — São Paulo State University (UNESP), Brazil.<br>*Resource use and co-occurrence patterns between tadpoles and predaceous insects in sub-tropical assemblages.* Advisors: Itamar A. Martins & Denise C. Rossa-Feres. |
+| **2008 – 2010** | **MSc, Animal Biology** — São Paulo State University (UNESP), Brazil.<br>*Resource use and co-occurrence patterns between tadpoles and predaceous insects in sub-tropical assemblages.* Advisors: Itamar A. Martins & Denise C. Rossa-Feres. [Full text](https://acervodigital.unesp.br/handle/11449/87604) |
 | **2003 – 2006** | **BSc, Biological Sciences** — Federal University of Alfenas (UNIFAL), Brazil. |
 :::
 
