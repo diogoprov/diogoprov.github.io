@@ -198,7 +198,7 @@ peer_reviewed:
           Navarro-Lozano, A.; Acayaba, R.D.; Montagner, C.C.; Rossa-Feres, D.C.;
           López-Iborra, G.M.; Almeida, E.A. 2022. Combined effects of landscape
           composition and agrochemicals on frog communities amid sugarcane-dominated
-          agroecosystems. *Ecological Applications* 33(2):e2781. ^\*equal contributions^
+          agroecosystems. *Ecological Applications* 33(2):e2781. ^\*equal\ contributions^
         links_raw: |-
           <a href="https://esajournals.onlinelibrary.wiley.com/doi/10.1002/eap.2781" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
       - cv: articles
@@ -238,7 +238,7 @@ peer_reviewed:
           Valverde, B.S.L.; Martins, B.O.; de Oliveira, C.; Fernandes, C.E.S. 2021.
           Hematological parameters of a Neotropical wild frog population, with a
           phylogenetic perspective on blood cell composition in Anura. *Current
-          Zoology* 68(3):361–369. ^\*equal contributions^
+          Zoology* 68(3):361–369. ^\*equal\ contributions^
         links_raw: |-
           <a href="https://academic.oup.com/cz/advance-article/doi/10.1093/cz/zoab059/6326800" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
       - cv: articles
@@ -350,7 +350,7 @@ peer_reviewed:
       - cv: articles
         doi: "10.1002/ece3.6155"
         cite: |-
-          Tonini, J.F.R.\*; **PROVETE, D.B.\***; Maciel, N.M.; Morais, A.R.; Goutte, S.; Toledo, L.F.; Pyron, R.A. 2020. Allometric escape from acoustic constraints is rare for frog calls. *Ecology and Evolution* 10(8):3686–3695. ^\*equal contributions^
+          Tonini, J.F.R.\*; **PROVETE, D.B.\***; Maciel, N.M.; Morais, A.R.; Goutte, S.; Toledo, L.F.; Pyron, R.A. 2020. Allometric escape from acoustic constraints is rare for frog calls. *Ecology and Evolution* 10(8):3686–3695. ^\*equal\ contributions^
         links_raw: |-
           <a href="https://onlinelibrary.wiley.com/doi/10.1002/ece3.6155" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
       - cv: articles
@@ -385,7 +385,7 @@ peer_reviewed:
           Garey, M.V.\*; **PROVETE, D.B.\***; Gonçalves-Souza, T.; Ouchi-Melo, L.S.; Haddad, C.F.B.; Rossa-Feres, D.C. 2018. Phylogenetic and adaptive components
           of the anuran advertisement call correlate with temporal species
           co-occurrence. *Biological Journal of the Linnean Society* 125(2):292–301.
-          ^\*equal contributions^
+          ^\*equal\ contributions^
         links_raw: |-
           <a href="https://academic.oup.com/biolinnean/article-abstract/125/2/292/5090348" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
   - year: "2017"
@@ -393,7 +393,7 @@ peer_reviewed:
       - cv: articles
         cite: |-
           Franco-Belussi, L.\*; **PROVETE, D.B.\***; Oliveira, C. 2017. Environmental correlates of internal coloration in frogs vary throughout space and
-          lineages. *Ecology and Evolution* 7(22):9222–9233. ^\*equal contributions^
+          lineages. *Ecology and Evolution* 7(22):9222–9233. ^\*equal\ contributions^
         links_raw: |-
           <a href="http://onlinelibrary.wiley.com/doi/10.1002/ece3.3438/full" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a> · &nbsp;
           <a href="https://doi.org/10.6084/m9.figshare.4707187.v1" title="Data" aria-label="Data"><i class="ai ai-open-data"></i></a>
@@ -418,7 +418,7 @@ peer_reviewed:
         cv_note: "*Featured in F1000 Prime*"
         cite: |-
           Livingston, G.\*; Fukumori, K.\*; **PROVETE, D.B.\***; Kawachi, M.; Takamura, N.; Leibold, M.A. 2017. Predators regulate prey species sorting and
-          spatial distribution in microbial landscapes. *Journal of Animal Ecology* 86(3):501–510. ^\*equal contributions^
+          spatial distribution in microbial landscapes. *Journal of Animal Ecology* 86(3):501–510. ^\*equal\ contributions^
         links_raw: |-
           <a href="https://doi.org/10.1111/1365-2656.12639" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a> · &nbsp;
           <a href="http://datadryad.org/resource/doi:10.5061/dryad.79hb8" title="Data" aria-label="Data"><i class="ai ai-open-data"></i></a> ·
@@ -731,7 +731,7 @@ in_review:
           Franco-Belussi, L.\*; Moraes, L.T.\*; de Oliveira, C.; Fernandes, C.E.;
           **PROVETE, D.B.** 2026. Hepatic modules show distinct seasonal dynamics
           in a tropical treefrog. *Submitted to Current Zoology.*
-          ^\*equal contributions^
+          ^\*equal\ contributions^
         links_raw: |-
           <a href="https://www.biorxiv.org/content/10.64898/2026.07.26.740824v1" title="Preprint on bioRxiv" aria-label="Preprint on bioRxiv"><i class="ai ai-biorxiv"></i></a>
       - cv: articles
@@ -758,13 +758,13 @@ in_preparation:
           **PROVETE, D.B.\***; Gonçalves, V.; Costa-Pereira, R.; Santana, D.J.;
           Ceron, K.\* Climate and morphology shape individual dietary specialization
           in two Neotropical anurans through opposing direct and indirect pathways.
-          *To be submitted to Global Ecology and Biogeography.* ^\*equal contributions^
+          *To be submitted to Global Ecology and Biogeography.* ^\*equal\ contributions^
       - cv: articles
         cite: |-
           **PROVETE, D.B.**; Vancine, M.H.; da Silva, F.R.; Peres-Neto, P.R.\*;
           Antonelli, A.\* Climatic rarity shapes Atlantic Forest frog assemblages
           through range size rather than physiological tolerance. *To be submitted to
-          Global Ecology and Biogeography.* ^\*joint senior authors^
+          Global Ecology and Biogeography.* ^\*joint\ senior\ authors^
       - cv: articles
         cite: |-
           **PROVETE, D.B.**; Rhinehart, T.; Piatti, L.; Sugai, L.S.M. Verifying more
@@ -821,7 +821,7 @@ in_preparation:
           [Soares, P.T.]{.underline}; da Silva, F.R.; **PROVETE, D.B.\***; Prado, V.H.M.\*
           Taxonomic, functional, and phylogenetic beta diversity of Brazilian Cerrado
           frogs respond differently to climatic and spatial factors. *To be submitted
-          to Journal of Biogeography.* ^\*joint senior authors^
+          to Journal of Biogeography.* ^\*joint\ senior\ authors^
       - cv: articles
         cite: |-
           Garey, M.V.; **PROVETE, D.B.**; Rossa-Feres, D.C.; Haddad, C.F.B. Patch
