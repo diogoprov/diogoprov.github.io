@@ -728,10 +728,10 @@ in_review:
           <a href="https://www.researchsquare.com/article/rs-9590298/v1" title="Open-access preprint" aria-label="Open-access preprint"><i class="ai ai-open-access"></i></a>
       - cv: articles
         cite: |-
-          Franco-Belussi, L.; Trevisan, L.; De Oliveira, C.; Fernandes, C.E.;
-          **PROVETE, D.B.** 2026. Seasonal hepatic plasticity follows a temporal
-          response hierarchy in a Neotropical frog. *In the 1st round of revision in
-          Frontiers in Zoology.*
+          Franco-Belussi, L.\*; Moraes, L.T.\*; de Oliveira, C.; Fernandes, C.E.;
+          **PROVETE, D.B.** 2026. Hepatic modules show distinct seasonal dynamics
+          in a tropical treefrog. *Submitted to Current Zoology.*
+          ^\*equal contributions^
         links_raw: |-
           <a href="https://www.biorxiv.org/content/10.64898/2026.07.26.740824v1" title="Preprint on bioRxiv" aria-label="Preprint on bioRxiv"><i class="ai ai-biorxiv"></i></a>
       - cv: articles
