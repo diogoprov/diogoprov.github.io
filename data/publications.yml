@@ -695,6 +695,16 @@ in_review:
     entries:
       - cv: articles
         cite: |-
+          **PROVETE, D.B.** 2026. comdynamite: an R package to simulate
+          eco-evolutionary metacommunity dynamics under evolutionary quantitative
+          genetic models. *Submitted to Journal of Biogeography.*
+      - cv: articles
+        cite: |-
+          **PROVETE, D.B.**; [Duarte, I.C.D.]{.underline}; Sugai, L.S.M.; Piatti, L.
+          2026. Colonisation-driven convergence of frog assemblages after a wildfire
+          in the Brazilian Pantanal. *Submitted to Biotropica.*
+      - cv: articles
+        cite: |-
           Bates, A.E.; Greentree, W.L.; Clark, L.; Dingwall, J.; Herrington, C.;
           Nikoo, M.L.; Spriel, B.; Weir, E.; Belmaker, J.; Qiao, H.J.; Sheard, C.;
           **PROVETE, D.B.** 2026. From pattern extraction to design and inference:
@@ -775,11 +785,6 @@ in_preparation:
           **PROVETE, D.B.**; Piatti, L.; Sugai, L.S.M. sheepdog: probability-based
           validation and Bayesian calibration of automated acoustic detections for
           occupancy models. *To be submitted to Methods in Ecology and Evolution.*
-      - cv: articles
-        cite: |-
-          **PROVETE, D.B.**; [Duarte, I.C.D.]{.underline}; Sugai, L.S.M.; Piatti, L. Bidirectional
-          colonization and trait-mediated homogenization of a fire-affected frog
-          metacommunity. *To be submitted to Oikos.*
       - cv: articles
         cite: |-
           **PROVETE, D.B.**; Cuellar-Gempeler, C.; Leavitt, J.; Langenheder, S.;
