@@ -695,6 +695,11 @@ in_review:
     entries:
       - cv: articles
         cite: |-
+          **PROVETE, D.B.**; Piatti, L.; Sugai, L.S.M. 2026. sheepdog: probability-based
+          validation and Bayesian calibration of automated acoustic detections for
+          occupancy models. *Submitted to Methods in Ecology and Evolution.*
+      - cv: articles
+        cite: |-
           **PROVETE, D.B.** 2026. comdynamite: an R package to simulate
           eco-evolutionary metacommunity dynamics under evolutionary quantitative
           genetic models. *Submitted to Journal of Biogeography.*
@@ -781,11 +786,6 @@ in_preparation:
         cite: |-
           **PROVETE, D.B.**; Rhinehart, T.; Piatti, L.; Sugai, L.S.M. Verifying more
           is not enough when false positives track the environmental gradient in
-          occupancy models. *To be submitted to Methods in Ecology and Evolution.*
-      - cv: articles
-        cite: |-
-          **PROVETE, D.B.**; Piatti, L.; Sugai, L.S.M. sheepdog: probability-based
-          validation and Bayesian calibration of automated acoustic detections for
           occupancy models. *To be submitted to Methods in Ecology and Evolution.*
       - cv: articles
         cite: |-
