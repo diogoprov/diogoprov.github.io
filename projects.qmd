@@ -120,8 +120,8 @@ this project!
 []{#frognet-acoustic-monitoring-of-frogs}
 
 *Principal investigator: Liliana Piatti. The lab participated as a
-collaborator. Funded by **FUNDECT** (Termo de Outorga 95/2023) until early
-2026.*
+collaborator. Funded by **FUNDECT** (Termo de Outorga 95/2023) from
+**July 2023 to July 2026**.*
 
 DiverSons monitored frog vocalisations in the **Pantanal** and the **Cerrado**
 with passive acoustic recorders and **BirdNET custom classifiers** trained to
