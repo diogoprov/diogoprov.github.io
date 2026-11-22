@@ -183,6 +183,14 @@ classifier. Version 2.0.0 turns the earlier *BirdNET Validation Sampler*
 scripts into a package; the package still reads files written by the scripts
 (v1.2.0), so validated data remain usable.
 
+The methods are described in:
+
+> **Provete, D.B.**, Piatti, L., Sugai, L.S.M. (2026). sheepdog:
+> probability-based validation and Bayesian calibration of automated acoustic
+> detections for occupancy models. *Methods in Ecology and Evolution*
+> (*in review*).
+> [Preprint on EcoEvoRxiv](https://doi.org/10.32942/X2H99S).
+
 ```r
 install.packages("sheepdog",
                  repos = c("https://diogoprov.r-universe.dev", "https://cloud.r-project.org"))

@@ -698,6 +698,8 @@ in_review:
           **PROVETE, D.B.**; Piatti, L.; Sugai, L.S.M. 2026. sheepdog: probability-based
           validation and Bayesian calibration of automated acoustic detections for
           occupancy models. *Submitted to Methods in Ecology and Evolution.*
+        links_raw: |-
+          <a href="https://doi.org/10.32942/X2H99S" title="Preprint on EcoEvoRxiv" aria-label="Preprint on EcoEvoRxiv"><i class="ai ai-open-access"></i></a>
       - cv: articles
         cite: |-
           **PROVETE, D.B.** 2026. comdynamite: an R package to simulate
