@@ -695,6 +695,11 @@ in_review:
     entries:
       - cv: articles
         cite: |-
+          **PROVETE, D.B.** 2026. Branching times and dispersal, not tree imbalance,
+          govern the performance of phylogenetic community–environment methods.
+          *Submitted to Methods in Ecology and Evolution.*
+      - cv: articles
+        cite: |-
           **PROVETE, D.B.**; Piatti, L.; Sugai, L.S.M. 2026. sheepdog: probability-based
           validation and Bayesian calibration of automated acoustic detections for
           occupancy models. *Submitted to Methods in Ecology and Evolution.*
@@ -795,11 +800,6 @@ in_preparation:
           Fukumori, K.; Livingston, G.; Leibold, M.A. Resource, prey, and disturbance
           structure bacterial metacommunities in protist microcosm landscapes. *To be
           submitted to FEMS Microbiology Ecology.*
-      - cv: articles
-        cite: |-
-          **PROVETE, D.B.** Branching times and dispersal, not tree imbalance, govern
-          the performance of phylogenetic community–environment methods. *To be
-          submitted to Methods in Ecology and Evolution.*
       - cv: articles
         cite: |-
           **PROVETE, D.B.**; Garey, M.V.; Pegorini, R.J.; Menin, M.; Rossa-Feres, D.C. Pond depth
