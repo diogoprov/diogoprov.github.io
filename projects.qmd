@@ -137,7 +137,9 @@ trusted — is handled by the lab's open R package
 
 Diogo spent 2024–2025 as an **Alexander von Humboldt Research Fellow**
 (Experienced Researchers) at the German Centre for Integrative Biodiversity
-Research (**iDiv**), Leipzig. The Alexander von Humboldt Foundation funded the
-fellowship and a subsidy towards research costs. Talks from
+Research (**iDiv**), Leipzig. The fellowship was awarded through the
+**CAPES–Humboldt** programme (CAPES Call 14/2022, 20th call, Experienced
+Researchers; process 88881.876236/2023-01). The Alexander von Humboldt
+Foundation funded the fellowship and a subsidy towards research costs. Talks from
 the sabbatical — on urban ecology in the Global South and on the evolutionary
 macroecology of the Atlantic Forest — are on the [Talks](talks.qmd) page.
